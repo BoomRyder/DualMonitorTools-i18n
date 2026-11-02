@@ -78,5 +78,95 @@ namespace DMT.Resources {
                 return ResourceManager.GetString("FirstRunTitle", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Dual Monitor Tools.
+        /// </summary>
+        internal static string AppForm_notifyIcon_Text {
+            get {
+                return ResourceManager.GetString("AppForm_notifyIcon_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Options.
+        /// </summary>
+        internal static string AppForm_optionsToolStripMenuItem_Text {
+            get {
+                return ResourceManager.GetString("AppForm_optionsToolStripMenuItem_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to About.
+        /// </summary>
+        internal static string AppForm_aboutToolStripMenuItem_Text {
+            get {
+                return ResourceManager.GetString("AppForm_aboutToolStripMenuItem_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Visit Website.
+        /// </summary>
+        internal static string AppForm_visitWebSiteToolStripMenuItem_Text {
+            get {
+                return ResourceManager.GetString("AppForm_visitWebSiteToolStripMenuItem_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Exit.
+        /// </summary>
+        internal static string AppForm_exitToolStripMenuItem_Text {
+            get {
+                return ResourceManager.GetString("AppForm_exitToolStripMenuItem_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Close.
+        /// </summary>
+        internal static string OptionsForm_buttonClose_Text {
+            get {
+                return ResourceManager.GetString("OptionsForm_buttonClose_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Options for Dual Monitor Tools.
+        /// </summary>
+        internal static string OptionsForm_Text {
+            get {
+                return ResourceManager.GetString("OptionsForm_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to About Dual Monitor Tools.
+        /// </summary>
+        internal static string AboutForm_Text {
+            get {
+                return ResourceManager.GetString("AboutForm_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to About {0}.
+        /// </summary>
+        internal static string AboutForm_Text_Format {
+            get {
+                return ResourceManager.GetString("AboutForm_Text_Format", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {0}  -  Version {1}.
+        /// </summary>
+        internal static string AboutForm_labelProductName_Text_Format {
+            get {
+                return ResourceManager.GetString("AboutForm_labelProductName_Text_Format", resourceCulture);
+            }
+        }
     }
 }

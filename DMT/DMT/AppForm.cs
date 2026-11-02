@@ -64,10 +64,10 @@ namespace DMT
 			StartController();
 
 			// finish off the menu
-			AddMenuItem("About", null, aboutToolStripMenuItem_Click);
-			AddMenuItem("Visit Website", null, visitWebSiteToolStripMenuItem_Click);
+			AddMenuItem(AppStrings.AppForm_aboutToolStripMenuItem_Text, null, aboutToolStripMenuItem_Click);
+			AddMenuItem(AppStrings.AppForm_visitWebSiteToolStripMenuItem_Text, null, visitWebSiteToolStripMenuItem_Click);
 			AddMenuItem("-", null, null);
-			AddMenuItem("Exit", null, exitToolStripMenuItem_Click);
+			AddMenuItem(AppStrings.AppForm_exitToolStripMenuItem_Text, null, exitToolStripMenuItem_Click);
 
 			// handle system events
 			SystemEvents.SessionEnding += new SessionEndingEventHandler(SystemEvents_SessionEnding);

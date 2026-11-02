@@ -48,8 +48,8 @@ namespace DMT
 			// Change assembly information settings for your application through either:
 			// - Project->Properties->Application->Assembly Information
 			// - AssemblyInfo.cs
-			this.Text = string.Format("About {0}", AssemblyTitle);
-			this.labelProductName.Text = string.Format("{0}  -  Version {1}", AssemblyTitle, AssemblyVersion);
+			this.Text = string.Format(AppStrings.AboutForm_Text_Format, AssemblyTitle);
+			this.labelProductName.Text = string.Format(AppStrings.AboutForm_labelProductName_Text_Format, AssemblyTitle, AssemblyVersion);
 			this.labelCopyright.Text = AssemblyCopyright;
 			this.labelLicense.Text = CommonStrings.License;
 			this.labelDescription.Text = AssemblyDescription;

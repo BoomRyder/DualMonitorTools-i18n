@@ -41,7 +41,7 @@
 			// 
 			this.notifyIcon.ContextMenuStrip = this.contextMenuStrip;
 			this.notifyIcon.Icon = ((System.Drawing.Icon)(resources.GetObject("notifyIcon.Icon")));
-			this.notifyIcon.Text = "Dual Monitor Tools";
+			this.notifyIcon.Text = global::DMT.Resources.AppStrings.AppForm_notifyIcon_Text;
 			this.notifyIcon.Visible = true;
 			this.notifyIcon.DoubleClick += new System.EventHandler(this.notifyIcon_DoubleClick);
 			// 
@@ -58,7 +58,7 @@
 			this.optionsToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
 			this.optionsToolStripMenuItem.Name = "optionsToolStripMenuItem";
 			this.optionsToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
-			this.optionsToolStripMenuItem.Text = "Options";
+			this.optionsToolStripMenuItem.Text = global::DMT.Resources.AppStrings.AppForm_optionsToolStripMenuItem_Text;
 			this.optionsToolStripMenuItem.Click += new System.EventHandler(this.optionsToolStripMenuItem_Click);
 			// 
 			// toolStripMenuItem1

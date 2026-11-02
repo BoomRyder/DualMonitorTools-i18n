@@ -107,7 +107,7 @@
 			this.MinimizeBox = false;
 			this.Name = "AboutForm";
 			this.ShowInTaskbar = false;
-			this.Text = "About Dual Monitor Tools";
+			this.Text = global::DMT.Resources.AppStrings.AboutForm_Text;
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
 			this.ResumeLayout(false);

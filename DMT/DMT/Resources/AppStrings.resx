@@ -124,4 +124,34 @@ Double-click on its icon to see the available options.</value>
   <data name="FirstRunTitle" xml:space="preserve">
     <value>Dual Monitor Tools</value>
   </data>
+  <data name="AppForm_notifyIcon_Text" xml:space="preserve">
+    <value>Dual Monitor Tools</value>
+  </data>
+  <data name="AppForm_optionsToolStripMenuItem_Text" xml:space="preserve">
+    <value>Options</value>
+  </data>
+  <data name="AppForm_aboutToolStripMenuItem_Text" xml:space="preserve">
+    <value>About</value>
+  </data>
+  <data name="AppForm_visitWebSiteToolStripMenuItem_Text" xml:space="preserve">
+    <value>Visit Website</value>
+  </data>
+  <data name="AppForm_exitToolStripMenuItem_Text" xml:space="preserve">
+    <value>Exit</value>
+  </data>
+  <data name="OptionsForm_buttonClose_Text" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="OptionsForm_Text" xml:space="preserve">
+    <value>Options for Dual Monitor Tools</value>
+  </data>
+  <data name="AboutForm_Text" xml:space="preserve">
+    <value>About Dual Monitor Tools</value>
+  </data>
+  <data name="AboutForm_Text_Format" xml:space="preserve">
+    <value>About {0}</value>
+  </data>
+  <data name="AboutForm_labelProductName_Text_Format" xml:space="preserve">
+    <value>{0}  -  Version {1}</value>
+  </data>
 </root>

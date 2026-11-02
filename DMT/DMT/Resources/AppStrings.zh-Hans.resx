@@ -124,4 +124,34 @@
   <data name="FirstRunTitle" xml:space="preserve">
     <value>Dual Monitor Tools</value>
   </data>
+  <data name="AppForm_notifyIcon_Text" xml:space="preserve">
+    <value>Dual Monitor Tools</value>
+  </data>
+  <data name="AppForm_optionsToolStripMenuItem_Text" xml:space="preserve">
+    <value>选项</value>
+  </data>
+  <data name="AppForm_aboutToolStripMenuItem_Text" xml:space="preserve">
+    <value>关于</value>
+  </data>
+  <data name="AppForm_visitWebSiteToolStripMenuItem_Text" xml:space="preserve">
+    <value>访问网站</value>
+  </data>
+  <data name="AppForm_exitToolStripMenuItem_Text" xml:space="preserve">
+    <value>退出</value>
+  </data>
+  <data name="OptionsForm_buttonClose_Text" xml:space="preserve">
+    <value>关闭</value>
+  </data>
+  <data name="OptionsForm_Text" xml:space="preserve">
+    <value>Dual Monitor Tools 选项</value>
+  </data>
+  <data name="AboutForm_Text" xml:space="preserve">
+    <value>关于 Dual Monitor Tools</value>
+  </data>
+  <data name="AboutForm_Text_Format" xml:space="preserve">
+    <value>关于 {0}</value>
+  </data>
+  <data name="AboutForm_labelProductName_Text_Format" xml:space="preserve">
+    <value>{0}  -  版本 {1}</value>
+  </data>
 </root>

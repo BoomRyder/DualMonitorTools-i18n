@@ -63,7 +63,7 @@
 			this.buttonClose.Name = "buttonClose";
 			this.buttonClose.Size = new System.Drawing.Size(75, 23);
 			this.buttonClose.TabIndex = 2;
-			this.buttonClose.Text = "Close";
+			this.buttonClose.Text = global::DMT.Resources.AppStrings.OptionsForm_buttonClose_Text;
 			this.buttonClose.UseVisualStyleBackColor = true;
 			this.buttonClose.Click += new System.EventHandler(this.buttonClose_Click);
 			// 
@@ -79,7 +79,7 @@
 			this.MaximizeBox = false;
 			this.MinimizeBox = false;
 			this.Name = "OptionsForm";
-			this.Text = "Options for Dual Monitor Tools";
+			this.Text = global::DMT.Resources.AppStrings.OptionsForm_Text;
 			this.Load += new System.EventHandler(this.OptionsForm_Load);
 			this.SizeChanged += new System.EventHandler(this.OptionsForm_SizeChanged);
 			this.ResumeLayout(false);
