@@ -813,6 +813,9 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>CursorStrings.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Resources\CursorStrings.zh-Hans.resx">
+      <DependentUpon>CursorStrings.resx</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Resources\GeneralStrings.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>GeneralStrings.Designer.cs</LastGenOutput>
@@ -824,9 +827,15 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>LauncherStrings.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Resources\LauncherStrings.zh-Hans.resx">
+      <DependentUpon>LauncherStrings.resx</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Resources\SnapStrings.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>SnapStrings.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\SnapStrings.zh-Hans.resx">
+      <DependentUpon>SnapStrings.resx</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Resources\SwapScreenStrings.resx">
       <Generator>ResXFileCodeGenerator</Generator>
