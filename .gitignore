@@ -22,3 +22,6 @@ tools/nuget.exe
 # 测试结果
 TestResult.xml
 *.trx
+
+# 安装包产物
+dist/

@@ -19,6 +19,7 @@
 
 using System;
 using System.IO;
+using System.Text;
 using System.Xml;
 using NUnit.Framework;
 
@@ -82,6 +83,89 @@ namespace DMT.UnitTests.Installer
 			Assert.AreEqual("datadirectory", nodes[0].Attributes["name"].Value);
 			Assert.AreEqual(@"%APPDATA%\Dual Monitor Tools",
 				nodes[0].Attributes["value"].Value);
+		}
+
+		static string IssPath
+		{
+			get { return Path.Combine(RepoRoot, @"installer\DualMonitorTools.iss"); }
+		}
+
+		static string ReadIss()
+		{
+			return File.ReadAllText(IssPath, Encoding.UTF8);
+		}
+
+		[Test]
+		public void IssExists()
+		{
+			Assert.IsTrue(File.Exists(IssPath), "missing: installer\\DualMonitorTools.iss");
+		}
+
+		[Test]
+		public void IssDefinesTheApplicationIdentity()
+		{
+			string iss = ReadIss();
+
+			// The [Setup] directives below are written with {#MyAppName}, so the
+			// literal product name lives here and nowhere else.
+			Assert.IsTrue(iss.IndexOf("#define MyAppName \"Dual Monitor Tools\"",
+					StringComparison.Ordinal) >= 0,
+				"MyAppName must be \"Dual Monitor Tools\"");
+
+			Assert.IsTrue(iss.IndexOf("#define MyAppVersion \"2.13\"",
+					StringComparison.Ordinal) >= 0,
+				"MyAppVersion must be \"2.13\"");
+		}
+
+		[TestCase(@"DefaultDirName={autopf}\{#MyAppName}")]
+		[TestCase("DefaultGroupName={#MyAppName}")]
+		[TestCase("PrivilegesRequired=admin")]
+		[TestCase("ArchitecturesAllowed=x64compatible")]
+		[TestCase("DisableProgramGroupPage=yes")]
+		[TestCase("CloseApplications=yes")]
+		public void IssDeclaresRequiredSetupDirective(string expectedLine)
+		{
+			string iss = ReadIss();
+
+			Assert.IsTrue(iss.IndexOf(expectedLine, StringComparison.Ordinal) >= 0,
+				"missing [Setup] directive: " + expectedLine);
+		}
+
+		[Test]
+		public void IssDoesNotWriteTheInstalledMarker()
+		{
+			string iss = ReadIss();
+
+			// Writing this value makes CheckUpdatesForm offer "install the new
+			// version", and that button downloads and runs the upstream English
+			// MSI, overwriting this Chinese build.
+			Assert.IsFalse(iss.IndexOf("ValueName: \"installed\"", StringComparison.Ordinal) >= 0,
+				"the 'installed' marker must never be written");
+		}
+
+		[TestCase(@"DMT\DMT\bin\Release\DMT.exe")]
+		[TestCase(@"DMT\DMT\bin\Release\DMT.exe.config")]
+		[TestCase(@"DMT\DMT\bin\Release\zh-Hans\DMT.resources.dll")]
+		[TestCase(@"DualWallpaper\DualWallpaper\bin\Release\DualWallpaper.exe")]
+		[TestCase(@"DualWallpaper\DualWallpaper\bin\Release\DualWallpaper.exe.config")]
+		[TestCase(@"DualWallpaper\DualWallpaper\bin\Release\zh-Hans\DualWallpaper.resources.dll")]
+		[TestCase(@"DmtWallpaper\DmtWallpaper\bin\Release\DmtWallpaper.exe")]
+		[TestCase(@"DmtWallpaper\DmtWallpaper\bin\Release\DmtWallpaper.exe.config")]
+		[TestCase(@"DmtWallpaper\DmtWallpaper\bin\Release\zh-Hans\DmtWallpaper.resources.dll")]
+		[TestCase(@"DmtWallpaper\DmtWallpaper\bin\Release\DmtWallpaper.scr")]
+		public void IssShipsEveryReleaseArtifact(string relativePath)
+		{
+			string iss = ReadIss();
+
+			// The trailing quote keeps this exact: the bare "DMT.exe" would
+			// also match the "DMT.exe.config" line.
+			string expected = relativePath + "\"";
+
+			Assert.IsTrue(iss.IndexOf(expected, StringComparison.OrdinalIgnoreCase) >= 0,
+				"not shipped by the installer: " + relativePath);
+
+			Assert.IsTrue(File.Exists(Path.Combine(RepoRoot, relativePath)),
+				"missing build output (run build.ps1 -Configuration Release first): " + relativePath);
 		}
 	}
 }
