@@ -148,4 +148,111 @@ This is free software, and you are welcome to redistribute it under certain cond
   <data name="WebsiteMenuItem" xml:space="preserve">
     <value>Visit Dual Wallpaper website</value>
   </data>
+  <data name="DualWallpaper_picPreview_ToolTip" xml:space="preserve">
+    <value>This is what your entire desktop should look like.
+A yellow border indicates the screen is selected.
+'P' after the screen number indicates it is the primary screen.</value>
+  </data>
+  <data name="DualWallpaper_picSource_ToolTip" xml:space="preserve">
+    <value>Preview of the image to add.</value>
+  </data>
+  <data name="DualWallpaper_buttonAdd_Text" xml:space="preserve">
+    <value>Add Image</value>
+  </data>
+  <data name="DualWallpaper_buttonAdd_ToolTip" xml:space="preserve">
+    <value>Adds the image to the selected screens.</value>
+  </data>
+  <data name="DualWallpaper_comboBoxFit_ToolTip" xml:space="preserve">
+    <value>Specifies how the above image is to fit onto the selected screens.</value>
+  </data>
+  <data name="DualWallpaper_label3_Text" xml:space="preserve">
+    <value>Fit:</value>
+  </data>
+  <data name="DualWallpaper_buttonBrowse_Text" xml:space="preserve">
+    <value>Browse...</value>
+  </data>
+  <data name="DualWallpaper_buttonBrowse_ToolTip" xml:space="preserve">
+    <value>Browse for image to add.</value>
+  </data>
+  <data name="DualWallpaper_textBoxImage_ToolTip" xml:space="preserve">
+    <value>Image to add to selected screens</value>
+  </data>
+  <data name="DualWallpaper_label2_Text" xml:space="preserve">
+    <value>Image:</value>
+  </data>
+  <data name="DualWallpaper_label1_Text" xml:space="preserve">
+    <value>Screens selected:</value>
+  </data>
+  <data name="DualWallpaper_label4_Text" xml:space="preserve">
+    <value>Select 1 or more screens above (use ctrl+Left click to select multiple) and then add an image.</value>
+  </data>
+  <data name="DualWallpaper_label5_Text" xml:space="preserve">
+    <value>Repeat for any remaining screens.</value>
+  </data>
+  <data name="DualWallpaper_buttonSave_Text" xml:space="preserve">
+    <value>Save Image</value>
+  </data>
+  <data name="DualWallpaper_buttonSetWallpaper_Text" xml:space="preserve">
+    <value>Set Wallpaper</value>
+  </data>
+  <data name="DualWallpaper_groupBox2_Text" xml:space="preserve">
+    <value>Move Image</value>
+  </data>
+  <data name="DualWallpaper_buttonMoveLeft_ToolTip" xml:space="preserve">
+    <value>Move image left.</value>
+  </data>
+  <data name="DualWallpaper_buttonMoveDown_ToolTip" xml:space="preserve">
+    <value>Move image down.</value>
+  </data>
+  <data name="DualWallpaper_buttonMoveRight_ToolTip" xml:space="preserve">
+    <value>Move image right.</value>
+  </data>
+  <data name="DualWallpaper_buttonMoveUp_ToolTip" xml:space="preserve">
+    <value>Move image up.</value>
+  </data>
+  <data name="DualWallpaper_radioButtonMove100_Text" xml:space="preserve">
+    <value>100 Pixels</value>
+  </data>
+  <data name="DualWallpaper_radioButtonMove10_Text" xml:space="preserve">
+    <value>10 Pixels</value>
+  </data>
+  <data name="DualWallpaper_radioButtonMove1_Text" xml:space="preserve">
+    <value>1 Pixel</value>
+  </data>
+  <data name="DualWallpaper_groupBox3_Text" xml:space="preserve">
+    <value>Zoom Image</value>
+  </data>
+  <data name="DualWallpaper_buttonZoomOut_ToolTip" xml:space="preserve">
+    <value>Zoom out.</value>
+  </data>
+  <data name="DualWallpaper_buttonZoomIn_ToolTip" xml:space="preserve">
+    <value>Zoom in.</value>
+  </data>
+  <data name="DualWallpaper_radioButtonZoom20_Text" xml:space="preserve">
+    <value>20%</value>
+  </data>
+  <data name="DualWallpaper_radioButtonZoom5_Text" xml:space="preserve">
+    <value>5%</value>
+  </data>
+  <data name="DualWallpaper_radioButtonZoom1_Text" xml:space="preserve">
+    <value>1%</value>
+  </data>
+  <data name="DualWallpaper_tabPageAdd_Text" xml:space="preserve">
+    <value>Add Image</value>
+  </data>
+  <data name="DualWallpaper_cmdChangeBackground_Text" xml:space="preserve">
+    <value>Change</value>
+  </data>
+  <data name="DualWallpaper_label6_Text" xml:space="preserve">
+    <value>Background Color:</value>
+  </data>
+  <data name="DualWallpaper_tabPageMove_Text" xml:space="preserve">
+    <value>Move/Zoom Image</value>
+  </data>
+  <data name="AboutForm_labelProductName_Text_Format" xml:space="preserve">
+    <value>{0}  -  Version {1}</value>
+  </data>
+  <data name="AboutForm_Text_Format" xml:space="preserve">
+    <value>About {0}</value>
+  </data>
 </root>

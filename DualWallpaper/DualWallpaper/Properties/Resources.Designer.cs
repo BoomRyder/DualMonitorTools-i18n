@@ -150,5 +150,320 @@ namespace DualWallpaper.Properties {
                 return ResourceManager.GetString("WebsiteMenuItem", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This is what your entire desktop should look like. A yellow border indicates the screen is selected. 'P' after the screen number indicates it is the primary screen..
+        /// </summary>
+        internal static string DualWallpaper_picPreview_ToolTip {
+            get {
+                return ResourceManager.GetString("DualWallpaper_picPreview_ToolTip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Preview of the image to add..
+        /// </summary>
+        internal static string DualWallpaper_picSource_ToolTip {
+            get {
+                return ResourceManager.GetString("DualWallpaper_picSource_ToolTip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Add Image.
+        /// </summary>
+        internal static string DualWallpaper_buttonAdd_Text {
+            get {
+                return ResourceManager.GetString("DualWallpaper_buttonAdd_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Adds the image to the selected screens..
+        /// </summary>
+        internal static string DualWallpaper_buttonAdd_ToolTip {
+            get {
+                return ResourceManager.GetString("DualWallpaper_buttonAdd_ToolTip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Specifies how the above image is to fit onto the selected screens..
+        /// </summary>
+        internal static string DualWallpaper_comboBoxFit_ToolTip {
+            get {
+                return ResourceManager.GetString("DualWallpaper_comboBoxFit_ToolTip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Fit:.
+        /// </summary>
+        internal static string DualWallpaper_label3_Text {
+            get {
+                return ResourceManager.GetString("DualWallpaper_label3_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Browse....
+        /// </summary>
+        internal static string DualWallpaper_buttonBrowse_Text {
+            get {
+                return ResourceManager.GetString("DualWallpaper_buttonBrowse_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Browse for image to add..
+        /// </summary>
+        internal static string DualWallpaper_buttonBrowse_ToolTip {
+            get {
+                return ResourceManager.GetString("DualWallpaper_buttonBrowse_ToolTip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Image to add to selected screens.
+        /// </summary>
+        internal static string DualWallpaper_textBoxImage_ToolTip {
+            get {
+                return ResourceManager.GetString("DualWallpaper_textBoxImage_ToolTip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Image:.
+        /// </summary>
+        internal static string DualWallpaper_label2_Text {
+            get {
+                return ResourceManager.GetString("DualWallpaper_label2_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Screens selected:.
+        /// </summary>
+        internal static string DualWallpaper_label1_Text {
+            get {
+                return ResourceManager.GetString("DualWallpaper_label1_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Select 1 or more screens above (use ctrl+Left click to select multiple) and then add an image..
+        /// </summary>
+        internal static string DualWallpaper_label4_Text {
+            get {
+                return ResourceManager.GetString("DualWallpaper_label4_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Repeat for any remaining screens..
+        /// </summary>
+        internal static string DualWallpaper_label5_Text {
+            get {
+                return ResourceManager.GetString("DualWallpaper_label5_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Save Image.
+        /// </summary>
+        internal static string DualWallpaper_buttonSave_Text {
+            get {
+                return ResourceManager.GetString("DualWallpaper_buttonSave_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Set Wallpaper.
+        /// </summary>
+        internal static string DualWallpaper_buttonSetWallpaper_Text {
+            get {
+                return ResourceManager.GetString("DualWallpaper_buttonSetWallpaper_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Move Image.
+        /// </summary>
+        internal static string DualWallpaper_groupBox2_Text {
+            get {
+                return ResourceManager.GetString("DualWallpaper_groupBox2_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Move image left..
+        /// </summary>
+        internal static string DualWallpaper_buttonMoveLeft_ToolTip {
+            get {
+                return ResourceManager.GetString("DualWallpaper_buttonMoveLeft_ToolTip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Move image down..
+        /// </summary>
+        internal static string DualWallpaper_buttonMoveDown_ToolTip {
+            get {
+                return ResourceManager.GetString("DualWallpaper_buttonMoveDown_ToolTip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Move image right..
+        /// </summary>
+        internal static string DualWallpaper_buttonMoveRight_ToolTip {
+            get {
+                return ResourceManager.GetString("DualWallpaper_buttonMoveRight_ToolTip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Move image up..
+        /// </summary>
+        internal static string DualWallpaper_buttonMoveUp_ToolTip {
+            get {
+                return ResourceManager.GetString("DualWallpaper_buttonMoveUp_ToolTip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 100 Pixels.
+        /// </summary>
+        internal static string DualWallpaper_radioButtonMove100_Text {
+            get {
+                return ResourceManager.GetString("DualWallpaper_radioButtonMove100_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 10 Pixels.
+        /// </summary>
+        internal static string DualWallpaper_radioButtonMove10_Text {
+            get {
+                return ResourceManager.GetString("DualWallpaper_radioButtonMove10_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 1 Pixel.
+        /// </summary>
+        internal static string DualWallpaper_radioButtonMove1_Text {
+            get {
+                return ResourceManager.GetString("DualWallpaper_radioButtonMove1_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Zoom Image.
+        /// </summary>
+        internal static string DualWallpaper_groupBox3_Text {
+            get {
+                return ResourceManager.GetString("DualWallpaper_groupBox3_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Zoom out..
+        /// </summary>
+        internal static string DualWallpaper_buttonZoomOut_ToolTip {
+            get {
+                return ResourceManager.GetString("DualWallpaper_buttonZoomOut_ToolTip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Zoom in..
+        /// </summary>
+        internal static string DualWallpaper_buttonZoomIn_ToolTip {
+            get {
+                return ResourceManager.GetString("DualWallpaper_buttonZoomIn_ToolTip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 20%.
+        /// </summary>
+        internal static string DualWallpaper_radioButtonZoom20_Text {
+            get {
+                return ResourceManager.GetString("DualWallpaper_radioButtonZoom20_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 5%.
+        /// </summary>
+        internal static string DualWallpaper_radioButtonZoom5_Text {
+            get {
+                return ResourceManager.GetString("DualWallpaper_radioButtonZoom5_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 1%.
+        /// </summary>
+        internal static string DualWallpaper_radioButtonZoom1_Text {
+            get {
+                return ResourceManager.GetString("DualWallpaper_radioButtonZoom1_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Add Image.
+        /// </summary>
+        internal static string DualWallpaper_tabPageAdd_Text {
+            get {
+                return ResourceManager.GetString("DualWallpaper_tabPageAdd_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Change.
+        /// </summary>
+        internal static string DualWallpaper_cmdChangeBackground_Text {
+            get {
+                return ResourceManager.GetString("DualWallpaper_cmdChangeBackground_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Background Color:.
+        /// </summary>
+        internal static string DualWallpaper_label6_Text {
+            get {
+                return ResourceManager.GetString("DualWallpaper_label6_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Move/Zoom Image.
+        /// </summary>
+        internal static string DualWallpaper_tabPageMove_Text {
+            get {
+                return ResourceManager.GetString("DualWallpaper_tabPageMove_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {0}  -  Version {1}.
+        /// </summary>
+        internal static string AboutForm_labelProductName_Text_Format {
+            get {
+                return ResourceManager.GetString("AboutForm_labelProductName_Text_Format", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to About {0}.
+        /// </summary>
+        internal static string AboutForm_Text_Format {
+            get {
+                return ResourceManager.GetString("AboutForm_Text_Format", resourceCulture);
+            }
+        }
     }
 }

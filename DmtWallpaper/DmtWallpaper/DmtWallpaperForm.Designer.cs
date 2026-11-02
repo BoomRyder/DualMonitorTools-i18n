@@ -66,7 +66,7 @@ namespace DmtWallpaper
 			this.imageBlender.Name = "imageBlender";
 			this.imageBlender.Size = new System.Drawing.Size(200, 200);
 			this.imageBlender.TabIndex = 0;
-			this.imageBlender.Text = "imageBlender";
+			this.imageBlender.Text = global::DmtWallpaper.Properties.Resources.DmtWallpaperForm_imageBlender_Text;
 			this.imageBlender.KeyDown += new System.Windows.Forms.KeyEventHandler(this.imageBlender_KeyDown);
 			this.imageBlender.MouseClick += new System.Windows.Forms.MouseEventHandler(this.imageBlender_MouseClick);
 			this.imageBlender.MouseMove += new System.Windows.Forms.MouseEventHandler(this.imageBlender_MouseMove);

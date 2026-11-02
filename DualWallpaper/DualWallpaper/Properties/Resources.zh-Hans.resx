@@ -148,4 +148,111 @@
   <data name="WebsiteMenuItem" xml:space="preserve">
     <value>访问 Dual Wallpaper 网站</value>
   </data>
+  <data name="DualWallpaper_picPreview_ToolTip" xml:space="preserve">
+    <value>你的整个桌面最终应呈现为这个样子。
+黄色边框表示该屏幕已被选中。
+屏幕编号后的「P」表示它是主屏幕。</value>
+  </data>
+  <data name="DualWallpaper_picSource_ToolTip" xml:space="preserve">
+    <value>要添加的图像的预览。</value>
+  </data>
+  <data name="DualWallpaper_buttonAdd_Text" xml:space="preserve">
+    <value>添加图像</value>
+  </data>
+  <data name="DualWallpaper_buttonAdd_ToolTip" xml:space="preserve">
+    <value>将图像添加到选中的屏幕。</value>
+  </data>
+  <data name="DualWallpaper_comboBoxFit_ToolTip" xml:space="preserve">
+    <value>指定上面的图像如何适配到选中的屏幕。</value>
+  </data>
+  <data name="DualWallpaper_label3_Text" xml:space="preserve">
+    <value>适配方式：</value>
+  </data>
+  <data name="DualWallpaper_buttonBrowse_Text" xml:space="preserve">
+    <value>浏览...</value>
+  </data>
+  <data name="DualWallpaper_buttonBrowse_ToolTip" xml:space="preserve">
+    <value>浏览要添加的图像。</value>
+  </data>
+  <data name="DualWallpaper_textBoxImage_ToolTip" xml:space="preserve">
+    <value>要添加到选中屏幕的图像</value>
+  </data>
+  <data name="DualWallpaper_label2_Text" xml:space="preserve">
+    <value>图像：</value>
+  </data>
+  <data name="DualWallpaper_label1_Text" xml:space="preserve">
+    <value>已选屏幕：</value>
+  </data>
+  <data name="DualWallpaper_label4_Text" xml:space="preserve">
+    <value>先在上方选择一个或多个屏幕（按住 Ctrl 左键可多选），然后添加图像。</value>
+  </data>
+  <data name="DualWallpaper_label5_Text" xml:space="preserve">
+    <value>对其余屏幕重复此操作。</value>
+  </data>
+  <data name="DualWallpaper_buttonSave_Text" xml:space="preserve">
+    <value>保存图像</value>
+  </data>
+  <data name="DualWallpaper_buttonSetWallpaper_Text" xml:space="preserve">
+    <value>设置壁纸</value>
+  </data>
+  <data name="DualWallpaper_groupBox2_Text" xml:space="preserve">
+    <value>移动图像</value>
+  </data>
+  <data name="DualWallpaper_buttonMoveLeft_ToolTip" xml:space="preserve">
+    <value>向左移动图像。</value>
+  </data>
+  <data name="DualWallpaper_buttonMoveDown_ToolTip" xml:space="preserve">
+    <value>向下移动图像。</value>
+  </data>
+  <data name="DualWallpaper_buttonMoveRight_ToolTip" xml:space="preserve">
+    <value>向右移动图像。</value>
+  </data>
+  <data name="DualWallpaper_buttonMoveUp_ToolTip" xml:space="preserve">
+    <value>向上移动图像。</value>
+  </data>
+  <data name="DualWallpaper_radioButtonMove100_Text" xml:space="preserve">
+    <value>100 像素</value>
+  </data>
+  <data name="DualWallpaper_radioButtonMove10_Text" xml:space="preserve">
+    <value>10 像素</value>
+  </data>
+  <data name="DualWallpaper_radioButtonMove1_Text" xml:space="preserve">
+    <value>1 像素</value>
+  </data>
+  <data name="DualWallpaper_groupBox3_Text" xml:space="preserve">
+    <value>缩放图像</value>
+  </data>
+  <data name="DualWallpaper_buttonZoomOut_ToolTip" xml:space="preserve">
+    <value>缩小。</value>
+  </data>
+  <data name="DualWallpaper_buttonZoomIn_ToolTip" xml:space="preserve">
+    <value>放大。</value>
+  </data>
+  <data name="DualWallpaper_radioButtonZoom20_Text" xml:space="preserve">
+    <value>20%</value>
+  </data>
+  <data name="DualWallpaper_radioButtonZoom5_Text" xml:space="preserve">
+    <value>5%</value>
+  </data>
+  <data name="DualWallpaper_radioButtonZoom1_Text" xml:space="preserve">
+    <value>1%</value>
+  </data>
+  <data name="DualWallpaper_tabPageAdd_Text" xml:space="preserve">
+    <value>添加图像</value>
+  </data>
+  <data name="DualWallpaper_cmdChangeBackground_Text" xml:space="preserve">
+    <value>更改</value>
+  </data>
+  <data name="DualWallpaper_label6_Text" xml:space="preserve">
+    <value>背景颜色：</value>
+  </data>
+  <data name="DualWallpaper_tabPageMove_Text" xml:space="preserve">
+    <value>移动/缩放图像</value>
+  </data>
+  <data name="AboutForm_labelProductName_Text_Format" xml:space="preserve">
+    <value>{0}  -  版本 {1}</value>
+  </data>
+  <data name="AboutForm_Text_Format" xml:space="preserve">
+    <value>关于 {0}</value>
+  </data>
 </root>

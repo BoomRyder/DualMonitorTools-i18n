@@ -336,4 +336,31 @@ Do you wish to continue?</value>
   <data name="Node_UserDefinedAreas" xml:space="preserve">
     <value>User Defined Areas</value>
   </data>
+  <data name="Sda_Screen_BottomLeft" xml:space="preserve">
+    <value>Screen {0} - bottom left quadrant</value>
+  </data>
+  <data name="Sda_Screen_Text" xml:space="preserve">
+    <value>Screen {0}</value>
+  </data>
+  <data name="Sda_Screen_LeftHalf" xml:space="preserve">
+    <value>Screen {0} - left half</value>
+  </data>
+  <data name="Sda_Screen_BottomHalf" xml:space="preserve">
+    <value>Screen {0} - bottom half</value>
+  </data>
+  <data name="Sda_Screen_BottomRight" xml:space="preserve">
+    <value>Screen {0} - bottom right quadrant</value>
+  </data>
+  <data name="Sda_Screen_RightHalf" xml:space="preserve">
+    <value>Screen {0} - right half</value>
+  </data>
+  <data name="Sda_Screen_TopLeft" xml:space="preserve">
+    <value>Screen {0} - top left quadrant</value>
+  </data>
+  <data name="Sda_Screen_TopRight" xml:space="preserve">
+    <value>Screen {0} - top right quadrant</value>
+  </data>
+  <data name="Sda_Screen_TopHalf" xml:space="preserve">
+    <value>Screen {0} - top half</value>
+  </data>
 </root>

@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Reflection;
 using System.Text;
 using System.Windows.Forms;
+using DmtWallpaper.Properties;
 
 namespace DmtWallpaper
 {
@@ -15,7 +16,7 @@ namespace DmtWallpaper
 		{
 			InitializeComponent();
 
-			labelProductName.Text = string.Format("{0}  -  Version {1}", AssemblyTitle, AssemblyVersion);
+			labelProductName.Text = string.Format(Resources.SettingsForm_labelProductName_Text_Format, AssemblyTitle, AssemblyVersion);
 			labelCopyright.Text = AssemblyCopyright;
 			labelLicense.Text = DmtWallpaper.Properties.Resources.License;
 
@@ -23,7 +24,7 @@ namespace DmtWallpaper
 
 			if (wallpaperFilename == null)
 			{
-				textBoxFilename.Text = "DMT is either not running or not generating wallpaper.";
+				textBoxFilename.Text = Resources.SettingsForm_textBoxFilename_NoWallpaper;
 			}
 			else
 			{

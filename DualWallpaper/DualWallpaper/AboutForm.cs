@@ -1,4 +1,4 @@
-#region copyright
+﻿#region copyright
 // This file is part of Dual Monitor Tools which is a set of tools to assist
 // users with multiple monitor setups.
 // Copyright (C) 2010  Gerald Evans
@@ -39,9 +39,9 @@ namespace DualWallpaper
 			//  Change assembly information settings for your application through either:
 			//  - Project->Properties->Application->Assembly Information
 			//  - AssemblyInfo.cs
-			this.Text = String.Format("About {0}", AssemblyTitle);
+			this.Text = String.Format(Resources.AboutForm_Text_Format, AssemblyTitle);
 			//this.labelProductName.Text = String.Format("{0}  -  Version {1}", AssemblyProduct, AssemblyVersion);
-			this.labelProductName.Text = String.Format("{0}  -  Version {1}", AssemblyTitle, AssemblyVersion);
+			this.labelProductName.Text = String.Format(Resources.AboutForm_labelProductName_Text_Format, AssemblyTitle, AssemblyVersion);
 			this.labelCopyright.Text = AssemblyCopyright;
 			this.labelLicense.Text = Resources.License;
 			this.labelDescription.Text = AssemblyDescription;

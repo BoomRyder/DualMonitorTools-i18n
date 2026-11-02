@@ -336,4 +336,31 @@
   <data name="Node_UserDefinedAreas" xml:space="preserve">
     <value>用户定义区域</value>
   </data>
+  <data name="Sda_Screen_BottomLeft" xml:space="preserve">
+    <value>屏幕 {0} - 左下四分之一</value>
+  </data>
+  <data name="Sda_Screen_Text" xml:space="preserve">
+    <value>屏幕 {0}</value>
+  </data>
+  <data name="Sda_Screen_LeftHalf" xml:space="preserve">
+    <value>屏幕 {0} - 左半屏</value>
+  </data>
+  <data name="Sda_Screen_BottomHalf" xml:space="preserve">
+    <value>屏幕 {0} - 下半屏</value>
+  </data>
+  <data name="Sda_Screen_BottomRight" xml:space="preserve">
+    <value>屏幕 {0} - 右下四分之一</value>
+  </data>
+  <data name="Sda_Screen_RightHalf" xml:space="preserve">
+    <value>屏幕 {0} - 右半屏</value>
+  </data>
+  <data name="Sda_Screen_TopLeft" xml:space="preserve">
+    <value>屏幕 {0} - 左上四分之一</value>
+  </data>
+  <data name="Sda_Screen_TopRight" xml:space="preserve">
+    <value>屏幕 {0} - 右上四分之一</value>
+  </data>
+  <data name="Sda_Screen_TopHalf" xml:space="preserve">
+    <value>屏幕 {0} - 上半屏</value>
+  </data>
 </root>

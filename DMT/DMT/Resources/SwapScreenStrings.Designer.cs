@@ -710,5 +710,86 @@ namespace DMT.Resources {
                 return ResourceManager.GetString("Node_UserDefinedAreas", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Screen {0} - bottom left quadrant.
+        /// </summary>
+        internal static string Sda_Screen_BottomLeft {
+            get {
+                return ResourceManager.GetString("Sda_Screen_BottomLeft", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Screen {0}.
+        /// </summary>
+        internal static string Sda_Screen_Text {
+            get {
+                return ResourceManager.GetString("Sda_Screen_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Screen {0} - left half.
+        /// </summary>
+        internal static string Sda_Screen_LeftHalf {
+            get {
+                return ResourceManager.GetString("Sda_Screen_LeftHalf", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Screen {0} - bottom half.
+        /// </summary>
+        internal static string Sda_Screen_BottomHalf {
+            get {
+                return ResourceManager.GetString("Sda_Screen_BottomHalf", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Screen {0} - bottom right quadrant.
+        /// </summary>
+        internal static string Sda_Screen_BottomRight {
+            get {
+                return ResourceManager.GetString("Sda_Screen_BottomRight", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Screen {0} - right half.
+        /// </summary>
+        internal static string Sda_Screen_RightHalf {
+            get {
+                return ResourceManager.GetString("Sda_Screen_RightHalf", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Screen {0} - top left quadrant.
+        /// </summary>
+        internal static string Sda_Screen_TopLeft {
+            get {
+                return ResourceManager.GetString("Sda_Screen_TopLeft", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Screen {0} - top right quadrant.
+        /// </summary>
+        internal static string Sda_Screen_TopRight {
+            get {
+                return ResourceManager.GetString("Sda_Screen_TopRight", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Screen {0} - top half.
+        /// </summary>
+        internal static string Sda_Screen_TopHalf {
+            get {
+                return ResourceManager.GetString("Sda_Screen_TopHalf", resourceCulture);
+            }
+        }
     }
 }

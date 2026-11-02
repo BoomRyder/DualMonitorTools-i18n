@@ -1,4 +1,4 @@
-namespace DualWallpaper
+﻿namespace DualWallpaper
 {
 	partial class DualWallpaper
 	{
@@ -84,9 +84,7 @@ namespace DualWallpaper
 			this.picPreview.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
 			this.picPreview.TabIndex = 0;
 			this.picPreview.TabStop = false;
-			this.toolTip.SetToolTip(this.picPreview, "This is what your entire desktop should look like.\r\nA yellow border indicates the" +
-					" screen is selected.\r\n\'P\' after the screen number indicates it is the primary sc" +
-					"reen.");
+			this.toolTip.SetToolTip(this.picPreview, global::DualWallpaper.Properties.Resources.DualWallpaper_picPreview_ToolTip);
 			this.picPreview.MouseClick += new System.Windows.Forms.MouseEventHandler(this.picPreview_MouseClick);
 			// 
 			// picSource
@@ -99,7 +97,7 @@ namespace DualWallpaper
 			this.picSource.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
 			this.picSource.TabIndex = 8;
 			this.picSource.TabStop = false;
-			this.toolTip.SetToolTip(this.picSource, "Preview of the image to add.");
+			this.toolTip.SetToolTip(this.picSource, global::DualWallpaper.Properties.Resources.DualWallpaper_picSource_ToolTip);
 			// 
 			// buttonAdd
 			// 
@@ -107,8 +105,8 @@ namespace DualWallpaper
 			this.buttonAdd.Name = "buttonAdd";
 			this.buttonAdd.Size = new System.Drawing.Size(75, 23);
 			this.buttonAdd.TabIndex = 7;
-			this.buttonAdd.Text = "Add Image";
-			this.toolTip.SetToolTip(this.buttonAdd, "Adds the image to the selected screens.");
+			this.buttonAdd.Text = global::DualWallpaper.Properties.Resources.DualWallpaper_buttonAdd_Text;
+			this.toolTip.SetToolTip(this.buttonAdd, global::DualWallpaper.Properties.Resources.DualWallpaper_buttonAdd_ToolTip);
 			this.buttonAdd.UseVisualStyleBackColor = true;
 			this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
 			// 
@@ -120,7 +118,7 @@ namespace DualWallpaper
 			this.comboBoxFit.Name = "comboBoxFit";
 			this.comboBoxFit.Size = new System.Drawing.Size(401, 21);
 			this.comboBoxFit.TabIndex = 6;
-			this.toolTip.SetToolTip(this.comboBoxFit, "Specifies how the above image is to fit onto the selected screens.");
+			this.toolTip.SetToolTip(this.comboBoxFit, global::DualWallpaper.Properties.Resources.DualWallpaper_comboBoxFit_ToolTip);
 			// 
 			// label3
 			// 
@@ -129,7 +127,7 @@ namespace DualWallpaper
 			this.label3.Name = "label3";
 			this.label3.Size = new System.Drawing.Size(21, 13);
 			this.label3.TabIndex = 5;
-			this.label3.Text = "Fit:";
+			this.label3.Text = global::DualWallpaper.Properties.Resources.DualWallpaper_label3_Text;
 			// 
 			// buttonBrowse
 			// 
@@ -137,8 +135,8 @@ namespace DualWallpaper
 			this.buttonBrowse.Name = "buttonBrowse";
 			this.buttonBrowse.Size = new System.Drawing.Size(75, 23);
 			this.buttonBrowse.TabIndex = 4;
-			this.buttonBrowse.Text = "Browse...";
-			this.toolTip.SetToolTip(this.buttonBrowse, "Browse for image to add.");
+			this.buttonBrowse.Text = global::DualWallpaper.Properties.Resources.DualWallpaper_buttonBrowse_Text;
+			this.toolTip.SetToolTip(this.buttonBrowse, global::DualWallpaper.Properties.Resources.DualWallpaper_buttonBrowse_ToolTip);
 			this.buttonBrowse.UseVisualStyleBackColor = true;
 			this.buttonBrowse.Click += new System.EventHandler(this.buttonBrowse_Click);
 			// 
@@ -148,7 +146,7 @@ namespace DualWallpaper
 			this.textBoxImage.Name = "textBoxImage";
 			this.textBoxImage.Size = new System.Drawing.Size(401, 20);
 			this.textBoxImage.TabIndex = 3;
-			this.toolTip.SetToolTip(this.textBoxImage, "Image to add to selected screens");
+			this.toolTip.SetToolTip(this.textBoxImage, global::DualWallpaper.Properties.Resources.DualWallpaper_textBoxImage_ToolTip);
 			this.textBoxImage.TextChanged += new System.EventHandler(this.textBoxImage_TextChanged);
 			// 
 			// label2
@@ -158,7 +156,7 @@ namespace DualWallpaper
 			this.label2.Name = "label2";
 			this.label2.Size = new System.Drawing.Size(39, 13);
 			this.label2.TabIndex = 2;
-			this.label2.Text = "Image:";
+			this.label2.Text = global::DualWallpaper.Properties.Resources.DualWallpaper_label2_Text;
 			// 
 			// labelScreensSelected
 			// 
@@ -175,7 +173,7 @@ namespace DualWallpaper
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(92, 13);
 			this.label1.TabIndex = 0;
-			this.label1.Text = "Screens selected:";
+			this.label1.Text = global::DualWallpaper.Properties.Resources.DualWallpaper_label1_Text;
 			// 
 			// label4
 			// 
@@ -184,8 +182,7 @@ namespace DualWallpaper
 			this.label4.Name = "label4";
 			this.label4.Size = new System.Drawing.Size(445, 13);
 			this.label4.TabIndex = 2;
-			this.label4.Text = "Select 1 or more screens above (use ctrl+Left click to select multiple) and then " +
-				"add an image.";
+			this.label4.Text = global::DualWallpaper.Properties.Resources.DualWallpaper_label4_Text;
 			// 
 			// label5
 			// 
@@ -194,7 +191,7 @@ namespace DualWallpaper
 			this.label5.Name = "label5";
 			this.label5.Size = new System.Drawing.Size(168, 13);
 			this.label5.TabIndex = 3;
-			this.label5.Text = "Repeat for any remaining screens.";
+			this.label5.Text = global::DualWallpaper.Properties.Resources.DualWallpaper_label5_Text;
 			// 
 			// buttonSave
 			// 
@@ -202,7 +199,7 @@ namespace DualWallpaper
 			this.buttonSave.Name = "buttonSave";
 			this.buttonSave.Size = new System.Drawing.Size(110, 23);
 			this.buttonSave.TabIndex = 4;
-			this.buttonSave.Text = "Save Image";
+			this.buttonSave.Text = global::DualWallpaper.Properties.Resources.DualWallpaper_buttonSave_Text;
 			this.buttonSave.UseVisualStyleBackColor = true;
 			this.buttonSave.Click += new System.EventHandler(this.buttonSave_Click);
 			// 
@@ -212,7 +209,7 @@ namespace DualWallpaper
 			this.buttonSetWallpaper.Name = "buttonSetWallpaper";
 			this.buttonSetWallpaper.Size = new System.Drawing.Size(110, 23);
 			this.buttonSetWallpaper.TabIndex = 5;
-			this.buttonSetWallpaper.Text = "Set Wallpaper";
+			this.buttonSetWallpaper.Text = global::DualWallpaper.Properties.Resources.DualWallpaper_buttonSetWallpaper_Text;
 			this.buttonSetWallpaper.UseVisualStyleBackColor = true;
 			this.buttonSetWallpaper.Click += new System.EventHandler(this.buttonSetWallpaper_Click);
 			// 
@@ -230,7 +227,7 @@ namespace DualWallpaper
 			this.groupBox2.Size = new System.Drawing.Size(216, 116);
 			this.groupBox2.TabIndex = 6;
 			this.groupBox2.TabStop = false;
-			this.groupBox2.Text = "Move Image";
+			this.groupBox2.Text = global::DualWallpaper.Properties.Resources.DualWallpaper_groupBox2_Text;
 			// 
 			// buttonMoveLeft
 			// 
@@ -239,7 +236,7 @@ namespace DualWallpaper
 			this.buttonMoveLeft.Name = "buttonMoveLeft";
 			this.buttonMoveLeft.Size = new System.Drawing.Size(32, 32);
 			this.buttonMoveLeft.TabIndex = 6;
-			this.toolTip.SetToolTip(this.buttonMoveLeft, "Move image left.");
+			this.toolTip.SetToolTip(this.buttonMoveLeft, global::DualWallpaper.Properties.Resources.DualWallpaper_buttonMoveLeft_ToolTip);
 			this.buttonMoveLeft.UseVisualStyleBackColor = true;
 			this.buttonMoveLeft.Click += new System.EventHandler(this.buttonMoveLeft_Click);
 			// 
@@ -250,7 +247,7 @@ namespace DualWallpaper
 			this.buttonMoveDown.Name = "buttonMoveDown";
 			this.buttonMoveDown.Size = new System.Drawing.Size(32, 32);
 			this.buttonMoveDown.TabIndex = 5;
-			this.toolTip.SetToolTip(this.buttonMoveDown, "Move image down.");
+			this.toolTip.SetToolTip(this.buttonMoveDown, global::DualWallpaper.Properties.Resources.DualWallpaper_buttonMoveDown_ToolTip);
 			this.buttonMoveDown.UseVisualStyleBackColor = true;
 			this.buttonMoveDown.Click += new System.EventHandler(this.buttonMoveDown_Click);
 			// 
@@ -261,7 +258,7 @@ namespace DualWallpaper
 			this.buttonMoveRight.Name = "buttonMoveRight";
 			this.buttonMoveRight.Size = new System.Drawing.Size(32, 32);
 			this.buttonMoveRight.TabIndex = 4;
-			this.toolTip.SetToolTip(this.buttonMoveRight, "Move image right.");
+			this.toolTip.SetToolTip(this.buttonMoveRight, global::DualWallpaper.Properties.Resources.DualWallpaper_buttonMoveRight_ToolTip);
 			this.buttonMoveRight.UseVisualStyleBackColor = true;
 			this.buttonMoveRight.Click += new System.EventHandler(this.buttonMoveRight_Click);
 			// 
@@ -272,7 +269,7 @@ namespace DualWallpaper
 			this.buttonMoveUp.Name = "buttonMoveUp";
 			this.buttonMoveUp.Size = new System.Drawing.Size(32, 32);
 			this.buttonMoveUp.TabIndex = 3;
-			this.toolTip.SetToolTip(this.buttonMoveUp, "Move image up.");
+			this.toolTip.SetToolTip(this.buttonMoveUp, global::DualWallpaper.Properties.Resources.DualWallpaper_buttonMoveUp_ToolTip);
 			this.buttonMoveUp.UseVisualStyleBackColor = true;
 			this.buttonMoveUp.Click += new System.EventHandler(this.buttonMoveUp_Click);
 			// 
@@ -285,7 +282,7 @@ namespace DualWallpaper
 			this.radioButtonMove100.Size = new System.Drawing.Size(73, 17);
 			this.radioButtonMove100.TabIndex = 2;
 			this.radioButtonMove100.TabStop = true;
-			this.radioButtonMove100.Text = "100 Pixels";
+			this.radioButtonMove100.Text = global::DualWallpaper.Properties.Resources.DualWallpaper_radioButtonMove100_Text;
 			this.radioButtonMove100.UseVisualStyleBackColor = true;
 			this.radioButtonMove100.CheckedChanged += new System.EventHandler(this.moveImage_CheckedChanged);
 			// 
@@ -296,7 +293,7 @@ namespace DualWallpaper
 			this.radioButtonMove10.Name = "radioButtonMove10";
 			this.radioButtonMove10.Size = new System.Drawing.Size(67, 17);
 			this.radioButtonMove10.TabIndex = 1;
-			this.radioButtonMove10.Text = "10 Pixels";
+			this.radioButtonMove10.Text = global::DualWallpaper.Properties.Resources.DualWallpaper_radioButtonMove10_Text;
 			this.radioButtonMove10.UseVisualStyleBackColor = true;
 			this.radioButtonMove10.CheckedChanged += new System.EventHandler(this.moveImage_CheckedChanged);
 			// 
@@ -307,7 +304,7 @@ namespace DualWallpaper
 			this.radioButtonMove1.Name = "radioButtonMove1";
 			this.radioButtonMove1.Size = new System.Drawing.Size(56, 17);
 			this.radioButtonMove1.TabIndex = 0;
-			this.radioButtonMove1.Text = "1 Pixel";
+			this.radioButtonMove1.Text = global::DualWallpaper.Properties.Resources.DualWallpaper_radioButtonMove1_Text;
 			this.radioButtonMove1.UseVisualStyleBackColor = true;
 			this.radioButtonMove1.CheckedChanged += new System.EventHandler(this.moveImage_CheckedChanged);
 			// 
@@ -323,7 +320,7 @@ namespace DualWallpaper
 			this.groupBox3.Size = new System.Drawing.Size(216, 116);
 			this.groupBox3.TabIndex = 7;
 			this.groupBox3.TabStop = false;
-			this.groupBox3.Text = "Zoom Image";
+			this.groupBox3.Text = global::DualWallpaper.Properties.Resources.DualWallpaper_groupBox3_Text;
 			// 
 			// buttonZoomOut
 			// 
@@ -332,7 +329,7 @@ namespace DualWallpaper
 			this.buttonZoomOut.Name = "buttonZoomOut";
 			this.buttonZoomOut.Size = new System.Drawing.Size(32, 32);
 			this.buttonZoomOut.TabIndex = 4;
-			this.toolTip.SetToolTip(this.buttonZoomOut, "Zoom out.");
+			this.toolTip.SetToolTip(this.buttonZoomOut, global::DualWallpaper.Properties.Resources.DualWallpaper_buttonZoomOut_ToolTip);
 			this.buttonZoomOut.UseVisualStyleBackColor = true;
 			this.buttonZoomOut.Click += new System.EventHandler(this.buttonZoomOut_Click);
 			// 
@@ -343,7 +340,7 @@ namespace DualWallpaper
 			this.buttonZoomIn.Name = "buttonZoomIn";
 			this.buttonZoomIn.Size = new System.Drawing.Size(32, 32);
 			this.buttonZoomIn.TabIndex = 3;
-			this.toolTip.SetToolTip(this.buttonZoomIn, "Zoom in.");
+			this.toolTip.SetToolTip(this.buttonZoomIn, global::DualWallpaper.Properties.Resources.DualWallpaper_buttonZoomIn_ToolTip);
 			this.buttonZoomIn.UseVisualStyleBackColor = true;
 			this.buttonZoomIn.Click += new System.EventHandler(this.buttonZoomIn_Click);
 			// 
@@ -356,7 +353,7 @@ namespace DualWallpaper
 			this.radioButtonZoom20.Size = new System.Drawing.Size(45, 17);
 			this.radioButtonZoom20.TabIndex = 2;
 			this.radioButtonZoom20.TabStop = true;
-			this.radioButtonZoom20.Text = "20%";
+			this.radioButtonZoom20.Text = global::DualWallpaper.Properties.Resources.DualWallpaper_radioButtonZoom20_Text;
 			this.radioButtonZoom20.UseVisualStyleBackColor = true;
 			// 
 			// radioButtonZoom5
@@ -367,7 +364,7 @@ namespace DualWallpaper
 			this.radioButtonZoom5.Size = new System.Drawing.Size(39, 17);
 			this.radioButtonZoom5.TabIndex = 1;
 			this.radioButtonZoom5.TabStop = true;
-			this.radioButtonZoom5.Text = "5%";
+			this.radioButtonZoom5.Text = global::DualWallpaper.Properties.Resources.DualWallpaper_radioButtonZoom5_Text;
 			this.radioButtonZoom5.UseVisualStyleBackColor = true;
 			// 
 			// radioButtonZoom1
@@ -378,7 +375,7 @@ namespace DualWallpaper
 			this.radioButtonZoom1.Size = new System.Drawing.Size(39, 17);
 			this.radioButtonZoom1.TabIndex = 0;
 			this.radioButtonZoom1.TabStop = true;
-			this.radioButtonZoom1.Text = "1%";
+			this.radioButtonZoom1.Text = global::DualWallpaper.Properties.Resources.DualWallpaper_radioButtonZoom1_Text;
 			this.radioButtonZoom1.UseVisualStyleBackColor = true;
 			// 
 			// tabControl1
@@ -408,7 +405,7 @@ namespace DualWallpaper
 			this.tabPageAdd.Padding = new System.Windows.Forms.Padding(3);
 			this.tabPageAdd.Size = new System.Drawing.Size(750, 127);
 			this.tabPageAdd.TabIndex = 0;
-			this.tabPageAdd.Text = "Add Image";
+			this.tabPageAdd.Text = global::DualWallpaper.Properties.Resources.DualWallpaper_tabPageAdd_Text;
 			this.tabPageAdd.UseVisualStyleBackColor = true;
 			// 
 			// cmdChangeBackground
@@ -417,7 +414,7 @@ namespace DualWallpaper
 			this.cmdChangeBackground.Name = "cmdChangeBackground";
 			this.cmdChangeBackground.Size = new System.Drawing.Size(75, 23);
 			this.cmdChangeBackground.TabIndex = 14;
-			this.cmdChangeBackground.Text = "Change";
+			this.cmdChangeBackground.Text = global::DualWallpaper.Properties.Resources.DualWallpaper_cmdChangeBackground_Text;
 			this.cmdChangeBackground.UseVisualStyleBackColor = true;
 			this.cmdChangeBackground.Click += new System.EventHandler(this.cmdChangeBackground_Click);
 			// 
@@ -428,7 +425,7 @@ namespace DualWallpaper
 			this.label6.Name = "label6";
 			this.label6.Size = new System.Drawing.Size(95, 13);
 			this.label6.TabIndex = 13;
-			this.label6.Text = "Background Color:";
+			this.label6.Text = global::DualWallpaper.Properties.Resources.DualWallpaper_label6_Text;
 			// 
 			// pbxBackGroundColor
 			// 
@@ -450,7 +447,7 @@ namespace DualWallpaper
 			this.tabPageMove.Padding = new System.Windows.Forms.Padding(3);
 			this.tabPageMove.Size = new System.Drawing.Size(750, 127);
 			this.tabPageMove.TabIndex = 1;
-			this.tabPageMove.Text = "Move/Zoom Image";
+			this.tabPageMove.Text = global::DualWallpaper.Properties.Resources.DualWallpaper_tabPageMove_Text;
 			this.tabPageMove.UseVisualStyleBackColor = true;
 			// 
 			// DualWallpaper

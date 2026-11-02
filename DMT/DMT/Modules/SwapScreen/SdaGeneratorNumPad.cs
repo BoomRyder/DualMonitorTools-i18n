@@ -20,6 +20,7 @@
 using DMT.Library.Environment;
 using DMT.Library.Extensions;
 using DMT.Library.HotKeys;
+using DMT.Resources;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
@@ -72,39 +73,39 @@ namespace DMT.Modules.SwapScreen
 				rect = allMonitors[screenIndex].WorkingArea;
 
 				// 1 - bottom left quadrant
-				description = string.Format("Screen {0} - bottom left quadrant", screenIndex + 1);
+				description = string.Format(SwapScreenStrings.Sda_Screen_BottomLeft, screenIndex + 1);
 				SetDefaultSda(screenIndex, 1, rect.BottomLeftQuadrant(), description, sdaControllers, registrationErrors);
 
 				// 2 - bottom half
-				description = string.Format("Screen {0} - bottom half", screenIndex + 1);
+				description = string.Format(SwapScreenStrings.Sda_Screen_BottomHalf, screenIndex + 1);
 				SetDefaultSda(screenIndex, 2, rect.BottomHalf(), description, sdaControllers, registrationErrors);
 
 				// 3 - bottom right quadrant
-				description = string.Format("Screen {0} - bottom right quadrant", screenIndex + 1);
+				description = string.Format(SwapScreenStrings.Sda_Screen_BottomRight, screenIndex + 1);
 				SetDefaultSda(screenIndex, 3, rect.BottomRightQuadrant(), description, sdaControllers, registrationErrors);
 
 				// 4 - left half
-				description = string.Format("Screen {0} - left half", screenIndex + 1);
+				description = string.Format(SwapScreenStrings.Sda_Screen_LeftHalf, screenIndex + 1);
 				SetDefaultSda(screenIndex, 4, rect.LeftHalf(), description, sdaControllers, registrationErrors);
 
 				// 5 - full screen
-				description = string.Format("Screen {0}", screenIndex + 1);
+				description = string.Format(SwapScreenStrings.Sda_Screen_Text, screenIndex + 1);
 				SetDefaultSda(screenIndex, 5, rect, description, sdaControllers, registrationErrors);
 
 				// 6 - right half
-				description = string.Format("Screen {0} - right half", screenIndex + 1);
+				description = string.Format(SwapScreenStrings.Sda_Screen_RightHalf, screenIndex + 1);
 				SetDefaultSda(screenIndex, 6, rect.RightHalf(), description, sdaControllers, registrationErrors);
 
 				// 7 - top left quadrant
-				description = string.Format("Screen {0} - top left quadrant", screenIndex + 1);
+				description = string.Format(SwapScreenStrings.Sda_Screen_TopLeft, screenIndex + 1);
 				SetDefaultSda(screenIndex, 7, rect.TopLeftQuadrant(), description, sdaControllers, registrationErrors);
 
 				// 8 - top half
-				description = string.Format("Screen {0} - top half", screenIndex + 1);
+				description = string.Format(SwapScreenStrings.Sda_Screen_TopHalf, screenIndex + 1);
 				SetDefaultSda(screenIndex, 8, rect.TopHalf(), description, sdaControllers, registrationErrors);
 
 				// 9 - top right quadrant
-				description = string.Format("Screen {0} - top right quadrant", screenIndex + 1);
+				description = string.Format(SwapScreenStrings.Sda_Screen_TopRight, screenIndex + 1);
 				SetDefaultSda(screenIndex, 9, rect.TopRightQuadrant(), description, sdaControllers, registrationErrors);
 			}
 		}

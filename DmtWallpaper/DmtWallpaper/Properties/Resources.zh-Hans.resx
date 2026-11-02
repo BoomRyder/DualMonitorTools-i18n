@@ -125,4 +125,25 @@
     <value>本程序不提供任何担保。
 这是自由软件，欢迎在特定条件下再分发；详情请见 COPYING.txt 文件。</value>
   </data>
+  <data name="DmtWallpaperForm_imageBlender_Text" xml:space="preserve">
+    <value>imageBlender</value>
+  </data>
+  <data name="SettingsForm_label1_Text" xml:space="preserve">
+    <value>此屏幕保护程序是 Dual Monitor Tools 的一部分，在屏保运行时显示由 DMT Wallpaper Changer 生成的壁纸。</value>
+  </data>
+  <data name="SettingsForm_label2_Text" xml:space="preserve">
+    <value>壁纸图像来源：</value>
+  </data>
+  <data name="SettingsForm_label3_Text" xml:space="preserve">
+    <value>此功能需要 DMT 正在运行且壁纸切换器已激活。</value>
+  </data>
+  <data name="SettingsForm_buttonClose_Text" xml:space="preserve">
+    <value>关闭</value>
+  </data>
+  <data name="SettingsForm_textBoxFilename_NoWallpaper" xml:space="preserve">
+    <value>DMT 未运行，或者没有在生成壁纸。</value>
+  </data>
+  <data name="SettingsForm_labelProductName_Text_Format" xml:space="preserve">
+    <value>{0}  -  版本 {1}</value>
+  </data>
 </root>

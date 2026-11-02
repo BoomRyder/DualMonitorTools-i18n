@@ -48,8 +48,7 @@
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(675, 39);
 			this.label1.TabIndex = 0;
-			this.label1.Text = "This screen saver is part of Dual Monitor Tools and shows the wallpaper generated" +
-    " by DMT Wallpaper Changer when the screen saver is running.";
+			this.label1.Text = global::DmtWallpaper.Properties.Resources.SettingsForm_label1_Text;
 			// 
 			// label2
 			// 
@@ -58,7 +57,7 @@
 			this.label2.Name = "label2";
 			this.label2.Size = new System.Drawing.Size(142, 13);
 			this.label2.TabIndex = 1;
-			this.label2.Text = "Wallpaper image taken from:";
+			this.label2.Text = global::DmtWallpaper.Properties.Resources.SettingsForm_label2_Text;
 			// 
 			// textBoxFilename
 			// 
@@ -75,7 +74,7 @@
 			this.label3.Name = "label3";
 			this.label3.Size = new System.Drawing.Size(349, 13);
 			this.label3.TabIndex = 3;
-			this.label3.Text = "DMT must be running and the Wallpaper Changer active for this to work.";
+			this.label3.Text = global::DmtWallpaper.Properties.Resources.SettingsForm_label3_Text;
 			// 
 			// buttonClose
 			// 
@@ -83,7 +82,7 @@
 			this.buttonClose.Name = "buttonClose";
 			this.buttonClose.Size = new System.Drawing.Size(75, 23);
 			this.buttonClose.TabIndex = 4;
-			this.buttonClose.Text = "Close";
+			this.buttonClose.Text = global::DmtWallpaper.Properties.Resources.SettingsForm_buttonClose_Text;
 			this.buttonClose.UseVisualStyleBackColor = true;
 			this.buttonClose.Click += new System.EventHandler(this.buttonClose_Click);
 			// 
