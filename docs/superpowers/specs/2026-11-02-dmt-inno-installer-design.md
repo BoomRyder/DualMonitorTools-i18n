@@ -100,13 +100,15 @@ Name: "chinesesimplified"; MessagesFile: "compiler:Languages\ChineseSimplified.i
 
 三个 `zh-Hans\*.resources.dll` 是本设计**相对原 MSI 新增**的必需件（原 MSI 无 i18n 子系统）。
 
-### 4.2 系统目录 `{sys}` = `C:\Windows\System32\`
+### 4.2 系统目录 `{sysnative}` = `C:\Windows\System32\`
 
 | 来源 | 说明 |
 |---|---|
 | `..\DmtWallpaper\DmtWallpaper\bin\Release\DmtWallpaper.scr` | 32256 B |
 
 **明确 deviate 原 MSI**：原 MSI 装到 `SystemFolder`（32 位包下解析为 `SysWOW64`），导致屏保不出现在 64 位 `desk.cpl` 的屏保下拉列表里。本设计装到 `System32`。实测 `System32` 下有 6 个 `.scr`、`SysWOW64` 下只有 3 个，且 `desk.cpl` 是 x64，可佐证。
+
+**关键坑（实现时实测发现，初稿判断有误）**：32 位安装包用 `DestDir: "{sys}"` **不会**落到真正的 `System32` —— WOW64 文件系统重定向会把它重定向到 `C:\Windows\SysWOW64`。实测证据：首轮安装后 `System32\DmtWallpaper.scr` 不存在、`SysWOW64\DmtWallpaper.scr` 存在（32768 B），与原 MSI 的缺陷完全一样。必须改用 `DestDir: "{sysnative}"`（Inno 提供的免重定向常量，已实测在 Inno 7 下编译并落地到真正的 System32）。`IssInstallsScreenSaverIntoTheRealSystem32` 与 `Test-Uninstall.ps1` 的双向断言现在钉住这一点。
 
 ### 4.3 开始菜单 `{group}`
 
@@ -123,7 +125,7 @@ Name: "chinesesimplified"; MessagesFile: "compiler:Languages\ChineseSimplified.i
 
 | 根 | 键 | 值 | Flags | 与原 MSI |
 |---|---|---|---|---|
-| `HKLM` | `Software\GNE\Dual Monitor Tools` | `ScreenSaverInstalled` = DWORD `1` | `uninsdeletevalue` | ✅ 一致（原 MSI 也写，源码中无任何读写，纯标记） |
+| `HKLM` | `Software\GNE\Dual Monitor Tools` | `ScreenSaverInstalled` = DWORD `1` | `uninsdeletekey` | ✅ 一致（原 MSI 也写，源码中无任何读写，纯标记）。`uninsdeletevalue` 只删值、会留下空键，故改用 `uninsdeletekey` |
 | `HKCU` | `Software\Classes\directory\Background\shell\GNE_DualMonitorTools` | （空键） | `uninsdeletekey` | ✅ 一致 |
 
 因 `ArchitecturesInstallIn64BitMode` 未设，`HKLM\Software\GNE\...` 在 64 位系统上实际落到 `HKLM\SOFTWARE\WOW6432Node\GNE\...` —— 已实测，与原 MSI 相同。

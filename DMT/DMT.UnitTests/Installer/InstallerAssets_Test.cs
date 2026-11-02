@@ -170,6 +170,35 @@ namespace DMT.UnitTests.Installer
 				"the " + name + " error box must use CustomMessage()");
 		}
 
+		[Test]
+		public void IssInstallsScreenSaverIntoTheRealSystem32()
+		{
+			string iss = ReadIss();
+
+			// A 32-bit installer writing "{sys}" is redirected to SysWOW64 by
+			// WOW64, where the 64-bit desk.cpl never lists the screen saver.
+			// Only {sysnative} reaches the real System32.
+			Assert.IsTrue(iss.IndexOf(@"DestDir: ""{sysnative}""", StringComparison.Ordinal) >= 0,
+				"the screen saver must be installed with DestDir {sysnative}");
+
+			Assert.IsFalse(iss.IndexOf(@"DestDir: ""{sys}""", StringComparison.Ordinal) >= 0,
+				"DestDir {sys} lands in SysWOW64 and hides the screen saver");
+		}
+
+		[TestCase("CurUninstallStepChanged")]
+		[TestCase("ClearWallpaperIfOurs")]
+		[TestCase("RegDeleteKeyIncludingSubkeys(HKCU, DmtProductKey)")]
+		[TestCase("RegDeleteKeyIncludingSubkeys(HKCU, DmtContextMenuKey)")]
+		[TestCase("RegDeleteValue(HKCU, AutoStartRunKey, AutoStartValueName)")]
+		[TestCase("DelTree(DataDir, True, True, True)")]
+		public void IssCleansUpRuntimeArtefactsOnUninstall(string expectedFragment)
+		{
+			string iss = ReadIss();
+
+			Assert.IsTrue(iss.IndexOf(expectedFragment, StringComparison.Ordinal) >= 0,
+				"missing uninstall step: " + expectedFragment);
+		}
+
 		[TestCase(@"DMT\DMT\bin\Release\DMT.exe")]
 		[TestCase(@"DMT\DMT\bin\Release\DMT.exe.config")]
 		[TestCase(@"DMT\DMT\bin\Release\zh-Hans\DMT.resources.dll")]

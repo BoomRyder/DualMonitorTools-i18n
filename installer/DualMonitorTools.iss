@@ -71,7 +71,7 @@ Source: "{#RepoRoot}\COPYING.txt"; DestDir: "{app}"; Flags: ignoreversion
 Source: "{#RepoRoot}\README.md"; DestDir: "{app}"; Flags: ignoreversion
 
 ; 屏保 —— 装到 System32，64 位 desk.cpl 才能枚举到（原 MSI 装 SysWOW64 是缺陷）
-Source: "{#RepoRoot}\DmtWallpaper\DmtWallpaper\bin\Release\DmtWallpaper.scr"; DestDir: "{sys}"; Flags: ignoreversion
+Source: "{#RepoRoot}\DmtWallpaper\DmtWallpaper\bin\Release\DmtWallpaper.scr"; DestDir: "{sysnative}"; Flags: ignoreversion
 
 [Icons]
 Name: "{group}\{#MyAppName}"; Filename: "{app}\DMT.exe"
@@ -79,7 +79,7 @@ Name: "{group}\DualWallpaper"; Filename: "{app}\DualWallpaper.exe"
 
 [Registry]
 ; 与原 MSI 一致：仅标记值，源码中无任何读写
-Root: HKLM; Subkey: "Software\GNE\Dual Monitor Tools"; ValueType: dword; ValueName: "ScreenSaverInstalled"; ValueData: "1"; Flags: uninsdeletevalue
+Root: HKLM; Subkey: "Software\GNE\Dual Monitor Tools"; ValueType: dword; ValueName: "ScreenSaverInstalled"; ValueData: "1"; Flags: uninsdeletekey
 ; 与原 MSI 一致：右键菜单空键。注意运行期会生成子命令，卸载由 [Code] 兜底
 Root: HKCU; Subkey: "Software\Classes\directory\Background\shell\GNE_DualMonitorTools"; Flags: uninsdeletekey
 
@@ -91,8 +91,17 @@ const
 	LegacyMsiProductCode =
 		'SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{59CFB0C1-3F5B-49B6-B1C9-C473153C1257}';
 	LegacyInstalledKey = 'SOFTWARE\GNE\Dual Monitor Tools';
+	LegacyVendorKey = 'SOFTWARE\GNE';
 	DotNetClientKey = 'SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Client';
 	DmtWindowName = 'DMT_GUI_WINDOW';
+	DmtProductKey = 'SOFTWARE\Dual Monitor Tools';
+	DmtContextMenuKey = 'Software\Classes\directory\Background\shell\GNE_DualMonitorTools';
+	AutoStartRunKey = 'Software\Microsoft\Windows\CurrentVersion\Run';
+	AutoStartValueName = 'GNE_DualMonitorTools';
+	DesktopKey = 'Control Panel\Desktop';
+	DataFolderName = 'Dual Monitor Tools';
+	SPI_SETDESKWALLPAPER = 20;
+	SPIF_UPDATEINIFILE = 1;
 
 function DotNetIsPresent(): Boolean;
 var
@@ -135,4 +144,96 @@ begin
 	end;
 
 	Result := True;
+end;
+
+function SystemParametersInfoW(uAction: Cardinal; uParam: Cardinal; pvParam: String;
+	fWinIni: Cardinal): Boolean;
+	external 'SystemParametersInfoW@user32.dll stdcall';
+
+procedure ClearWallpaperIfOurs();
+var
+	Wallpaper: String;
+	OurPrefix: String;
+begin
+	try
+		if not RegQueryStringValue(HKCU, DesktopKey, 'Wallpaper', Wallpaper) then
+			Exit;
+
+		if Wallpaper = '' then
+			Exit;
+
+		OurPrefix := ExpandConstant('{userappdata}\' + DataFolderName + '\');
+
+		if CompareText(Copy(Wallpaper, 1, Length(OurPrefix)), OurPrefix) <> 0 then
+			Exit;
+
+		// Option (a): clear to a solid colour instead of pointing at a file a
+		// trimmed Windows install may not ship.
+		RegWriteStringValue(HKCU, DesktopKey, 'Wallpaper', '');
+		SystemParametersInfoW(SPI_SETDESKWALLPAPER, 0, '', SPIF_UPDATEINIFILE);
+		Log('cleared DMT-managed wallpaper: ' + Wallpaper);
+	except
+		Log('ClearWallpaperIfOurs failed');
+	end;
+end;
+
+procedure CurUninstallStepChanged(CurUninstallStep: TUninstallStep);
+var
+	DataDir: String;
+begin
+	if CurUninstallStep <> usPostUninstall then
+		Exit;
+
+	// 1-2. Wallpaper: only when it points into our data directory.
+	ClearWallpaperIfOurs();
+
+	// 3. Interface language and wallpaper path.
+	try
+		RegDeleteKeyIncludingSubkeys(HKCU, DmtProductKey);
+		Log('deleted HKCU\' + DmtProductKey);
+	except
+		Log('failed to delete HKCU\' + DmtProductKey);
+	end;
+
+	// 3b. [Registry] removes our key but leaves the empty vendor key behind.
+	try
+		RegDeleteKeyIfEmpty(HKLM, LegacyInstalledKey);
+		RegDeleteKeyIfEmpty(HKLM, LegacyVendorKey);
+		Log('removed empty vendor key');
+	except
+		Log('failed to remove empty vendor key');
+	end;
+
+	// 4. Auto-start value.
+	try
+		RegDeleteValue(HKCU, AutoStartRunKey, AutoStartValueName);
+		Log('deleted Run value ' + AutoStartValueName);
+	except
+		Log('failed to delete Run value');
+	end;
+
+	// 5. Explorer context menu subtree, including the sub-commands the program
+	//    creates at run time. Deleting the empty key alone would leave them.
+	try
+		RegDeleteKeyIncludingSubkeys(HKCU, DmtContextMenuKey);
+		Log('deleted ' + DmtContextMenuKey);
+	except
+		Log('failed to delete context menu subtree');
+	end;
+
+	// 6. Program data directory.
+	DataDir := ExpandConstant('{userappdata}\' + DataFolderName);
+	try
+		DelTree(DataDir, True, True, True);
+		Log('deleted ' + DataDir);
+	except
+		Log('failed to delete ' + DataDir);
+	end;
+
+	// 7. Leftover update download.
+	try
+		DeleteFile(GetEnv('TEMP') + '\DualMonitorTools.msi');
+	except
+		Log('failed to delete temp msi');
+	end;
 end;
