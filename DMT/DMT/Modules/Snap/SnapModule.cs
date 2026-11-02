@@ -223,8 +223,8 @@ namespace DMT.Modules.Snap
 		public override ModuleOptionNode GetOptionNodes()
 		{
 			Image image = new Bitmap(Properties.Resources.DualSnap_16_16);
-			ModuleOptionNodeBranch options = new ModuleOptionNodeBranch("Snap", image, new SnapRootOptionsPanel());
-			options.Nodes.Add(new ModuleOptionNodeLeaf("General", image, new SnapGeneralOptionsPanel(this)));
+			ModuleOptionNodeBranch options = new ModuleOptionNodeBranch(DMT.Resources.SnapStrings.Node_Snap, image, new SnapRootOptionsPanel());
+			options.Nodes.Add(new ModuleOptionNodeLeaf(DMT.Resources.SnapStrings.Node_General, image, new SnapGeneralOptionsPanel(this)));
 
 			return options;
 		}

@@ -42,8 +42,7 @@
 			this.label3.Name = "label3";
 			this.label3.Size = new System.Drawing.Size(409, 13);
 			this.label3.TabIndex = 7;
-			this.label3.Text = "Settings to control copying the image on the primary monitor to the secondary mon" +
-    "itor.";
+			this.label3.Text = global::DMT.Resources.SnapStrings.SnapRootOptionsPanel_label3_Text;
 			// 
 			// label2
 			// 
@@ -63,7 +62,7 @@
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(103, 20);
 			this.label1.TabIndex = 5;
-			this.label1.Text = "Snap Module";
+			this.label1.Text = global::DMT.Resources.SnapStrings.SnapRootOptionsPanel_label1_Text;
 			// 
 			// pictureBox1
 			// 

@@ -87,14 +87,14 @@
 			// 
 			this.snapToolStripMenuItem.Name = "snapToolStripMenuItem";
 			this.snapToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
-			this.snapToolStripMenuItem.Text = "Snap!";
+			this.snapToolStripMenuItem.Text = global::DMT.Resources.SnapStrings.SnapForm_snapToolStripMenuItem_Text;
 			this.snapToolStripMenuItem.Click += new System.EventHandler(this.snapToolStripMenuItem_Click);
 			// 
 			// showSnapToolStripMenuItem
 			// 
 			this.showSnapToolStripMenuItem.Name = "showSnapToolStripMenuItem";
 			this.showSnapToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
-			this.showSnapToolStripMenuItem.Text = "Show Snap";
+			this.showSnapToolStripMenuItem.Text = global::DMT.Resources.SnapStrings.SnapForm_showSnapToolStripMenuItem_Text;
 			this.showSnapToolStripMenuItem.Click += new System.EventHandler(this.showSnapToolStripMenuItem_Click);
 			// 
 			// snapsToolStripMenuItem
@@ -103,7 +103,7 @@
             this.xToolStripMenuItem});
 			this.snapsToolStripMenuItem.Name = "snapsToolStripMenuItem";
 			this.snapsToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
-			this.snapsToolStripMenuItem.Text = "Snaps";
+			this.snapsToolStripMenuItem.Text = global::DMT.Resources.SnapStrings.SnapForm_snapsToolStripMenuItem_Text;
 			this.snapsToolStripMenuItem.DropDownOpening += new System.EventHandler(this.snapsToolStripMenuItem_DropDownOpening);
 			// 
 			// xToolStripMenuItem
@@ -113,7 +113,7 @@
 			this.xToolStripMenuItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
 			this.xToolStripMenuItem.Name = "xToolStripMenuItem";
 			this.xToolStripMenuItem.Size = new System.Drawing.Size(128, 102);
-			this.xToolStripMenuItem.Text = "x";
+			this.xToolStripMenuItem.Text = global::DMT.Resources.SnapStrings.SnapForm_xToolStripMenuItem_Text;
 			// 
 			// toolStripMenuItem1
 			// 
@@ -125,7 +125,7 @@
 			this.expandToFillScreenToolStripMenuItem.CheckOnClick = true;
 			this.expandToFillScreenToolStripMenuItem.Name = "expandToFillScreenToolStripMenuItem";
 			this.expandToFillScreenToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
-			this.expandToFillScreenToolStripMenuItem.Text = "Expand to Fill Screen";
+			this.expandToFillScreenToolStripMenuItem.Text = global::DMT.Resources.SnapStrings.SnapForm_expandToFillScreenToolStripMenuItem_Text;
 			this.expandToFillScreenToolStripMenuItem.Click += new System.EventHandler(this.expandToFillScreenToolStripMenuItem_Click);
 			// 
 			// shrinkToFitScreenToolStripMenuItem
@@ -133,7 +133,7 @@
 			this.shrinkToFitScreenToolStripMenuItem.CheckOnClick = true;
 			this.shrinkToFitScreenToolStripMenuItem.Name = "shrinkToFitScreenToolStripMenuItem";
 			this.shrinkToFitScreenToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
-			this.shrinkToFitScreenToolStripMenuItem.Text = "Shrink to Fit Screen";
+			this.shrinkToFitScreenToolStripMenuItem.Text = global::DMT.Resources.SnapStrings.SnapForm_shrinkToFitScreenToolStripMenuItem_Text;
 			this.shrinkToFitScreenToolStripMenuItem.Click += new System.EventHandler(this.shrinkToFitScreenToolStripMenuItem_Click);
 			// 
 			// maintainAspectRatioToolStripMenuItem
@@ -141,7 +141,7 @@
 			this.maintainAspectRatioToolStripMenuItem.CheckOnClick = true;
 			this.maintainAspectRatioToolStripMenuItem.Name = "maintainAspectRatioToolStripMenuItem";
 			this.maintainAspectRatioToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
-			this.maintainAspectRatioToolStripMenuItem.Text = "Maintain Aspect Ratio";
+			this.maintainAspectRatioToolStripMenuItem.Text = global::DMT.Resources.SnapStrings.SnapForm_maintainAspectRatioToolStripMenuItem_Text;
 			this.maintainAspectRatioToolStripMenuItem.Click += new System.EventHandler(this.maintainAspectRatioToolStripMenuItem_Click);
 			// 
 			// toolStripMenuItem3
@@ -153,14 +153,14 @@
 			// 
 			this.copyToolStripMenuItem.Name = "copyToolStripMenuItem";
 			this.copyToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
-			this.copyToolStripMenuItem.Text = "Copy";
+			this.copyToolStripMenuItem.Text = global::DMT.Resources.SnapStrings.SnapForm_copyToolStripMenuItem_Text;
 			this.copyToolStripMenuItem.Click += new System.EventHandler(this.copyToolStripMenuItem_Click);
 			// 
 			// saveAsToolStripMenuItem
 			// 
 			this.saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
 			this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
-			this.saveAsToolStripMenuItem.Text = "Save As...";
+			this.saveAsToolStripMenuItem.Text = global::DMT.Resources.SnapStrings.SnapForm_saveAsToolStripMenuItem_Text;
 			this.saveAsToolStripMenuItem.Click += new System.EventHandler(this.saveAsToolStripMenuItem_Click);
 			// 
 			// toolStripMenuItem2
@@ -172,14 +172,14 @@
 			// 
 			this.deleteCurrentSnapToolStripMenuItem.Name = "deleteCurrentSnapToolStripMenuItem";
 			this.deleteCurrentSnapToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
-			this.deleteCurrentSnapToolStripMenuItem.Text = "Delete Current Snap";
+			this.deleteCurrentSnapToolStripMenuItem.Text = global::DMT.Resources.SnapStrings.SnapForm_deleteCurrentSnapToolStripMenuItem_Text;
 			this.deleteCurrentSnapToolStripMenuItem.Click += new System.EventHandler(this.deleteCurrentSnapToolStripMenuItem_Click);
 			// 
 			// deleteAllSnapsToolStripMenuItem
 			// 
 			this.deleteAllSnapsToolStripMenuItem.Name = "deleteAllSnapsToolStripMenuItem";
 			this.deleteAllSnapsToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
-			this.deleteAllSnapsToolStripMenuItem.Text = "Delete All Snaps...";
+			this.deleteAllSnapsToolStripMenuItem.Text = global::DMT.Resources.SnapStrings.SnapForm_deleteAllSnapsToolStripMenuItem_Text;
 			this.deleteAllSnapsToolStripMenuItem.Click += new System.EventHandler(this.deleteAllSnapsToolStripMenuItem_Click);
 			// 
 			// panel

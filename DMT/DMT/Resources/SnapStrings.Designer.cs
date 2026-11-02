@@ -140,5 +140,203 @@ namespace DMT.Resources {
                 return ResourceManager.GetString("TakeWinSnapDescription", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Snap!.
+        /// </summary>
+        internal static string SnapForm_snapToolStripMenuItem_Text {
+            get {
+                return ResourceManager.GetString("SnapForm_snapToolStripMenuItem_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Show Snap.
+        /// </summary>
+        internal static string SnapForm_showSnapToolStripMenuItem_Text {
+            get {
+                return ResourceManager.GetString("SnapForm_showSnapToolStripMenuItem_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Snaps.
+        /// </summary>
+        internal static string SnapForm_snapsToolStripMenuItem_Text {
+            get {
+                return ResourceManager.GetString("SnapForm_snapsToolStripMenuItem_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to x.
+        /// </summary>
+        internal static string SnapForm_xToolStripMenuItem_Text {
+            get {
+                return ResourceManager.GetString("SnapForm_xToolStripMenuItem_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Expand to Fill Screen.
+        /// </summary>
+        internal static string SnapForm_expandToFillScreenToolStripMenuItem_Text {
+            get {
+                return ResourceManager.GetString("SnapForm_expandToFillScreenToolStripMenuItem_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Shrink to Fit Screen.
+        /// </summary>
+        internal static string SnapForm_shrinkToFitScreenToolStripMenuItem_Text {
+            get {
+                return ResourceManager.GetString("SnapForm_shrinkToFitScreenToolStripMenuItem_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Maintain Aspect Ratio.
+        /// </summary>
+        internal static string SnapForm_maintainAspectRatioToolStripMenuItem_Text {
+            get {
+                return ResourceManager.GetString("SnapForm_maintainAspectRatioToolStripMenuItem_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Copy.
+        /// </summary>
+        internal static string SnapForm_copyToolStripMenuItem_Text {
+            get {
+                return ResourceManager.GetString("SnapForm_copyToolStripMenuItem_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Save As....
+        /// </summary>
+        internal static string SnapForm_saveAsToolStripMenuItem_Text {
+            get {
+                return ResourceManager.GetString("SnapForm_saveAsToolStripMenuItem_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Delete Current Snap.
+        /// </summary>
+        internal static string SnapForm_deleteCurrentSnapToolStripMenuItem_Text {
+            get {
+                return ResourceManager.GetString("SnapForm_deleteCurrentSnapToolStripMenuItem_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Delete All Snaps....
+        /// </summary>
+        internal static string SnapForm_deleteAllSnapsToolStripMenuItem_Text {
+            get {
+                return ResourceManager.GetString("SnapForm_deleteAllSnapsToolStripMenuItem_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to HotKeys.
+        /// </summary>
+        internal static string SnapGeneralOptionsPanel_groupBox3_Text {
+            get {
+                return ResourceManager.GetString("SnapGeneralOptionsPanel_groupBox3_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Show snap when taken.
+        /// </summary>
+        internal static string SnapGeneralOptionsPanel_checkBoxShowSnap_Text {
+            get {
+                return ResourceManager.GetString("SnapGeneralOptionsPanel_checkBoxShowSnap_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Max remembered snaps.
+        /// </summary>
+        internal static string SnapGeneralOptionsPanel_label1_Text {
+            get {
+                return ResourceManager.GetString("SnapGeneralOptionsPanel_label1_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Expand snap to fill screen.
+        /// </summary>
+        internal static string SnapGeneralOptionsPanel_checkBoxExpandSnap_Text {
+            get {
+                return ResourceManager.GetString("SnapGeneralOptionsPanel_checkBoxExpandSnap_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Shrink snap to fit screen.
+        /// </summary>
+        internal static string SnapGeneralOptionsPanel_checkBoxShrinkSnap_Text {
+            get {
+                return ResourceManager.GetString("SnapGeneralOptionsPanel_checkBoxShrinkSnap_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Maintain aspect ratio.
+        /// </summary>
+        internal static string SnapGeneralOptionsPanel_checkBoxMaintainAspectRatio_Text {
+            get {
+                return ResourceManager.GetString("SnapGeneralOptionsPanel_checkBoxMaintainAspectRatio_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Show snap on monitor.
+        /// </summary>
+        internal static string SnapGeneralOptionsPanel_label2_Text {
+            get {
+                return ResourceManager.GetString("SnapGeneralOptionsPanel_label2_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Settings to control copying the image on the primary monitor to the secondary monitor..
+        /// </summary>
+        internal static string SnapRootOptionsPanel_label3_Text {
+            get {
+                return ResourceManager.GetString("SnapRootOptionsPanel_label3_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Snap Module.
+        /// </summary>
+        internal static string SnapRootOptionsPanel_label1_Text {
+            get {
+                return ResourceManager.GetString("SnapRootOptionsPanel_label1_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to General.
+        /// </summary>
+        internal static string Node_General {
+            get {
+                return ResourceManager.GetString("Node_General", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Snap.
+        /// </summary>
+        internal static string Node_Snap {
+            get {
+                return ResourceManager.GetString("Node_Snap", resourceCulture);
+            }
+        }
     }
 }

@@ -55,7 +55,7 @@
 			this.groupBox3.Size = new System.Drawing.Size(481, 112);
 			this.groupBox3.TabIndex = 12;
 			this.groupBox3.TabStop = false;
-			this.groupBox3.Text = "HotKeys";
+			this.groupBox3.Text = global::DMT.Resources.SnapStrings.SnapGeneralOptionsPanel_groupBox3_Text;
 			// 
 			// hotKeyPanelTakeWinSnap
 			// 
@@ -88,7 +88,7 @@
 			this.checkBoxShowSnap.Name = "checkBoxShowSnap";
 			this.checkBoxShowSnap.Size = new System.Drawing.Size(138, 17);
 			this.checkBoxShowSnap.TabIndex = 11;
-			this.checkBoxShowSnap.Text = "Show snap when taken";
+			this.checkBoxShowSnap.Text = global::DMT.Resources.SnapStrings.SnapGeneralOptionsPanel_checkBoxShowSnap_Text;
 			this.checkBoxShowSnap.UseVisualStyleBackColor = true;
 			this.checkBoxShowSnap.CheckedChanged += new System.EventHandler(this.checkBoxShowSnap_CheckedChanged);
 			// 
@@ -117,7 +117,7 @@
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(119, 13);
 			this.label1.TabIndex = 9;
-			this.label1.Text = "Max remembered snaps";
+			this.label1.Text = global::DMT.Resources.SnapStrings.SnapGeneralOptionsPanel_label1_Text;
 			// 
 			// checkBoxExpandSnap
 			// 
@@ -126,7 +126,7 @@
 			this.checkBoxExpandSnap.Name = "checkBoxExpandSnap";
 			this.checkBoxExpandSnap.Size = new System.Drawing.Size(147, 17);
 			this.checkBoxExpandSnap.TabIndex = 13;
-			this.checkBoxExpandSnap.Text = "Expand snap to fill screen";
+			this.checkBoxExpandSnap.Text = global::DMT.Resources.SnapStrings.SnapGeneralOptionsPanel_checkBoxExpandSnap_Text;
 			this.checkBoxExpandSnap.UseVisualStyleBackColor = true;
 			this.checkBoxExpandSnap.CheckedChanged += new System.EventHandler(this.checkBoxExpandSnap_CheckedChanged);
 			// 
@@ -137,7 +137,7 @@
 			this.checkBoxShrinkSnap.Name = "checkBoxShrinkSnap";
 			this.checkBoxShrinkSnap.Size = new System.Drawing.Size(140, 17);
 			this.checkBoxShrinkSnap.TabIndex = 14;
-			this.checkBoxShrinkSnap.Text = "Shrink snap to fit screen";
+			this.checkBoxShrinkSnap.Text = global::DMT.Resources.SnapStrings.SnapGeneralOptionsPanel_checkBoxShrinkSnap_Text;
 			this.checkBoxShrinkSnap.UseVisualStyleBackColor = true;
 			this.checkBoxShrinkSnap.CheckedChanged += new System.EventHandler(this.checkBoxShrinkSnap_CheckedChanged);
 			// 
@@ -148,7 +148,7 @@
 			this.checkBoxMaintainAspectRatio.Name = "checkBoxMaintainAspectRatio";
 			this.checkBoxMaintainAspectRatio.Size = new System.Drawing.Size(124, 17);
 			this.checkBoxMaintainAspectRatio.TabIndex = 15;
-			this.checkBoxMaintainAspectRatio.Text = "Maintain aspect ratio";
+			this.checkBoxMaintainAspectRatio.Text = global::DMT.Resources.SnapStrings.SnapGeneralOptionsPanel_checkBoxMaintainAspectRatio_Text;
 			this.checkBoxMaintainAspectRatio.UseVisualStyleBackColor = true;
 			this.checkBoxMaintainAspectRatio.CheckedChanged += new System.EventHandler(this.checkBoxMaintainAspectRatio_CheckedChanged);
 			// 
@@ -159,7 +159,7 @@
 			this.label2.Name = "label2";
 			this.label2.Size = new System.Drawing.Size(112, 13);
 			this.label2.TabIndex = 16;
-			this.label2.Text = "Show snap on monitor";
+			this.label2.Text = global::DMT.Resources.SnapStrings.SnapGeneralOptionsPanel_label2_Text;
 			// 
 			// numericUpDownMonitor
 			// 

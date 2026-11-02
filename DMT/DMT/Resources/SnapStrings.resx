@@ -147,4 +147,70 @@
   <data name="TakeWinSnapDescription" xml:space="preserve">
     <value>Take a snapshot of the active window</value>
   </data>
+  <data name="SnapForm_snapToolStripMenuItem_Text" xml:space="preserve">
+    <value>Snap!</value>
+  </data>
+  <data name="SnapForm_showSnapToolStripMenuItem_Text" xml:space="preserve">
+    <value>Show Snap</value>
+  </data>
+  <data name="SnapForm_snapsToolStripMenuItem_Text" xml:space="preserve">
+    <value>Snaps</value>
+  </data>
+  <data name="SnapForm_xToolStripMenuItem_Text" xml:space="preserve">
+    <value>x</value>
+  </data>
+  <data name="SnapForm_expandToFillScreenToolStripMenuItem_Text" xml:space="preserve">
+    <value>Expand to Fill Screen</value>
+  </data>
+  <data name="SnapForm_shrinkToFitScreenToolStripMenuItem_Text" xml:space="preserve">
+    <value>Shrink to Fit Screen</value>
+  </data>
+  <data name="SnapForm_maintainAspectRatioToolStripMenuItem_Text" xml:space="preserve">
+    <value>Maintain Aspect Ratio</value>
+  </data>
+  <data name="SnapForm_copyToolStripMenuItem_Text" xml:space="preserve">
+    <value>Copy</value>
+  </data>
+  <data name="SnapForm_saveAsToolStripMenuItem_Text" xml:space="preserve">
+    <value>Save As...</value>
+  </data>
+  <data name="SnapForm_deleteCurrentSnapToolStripMenuItem_Text" xml:space="preserve">
+    <value>Delete Current Snap</value>
+  </data>
+  <data name="SnapForm_deleteAllSnapsToolStripMenuItem_Text" xml:space="preserve">
+    <value>Delete All Snaps...</value>
+  </data>
+  <data name="SnapGeneralOptionsPanel_groupBox3_Text" xml:space="preserve">
+    <value>HotKeys</value>
+  </data>
+  <data name="SnapGeneralOptionsPanel_checkBoxShowSnap_Text" xml:space="preserve">
+    <value>Show snap when taken</value>
+  </data>
+  <data name="SnapGeneralOptionsPanel_label1_Text" xml:space="preserve">
+    <value>Max remembered snaps</value>
+  </data>
+  <data name="SnapGeneralOptionsPanel_checkBoxExpandSnap_Text" xml:space="preserve">
+    <value>Expand snap to fill screen</value>
+  </data>
+  <data name="SnapGeneralOptionsPanel_checkBoxShrinkSnap_Text" xml:space="preserve">
+    <value>Shrink snap to fit screen</value>
+  </data>
+  <data name="SnapGeneralOptionsPanel_checkBoxMaintainAspectRatio_Text" xml:space="preserve">
+    <value>Maintain aspect ratio</value>
+  </data>
+  <data name="SnapGeneralOptionsPanel_label2_Text" xml:space="preserve">
+    <value>Show snap on monitor</value>
+  </data>
+  <data name="SnapRootOptionsPanel_label3_Text" xml:space="preserve">
+    <value>Settings to control copying the image on the primary monitor to the secondary monitor.</value>
+  </data>
+  <data name="SnapRootOptionsPanel_label1_Text" xml:space="preserve">
+    <value>Snap Module</value>
+  </data>
+  <data name="Node_General" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="Node_Snap" xml:space="preserve">
+    <value>Snap</value>
+  </data>
 </root>

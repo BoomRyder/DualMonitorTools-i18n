@@ -147,4 +147,70 @@
   <data name="TakeWinSnapDescription" xml:space="preserve">
     <value>截取活动窗口的快照</value>
   </data>
+  <data name="SnapForm_snapToolStripMenuItem_Text" xml:space="preserve">
+    <value>截图！</value>
+  </data>
+  <data name="SnapForm_showSnapToolStripMenuItem_Text" xml:space="preserve">
+    <value>显示截图</value>
+  </data>
+  <data name="SnapForm_snapsToolStripMenuItem_Text" xml:space="preserve">
+    <value>截图</value>
+  </data>
+  <data name="SnapForm_xToolStripMenuItem_Text" xml:space="preserve">
+    <value>x</value>
+  </data>
+  <data name="SnapForm_expandToFillScreenToolStripMenuItem_Text" xml:space="preserve">
+    <value>放大以铺满屏幕</value>
+  </data>
+  <data name="SnapForm_shrinkToFitScreenToolStripMenuItem_Text" xml:space="preserve">
+    <value>缩小以适应屏幕</value>
+  </data>
+  <data name="SnapForm_maintainAspectRatioToolStripMenuItem_Text" xml:space="preserve">
+    <value>保持宽高比</value>
+  </data>
+  <data name="SnapForm_copyToolStripMenuItem_Text" xml:space="preserve">
+    <value>复制</value>
+  </data>
+  <data name="SnapForm_saveAsToolStripMenuItem_Text" xml:space="preserve">
+    <value>另存为...</value>
+  </data>
+  <data name="SnapForm_deleteCurrentSnapToolStripMenuItem_Text" xml:space="preserve">
+    <value>删除当前截图</value>
+  </data>
+  <data name="SnapForm_deleteAllSnapsToolStripMenuItem_Text" xml:space="preserve">
+    <value>删除全部截图...</value>
+  </data>
+  <data name="SnapGeneralOptionsPanel_groupBox3_Text" xml:space="preserve">
+    <value>热键</value>
+  </data>
+  <data name="SnapGeneralOptionsPanel_checkBoxShowSnap_Text" xml:space="preserve">
+    <value>截图后立即显示</value>
+  </data>
+  <data name="SnapGeneralOptionsPanel_label1_Text" xml:space="preserve">
+    <value>最多保留的截图数</value>
+  </data>
+  <data name="SnapGeneralOptionsPanel_checkBoxExpandSnap_Text" xml:space="preserve">
+    <value>放大截图以铺满屏幕</value>
+  </data>
+  <data name="SnapGeneralOptionsPanel_checkBoxShrinkSnap_Text" xml:space="preserve">
+    <value>缩小截图以适应屏幕</value>
+  </data>
+  <data name="SnapGeneralOptionsPanel_checkBoxMaintainAspectRatio_Text" xml:space="preserve">
+    <value>保持宽高比</value>
+  </data>
+  <data name="SnapGeneralOptionsPanel_label2_Text" xml:space="preserve">
+    <value>在显示器上显示截图</value>
+  </data>
+  <data name="SnapRootOptionsPanel_label3_Text" xml:space="preserve">
+    <value>控制把主显示器画面复制到副显示器的设置。</value>
+  </data>
+  <data name="SnapRootOptionsPanel_label1_Text" xml:space="preserve">
+    <value>截图模块</value>
+  </data>
+  <data name="Node_General" xml:space="preserve">
+    <value>常规</value>
+  </data>
+  <data name="Node_Snap" xml:space="preserve">
+    <value>截图</value>
+  </data>
 </root>
