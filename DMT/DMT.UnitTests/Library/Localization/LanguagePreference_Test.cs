@@ -1,4 +1,4 @@
-﻿#region copyright
+#region copyright
 // This file is part of Dual Monitor Tools which is a set of tools to assist
 // users with multiple monitor setups.
 // Copyright (C) 2025  The Dual Monitor Tools Chinese translation project
@@ -41,12 +41,15 @@ namespace DMT.UnitTests.Library.Localization
 	public class LanguagePreference_Test
 	{
 		// The tests below touch HKCU\SOFTWARE\Dual Monitor Tools\DMT\Language.
-		// The original value is saved and restored so the machine is left as found.
+		// The original state is saved and restored so the machine is left as found,
+		// including removing the key itself when it did not exist beforehand.
 		string _savedLanguage;
+		bool _keyExistedBefore;
 
 		[SetUp]
 		public void SavePreference()
 		{
+			_keyExistedBefore = DmtRegistry.DmtKeyExists();
 			_savedLanguage = DmtRegistry.GetLanguage();
 		}
 
@@ -60,6 +63,13 @@ namespace DMT.UnitTests.Library.Localization
 			else
 			{
 				DmtRegistry.SetLanguage(_savedLanguage);
+			}
+
+			// Creating the preference creates the key. If the key was not there
+			// before the test, remove it again so the machine is unchanged.
+			if (!_keyExistedBefore)
+			{
+				DmtRegistry.DeleteDmtKeyIfEmpty();
 			}
 		}
 
