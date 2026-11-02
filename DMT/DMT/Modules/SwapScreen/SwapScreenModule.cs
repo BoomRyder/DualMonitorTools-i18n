@@ -347,12 +347,12 @@ namespace DMT.Modules.SwapScreen
 		public override ModuleOptionNode GetOptionNodes()
 		{
 			Image image = new Bitmap(Properties.Resources.SwapScreen_16_16);
-			ModuleOptionNodeBranch options = new ModuleOptionNodeBranch("Swap Screen", image, new SwapScreenRootOptionsPanel());
-			options.Nodes.Add(new ModuleOptionNodeLeaf("Active Window", image, new SwapScreenActiveOptionsPanel(this)));
+			ModuleOptionNodeBranch options = new ModuleOptionNodeBranch(DMT.Resources.SwapScreenStrings.Node_SwapScreen, image, new SwapScreenRootOptionsPanel());
+			options.Nodes.Add(new ModuleOptionNodeLeaf(DMT.Resources.SwapScreenStrings.Node_ActiveWindow, image, new SwapScreenActiveOptionsPanel(this)));
 			_sdaOptionsPanel = new SwapScreenSdaOptionsPanel(this);
-			options.Nodes.Add(new ModuleOptionNodeLeaf("System Defined Areas", image, _sdaOptionsPanel));
-			options.Nodes.Add(new ModuleOptionNodeLeaf("User Defined Areas", image, new SwapScreenUdaOptionsPanel(this)));
-			options.Nodes.Add(new ModuleOptionNodeLeaf("Other Windows", image, new SwapScreenOtherOptionsPanel(this)));
+			options.Nodes.Add(new ModuleOptionNodeLeaf(DMT.Resources.SwapScreenStrings.Node_SystemDefinedAreas, image, _sdaOptionsPanel));
+			options.Nodes.Add(new ModuleOptionNodeLeaf(DMT.Resources.SwapScreenStrings.Node_UserDefinedAreas, image, new SwapScreenUdaOptionsPanel(this)));
+			options.Nodes.Add(new ModuleOptionNodeLeaf(DMT.Resources.SwapScreenStrings.Node_OtherWindows, image, new SwapScreenOtherOptionsPanel(this)));
 
 			return options;
 		}

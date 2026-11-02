@@ -51,7 +51,7 @@
 			this.checkBoxEnable.Name = "checkBoxEnable";
 			this.checkBoxEnable.Size = new System.Drawing.Size(166, 17);
 			this.checkBoxEnable.TabIndex = 0;
-			this.checkBoxEnable.Text = "Enable System Defined Areas";
+			this.checkBoxEnable.Text = global::DMT.Resources.SwapScreenStrings.SwapScreenSdaOptionsPanel_checkBoxEnable_Text;
 			this.checkBoxEnable.UseVisualStyleBackColor = true;
 			this.checkBoxEnable.CheckedChanged += new System.EventHandler(this.checkBoxEnable_CheckedChanged);
 			// 
@@ -62,7 +62,7 @@
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(111, 13);
 			this.label1.TabIndex = 1;
-			this.label1.Text = "System Defined Areas";
+			this.label1.Text = global::DMT.Resources.SwapScreenStrings.SwapScreenSdaOptionsPanel_label1_Text;
 			// 
 			// listBoxModifiers
 			// 
@@ -94,7 +94,7 @@
 			this.label3.Name = "label3";
 			this.label3.Size = new System.Drawing.Size(208, 13);
 			this.label3.TabIndex = 4;
-			this.label3.Text = "Following hot keys could not be registered:";
+			this.label3.Text = global::DMT.Resources.SwapScreenStrings.SwapScreenSdaOptionsPanel_label3_Text;
 			// 
 			// listBoxRegistrationErrors
 			// 
@@ -119,9 +119,7 @@
 			this.label4.Name = "label4";
 			this.label4.Size = new System.Drawing.Size(317, 46);
 			this.label4.TabIndex = 7;
-			this.label4.Text = "By using one of the screen modifier keys below together with the numeric key pad," +
-    " you can move the active window to any full screen, half screen or quarter scree" +
-    "n.";
+			this.label4.Text = global::DMT.Resources.SwapScreenStrings.SwapScreenSdaOptionsPanel_label4_Text;
 			// 
 			// buttonUp
 			// 
@@ -150,7 +148,7 @@
 			this.checkBoxBorderOutside.Name = "checkBoxBorderOutside";
 			this.checkBoxBorderOutside.Size = new System.Drawing.Size(246, 17);
 			this.checkBoxBorderOutside.TabIndex = 10;
-			this.checkBoxBorderOutside.Text = "Put borders on outside of System Defined Area";
+			this.checkBoxBorderOutside.Text = global::DMT.Resources.SwapScreenStrings.SwapScreenSdaOptionsPanel_checkBoxBorderOutside_Text;
 			this.checkBoxBorderOutside.UseVisualStyleBackColor = true;
 			this.checkBoxBorderOutside.CheckedChanged += new System.EventHandler(this.checkBoxBorderOutside_CheckedChanged);
 			// 
@@ -161,7 +159,7 @@
 			this.labelNumLock.Name = "labelNumLock";
 			this.labelNumLock.Size = new System.Drawing.Size(219, 13);
 			this.labelNumLock.TabIndex = 11;
-			this.labelNumLock.Text = "Note: \'Num Lock\' must be on for this to work.";
+			this.labelNumLock.Text = global::DMT.Resources.SwapScreenStrings.SwapScreenSdaOptionsPanel_labelNumLock_Text;
 			// 
 			// SwapScreenSdaOptionsPanel
 			// 

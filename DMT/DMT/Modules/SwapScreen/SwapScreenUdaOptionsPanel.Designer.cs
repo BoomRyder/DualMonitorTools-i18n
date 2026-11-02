@@ -41,7 +41,7 @@
 			this.groupBox1.Size = new System.Drawing.Size(500, 316);
 			this.groupBox1.TabIndex = 0;
 			this.groupBox1.TabStop = false;
-			this.groupBox1.Text = "User Defined Areas and associated HotKeys";
+			this.groupBox1.Text = global::DMT.Resources.SwapScreenStrings.SwapScreenUdaOptionsPanel_groupBox1_Text;
 			// 
 			// scrollableUdasPanel
 			// 

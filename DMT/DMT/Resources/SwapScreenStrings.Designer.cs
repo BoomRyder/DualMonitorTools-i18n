@@ -413,5 +413,302 @@ namespace DMT.Resources {
                 return ResourceManager.GetString("SwapTop2Win7", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Hotkeys for Active Window.
+        /// </summary>
+        internal static string SwapScreenActiveOptionsPanel_groupBox1_Text {
+            get {
+                return ResourceManager.GetString("SwapScreenActiveOptionsPanel_groupBox1_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Hotkeys for other Windows.
+        /// </summary>
+        internal static string SwapScreenOtherOptionsPanel_groupBox1_Text {
+            get {
+                return ResourceManager.GetString("SwapScreenOtherOptionsPanel_groupBox1_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Swap Screen Module.
+        /// </summary>
+        internal static string SwapScreenRootOptionsPanel_label1_Text {
+            get {
+                return ResourceManager.GetString("SwapScreenRootOptionsPanel_label1_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Settings to control positioning of Windows. .
+        /// </summary>
+        internal static string SwapScreenRootOptionsPanel_label3_Text {
+            get {
+                return ResourceManager.GetString("SwapScreenRootOptionsPanel_label3_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Enable System Defined Areas.
+        /// </summary>
+        internal static string SwapScreenSdaOptionsPanel_checkBoxEnable_Text {
+            get {
+                return ResourceManager.GetString("SwapScreenSdaOptionsPanel_checkBoxEnable_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to System Defined Areas.
+        /// </summary>
+        internal static string SwapScreenSdaOptionsPanel_label1_Text {
+            get {
+                return ResourceManager.GetString("SwapScreenSdaOptionsPanel_label1_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Following hot keys could not be registered:.
+        /// </summary>
+        internal static string SwapScreenSdaOptionsPanel_label3_Text {
+            get {
+                return ResourceManager.GetString("SwapScreenSdaOptionsPanel_label3_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to By using one of the screen modifier keys below together with the numeric key pad, you can move the active window to any full screen, half screen or quarter screen..
+        /// </summary>
+        internal static string SwapScreenSdaOptionsPanel_label4_Text {
+            get {
+                return ResourceManager.GetString("SwapScreenSdaOptionsPanel_label4_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Put borders on outside of System Defined Area.
+        /// </summary>
+        internal static string SwapScreenSdaOptionsPanel_checkBoxBorderOutside_Text {
+            get {
+                return ResourceManager.GetString("SwapScreenSdaOptionsPanel_checkBoxBorderOutside_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Note: 'Num Lock' must be on for this to work..
+        /// </summary>
+        internal static string SwapScreenSdaOptionsPanel_labelNumLock_Text {
+            get {
+                return ResourceManager.GetString("SwapScreenSdaOptionsPanel_labelNumLock_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to User Defined Areas and associated HotKeys.
+        /// </summary>
+        internal static string SwapScreenUdaOptionsPanel_groupBox1_Text {
+            get {
+                return ResourceManager.GetString("SwapScreenUdaOptionsPanel_groupBox1_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Hotkey.
+        /// </summary>
+        internal static string UdaForm_groupBox1_Text {
+            get {
+                return ResourceManager.GetString("UdaForm_groupBox1_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Enable this User Defined Area and Hotkey.
+        /// </summary>
+        internal static string UdaForm_checkBoxEnable_Text {
+            get {
+                return ResourceManager.GetString("UdaForm_checkBoxEnable_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Height of area.
+        /// </summary>
+        internal static string UdaForm_textBoxHeight_ToolTip {
+            get {
+                return ResourceManager.GetString("UdaForm_textBoxHeight_ToolTip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to x.
+        /// </summary>
+        internal static string UdaForm_label4_Text {
+            get {
+                return ResourceManager.GetString("UdaForm_label4_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Width of area.
+        /// </summary>
+        internal static string UdaForm_textBoxWidth_ToolTip {
+            get {
+                return ResourceManager.GetString("UdaForm_textBoxWidth_ToolTip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Y co-ordinate for top left corner.
+        /// </summary>
+        internal static string UdaForm_textBoxY_ToolTip {
+            get {
+                return ResourceManager.GetString("UdaForm_textBoxY_ToolTip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to X co-ordinate of top left corner.
+        /// </summary>
+        internal static string UdaForm_textBoxX_ToolTip {
+            get {
+                return ResourceManager.GetString("UdaForm_textBoxX_ToolTip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Your name for this area.
+        /// </summary>
+        internal static string UdaForm_textBoxName_ToolTip {
+            get {
+                return ResourceManager.GetString("UdaForm_textBoxName_ToolTip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Size:.
+        /// </summary>
+        internal static string UdaForm_label3_Text {
+            get {
+                return ResourceManager.GetString("UdaForm_label3_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ,.
+        /// </summary>
+        internal static string UdaForm_label2_Text {
+            get {
+                return ResourceManager.GetString("UdaForm_label2_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Position:.
+        /// </summary>
+        internal static string UdaForm_label1_Text {
+            get {
+                return ResourceManager.GetString("UdaForm_label1_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Name:.
+        /// </summary>
+        internal static string UdaForm_labelName_Text {
+            get {
+                return ResourceManager.GetString("UdaForm_labelName_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cancel.
+        /// </summary>
+        internal static string UdaForm_buttonCancel_Text {
+            get {
+                return ResourceManager.GetString("UdaForm_buttonCancel_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to OK.
+        /// </summary>
+        internal static string UdaForm_buttonOK_Text {
+            get {
+                return ResourceManager.GetString("UdaForm_buttonOK_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Description.
+        /// </summary>
+        internal static string UdaPanel_labelDescription_Text {
+            get {
+                return ResourceManager.GetString("UdaPanel_labelDescription_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Change....
+        /// </summary>
+        internal static string UdaPanel_buttonChange_Text {
+            get {
+                return ResourceManager.GetString("UdaPanel_buttonChange_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to KeyCombo.
+        /// </summary>
+        internal static string UdaPanel_labelKeyCombo_Text {
+            get {
+                return ResourceManager.GetString("UdaPanel_labelKeyCombo_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Active Window.
+        /// </summary>
+        internal static string Node_ActiveWindow {
+            get {
+                return ResourceManager.GetString("Node_ActiveWindow", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Other Windows.
+        /// </summary>
+        internal static string Node_OtherWindows {
+            get {
+                return ResourceManager.GetString("Node_OtherWindows", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Swap Screen.
+        /// </summary>
+        internal static string Node_SwapScreen {
+            get {
+                return ResourceManager.GetString("Node_SwapScreen", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to System Defined Areas.
+        /// </summary>
+        internal static string Node_SystemDefinedAreas {
+            get {
+                return ResourceManager.GetString("Node_SystemDefinedAreas", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to User Defined Areas.
+        /// </summary>
+        internal static string Node_UserDefinedAreas {
+            get {
+                return ResourceManager.GetString("Node_UserDefinedAreas", resourceCulture);
+            }
+        }
     }
 }

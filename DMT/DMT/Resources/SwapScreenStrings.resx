@@ -237,4 +237,103 @@ Do you wish to continue?</value>
   <data name="SwapTop2Win7" xml:space="preserve">
     <value />
   </data>
+  <data name="SwapScreenActiveOptionsPanel_groupBox1_Text" xml:space="preserve">
+    <value>Hotkeys for Active Window</value>
+  </data>
+  <data name="SwapScreenOtherOptionsPanel_groupBox1_Text" xml:space="preserve">
+    <value>Hotkeys for other Windows</value>
+  </data>
+  <data name="SwapScreenRootOptionsPanel_label1_Text" xml:space="preserve">
+    <value>Swap Screen Module</value>
+  </data>
+  <data name="SwapScreenRootOptionsPanel_label3_Text" xml:space="preserve">
+    <value>Settings to control positioning of Windows. </value>
+  </data>
+  <data name="SwapScreenSdaOptionsPanel_checkBoxEnable_Text" xml:space="preserve">
+    <value>Enable System Defined Areas</value>
+  </data>
+  <data name="SwapScreenSdaOptionsPanel_label1_Text" xml:space="preserve">
+    <value>System Defined Areas</value>
+  </data>
+  <data name="SwapScreenSdaOptionsPanel_label3_Text" xml:space="preserve">
+    <value>Following hot keys could not be registered:</value>
+  </data>
+  <data name="SwapScreenSdaOptionsPanel_label4_Text" xml:space="preserve">
+    <value>By using one of the screen modifier keys below together with the numeric key pad, you can move the active window to any full screen, half screen or quarter screen.</value>
+  </data>
+  <data name="SwapScreenSdaOptionsPanel_checkBoxBorderOutside_Text" xml:space="preserve">
+    <value>Put borders on outside of System Defined Area</value>
+  </data>
+  <data name="SwapScreenSdaOptionsPanel_labelNumLock_Text" xml:space="preserve">
+    <value>Note: 'Num Lock' must be on for this to work.</value>
+  </data>
+  <data name="SwapScreenUdaOptionsPanel_groupBox1_Text" xml:space="preserve">
+    <value>User Defined Areas and associated HotKeys</value>
+  </data>
+  <data name="UdaForm_groupBox1_Text" xml:space="preserve">
+    <value>Hotkey</value>
+  </data>
+  <data name="UdaForm_checkBoxEnable_Text" xml:space="preserve">
+    <value>Enable this User Defined Area and Hotkey</value>
+  </data>
+  <data name="UdaForm_textBoxHeight_ToolTip" xml:space="preserve">
+    <value>Height of area</value>
+  </data>
+  <data name="UdaForm_label4_Text" xml:space="preserve">
+    <value>x</value>
+  </data>
+  <data name="UdaForm_textBoxWidth_ToolTip" xml:space="preserve">
+    <value>Width of area</value>
+  </data>
+  <data name="UdaForm_textBoxY_ToolTip" xml:space="preserve">
+    <value>Y co-ordinate for top left corner</value>
+  </data>
+  <data name="UdaForm_textBoxX_ToolTip" xml:space="preserve">
+    <value>X co-ordinate of top left corner</value>
+  </data>
+  <data name="UdaForm_textBoxName_ToolTip" xml:space="preserve">
+    <value>Your name for this area</value>
+  </data>
+  <data name="UdaForm_label3_Text" xml:space="preserve">
+    <value>Size:</value>
+  </data>
+  <data name="UdaForm_label2_Text" xml:space="preserve">
+    <value>,</value>
+  </data>
+  <data name="UdaForm_label1_Text" xml:space="preserve">
+    <value>Position:</value>
+  </data>
+  <data name="UdaForm_labelName_Text" xml:space="preserve">
+    <value>Name:</value>
+  </data>
+  <data name="UdaForm_buttonCancel_Text" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="UdaForm_buttonOK_Text" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="UdaPanel_labelDescription_Text" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="UdaPanel_buttonChange_Text" xml:space="preserve">
+    <value>Change...</value>
+  </data>
+  <data name="UdaPanel_labelKeyCombo_Text" xml:space="preserve">
+    <value>KeyCombo</value>
+  </data>
+  <data name="Node_ActiveWindow" xml:space="preserve">
+    <value>Active Window</value>
+  </data>
+  <data name="Node_OtherWindows" xml:space="preserve">
+    <value>Other Windows</value>
+  </data>
+  <data name="Node_SwapScreen" xml:space="preserve">
+    <value>Swap Screen</value>
+  </data>
+  <data name="Node_SystemDefinedAreas" xml:space="preserve">
+    <value>System Defined Areas</value>
+  </data>
+  <data name="Node_UserDefinedAreas" xml:space="preserve">
+    <value>User Defined Areas</value>
+  </data>
 </root>

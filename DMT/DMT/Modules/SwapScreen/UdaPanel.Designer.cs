@@ -39,7 +39,7 @@
 			this.labelDescription.Name = "labelDescription";
 			this.labelDescription.Size = new System.Drawing.Size(224, 13);
 			this.labelDescription.TabIndex = 14;
-			this.labelDescription.Text = "Description";
+			this.labelDescription.Text = global::DMT.Resources.SwapScreenStrings.UdaPanel_labelDescription_Text;
 			// 
 			// buttonChange
 			// 
@@ -47,7 +47,7 @@
 			this.buttonChange.Name = "buttonChange";
 			this.buttonChange.Size = new System.Drawing.Size(75, 23);
 			this.buttonChange.TabIndex = 13;
-			this.buttonChange.Text = "Change...";
+			this.buttonChange.Text = global::DMT.Resources.SwapScreenStrings.UdaPanel_buttonChange_Text;
 			this.buttonChange.UseVisualStyleBackColor = true;
 			this.buttonChange.Click += new System.EventHandler(this.buttonChange_Click);
 			// 
@@ -58,7 +58,7 @@
 			this.labelKeyCombo.Name = "labelKeyCombo";
 			this.labelKeyCombo.Size = new System.Drawing.Size(153, 13);
 			this.labelKeyCombo.TabIndex = 15;
-			this.labelKeyCombo.Text = "KeyCombo";
+			this.labelKeyCombo.Text = global::DMT.Resources.SwapScreenStrings.UdaPanel_labelKeyCombo_Text;
 			// 
 			// UdaPanel
 			// 

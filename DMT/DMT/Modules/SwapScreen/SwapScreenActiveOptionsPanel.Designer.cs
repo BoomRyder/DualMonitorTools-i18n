@@ -41,7 +41,7 @@
 			this.groupBox1.Size = new System.Drawing.Size(500, 316);
 			this.groupBox1.TabIndex = 3;
 			this.groupBox1.TabStop = false;
-			this.groupBox1.Text = "Hotkeys for Active Window";
+			this.groupBox1.Text = global::DMT.Resources.SwapScreenStrings.SwapScreenActiveOptionsPanel_groupBox1_Text;
 			// 
 			// scrollableHotKeysPanel
 			// 

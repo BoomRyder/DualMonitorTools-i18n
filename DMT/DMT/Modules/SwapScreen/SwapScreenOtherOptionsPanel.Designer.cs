@@ -41,7 +41,7 @@
 			this.groupBox1.Size = new System.Drawing.Size(500, 316);
 			this.groupBox1.TabIndex = 4;
 			this.groupBox1.TabStop = false;
-			this.groupBox1.Text = "Hotkeys for other Windows";
+			this.groupBox1.Text = global::DMT.Resources.SwapScreenStrings.SwapScreenOtherOptionsPanel_groupBox1_Text;
 			// 
 			// scrollableHotKeysPanel
 			// 

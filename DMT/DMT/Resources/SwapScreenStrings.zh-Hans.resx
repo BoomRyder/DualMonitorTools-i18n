@@ -237,4 +237,103 @@
   <data name="SwapTop2Win7" xml:space="preserve">
     <value />
   </data>
+  <data name="SwapScreenActiveOptionsPanel_groupBox1_Text" xml:space="preserve">
+    <value>活动窗口的热键</value>
+  </data>
+  <data name="SwapScreenOtherOptionsPanel_groupBox1_Text" xml:space="preserve">
+    <value>其他窗口的热键</value>
+  </data>
+  <data name="SwapScreenRootOptionsPanel_label1_Text" xml:space="preserve">
+    <value>交换屏幕模块</value>
+  </data>
+  <data name="SwapScreenRootOptionsPanel_label3_Text" xml:space="preserve">
+    <value>控制窗口定位的设置。</value>
+  </data>
+  <data name="SwapScreenSdaOptionsPanel_checkBoxEnable_Text" xml:space="preserve">
+    <value>启用系统定义区域</value>
+  </data>
+  <data name="SwapScreenSdaOptionsPanel_label1_Text" xml:space="preserve">
+    <value>系统定义区域</value>
+  </data>
+  <data name="SwapScreenSdaOptionsPanel_label3_Text" xml:space="preserve">
+    <value>以下热键无法注册：</value>
+  </data>
+  <data name="SwapScreenSdaOptionsPanel_label4_Text" xml:space="preserve">
+    <value>配合使用下方某个屏幕修饰键与小键盘，你可以把活动窗口移动到任意整屏、半屏或四分之一屏。</value>
+  </data>
+  <data name="SwapScreenSdaOptionsPanel_checkBoxBorderOutside_Text" xml:space="preserve">
+    <value>将边框置于系统定义区域外侧</value>
+  </data>
+  <data name="SwapScreenSdaOptionsPanel_labelNumLock_Text" xml:space="preserve">
+    <value>注意：必须开启 Num Lock 才能生效。</value>
+  </data>
+  <data name="SwapScreenUdaOptionsPanel_groupBox1_Text" xml:space="preserve">
+    <value>用户定义区域及其关联热键</value>
+  </data>
+  <data name="UdaForm_groupBox1_Text" xml:space="preserve">
+    <value>热键</value>
+  </data>
+  <data name="UdaForm_checkBoxEnable_Text" xml:space="preserve">
+    <value>启用此用户定义区域及热键</value>
+  </data>
+  <data name="UdaForm_textBoxHeight_ToolTip" xml:space="preserve">
+    <value>区域高度</value>
+  </data>
+  <data name="UdaForm_label4_Text" xml:space="preserve">
+    <value>x</value>
+  </data>
+  <data name="UdaForm_textBoxWidth_ToolTip" xml:space="preserve">
+    <value>区域宽度</value>
+  </data>
+  <data name="UdaForm_textBoxY_ToolTip" xml:space="preserve">
+    <value>左上角的 Y 坐标</value>
+  </data>
+  <data name="UdaForm_textBoxX_ToolTip" xml:space="preserve">
+    <value>左上角的 X 坐标</value>
+  </data>
+  <data name="UdaForm_textBoxName_ToolTip" xml:space="preserve">
+    <value>此区域的名称</value>
+  </data>
+  <data name="UdaForm_label3_Text" xml:space="preserve">
+    <value>尺寸：</value>
+  </data>
+  <data name="UdaForm_label2_Text" xml:space="preserve">
+    <value>,</value>
+  </data>
+  <data name="UdaForm_label1_Text" xml:space="preserve">
+    <value>位置：</value>
+  </data>
+  <data name="UdaForm_labelName_Text" xml:space="preserve">
+    <value>名称：</value>
+  </data>
+  <data name="UdaForm_buttonCancel_Text" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="UdaForm_buttonOK_Text" xml:space="preserve">
+    <value>确定</value>
+  </data>
+  <data name="UdaPanel_labelDescription_Text" xml:space="preserve">
+    <value>说明</value>
+  </data>
+  <data name="UdaPanel_buttonChange_Text" xml:space="preserve">
+    <value>更改...</value>
+  </data>
+  <data name="UdaPanel_labelKeyCombo_Text" xml:space="preserve">
+    <value>按键组合</value>
+  </data>
+  <data name="Node_ActiveWindow" xml:space="preserve">
+    <value>活动窗口</value>
+  </data>
+  <data name="Node_OtherWindows" xml:space="preserve">
+    <value>其他窗口</value>
+  </data>
+  <data name="Node_SwapScreen" xml:space="preserve">
+    <value>交换屏幕</value>
+  </data>
+  <data name="Node_SystemDefinedAreas" xml:space="preserve">
+    <value>系统定义区域</value>
+  </data>
+  <data name="Node_UserDefinedAreas" xml:space="preserve">
+    <value>用户定义区域</value>
+  </data>
 </root>

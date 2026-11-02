@@ -52,7 +52,7 @@
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(160, 20);
 			this.label1.TabIndex = 1;
-			this.label1.Text = "Swap Screen Module";
+			this.label1.Text = global::DMT.Resources.SwapScreenStrings.SwapScreenRootOptionsPanel_label1_Text;
 			// 
 			// label2
 			// 
@@ -71,7 +71,7 @@
 			this.label3.Name = "label3";
 			this.label3.Size = new System.Drawing.Size(210, 13);
 			this.label3.TabIndex = 3;
-			this.label3.Text = "Settings to control positioning of Windows. ";
+			this.label3.Text = global::DMT.Resources.SwapScreenStrings.SwapScreenRootOptionsPanel_label3_Text;
 			// 
 			// SwapScreenRootOptionsPanel
 			// 

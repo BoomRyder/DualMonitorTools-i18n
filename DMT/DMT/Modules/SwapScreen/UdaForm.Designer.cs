@@ -59,7 +59,7 @@
 			this.groupBox1.Size = new System.Drawing.Size(259, 130);
 			this.groupBox1.TabIndex = 32;
 			this.groupBox1.TabStop = false;
-			this.groupBox1.Text = "Hotkey";
+			this.groupBox1.Text = global::DMT.Resources.SwapScreenStrings.UdaForm_groupBox1_Text;
 			// 
 			// keyComboPanel
 			// 
@@ -75,7 +75,7 @@
 			this.checkBoxEnable.Name = "checkBoxEnable";
 			this.checkBoxEnable.Size = new System.Drawing.Size(226, 17);
 			this.checkBoxEnable.TabIndex = 31;
-			this.checkBoxEnable.Text = "Enable this User Defined Area and Hotkey";
+			this.checkBoxEnable.Text = global::DMT.Resources.SwapScreenStrings.UdaForm_checkBoxEnable_Text;
 			this.checkBoxEnable.UseVisualStyleBackColor = true;
 			this.checkBoxEnable.CheckedChanged += new System.EventHandler(this.checkBoxEnable_CheckedChanged);
 			// 
@@ -85,7 +85,7 @@
 			this.textBoxHeight.Name = "textBoxHeight";
 			this.textBoxHeight.Size = new System.Drawing.Size(64, 20);
 			this.textBoxHeight.TabIndex = 30;
-			this.toolTip.SetToolTip(this.textBoxHeight, "Height of area");
+			this.toolTip.SetToolTip(this.textBoxHeight, global::DMT.Resources.SwapScreenStrings.UdaForm_textBoxHeight_ToolTip);
 			// 
 			// label4
 			// 
@@ -94,7 +94,7 @@
 			this.label4.Name = "label4";
 			this.label4.Size = new System.Drawing.Size(12, 13);
 			this.label4.TabIndex = 29;
-			this.label4.Text = "x";
+			this.label4.Text = global::DMT.Resources.SwapScreenStrings.UdaForm_label4_Text;
 			// 
 			// textBoxWidth
 			// 
@@ -102,7 +102,7 @@
 			this.textBoxWidth.Name = "textBoxWidth";
 			this.textBoxWidth.Size = new System.Drawing.Size(64, 20);
 			this.textBoxWidth.TabIndex = 28;
-			this.toolTip.SetToolTip(this.textBoxWidth, "Width of area");
+			this.toolTip.SetToolTip(this.textBoxWidth, global::DMT.Resources.SwapScreenStrings.UdaForm_textBoxWidth_ToolTip);
 			// 
 			// textBoxY
 			// 
@@ -110,7 +110,7 @@
 			this.textBoxY.Name = "textBoxY";
 			this.textBoxY.Size = new System.Drawing.Size(64, 20);
 			this.textBoxY.TabIndex = 26;
-			this.toolTip.SetToolTip(this.textBoxY, "Y co-ordinate for top left corner");
+			this.toolTip.SetToolTip(this.textBoxY, global::DMT.Resources.SwapScreenStrings.UdaForm_textBoxY_ToolTip);
 			// 
 			// textBoxX
 			// 
@@ -118,7 +118,7 @@
 			this.textBoxX.Name = "textBoxX";
 			this.textBoxX.Size = new System.Drawing.Size(64, 20);
 			this.textBoxX.TabIndex = 24;
-			this.toolTip.SetToolTip(this.textBoxX, "X co-ordinate of top left corner");
+			this.toolTip.SetToolTip(this.textBoxX, global::DMT.Resources.SwapScreenStrings.UdaForm_textBoxX_ToolTip);
 			// 
 			// textBoxName
 			// 
@@ -126,7 +126,7 @@
 			this.textBoxName.Name = "textBoxName";
 			this.textBoxName.Size = new System.Drawing.Size(213, 20);
 			this.textBoxName.TabIndex = 22;
-			this.toolTip.SetToolTip(this.textBoxName, "Your name for this area");
+			this.toolTip.SetToolTip(this.textBoxName, global::DMT.Resources.SwapScreenStrings.UdaForm_textBoxName_ToolTip);
 			// 
 			// label3
 			// 
@@ -135,7 +135,7 @@
 			this.label3.Name = "label3";
 			this.label3.Size = new System.Drawing.Size(30, 13);
 			this.label3.TabIndex = 27;
-			this.label3.Text = "Size:";
+			this.label3.Text = global::DMT.Resources.SwapScreenStrings.UdaForm_label3_Text;
 			// 
 			// label2
 			// 
@@ -144,7 +144,7 @@
 			this.label2.Name = "label2";
 			this.label2.Size = new System.Drawing.Size(10, 13);
 			this.label2.TabIndex = 25;
-			this.label2.Text = ",";
+			this.label2.Text = global::DMT.Resources.SwapScreenStrings.UdaForm_label2_Text;
 			// 
 			// label1
 			// 
@@ -153,7 +153,7 @@
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(47, 13);
 			this.label1.TabIndex = 23;
-			this.label1.Text = "Position:";
+			this.label1.Text = global::DMT.Resources.SwapScreenStrings.UdaForm_label1_Text;
 			// 
 			// labelName
 			// 
@@ -162,7 +162,7 @@
 			this.labelName.Name = "labelName";
 			this.labelName.Size = new System.Drawing.Size(38, 13);
 			this.labelName.TabIndex = 21;
-			this.labelName.Text = "Name:";
+			this.labelName.Text = global::DMT.Resources.SwapScreenStrings.UdaForm_labelName_Text;
 			// 
 			// buttonCancel
 			// 
@@ -171,7 +171,7 @@
 			this.buttonCancel.Name = "buttonCancel";
 			this.buttonCancel.Size = new System.Drawing.Size(75, 23);
 			this.buttonCancel.TabIndex = 20;
-			this.buttonCancel.Text = "Cancel";
+			this.buttonCancel.Text = global::DMT.Resources.SwapScreenStrings.UdaForm_buttonCancel_Text;
 			this.buttonCancel.UseVisualStyleBackColor = true;
 			this.buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);
 			// 
@@ -181,7 +181,7 @@
 			this.buttonOK.Name = "buttonOK";
 			this.buttonOK.Size = new System.Drawing.Size(75, 23);
 			this.buttonOK.TabIndex = 19;
-			this.buttonOK.Text = "OK";
+			this.buttonOK.Text = global::DMT.Resources.SwapScreenStrings.UdaForm_buttonOK_Text;
 			this.buttonOK.UseVisualStyleBackColor = true;
 			this.buttonOK.Click += new System.EventHandler(this.buttonOK_Click);
 			// 
