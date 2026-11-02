@@ -103,6 +103,30 @@ Inno 自己删掉的东西之外，`[Code]` 段的 `CurUninstallStepChanged`
    执行卸载的那个账号；其他用过 DMT 的账号，其 `%APPDATA%\Dual Monitor Tools\`
    与右键菜单子树会原样留下，需各自登录后手工删除。
 
+## 管理员权限
+
+安装包**必须**以管理员身份运行：要写 `C:\Program Files (x86)`、`System32` 和 `HKLM`。
+
+提权由 `[Setup] PrivilegesRequired=admin` 完成——这是 Inno 唯一支持的方式。Inno 的
+`Setup.exe` 清单固定是 `asInvoker`，它靠 loader 用 `runas` 重启自己来提权。实测过
+两条"把清单改成 `requireAdministrator`"的路，都不行：
+
+- 用 `mt.exe` 回写清单：文件从 2337555 字节被截断到 849920 字节（正好是 PE 镜像
+  大小），Inno 追加在 exe 后面的安装数据包被丢掉，包直接损坏。
+- `UseSetupLdr=no`（去掉 loader 的单一 exe，4455424 字节）：清单依然是 `asInvoker`。
+
+因此"必须管理员"体现在安装包的行为上，而不是 exe 的清单上：
+
+- `InitializeSetup` 里 `if not IsAdmin` 就弹 `ErrNeedAdmin` 并退出，不会走到建目录。
+- `PrepareToInstall` 用 `DirectoryIsWritable()` 真写一个临时文件再删掉来探测
+  `{app}`。只用 `ForceDirectories()` 不够——杀软"文件夹保护"会放过建目录、拦住写
+  文件。探测失败时返回 `ErrCannotWrite`，消息里带完整路径，并提示杀软或用 `/LOG`
+  看日志，而不是丢一句 Inno 的 "unable to create the directory"。
+
+若用户报告"无法创建目录"：先确认是不是右键"以管理员身份运行"解决的（那就是没提
+权）；若已是管理员仍失败，通常是杀毒软件（本机装的是 360，此前已两次干扰过自动化）
+拦了对 `Program Files` 的写入，需要在杀软里放行该安装包。
+
 ## 已知警告
 
 编译时 ISCC 会报一条 `UsedUserAreasWarning`：`PrivilegesRequired=admin` 却写
@@ -119,7 +143,7 @@ Inno 自己删掉的东西之外，`[Code]` 段的 `CurUninstallStepChanged`
 产品名与版本、`[CustomMessages]` 中英成对、`DestDir {sysnative}`、八个卸载步骤、
 `DmtFileLocations.xml`/`COPYING.txt`/`README.md` 都被收录、三个卫星程序集都落在
 `{app}\zh-Hans`、**没有写 `installed` 标记**、**原版 MSI 的判定查的是 `installed`
-值而不是键存在性**。
+值而不是键存在性**、**非管理员时拒绝安装**、**装文件前先探测目录可写**。
 
 ### 行为验证（需要管理员权限，会真实改注册表与系统目录）
 

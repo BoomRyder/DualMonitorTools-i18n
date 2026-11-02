@@ -48,6 +48,10 @@ english.ErrLegacyMsi=An existing Dual Monitor Tools installation (the original M
 chinesesimplified.ErrLegacyMsi=检测到已安装的 Dual Monitor Tools 原版（MSI）。%n%n请先在「程序和功能」中将其卸载，然后再运行本安装程序。
 english.ErrDmtRunning=Dual Monitor Tools is currently running.%n%nPlease right-click the DMT icon in the system tray, choose Exit, and then run this installer again.
 chinesesimplified.ErrDmtRunning=Dual Monitor Tools 正在运行。%n%n请先右键点击系统托盘中的 DMT 图标并退出，然后重新运行安装程序。
+english.ErrNeedAdmin=Setup is not running with administrator privileges and cannot write to "%1".%n%nRight-click the setup program, choose "Run as administrator", and try again.
+chinesesimplified.ErrNeedAdmin=安装程序没有获得管理员权限，无法写入「%1」。%n%n请右键点击安装程序，选择「以管理员身份运行」后重试。
+english.ErrCannotWrite=Setup could not create the directory%n%n%1%n%nIf you are already running as administrator, antivirus or "folder protection" software is most likely blocking writes to this location. Allow the setup in your antivirus, or run it with /LOG="C:\path\setup.log" and check that log.
+chinesesimplified.ErrCannotWrite=无法创建目录%n%n%1%n%n若已以管理员身份运行仍然失败，通常是杀毒软件或「文件夹保护」拦截了写入。请在杀毒软件中放行本安装程序，或用 /LOG="C:\路径\setup.log" 运行并查看日志。
 
 [Files]
 ; 主程序与配置文件
@@ -128,9 +132,41 @@ begin
 		(RegQueryDWordValue(HKLM64, LegacyInstalledKey, 'installed', Installed) and (Installed = 1));
 end;
 
+function DirectoryIsWritable(const Dir: String): Boolean;
+var
+	Probe: String;
+begin
+	// Creating the directory is not enough: antivirus "folder protection" lets
+	// the mkdir through and blocks the file writes that follow.
+	Result := False;
+	if not ForceDirectories(Dir) then
+		Exit;
+
+	Probe := AddBackslash(Dir) + '.dmt-write-test.tmp';
+	if not SaveStringToFile(Probe, 'probe', False) then
+		Exit;
+
+	DeleteFile(Probe);
+	Result := True;
+end;
+
 function InitializeSetup(): Boolean;
+var
+	AppDir: String;
 begin
 	Result := False;
+
+	// PrivilegesRequired=admin makes SetupLdr relaunch itself elevated, so this
+	// is normally already true. It is still checked: a Run entry, a scheduled
+	// task or /CURRENTUSER can start Setup unelevated, and without this gate the
+	// first symptom would be a bare "unable to create the directory" message.
+	if not IsAdmin then
+	begin
+		AppDir := ExpandConstant('{autopf}\{#MyAppName}');
+		SuppressibleMsgBox(FmtMessage(CustomMessage('ErrNeedAdmin'), [AppDir]),
+			mbCriticalError, MB_OK, IDOK);
+		Exit;
+	end;
 
 	if not DotNetIsPresent() then
 	begin
@@ -151,6 +187,30 @@ begin
 	end;
 
 	Result := True;
+end;
+
+function PrepareToInstall(var NeedsRestart: Boolean): String;
+var
+	AppDir: String;
+	Existed: Boolean;
+begin
+	// Replace Inno's generic "unable to create the directory" failure during the
+	// file copy with a message that names the path and the likely cause.
+	Result := '';
+	AppDir := ExpandConstant('{app}');
+	Existed := DirExists(AppDir);
+
+	if not DirectoryIsWritable(AppDir) then
+	begin
+		Result := FmtMessage(CustomMessage('ErrCannotWrite'), [AppDir]);
+		Exit;
+	end;
+
+	// The probe may have created {app}. Drop it again so Setup creates and
+	// records it itself: a directory Setup did not create is not removed on
+	// uninstall, which leaves an empty folder behind.
+	if not Existed then
+		RemoveDir(AppDir);
 end;
 
 function SystemParametersInfoW(uAction: Cardinal; uParam: Cardinal; pvParam: String;

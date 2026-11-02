@@ -213,6 +213,10 @@ namespace DMT.UnitTests.Installer
 		[TestCase("chinesesimplified.ErrLegacyMsi=")]
 		[TestCase("english.ErrDmtRunning=")]
 		[TestCase("chinesesimplified.ErrDmtRunning=")]
+		[TestCase("english.ErrNeedAdmin=")]
+		[TestCase("chinesesimplified.ErrNeedAdmin=")]
+		[TestCase("english.ErrCannotWrite=")]
+		[TestCase("chinesesimplified.ErrCannotWrite=")]
 		public void IssDeclaresBilingualPreflightMessages(string expectedPrefix)
 		{
 			string iss = ReadIss();
@@ -224,6 +228,8 @@ namespace DMT.UnitTests.Installer
 		[TestCase("ErrNoDotNet")]
 		[TestCase("ErrLegacyMsi")]
 		[TestCase("ErrDmtRunning")]
+		[TestCase("ErrNeedAdmin")]
+		[TestCase("ErrCannotWrite")]
 		public void IssRoutesPreflightMessagesThroughCustomMessage(string name)
 		{
 			string iss = ReadIss();
@@ -232,6 +238,46 @@ namespace DMT.UnitTests.Installer
 			// language; {cm:...} keeps the error box bilingual.
 			Assert.IsTrue(iss.IndexOf("CustomMessage('" + name + "')", StringComparison.Ordinal) >= 0,
 				"the " + name + " error box must use CustomMessage()");
+		}
+
+		[Test]
+		public void IssRefusesToRunUnelevatedBeforeTouchingTheDisk()
+		{
+			string iss = ReadIss();
+
+			// PrivilegesRequired=admin normally makes SetupLdr relaunch elevated,
+			// but a Run entry, a scheduled task or /CURRENTUSER can still start
+			// Setup unelevated. Without this gate the first symptom is a bare
+			// "unable to create the directory" message.
+			Assert.IsTrue(iss.IndexOf("if not IsAdmin then", StringComparison.Ordinal) >= 0,
+				"InitializeSetup must refuse to continue without administrator rights");
+
+			Assert.IsTrue(iss.IndexOf("FmtMessage(CustomMessage('ErrNeedAdmin')", StringComparison.Ordinal) >= 0,
+				"the elevation refusal must name the directory it cannot write");
+		}
+
+		[Test]
+		public void IssProbesTheTargetDirectoryBeforeCopyingFiles()
+		{
+			string iss = ReadIss();
+
+			// ForceDirectories() alone is not enough: antivirus folder protection
+			// lets the mkdir through and blocks the writes. The probe must also
+			// write and delete a file, and PrepareToInstall must abort with the
+			// path in the message instead of Inno's generic failure.
+			Assert.IsTrue(iss.IndexOf("function PrepareToInstall(", StringComparison.Ordinal) >= 0,
+				"the install must probe the target directory before copying files");
+
+			Assert.IsTrue(iss.IndexOf("SaveStringToFile(Probe,", StringComparison.Ordinal) >= 0,
+				"the write probe must actually write a file, not just create the directory");
+
+			Assert.IsTrue(iss.IndexOf("Result := FmtMessage(CustomMessage('ErrCannotWrite'), [AppDir]);", StringComparison.Ordinal) >= 0,
+				"PrepareToInstall must abort with a message naming the failing path");
+
+			// A directory the probe created is not recorded by Setup, so uninstall
+			// leaves it behind as an empty folder. Drop it again after probing.
+			Assert.IsTrue(iss.IndexOf("RemoveDir(AppDir);", StringComparison.Ordinal) >= 0,
+				"the probe must remove a directory it created itself");
 		}
 
 		[Test]
