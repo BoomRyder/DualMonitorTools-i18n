@@ -46,6 +46,8 @@
   <ItemGroup>
     <Compile Include="Library\Wallpaper\ImageFitter_Test.cs" />
     <Compile Include="Library\Localization\LanguageCatalog_Test.cs" />
+    <Compile Include="Library\Localization\ResourceCoverage_Test.cs" />
+    <Compile Include="Library\Localization\UiCulture_Test.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
