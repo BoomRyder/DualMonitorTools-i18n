@@ -79,6 +79,8 @@
     <Compile Include="Library\Environment\ILocalEnvironment.cs" />
     <Compile Include="Library\Environment\LocalEnvironment.cs" />
     <Compile Include="Library\Environment\DmtRegistry.cs" />
+    <Compile Include="Library\Localization\LanguageCatalog.cs" />
+    <Compile Include="Library\Localization\UiCulture.cs" />
     <Compile Include="Library\Environment\Monitor.cs" />
     <Compile Include="Library\Environment\Monitors.cs" />
     <Compile Include="Library\Extensions\RectangeExtensions.cs" />
