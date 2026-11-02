@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Dual Monitor Tools data file locations.
+
+    This file must reside in the same directory as DMT.exe and is never
+    written to by the program, so it is safe to keep it under
+    C:\Program Files (x86).
+
+    It redirects the program data directory to the current user's roaming
+    profile so that DMT does not try to write its settings next to the
+    executable. Remove this file to run DMT in portable mode (data kept
+    beside DMT.exe).
+-->
+<filelocations>
+    <filelocation name="datadirectory" value="%APPDATA%\Dual Monitor Tools" />
+</filelocations>
