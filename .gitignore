@@ -1,0 +1,24 @@
+# 构建产物
+[Bb]in/
+[Oo]bj/
+*.user
+*.suo
+*.userprefs
+
+# Visual Studio
+.vs/
+*.sln.docstates
+*.ncb
+*.aps
+*.log
+
+# NuGet 还原出的包（可用 nuget restore 重新拉取）
+[Dd]MT/packages/NUnit.3.7.1/
+[Dd]MT/packages/NUnit.ConsoleRunner.3.16.3/
+
+# 本地工具
+tools/nuget.exe
+
+# 测试结果
+TestResult.xml
+*.trx
