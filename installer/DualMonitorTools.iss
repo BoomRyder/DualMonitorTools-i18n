@@ -100,8 +100,10 @@ const
 	AutoStartValueName = 'GNE_DualMonitorTools';
 	DesktopKey = 'Control Panel\Desktop';
 	DataFolderName = 'Dual Monitor Tools';
+	ScreenSaverName = 'DmtWallpaper.scr';
 	SPI_SETDESKWALLPAPER = 20;
 	SPIF_UPDATEINIFILE = 1;
+	SPIF_SENDCHANGE = 2;
 
 function DotNetIsPresent(): Boolean;
 var
@@ -113,12 +115,17 @@ begin
 end;
 
 function LegacyMsiIsPresent(): Boolean;
+var
+	Installed: Cardinal;
 begin
+	// Only the "installed" *value* marks the original MSI. Do not test for the
+	// key alone: this installer writes ScreenSaverInstalled into the same key,
+	// so a key-existence test would refuse to run a second time.
 	Result :=
 		RegKeyExists(HKLM, LegacyMsiProductCode) or
 		RegKeyExists(HKLM64, LegacyMsiProductCode) or
-		RegKeyExists(HKLM, LegacyInstalledKey) or
-		RegKeyExists(HKLM64, LegacyInstalledKey);
+		(RegQueryDWordValue(HKLM, LegacyInstalledKey, 'installed', Installed) and (Installed = 1)) or
+		(RegQueryDWordValue(HKLM64, LegacyInstalledKey, 'installed', Installed) and (Installed = 1));
 end;
 
 function InitializeSetup(): Boolean;
@@ -169,9 +176,16 @@ begin
 
 		// Option (a): clear to a solid colour instead of pointing at a file a
 		// trimmed Windows install may not ship.
-		RegWriteStringValue(HKCU, DesktopKey, 'Wallpaper', '');
-		SystemParametersInfoW(SPI_SETDESKWALLPAPER, 0, '', SPIF_UPDATEINIFILE);
-		Log('cleared DMT-managed wallpaper: ' + Wallpaper);
+		if not RegWriteStringValue(HKCU, DesktopKey, 'Wallpaper', '') then
+			Log('FAILED: could not clear the Wallpaper value');
+
+		// SPIF_SENDCHANGE repaints the desktop now instead of at next logon;
+		// without it the deleted wallpaper stays on screen.
+		if SystemParametersInfoW(SPI_SETDESKWALLPAPER, 0, '',
+			SPIF_UPDATEINIFILE or SPIF_SENDCHANGE) then
+			Log('cleared DMT-managed wallpaper: ' + Wallpaper)
+		else
+			Log('WARNING: SystemParametersInfo failed; registry value cleared anyway');
 	except
 		Log('ClearWallpaperIfOurs failed');
 	end;
@@ -180,60 +194,73 @@ end;
 procedure CurUninstallStepChanged(CurUninstallStep: TUninstallStep);
 var
 	DataDir: String;
+	ScreenSaver: String;
+	Suffix: String;
 begin
 	if CurUninstallStep <> usPostUninstall then
 		Exit;
 
+	// The functions below return Boolean and never raise, so their results are
+	// checked individually: a swallowed failure must not be logged as success.
 	// 1-2. Wallpaper: only when it points into our data directory.
 	ClearWallpaperIfOurs();
 
 	// 3. Interface language and wallpaper path.
-	try
-		RegDeleteKeyIncludingSubkeys(HKCU, DmtProductKey);
-		Log('deleted HKCU\' + DmtProductKey);
-	except
-		Log('failed to delete HKCU\' + DmtProductKey);
-	end;
+	if RegDeleteKeyIncludingSubkeys(HKCU, DmtProductKey) then
+		Log('deleted HKCU\' + DmtProductKey)
+	else
+		Log('FAILED: could not delete HKCU\' + DmtProductKey);
 
 	// 3b. [Registry] removes our key but leaves the empty vendor key behind.
-	try
-		RegDeleteKeyIfEmpty(HKLM, LegacyInstalledKey);
-		RegDeleteKeyIfEmpty(HKLM, LegacyVendorKey);
-		Log('removed empty vendor key');
-	except
-		Log('failed to remove empty vendor key');
-	end;
+	if RegDeleteKeyIfEmpty(HKLM, LegacyInstalledKey) then
+		Log('removed ' + LegacyInstalledKey)
+	else
+		Log('note: ' + LegacyInstalledKey + ' absent or not empty');
+	if RegDeleteKeyIfEmpty(HKLM, LegacyVendorKey) then
+		Log('removed ' + LegacyVendorKey)
+	else
+		Log('note: ' + LegacyVendorKey + ' absent or not empty');
+	RegDeleteKeyIfEmpty(HKLM64, LegacyInstalledKey);
+	RegDeleteKeyIfEmpty(HKLM64, LegacyVendorKey);
 
 	// 4. Auto-start value.
-	try
-		RegDeleteValue(HKCU, AutoStartRunKey, AutoStartValueName);
-		Log('deleted Run value ' + AutoStartValueName);
-	except
-		Log('failed to delete Run value');
-	end;
+	if RegDeleteValue(HKCU, AutoStartRunKey, AutoStartValueName) then
+		Log('deleted Run value ' + AutoStartValueName)
+	else
+		Log('note: Run value ' + AutoStartValueName + ' absent');
 
 	// 5. Explorer context menu subtree, including the sub-commands the program
 	//    creates at run time. Deleting the empty key alone would leave them.
-	try
-		RegDeleteKeyIncludingSubkeys(HKCU, DmtContextMenuKey);
-		Log('deleted ' + DmtContextMenuKey);
-	except
-		Log('failed to delete context menu subtree');
+	if RegDeleteKeyIncludingSubkeys(HKCU, DmtContextMenuKey) then
+		Log('deleted ' + DmtContextMenuKey)
+	else
+		Log('FAILED: could not delete ' + DmtContextMenuKey);
+
+	// 6. A screen-saver selection pointing at the .scr we just removed. The
+	//    value is written by the Control Panel, not by us, but deleting the
+	//    file would leave it dangling.
+	Suffix := '\' + ScreenSaverName;
+	if RegQueryStringValue(HKCU, DesktopKey, 'SCRNSAVE.EXE', ScreenSaver) and
+		(Length(ScreenSaver) >= Length(Suffix)) and
+		(CompareText(Copy(ScreenSaver, Length(ScreenSaver) - Length(Suffix) + 1,
+			Length(Suffix)), Suffix) = 0) then
+	begin
+		if RegDeleteValue(HKCU, DesktopKey, 'SCRNSAVE.EXE') then
+			Log('deleted SCRNSAVE.EXE pointing at ' + ScreenSaver)
+		else
+			Log('FAILED: could not delete SCRNSAVE.EXE');
 	end;
 
-	// 6. Program data directory.
+	// 7. Program data directory. Deleted unconditionally; see README-installer.
 	DataDir := ExpandConstant('{userappdata}\' + DataFolderName);
-	try
-		DelTree(DataDir, True, True, True);
-		Log('deleted ' + DataDir);
-	except
-		Log('failed to delete ' + DataDir);
-	end;
+	if DelTree(DataDir, True, True, True) then
+		Log('deleted ' + DataDir)
+	else
+		Log('note: ' + DataDir + ' absent or partially removed');
 
-	// 7. Leftover update download.
-	try
-		DeleteFile(GetEnv('TEMP') + '\DualMonitorTools.msi');
-	except
-		Log('failed to delete temp msi');
-	end;
+	// 8. Leftover update download (%TEMP%\DualMonitorTools.msi).
+	if DeleteFile(GetEnv('TEMP') + '\DualMonitorTools.msi') then
+		Log('deleted leftover update package')
+	else
+		Log('note: no leftover update package');
 end;

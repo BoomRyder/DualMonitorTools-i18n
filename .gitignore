@@ -25,3 +25,4 @@ TestResult.xml
 
 # 安装包产物
 dist/
+installer/Output/

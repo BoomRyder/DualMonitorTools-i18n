@@ -62,21 +62,25 @@ Setup 实现，行为对齐原 MSI，并修掉了原 MSI 的两处缺陷（见�
 ## 卸载清理
 
 Inno 自己删掉的东西之外，`[Code]` 段的 `CurUninstallStepChanged`
-（`usPostUninstall`）还会做这几件事，每步独立 try，单步失败不影响后续：
+（`usPostUninstall`）还会做这几件事。这些函数返回 Boolean 而不抛异常，
+所以每一步都检查返回值并在日志里区分成功与失败（`/LOG` 可查）：
 
 1. 若 `HKCU\Control Panel\Desktop\Wallpaper` 指向 `%APPDATA%\Dual Monitor Tools\`，
-   把它清空并调用 `SystemParametersInfo(SPI_SETDESKWALLPAPER)`，桌面回到纯色。
-   **指向别处时不动**——那是用户自己的壁纸。
+   把它清空并用 `SystemParametersInfo(SPI_SETDESKWALLPAPER, 0, '', SPIF_UPDATEINIFILE or SPIF_SENDCHANGE)`
+   让桌面立刻重绘成纯色。**指向别处时不动**——那是用户自己的壁纸。
 2. 删 `HKCU\SOFTWARE\Dual Monitor Tools` 整棵子树（`Language`、`DmtWallpaperPath`）
 3. 删 `HKCU\...\Run` 的 `GNE_DualMonitorTools` 值
 4. 删 `HKCU\Software\Classes\directory\Background\shell\GNE_DualMonitorTools` 整棵子树
    （右键菜单开关打开过就会生成 11 条子命令，只删空键会全部残留）
-5. 删空掉的 `HKLM\SOFTWARE\WOW6432Node\GNE`
-6. 删 `%APPDATA%\Dual Monitor Tools\` 整个目录（用户选择"数据全删"）
-7. 删 `%TEMP%\DualMonitorTools.msi`（"检查更新"的下载残留）
+5. 删空掉的 `HKLM\SOFTWARE\WOW6432Node\GNE`（两个注册表视图都试）
+6. 若 `HKCU\Control Panel\Desktop\SCRNSAVE.EXE` 指向 `DmtWallpaper.scr`，删掉这个值
+   ——屏保文件已经被卸掉，留着就是悬空引用
+7. 删 `%APPDATA%\Dual Monitor Tools\` 整个目录（**无条件删除**，见下面的差异第 7 条）
+8. 删 `%TEMP%\DualMonitorTools.msi`（"检查更新"的下载残留）
 
 不删 `HKCU\Control Panel\Desktop` 的 `TileWallpaper` / `WallpaperStyle`：那是 Windows
-全局设置，用户自己也可能改过。
+全局设置，用户自己也可能改过；安装前的原值没有被记录，删掉比留着更糟。卸载后
+若桌面图标文字背景或壁纸拟合方式不对，到「个性化 → 背景」重新选一次即可。
 
 ## 与原 MSI 的差异
 
@@ -84,13 +88,20 @@ Inno 自己删掉的东西之外，`[Code]` 段的 `CurUninstallStepChanged`
    这是关掉自动更新的必然代价；改文案需要动作者源码，本项目不做。
 2. **没有"修复（Repair）"功能**。Inno 没有 MSI 的修复；文件损坏只能卸载重装。
 3. **不能与原 MSI 共存**。检测到原版（卸载项 `{59CFB0C1-…}` 或
-   `GNE\Dual Monitor Tools\installed`，两个注册表视图都查）直接拒绝安装，
-   要求先去"程序和功能"卸载。
+   `GNE\Dual Monitor Tools` 下的 `installed` **值**）直接拒绝安装，要求先去
+   "程序和功能"卸载。注意判定只认 `installed` 值：本安装包自己也往同一个键写
+   `ScreenSaverInstalled`，若用"键存在"判定，装过一次后就再也装不了第二次。
 4. **屏保装到 `System32`** 而非原版的 `SysWOW64`（修正，见上）。
 5. **文档只装 `README.md` + `COPYING.txt`**。原 MSI 装 `CHANGES.txt` / `README.txt` /
    `THANKS.txt`，本仓库已把它们合并进 `README.md`。
 6. **装完启动用 `runasoriginaluser`**。原 MSI 的 `StartAppOnExit` 在提权上下文里
    启动 `dmt.exe`，程序以管理员身份跑；这里以原用户身份启动。
+7. **卸载时无条件删除用户数据目录**（`%APPDATA%\Dual Monitor Tools\`，含设置、热键、
+   魔术字、壁纸源配置），不弹窗征询，静默卸载同样如此。这是本项目的既定选择：
+   卸载即彻底清除，不留残余。**误删无法恢复**，需要保留设置的用户请在卸载前自行备份。
+8. **多用户机器上卸载只清当前账号**。`{userappdata}` 与三处 HKCU 清理都作用于
+   执行卸载的那个账号；其他用过 DMT 的账号，其 `%APPDATA%\Dual Monitor Tools\`
+   与右键菜单子树会原样留下，需各自登录后手工删除。
 
 ## 已知警告
 
@@ -105,8 +116,10 @@ Inno 自己删掉的东西之外，`[Code]` 段的 `CurUninstallStepChanged`
 
 `DMT\DMT.UnitTests\Installer\InstallerAssets_Test.cs` 检查：数据目录重定向文件
 存在且是 UTF-8 BOM、恰好一条 `datadirectory`；`.iss` 的关键 `[Setup]` 指令、
-产品名与版本、`[CustomMessages]` 中英成对、`DestDir {sysnative}`、六条卸载步骤、
-每个 Release 产物都确实被 `[Files]` 收录、**且没有写 `installed` 标记**。
+产品名与版本、`[CustomMessages]` 中英成对、`DestDir {sysnative}`、八个卸载步骤、
+`DmtFileLocations.xml`/`COPYING.txt`/`README.md` 都被收录、三个卫星程序集都落在
+`{app}\zh-Hans`、**没有写 `installed` 标记**、**原版 MSI 的判定查的是 `installed`
+值而不是键存在性**。
 
 ### 行为验证（需要管理员权限，会真实改注册表与系统目录）
 
@@ -117,11 +130,16 @@ Inno 自己删掉的东西之外，`[Code]` 段的 `CurUninstallStepChanged`
 ```
 
 - `Test-Preflight.ps1`：伪造原版 MSI 的 `installed` 标记 → 静默安装必须被拒
-  （退出码非 0、零文件落地）→ 复原注册表。
-- `Test-Uninstall.ps1`：阶段一装到临时目录 → 制造全部运行时残留 → 静默卸载 →
-  逐项断言消失；阶段二验证"用户自己的壁纸不会被误清"。脚本会先保存
-  `HKCU\Control Panel\Desktop` 的 `Wallpaper` / `TileWallpaper` / `WallpaperStyle`
-  并在结束时复原，包括重新应用壁纸。
+  （退出码非 0、零文件落地）→ 复原注册表。若前置检查失效导致真的装上，它也会
+  走正规卸载并清掉 `System32` 的 `.scr`、开始菜单组与卸载项。
+- `Test-Uninstall.ps1`：阶段一装到临时目录 → **立刻再装一次（必须成功）** →
+  制造全部运行时残留 → 静默卸载 → 逐项断言消失（含 `SCRNSAVE.EXE`）；
+  阶段二验证"用户自己的壁纸不会被误清"。
+- 两个脚本都用 `ProcessStartInfo`（`UseShellExecute=$false`）启动安装包，不走
+  `ShellExecute`：否则 MOTW / 杀软检查可能弹出"打开文件 - 安全警告"对话框，
+  静默安装会一直等下去。
+- 脚本会先保存 `HKCU\Control Panel\Desktop` 的 `Wallpaper` / `TileWallpaper` /
+  `WallpaperStyle` / `SCRNSAVE.EXE` 并在结束时复原，包括重新应用壁纸。
 
-两个脚本都要求跑之前基线是干净的（相关键与目录都不存在），否则会直接报
-"基线已被污染"并中止，不会带着脏状态往下跑。
+两个脚本都要求跑之前基线是干净的（相关键、目录、屏保、开始菜单组、卸载项都不存在），
+否则会直接报"基线已被污染"并中止，不会带着脏状态往下跑。

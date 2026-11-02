@@ -291,3 +291,25 @@ Successful compile (0.859 sec).
 | 用户装了原版 MSI 但卸载项被第三方清理工具删掉，导致检测漏判 | `GNE\installed` 标记是第二条检测线，两者都查 |
 | ~~Inno 7 的 `ChineseSimplified.isl` 与 6.x 消息键不兼容~~ | **已排除**：用一个最小 `.iss` 实测编译成功（见 §11.3） |
 | `DelTree` 删除正在使用的数据文件失败 | 前置于 §8 第 3 项的进程检查；卸载时 `CloseApplications=yes` 也会尝试关闭 |
+
+## 13. 实现期修正（实测后与本文不一致之处，以实现为准）
+
+本文是设计意图的记录；下面几条是编码与实测后发现的偏差，代码已按修正后的做法实现，文档此处补齐。
+
+1. **§4.2 `{sys}` → `{sysnative}`。** 32 位安装包写 `{sys}` 会被 WOW64 重定向到 `SysWOW64`，实测首轮安装后 `System32\DmtWallpaper.scr` 不存在、`SysWOW64` 下存在，等于复刻了原 MSI 的缺陷。`{sysnative}` 才落到真正的 `System32`。
+
+2. **原版 MSI 的判定查 `installed` 值，不查键存在性。** §8 第 2 项本来写的就是该值，实现一度退化成 `RegKeyExists('SOFTWARE\GNE\Dual Monitor Tools')`；而本安装包自己也往同一键写 `ScreenSaverInstalled`，导致"装过一次后再运行安装包"被误判成原版 MSI 还在并拒绝安装。评审发现后改为 `RegQueryDWordValue(HKLM/HKLM64, ..., 'installed', V)`，并补"装完立刻再装一次必须成功"的回归。
+
+3. **壁纸清空要带 `SPIF_SENDCHANGE`。** §7 第 2 步只写了 `SPIF_UPDATEINIFILE`：注册表值清空了，但桌面不会立刻重绘，用户仍看到已删除的壁纸。改为 `SPIF_UPDATEINIFILE or SPIF_SENDCHANGE`。
+
+4. **卸载新增一步：清 `HKCU\Control Panel\Desktop\SCRNSAVE.EXE`。** 本文的七步清单漏了这条（`AGENTS.md` §5.7 第 7 步、§5.8 陷阱 3 都点名了）。若该值指向 `DmtWallpaper.scr`，删掉 `.scr` 后会悬空，屏保失效。按后缀 `\DmtWallpaper.scr` 匹配后删值。
+
+5. **`[Code]` 不用 try/except 判失败。** `RegDeleteKeyIncludingSubkeys`、`RegDeleteKeyIfEmpty`、`DelTree`、`DeleteFile` 在 Inno Pascal 里都是**返回 Boolean、不抛异常**，`except` 几乎永不触发，会把失败伪装成成功。改为逐个检查返回值并分别记录成功/失败日志。
+
+6. **卸载无条件删除 `%APPDATA%\Dual Monitor Tools`。** 这是本项目既定选择（见 §9），但早期 README 写成"用户选择"，安装包里并无任何征询。文档已按"无条件删除 + 误删不可恢复"改写，并补充"多用户机器只清执行卸载的账号"这条限制。
+
+7. **测试脚本用 `ProcessStartInfo` 而非 `Start-Process`。** 后者走 `ShellExecute`，MOTW/杀软检查可能弹出"打开文件 - 安全警告"对话框，静默安装会一直挂着；少参数启动还会弹出 GUI 向导并锁住 `dist\` 里的 exe，令 ISCC 报 `Error 32`。
+
+8. **§4.1/§4.2 的字节数是设计期快照，随构建浮动**（本次 Release：`DMT.exe` 1127936 B、`DualWallpaper.exe` 151552 B、`DmtWallpaper.exe` 32768 B、安装包 2337555 B），不要当断言用。
+
+9. **`TileWallpaper` / `WallpaperStyle` 不动的理由更正。** 本文曾写"第 2 步的 `SystemParametersInfo` 会由系统重算这两个值"——不成立，`SPI_SETDESKWALLPAPER` 不会把拟合方式改回用户原来的选择。真实理由是**原值没有被记录，删掉比留着更糟**，故保持不动，由 README 提示用户按需重选。
