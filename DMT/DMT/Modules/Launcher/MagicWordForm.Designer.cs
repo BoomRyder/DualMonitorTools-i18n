@@ -87,7 +87,7 @@
 			this.buttonTest.Name = "buttonTest";
 			this.buttonTest.Size = new System.Drawing.Size(128, 23);
 			this.buttonTest.TabIndex = 38;
-			this.buttonTest.Text = "Test the magic word";
+			this.buttonTest.Text = global::DMT.Resources.LauncherStrings.MagicWordForm_buttonTest_Text;
 			this.buttonTest.UseVisualStyleBackColor = true;
 			this.buttonTest.Click += new System.EventHandler(this.buttonTest_Click);
 			// 
@@ -104,7 +104,7 @@
 			this.groupBox2.Size = new System.Drawing.Size(683, 48);
 			this.groupBox2.TabIndex = 39;
 			this.groupBox2.TabStop = false;
-			this.groupBox2.Text = "Stats";
+			this.groupBox2.Text = global::DMT.Resources.LauncherStrings.MagicWordForm_groupBox2_Text;
 			// 
 			// buttonResetTimesUsed
 			// 
@@ -112,7 +112,7 @@
 			this.buttonResetTimesUsed.Name = "buttonResetTimesUsed";
 			this.buttonResetTimesUsed.Size = new System.Drawing.Size(75, 23);
 			this.buttonResetTimesUsed.TabIndex = 5;
-			this.buttonResetTimesUsed.Text = "Reset";
+			this.buttonResetTimesUsed.Text = global::DMT.Resources.LauncherStrings.MagicWordForm_buttonResetTimesUsed_Text;
 			this.buttonResetTimesUsed.UseVisualStyleBackColor = true;
 			this.buttonResetTimesUsed.Click += new System.EventHandler(this.buttonResetTimesUsed_Click);
 			// 
@@ -131,7 +131,7 @@
 			this.label9.Name = "label9";
 			this.label9.Size = new System.Drawing.Size(64, 13);
 			this.label9.TabIndex = 3;
-			this.label9.Text = "Times used:";
+			this.label9.Text = global::DMT.Resources.LauncherStrings.MagicWordForm_label9_Text;
 			// 
 			// buttonResetLastUsed
 			// 
@@ -139,7 +139,7 @@
 			this.buttonResetLastUsed.Name = "buttonResetLastUsed";
 			this.buttonResetLastUsed.Size = new System.Drawing.Size(75, 23);
 			this.buttonResetLastUsed.TabIndex = 2;
-			this.buttonResetLastUsed.Text = "Reset";
+			this.buttonResetLastUsed.Text = global::DMT.Resources.LauncherStrings.MagicWordForm_buttonResetLastUsed_Text;
 			this.buttonResetLastUsed.UseVisualStyleBackColor = true;
 			this.buttonResetLastUsed.Click += new System.EventHandler(this.buttonResetLastUsed_Click);
 			// 
@@ -158,7 +158,7 @@
 			this.label8.Name = "label8";
 			this.label8.Size = new System.Drawing.Size(56, 13);
 			this.label8.TabIndex = 0;
-			this.label8.Text = "Last used:";
+			this.label8.Text = global::DMT.Resources.LauncherStrings.MagicWordForm_label8_Text;
 			// 
 			// pictureBoxIcon
 			// 
@@ -174,8 +174,8 @@
 			this.buttonDirBrowse.Name = "buttonDirBrowse";
 			this.buttonDirBrowse.Size = new System.Drawing.Size(75, 23);
 			this.buttonDirBrowse.TabIndex = 36;
-			this.buttonDirBrowse.Text = "Browse...";
-			this.toolTip.SetToolTip(this.buttonDirBrowse, "Browse for the starting directory.");
+			this.buttonDirBrowse.Text = global::DMT.Resources.LauncherStrings.MagicWordForm_buttonDirBrowse_Text;
+			this.toolTip.SetToolTip(this.buttonDirBrowse, global::DMT.Resources.LauncherStrings.MagicWordForm_buttonDirBrowse_ToolTip);
 			this.buttonDirBrowse.UseVisualStyleBackColor = true;
 			this.buttonDirBrowse.Click += new System.EventHandler(this.buttonDirBrowse_Click);
 			// 
@@ -199,7 +199,7 @@
 			this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
 			this.tabPage1.Size = new System.Drawing.Size(676, 93);
 			this.tabPage1.TabIndex = 0;
-			this.tabPage1.Text = "Start Position 1";
+			this.tabPage1.Text = global::DMT.Resources.LauncherStrings.MagicWordForm_tabPage1_Text;
 			this.tabPage1.UseVisualStyleBackColor = true;
 			// 
 			// startupPositionControl1
@@ -217,7 +217,7 @@
 			this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
 			this.tabPage2.Size = new System.Drawing.Size(676, 93);
 			this.tabPage2.TabIndex = 1;
-			this.tabPage2.Text = "Start Position 2";
+			this.tabPage2.Text = global::DMT.Resources.LauncherStrings.MagicWordForm_tabPage2_Text;
 			this.tabPage2.UseVisualStyleBackColor = true;
 			// 
 			// startupPositionControl2
@@ -234,7 +234,7 @@
 			this.tabPage3.Name = "tabPage3";
 			this.tabPage3.Size = new System.Drawing.Size(676, 93);
 			this.tabPage3.TabIndex = 2;
-			this.tabPage3.Text = "Start Position 3";
+			this.tabPage3.Text = global::DMT.Resources.LauncherStrings.MagicWordForm_tabPage3_Text;
 			this.tabPage3.UseVisualStyleBackColor = true;
 			// 
 			// startupPositionControl3
@@ -251,7 +251,7 @@
 			this.tabPage4.Name = "tabPage4";
 			this.tabPage4.Size = new System.Drawing.Size(676, 93);
 			this.tabPage4.TabIndex = 3;
-			this.tabPage4.Text = "Start Position 4";
+			this.tabPage4.Text = global::DMT.Resources.LauncherStrings.MagicWordForm_tabPage4_Text;
 			this.tabPage4.UseVisualStyleBackColor = true;
 			// 
 			// startupPositionControl4
@@ -267,7 +267,7 @@
 			this.textBoxComment.Name = "textBoxComment";
 			this.textBoxComment.Size = new System.Drawing.Size(510, 20);
 			this.textBoxComment.TabIndex = 32;
-			this.toolTip.SetToolTip(this.textBoxComment, "You can optionally leave a comment here if you wish.");
+			this.toolTip.SetToolTip(this.textBoxComment, global::DMT.Resources.LauncherStrings.MagicWordForm_textBoxComment_ToolTip);
 			// 
 			// textBoxCaption
 			// 
@@ -275,12 +275,7 @@
 			this.textBoxCaption.Name = "textBoxCaption";
 			this.textBoxCaption.Size = new System.Drawing.Size(510, 20);
 			this.textBoxCaption.TabIndex = 3;
-			this.toolTip.SetToolTip(this.textBoxCaption, "Regular expression to help identify the correct window.\r\nNormally you can get awa" +
-        "y with just a substring from the windows caption.");
-			// 
-			// groupBox1
-			// 
-			this.groupBox1.Controls.Add(this.textBoxCaption);
+			this.toolTip.SetToolTip(this.textBoxCaption, global::DMT.Resources.LauncherStrings.MagicWordForm_textBoxCaption_ToolTip);
 			this.groupBox1.Controls.Add(this.label6);
 			this.groupBox1.Controls.Add(this.textBoxWindowClass);
 			this.groupBox1.Controls.Add(this.label5);
@@ -289,7 +284,7 @@
 			this.groupBox1.Size = new System.Drawing.Size(684, 81);
 			this.groupBox1.TabIndex = 30;
 			this.groupBox1.TabStop = false;
-			this.groupBox1.Text = "Application window identification";
+			this.groupBox1.Text = global::DMT.Resources.LauncherStrings.MagicWordForm_groupBox1_Text;
 			this.toolTip.SetToolTip(this.groupBox1, resources.GetString("groupBox1.ToolTip"));
 			// 
 			// label6
@@ -299,7 +294,7 @@
 			this.label6.Name = "label6";
 			this.label6.Size = new System.Drawing.Size(46, 13);
 			this.label6.TabIndex = 2;
-			this.label6.Text = "Caption:";
+			this.label6.Text = global::DMT.Resources.LauncherStrings.MagicWordForm_label6_Text;
 			// 
 			// textBoxWindowClass
 			// 
@@ -307,17 +302,11 @@
 			this.textBoxWindowClass.Name = "textBoxWindowClass";
 			this.textBoxWindowClass.Size = new System.Drawing.Size(510, 20);
 			this.textBoxWindowClass.TabIndex = 1;
-			this.toolTip.SetToolTip(this.textBoxWindowClass, "This is the name of the window class that the above program uses.\r\nMay be left bl" +
-        "ank, but will be filled in if you use the crosshairs.");
-			// 
-			// label5
-			// 
-			this.label5.AutoSize = true;
-			this.label5.Location = new System.Drawing.Point(6, 22);
+			this.toolTip.SetToolTip(this.textBoxWindowClass, global::DMT.Resources.LauncherStrings.MagicWordForm_textBoxWindowClass_ToolTip);
 			this.label5.Name = "label5";
 			this.label5.Size = new System.Drawing.Size(77, 13);
 			this.label5.TabIndex = 0;
-			this.label5.Text = "Window Class:";
+			this.label5.Text = global::DMT.Resources.LauncherStrings.MagicWordForm_label5_Text;
 			// 
 			// buttonBrowse
 			// 
@@ -325,8 +314,8 @@
 			this.buttonBrowse.Name = "buttonBrowse";
 			this.buttonBrowse.Size = new System.Drawing.Size(75, 23);
 			this.buttonBrowse.TabIndex = 29;
-			this.buttonBrowse.Text = "Browse...";
-			this.toolTip.SetToolTip(this.buttonBrowse, "Browse for the application or document.");
+			this.buttonBrowse.Text = global::DMT.Resources.LauncherStrings.MagicWordForm_buttonBrowse_Text;
+			this.toolTip.SetToolTip(this.buttonBrowse, global::DMT.Resources.LauncherStrings.MagicWordForm_buttonBrowse_ToolTip);
 			this.buttonBrowse.UseVisualStyleBackColor = true;
 			this.buttonBrowse.Click += new System.EventHandler(this.buttonBrowse_Click);
 			// 
@@ -336,21 +325,11 @@
 			this.textBoxParameters.Name = "textBoxParameters";
 			this.textBoxParameters.Size = new System.Drawing.Size(510, 20);
 			this.textBoxParameters.TabIndex = 28;
-			this.toolTip.SetToolTip(this.textBoxParameters, "Any parameters that need to be passed to the application.\r\nThis will normally be " +
-        "left blank.");
-			// 
-			// textBoxStartDirectory
-			// 
-			this.textBoxStartDirectory.Location = new System.Drawing.Point(108, 76);
+			this.toolTip.SetToolTip(this.textBoxParameters, global::DMT.Resources.LauncherStrings.MagicWordForm_textBoxParameters_ToolTip);
 			this.textBoxStartDirectory.Name = "textBoxStartDirectory";
 			this.textBoxStartDirectory.Size = new System.Drawing.Size(510, 20);
 			this.textBoxStartDirectory.TabIndex = 26;
-			this.toolTip.SetToolTip(this.textBoxStartDirectory, "This is the working directory you want the application started in.\r\nThis will nor" +
-        "mally be left blank.");
-			// 
-			// textBoxFilename
-			// 
-			this.textBoxFilename.Location = new System.Drawing.Point(108, 50);
+			this.toolTip.SetToolTip(this.textBoxStartDirectory, global::DMT.Resources.LauncherStrings.MagicWordForm_textBoxStartDirectory_ToolTip);
 			this.textBoxFilename.Name = "textBoxFilename";
 			this.textBoxFilename.Size = new System.Drawing.Size(510, 20);
 			this.textBoxFilename.TabIndex = 24;
@@ -362,7 +341,7 @@
 			this.textBoxAlias.Name = "textBoxAlias";
 			this.textBoxAlias.Size = new System.Drawing.Size(207, 20);
 			this.textBoxAlias.TabIndex = 22;
-			this.toolTip.SetToolTip(this.textBoxAlias, "This is the Word you type (or start typing) to run this program.");
+			this.toolTip.SetToolTip(this.textBoxAlias, global::DMT.Resources.LauncherStrings.MagicWordForm_textBoxAlias_ToolTip);
 			// 
 			// buttonCancel
 			// 
@@ -371,7 +350,7 @@
 			this.buttonCancel.Name = "buttonCancel";
 			this.buttonCancel.Size = new System.Drawing.Size(75, 23);
 			this.buttonCancel.TabIndex = 34;
-			this.buttonCancel.Text = "Cancel";
+			this.buttonCancel.Text = global::DMT.Resources.LauncherStrings.MagicWordForm_buttonCancel_Text;
 			this.buttonCancel.UseVisualStyleBackColor = true;
 			// 
 			// buttonOK
@@ -381,7 +360,7 @@
 			this.buttonOK.Name = "buttonOK";
 			this.buttonOK.Size = new System.Drawing.Size(75, 23);
 			this.buttonOK.TabIndex = 33;
-			this.buttonOK.Text = "OK";
+			this.buttonOK.Text = global::DMT.Resources.LauncherStrings.MagicWordForm_buttonOK_Text;
 			this.buttonOK.UseVisualStyleBackColor = true;
 			this.buttonOK.Click += new System.EventHandler(this.buttonOK_Click);
 			// 
@@ -392,7 +371,7 @@
 			this.label7.Name = "label7";
 			this.label7.Size = new System.Drawing.Size(54, 13);
 			this.label7.TabIndex = 31;
-			this.label7.Text = "Comment:";
+			this.label7.Text = global::DMT.Resources.LauncherStrings.MagicWordForm_label7_Text;
 			// 
 			// label4
 			// 
@@ -401,7 +380,7 @@
 			this.label4.Name = "label4";
 			this.label4.Size = new System.Drawing.Size(63, 13);
 			this.label4.TabIndex = 27;
-			this.label4.Text = "Parameters:";
+			this.label4.Text = global::DMT.Resources.LauncherStrings.MagicWordForm_label4_Text;
 			// 
 			// label3
 			// 
@@ -410,7 +389,7 @@
 			this.label3.Name = "label3";
 			this.label3.Size = new System.Drawing.Size(43, 13);
 			this.label3.TabIndex = 25;
-			this.label3.Text = "Start in:";
+			this.label3.Text = global::DMT.Resources.LauncherStrings.MagicWordForm_label3_Text;
 			// 
 			// label2
 			// 
@@ -419,7 +398,7 @@
 			this.label2.Name = "label2";
 			this.label2.Size = new System.Drawing.Size(52, 13);
 			this.label2.TabIndex = 23;
-			this.label2.Text = "Filename:";
+			this.label2.Text = global::DMT.Resources.LauncherStrings.MagicWordForm_label2_Text;
 			// 
 			// label1
 			// 
@@ -428,7 +407,7 @@
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(65, 13);
 			this.label1.TabIndex = 21;
-			this.label1.Text = "Magic word:";
+			this.label1.Text = global::DMT.Resources.LauncherStrings.MagicWordForm_label1_Text;
 			// 
 			// windowPicker
 			// 
@@ -444,7 +423,7 @@
 			this.buttonInternalCommand.Name = "buttonInternalCommand";
 			this.buttonInternalCommand.Size = new System.Drawing.Size(132, 23);
 			this.buttonInternalCommand.TabIndex = 41;
-			this.buttonInternalCommand.Text = "Internal Command...";
+			this.buttonInternalCommand.Text = global::DMT.Resources.LauncherStrings.MagicWordForm_buttonInternalCommand_Text;
 			this.buttonInternalCommand.UseVisualStyleBackColor = true;
 			this.buttonInternalCommand.Click += new System.EventHandler(this.buttonInternalCommand_Click);
 			// 

@@ -51,7 +51,7 @@
 			this.label6.Name = "label6";
 			this.label6.Size = new System.Drawing.Size(47, 13);
 			this.label6.TabIndex = 14;
-			this.label6.Text = "seconds";
+			this.label6.Text = global::DMT.Resources.LauncherStrings.LauncheGeneralOptionsPanel_label6_Text;
 			// 
 			// numericUpDownTimeout
 			// 
@@ -83,7 +83,7 @@
 			this.label5.Name = "label5";
 			this.label5.Size = new System.Drawing.Size(204, 13);
 			this.label5.TabIndex = 12;
-			this.label5.Text = "Timeout for application window to appear:";
+			this.label5.Text = global::DMT.Resources.LauncherStrings.LauncheGeneralOptionsPanel_label5_Text;
 			// 
 			// groupBox5
 			// 
@@ -95,7 +95,7 @@
 			this.groupBox5.Size = new System.Drawing.Size(163, 100);
 			this.groupBox5.TabIndex = 11;
 			this.groupBox5.TabStop = false;
-			this.groupBox5.Text = "Display icons in:";
+			this.groupBox5.Text = global::DMT.Resources.LauncherStrings.LauncheGeneralOptionsPanel_groupBox5_Text;
 			// 
 			// radioButtonIconDetails
 			// 
@@ -105,7 +105,7 @@
 			this.radioButtonIconDetails.Size = new System.Drawing.Size(41, 17);
 			this.radioButtonIconDetails.TabIndex = 2;
 			this.radioButtonIconDetails.TabStop = true;
-			this.radioButtonIconDetails.Text = "List";
+			this.radioButtonIconDetails.Text = global::DMT.Resources.LauncherStrings.LauncheGeneralOptionsPanel_radioButtonIconDetails_Text;
 			this.radioButtonIconDetails.UseVisualStyleBackColor = true;
 			this.radioButtonIconDetails.CheckedChanged += new System.EventHandler(this.radioButton_CheckedChanged);
 			// 
@@ -117,7 +117,7 @@
 			this.radioButtonIconList.Size = new System.Drawing.Size(103, 17);
 			this.radioButtonIconList.TabIndex = 1;
 			this.radioButtonIconList.TabStop = true;
-			this.radioButtonIconList.Text = "Multi-column List";
+			this.radioButtonIconList.Text = global::DMT.Resources.LauncherStrings.LauncheGeneralOptionsPanel_radioButtonIconList_Text;
 			this.radioButtonIconList.UseVisualStyleBackColor = true;
 			this.radioButtonIconList.CheckedChanged += new System.EventHandler(this.radioButton_CheckedChanged);
 			// 
@@ -129,7 +129,7 @@
 			this.radioButtonIconLargeIcon.Size = new System.Drawing.Size(44, 17);
 			this.radioButtonIconLargeIcon.TabIndex = 0;
 			this.radioButtonIconLargeIcon.TabStop = true;
-			this.radioButtonIconLargeIcon.Text = "Grid";
+			this.radioButtonIconLargeIcon.Text = global::DMT.Resources.LauncherStrings.LauncheGeneralOptionsPanel_radioButtonIconLargeIcon_Text;
 			this.radioButtonIconLargeIcon.UseVisualStyleBackColor = true;
 			this.radioButtonIconLargeIcon.CheckedChanged += new System.EventHandler(this.radioButton_CheckedChanged);
 			// 
@@ -140,7 +140,7 @@
 			this.label3.Name = "label3";
 			this.label3.Size = new System.Drawing.Size(179, 13);
 			this.label3.TabIndex = 10;
-			this.label3.Text = "Maximum number of icons to display:";
+			this.label3.Text = global::DMT.Resources.LauncherStrings.LauncheGeneralOptionsPanel_label3_Text;
 			// 
 			// numericUpDownIcons
 			// 
@@ -157,7 +157,7 @@
 			this.checkBoxMru.Name = "checkBoxMru";
 			this.checkBoxMru.Size = new System.Drawing.Size(331, 17);
 			this.checkBoxMru.TabIndex = 8;
-			this.checkBoxMru.Text = "Use most recently used in auto completion (instead of most used)";
+			this.checkBoxMru.Text = global::DMT.Resources.LauncherStrings.LauncheGeneralOptionsPanel_checkBoxMru_Text;
 			this.checkBoxMru.UseVisualStyleBackColor = true;
 			this.checkBoxMru.CheckedChanged += new System.EventHandler(this.checkBoxMru_CheckedChanged);
 			// 
@@ -168,7 +168,7 @@
 			this.checkBoxLoadWordsOnStartup.Name = "checkBoxLoadWordsOnStartup";
 			this.checkBoxLoadWordsOnStartup.Size = new System.Drawing.Size(166, 17);
 			this.checkBoxLoadWordsOnStartup.TabIndex = 15;
-			this.checkBoxLoadWordsOnStartup.Text = "Load Magic Words on startup";
+			this.checkBoxLoadWordsOnStartup.Text = global::DMT.Resources.LauncherStrings.LauncheGeneralOptionsPanel_checkBoxLoadWordsOnStartup_Text;
 			this.checkBoxLoadWordsOnStartup.UseVisualStyleBackColor = true;
 			this.checkBoxLoadWordsOnStartup.CheckedChanged += new System.EventHandler(this.checkBoxLoadWordsOnStartup_CheckedChanged);
 			// 

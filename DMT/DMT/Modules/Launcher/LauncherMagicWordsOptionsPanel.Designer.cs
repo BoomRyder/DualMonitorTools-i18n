@@ -66,7 +66,7 @@
 			this.buttonResetCounts.Name = "buttonResetCounts";
 			this.buttonResetCounts.Size = new System.Drawing.Size(124, 23);
 			this.buttonResetCounts.TabIndex = 9;
-			this.buttonResetCounts.Text = "Reset usage counts";
+			this.buttonResetCounts.Text = global::DMT.Resources.LauncherStrings.LauncherMagicWordsOptionsPanel_buttonResetCounts_Text;
 			this.buttonResetCounts.UseVisualStyleBackColor = true;
 			this.buttonResetCounts.Click += new System.EventHandler(this.buttonResetCounts_Click);
 			// 
@@ -77,7 +77,7 @@
 			this.buttonDelete.Name = "buttonDelete";
 			this.buttonDelete.Size = new System.Drawing.Size(75, 23);
 			this.buttonDelete.TabIndex = 8;
-			this.buttonDelete.Text = "Delete";
+			this.buttonDelete.Text = global::DMT.Resources.LauncherStrings.LauncherMagicWordsOptionsPanel_buttonDelete_Text;
 			this.buttonDelete.UseVisualStyleBackColor = true;
 			this.buttonDelete.Click += new System.EventHandler(this.buttonDelete_Click);
 			// 
@@ -88,7 +88,7 @@
 			this.buttonEdit.Name = "buttonEdit";
 			this.buttonEdit.Size = new System.Drawing.Size(75, 23);
 			this.buttonEdit.TabIndex = 7;
-			this.buttonEdit.Text = "Edit";
+			this.buttonEdit.Text = global::DMT.Resources.LauncherStrings.LauncherMagicWordsOptionsPanel_buttonEdit_Text;
 			this.buttonEdit.UseVisualStyleBackColor = true;
 			this.buttonEdit.Click += new System.EventHandler(this.buttonEdit_Click);
 			// 
@@ -99,7 +99,7 @@
 			this.buttonAdd.Name = "buttonAdd";
 			this.buttonAdd.Size = new System.Drawing.Size(75, 23);
 			this.buttonAdd.TabIndex = 6;
-			this.buttonAdd.Text = "Add";
+			this.buttonAdd.Text = global::DMT.Resources.LauncherStrings.LauncherMagicWordsOptionsPanel_buttonAdd_Text;
 			this.buttonAdd.UseVisualStyleBackColor = true;
 			this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
 			// 
@@ -154,7 +154,7 @@
 			// 
 			this.aliasDataGridViewTextBoxColumn.DataPropertyName = "Alias";
 			this.aliasDataGridViewTextBoxColumn.Frozen = true;
-			this.aliasDataGridViewTextBoxColumn.HeaderText = "Magic Word";
+			this.aliasDataGridViewTextBoxColumn.HeaderText = global::DMT.Resources.LauncherStrings.LauncherMagicWordsOptionsPanel_aliasDataGridViewTextBoxColumn_HeaderText;
 			this.aliasDataGridViewTextBoxColumn.Name = "aliasDataGridViewTextBoxColumn";
 			this.aliasDataGridViewTextBoxColumn.ReadOnly = true;
 			this.aliasDataGridViewTextBoxColumn.Width = 90;
@@ -162,7 +162,7 @@
 			// filenameDataGridViewTextBoxColumn
 			// 
 			this.filenameDataGridViewTextBoxColumn.DataPropertyName = "Filename";
-			this.filenameDataGridViewTextBoxColumn.HeaderText = "Filename";
+			this.filenameDataGridViewTextBoxColumn.HeaderText = global::DMT.Resources.LauncherStrings.LauncherMagicWordsOptionsPanel_filenameDataGridViewTextBoxColumn_HeaderText;
 			this.filenameDataGridViewTextBoxColumn.Name = "filenameDataGridViewTextBoxColumn";
 			this.filenameDataGridViewTextBoxColumn.ReadOnly = true;
 			this.filenameDataGridViewTextBoxColumn.Width = 74;
@@ -170,7 +170,7 @@
 			// Parameters
 			// 
 			this.Parameters.DataPropertyName = "Parameters";
-			this.Parameters.HeaderText = "Parameters";
+			this.Parameters.HeaderText = global::DMT.Resources.LauncherStrings.LauncherMagicWordsOptionsPanel_Parameters_HeaderText;
 			this.Parameters.Name = "Parameters";
 			this.Parameters.ReadOnly = true;
 			this.Parameters.Width = 85;
@@ -178,7 +178,7 @@
 			// Comment
 			// 
 			this.Comment.DataPropertyName = "Comment";
-			this.Comment.HeaderText = "Comment";
+			this.Comment.HeaderText = global::DMT.Resources.LauncherStrings.LauncherMagicWordsOptionsPanel_Comment_HeaderText;
 			this.Comment.Name = "Comment";
 			this.Comment.ReadOnly = true;
 			this.Comment.Width = 76;
@@ -186,7 +186,7 @@
 			// UseCount
 			// 
 			this.UseCount.DataPropertyName = "UseCount";
-			this.UseCount.HeaderText = "UseCount";
+			this.UseCount.HeaderText = global::DMT.Resources.LauncherStrings.LauncherMagicWordsOptionsPanel_UseCount_HeaderText;
 			this.UseCount.Name = "UseCount";
 			this.UseCount.ReadOnly = true;
 			this.UseCount.Width = 79;
@@ -194,7 +194,7 @@
 			// LastUsed
 			// 
 			this.LastUsed.DataPropertyName = "LastUsed";
-			this.LastUsed.HeaderText = "LastUsed";
+			this.LastUsed.HeaderText = global::DMT.Resources.LauncherStrings.LauncherMagicWordsOptionsPanel_LastUsed_HeaderText;
 			this.LastUsed.Name = "LastUsed";
 			this.LastUsed.ReadOnly = true;
 			this.LastUsed.Width = 77;
@@ -202,7 +202,7 @@
 			// aliasDataGridViewTextBoxColumn1
 			// 
 			this.aliasDataGridViewTextBoxColumn1.DataPropertyName = "Alias";
-			this.aliasDataGridViewTextBoxColumn1.HeaderText = "Alias";
+			this.aliasDataGridViewTextBoxColumn1.HeaderText = global::DMT.Resources.LauncherStrings.LauncherMagicWordsOptionsPanel_aliasDataGridViewTextBoxColumn1_HeaderText;
 			this.aliasDataGridViewTextBoxColumn1.Name = "aliasDataGridViewTextBoxColumn1";
 			this.aliasDataGridViewTextBoxColumn1.ReadOnly = true;
 			this.aliasDataGridViewTextBoxColumn1.Width = 54;
@@ -210,7 +210,7 @@
 			// filenameDataGridViewTextBoxColumn1
 			// 
 			this.filenameDataGridViewTextBoxColumn1.DataPropertyName = "Filename";
-			this.filenameDataGridViewTextBoxColumn1.HeaderText = "Filename";
+			this.filenameDataGridViewTextBoxColumn1.HeaderText = global::DMT.Resources.LauncherStrings.LauncherMagicWordsOptionsPanel_filenameDataGridViewTextBoxColumn1_HeaderText;
 			this.filenameDataGridViewTextBoxColumn1.Name = "filenameDataGridViewTextBoxColumn1";
 			this.filenameDataGridViewTextBoxColumn1.ReadOnly = true;
 			this.filenameDataGridViewTextBoxColumn1.Width = 74;
@@ -218,7 +218,7 @@
 			// parametersDataGridViewTextBoxColumn
 			// 
 			this.parametersDataGridViewTextBoxColumn.DataPropertyName = "Parameters";
-			this.parametersDataGridViewTextBoxColumn.HeaderText = "Parameters";
+			this.parametersDataGridViewTextBoxColumn.HeaderText = global::DMT.Resources.LauncherStrings.LauncherMagicWordsOptionsPanel_parametersDataGridViewTextBoxColumn_HeaderText;
 			this.parametersDataGridViewTextBoxColumn.Name = "parametersDataGridViewTextBoxColumn";
 			this.parametersDataGridViewTextBoxColumn.ReadOnly = true;
 			this.parametersDataGridViewTextBoxColumn.Width = 85;
@@ -226,7 +226,7 @@
 			// startDirectoryDataGridViewTextBoxColumn
 			// 
 			this.startDirectoryDataGridViewTextBoxColumn.DataPropertyName = "StartDirectory";
-			this.startDirectoryDataGridViewTextBoxColumn.HeaderText = "StartDirectory";
+			this.startDirectoryDataGridViewTextBoxColumn.HeaderText = global::DMT.Resources.LauncherStrings.LauncherMagicWordsOptionsPanel_startDirectoryDataGridViewTextBoxColumn_HeaderText;
 			this.startDirectoryDataGridViewTextBoxColumn.Name = "startDirectoryDataGridViewTextBoxColumn";
 			this.startDirectoryDataGridViewTextBoxColumn.ReadOnly = true;
 			this.startDirectoryDataGridViewTextBoxColumn.Width = 96;
@@ -234,7 +234,7 @@
 			// commentDataGridViewTextBoxColumn
 			// 
 			this.commentDataGridViewTextBoxColumn.DataPropertyName = "Comment";
-			this.commentDataGridViewTextBoxColumn.HeaderText = "Comment";
+			this.commentDataGridViewTextBoxColumn.HeaderText = global::DMT.Resources.LauncherStrings.LauncherMagicWordsOptionsPanel_commentDataGridViewTextBoxColumn_HeaderText;
 			this.commentDataGridViewTextBoxColumn.Name = "commentDataGridViewTextBoxColumn";
 			this.commentDataGridViewTextBoxColumn.ReadOnly = true;
 			this.commentDataGridViewTextBoxColumn.Width = 76;
@@ -242,7 +242,7 @@
 			// windowClassDataGridViewTextBoxColumn
 			// 
 			this.windowClassDataGridViewTextBoxColumn.DataPropertyName = "WindowClass";
-			this.windowClassDataGridViewTextBoxColumn.HeaderText = "WindowClass";
+			this.windowClassDataGridViewTextBoxColumn.HeaderText = global::DMT.Resources.LauncherStrings.LauncherMagicWordsOptionsPanel_windowClassDataGridViewTextBoxColumn_HeaderText;
 			this.windowClassDataGridViewTextBoxColumn.Name = "windowClassDataGridViewTextBoxColumn";
 			this.windowClassDataGridViewTextBoxColumn.ReadOnly = true;
 			this.windowClassDataGridViewTextBoxColumn.Width = 96;
@@ -250,7 +250,7 @@
 			// captionRegExprDataGridViewTextBoxColumn
 			// 
 			this.captionRegExprDataGridViewTextBoxColumn.DataPropertyName = "CaptionRegExpr";
-			this.captionRegExprDataGridViewTextBoxColumn.HeaderText = "CaptionRegExpr";
+			this.captionRegExprDataGridViewTextBoxColumn.HeaderText = global::DMT.Resources.LauncherStrings.LauncherMagicWordsOptionsPanel_captionRegExprDataGridViewTextBoxColumn_HeaderText;
 			this.captionRegExprDataGridViewTextBoxColumn.Name = "captionRegExprDataGridViewTextBoxColumn";
 			this.captionRegExprDataGridViewTextBoxColumn.ReadOnly = true;
 			this.captionRegExprDataGridViewTextBoxColumn.Width = 109;
@@ -258,7 +258,7 @@
 			// useCountDataGridViewTextBoxColumn
 			// 
 			this.useCountDataGridViewTextBoxColumn.DataPropertyName = "UseCount";
-			this.useCountDataGridViewTextBoxColumn.HeaderText = "UseCount";
+			this.useCountDataGridViewTextBoxColumn.HeaderText = global::DMT.Resources.LauncherStrings.LauncherMagicWordsOptionsPanel_useCountDataGridViewTextBoxColumn_HeaderText;
 			this.useCountDataGridViewTextBoxColumn.Name = "useCountDataGridViewTextBoxColumn";
 			this.useCountDataGridViewTextBoxColumn.ReadOnly = true;
 			this.useCountDataGridViewTextBoxColumn.Width = 79;
@@ -266,7 +266,7 @@
 			// lastUsedDataGridViewTextBoxColumn
 			// 
 			this.lastUsedDataGridViewTextBoxColumn.DataPropertyName = "LastUsed";
-			this.lastUsedDataGridViewTextBoxColumn.HeaderText = "LastUsed";
+			this.lastUsedDataGridViewTextBoxColumn.HeaderText = global::DMT.Resources.LauncherStrings.LauncherMagicWordsOptionsPanel_lastUsedDataGridViewTextBoxColumn_HeaderText;
 			this.lastUsedDataGridViewTextBoxColumn.Name = "lastUsedDataGridViewTextBoxColumn";
 			this.lastUsedDataGridViewTextBoxColumn.ReadOnly = true;
 			this.lastUsedDataGridViewTextBoxColumn.Width = 77;
@@ -274,7 +274,7 @@
 			// startupPosition1DataGridViewTextBoxColumn
 			// 
 			this.startupPosition1DataGridViewTextBoxColumn.DataPropertyName = "StartupPosition1";
-			this.startupPosition1DataGridViewTextBoxColumn.HeaderText = "StartupPosition1";
+			this.startupPosition1DataGridViewTextBoxColumn.HeaderText = global::DMT.Resources.LauncherStrings.LauncherMagicWordsOptionsPanel_startupPosition1DataGridViewTextBoxColumn_HeaderText;
 			this.startupPosition1DataGridViewTextBoxColumn.Name = "startupPosition1DataGridViewTextBoxColumn";
 			this.startupPosition1DataGridViewTextBoxColumn.ReadOnly = true;
 			this.startupPosition1DataGridViewTextBoxColumn.Width = 109;
@@ -282,7 +282,7 @@
 			// startupPosition2DataGridViewTextBoxColumn
 			// 
 			this.startupPosition2DataGridViewTextBoxColumn.DataPropertyName = "StartupPosition2";
-			this.startupPosition2DataGridViewTextBoxColumn.HeaderText = "StartupPosition2";
+			this.startupPosition2DataGridViewTextBoxColumn.HeaderText = global::DMT.Resources.LauncherStrings.LauncherMagicWordsOptionsPanel_startupPosition2DataGridViewTextBoxColumn_HeaderText;
 			this.startupPosition2DataGridViewTextBoxColumn.Name = "startupPosition2DataGridViewTextBoxColumn";
 			this.startupPosition2DataGridViewTextBoxColumn.ReadOnly = true;
 			this.startupPosition2DataGridViewTextBoxColumn.Width = 109;
@@ -290,7 +290,7 @@
 			// startupPosition3DataGridViewTextBoxColumn
 			// 
 			this.startupPosition3DataGridViewTextBoxColumn.DataPropertyName = "StartupPosition3";
-			this.startupPosition3DataGridViewTextBoxColumn.HeaderText = "StartupPosition3";
+			this.startupPosition3DataGridViewTextBoxColumn.HeaderText = global::DMT.Resources.LauncherStrings.LauncherMagicWordsOptionsPanel_startupPosition3DataGridViewTextBoxColumn_HeaderText;
 			this.startupPosition3DataGridViewTextBoxColumn.Name = "startupPosition3DataGridViewTextBoxColumn";
 			this.startupPosition3DataGridViewTextBoxColumn.ReadOnly = true;
 			this.startupPosition3DataGridViewTextBoxColumn.Width = 109;
@@ -298,7 +298,7 @@
 			// startupPosition4DataGridViewTextBoxColumn
 			// 
 			this.startupPosition4DataGridViewTextBoxColumn.DataPropertyName = "StartupPosition4";
-			this.startupPosition4DataGridViewTextBoxColumn.HeaderText = "StartupPosition4";
+			this.startupPosition4DataGridViewTextBoxColumn.HeaderText = global::DMT.Resources.LauncherStrings.LauncherMagicWordsOptionsPanel_startupPosition4DataGridViewTextBoxColumn_HeaderText;
 			this.startupPosition4DataGridViewTextBoxColumn.Name = "startupPosition4DataGridViewTextBoxColumn";
 			this.startupPosition4DataGridViewTextBoxColumn.ReadOnly = true;
 			this.startupPosition4DataGridViewTextBoxColumn.Width = 109;

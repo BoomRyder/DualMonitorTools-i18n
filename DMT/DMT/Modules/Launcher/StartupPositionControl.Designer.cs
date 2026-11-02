@@ -50,7 +50,7 @@
 			this.checkBoxEnable.Name = "checkBoxEnable";
 			this.checkBoxEnable.Size = new System.Drawing.Size(152, 17);
 			this.checkBoxEnable.TabIndex = 33;
-			this.checkBoxEnable.Text = "Position window on startup";
+			this.checkBoxEnable.Text = global::DMT.Resources.LauncherStrings.StartupPositionControl_checkBoxEnable_Text;
 			this.checkBoxEnable.UseVisualStyleBackColor = true;
 			this.checkBoxEnable.CheckedChanged += new System.EventHandler(this.checkBoxEnable_CheckedChanged);
 			// 
@@ -74,7 +74,7 @@
 			this.label12.Name = "label12";
 			this.label12.Size = new System.Drawing.Size(27, 13);
 			this.label12.TabIndex = 31;
-			this.label12.Text = "Run";
+			this.label12.Text = global::DMT.Resources.LauncherStrings.StartupPositionControl_label12_Text;
 			// 
 			// textBoxCY
 			// 
@@ -90,7 +90,7 @@
 			this.label11.Name = "label11";
 			this.label11.Size = new System.Drawing.Size(10, 13);
 			this.label11.TabIndex = 29;
-			this.label11.Text = ",";
+			this.label11.Text = global::DMT.Resources.LauncherStrings.StartupPositionControl_label11_Text;
 			// 
 			// textBoxCX
 			// 
@@ -106,7 +106,7 @@
 			this.label10.Name = "label10";
 			this.label10.Size = new System.Drawing.Size(30, 13);
 			this.label10.TabIndex = 27;
-			this.label10.Text = "Size:";
+			this.label10.Text = global::DMT.Resources.LauncherStrings.StartupPositionControl_label10_Text;
 			// 
 			// textBoxY
 			// 
@@ -122,7 +122,7 @@
 			this.label9.Name = "label9";
 			this.label9.Size = new System.Drawing.Size(10, 13);
 			this.label9.TabIndex = 25;
-			this.label9.Text = ",";
+			this.label9.Text = global::DMT.Resources.LauncherStrings.StartupPositionControl_label9_Text;
 			// 
 			// textBoxX
 			// 
@@ -138,7 +138,7 @@
 			this.label8.Name = "label8";
 			this.label8.Size = new System.Drawing.Size(72, 13);
 			this.label8.TabIndex = 23;
-			this.label8.Text = "Start Position:";
+			this.label8.Text = global::DMT.Resources.LauncherStrings.StartupPositionControl_label8_Text;
 			// 
 			// windowPicker
 			// 

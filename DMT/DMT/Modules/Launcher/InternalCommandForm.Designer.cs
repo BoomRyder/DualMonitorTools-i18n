@@ -45,7 +45,7 @@
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(45, 13);
 			this.label1.TabIndex = 0;
-			this.label1.Text = "Module:";
+			this.label1.Text = global::DMT.Resources.LauncherStrings.InternalCommandForm_label1_Text;
 			// 
 			// comboBoxModule
 			// 
@@ -64,7 +64,7 @@
 			this.label2.Name = "label2";
 			this.label2.Size = new System.Drawing.Size(40, 13);
 			this.label2.TabIndex = 2;
-			this.label2.Text = "Action:";
+			this.label2.Text = global::DMT.Resources.LauncherStrings.InternalCommandForm_label2_Text;
 			// 
 			// comboBoxAction
 			// 
@@ -82,7 +82,7 @@
 			this.labelDescription.Name = "labelDescription";
 			this.labelDescription.Size = new System.Drawing.Size(522, 13);
 			this.labelDescription.TabIndex = 4;
-			this.labelDescription.Text = "Description";
+			this.labelDescription.Text = global::DMT.Resources.LauncherStrings.InternalCommandForm_labelDescription_Text;
 			this.labelDescription.TextAlign = System.Drawing.ContentAlignment.TopRight;
 			// 
 			// buttonOK
@@ -92,7 +92,7 @@
 			this.buttonOK.Name = "buttonOK";
 			this.buttonOK.Size = new System.Drawing.Size(75, 23);
 			this.buttonOK.TabIndex = 5;
-			this.buttonOK.Text = "OK";
+			this.buttonOK.Text = global::DMT.Resources.LauncherStrings.InternalCommandForm_buttonOK_Text;
 			this.buttonOK.UseVisualStyleBackColor = true;
 			// 
 			// buttonCancel
@@ -102,7 +102,7 @@
 			this.buttonCancel.Name = "buttonCancel";
 			this.buttonCancel.Size = new System.Drawing.Size(75, 23);
 			this.buttonCancel.TabIndex = 6;
-			this.buttonCancel.Text = "Cancel";
+			this.buttonCancel.Text = global::DMT.Resources.LauncherStrings.InternalCommandForm_buttonCancel_Text;
 			this.buttonCancel.UseVisualStyleBackColor = true;
 			// 
 			// InternalCommandForm

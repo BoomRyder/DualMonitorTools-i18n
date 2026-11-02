@@ -86,12 +86,12 @@
 			// 
 			// columnHeaderAlias
 			// 
-			this.columnHeaderAlias.Text = "Magic Word";
+			this.columnHeaderAlias.Text = global::DMT.Resources.LauncherStrings.EntryForm_columnHeaderAlias_Text;
 			this.columnHeaderAlias.Width = 120;
 			// 
 			// columnHeaderFilename
 			// 
-			this.columnHeaderFilename.Text = "Filename";
+			this.columnHeaderFilename.Text = global::DMT.Resources.LauncherStrings.EntryForm_columnHeaderFilename_Text;
 			this.columnHeaderFilename.Width = 200;
 			// 
 			// EntryForm

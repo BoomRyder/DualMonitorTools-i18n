@@ -173,4 +173,281 @@
   <data name="XmlFilter" xml:space="preserve">
     <value>XML files (*.xml)|*.xml|All files (*.*)|*.*</value>
   </data>
+  <data name="EntryForm_columnHeaderAlias_Text" xml:space="preserve">
+    <value>Magic Word</value>
+  </data>
+  <data name="EntryForm_columnHeaderFilename_Text" xml:space="preserve">
+    <value>Filename</value>
+  </data>
+  <data name="InternalCommandForm_label1_Text" xml:space="preserve">
+    <value>Module:</value>
+  </data>
+  <data name="InternalCommandForm_label2_Text" xml:space="preserve">
+    <value>Action:</value>
+  </data>
+  <data name="InternalCommandForm_buttonOK_Text" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="InternalCommandForm_buttonCancel_Text" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="LauncheGeneralOptionsPanel_label6_Text" xml:space="preserve">
+    <value>seconds</value>
+  </data>
+  <data name="LauncheGeneralOptionsPanel_label5_Text" xml:space="preserve">
+    <value>Timeout for application window to appear:</value>
+  </data>
+  <data name="LauncheGeneralOptionsPanel_groupBox5_Text" xml:space="preserve">
+    <value>Display icons in:</value>
+  </data>
+  <data name="LauncheGeneralOptionsPanel_radioButtonIconDetails_Text" xml:space="preserve">
+    <value>List</value>
+  </data>
+  <data name="LauncheGeneralOptionsPanel_radioButtonIconList_Text" xml:space="preserve">
+    <value>Multi-column List</value>
+  </data>
+  <data name="LauncheGeneralOptionsPanel_radioButtonIconLargeIcon_Text" xml:space="preserve">
+    <value>Grid</value>
+  </data>
+  <data name="LauncheGeneralOptionsPanel_label3_Text" xml:space="preserve">
+    <value>Maximum number of icons to display:</value>
+  </data>
+  <data name="LauncheGeneralOptionsPanel_checkBoxMru_Text" xml:space="preserve">
+    <value>Use most recently used in auto completion (instead of most used)</value>
+  </data>
+  <data name="LauncheGeneralOptionsPanel_checkBoxLoadWordsOnStartup_Text" xml:space="preserve">
+    <value>Load Magic Words on startup</value>
+  </data>
+  <data name="LauncherImportOptionsPanel_groupBox3_Text" xml:space="preserve">
+    <value>Other Magic Word style file formats</value>
+  </data>
+  <data name="LauncherImportOptionsPanel_label2_Text" xml:space="preserve">
+    <value>(As used by SlickRun)</value>
+  </data>
+  <data name="LauncherImportOptionsPanel_buttonImportQrs_Text" xml:space="preserve">
+    <value>Import QRS...</value>
+  </data>
+  <data name="LauncherImportOptionsPanel_groupBox2_Text" xml:space="preserve">
+    <value>DualLauncher native file format</value>
+  </data>
+  <data name="LauncherImportOptionsPanel_buttonImportXml_Text" xml:space="preserve">
+    <value>Import XML...</value>
+  </data>
+  <data name="LauncherImportOptionsPanel_buttonExportXml_Text" xml:space="preserve">
+    <value>Export XML...</value>
+  </data>
+  <data name="LauncherImportOptionsPanel_buttonDeleteAll_Text" xml:space="preserve">
+    <value>Delete all Magic Words...</value>
+  </data>
+  <data name="LauncherMagicWordsOptionsPanel_buttonResetCounts_Text" xml:space="preserve">
+    <value>Reset usage counts</value>
+  </data>
+  <data name="LauncherMagicWordsOptionsPanel_buttonDelete_Text" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="LauncherMagicWordsOptionsPanel_buttonEdit_Text" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="LauncherMagicWordsOptionsPanel_buttonAdd_Text" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="LauncherMagicWordsOptionsPanel_aliasDataGridViewTextBoxColumn_HeaderText" xml:space="preserve">
+    <value>Magic Word</value>
+  </data>
+  <data name="LauncherMagicWordsOptionsPanel_filenameDataGridViewTextBoxColumn_HeaderText" xml:space="preserve">
+    <value>Filename</value>
+  </data>
+  <data name="LauncherMagicWordsOptionsPanel_Parameters_HeaderText" xml:space="preserve">
+    <value>Parameters</value>
+  </data>
+  <data name="LauncherMagicWordsOptionsPanel_Comment_HeaderText" xml:space="preserve">
+    <value>Comment</value>
+  </data>
+  <data name="LauncherMagicWordsOptionsPanel_UseCount_HeaderText" xml:space="preserve">
+    <value>UseCount</value>
+  </data>
+  <data name="LauncherMagicWordsOptionsPanel_LastUsed_HeaderText" xml:space="preserve">
+    <value>LastUsed</value>
+  </data>
+  <data name="LauncherMagicWordsOptionsPanel_aliasDataGridViewTextBoxColumn1_HeaderText" xml:space="preserve">
+    <value>Alias</value>
+  </data>
+  <data name="LauncherMagicWordsOptionsPanel_filenameDataGridViewTextBoxColumn1_HeaderText" xml:space="preserve">
+    <value>Filename</value>
+  </data>
+  <data name="LauncherMagicWordsOptionsPanel_parametersDataGridViewTextBoxColumn_HeaderText" xml:space="preserve">
+    <value>Parameters</value>
+  </data>
+  <data name="LauncherMagicWordsOptionsPanel_startDirectoryDataGridViewTextBoxColumn_HeaderText" xml:space="preserve">
+    <value>StartDirectory</value>
+  </data>
+  <data name="LauncherMagicWordsOptionsPanel_commentDataGridViewTextBoxColumn_HeaderText" xml:space="preserve">
+    <value>Comment</value>
+  </data>
+  <data name="LauncherMagicWordsOptionsPanel_windowClassDataGridViewTextBoxColumn_HeaderText" xml:space="preserve">
+    <value>WindowClass</value>
+  </data>
+  <data name="LauncherMagicWordsOptionsPanel_captionRegExprDataGridViewTextBoxColumn_HeaderText" xml:space="preserve">
+    <value>CaptionRegExpr</value>
+  </data>
+  <data name="LauncherMagicWordsOptionsPanel_useCountDataGridViewTextBoxColumn_HeaderText" xml:space="preserve">
+    <value>UseCount</value>
+  </data>
+  <data name="LauncherMagicWordsOptionsPanel_lastUsedDataGridViewTextBoxColumn_HeaderText" xml:space="preserve">
+    <value>LastUsed</value>
+  </data>
+  <data name="LauncherMagicWordsOptionsPanel_startupPosition1DataGridViewTextBoxColumn_HeaderText" xml:space="preserve">
+    <value>StartupPosition1</value>
+  </data>
+  <data name="LauncherMagicWordsOptionsPanel_startupPosition2DataGridViewTextBoxColumn_HeaderText" xml:space="preserve">
+    <value>StartupPosition2</value>
+  </data>
+  <data name="LauncherMagicWordsOptionsPanel_startupPosition3DataGridViewTextBoxColumn_HeaderText" xml:space="preserve">
+    <value>StartupPosition3</value>
+  </data>
+  <data name="LauncherMagicWordsOptionsPanel_startupPosition4DataGridViewTextBoxColumn_HeaderText" xml:space="preserve">
+    <value>StartupPosition4</value>
+  </data>
+  <data name="LauncherRootOptionsPanel_label3_Text" xml:space="preserve">
+    <value>Settings to control the use of Magic Words to launch and position your applications.</value>
+  </data>
+  <data name="LauncherRootOptionsPanel_label1_Text" xml:space="preserve">
+    <value>Launcher Module</value>
+  </data>
+  <data name="MagicWordForm_buttonTest_Text" xml:space="preserve">
+    <value>Test the magic word</value>
+  </data>
+  <data name="MagicWordForm_groupBox2_Text" xml:space="preserve">
+    <value>Stats</value>
+  </data>
+  <data name="MagicWordForm_buttonResetTimesUsed_Text" xml:space="preserve">
+    <value>Reset</value>
+  </data>
+  <data name="MagicWordForm_label9_Text" xml:space="preserve">
+    <value>Times used:</value>
+  </data>
+  <data name="MagicWordForm_buttonResetLastUsed_Text" xml:space="preserve">
+    <value>Reset</value>
+  </data>
+  <data name="MagicWordForm_label8_Text" xml:space="preserve">
+    <value>Last used:</value>
+  </data>
+  <data name="MagicWordForm_buttonDirBrowse_Text" xml:space="preserve">
+    <value>Browse...</value>
+  </data>
+  <data name="MagicWordForm_buttonDirBrowse_ToolTip" xml:space="preserve">
+    <value>Browse for the starting directory.</value>
+  </data>
+  <data name="MagicWordForm_tabPage1_Text" xml:space="preserve">
+    <value>Start Position 1</value>
+  </data>
+  <data name="MagicWordForm_tabPage2_Text" xml:space="preserve">
+    <value>Start Position 2</value>
+  </data>
+  <data name="MagicWordForm_tabPage3_Text" xml:space="preserve">
+    <value>Start Position 3</value>
+  </data>
+  <data name="MagicWordForm_tabPage4_Text" xml:space="preserve">
+    <value>Start Position 4</value>
+  </data>
+  <data name="MagicWordForm_textBoxComment_ToolTip" xml:space="preserve">
+    <value>You can optionally leave a comment here if you wish.</value>
+  </data>
+  <data name="MagicWordForm_textBoxCaption_ToolTip" xml:space="preserve">
+    <value>Regular expression to help identify the correct window.
+Normally you can get away with just a substring from the windows caption.</value>
+  </data>
+  <data name="MagicWordForm_groupBox1_Text" xml:space="preserve">
+    <value>Application window identification</value>
+  </data>
+  <data name="MagicWordForm_label6_Text" xml:space="preserve">
+    <value>Caption:</value>
+  </data>
+  <data name="MagicWordForm_textBoxWindowClass_ToolTip" xml:space="preserve">
+    <value>This is the name of the window class that the above program uses.
+May be left blank, but will be filled in if you use the crosshairs.</value>
+  </data>
+  <data name="MagicWordForm_label5_Text" xml:space="preserve">
+    <value>Window Class:</value>
+  </data>
+  <data name="MagicWordForm_buttonBrowse_Text" xml:space="preserve">
+    <value>Browse...</value>
+  </data>
+  <data name="MagicWordForm_buttonBrowse_ToolTip" xml:space="preserve">
+    <value>Browse for the application or document.</value>
+  </data>
+  <data name="MagicWordForm_textBoxParameters_ToolTip" xml:space="preserve">
+    <value>Any parameters that need to be passed to the application.
+This will normally be left blank.</value>
+  </data>
+  <data name="MagicWordForm_textBoxStartDirectory_ToolTip" xml:space="preserve">
+    <value>This is the working directory you want the application started in.
+This will normally be left blank.</value>
+  </data>
+  <data name="MagicWordForm_textBoxAlias_ToolTip" xml:space="preserve">
+    <value>This is the Word you type (or start typing) to run this program.</value>
+  </data>
+  <data name="MagicWordForm_buttonCancel_Text" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="MagicWordForm_buttonOK_Text" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="MagicWordForm_label7_Text" xml:space="preserve">
+    <value>Comment:</value>
+  </data>
+  <data name="MagicWordForm_label4_Text" xml:space="preserve">
+    <value>Parameters:</value>
+  </data>
+  <data name="MagicWordForm_label3_Text" xml:space="preserve">
+    <value>Start in:</value>
+  </data>
+  <data name="MagicWordForm_label2_Text" xml:space="preserve">
+    <value>Filename:</value>
+  </data>
+  <data name="MagicWordForm_label1_Text" xml:space="preserve">
+    <value>Magic word:</value>
+  </data>
+  <data name="MagicWordForm_buttonInternalCommand_Text" xml:space="preserve">
+    <value>Internal Command...</value>
+  </data>
+  <data name="ParameterInputForm_buttonOK_Text" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="StartupPositionControl_checkBoxEnable_Text" xml:space="preserve">
+    <value>Position window on startup</value>
+  </data>
+  <data name="StartupPositionControl_label12_Text" xml:space="preserve">
+    <value>Run</value>
+  </data>
+  <data name="StartupPositionControl_label11_Text" xml:space="preserve">
+    <value>,</value>
+  </data>
+  <data name="StartupPositionControl_label10_Text" xml:space="preserve">
+    <value>Size:</value>
+  </data>
+  <data name="StartupPositionControl_label9_Text" xml:space="preserve">
+    <value>,</value>
+  </data>
+  <data name="StartupPositionControl_label8_Text" xml:space="preserve">
+    <value>Start Position:</value>
+  </data>
+  <data name="InternalCommandForm_labelDescription_Text" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="Node_General" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="Node_HotKeys" xml:space="preserve">
+    <value>HotKeys</value>
+  </data>
+  <data name="Node_ImportExport" xml:space="preserve">
+    <value>Import / Export</value>
+  </data>
+  <data name="Node_Launcher" xml:space="preserve">
+    <value>Launcher</value>
+  </data>
+  <data name="Node_MagicWords" xml:space="preserve">
+    <value>Magic Words</value>
+  </data>
 </root>

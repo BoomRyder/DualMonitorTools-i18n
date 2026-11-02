@@ -221,5 +221,824 @@ namespace DMT.Resources {
                 return ResourceManager.GetString("XmlFilter", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Magic Word.
+        /// </summary>
+        internal static string EntryForm_columnHeaderAlias_Text {
+            get {
+                return ResourceManager.GetString("EntryForm_columnHeaderAlias_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Filename.
+        /// </summary>
+        internal static string EntryForm_columnHeaderFilename_Text {
+            get {
+                return ResourceManager.GetString("EntryForm_columnHeaderFilename_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Module:.
+        /// </summary>
+        internal static string InternalCommandForm_label1_Text {
+            get {
+                return ResourceManager.GetString("InternalCommandForm_label1_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Action:.
+        /// </summary>
+        internal static string InternalCommandForm_label2_Text {
+            get {
+                return ResourceManager.GetString("InternalCommandForm_label2_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to OK.
+        /// </summary>
+        internal static string InternalCommandForm_buttonOK_Text {
+            get {
+                return ResourceManager.GetString("InternalCommandForm_buttonOK_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cancel.
+        /// </summary>
+        internal static string InternalCommandForm_buttonCancel_Text {
+            get {
+                return ResourceManager.GetString("InternalCommandForm_buttonCancel_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to seconds.
+        /// </summary>
+        internal static string LauncheGeneralOptionsPanel_label6_Text {
+            get {
+                return ResourceManager.GetString("LauncheGeneralOptionsPanel_label6_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Timeout for application window to appear:.
+        /// </summary>
+        internal static string LauncheGeneralOptionsPanel_label5_Text {
+            get {
+                return ResourceManager.GetString("LauncheGeneralOptionsPanel_label5_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Display icons in:.
+        /// </summary>
+        internal static string LauncheGeneralOptionsPanel_groupBox5_Text {
+            get {
+                return ResourceManager.GetString("LauncheGeneralOptionsPanel_groupBox5_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to List.
+        /// </summary>
+        internal static string LauncheGeneralOptionsPanel_radioButtonIconDetails_Text {
+            get {
+                return ResourceManager.GetString("LauncheGeneralOptionsPanel_radioButtonIconDetails_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Multi-column List.
+        /// </summary>
+        internal static string LauncheGeneralOptionsPanel_radioButtonIconList_Text {
+            get {
+                return ResourceManager.GetString("LauncheGeneralOptionsPanel_radioButtonIconList_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Grid.
+        /// </summary>
+        internal static string LauncheGeneralOptionsPanel_radioButtonIconLargeIcon_Text {
+            get {
+                return ResourceManager.GetString("LauncheGeneralOptionsPanel_radioButtonIconLargeIcon_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Maximum number of icons to display:.
+        /// </summary>
+        internal static string LauncheGeneralOptionsPanel_label3_Text {
+            get {
+                return ResourceManager.GetString("LauncheGeneralOptionsPanel_label3_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Use most recently used in auto completion (instead of most used).
+        /// </summary>
+        internal static string LauncheGeneralOptionsPanel_checkBoxMru_Text {
+            get {
+                return ResourceManager.GetString("LauncheGeneralOptionsPanel_checkBoxMru_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Load Magic Words on startup.
+        /// </summary>
+        internal static string LauncheGeneralOptionsPanel_checkBoxLoadWordsOnStartup_Text {
+            get {
+                return ResourceManager.GetString("LauncheGeneralOptionsPanel_checkBoxLoadWordsOnStartup_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Other Magic Word style file formats.
+        /// </summary>
+        internal static string LauncherImportOptionsPanel_groupBox3_Text {
+            get {
+                return ResourceManager.GetString("LauncherImportOptionsPanel_groupBox3_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to (As used by SlickRun).
+        /// </summary>
+        internal static string LauncherImportOptionsPanel_label2_Text {
+            get {
+                return ResourceManager.GetString("LauncherImportOptionsPanel_label2_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Import QRS....
+        /// </summary>
+        internal static string LauncherImportOptionsPanel_buttonImportQrs_Text {
+            get {
+                return ResourceManager.GetString("LauncherImportOptionsPanel_buttonImportQrs_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to DualLauncher native file format.
+        /// </summary>
+        internal static string LauncherImportOptionsPanel_groupBox2_Text {
+            get {
+                return ResourceManager.GetString("LauncherImportOptionsPanel_groupBox2_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Import XML....
+        /// </summary>
+        internal static string LauncherImportOptionsPanel_buttonImportXml_Text {
+            get {
+                return ResourceManager.GetString("LauncherImportOptionsPanel_buttonImportXml_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Export XML....
+        /// </summary>
+        internal static string LauncherImportOptionsPanel_buttonExportXml_Text {
+            get {
+                return ResourceManager.GetString("LauncherImportOptionsPanel_buttonExportXml_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Delete all Magic Words....
+        /// </summary>
+        internal static string LauncherImportOptionsPanel_buttonDeleteAll_Text {
+            get {
+                return ResourceManager.GetString("LauncherImportOptionsPanel_buttonDeleteAll_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Reset usage counts.
+        /// </summary>
+        internal static string LauncherMagicWordsOptionsPanel_buttonResetCounts_Text {
+            get {
+                return ResourceManager.GetString("LauncherMagicWordsOptionsPanel_buttonResetCounts_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Delete.
+        /// </summary>
+        internal static string LauncherMagicWordsOptionsPanel_buttonDelete_Text {
+            get {
+                return ResourceManager.GetString("LauncherMagicWordsOptionsPanel_buttonDelete_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Edit.
+        /// </summary>
+        internal static string LauncherMagicWordsOptionsPanel_buttonEdit_Text {
+            get {
+                return ResourceManager.GetString("LauncherMagicWordsOptionsPanel_buttonEdit_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Add.
+        /// </summary>
+        internal static string LauncherMagicWordsOptionsPanel_buttonAdd_Text {
+            get {
+                return ResourceManager.GetString("LauncherMagicWordsOptionsPanel_buttonAdd_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Magic Word.
+        /// </summary>
+        internal static string LauncherMagicWordsOptionsPanel_aliasDataGridViewTextBoxColumn_HeaderText {
+            get {
+                return ResourceManager.GetString("LauncherMagicWordsOptionsPanel_aliasDataGridViewTextBoxColumn_HeaderText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Filename.
+        /// </summary>
+        internal static string LauncherMagicWordsOptionsPanel_filenameDataGridViewTextBoxColumn_HeaderText {
+            get {
+                return ResourceManager.GetString("LauncherMagicWordsOptionsPanel_filenameDataGridViewTextBoxColumn_HeaderText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Parameters.
+        /// </summary>
+        internal static string LauncherMagicWordsOptionsPanel_Parameters_HeaderText {
+            get {
+                return ResourceManager.GetString("LauncherMagicWordsOptionsPanel_Parameters_HeaderText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Comment.
+        /// </summary>
+        internal static string LauncherMagicWordsOptionsPanel_Comment_HeaderText {
+            get {
+                return ResourceManager.GetString("LauncherMagicWordsOptionsPanel_Comment_HeaderText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to UseCount.
+        /// </summary>
+        internal static string LauncherMagicWordsOptionsPanel_UseCount_HeaderText {
+            get {
+                return ResourceManager.GetString("LauncherMagicWordsOptionsPanel_UseCount_HeaderText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to LastUsed.
+        /// </summary>
+        internal static string LauncherMagicWordsOptionsPanel_LastUsed_HeaderText {
+            get {
+                return ResourceManager.GetString("LauncherMagicWordsOptionsPanel_LastUsed_HeaderText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Alias.
+        /// </summary>
+        internal static string LauncherMagicWordsOptionsPanel_aliasDataGridViewTextBoxColumn1_HeaderText {
+            get {
+                return ResourceManager.GetString("LauncherMagicWordsOptionsPanel_aliasDataGridViewTextBoxColumn1_HeaderText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Filename.
+        /// </summary>
+        internal static string LauncherMagicWordsOptionsPanel_filenameDataGridViewTextBoxColumn1_HeaderText {
+            get {
+                return ResourceManager.GetString("LauncherMagicWordsOptionsPanel_filenameDataGridViewTextBoxColumn1_HeaderText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Parameters.
+        /// </summary>
+        internal static string LauncherMagicWordsOptionsPanel_parametersDataGridViewTextBoxColumn_HeaderText {
+            get {
+                return ResourceManager.GetString("LauncherMagicWordsOptionsPanel_parametersDataGridViewTextBoxColumn_HeaderText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to StartDirectory.
+        /// </summary>
+        internal static string LauncherMagicWordsOptionsPanel_startDirectoryDataGridViewTextBoxColumn_HeaderText {
+            get {
+                return ResourceManager.GetString("LauncherMagicWordsOptionsPanel_startDirectoryDataGridViewTextBoxColumn_HeaderText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Comment.
+        /// </summary>
+        internal static string LauncherMagicWordsOptionsPanel_commentDataGridViewTextBoxColumn_HeaderText {
+            get {
+                return ResourceManager.GetString("LauncherMagicWordsOptionsPanel_commentDataGridViewTextBoxColumn_HeaderText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to WindowClass.
+        /// </summary>
+        internal static string LauncherMagicWordsOptionsPanel_windowClassDataGridViewTextBoxColumn_HeaderText {
+            get {
+                return ResourceManager.GetString("LauncherMagicWordsOptionsPanel_windowClassDataGridViewTextBoxColumn_HeaderText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CaptionRegExpr.
+        /// </summary>
+        internal static string LauncherMagicWordsOptionsPanel_captionRegExprDataGridViewTextBoxColumn_HeaderText {
+            get {
+                return ResourceManager.GetString("LauncherMagicWordsOptionsPanel_captionRegExprDataGridViewTextBoxColumn_HeaderText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to UseCount.
+        /// </summary>
+        internal static string LauncherMagicWordsOptionsPanel_useCountDataGridViewTextBoxColumn_HeaderText {
+            get {
+                return ResourceManager.GetString("LauncherMagicWordsOptionsPanel_useCountDataGridViewTextBoxColumn_HeaderText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to LastUsed.
+        /// </summary>
+        internal static string LauncherMagicWordsOptionsPanel_lastUsedDataGridViewTextBoxColumn_HeaderText {
+            get {
+                return ResourceManager.GetString("LauncherMagicWordsOptionsPanel_lastUsedDataGridViewTextBoxColumn_HeaderText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to StartupPosition1.
+        /// </summary>
+        internal static string LauncherMagicWordsOptionsPanel_startupPosition1DataGridViewTextBoxColumn_HeaderText {
+            get {
+                return ResourceManager.GetString("LauncherMagicWordsOptionsPanel_startupPosition1DataGridViewTextBoxColumn_HeaderText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to StartupPosition2.
+        /// </summary>
+        internal static string LauncherMagicWordsOptionsPanel_startupPosition2DataGridViewTextBoxColumn_HeaderText {
+            get {
+                return ResourceManager.GetString("LauncherMagicWordsOptionsPanel_startupPosition2DataGridViewTextBoxColumn_HeaderText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to StartupPosition3.
+        /// </summary>
+        internal static string LauncherMagicWordsOptionsPanel_startupPosition3DataGridViewTextBoxColumn_HeaderText {
+            get {
+                return ResourceManager.GetString("LauncherMagicWordsOptionsPanel_startupPosition3DataGridViewTextBoxColumn_HeaderText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to StartupPosition4.
+        /// </summary>
+        internal static string LauncherMagicWordsOptionsPanel_startupPosition4DataGridViewTextBoxColumn_HeaderText {
+            get {
+                return ResourceManager.GetString("LauncherMagicWordsOptionsPanel_startupPosition4DataGridViewTextBoxColumn_HeaderText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Settings to control the use of Magic Words to launch and position your applications..
+        /// </summary>
+        internal static string LauncherRootOptionsPanel_label3_Text {
+            get {
+                return ResourceManager.GetString("LauncherRootOptionsPanel_label3_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Launcher Module.
+        /// </summary>
+        internal static string LauncherRootOptionsPanel_label1_Text {
+            get {
+                return ResourceManager.GetString("LauncherRootOptionsPanel_label1_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Test the magic word.
+        /// </summary>
+        internal static string MagicWordForm_buttonTest_Text {
+            get {
+                return ResourceManager.GetString("MagicWordForm_buttonTest_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Stats.
+        /// </summary>
+        internal static string MagicWordForm_groupBox2_Text {
+            get {
+                return ResourceManager.GetString("MagicWordForm_groupBox2_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Reset.
+        /// </summary>
+        internal static string MagicWordForm_buttonResetTimesUsed_Text {
+            get {
+                return ResourceManager.GetString("MagicWordForm_buttonResetTimesUsed_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Times used:.
+        /// </summary>
+        internal static string MagicWordForm_label9_Text {
+            get {
+                return ResourceManager.GetString("MagicWordForm_label9_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Reset.
+        /// </summary>
+        internal static string MagicWordForm_buttonResetLastUsed_Text {
+            get {
+                return ResourceManager.GetString("MagicWordForm_buttonResetLastUsed_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Last used:.
+        /// </summary>
+        internal static string MagicWordForm_label8_Text {
+            get {
+                return ResourceManager.GetString("MagicWordForm_label8_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Browse....
+        /// </summary>
+        internal static string MagicWordForm_buttonDirBrowse_Text {
+            get {
+                return ResourceManager.GetString("MagicWordForm_buttonDirBrowse_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Browse for the starting directory..
+        /// </summary>
+        internal static string MagicWordForm_buttonDirBrowse_ToolTip {
+            get {
+                return ResourceManager.GetString("MagicWordForm_buttonDirBrowse_ToolTip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Start Position 1.
+        /// </summary>
+        internal static string MagicWordForm_tabPage1_Text {
+            get {
+                return ResourceManager.GetString("MagicWordForm_tabPage1_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Start Position 2.
+        /// </summary>
+        internal static string MagicWordForm_tabPage2_Text {
+            get {
+                return ResourceManager.GetString("MagicWordForm_tabPage2_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Start Position 3.
+        /// </summary>
+        internal static string MagicWordForm_tabPage3_Text {
+            get {
+                return ResourceManager.GetString("MagicWordForm_tabPage3_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Start Position 4.
+        /// </summary>
+        internal static string MagicWordForm_tabPage4_Text {
+            get {
+                return ResourceManager.GetString("MagicWordForm_tabPage4_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to You can optionally leave a comment here if you wish..
+        /// </summary>
+        internal static string MagicWordForm_textBoxComment_ToolTip {
+            get {
+                return ResourceManager.GetString("MagicWordForm_textBoxComment_ToolTip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Regular expression to help identify the correct window. Normally you can get away with just a substring from the windows caption..
+        /// </summary>
+        internal static string MagicWordForm_textBoxCaption_ToolTip {
+            get {
+                return ResourceManager.GetString("MagicWordForm_textBoxCaption_ToolTip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Application window identification.
+        /// </summary>
+        internal static string MagicWordForm_groupBox1_Text {
+            get {
+                return ResourceManager.GetString("MagicWordForm_groupBox1_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Caption:.
+        /// </summary>
+        internal static string MagicWordForm_label6_Text {
+            get {
+                return ResourceManager.GetString("MagicWordForm_label6_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This is the name of the window class that the above program uses. May be left blank, but will be filled in if you use the crosshairs..
+        /// </summary>
+        internal static string MagicWordForm_textBoxWindowClass_ToolTip {
+            get {
+                return ResourceManager.GetString("MagicWordForm_textBoxWindowClass_ToolTip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Window Class:.
+        /// </summary>
+        internal static string MagicWordForm_label5_Text {
+            get {
+                return ResourceManager.GetString("MagicWordForm_label5_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Browse....
+        /// </summary>
+        internal static string MagicWordForm_buttonBrowse_Text {
+            get {
+                return ResourceManager.GetString("MagicWordForm_buttonBrowse_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Browse for the application or document..
+        /// </summary>
+        internal static string MagicWordForm_buttonBrowse_ToolTip {
+            get {
+                return ResourceManager.GetString("MagicWordForm_buttonBrowse_ToolTip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Any parameters that need to be passed to the application. This will normally be left blank..
+        /// </summary>
+        internal static string MagicWordForm_textBoxParameters_ToolTip {
+            get {
+                return ResourceManager.GetString("MagicWordForm_textBoxParameters_ToolTip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This is the working directory you want the application started in. This will normally be left blank..
+        /// </summary>
+        internal static string MagicWordForm_textBoxStartDirectory_ToolTip {
+            get {
+                return ResourceManager.GetString("MagicWordForm_textBoxStartDirectory_ToolTip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This is the Word you type (or start typing) to run this program..
+        /// </summary>
+        internal static string MagicWordForm_textBoxAlias_ToolTip {
+            get {
+                return ResourceManager.GetString("MagicWordForm_textBoxAlias_ToolTip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cancel.
+        /// </summary>
+        internal static string MagicWordForm_buttonCancel_Text {
+            get {
+                return ResourceManager.GetString("MagicWordForm_buttonCancel_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to OK.
+        /// </summary>
+        internal static string MagicWordForm_buttonOK_Text {
+            get {
+                return ResourceManager.GetString("MagicWordForm_buttonOK_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Comment:.
+        /// </summary>
+        internal static string MagicWordForm_label7_Text {
+            get {
+                return ResourceManager.GetString("MagicWordForm_label7_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Parameters:.
+        /// </summary>
+        internal static string MagicWordForm_label4_Text {
+            get {
+                return ResourceManager.GetString("MagicWordForm_label4_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Start in:.
+        /// </summary>
+        internal static string MagicWordForm_label3_Text {
+            get {
+                return ResourceManager.GetString("MagicWordForm_label3_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Filename:.
+        /// </summary>
+        internal static string MagicWordForm_label2_Text {
+            get {
+                return ResourceManager.GetString("MagicWordForm_label2_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Magic word:.
+        /// </summary>
+        internal static string MagicWordForm_label1_Text {
+            get {
+                return ResourceManager.GetString("MagicWordForm_label1_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Internal Command....
+        /// </summary>
+        internal static string MagicWordForm_buttonInternalCommand_Text {
+            get {
+                return ResourceManager.GetString("MagicWordForm_buttonInternalCommand_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to OK.
+        /// </summary>
+        internal static string ParameterInputForm_buttonOK_Text {
+            get {
+                return ResourceManager.GetString("ParameterInputForm_buttonOK_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Position window on startup.
+        /// </summary>
+        internal static string StartupPositionControl_checkBoxEnable_Text {
+            get {
+                return ResourceManager.GetString("StartupPositionControl_checkBoxEnable_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Run.
+        /// </summary>
+        internal static string StartupPositionControl_label12_Text {
+            get {
+                return ResourceManager.GetString("StartupPositionControl_label12_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ,.
+        /// </summary>
+        internal static string StartupPositionControl_label11_Text {
+            get {
+                return ResourceManager.GetString("StartupPositionControl_label11_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Size:.
+        /// </summary>
+        internal static string StartupPositionControl_label10_Text {
+            get {
+                return ResourceManager.GetString("StartupPositionControl_label10_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ,.
+        /// </summary>
+        internal static string StartupPositionControl_label9_Text {
+            get {
+                return ResourceManager.GetString("StartupPositionControl_label9_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Start Position:.
+        /// </summary>
+        internal static string StartupPositionControl_label8_Text {
+            get {
+                return ResourceManager.GetString("StartupPositionControl_label8_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Description.
+        /// </summary>
+        internal static string InternalCommandForm_labelDescription_Text {
+            get {
+                return ResourceManager.GetString("InternalCommandForm_labelDescription_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to General.
+        /// </summary>
+        internal static string Node_General {
+            get {
+                return ResourceManager.GetString("Node_General", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to HotKeys.
+        /// </summary>
+        internal static string Node_HotKeys {
+            get {
+                return ResourceManager.GetString("Node_HotKeys", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Import / Export.
+        /// </summary>
+        internal static string Node_ImportExport {
+            get {
+                return ResourceManager.GetString("Node_ImportExport", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Launcher.
+        /// </summary>
+        internal static string Node_Launcher {
+            get {
+                return ResourceManager.GetString("Node_Launcher", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Magic Words.
+        /// </summary>
+        internal static string Node_MagicWords {
+            get {
+                return ResourceManager.GetString("Node_MagicWords", resourceCulture);
+            }
+        }
     }
 }

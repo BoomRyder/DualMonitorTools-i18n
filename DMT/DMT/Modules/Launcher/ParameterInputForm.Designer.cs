@@ -42,7 +42,7 @@
 			this.buttonOK.Name = "buttonOK";
 			this.buttonOK.Size = new System.Drawing.Size(75, 23);
 			this.buttonOK.TabIndex = 5;
-			this.buttonOK.Text = "OK";
+			this.buttonOK.Text = global::DMT.Resources.LauncherStrings.ParameterInputForm_buttonOK_Text;
 			this.buttonOK.UseVisualStyleBackColor = true;
 			// 
 			// textBoxParameter

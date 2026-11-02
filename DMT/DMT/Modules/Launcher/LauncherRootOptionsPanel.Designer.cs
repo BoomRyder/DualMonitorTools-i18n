@@ -42,8 +42,7 @@
 			this.label3.Name = "label3";
 			this.label3.Size = new System.Drawing.Size(400, 13);
 			this.label3.TabIndex = 7;
-			this.label3.Text = "Settings to control the use of Magic Words to launch and position your applicatio" +
-    "ns.";
+			this.label3.Text = global::DMT.Resources.LauncherStrings.LauncherRootOptionsPanel_label3_Text;
 			// 
 			// label2
 			// 
@@ -63,7 +62,7 @@
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(132, 20);
 			this.label1.TabIndex = 5;
-			this.label1.Text = "Launcher Module";
+			this.label1.Text = global::DMT.Resources.LauncherStrings.LauncherRootOptionsPanel_label1_Text;
 			// 
 			// pictureBox1
 			// 

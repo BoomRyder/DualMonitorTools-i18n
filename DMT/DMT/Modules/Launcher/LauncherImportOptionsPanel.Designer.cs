@@ -48,7 +48,7 @@
 			this.groupBox3.Size = new System.Drawing.Size(434, 139);
 			this.groupBox3.TabIndex = 8;
 			this.groupBox3.TabStop = false;
-			this.groupBox3.Text = "Other Magic Word style file formats";
+			this.groupBox3.Text = global::DMT.Resources.LauncherStrings.LauncherImportOptionsPanel_groupBox3_Text;
 			// 
 			// label2
 			// 
@@ -57,7 +57,7 @@
 			this.label2.Name = "label2";
 			this.label2.Size = new System.Drawing.Size(111, 13);
 			this.label2.TabIndex = 1;
-			this.label2.Text = "(As used by SlickRun)";
+			this.label2.Text = global::DMT.Resources.LauncherStrings.LauncherImportOptionsPanel_label2_Text;
 			// 
 			// buttonImportQrs
 			// 
@@ -65,7 +65,7 @@
 			this.buttonImportQrs.Name = "buttonImportQrs";
 			this.buttonImportQrs.Size = new System.Drawing.Size(148, 23);
 			this.buttonImportQrs.TabIndex = 0;
-			this.buttonImportQrs.Text = "Import QRS...";
+			this.buttonImportQrs.Text = global::DMT.Resources.LauncherStrings.LauncherImportOptionsPanel_buttonImportQrs_Text;
 			this.buttonImportQrs.UseVisualStyleBackColor = true;
 			this.buttonImportQrs.Click += new System.EventHandler(this.buttonImportQrs_Click);
 			// 
@@ -78,7 +78,7 @@
 			this.groupBox2.Size = new System.Drawing.Size(434, 60);
 			this.groupBox2.TabIndex = 7;
 			this.groupBox2.TabStop = false;
-			this.groupBox2.Text = "DualLauncher native file format";
+			this.groupBox2.Text = global::DMT.Resources.LauncherStrings.LauncherImportOptionsPanel_groupBox2_Text;
 			// 
 			// buttonImportXml
 			// 
@@ -86,7 +86,7 @@
 			this.buttonImportXml.Name = "buttonImportXml";
 			this.buttonImportXml.Size = new System.Drawing.Size(148, 23);
 			this.buttonImportXml.TabIndex = 1;
-			this.buttonImportXml.Text = "Import XML...";
+			this.buttonImportXml.Text = global::DMT.Resources.LauncherStrings.LauncherImportOptionsPanel_buttonImportXml_Text;
 			this.buttonImportXml.UseVisualStyleBackColor = true;
 			this.buttonImportXml.Click += new System.EventHandler(this.buttonImportXml_Click);
 			// 
@@ -96,7 +96,7 @@
 			this.buttonExportXml.Name = "buttonExportXml";
 			this.buttonExportXml.Size = new System.Drawing.Size(148, 23);
 			this.buttonExportXml.TabIndex = 2;
-			this.buttonExportXml.Text = "Export XML...";
+			this.buttonExportXml.Text = global::DMT.Resources.LauncherStrings.LauncherImportOptionsPanel_buttonExportXml_Text;
 			this.buttonExportXml.UseVisualStyleBackColor = true;
 			this.buttonExportXml.Click += new System.EventHandler(this.buttonExportXml_Click);
 			// 
@@ -106,7 +106,7 @@
 			this.buttonDeleteAll.Name = "buttonDeleteAll";
 			this.buttonDeleteAll.Size = new System.Drawing.Size(148, 23);
 			this.buttonDeleteAll.TabIndex = 6;
-			this.buttonDeleteAll.Text = "Delete all Magic Words...";
+			this.buttonDeleteAll.Text = global::DMT.Resources.LauncherStrings.LauncherImportOptionsPanel_buttonDeleteAll_Text;
 			this.buttonDeleteAll.UseVisualStyleBackColor = true;
 			this.buttonDeleteAll.Click += new System.EventHandler(this.buttonDeleteAll_Click);
 			// 

@@ -173,4 +173,281 @@
   <data name="XmlFilter" xml:space="preserve">
     <value>XML 文件 (*.xml)|*.xml|所有文件 (*.*)|*.*</value>
   </data>
+  <data name="EntryForm_columnHeaderAlias_Text" xml:space="preserve">
+    <value>魔术字</value>
+  </data>
+  <data name="EntryForm_columnHeaderFilename_Text" xml:space="preserve">
+    <value>文件名</value>
+  </data>
+  <data name="InternalCommandForm_label1_Text" xml:space="preserve">
+    <value>模块：</value>
+  </data>
+  <data name="InternalCommandForm_label2_Text" xml:space="preserve">
+    <value>操作：</value>
+  </data>
+  <data name="InternalCommandForm_buttonOK_Text" xml:space="preserve">
+    <value>确定</value>
+  </data>
+  <data name="InternalCommandForm_buttonCancel_Text" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="LauncheGeneralOptionsPanel_label6_Text" xml:space="preserve">
+    <value>秒</value>
+  </data>
+  <data name="LauncheGeneralOptionsPanel_label5_Text" xml:space="preserve">
+    <value>等待应用程序窗口出现的超时：</value>
+  </data>
+  <data name="LauncheGeneralOptionsPanel_groupBox5_Text" xml:space="preserve">
+    <value>图标显示方式：</value>
+  </data>
+  <data name="LauncheGeneralOptionsPanel_radioButtonIconDetails_Text" xml:space="preserve">
+    <value>列表</value>
+  </data>
+  <data name="LauncheGeneralOptionsPanel_radioButtonIconList_Text" xml:space="preserve">
+    <value>多列列表</value>
+  </data>
+  <data name="LauncheGeneralOptionsPanel_radioButtonIconLargeIcon_Text" xml:space="preserve">
+    <value>网格</value>
+  </data>
+  <data name="LauncheGeneralOptionsPanel_label3_Text" xml:space="preserve">
+    <value>最多显示的图标数量：</value>
+  </data>
+  <data name="LauncheGeneralOptionsPanel_checkBoxMru_Text" xml:space="preserve">
+    <value>自动补全时使用最近使用（而不是使用最多）</value>
+  </data>
+  <data name="LauncheGeneralOptionsPanel_checkBoxLoadWordsOnStartup_Text" xml:space="preserve">
+    <value>启动时加载魔术字</value>
+  </data>
+  <data name="LauncherImportOptionsPanel_groupBox3_Text" xml:space="preserve">
+    <value>其他魔术字风格的文件格式</value>
+  </data>
+  <data name="LauncherImportOptionsPanel_label2_Text" xml:space="preserve">
+    <value>（SlickRun 使用的格式）</value>
+  </data>
+  <data name="LauncherImportOptionsPanel_buttonImportQrs_Text" xml:space="preserve">
+    <value>导入 QRS...</value>
+  </data>
+  <data name="LauncherImportOptionsPanel_groupBox2_Text" xml:space="preserve">
+    <value>DualLauncher 原生文件格式</value>
+  </data>
+  <data name="LauncherImportOptionsPanel_buttonImportXml_Text" xml:space="preserve">
+    <value>导入 XML...</value>
+  </data>
+  <data name="LauncherImportOptionsPanel_buttonExportXml_Text" xml:space="preserve">
+    <value>导出 XML...</value>
+  </data>
+  <data name="LauncherImportOptionsPanel_buttonDeleteAll_Text" xml:space="preserve">
+    <value>删除全部魔术字...</value>
+  </data>
+  <data name="LauncherMagicWordsOptionsPanel_buttonResetCounts_Text" xml:space="preserve">
+    <value>重置使用次数</value>
+  </data>
+  <data name="LauncherMagicWordsOptionsPanel_buttonDelete_Text" xml:space="preserve">
+    <value>删除</value>
+  </data>
+  <data name="LauncherMagicWordsOptionsPanel_buttonEdit_Text" xml:space="preserve">
+    <value>编辑</value>
+  </data>
+  <data name="LauncherMagicWordsOptionsPanel_buttonAdd_Text" xml:space="preserve">
+    <value>添加</value>
+  </data>
+  <data name="LauncherMagicWordsOptionsPanel_aliasDataGridViewTextBoxColumn_HeaderText" xml:space="preserve">
+    <value>魔术字</value>
+  </data>
+  <data name="LauncherMagicWordsOptionsPanel_filenameDataGridViewTextBoxColumn_HeaderText" xml:space="preserve">
+    <value>文件名</value>
+  </data>
+  <data name="LauncherMagicWordsOptionsPanel_Parameters_HeaderText" xml:space="preserve">
+    <value>参数</value>
+  </data>
+  <data name="LauncherMagicWordsOptionsPanel_Comment_HeaderText" xml:space="preserve">
+    <value>备注</value>
+  </data>
+  <data name="LauncherMagicWordsOptionsPanel_UseCount_HeaderText" xml:space="preserve">
+    <value>使用次数</value>
+  </data>
+  <data name="LauncherMagicWordsOptionsPanel_LastUsed_HeaderText" xml:space="preserve">
+    <value>最近使用</value>
+  </data>
+  <data name="LauncherMagicWordsOptionsPanel_aliasDataGridViewTextBoxColumn1_HeaderText" xml:space="preserve">
+    <value>别名</value>
+  </data>
+  <data name="LauncherMagicWordsOptionsPanel_filenameDataGridViewTextBoxColumn1_HeaderText" xml:space="preserve">
+    <value>文件名</value>
+  </data>
+  <data name="LauncherMagicWordsOptionsPanel_parametersDataGridViewTextBoxColumn_HeaderText" xml:space="preserve">
+    <value>参数</value>
+  </data>
+  <data name="LauncherMagicWordsOptionsPanel_startDirectoryDataGridViewTextBoxColumn_HeaderText" xml:space="preserve">
+    <value>起始目录</value>
+  </data>
+  <data name="LauncherMagicWordsOptionsPanel_commentDataGridViewTextBoxColumn_HeaderText" xml:space="preserve">
+    <value>备注</value>
+  </data>
+  <data name="LauncherMagicWordsOptionsPanel_windowClassDataGridViewTextBoxColumn_HeaderText" xml:space="preserve">
+    <value>窗口类</value>
+  </data>
+  <data name="LauncherMagicWordsOptionsPanel_captionRegExprDataGridViewTextBoxColumn_HeaderText" xml:space="preserve">
+    <value>标题正则</value>
+  </data>
+  <data name="LauncherMagicWordsOptionsPanel_useCountDataGridViewTextBoxColumn_HeaderText" xml:space="preserve">
+    <value>使用次数</value>
+  </data>
+  <data name="LauncherMagicWordsOptionsPanel_lastUsedDataGridViewTextBoxColumn_HeaderText" xml:space="preserve">
+    <value>最近使用</value>
+  </data>
+  <data name="LauncherMagicWordsOptionsPanel_startupPosition1DataGridViewTextBoxColumn_HeaderText" xml:space="preserve">
+    <value>启动位置1</value>
+  </data>
+  <data name="LauncherMagicWordsOptionsPanel_startupPosition2DataGridViewTextBoxColumn_HeaderText" xml:space="preserve">
+    <value>启动位置2</value>
+  </data>
+  <data name="LauncherMagicWordsOptionsPanel_startupPosition3DataGridViewTextBoxColumn_HeaderText" xml:space="preserve">
+    <value>启动位置3</value>
+  </data>
+  <data name="LauncherMagicWordsOptionsPanel_startupPosition4DataGridViewTextBoxColumn_HeaderText" xml:space="preserve">
+    <value>启动位置4</value>
+  </data>
+  <data name="LauncherRootOptionsPanel_label3_Text" xml:space="preserve">
+    <value>控制使用魔术字启动并定位应用程序的设置。</value>
+  </data>
+  <data name="LauncherRootOptionsPanel_label1_Text" xml:space="preserve">
+    <value>启动器模块</value>
+  </data>
+  <data name="MagicWordForm_buttonTest_Text" xml:space="preserve">
+    <value>测试魔术字</value>
+  </data>
+  <data name="MagicWordForm_groupBox2_Text" xml:space="preserve">
+    <value>统计</value>
+  </data>
+  <data name="MagicWordForm_buttonResetTimesUsed_Text" xml:space="preserve">
+    <value>重置</value>
+  </data>
+  <data name="MagicWordForm_label9_Text" xml:space="preserve">
+    <value>使用次数：</value>
+  </data>
+  <data name="MagicWordForm_buttonResetLastUsed_Text" xml:space="preserve">
+    <value>重置</value>
+  </data>
+  <data name="MagicWordForm_label8_Text" xml:space="preserve">
+    <value>最近使用：</value>
+  </data>
+  <data name="MagicWordForm_buttonDirBrowse_Text" xml:space="preserve">
+    <value>浏览...</value>
+  </data>
+  <data name="MagicWordForm_buttonDirBrowse_ToolTip" xml:space="preserve">
+    <value>浏览以选择起始目录。</value>
+  </data>
+  <data name="MagicWordForm_tabPage1_Text" xml:space="preserve">
+    <value>启动位置 1</value>
+  </data>
+  <data name="MagicWordForm_tabPage2_Text" xml:space="preserve">
+    <value>启动位置 2</value>
+  </data>
+  <data name="MagicWordForm_tabPage3_Text" xml:space="preserve">
+    <value>启动位置 3</value>
+  </data>
+  <data name="MagicWordForm_tabPage4_Text" xml:space="preserve">
+    <value>启动位置 4</value>
+  </data>
+  <data name="MagicWordForm_textBoxComment_ToolTip" xml:space="preserve">
+    <value>你可以在此填写备注（可选）。</value>
+  </data>
+  <data name="MagicWordForm_textBoxCaption_ToolTip" xml:space="preserve">
+    <value>用于识别正确窗口的正则表达式。
+通常只写窗口标题中的一段子串就够了。</value>
+  </data>
+  <data name="MagicWordForm_groupBox1_Text" xml:space="preserve">
+    <value>应用程序窗口识别</value>
+  </data>
+  <data name="MagicWordForm_label6_Text" xml:space="preserve">
+    <value>标题：</value>
+  </data>
+  <data name="MagicWordForm_textBoxWindowClass_ToolTip" xml:space="preserve">
+    <value>这是上面那个程序使用的窗口类名称。
+可以留空；若使用准星工具则会自动填入。</value>
+  </data>
+  <data name="MagicWordForm_label5_Text" xml:space="preserve">
+    <value>窗口类：</value>
+  </data>
+  <data name="MagicWordForm_buttonBrowse_Text" xml:space="preserve">
+    <value>浏览...</value>
+  </data>
+  <data name="MagicWordForm_buttonBrowse_ToolTip" xml:space="preserve">
+    <value>浏览以选择应用程序或文档。</value>
+  </data>
+  <data name="MagicWordForm_textBoxParameters_ToolTip" xml:space="preserve">
+    <value>需要传给应用程序的任何参数。
+通常留空。</value>
+  </data>
+  <data name="MagicWordForm_textBoxStartDirectory_ToolTip" xml:space="preserve">
+    <value>你希望应用程序启动时使用的工作目录。
+通常留空。</value>
+  </data>
+  <data name="MagicWordForm_textBoxAlias_ToolTip" xml:space="preserve">
+    <value>这是你输入（或开始输入）以运行此程序的词。</value>
+  </data>
+  <data name="MagicWordForm_buttonCancel_Text" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="MagicWordForm_buttonOK_Text" xml:space="preserve">
+    <value>确定</value>
+  </data>
+  <data name="MagicWordForm_label7_Text" xml:space="preserve">
+    <value>备注：</value>
+  </data>
+  <data name="MagicWordForm_label4_Text" xml:space="preserve">
+    <value>参数：</value>
+  </data>
+  <data name="MagicWordForm_label3_Text" xml:space="preserve">
+    <value>起始目录：</value>
+  </data>
+  <data name="MagicWordForm_label2_Text" xml:space="preserve">
+    <value>文件名：</value>
+  </data>
+  <data name="MagicWordForm_label1_Text" xml:space="preserve">
+    <value>魔术字：</value>
+  </data>
+  <data name="MagicWordForm_buttonInternalCommand_Text" xml:space="preserve">
+    <value>内部命令...</value>
+  </data>
+  <data name="ParameterInputForm_buttonOK_Text" xml:space="preserve">
+    <value>确定</value>
+  </data>
+  <data name="StartupPositionControl_checkBoxEnable_Text" xml:space="preserve">
+    <value>启动时定位窗口</value>
+  </data>
+  <data name="StartupPositionControl_label12_Text" xml:space="preserve">
+    <value>运行</value>
+  </data>
+  <data name="StartupPositionControl_label11_Text" xml:space="preserve">
+    <value>,</value>
+  </data>
+  <data name="StartupPositionControl_label10_Text" xml:space="preserve">
+    <value>尺寸：</value>
+  </data>
+  <data name="StartupPositionControl_label9_Text" xml:space="preserve">
+    <value>,</value>
+  </data>
+  <data name="StartupPositionControl_label8_Text" xml:space="preserve">
+    <value>启动位置：</value>
+  </data>
+  <data name="InternalCommandForm_labelDescription_Text" xml:space="preserve">
+    <value>说明</value>
+  </data>
+  <data name="Node_General" xml:space="preserve">
+    <value>常规</value>
+  </data>
+  <data name="Node_HotKeys" xml:space="preserve">
+    <value>热键</value>
+  </data>
+  <data name="Node_ImportExport" xml:space="preserve">
+    <value>导入 / 导出</value>
+  </data>
+  <data name="Node_Launcher" xml:space="preserve">
+    <value>启动器</value>
+  </data>
+  <data name="Node_MagicWords" xml:space="preserve">
+    <value>魔术字</value>
+  </data>
 </root>

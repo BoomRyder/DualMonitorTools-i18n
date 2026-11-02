@@ -359,11 +359,11 @@ namespace DMT.Modules.Launcher
 		public override ModuleOptionNode GetOptionNodes()
 		{
 			Image image = new Bitmap(Properties.Resources.DualLauncher_16_16);
-			ModuleOptionNodeBranch options = new ModuleOptionNodeBranch("Launcher", image, new LauncherRootOptionsPanel());
-			options.Nodes.Add(new ModuleOptionNodeLeaf("Magic Words", image, new LauncherMagicWordsOptionsPanel(this)));
-			options.Nodes.Add(new ModuleOptionNodeLeaf("HotKeys", image, new LauncherHotKeysOptionsPanel(this)));
-			options.Nodes.Add(new ModuleOptionNodeLeaf("General", image, new LauncheGeneralOptionsPanel(this)));
-			options.Nodes.Add(new ModuleOptionNodeLeaf("Import / Export", image, new LauncherImportOptionsPanel(this)));
+			ModuleOptionNodeBranch options = new ModuleOptionNodeBranch(DMT.Resources.LauncherStrings.Node_Launcher, image, new LauncherRootOptionsPanel());
+			options.Nodes.Add(new ModuleOptionNodeLeaf(DMT.Resources.LauncherStrings.Node_MagicWords, image, new LauncherMagicWordsOptionsPanel(this)));
+			options.Nodes.Add(new ModuleOptionNodeLeaf(DMT.Resources.LauncherStrings.Node_HotKeys, image, new LauncherHotKeysOptionsPanel(this)));
+			options.Nodes.Add(new ModuleOptionNodeLeaf(DMT.Resources.LauncherStrings.Node_General, image, new LauncheGeneralOptionsPanel(this)));
+			options.Nodes.Add(new ModuleOptionNodeLeaf(DMT.Resources.LauncherStrings.Node_ImportExport, image, new LauncherImportOptionsPanel(this)));
 
 			return options;
 		}
