@@ -46,8 +46,10 @@ english.ErrNoDotNet=This program requires Microsoft .NET Framework 4.0 or later.
 chinesesimplified.ErrNoDotNet=本程序需要 Microsoft .NET Framework 4.0 或更高版本。%n%n请先安装 .NET Framework 4.8 后重新运行安装程序。
 english.ErrLegacyMsi=An existing Dual Monitor Tools installation (the original MSI package) was found.%n%nPlease uninstall it from "Programs and Features" first, then run this installer again.
 chinesesimplified.ErrLegacyMsi=检测到已安装的 Dual Monitor Tools 原版（MSI）。%n%n请先在「程序和功能」中将其卸载，然后再运行本安装程序。
-english.ErrDmtRunning=Dual Monitor Tools is currently running.%n%nPlease right-click the DMT icon in the system tray, choose Exit, and then run this installer again.
-chinesesimplified.ErrDmtRunning=Dual Monitor Tools 正在运行。%n%n请先右键点击系统托盘中的 DMT 图标并退出，然后重新运行安装程序。
+english.ErrDmtRunning=Dual Monitor Tools is currently running and has to be closed before installing.%n%nClose it now? Unsaved magic word edits will be lost.
+chinesesimplified.ErrDmtRunning=Dual Monitor Tools 正在运行，安装前需要先关闭它。%n%n现在就关闭吗？未保存的魔术字修改会丢失。
+english.ErrDmtNotClosed=Dual Monitor Tools is still running.%n%nPlease exit it from the system tray, then run this installer again.
+chinesesimplified.ErrDmtNotClosed=Dual Monitor Tools 仍在运行。%n%n请从系统托盘退出它，然后重新运行本安装程序。
 english.ErrNeedAdmin=Setup is not running with administrator privileges and cannot write to "%1".%n%nRight-click the setup program, choose "Run as administrator", and try again.
 chinesesimplified.ErrNeedAdmin=安装程序没有获得管理员权限，无法写入「%1」。%n%n请右键点击安装程序，选择「以管理员身份运行」后重试。
 english.ErrCannotWrite=Setup could not create the directory%n%n%1%n%nIf you are already running as administrator, antivirus or "folder protection" software is most likely blocking writes to this location. Allow the setup in your antivirus, or run it with /LOG="C:\path\setup.log" and check that log.
@@ -153,6 +155,45 @@ begin
 	Result := True;
 end;
 
+function WaitForDmtToExit(TimeoutMs: Integer): Boolean;
+var
+	Waited: Integer;
+begin
+	Waited := 0;
+	while (FindWindowByWindowName(DmtWindowName) <> 0) and (Waited < TimeoutMs) do
+	begin
+		Sleep(200);
+		Waited := Waited + 200;
+	end;
+	Result := FindWindowByWindowName(DmtWindowName) = 0;
+end;
+
+function StopRunningDmt(): Boolean;
+var
+	ResultCode: Integer;
+begin
+	// Graceful first: DMT saves its magic words when it gets WM_CLOSE, so a
+	// plain taskkill keeps the edits made since the last save. Force only when
+	// it refuses to go away on its own.
+	Exec(ExpandConstant('{sysnative}\taskkill.exe'), '/IM DMT.exe', '',
+		SW_HIDE, ewWaitUntilTerminated, ResultCode);
+	if WaitForDmtToExit(5000) then
+	begin
+		Log('closed the running DMT gracefully');
+		Result := True;
+		Exit;
+	end;
+
+	Log('DMT ignored WM_CLOSE, killing it');
+	Exec(ExpandConstant('{sysnative}\taskkill.exe'), '/F /IM DMT.exe', '',
+		SW_HIDE, ewWaitUntilTerminated, ResultCode);
+	Result := WaitForDmtToExit(5000);
+	if Result then
+		Log('killed the running DMT')
+	else
+		Log('DMT is still running after taskkill /F');
+end;
+
 function InitializeSetup(): Boolean;
 var
 	AppDir: String;
@@ -185,8 +226,15 @@ begin
 
 	if FindWindowByWindowName(DmtWindowName) <> 0 then
 	begin
-		SuppressibleMsgBox(CustomMessage('ErrDmtRunning'), mbCriticalError, MB_OK, IDOK);
-		Exit;
+		if SuppressibleMsgBox(CustomMessage('ErrDmtRunning'), mbConfirmation,
+			MB_YESNO, IDYES) <> IDYES then
+			Exit;
+
+		if not StopRunningDmt() then
+		begin
+			SuppressibleMsgBox(CustomMessage('ErrDmtNotClosed'), mbCriticalError, MB_OK, IDOK);
+			Exit;
+		end;
 	end;
 
 	Result := True;

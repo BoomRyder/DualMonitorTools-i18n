@@ -159,6 +159,20 @@ Inno 自带的空白行（278 个空格）里砍掉。于是文件总长与所�
 权）；若已是管理员仍失败，通常是杀毒软件（本机装的是 360，此前已两次干扰过自动化）
 拦了对 `Program Files` 的写入，需要在杀软里放行该安装包。
 
+## 检测到 DMT 正在运行时
+
+`InitializeSetup` 用 `FindWindowByWindowName('DMT_GUI_WINDOW')` 判断 DMT 是否在跑。
+真在跑时弹 `ErrDmtRunning` 询问「现在就关闭吗？」（默认「是」），确认后：
+
+1. 先执行 `taskkill /IM DMT.exe`（**不带** `/F`）——发的是 `WM_CLOSE`，DMT 收到后
+   正常退出并保存魔术字，最近的修改不会丢；
+2. 5 秒内窗口没消失，才 `taskkill /F /IM DMT.exe` 强杀；
+3. 仍关不掉（被别的账号或沙箱占着）就弹 `ErrDmtNotClosed` 中止安装，绝不带着运行中
+   的进程去覆盖文件。
+
+静默安装（`/VERYSILENT`）下这个询问取默认值「是」，所以也会自动关掉 DMT。
+`CloseApplications=yes` 保留着，作为 `{app}` 里其它被占用文件的兜底。
+
 ## 已知警告
 
 编译时 ISCC 会报一条 `UsedUserAreasWarning`：`PrivilegesRequired=admin` 却写

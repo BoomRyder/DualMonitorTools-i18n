@@ -213,6 +213,8 @@ namespace DMT.UnitTests.Installer
 		[TestCase("chinesesimplified.ErrLegacyMsi=")]
 		[TestCase("english.ErrDmtRunning=")]
 		[TestCase("chinesesimplified.ErrDmtRunning=")]
+		[TestCase("english.ErrDmtNotClosed=")]
+		[TestCase("chinesesimplified.ErrDmtNotClosed=")]
 		[TestCase("english.ErrNeedAdmin=")]
 		[TestCase("chinesesimplified.ErrNeedAdmin=")]
 		[TestCase("english.ErrCannotWrite=")]
@@ -228,6 +230,7 @@ namespace DMT.UnitTests.Installer
 		[TestCase("ErrNoDotNet")]
 		[TestCase("ErrLegacyMsi")]
 		[TestCase("ErrDmtRunning")]
+		[TestCase("ErrDmtNotClosed")]
 		[TestCase("ErrNeedAdmin")]
 		[TestCase("ErrCannotWrite")]
 		public void IssRoutesPreflightMessagesThroughCustomMessage(string name)
@@ -238,6 +241,23 @@ namespace DMT.UnitTests.Installer
 			// language; {cm:...} keeps the error box bilingual.
 			Assert.IsTrue(iss.IndexOf("CustomMessage('" + name + "')", StringComparison.Ordinal) >= 0,
 				"the " + name + " error box must use CustomMessage()");
+		}
+
+		[Test]
+		public void IssOffersToStopARunningDmtInsteadOfJustRefusing()
+		{
+			string iss = ReadIss();
+
+			// A plain refusal forced the user to quit the wizard, close DMT by
+			// hand and start over.
+			Assert.IsTrue(iss.IndexOf("MB_YESNO", StringComparison.Ordinal) >= 0,
+				"the running-DMT check must ask before stopping it");
+
+			// A graceful WM_CLOSE saves the magic words; /F is only the fallback.
+			Assert.IsTrue(iss.IndexOf("'/IM DMT.exe'", StringComparison.Ordinal) >= 0,
+				"a graceful taskkill must run first");
+			Assert.IsTrue(iss.IndexOf("'/F /IM DMT.exe'", StringComparison.Ordinal) >= 0,
+				"the force kill must be the fallback");
 		}
 
 		[Test]
