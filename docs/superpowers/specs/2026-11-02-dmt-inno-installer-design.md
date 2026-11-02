@@ -206,9 +206,13 @@ Inno 管不到的部分，按以下顺序执行，**每一步独立 try/except�
 |---|---|---|---|
 | 1 | .NET Framework 4.x | `SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Client` 的 `Install` DWORD = 1，**64 位视图与 `WOW6432Node` 视图都查** | 需先安装 .NET Framework 4.0 或更高版本 |
 | 2 | 旧 MSI 版是否已安装 | 以下四处任一存在即判为已装：`HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{59CFB0C1-3F5B-49B6-B1C9-C473153C1257}`、其 `WOW6432Node` 对应项、`HKLM\SOFTWARE\GNE\Dual Monitor Tools\installed`、`HKLM\SOFTWARE\WOW6432Node\GNE\Dual Monitor Tools\installed` | 检测到原版 MSI 安装，请先在"程序和功能"中卸载 |
-| 3 | `DMT.exe` / `DualWallpaper.exe` 未在运行 | `FindWindowByWindowName` 不适用（窗口名是 `DMT_GUI_WINDOW` 但隐藏），改用 `CreateToolhelp32Snapshot` 遍历进程名，或用 `Inno` 内置的 `CloseApplications` 机制配合 `AppMutex` | 请先退出托盘中的 DMT 再安装 |
+| 3 | `DMT.exe` 未在运行 | `FindWindowByWindowName('DMT_GUI_WINDOW') <> 0` | 请先退出托盘中的 DMT 再安装 |
 
-**实现选择**：第 3 项优先用 Inno 的 `CloseApplications=yes` + `[Setup] AppMutex`。但 DMT 不使用命名 mutex（单实例靠 `FindWindow(null, "DMT_GUI_WINDOW")`），无法用 `AppMutex`。因此改用 `[Code]` 里 `CheckForRunningProcess()`：通过 `CreateToolhelp32Snapshot` + `Process32First/Next` 枚举，命中 `DMT.exe` 或 `DualWallpaper.exe`（`ExpandConstant('{app}')` 下的完整路径比对 `th32ProcessID` 的 `szExeFile`）则拦截。
+**实现选择（相对初稿已简化）**：初稿打算用 `CreateToolhelp32Snapshot` + `Process32First/Next` 枚举进程名，约 60 行脆弱 Pascal。实际不需要：
+
+- **文件占用**由 `[Setup] CloseApplications=yes` 覆盖。它走 Restart Manager，在文件被占用时提示用户关闭，**不依赖命名 mutex**（初稿把 `CloseApplications` 和 `AppMutex` 混为一谈，是错的：DMT 确实没有命名 mutex，但 Restart Manager 不需要它）。
+- **DMT 是否在跑**用一行 `FindWindowByWindowName('DMT_GUI_WINDOW')` 即可。`AppForm` 的 `this.Text = "DMT_GUI_WINDOW"` 是不可翻译常量（`NoLiteralRemains_Test` 已在守卫白名单里钉死它），`FindWindow` 对隐藏窗口同样生效。
+- `DualWallpaper.exe` 不做单独检查：它的窗口标题取自 `Program.MyTitle`（`Resources.MyTitle`，已 i18n 可翻译），没有稳定常量可比对；且它只读壁纸文件，不持有安装目标目录中的任何文件，`CloseApplications` 足够。
 
 ## 9. 已知偏差（必须写进 README-installer.md）
 
