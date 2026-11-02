@@ -450,4 +450,16 @@
   <data name="Node_MagicWords" xml:space="preserve">
     <value>魔术字</value>
   </data>
+  <data name="EntryForm_Text" xml:space="preserve">
+    <value>DMT - 启动器</value>
+  </data>
+  <data name="InternalCommandForm_Text" xml:space="preserve">
+    <value>内部命令</value>
+  </data>
+  <data name="MagicWordForm_Text" xml:space="preserve">
+    <value>魔术字</value>
+  </data>
+  <data name="ParameterInputForm_Text" xml:space="preserve">
+    <value>参数输入</value>
+  </data>
 </root>

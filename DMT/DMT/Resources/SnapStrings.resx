@@ -213,4 +213,7 @@
   <data name="Node_Snap" xml:space="preserve">
     <value>Snap</value>
   </data>
+  <data name="SnapForm_Text" xml:space="preserve">
+    <value>SnapForm</value>
+  </data>
 </root>

@@ -689,5 +689,32 @@ namespace DMT.Resources {
                 return ResourceManager.GetString("Node_Monitors", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Change Monitor Orientation.
+        /// </summary>
+        internal static string ChangeOrientationForm_Text {
+            get {
+                return ResourceManager.GetString("ChangeOrientationForm_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Updates for Dual Monitor Tools.
+        /// </summary>
+        internal static string CheckUpdatesForm_Text {
+            get {
+                return ResourceManager.GetString("CheckUpdatesForm_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Your name for this monitor.
+        /// </summary>
+        internal static string EditMonitorNameForm_Text {
+            get {
+                return ResourceManager.GetString("EditMonitorNameForm_Text", resourceCulture);
+            }
+        }
     }
 }

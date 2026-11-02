@@ -161,7 +161,7 @@
 			this.MaximizeBox = false;
 			this.MinimizeBox = false;
 			this.Name = "EditNameListForm";
-			this.Text = "EditNameListForm";
+			this.Text = global::DMT.Resources.CommonStrings.EditNameListForm_Text;
 			this.ResumeLayout(false);
 			this.PerformLayout();
 

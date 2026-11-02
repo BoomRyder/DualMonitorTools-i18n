@@ -153,7 +153,7 @@
 			this.MaximizeBox = false;
 			this.MinimizeBox = false;
 			this.Name = "ListAutoGenForm";
-			this.Text = "Auto Generate List";
+			this.Text = global::DMT.Resources.WallpaperStrings.ListAutoGenForm_Text;
 			this.Load += new System.EventHandler(this.ListAutoGenForm_Load);
 			this.ResumeLayout(false);
 			this.PerformLayout();

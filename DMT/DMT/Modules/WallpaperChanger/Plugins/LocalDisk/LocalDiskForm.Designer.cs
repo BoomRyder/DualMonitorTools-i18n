@@ -453,7 +453,7 @@
 			this.MinimizeBox = false;
 			this.Name = "LocalDiskForm";
 			this.ShowInTaskbar = false;
-			this.Text = "Local Disk";
+			this.Text = global::DMT.Resources.WallpaperStrings.LocalDiskForm_Text;
 			((System.ComponentModel.ISupportInitialize)(this.numericUpDownWeight)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
 			this.groupBox1.ResumeLayout(false);

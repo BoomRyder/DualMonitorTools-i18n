@@ -247,4 +247,10 @@ This is free software, and you are welcome to redistribute it under certain cond
   <data name="KeyComboPanel_chkShift_Text" xml:space="preserve">
     <value>Shift</value>
   </data>
+  <data name="EditNameListForm_Text" xml:space="preserve">
+    <value>EditNameListForm</value>
+  </data>
+  <data name="HotKeyForm_Text" xml:space="preserve">
+    <value>Change Hotkey</value>
+  </data>
 </root>

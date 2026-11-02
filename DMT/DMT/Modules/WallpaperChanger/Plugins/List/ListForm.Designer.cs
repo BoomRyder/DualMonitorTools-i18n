@@ -246,7 +246,7 @@
 			this.MinimizeBox = false;
 			this.Name = "ListForm";
 			this.ShowInTaskbar = false;
-			this.Text = "List";
+			this.Text = global::DMT.Resources.WallpaperStrings.ListForm_Text;
 			((System.ComponentModel.ISupportInitialize)(this.numericUpDownWeight)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
 			this.groupBox2.ResumeLayout(false);

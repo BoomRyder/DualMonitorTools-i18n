@@ -89,7 +89,7 @@
 			this.MinimizeBox = false;
 			this.Name = "NoFlickrApiKeyForm";
 			this.ShowInTaskbar = false;
-			this.Text = "flickr API Key required";
+			this.Text = global::DMT.Resources.WallpaperStrings.NoFlickrApiKeyForm_Text;
 			this.Load += new System.EventHandler(this.NoFlickrApiKeyForm_Load);
 			this.ResumeLayout(false);
 			this.PerformLayout();

@@ -329,4 +329,13 @@
   <data name="Node_Monitors" xml:space="preserve">
     <value>Monitors</value>
   </data>
+  <data name="ChangeOrientationForm_Text" xml:space="preserve">
+    <value>Change Monitor Orientation</value>
+  </data>
+  <data name="CheckUpdatesForm_Text" xml:space="preserve">
+    <value>Updates for Dual Monitor Tools</value>
+  </data>
+  <data name="EditMonitorNameForm_Text" xml:space="preserve">
+    <value>Your name for this monitor</value>
+  </data>
 </root>

@@ -219,7 +219,7 @@
 			this.MinimizeBox = false;
 			this.Name = "UdaForm";
 			this.ShowInTaskbar = false;
-			this.Text = "Change User Defined Area";
+			this.Text = global::DMT.Resources.SwapScreenStrings.UdaForm_Text;
 			this.groupBox1.ResumeLayout(false);
 			((System.ComponentModel.ISupportInitialize)(this.windowPicker)).EndInit();
 			this.ResumeLayout(false);

@@ -677,4 +677,34 @@ Use the 'Providers' option panel to add providers.</value>
   <data name="Node_WallpaperChanger" xml:space="preserve">
     <value>Wallpaper Changer</value>
   </data>
+  <data name="ProviderForm_Text" xml:space="preserve">
+    <value>Choose Provider</value>
+  </data>
+  <data name="BingForm_Text" xml:space="preserve">
+    <value>Bing</value>
+  </data>
+  <data name="FlickrForm_Text" xml:space="preserve">
+    <value>flickr</value>
+  </data>
+  <data name="NoFlickrApiKeyForm_Text" xml:space="preserve">
+    <value>flickr API Key required</value>
+  </data>
+  <data name="ListAutoGenForm_Text" xml:space="preserve">
+    <value>Auto Generate List</value>
+  </data>
+  <data name="ListForm_Text" xml:space="preserve">
+    <value>List</value>
+  </data>
+  <data name="LocalDiskForm_Text" xml:space="preserve">
+    <value>Local Disk</value>
+  </data>
+  <data name="UnsplashWebScrapeForm_Text" xml:space="preserve">
+    <value>Unsplash</value>
+  </data>
+  <data name="UrlWebScrapeForm_Text" xml:space="preserve">
+    <value>Url</value>
+  </data>
+  <data name="RandomShapesForm_Text" xml:space="preserve">
+    <value>RandomShapesForm</value>
+  </data>
 </root>

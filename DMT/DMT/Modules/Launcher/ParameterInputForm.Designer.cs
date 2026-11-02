@@ -77,7 +77,7 @@
 			this.MinimizeBox = false;
 			this.Name = "ParameterInputForm";
 			this.ShowInTaskbar = false;
-			this.Text = "Parameter Input";
+			this.Text = global::DMT.Resources.LauncherStrings.ParameterInputForm_Text;
 			this.ResumeLayout(false);
 			this.PerformLayout();
 

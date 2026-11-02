@@ -255,4 +255,10 @@
   <data name="AboutForm_Text_Format" xml:space="preserve">
     <value>关于 {0}</value>
   </data>
+  <data name="DualWallpaper_Text" xml:space="preserve">
+    <value>Dual Wallpaper</value>
+  </data>
+  <data name="AboutForm_Text" xml:space="preserve">
+    <value>关于 Dual Wallpaper</value>
+  </data>
 </root>

@@ -213,4 +213,7 @@
   <data name="Node_Snap" xml:space="preserve">
     <value>截图</value>
   </data>
+  <data name="SnapForm_Text" xml:space="preserve">
+    <value>截图</value>
+  </data>
 </root>

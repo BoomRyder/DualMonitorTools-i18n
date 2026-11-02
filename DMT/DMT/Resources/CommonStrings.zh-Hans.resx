@@ -247,4 +247,10 @@
   <data name="KeyComboPanel_chkShift_Text" xml:space="preserve">
     <value>Shift</value>
   </data>
+  <data name="EditNameListForm_Text" xml:space="preserve">
+    <value>编辑列表</value>
+  </data>
+  <data name="HotKeyForm_Text" xml:space="preserve">
+    <value>更改热键</value>
+  </data>
 </root>

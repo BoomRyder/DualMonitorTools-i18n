@@ -108,7 +108,7 @@
 			this.MinimizeBox = false;
 			this.Name = "EntryForm";
 			this.ShowInTaskbar = false;
-			this.Text = "DMT - Launcher";
+			this.Text = global::DMT.Resources.LauncherStrings.EntryForm_Text;
 			this.Deactivate += new System.EventHandler(this.EntryForm_Deactivate);
 			this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.EntryForm_FormClosing);
 			this.Load += new System.EventHandler(this.EntryForm_Load);

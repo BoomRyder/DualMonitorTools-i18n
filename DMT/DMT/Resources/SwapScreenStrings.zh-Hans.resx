@@ -363,4 +363,7 @@
   <data name="Sda_Screen_TopHalf" xml:space="preserve">
     <value>屏幕 {0} - 上半屏</value>
   </data>
+  <data name="UdaForm_Text" xml:space="preserve">
+    <value>更改用户定义区域</value>
+  </data>
 </root>

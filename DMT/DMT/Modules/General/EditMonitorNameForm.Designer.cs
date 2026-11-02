@@ -97,7 +97,7 @@
 			this.MinimizeBox = false;
 			this.Name = "EditMonitorNameForm";
 			this.ShowIcon = false;
-			this.Text = "Your name for this monitor";
+			this.Text = global::DMT.Resources.GeneralStrings.EditMonitorNameForm_Text;
 			this.ResumeLayout(false);
 			this.PerformLayout();
 

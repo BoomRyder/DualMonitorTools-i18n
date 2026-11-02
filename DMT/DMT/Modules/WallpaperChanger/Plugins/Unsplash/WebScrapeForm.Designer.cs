@@ -291,7 +291,7 @@
 			this.MinimizeBox = false;
 			this.Name = "WebScrapeForm";
 			this.ShowInTaskbar = false;
-			this.Text = "Unsplash";
+			this.Text = global::DMT.Resources.WallpaperStrings.UnsplashWebScrapeForm_Text;
 			this.Load += new System.EventHandler(this.WebScrapeForm_Load);
 			((System.ComponentModel.ISupportInitialize)(this.numericUpDownWeight)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

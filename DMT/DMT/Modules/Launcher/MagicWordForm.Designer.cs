@@ -459,7 +459,7 @@
 			this.MinimizeBox = false;
 			this.Name = "MagicWordForm";
 			this.ShowInTaskbar = false;
-			this.Text = "Magic Word";
+			this.Text = global::DMT.Resources.LauncherStrings.MagicWordForm_Text;
 			this.Load += new System.EventHandler(this.MagicWordForm_Load);
 			this.DragDrop += new System.Windows.Forms.DragEventHandler(this.MagicWordForm_DragDrop);
 			this.DragEnter += new System.Windows.Forms.DragEventHandler(this.MagicWordForm_DragEnter);

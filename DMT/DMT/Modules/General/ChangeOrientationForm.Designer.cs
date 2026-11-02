@@ -182,7 +182,7 @@
 			this.MinimizeBox = false;
 			this.Name = "ChangeOrientationForm";
 			this.ShowInTaskbar = false;
-			this.Text = "Change Monitor Orientation";
+			this.Text = global::DMT.Resources.GeneralStrings.ChangeOrientationForm_Text;
 			this.Load += new System.EventHandler(this.ChangeOrientationForm_Load);
 			((System.ComponentModel.ISupportInitialize)(this.pictureBoxOrientation0)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBoxOrientation90)).EndInit();

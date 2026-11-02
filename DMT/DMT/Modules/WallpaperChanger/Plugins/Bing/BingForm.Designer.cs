@@ -273,7 +273,7 @@ namespace DMT.Modules.WallpaperChanger.Plugins.Bing
 			this.MinimizeBox = false;
 			this.Name = "BingForm";
 			this.ShowInTaskbar = false;
-			this.Text = "Bing";
+			this.Text = global::DMT.Resources.WallpaperStrings.BingForm_Text;
 			this.Load += new System.EventHandler(this.BingForm_Load);
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.numericUpDownWeight)).EndInit();

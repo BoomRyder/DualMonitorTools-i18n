@@ -253,7 +253,7 @@
 			this.Controls.Add(this.label1);
 			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.Name = "RandomShapesForm";
-			this.Text = "RandomShapesForm";
+			this.Text = global::DMT.Resources.WallpaperStrings.RandomShapesForm_Text;
 			this.Load += new System.EventHandler(this.RandomShapesForm_Load);
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.numericUpDownRectangles)).EndInit();

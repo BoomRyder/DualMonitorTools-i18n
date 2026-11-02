@@ -203,7 +203,7 @@
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
 			this.Name = "SnapForm";
 			this.ShowInTaskbar = false;
-			this.Text = "SnapForm";
+			this.Text = global::DMT.Resources.SnapStrings.SnapForm_Text;
 			this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.SnapForm_FormClosing);
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
 			this.contextMenuStrip.ResumeLayout(false);

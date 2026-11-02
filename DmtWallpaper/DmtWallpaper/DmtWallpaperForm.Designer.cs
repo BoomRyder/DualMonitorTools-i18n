@@ -81,7 +81,7 @@ namespace DmtWallpaper
 			this.Name = "DmtWallpaperForm";
 			this.ShowInTaskbar = false;
 			this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
-			this.Text = "DMT Wallpaper Screen Saver";
+			this.Text = global::DmtWallpaper.Properties.Resources.DmtWallpaperForm_Text;
 			this.Load += new System.EventHandler(this.DmtWallpaperForm_Load);
 			this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.DmtWallpaperForm_KeyDown);
 			this.ResumeLayout(false);

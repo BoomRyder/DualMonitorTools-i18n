@@ -122,7 +122,7 @@
 			this.MinimizeBox = false;
 			this.Name = "InternalCommandForm";
 			this.ShowInTaskbar = false;
-			this.Text = "Internal Command";
+			this.Text = global::DMT.Resources.LauncherStrings.InternalCommandForm_Text;
 			this.ResumeLayout(false);
 			this.PerformLayout();
 

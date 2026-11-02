@@ -110,7 +110,7 @@
 			this.MinimizeBox = false;
 			this.Name = "HotKeyForm";
 			this.ShowInTaskbar = false;
-			this.Text = "Change Hotkey";
+			this.Text = global::DMT.Resources.CommonStrings.HotKeyForm_Text;
 			this.Load += new System.EventHandler(this.HotKeyForm_Load);
 			this.ResumeLayout(false);
 			this.PerformLayout();

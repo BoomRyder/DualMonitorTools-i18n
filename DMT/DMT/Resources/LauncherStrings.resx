@@ -450,4 +450,16 @@ This will normally be left blank.</value>
   <data name="Node_MagicWords" xml:space="preserve">
     <value>Magic Words</value>
   </data>
+  <data name="EntryForm_Text" xml:space="preserve">
+    <value>DMT - Launcher</value>
+  </data>
+  <data name="InternalCommandForm_Text" xml:space="preserve">
+    <value>Internal Command</value>
+  </data>
+  <data name="MagicWordForm_Text" xml:space="preserve">
+    <value>Magic Word</value>
+  </data>
+  <data name="ParameterInputForm_Text" xml:space="preserve">
+    <value>Parameter Input</value>
+  </data>
 </root>

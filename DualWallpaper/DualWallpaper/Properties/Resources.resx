@@ -255,4 +255,10 @@ A yellow border indicates the screen is selected.
   <data name="AboutForm_Text_Format" xml:space="preserve">
     <value>About {0}</value>
   </data>
+  <data name="DualWallpaper_Text" xml:space="preserve">
+    <value>Dual Wallpaper</value>
+  </data>
+  <data name="AboutForm_Text" xml:space="preserve">
+    <value>AboutForm</value>
+  </data>
 </root>

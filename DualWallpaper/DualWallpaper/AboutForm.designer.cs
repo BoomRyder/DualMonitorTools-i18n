@@ -1,4 +1,4 @@
-namespace DualWallpaper
+﻿namespace DualWallpaper
 {
 	partial class AboutForm
 	{
@@ -107,7 +107,7 @@ namespace DualWallpaper
 			this.MinimizeBox = false;
 			this.Name = "AboutForm";
 			this.ShowInTaskbar = false;
-			this.Text = "AboutForm";
+			this.Text = global::DualWallpaper.Properties.Resources.AboutForm_Text;
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
 			this.ResumeLayout(false);

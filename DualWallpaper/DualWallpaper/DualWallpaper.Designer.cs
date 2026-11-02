@@ -468,7 +468,7 @@
 			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.MaximizeBox = false;
 			this.Name = "DualWallpaper";
-			this.Text = "Dual Wallpaper";
+			this.Text = global::DualWallpaper.Properties.Resources.DualWallpaper_Text;
 			this.Shown += new System.EventHandler(this.DualWallpaper_Shown);
 			this.DragDrop += new System.Windows.Forms.DragEventHandler(this.DualWallpaper_DragDrop);
 			this.DragEnter += new System.Windows.Forms.DragEventHandler(this.DualWallpaper_DragEnter);

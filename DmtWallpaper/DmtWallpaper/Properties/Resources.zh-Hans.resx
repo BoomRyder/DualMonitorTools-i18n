@@ -146,4 +146,10 @@
   <data name="SettingsForm_labelProductName_Text_Format" xml:space="preserve">
     <value>{0}  -  版本 {1}</value>
   </data>
+  <data name="DmtWallpaperForm_Text" xml:space="preserve">
+    <value>DMT Wallpaper 屏幕保护程序</value>
+  </data>
+  <data name="SettingsForm_Text" xml:space="preserve">
+    <value>DMT Wallpaper 屏幕保护程序设置</value>
+  </data>
 </root>

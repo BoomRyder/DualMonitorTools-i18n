@@ -328,4 +328,13 @@
   <data name="Node_Monitors" xml:space="preserve">
     <value>显示器</value>
   </data>
+  <data name="ChangeOrientationForm_Text" xml:space="preserve">
+    <value>调整显示器方向</value>
+  </data>
+  <data name="CheckUpdatesForm_Text" xml:space="preserve">
+    <value>Dual Monitor Tools 更新</value>
+  </data>
+  <data name="EditMonitorNameForm_Text" xml:space="preserve">
+    <value>为此显示器命名</value>
+  </data>
 </root>

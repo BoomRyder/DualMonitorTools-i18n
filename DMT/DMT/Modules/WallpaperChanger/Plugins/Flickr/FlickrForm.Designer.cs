@@ -308,7 +308,7 @@ namespace DMT.Modules.WallpaperChanger.Plugins.Flickr
 			this.MinimizeBox = false;
 			this.Name = "FlickrForm";
 			this.ShowInTaskbar = false;
-			this.Text = "flickr";
+			this.Text = global::DMT.Resources.WallpaperStrings.FlickrForm_Text;
 			this.Load += new System.EventHandler(this.FlickrForm_Load);
 			((System.ComponentModel.ISupportInitialize)(this.numericUpDownWeight)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

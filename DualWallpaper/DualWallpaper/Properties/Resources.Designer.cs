@@ -465,5 +465,23 @@ namespace DualWallpaper.Properties {
                 return ResourceManager.GetString("AboutForm_Text_Format", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Dual Wallpaper.
+        /// </summary>
+        internal static string DualWallpaper_Text {
+            get {
+                return ResourceManager.GetString("DualWallpaper_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to AboutForm.
+        /// </summary>
+        internal static string AboutForm_Text {
+            get {
+                return ResourceManager.GetString("AboutForm_Text", resourceCulture);
+            }
+        }
     }
 }

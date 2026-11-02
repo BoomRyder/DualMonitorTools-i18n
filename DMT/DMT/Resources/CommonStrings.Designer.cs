@@ -430,5 +430,23 @@ namespace DMT.Resources {
                 return ResourceManager.GetString("KeyComboPanel_chkShift_Text", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to EditNameListForm.
+        /// </summary>
+        internal static string EditNameListForm_Text {
+            get {
+                return ResourceManager.GetString("EditNameListForm_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Change Hotkey.
+        /// </summary>
+        internal static string HotKeyForm_Text {
+            get {
+                return ResourceManager.GetString("HotKeyForm_Text", resourceCulture);
+            }
+        }
     }
 }

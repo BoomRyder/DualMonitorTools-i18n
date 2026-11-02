@@ -791,5 +791,14 @@ namespace DMT.Resources {
                 return ResourceManager.GetString("Sda_Screen_TopHalf", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Change User Defined Area.
+        /// </summary>
+        internal static string UdaForm_Text {
+            get {
+                return ResourceManager.GetString("UdaForm_Text", resourceCulture);
+            }
+        }
     }
 }

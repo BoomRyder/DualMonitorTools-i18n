@@ -363,4 +363,7 @@ Do you wish to continue?</value>
   <data name="Sda_Screen_TopHalf" xml:space="preserve">
     <value>Screen {0} - top half</value>
   </data>
+  <data name="UdaForm_Text" xml:space="preserve">
+    <value>Change User Defined Area</value>
+  </data>
 </root>

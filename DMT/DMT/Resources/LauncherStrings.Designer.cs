@@ -1040,5 +1040,41 @@ namespace DMT.Resources {
                 return ResourceManager.GetString("Node_MagicWords", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to DMT - Launcher.
+        /// </summary>
+        internal static string EntryForm_Text {
+            get {
+                return ResourceManager.GetString("EntryForm_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Internal Command.
+        /// </summary>
+        internal static string InternalCommandForm_Text {
+            get {
+                return ResourceManager.GetString("InternalCommandForm_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Magic Word.
+        /// </summary>
+        internal static string MagicWordForm_Text {
+            get {
+                return ResourceManager.GetString("MagicWordForm_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Parameter Input.
+        /// </summary>
+        internal static string ParameterInputForm_Text {
+            get {
+                return ResourceManager.GetString("ParameterInputForm_Text", resourceCulture);
+            }
+        }
     }
 }

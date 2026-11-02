@@ -338,5 +338,14 @@ namespace DMT.Resources {
                 return ResourceManager.GetString("Node_Snap", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SnapForm.
+        /// </summary>
+        internal static string SnapForm_Text {
+            get {
+                return ResourceManager.GetString("SnapForm_Text", resourceCulture);
+            }
+        }
     }
 }

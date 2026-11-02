@@ -1725,5 +1725,95 @@ namespace DMT.Resources {
                 return ResourceManager.GetString("Node_WallpaperChanger", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Choose Provider.
+        /// </summary>
+        internal static string ProviderForm_Text {
+            get {
+                return ResourceManager.GetString("ProviderForm_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Bing.
+        /// </summary>
+        internal static string BingForm_Text {
+            get {
+                return ResourceManager.GetString("BingForm_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to flickr.
+        /// </summary>
+        internal static string FlickrForm_Text {
+            get {
+                return ResourceManager.GetString("FlickrForm_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to flickr API Key required.
+        /// </summary>
+        internal static string NoFlickrApiKeyForm_Text {
+            get {
+                return ResourceManager.GetString("NoFlickrApiKeyForm_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Auto Generate List.
+        /// </summary>
+        internal static string ListAutoGenForm_Text {
+            get {
+                return ResourceManager.GetString("ListAutoGenForm_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to List.
+        /// </summary>
+        internal static string ListForm_Text {
+            get {
+                return ResourceManager.GetString("ListForm_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Local Disk.
+        /// </summary>
+        internal static string LocalDiskForm_Text {
+            get {
+                return ResourceManager.GetString("LocalDiskForm_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Unsplash.
+        /// </summary>
+        internal static string UnsplashWebScrapeForm_Text {
+            get {
+                return ResourceManager.GetString("UnsplashWebScrapeForm_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Url.
+        /// </summary>
+        internal static string UrlWebScrapeForm_Text {
+            get {
+                return ResourceManager.GetString("UrlWebScrapeForm_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to RandomShapesForm.
+        /// </summary>
+        internal static string RandomShapesForm_Text {
+            get {
+                return ResourceManager.GetString("RandomShapesForm_Text", resourceCulture);
+            }
+        }
     }
 }

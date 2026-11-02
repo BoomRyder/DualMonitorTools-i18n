@@ -161,5 +161,23 @@ namespace DmtWallpaper.Properties {
                 return ResourceManager.GetString("SettingsForm_labelProductName_Text_Format", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to DMT Wallpaper Screen Saver.
+        /// </summary>
+        internal static string DmtWallpaperForm_Text {
+            get {
+                return ResourceManager.GetString("DmtWallpaperForm_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to DMT Wallpaper Screen Saver Settings.
+        /// </summary>
+        internal static string SettingsForm_Text {
+            get {
+                return ResourceManager.GetString("SettingsForm_Text", resourceCulture);
+            }
+        }
     }
 }

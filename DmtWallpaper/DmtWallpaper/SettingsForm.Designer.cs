@@ -147,7 +147,7 @@
 			this.MaximizeBox = false;
 			this.MinimizeBox = false;
 			this.Name = "SettingsForm";
-			this.Text = "DMT Wallpaper Screen Saver Settings";
+			this.Text = global::DmtWallpaper.Properties.Resources.SettingsForm_Text;
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
 			this.ResumeLayout(false);

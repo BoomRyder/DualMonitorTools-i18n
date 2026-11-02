@@ -125,7 +125,7 @@
 			this.MinimizeBox = false;
 			this.Name = "ProviderForm";
 			this.ShowInTaskbar = false;
-			this.Text = "Choose Provider";
+			this.Text = global::DMT.Resources.WallpaperStrings.ProviderForm_Text;
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();

@@ -227,7 +227,7 @@
 			this.MinimizeBox = false;
 			this.Name = "WebScrapeForm";
 			this.ShowInTaskbar = false;
-			this.Text = "Url";
+			this.Text = global::DMT.Resources.WallpaperStrings.UrlWebScrapeForm_Text;
 			((System.ComponentModel.ISupportInitialize)(this.numericUpDownWeight)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
 			this.groupBox1.ResumeLayout(false);

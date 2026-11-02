@@ -88,7 +88,7 @@
 			this.MinimizeBox = false;
 			this.Name = "CheckUpdatesForm";
 			this.ShowInTaskbar = false;
-			this.Text = "Updates for Dual Monitor Tools";
+			this.Text = global::DMT.Resources.GeneralStrings.CheckUpdatesForm_Text;
 			this.ResumeLayout(false);
 
 		}
