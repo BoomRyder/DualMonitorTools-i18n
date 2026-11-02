@@ -1,4 +1,4 @@
-# Dual Monitor Tools v2.13（简体中文版）
+# Dual Monitor Tools v2.13（简体中文界面）
 
 Dual Monitor Tools 是一套面向 Windows 多显示器用户的工具集。
 

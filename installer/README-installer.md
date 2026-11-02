@@ -1,7 +1,8 @@
 # 安装包（Inno Setup）
 
-本目录是 Dual Monitor Tools 2.13 简体中文版的 Windows 安装工程。产物是
-`dist\DualMonitorTools-2.13-zh-Hans-Setup.exe`，用 **Inno Setup 7** 编译。
+本目录是 Dual Monitor Tools 2.13 本地化构建的 Windows 安装工程（当前界面语言：
+简体中文）。产物是 `dist\DualMonitorTools-2.13-zh-Hans-Setup.exe`，用 **Inno Setup 7**
+编译；文件名里的 `zh-Hans` 是界面语言标识，换语言时只改这一处与 `[Files]` 里的卫星目录。
 
 原版发布物是 WiX 生成的 MSI，源码包里不含它的安装工程；本项目重新用 Inno
 Setup 实现，行为对齐原 MSI，并修掉了原 MSI 的两处缺陷（见下）。

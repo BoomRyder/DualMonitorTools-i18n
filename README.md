@@ -13,8 +13,10 @@ Chinese users since everything below is written from the upstream English point 
 
 ## What is different in this build
 
-This repository is a **Simplified Chinese fork of Dual Monitor Tools 2.13**. It tracks
-upstream 2.13 and adds two things:
+This repository is a **localized fork of Dual Monitor Tools 2.13**. The user interface
+text is kept out of the code in satellite resource assemblies, so the same source builds
+every language; **this build ships a Simplified Chinese interface**. It tracks upstream
+2.13 and adds two things:
 
 1. **A language pack.** The entire user interface of all three programs — every window,
    menu, dialog, tooltip and user-facing message — is available in Simplified Chinese,
@@ -27,7 +29,7 @@ upstream 2.13 and adds two things:
    elevation), creates a desktop shortcut, and installs the screen saver where the
    64-bit Control Panel can actually find it. Because it is not an MSI install, the
    "Check for Updates" button will report new upstream versions but no longer offers to
-   install them — doing so would replace this Chinese build with the English MSI.
+   install them — doing so would replace this build with the English MSI.
 
 Nothing else was changed: no new features, no behaviour changes beyond the two items
 above, and no upstream code was refactored. The untouched upstream source archive is
@@ -118,7 +120,7 @@ and tells you to use "Run as administrator" instead. What it installs:
 - Two Start menu shortcuts and one desktop shortcut.
 - No `installed` registry marker, so DMT reports itself as a portable installation.
   This is deliberate: it is what stops "Check for Updates" from downloading the
-  upstream English MSI over this Chinese build.
+  upstream English MSI over this build.
 
 If DMT or DualWallpaper is already running, setup asks whether to close it. Answering
 yes sends a normal close request first so DMT can save its magic words, and only then
@@ -338,7 +340,7 @@ The untouched upstream 2.13 source archive is preserved as git tag `upstream-2.1
 compare against it to see every local modification:
 
 ```
-https://github.com/BoomRyder/Dual_Monitor_Tools_cn/compare/upstream-2.13...main
+https://github.com/BoomRyder/DualMonitorTools-i18n/compare/upstream-2.13...main
 ```
 
 ## Credits
@@ -356,7 +358,7 @@ improvements.
 
 ## Change History
 
-### Changes in this Simplified Chinese fork
+### Changes in this fork
 
 Based on upstream 2.13. No functional changes to the tools themselves:
 
