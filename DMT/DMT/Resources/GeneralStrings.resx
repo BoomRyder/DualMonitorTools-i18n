@@ -338,4 +338,64 @@
   <data name="EditMonitorNameForm_Text" xml:space="preserve">
     <value>Your name for this monitor</value>
   </data>
+  <data name="GeneralMonitorsOptionsPanel_Header_Description" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="GeneralMonitorsOptionsPanel_Header_Contrast" xml:space="preserve">
+    <value>Contrast</value>
+  </data>
+  <data name="GeneralMonitorsOptionsPanel_Header_WorkingArea" xml:space="preserve">
+    <value>Working Area</value>
+  </data>
+  <data name="GeneralMonitorsOptionsPanel_Header_BrandName" xml:space="preserve">
+    <value>Brand/name</value>
+  </data>
+  <data name="GeneralMonitorsOptionsPanel_Header_SourceName" xml:space="preserve">
+    <value>Source name</value>
+  </data>
+  <data name="GeneralMonitorsOptionsPanel_Header_Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="GeneralMonitorsOptionsPanel_Header_IsPrimary" xml:space="preserve">
+    <value>Is Primary</value>
+  </data>
+  <data name="GeneralMonitorsOptionsPanel_Header_IsActive" xml:space="preserve">
+    <value>Is Active</value>
+  </data>
+  <data name="GeneralMonitorsOptionsPanel_Header_Area" xml:space="preserve">
+    <value>Area</value>
+  </data>
+  <data name="GeneralMonitorsOptionsPanel_Header_Brightness" xml:space="preserve">
+    <value>Brightness</value>
+  </data>
+  <data name="GeneralMonitorsOptionsPanel_Header_Gpu" xml:space="preserve">
+    <value>GPU</value>
+  </data>
+  <data name="GeneralMonitorsOptionsPanel_Header_OutputTech" xml:space="preserve">
+    <value>Output Tech</value>
+  </data>
+  <data name="GeneralMonitorsOptionsPanel_Header_BitsPerPixel" xml:space="preserve">
+    <value>Bits per Pixel</value>
+  </data>
+  <data name="GeneralMonitorsOptionsPanel_Header_Orientation" xml:space="preserve">
+    <value>Orientation</value>
+  </data>
+  <data name="GeneralMonitorsOptionsPanel_Header_Size" xml:space="preserve">
+    <value>Size</value>
+  </data>
+  <data name="GeneralMonitorOrderingOptionsPanel_ListText" xml:space="preserve">
+    <value>Selected Monitor Order</value>
+  </data>
+  <data name="GeneralMonitorOrderingOptionsPanel_Caption" xml:space="preserve">
+    <value>Edit Monitor Order by Name</value>
+  </data>
+  <data name="OutputTechnology_ComponentVideo" xml:space="preserve">
+    <value>Component video</value>
+  </data>
+  <data name="OutputTechnology_Other" xml:space="preserve">
+    <value>Other/Unknown</value>
+  </data>
+  <data name="OutputTechnology_CompositeVideo" xml:space="preserve">
+    <value>Composite video</value>
+  </data>
 </root>

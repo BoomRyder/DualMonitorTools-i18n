@@ -707,4 +707,25 @@
   <data name="RandomShapesForm_Text" xml:space="preserve">
     <value>随机图形</value>
   </data>
+  <data name="Provider_DefaultDescription_Flickr" xml:space="preserve">
+    <value>来自 flickr 的图像</value>
+  </data>
+  <data name="Provider_DefaultDescription_LocalDisk" xml:space="preserve">
+    <value>来自本地磁盘的 Windows 壁纸</value>
+  </data>
+  <data name="Provider_DefaultDescription_RandomShapes" xml:space="preserve">
+    <value>随机图形</value>
+  </data>
+  <data name="Provider_DefaultDescription_Unsplash" xml:space="preserve">
+    <value>来自 www.unsplash.com 的图像</value>
+  </data>
+  <data name="Provider_DefaultDescription_Bing" xml:space="preserve">
+    <value>来自 www.bing.com 的图像</value>
+  </data>
+  <data name="Provider_DefaultDescription_List" xml:space="preserve">
+    <value>来自列表的 Windows 壁纸</value>
+  </data>
+  <data name="Provider_DefaultDescription_Url" xml:space="preserve">
+    <value>来自网址的图像</value>
+  </data>
 </root>

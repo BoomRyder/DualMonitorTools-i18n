@@ -716,5 +716,185 @@ namespace DMT.Resources {
                 return ResourceManager.GetString("EditMonitorNameForm_Text", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Edit Monitor Order by Name.
+        /// </summary>
+        internal static string GeneralMonitorOrderingOptionsPanel_Caption {
+            get {
+                return ResourceManager.GetString("GeneralMonitorOrderingOptionsPanel_Caption", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Brand/name.
+        /// </summary>
+        internal static string GeneralMonitorsOptionsPanel_Header_BrandName {
+            get {
+                return ResourceManager.GetString("GeneralMonitorsOptionsPanel_Header_BrandName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Description.
+        /// </summary>
+        internal static string GeneralMonitorsOptionsPanel_Header_Description {
+            get {
+                return ResourceManager.GetString("GeneralMonitorsOptionsPanel_Header_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Output Tech.
+        /// </summary>
+        internal static string GeneralMonitorsOptionsPanel_Header_OutputTech {
+            get {
+                return ResourceManager.GetString("GeneralMonitorsOptionsPanel_Header_OutputTech", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Size.
+        /// </summary>
+        internal static string GeneralMonitorsOptionsPanel_Header_Size {
+            get {
+                return ResourceManager.GetString("GeneralMonitorsOptionsPanel_Header_Size", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Is Active.
+        /// </summary>
+        internal static string GeneralMonitorsOptionsPanel_Header_IsActive {
+            get {
+                return ResourceManager.GetString("GeneralMonitorsOptionsPanel_Header_IsActive", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GPU.
+        /// </summary>
+        internal static string GeneralMonitorsOptionsPanel_Header_Gpu {
+            get {
+                return ResourceManager.GetString("GeneralMonitorsOptionsPanel_Header_Gpu", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Orientation.
+        /// </summary>
+        internal static string GeneralMonitorsOptionsPanel_Header_Orientation {
+            get {
+                return ResourceManager.GetString("GeneralMonitorsOptionsPanel_Header_Orientation", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Selected Monitor Order.
+        /// </summary>
+        internal static string GeneralMonitorOrderingOptionsPanel_ListText {
+            get {
+                return ResourceManager.GetString("GeneralMonitorOrderingOptionsPanel_ListText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Bits per Pixel.
+        /// </summary>
+        internal static string GeneralMonitorsOptionsPanel_Header_BitsPerPixel {
+            get {
+                return ResourceManager.GetString("GeneralMonitorsOptionsPanel_Header_BitsPerPixel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Is Primary.
+        /// </summary>
+        internal static string GeneralMonitorsOptionsPanel_Header_IsPrimary {
+            get {
+                return ResourceManager.GetString("GeneralMonitorsOptionsPanel_Header_IsPrimary", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Contrast.
+        /// </summary>
+        internal static string GeneralMonitorsOptionsPanel_Header_Contrast {
+            get {
+                return ResourceManager.GetString("GeneralMonitorsOptionsPanel_Header_Contrast", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Area.
+        /// </summary>
+        internal static string GeneralMonitorsOptionsPanel_Header_Area {
+            get {
+                return ResourceManager.GetString("GeneralMonitorsOptionsPanel_Header_Area", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Working Area.
+        /// </summary>
+        internal static string GeneralMonitorsOptionsPanel_Header_WorkingArea {
+            get {
+                return ResourceManager.GetString("GeneralMonitorsOptionsPanel_Header_WorkingArea", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Name.
+        /// </summary>
+        internal static string GeneralMonitorsOptionsPanel_Header_Name {
+            get {
+                return ResourceManager.GetString("GeneralMonitorsOptionsPanel_Header_Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Source name.
+        /// </summary>
+        internal static string GeneralMonitorsOptionsPanel_Header_SourceName {
+            get {
+                return ResourceManager.GetString("GeneralMonitorsOptionsPanel_Header_SourceName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Brightness.
+        /// </summary>
+        internal static string GeneralMonitorsOptionsPanel_Header_Brightness {
+            get {
+                return ResourceManager.GetString("GeneralMonitorsOptionsPanel_Header_Brightness", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Other/Unknown.
+        /// </summary>
+        internal static string OutputTechnology_Other {
+            get {
+                return ResourceManager.GetString("OutputTechnology_Other", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Component video.
+        /// </summary>
+        internal static string OutputTechnology_ComponentVideo {
+            get {
+                return ResourceManager.GetString("OutputTechnology_ComponentVideo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Composite video.
+        /// </summary>
+        internal static string OutputTechnology_CompositeVideo {
+            get {
+                return ResourceManager.GetString("OutputTechnology_CompositeVideo", resourceCulture);
+            }
+        }
     }
 }

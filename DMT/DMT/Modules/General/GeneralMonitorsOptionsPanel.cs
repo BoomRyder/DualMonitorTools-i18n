@@ -33,6 +33,7 @@ namespace DMT.Modules.General
 	using DMT.Library.Utils;
 	using DMT.Library.Environment;
 	using DMT.Library.DisplayHandling;
+	using DMT.Resources;
 
 	/// <summary>
 	/// Options panel for the general options for DMT
@@ -94,26 +95,26 @@ namespace DMT.Modules.General
 			dataGridView.ColumnCount = 0;
 			dataGridView.RowCount = NumRows;
 
-			dataGridView.Rows[RowIdxIsActive].HeaderCell.Value = "Is Active";
-			dataGridView.Rows[RowIdxIsPrimary].HeaderCell.Value = "Is Primary";
+			dataGridView.Rows[RowIdxIsActive].HeaderCell.Value = GeneralStrings.GeneralMonitorsOptionsPanel_Header_IsActive;
+			dataGridView.Rows[RowIdxIsPrimary].HeaderCell.Value = GeneralStrings.GeneralMonitorsOptionsPanel_Header_IsPrimary;
 
 			//dataGridView.Rows[n++].HeaderCell.Value = "Adapter name";
-			dataGridView.Rows[RowIdxName].HeaderCell.Value = "Name";
-			dataGridView.Rows[RowIdxSourceName].HeaderCell.Value = "Source name";
-			dataGridView.Rows[RowIdxTargetName].HeaderCell.Value = "Brand/name";
+			dataGridView.Rows[RowIdxName].HeaderCell.Value = GeneralStrings.GeneralMonitorsOptionsPanel_Header_Name;
+			dataGridView.Rows[RowIdxSourceName].HeaderCell.Value = GeneralStrings.GeneralMonitorsOptionsPanel_Header_SourceName;
+			dataGridView.Rows[RowIdxTargetName].HeaderCell.Value = GeneralStrings.GeneralMonitorsOptionsPanel_Header_BrandName;
 			//dataGridView.Rows[n++].HeaderCell.Value = "Device name";
-			dataGridView.Rows[RowIdxDescription].HeaderCell.Value = "Description";
-			dataGridView.Rows[RowIdxGpu].HeaderCell.Value = "GPU";
+			dataGridView.Rows[RowIdxDescription].HeaderCell.Value = GeneralStrings.GeneralMonitorsOptionsPanel_Header_Description;
+			dataGridView.Rows[RowIdxGpu].HeaderCell.Value = GeneralStrings.GeneralMonitorsOptionsPanel_Header_Gpu;
 
-			dataGridView.Rows[RowIdxSize].HeaderCell.Value = "Size";
-			dataGridView.Rows[RowIdxArea].HeaderCell.Value = "Area";
-			dataGridView.Rows[RowIdxWorkingArea].HeaderCell.Value = "Working Area";
-			dataGridView.Rows[RowIdxBpp].HeaderCell.Value = "Bits per Pixel";
+			dataGridView.Rows[RowIdxSize].HeaderCell.Value = GeneralStrings.GeneralMonitorsOptionsPanel_Header_Size;
+			dataGridView.Rows[RowIdxArea].HeaderCell.Value = GeneralStrings.GeneralMonitorsOptionsPanel_Header_Area;
+			dataGridView.Rows[RowIdxWorkingArea].HeaderCell.Value = GeneralStrings.GeneralMonitorsOptionsPanel_Header_WorkingArea;
+			dataGridView.Rows[RowIdxBpp].HeaderCell.Value = GeneralStrings.GeneralMonitorsOptionsPanel_Header_BitsPerPixel;
 
-			dataGridView.Rows[RowIdxOutputTech].HeaderCell.Value = "Output Tech";
-			dataGridView.Rows[RowIdxRotation].HeaderCell.Value = "Orientation";
-			dataGridView.Rows[RowIdxBrightness].HeaderCell.Value = "Brightness";
-			dataGridView.Rows[RowIdxContrast].HeaderCell.Value = "Contrast";
+			dataGridView.Rows[RowIdxOutputTech].HeaderCell.Value = GeneralStrings.GeneralMonitorsOptionsPanel_Header_OutputTech;
+			dataGridView.Rows[RowIdxRotation].HeaderCell.Value = GeneralStrings.GeneralMonitorsOptionsPanel_Header_Orientation;
+			dataGridView.Rows[RowIdxBrightness].HeaderCell.Value = GeneralStrings.GeneralMonitorsOptionsPanel_Header_Brightness;
+			dataGridView.Rows[RowIdxContrast].HeaderCell.Value = GeneralStrings.GeneralMonitorsOptionsPanel_Header_Contrast;
 
 			ShowCurrentInfo(displayDevices);
 		}
@@ -187,7 +188,7 @@ namespace DMT.Modules.General
 						dataGridView.Rows[RowIdxBpp].Cells[col].Value = HideNonActive(monitorProperties, monitorProperties.BitsPerPixel.ToString());
 
 
-						dataGridView.Rows[RowIdxOutputTech].Cells[col].Value = HideNonActive(monitorProperties, monitorProperties.OutputTechnology);
+						dataGridView.Rows[RowIdxOutputTech].Cells[col].Value = HideNonActive(monitorProperties, LocaliseOutputTechnology(monitorProperties.OutputTechnology));
 						dataGridView.Rows[RowIdxRotation].Cells[col].Value = HideNonActive(monitorProperties, monitorProperties.RotationDegrees.ToString());
 						//dataGridView.Rows[RowIdxBrightness].Cells[col].Value = HideNonActive(monitorProperties, monitorProperties.Brightness.GetCurDisplayableValue());
 						NumericRange brightness = monitorProperties.GetBrightness();
@@ -444,5 +445,30 @@ namespace DMT.Modules.General
 
 			return -1;
 		}
-	}
+
+		/// <summary>
+		/// Translates the video output technology names that come back from
+		/// NativeDisplayHelper. The helper itself is shared with DualWallpaper,
+		/// which has no access to this assembly's resources, so the names are
+		/// translated here instead, at the one place they are shown.
+		/// </summary>
+		static string LocaliseOutputTechnology(string outputTechnology)
+		{
+			if (outputTechnology == "Composite video")
+			{
+				return GeneralStrings.OutputTechnology_CompositeVideo;
+			}
+
+			if (outputTechnology == "Component video")
+			{
+				return GeneralStrings.OutputTechnology_ComponentVideo;
+			}
+
+			if (outputTechnology == "Other/Unknown")
+			{
+				return GeneralStrings.OutputTechnology_Other;
+			}
+
+			return outputTechnology;
+		}	}
 }

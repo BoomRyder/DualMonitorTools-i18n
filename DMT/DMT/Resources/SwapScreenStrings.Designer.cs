@@ -800,5 +800,14 @@ namespace DMT.Resources {
                 return ResourceManager.GetString("UdaForm_Text", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Super size.
+        /// </summary>
+        internal static string Sda_SuperSize {
+            get {
+                return ResourceManager.GetString("Sda_SuperSize", resourceCulture);
+            }
+        }
     }
 }

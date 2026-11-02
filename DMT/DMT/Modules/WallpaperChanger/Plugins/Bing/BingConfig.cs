@@ -20,6 +20,7 @@
 namespace DMT.Modules.WallpaperChanger.Plugins.Bing
 {
 	using DMT.Library.WallpaperPlugin;
+	using DMT.Resources;
 	using System.Collections.Generic;
 	/// <summary>
 	/// Configuration required for each provider from the Bing plugin
@@ -34,7 +35,7 @@ namespace DMT.Modules.WallpaperChanger.Plugins.Bing
 		{
 			Enabled = ProviderHelper.ConfigToBool(configDictionary, "enabled", true);
 			Weight = ProviderHelper.ConfigToInt(configDictionary, "weight", 10);
-			Description = ProviderHelper.ConfigToString(configDictionary, "description", "Images from www.bing.com");
+			Description = ProviderHelper.ConfigToString(configDictionary, "description", WallpaperStrings.Provider_DefaultDescription_Bing);
 			Market = ProviderHelper.ConfigToString(configDictionary, "market", @"en-WW");
 		}
 

@@ -157,8 +157,8 @@ namespace DMT.Modules.Cursor
 
 		private void buttonNames_Click(object sender, EventArgs e)
 		{
-			string caption = "Change Primary Monitors by Name";
-			string listText = "Selected Primary Monitors";
+			string caption = CursorStrings.CursorPrimaryOptionsPanel_Caption;
+			string listText = CursorStrings.CursorPrimaryOptionsPanel_ListText;
 			List<string> allNames;
 			List<string> selectedNames;
 

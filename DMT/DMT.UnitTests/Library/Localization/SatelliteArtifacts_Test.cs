@@ -1,4 +1,4 @@
-#region copyright
+﻿#region copyright
 // This file is part of Dual Monitor Tools which is a set of tools to assist
 // users with multiple monitor setups.
 // Copyright (C) 2025  The Dual Monitor Tools Chinese translation project
@@ -321,16 +321,41 @@ namespace DMT.UnitTests.Library.Localization
 		}
 
 		// The satellite must sit beside the neutral resource in the build output,
-		// in a folder named after the culture.
-		[TestCase(@"DMT\DMT\bin\Release\zh-Hans\DMT.resources.dll")]
-		[TestCase(@"DualWallpaper\DualWallpaper\bin\Release\zh-Hans\DualWallpaper.resources.dll")]
-		[TestCase(@"DmtWallpaper\DmtWallpaper\bin\Release\zh-Hans\DmtWallpaper.resources.dll")]
-		public void SatelliteAssemblyIsBuiltIntoTheCultureFolder(string relativePath)
+		// in a folder named after the culture. The configuration is taken from the
+		// test assembly's own path so that a Debug run is checked against Debug
+		// output; build.ps1 defaults to Debug, and hard coding Release made
+		// ".\build.ps1 -Test" fail for a reason unrelated to the product.
+		[TestCase(@"DMT\DMT\bin\{0}\zh-Hans\DMT.resources.dll")]
+		[TestCase(@"DualWallpaper\DualWallpaper\bin\{0}\zh-Hans\DualWallpaper.resources.dll")]
+		[TestCase(@"DmtWallpaper\DmtWallpaper\bin\{0}\zh-Hans\DmtWallpaper.resources.dll")]
+		public void SatelliteAssemblyIsBuiltIntoTheCultureFolder(string relativePathFormat)
 		{
+			string relativePath = string.Format(relativePathFormat, BuildConfiguration);
+
 			string path = Path.Combine(RepoRoot, relativePath);
 
 			Assert.IsTrue(File.Exists(path),
 				"satellite assembly not built: " + relativePath);
+		}
+
+		/// <summary>
+		/// Gets the configuration this test assembly was built as, so the expected
+		/// satellite path matches the configuration that was actually produced.
+		/// </summary>
+		static string BuildConfiguration
+		{
+			get
+			{
+				// ...\<Project>\bin\<Configuration>\<Assembly>.dll
+				DirectoryInfo bin = new DirectoryInfo(AppDomain.CurrentDomain.BaseDirectory);
+
+				if (bin.Parent != null && bin.Parent.Name == "bin" && bin.Name.Length > 0)
+				{
+					return bin.Name;
+				}
+
+				return "Release";
+			}
 		}
 	}
 }

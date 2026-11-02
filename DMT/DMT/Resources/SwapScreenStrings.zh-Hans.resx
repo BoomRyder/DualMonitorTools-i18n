@@ -366,4 +366,7 @@
   <data name="UdaForm_Text" xml:space="preserve">
     <value>更改用户定义区域</value>
   </data>
+  <data name="Sda_SuperSize" xml:space="preserve">
+    <value>超大区域</value>
+  </data>
 </root>

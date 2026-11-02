@@ -25,6 +25,7 @@ namespace DMT.Modules.WallpaperChanger.Plugins.Url
 	using System.Text;
 
 	using DMT.Library.WallpaperPlugin;
+	using DMT.Resources;
 
 	/// <summary>
 	/// Configuration required for each provider from the Unsplash plugin
@@ -46,7 +47,7 @@ namespace DMT.Modules.WallpaperChanger.Plugins.Url
 		{
 			Enabled = ProviderHelper.ConfigToBool(configDictionary, "enabled", true);
 			Weight = ProviderHelper.ConfigToInt(configDictionary, "weight", 10);
-			Description = ProviderHelper.ConfigToString(configDictionary, "description", "Images from a Url");
+			Description = ProviderHelper.ConfigToString(configDictionary, "description", WallpaperStrings.Provider_DefaultDescription_Url);
 			Url = ProviderHelper.ConfigToString(configDictionary, "url", "");
 			AllowEscapes = ProviderHelper.ConfigToBool(configDictionary, "allowEscapes", true);
 		}

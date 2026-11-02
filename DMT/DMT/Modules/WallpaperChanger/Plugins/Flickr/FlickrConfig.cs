@@ -25,6 +25,7 @@ namespace DMT.Modules.WallpaperChanger.Plugins.Flickr
 	using System.Text;
 
 	using DMT.Library.WallpaperPlugin;
+	using DMT.Resources;
 
 	/// <summary>
 	/// Configuration for Flickr provider
@@ -46,7 +47,7 @@ namespace DMT.Modules.WallpaperChanger.Plugins.Flickr
 		{
 			Enabled = ProviderHelper.ConfigToBool(configDictionary, "enabled", true);
 			Weight = ProviderHelper.ConfigToInt(configDictionary, "weight", 10);
-			Description = ProviderHelper.ConfigToString(configDictionary, "description", "Images from flickr");
+			Description = ProviderHelper.ConfigToString(configDictionary, "description", WallpaperStrings.Provider_DefaultDescription_Flickr);
 			Tags = ProviderHelper.ConfigToString(configDictionary, "tags", string.Empty);
 			TagModeAll = ProviderHelper.ConfigToBool(configDictionary, "tagModeAll", false);
 			Text = ProviderHelper.ConfigToString(configDictionary, "text", string.Empty);

@@ -1,4 +1,4 @@
-#region copyright
+﻿#region copyright
 // This file is part of Dual Monitor Tools which is a set of tools to assist
 // users with multiple monitor setups.
 // Copyright (C) 2025  The Dual Monitor Tools Chinese translation project
@@ -255,8 +255,14 @@ namespace DMT.UnitTests.Library.Localization
 		{
 			Assert.IsTrue(Directory.Exists(DmtResourcesDir),
 				"resource folder not found at " + DmtResourcesDir);
-			Assert.IsTrue(File.Exists(Path.Combine(RepoRoot, "AGENTS.md")),
-				"AGENTS.md not found at " + RepoRoot);
+
+			// Probe a tracked file, not AGENTS.md: AGENTS.md is a local-only file
+			// excluded from git, so a fresh clone or a CI run would fail here for a
+			// reason that has nothing to do with the product.
+			Assert.IsTrue(File.Exists(Path.Combine(RepoRoot, "COPYING.txt")),
+				"COPYING.txt not found at " + RepoRoot);
+			Assert.IsTrue(File.Exists(Path.Combine(RepoRoot, @"DMT\DMT.sln")),
+				"DMT.sln not found at " + RepoRoot);
 		}
 
 		[Test]

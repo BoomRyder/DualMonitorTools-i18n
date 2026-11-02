@@ -25,6 +25,7 @@ namespace DMT.Modules.WallpaperChanger.Plugins.Unsplash
 	using System.Text;
 
 	using DMT.Library.WallpaperPlugin;
+	using DMT.Resources;
 
 	/// <summary>
 	/// Configuration required for each provider from the Unsplash plugin
@@ -52,7 +53,7 @@ namespace DMT.Modules.WallpaperChanger.Plugins.Unsplash
 		{
 			Enabled = ProviderHelper.ConfigToBool(configDictionary, "enabled", true);
 			Weight = ProviderHelper.ConfigToInt(configDictionary, "weight", 10);
-			Description = ProviderHelper.ConfigToString(configDictionary, "description", "Images from www.unsplash.com");
+			Description = ProviderHelper.ConfigToString(configDictionary, "description", WallpaperStrings.Provider_DefaultDescription_Unsplash);
 			FirstPageOnly = ProviderHelper.ConfigToBool(configDictionary, "firstPageOnly", false);
 			Type = (UnsplashType)ProviderHelper.ConfigToInt(configDictionary, "type", (int)UnsplashType.Random);
 			Category = ProviderHelper.ConfigToString(configDictionary, "category", "");

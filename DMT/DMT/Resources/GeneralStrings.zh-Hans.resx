@@ -337,4 +337,64 @@
   <data name="EditMonitorNameForm_Text" xml:space="preserve">
     <value>为此显示器命名</value>
   </data>
+  <data name="GeneralMonitorsOptionsPanel_Header_Description" xml:space="preserve">
+    <value>描述</value>
+  </data>
+  <data name="GeneralMonitorsOptionsPanel_Header_Contrast" xml:space="preserve">
+    <value>对比度</value>
+  </data>
+  <data name="GeneralMonitorsOptionsPanel_Header_WorkingArea" xml:space="preserve">
+    <value>工作区</value>
+  </data>
+  <data name="GeneralMonitorsOptionsPanel_Header_BrandName" xml:space="preserve">
+    <value>品牌/名称</value>
+  </data>
+  <data name="GeneralMonitorsOptionsPanel_Header_SourceName" xml:space="preserve">
+    <value>源名称</value>
+  </data>
+  <data name="GeneralMonitorsOptionsPanel_Header_Name" xml:space="preserve">
+    <value>名称</value>
+  </data>
+  <data name="GeneralMonitorsOptionsPanel_Header_IsPrimary" xml:space="preserve">
+    <value>主显示器</value>
+  </data>
+  <data name="GeneralMonitorsOptionsPanel_Header_IsActive" xml:space="preserve">
+    <value>活动</value>
+  </data>
+  <data name="GeneralMonitorsOptionsPanel_Header_Area" xml:space="preserve">
+    <value>区域</value>
+  </data>
+  <data name="GeneralMonitorsOptionsPanel_Header_Brightness" xml:space="preserve">
+    <value>亮度</value>
+  </data>
+  <data name="GeneralMonitorsOptionsPanel_Header_Gpu" xml:space="preserve">
+    <value>显卡</value>
+  </data>
+  <data name="GeneralMonitorsOptionsPanel_Header_OutputTech" xml:space="preserve">
+    <value>输出接口</value>
+  </data>
+  <data name="GeneralMonitorsOptionsPanel_Header_BitsPerPixel" xml:space="preserve">
+    <value>位深</value>
+  </data>
+  <data name="GeneralMonitorsOptionsPanel_Header_Orientation" xml:space="preserve">
+    <value>方向</value>
+  </data>
+  <data name="GeneralMonitorsOptionsPanel_Header_Size" xml:space="preserve">
+    <value>尺寸</value>
+  </data>
+  <data name="GeneralMonitorOrderingOptionsPanel_ListText" xml:space="preserve">
+    <value>已选定的显示器顺序</value>
+  </data>
+  <data name="GeneralMonitorOrderingOptionsPanel_Caption" xml:space="preserve">
+    <value>按名称编辑显示器顺序</value>
+  </data>
+  <data name="OutputTechnology_ComponentVideo" xml:space="preserve">
+    <value>分量视频</value>
+  </data>
+  <data name="OutputTechnology_Other" xml:space="preserve">
+    <value>其他/未知</value>
+  </data>
+  <data name="OutputTechnology_CompositeVideo" xml:space="preserve">
+    <value>复合视频</value>
+  </data>
 </root>

@@ -42,6 +42,23 @@ namespace DMT.Library.Localization
 	/// </remarks>
 	public static class UiCulture
 	{
+		// Language tag this process is actually running with, set by Apply.
+		static string _appliedTag = LanguageCatalog.Default.Tag;
+
+		/// <summary>
+		/// Gets the language tag this process applied at start up.
+		/// </summary>
+		/// <remarks>
+		/// This is not the same as the saved preference: if the user changes the
+		/// preference, the running windows keep the language they were built with
+		/// until the program restarts. Anything that needs to compare the saved
+		/// preference against the language on screen must use this value.
+		/// </remarks>
+		public static string AppliedTag
+		{
+			get { return _appliedTag; }
+		}
+
 		/// <summary>
 		/// Applies a language to the current thread and to all resource classes
 		/// in this assembly.
@@ -53,6 +70,8 @@ namespace DMT.Library.Localization
 		public static void Apply(string languageTag)
 		{
 			CultureInfo culture = LanguageCatalog.CultureFor(languageTag);
+
+			_appliedTag = LanguageCatalog.Normalise(languageTag);
 
 			Thread.CurrentThread.CurrentUICulture = culture;
 

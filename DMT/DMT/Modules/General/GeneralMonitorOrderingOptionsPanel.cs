@@ -32,6 +32,7 @@ namespace DMT.Modules.General
 	using DMT.Library.GuiUtils;
 	using DMT.Library.DisplayHandling;
 	using DMT.Library.Utils;
+	using DMT.Resources;
 
 	partial class GeneralMonitorOrderingOptionsPanel : UserControl
 	{
@@ -121,8 +122,8 @@ namespace DMT.Modules.General
 
 		private void buttonNames_Click(object sender, EventArgs e)
 		{
-			string caption = "Edit Monitor Order by Name";
-			string listText = "Selected Monitor Order";
+			string caption = GeneralStrings.GeneralMonitorOrderingOptionsPanel_Caption;
+			string listText = GeneralStrings.GeneralMonitorOrderingOptionsPanel_ListText;
 			List<string> allNames;
 			List<string> selectedNames;
 

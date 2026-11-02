@@ -267,4 +267,10 @@
   <data name="Node_Sticky" xml:space="preserve">
     <value>粘滞</value>
   </data>
+  <data name="CursorPrimaryOptionsPanel_Caption" xml:space="preserve">
+    <value>按名称更改主显示器</value>
+  </data>
+  <data name="CursorPrimaryOptionsPanel_ListText" xml:space="preserve">
+    <value>已选定的主显示器</value>
+  </data>
 </root>

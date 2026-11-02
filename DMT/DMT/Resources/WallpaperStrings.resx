@@ -707,4 +707,25 @@ Use the 'Providers' option panel to add providers.</value>
   <data name="RandomShapesForm_Text" xml:space="preserve">
     <value>RandomShapesForm</value>
   </data>
+  <data name="Provider_DefaultDescription_Flickr" xml:space="preserve">
+    <value>Images from flickr</value>
+  </data>
+  <data name="Provider_DefaultDescription_LocalDisk" xml:space="preserve">
+    <value>Windows Wallpaper from local disk</value>
+  </data>
+  <data name="Provider_DefaultDescription_RandomShapes" xml:space="preserve">
+    <value>Random shapes</value>
+  </data>
+  <data name="Provider_DefaultDescription_Unsplash" xml:space="preserve">
+    <value>Images from www.unsplash.com</value>
+  </data>
+  <data name="Provider_DefaultDescription_Bing" xml:space="preserve">
+    <value>Images from www.bing.com</value>
+  </data>
+  <data name="Provider_DefaultDescription_List" xml:space="preserve">
+    <value>Windows Wallpaper from list</value>
+  </data>
+  <data name="Provider_DefaultDescription_Url" xml:space="preserve">
+    <value>Images from a Url</value>
+  </data>
 </root>

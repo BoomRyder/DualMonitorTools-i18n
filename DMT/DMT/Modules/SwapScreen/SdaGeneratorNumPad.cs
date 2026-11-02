@@ -66,7 +66,7 @@ namespace DMT.Modules.SwapScreen
 				if (screenIndex == 0)
 				{
 					// we start with a supersized screen (covering all screens)
-					SetDefaultSda(screenIndex, 0, allMonitors.WorkingArea, "Super size", sdaControllers, registrationErrors);
+					SetDefaultSda(screenIndex, 0, allMonitors.WorkingArea, SwapScreenStrings.Sda_SuperSize, sdaControllers, registrationErrors);
 				}
 
 				// need to add the rest so that the UDA indexes match the numeric key pad keys

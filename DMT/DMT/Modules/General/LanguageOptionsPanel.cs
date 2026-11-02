@@ -60,7 +60,11 @@ namespace DMT.Modules.General
 
 			InitializeComponent();
 
-			_startupLanguageTag = LanguageCatalog.ResolveFromRegistry();
+			// Compare against the language this process actually applied, not the
+			// saved preference: once the user has changed the preference, the saved
+			// value differs from what is on screen, and re-reading the registry here
+			// would hide the restart hint the second time Options is opened.
+			_startupLanguageTag = UiCulture.AppliedTag;
 
 			listBoxLanguages.BeginUpdate();
 			foreach (LanguageDefinition language in LanguageCatalog.All)
@@ -70,7 +74,9 @@ namespace DMT.Modules.General
 
 			listBoxLanguages.EndUpdate();
 
-			listBoxLanguages.SelectedIndex = IndexOfLanguage(_startupLanguageTag);
+			// The list shows the saved preference, which may already differ from the
+			// language on screen, so the user can see the choice they made.
+			listBoxLanguages.SelectedIndex = IndexOfLanguage(LanguageCatalog.ResolveFromRegistry());
 
 			UpdateRestartHint();
 

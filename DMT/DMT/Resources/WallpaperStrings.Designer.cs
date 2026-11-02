@@ -1815,5 +1815,68 @@ namespace DMT.Resources {
                 return ResourceManager.GetString("RandomShapesForm_Text", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Windows Wallpaper from local disk.
+        /// </summary>
+        internal static string Provider_DefaultDescription_LocalDisk {
+            get {
+                return ResourceManager.GetString("Provider_DefaultDescription_LocalDisk", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Windows Wallpaper from list.
+        /// </summary>
+        internal static string Provider_DefaultDescription_List {
+            get {
+                return ResourceManager.GetString("Provider_DefaultDescription_List", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Images from a Url.
+        /// </summary>
+        internal static string Provider_DefaultDescription_Url {
+            get {
+                return ResourceManager.GetString("Provider_DefaultDescription_Url", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Images from flickr.
+        /// </summary>
+        internal static string Provider_DefaultDescription_Flickr {
+            get {
+                return ResourceManager.GetString("Provider_DefaultDescription_Flickr", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Random shapes.
+        /// </summary>
+        internal static string Provider_DefaultDescription_RandomShapes {
+            get {
+                return ResourceManager.GetString("Provider_DefaultDescription_RandomShapes", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Images from www.bing.com.
+        /// </summary>
+        internal static string Provider_DefaultDescription_Bing {
+            get {
+                return ResourceManager.GetString("Provider_DefaultDescription_Bing", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Images from www.unsplash.com.
+        /// </summary>
+        internal static string Provider_DefaultDescription_Unsplash {
+            get {
+                return ResourceManager.GetString("Provider_DefaultDescription_Unsplash", resourceCulture);
+            }
+        }
     }
 }

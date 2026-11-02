@@ -509,5 +509,23 @@ namespace DMT.Resources {
                 return ResourceManager.GetString("Node_Sticky", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Selected Primary Monitors.
+        /// </summary>
+        internal static string CursorPrimaryOptionsPanel_ListText {
+            get {
+                return ResourceManager.GetString("CursorPrimaryOptionsPanel_ListText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Change Primary Monitors by Name.
+        /// </summary>
+        internal static string CursorPrimaryOptionsPanel_Caption {
+            get {
+                return ResourceManager.GetString("CursorPrimaryOptionsPanel_Caption", resourceCulture);
+            }
+        }
     }
 }

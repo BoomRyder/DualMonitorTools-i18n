@@ -366,4 +366,7 @@ Do you wish to continue?</value>
   <data name="UdaForm_Text" xml:space="preserve">
     <value>Change User Defined Area</value>
   </data>
+  <data name="Sda_SuperSize" xml:space="preserve">
+    <value>Super size</value>
+  </data>
 </root>

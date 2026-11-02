@@ -267,4 +267,10 @@
   <data name="Node_Sticky" xml:space="preserve">
     <value>Sticky</value>
   </data>
+  <data name="CursorPrimaryOptionsPanel_Caption" xml:space="preserve">
+    <value>Change Primary Monitors by Name</value>
+  </data>
+  <data name="CursorPrimaryOptionsPanel_ListText" xml:space="preserve">
+    <value>Selected Primary Monitors</value>
+  </data>
 </root>

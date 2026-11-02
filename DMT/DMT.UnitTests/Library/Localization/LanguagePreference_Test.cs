@@ -148,6 +148,57 @@ namespace DMT.UnitTests.Library.Localization
 			}
 		}
 
+		// The hint must survive closing and reopening Options. It used to be lost
+		// because the panel re-read the saved preference as its "startup" language:
+		// the second visit then compared zh-Hans with zh-Hans and hid the hint,
+		// leaving the user with a saved-but-unapplied language and no prompt.
+		[Test]
+		[Apartment(ApartmentState.STA)]
+		public void Panel_ReopeningOptions_StillAsksForRestart()
+		{
+			DmtRegistry.DeleteLanguage();
+
+			// Simulate the process having started in English.
+			UiCulture.Apply("en");
+
+			using (LanguageOptionsPanel first = new LanguageOptionsPanel())
+			{
+				ListBox list = (ListBox)first.Controls.Find("listBoxLanguages", true)[0];
+				list.SelectedIndex = 1;		// 简体中文
+
+				Assert.IsTrue(first.RestartHintNeeded, "hint should show after choosing 简体中文");
+			}
+
+			// Options dialog closed and opened again: a brand new panel is built,
+			// while the process is still running English.
+			using (LanguageOptionsPanel second = new LanguageOptionsPanel())
+			{
+				Assert.IsTrue(second.RestartHintNeeded,
+					"the restart hint must still show the second time Options is opened");
+
+				ListBox list = (ListBox)second.Controls.Find("listBoxLanguages", true)[0];
+				Assert.AreEqual(1, list.SelectedIndex,
+					"the list must still show the saved preference");
+			}
+		}
+
+		// With no preference saved the process runs English, and the panel must not
+		// ask for a restart while the selection matches what is on screen.
+		[Test]
+		[Apartment(ApartmentState.STA)]
+		public void Panel_FreshInstall_DoesNotAskForRestart()
+		{
+			DmtRegistry.DeleteLanguage();
+
+			UiCulture.Apply("en");
+
+			using (LanguageOptionsPanel panel = new LanguageOptionsPanel())
+			{
+				Assert.IsFalse(panel.RestartHintNeeded,
+					"a fresh English install must not ask for a restart");
+			}
+		}
+
 		[Test]
 		[Apartment(ApartmentState.STA)]
 		public void Panel_ChoosingADifferentLanguage_SavesItAndAsksForRestart()

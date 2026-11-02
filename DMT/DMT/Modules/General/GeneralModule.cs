@@ -429,7 +429,7 @@ namespace DMT.Modules.General
 					if (brightness.Editable)
 					{
 						//EditNumericValueForm dlg = new EditNumericValueForm("Change Monitor Brightness", monitorIndex, displayDevice.Brightness,
-						EditNumericValueForm dlg = new EditNumericValueForm("Change Monitor Brightness", monitorIndex, brightness,
+						EditNumericValueForm dlg = new EditNumericValueForm(GeneralStrings.ChangeBrightnessDescription, monitorIndex, brightness,
 							delegate(int monIndex, int numericValue)
 							{
 								displayDevices.ChangeMonitorBrightness(monIndex, numericValue, false);
@@ -491,7 +491,7 @@ namespace DMT.Modules.General
 					if (contrast.Editable)
 					{
 						//EditNumericValueForm dlg = new EditNumericValueForm("Change Monitor Contrast", monitorIndex, displayDevice.Contrast,
-						EditNumericValueForm dlg = new EditNumericValueForm("Change Monitor Contrast", monitorIndex, contrast,
+						EditNumericValueForm dlg = new EditNumericValueForm(GeneralStrings.ChangeContrastDescription, monitorIndex, contrast,
 							delegate(int monIndex, int numericValue)
 							{
 								displayDevices.ChangeMonitorContrast(monIndex, numericValue, false);

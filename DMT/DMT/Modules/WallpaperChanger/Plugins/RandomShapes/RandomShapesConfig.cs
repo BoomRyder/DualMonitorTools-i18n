@@ -25,6 +25,7 @@ namespace DMT.Modules.WallpaperChanger.Plugins.RandomShapes
 	using System.Text;
 
 	using DMT.Library.WallpaperPlugin;
+	using DMT.Resources;
 
 	/// <summary>
 	/// Configuration required for each provider from the RandomShapes plugin
@@ -46,7 +47,7 @@ namespace DMT.Modules.WallpaperChanger.Plugins.RandomShapes
 		{
 			Enabled = ProviderHelper.ConfigToBool(configDictionary, "enabled", true);
 			Weight = ProviderHelper.ConfigToInt(configDictionary, "weight", 10);
-			Description = ProviderHelper.ConfigToString(configDictionary, "description", "Random shapes");
+			Description = ProviderHelper.ConfigToString(configDictionary, "description", WallpaperStrings.Provider_DefaultDescription_RandomShapes);
 			ShapeCount = ProviderHelper.ConfigToInt(configDictionary, "shapeCount", 20);
 			RandomBackground = ProviderHelper.ConfigToBool(configDictionary, "randomBackground", true);
 			UseRectangles = ProviderHelper.ConfigToBool(configDictionary, "useRectangles", true);

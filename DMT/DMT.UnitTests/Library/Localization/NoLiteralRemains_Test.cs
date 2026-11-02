@@ -133,6 +133,74 @@ namespace DMT.UnitTests.Library.Localization
 			return problems;
 		}
 
+		// Text that reaches the screen from ordinary code, not from a designer.
+		// Covers the three shapes that actually occur: a data grid row header, a
+		// caption passed into a dialog constructor, and a provider's default
+		// description in a config class. None of these is a string literal after
+		// ".Text =", which is why the designer scan above cannot see them.
+		static readonly string[] CodeLiteralPatterns = new string[]
+		{
+			@"HeaderCell\.Value\s*=\s*""(?<v>[^""]*)""",
+			@"\bnew\s+EditNameListForm\(\s*""(?<v>[^""]*)""",
+			@"string\s+caption\s*=\s*""(?<v>[^""]*)""",
+			@"string\s+listText\s*=\s*""(?<v>[^""]*)""",
+			@"""description""\s*,\s*""(?<v>[^""]*)"""
+		};
+
+		/// <summary>
+		/// Scans ordinary source files, skipping designers because ScanDirectory
+		/// already covered them.
+		/// </summary>
+		static List<string> ScanCodeFiles(string root)
+		{
+			List<string> problems = new List<string>();
+
+			string[] files = Directory.GetFiles(root, "*.cs", SearchOption.AllDirectories);
+			foreach (string file in files)
+			{
+				string name = Path.GetFileName(file);
+				if (name.EndsWith(".Designer.cs", StringComparison.OrdinalIgnoreCase))
+				{
+					continue;
+				}
+
+				// The resource classes and their generated accessors are not UI code.
+				if (Regex.IsMatch(file, @"\\(Resources|Properties)\\[^\\]+$"))
+				{
+					continue;
+				}
+
+				string[] lines = File.ReadAllLines(file, Encoding.UTF8);
+				for (int i = 0; i < lines.Length; i++)
+				{
+					string line = lines[i];
+					if (line.TrimStart().StartsWith("//", StringComparison.Ordinal))
+					{
+						continue;
+					}
+
+					foreach (string pattern in CodeLiteralPatterns)
+					{
+						Match match = Regex.Match(line, pattern);
+						if (!match.Success)
+						{
+							continue;
+						}
+
+						string literal = match.Groups["v"].Value;
+						if (!IsAllowed(literal))
+						{
+							problems.Add(string.Format(
+								"{0}:{1}: {2}",
+								name, i + 1, line.Trim()));
+						}
+					}
+				}
+			}
+
+			return problems;
+		}
+
 		static string ExtractAssignedLiteral(string line, string assignmentPattern)
 		{
 			Match match = Regex.Match(line, assignmentPattern + @"""(?<v>[^""]*)""");
@@ -154,6 +222,64 @@ namespace DMT.UnitTests.Library.Localization
 			Assert.IsEmpty(problems,
 				projectRelativePath + " still has user-visible designer literals:" +
 				Environment.NewLine + string.Join(Environment.NewLine, problems.ToArray()));
+		}
+
+		// Text that reaches the screen from ordinary code is just as visible as text
+		// set in a designer, but the designer scan cannot see it. This covers data
+		// grid row headers, dialog captions and provider default descriptions.
+		[TestCase(@"DMT\DMT")]
+		public void NoUserVisibleLiteralRemainsInCode(string projectRelativePath)
+		{
+			string root = Path.Combine(RepoRoot, projectRelativePath);
+			Assert.IsTrue(Directory.Exists(root), "project folder not found: " + root);
+
+			List<string> problems = ScanCodeFiles(root);
+
+			Assert.IsEmpty(problems,
+				projectRelativePath + " still has user-visible code literals:" +
+				Environment.NewLine + string.Join(Environment.NewLine, problems.ToArray()));
+		}
+
+		// The code scan must be able to see things too, in each of its three shapes.
+		[Test]
+		public void ScanCodeDetectsKnownLiterals()
+		{
+			string temp = Path.Combine(Path.GetTempPath(), "dmt_code_scan_" + Guid.NewGuid().ToString("N"));
+			Directory.CreateDirectory(temp);
+			try
+			{
+				File.WriteAllText(
+					Path.Combine(temp, "HasGrid.cs"),
+					"class A { void M() { grid.Rows[0].HeaderCell.Value = \"SHOULD BE FOUND\"; } }" + Environment.NewLine,
+					Encoding.UTF8);
+
+				File.WriteAllText(
+					Path.Combine(temp, "HasCaption.cs"),
+					"class B { void M() { string caption = \"ALSO FOUND\"; } }" + Environment.NewLine,
+					Encoding.UTF8);
+
+				File.WriteAllText(
+					Path.Combine(temp, "HasDescription.cs"),
+					"class C { void M() { X = H(config, \"description\", \"FOUND TOO\"); } }" + Environment.NewLine,
+					Encoding.UTF8);
+
+				File.WriteAllText(
+					Path.Combine(temp, "IsClean.cs"),
+					"class D { void M() { X = H(config, \"description\", Strings.SomeDescription); } }" + Environment.NewLine,
+					Encoding.UTF8);
+
+				List<string> problems = ScanCodeFiles(temp);
+
+				Assert.AreEqual(3, problems.Count,
+					"expected three problems, got: " + string.Join(" | ", problems.ToArray()));
+				StringAssert.Contains("SHOULD BE FOUND", string.Join("|", problems.ToArray()));
+				StringAssert.Contains("ALSO FOUND", string.Join("|", problems.ToArray()));
+				StringAssert.Contains("FOUND TOO", string.Join("|", problems.ToArray()));
+			}
+			finally
+			{
+				Directory.Delete(temp, true);
+			}
 		}
 
 		// The scan itself must be able to see things, otherwise a green result above

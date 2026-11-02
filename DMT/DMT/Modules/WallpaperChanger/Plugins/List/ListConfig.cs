@@ -25,6 +25,7 @@ namespace DMT.Modules.WallpaperChanger.Plugins.List
 	using System.Text;
 
 	using DMT.Library.WallpaperPlugin;
+	using DMT.Resources;
 	using DMT.Library.Wallpaper;
 
 	/// <summary>
@@ -54,7 +55,7 @@ namespace DMT.Modules.WallpaperChanger.Plugins.List
 		{
 			Enabled = ProviderHelper.ConfigToBool(configDictionary, "enabled", true);
 			Weight = ProviderHelper.ConfigToInt(configDictionary, "weight", 10);
-			Description = ProviderHelper.ConfigToString(configDictionary, "description", "Windows Wallpaper from list");
+			Description = ProviderHelper.ConfigToString(configDictionary, "description", WallpaperStrings.Provider_DefaultDescription_List);
 			ListFnm = ProviderHelper.ConfigToString(configDictionary, "listFnm", string.Empty);
 
 			Type = (OrderType)ProviderHelper.ConfigToInt(configDictionary, "type", (int)OrderType.Random);

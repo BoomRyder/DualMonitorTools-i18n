@@ -25,6 +25,7 @@ namespace DMT.Modules.WallpaperChanger.Plugins.LocalDisk
 	using System.Text;
 
 	using DMT.Library.WallpaperPlugin;
+	using DMT.Resources;
 
 	/// <summary>
 	/// Configuration required for each provider from the LocalDisk plugin
@@ -52,7 +53,7 @@ namespace DMT.Modules.WallpaperChanger.Plugins.LocalDisk
 		{
 			Enabled = ProviderHelper.ConfigToBool(configDictionary, "enabled", true);
 			Weight = ProviderHelper.ConfigToInt(configDictionary, "weight", 10);
-			Description = ProviderHelper.ConfigToString(configDictionary, "description", "Windows Wallpaper from local disk");
+			Description = ProviderHelper.ConfigToString(configDictionary, "description", WallpaperStrings.Provider_DefaultDescription_LocalDisk);
 			Monitor1Directory = ProviderHelper.ConfigToString(configDictionary, "monitor1Directory", string.Empty);
 			Monitor2Directory = ProviderHelper.ConfigToString(configDictionary, "monitor2Directory", string.Empty);
 			Monitor3Directory = ProviderHelper.ConfigToString(configDictionary, "monitor3Directory", string.Empty);
