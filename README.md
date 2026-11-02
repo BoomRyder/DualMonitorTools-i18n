@@ -24,7 +24,7 @@ every language; **this build ships a Simplified Chinese interface**. It tracks u
    any time under *Options → Dual Monitor Tools → General → Language*; the choice is
    remembered across restarts.
 2. **A different installation method.** Upstream 2.13 shipped a WiX-built MSI. This fork
-   ships `DualMonitorTools-2.13-zh-Hans-Setup.exe`, an Inno Setup package that needs
+   ships `DualMonitorTools-2.13-Setup.exe`, an Inno Setup package that needs
    administrator rights (it carries the UAC shield, so double-clicking prompts for
    elevation), creates a desktop shortcut, and installs the screen saver where the
    64-bit Control Panel can actually find it. Because it is not an MSI install, the
@@ -96,14 +96,14 @@ features can be useful to users with a single monitor.
 
 There are 2 choices for installation:
 
-1. Run the setup program `DualMonitorTools-2.13-zh-Hans-Setup.exe` — this is the
+1. Run the setup program `DualMonitorTools-2.13-Setup.exe` — this is the
    simplest method.
 2. Portable install from a zip file — this gives you the most flexibility and is
    the route to use if you are installing to a portable device.
 
 ### Installing with the setup program
 
-Just download `DualMonitorTools-2.13-zh-Hans-Setup.exe` and run it. See
+Just download `DualMonitorTools-2.13-Setup.exe` and run it. See
 [`installer/README-installer.md`](installer/README-installer.md) for how the package
 is built and exactly what it writes.
 
@@ -155,7 +155,7 @@ the MSI and refuses to continue. Migrate like this:
    `DmtWallpaperProviders.xml` somewhere safe, then create
    `%APPDATA%\Dual Monitor Tools` and copy them into it.
 3. Uninstall the upstream MSI from the Windows installed application list.
-4. Run `DualMonitorTools-2.13-zh-Hans-Setup.exe`.
+4. Run `DualMonitorTools-2.13-Setup.exe`.
 5. Start DMT from the desktop shortcut and re-tick "Start when Windows starts" and
    "Add to desktop context menu" on *Options → Dual Monitor Tools → General* if you
    used them.
@@ -329,7 +329,7 @@ and network access to nuget.org (or pre-provisioned NUnit packages under
 Outputs: `DMT\DMT\bin\<Cfg>\DMT.exe`,
 `DualWallpaper\DualWallpaper\bin\<Cfg>\DualWallpaper.exe`,
 `DmtWallpaper\DmtWallpaper\bin\<Cfg>\DmtWallpaper.exe` and `.scr`, plus
-`dist\DualMonitorTools-2.13-zh-Hans-Setup.exe` for the installer.
+`dist\DualMonitorTools-2.13-Setup.exe` for the installer.
 
 The Simplified Chinese translation lives in `.zh-Hans.resx` files next to the neutral
 `resx` files, and a set of guard tests keeps the coverage complete — see

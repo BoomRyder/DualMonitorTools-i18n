@@ -19,7 +19,7 @@ Dual Monitor Tools 是一套面向 Windows 多显示器用户的工具集。
    *选项 → Dual Monitor Tools → 常规 → 界面语言* 里切回 English，
    选择会被记住，下次启动三个程序一起生效。
 2. **换了安装方式。** 上游 2.13 用 WiX 打包成 MSI；本分支用 Inno Setup 打包成
-   `DualMonitorTools-2.13-zh-Hans-Setup.exe`。新安装包**需要管理员权限**，
+   `DualMonitorTools-2.13-Setup.exe`。新安装包**需要管理员权限**，
    程序图标带 UAC 盾牌（双击即提权），会创建桌面快捷方式，并把屏保装到
    64 位控制面板真正能识别到的位置。
 
@@ -85,12 +85,12 @@ Dual Monitor Tools 可运行在任何安装了 .NET 4.0 或更高版本的 Windo
 
 有两种安装方式：
 
-1. 运行安装包 `DualMonitorTools-2.13-zh-Hans-Setup.exe`——最简单的做法。
+1. 运行安装包 `DualMonitorTools-2.13-Setup.exe`——最简单的做法。
 2. 从 zip 包便携安装——最灵活，装到便携设备上就用这种方式。
 
 ### 用安装包安装
 
-下载 `DualMonitorTools-2.13-zh-Hans-Setup.exe` 直接运行即可。打包方式与安装包具体
+下载 `DualMonitorTools-2.13-Setup.exe` 直接运行即可。打包方式与安装包具体
 写了哪些内容，见 [`installer/README-installer.md`](installer/README-installer.md)。
 
 安装包**需要管理员权限**。它带 UAC 盾牌，双击就会弹出提权提示；如果当前系统关掉了
@@ -127,7 +127,7 @@ UAC 因而无法提权，它会拒绝运行并提示你改用「以管理员身�
    `DmtSettings.xml`、`DmtWallpaperProviders.xml` 复制出来，手工建好
    `%APPDATA%\Dual Monitor Tools`，再把它们放进去。
 3. 从 Windows「已安装的应用」列表卸载上游 MSI。
-4. 运行 `DualMonitorTools-2.13-zh-Hans-Setup.exe`。
+4. 运行 `DualMonitorTools-2.13-Setup.exe`。
 5. 从桌面快捷方式启动 DMT，如果之前用过「开机时启动」和「加入桌面右键菜单」，
    到 *选项 → Dual Monitor Tools → 常规* 重新勾上。
 
@@ -273,7 +273,7 @@ cd <仓库根目录>
 产物：`DMT\DMT\bin\<配置>\DMT.exe`、
 `DualWallpaper\DualWallpaper\bin\<配置>\DualWallpaper.exe`、
 `DmtWallpaper\DmtWallpaper\bin\<配置>\DmtWallpaper.exe` 与 `.scr`，
-安装包为 `dist\DualMonitorTools-2.13-zh-Hans-Setup.exe`。
+安装包为 `dist\DualMonitorTools-2.13-Setup.exe`。
 
 简体中文译文放在中性 `resx` 旁边的 `.zh-Hans.resx` 里，另有一组守卫测试保证覆盖率
 不缺不漏——本地化约定见 [`AGENTS.md`](AGENTS.md)。安装包的设计与验证方式见
