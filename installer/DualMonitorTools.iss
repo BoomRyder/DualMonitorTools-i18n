@@ -41,6 +41,14 @@ WizardStyle=modern
 Name: "english"; MessagesFile: "compiler:Default.isl"
 Name: "chinesesimplified"; MessagesFile: "compiler:Languages\ChineseSimplified.isl"
 
+[CustomMessages]
+english.ErrNoDotNet=This program requires Microsoft .NET Framework 4.0 or later.%n%nPlease install .NET Framework 4.8 and then run the installer again.
+chinesesimplified.ErrNoDotNet=本程序需要 Microsoft .NET Framework 4.0 或更高版本。%n%n请先安装 .NET Framework 4.8 后重新运行安装程序。
+english.ErrLegacyMsi=An existing Dual Monitor Tools installation (the original MSI package) was found.%n%nPlease uninstall it from "Programs and Features" first, then run this installer again.
+chinesesimplified.ErrLegacyMsi=检测到已安装的 Dual Monitor Tools 原版（MSI）。%n%n请先在「程序和功能」中将其卸载，然后再运行本安装程序。
+english.ErrDmtRunning=Dual Monitor Tools is currently running.%n%nPlease right-click the DMT icon in the system tray, choose Exit, and then run this installer again.
+chinesesimplified.ErrDmtRunning=Dual Monitor Tools 正在运行。%n%n请先右键点击系统托盘中的 DMT 图标并退出，然后重新运行安装程序。
+
 [Files]
 ; 主程序与配置文件
 Source: "{#RepoRoot}\DMT\DMT\bin\Release\DMT.exe"; DestDir: "{app}"; Flags: ignoreversion
@@ -77,3 +85,54 @@ Root: HKCU; Subkey: "Software\Classes\directory\Background\shell\GNE_DualMonitor
 
 [Run]
 Filename: "{app}\DMT.exe"; Description: "{cm:LaunchProgram,{#MyAppName}}"; Flags: nowait postinstall skipifsilent runasoriginaluser
+
+[Code]
+const
+	LegacyMsiProductCode =
+		'SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{59CFB0C1-3F5B-49B6-B1C9-C473153C1257}';
+	LegacyInstalledKey = 'SOFTWARE\GNE\Dual Monitor Tools';
+	DotNetClientKey = 'SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Client';
+	DmtWindowName = 'DMT_GUI_WINDOW';
+
+function DotNetIsPresent(): Boolean;
+var
+	Install: Cardinal;
+begin
+	Result :=
+		(RegQueryDWordValue(HKLM, DotNetClientKey, 'Install', Install) and (Install = 1)) or
+		(RegQueryDWordValue(HKLM64, DotNetClientKey, 'Install', Install) and (Install = 1));
+end;
+
+function LegacyMsiIsPresent(): Boolean;
+begin
+	Result :=
+		RegKeyExists(HKLM, LegacyMsiProductCode) or
+		RegKeyExists(HKLM64, LegacyMsiProductCode) or
+		RegKeyExists(HKLM, LegacyInstalledKey) or
+		RegKeyExists(HKLM64, LegacyInstalledKey);
+end;
+
+function InitializeSetup(): Boolean;
+begin
+	Result := False;
+
+	if not DotNetIsPresent() then
+	begin
+		SuppressibleMsgBox(CustomMessage('ErrNoDotNet'), mbCriticalError, MB_OK, IDOK);
+		Exit;
+	end;
+
+	if LegacyMsiIsPresent() then
+	begin
+		SuppressibleMsgBox(CustomMessage('ErrLegacyMsi'), mbCriticalError, MB_OK, IDOK);
+		Exit;
+	end;
+
+	if FindWindowByWindowName(DmtWindowName) <> 0 then
+	begin
+		SuppressibleMsgBox(CustomMessage('ErrDmtRunning'), mbCriticalError, MB_OK, IDOK);
+		Exit;
+	end;
+
+	Result := True;
+end;

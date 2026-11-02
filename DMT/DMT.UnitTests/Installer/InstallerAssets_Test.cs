@@ -143,6 +143,33 @@ namespace DMT.UnitTests.Installer
 				"the 'installed' marker must never be written");
 		}
 
+		[TestCase("english.ErrNoDotNet=")]
+		[TestCase("chinesesimplified.ErrNoDotNet=")]
+		[TestCase("english.ErrLegacyMsi=")]
+		[TestCase("chinesesimplified.ErrLegacyMsi=")]
+		[TestCase("english.ErrDmtRunning=")]
+		[TestCase("chinesesimplified.ErrDmtRunning=")]
+		public void IssDeclaresBilingualPreflightMessages(string expectedPrefix)
+		{
+			string iss = ReadIss();
+
+			Assert.IsTrue(iss.IndexOf(expectedPrefix, StringComparison.Ordinal) >= 0,
+				"missing [CustomMessages] entry: " + expectedPrefix);
+		}
+
+		[TestCase("ErrNoDotNet")]
+		[TestCase("ErrLegacyMsi")]
+		[TestCase("ErrDmtRunning")]
+		public void IssRoutesPreflightMessagesThroughCustomMessage(string name)
+		{
+			string iss = ReadIss();
+
+			// A literal string in the Pascal block would ignore the wizard's
+			// language; {cm:...} keeps the error box bilingual.
+			Assert.IsTrue(iss.IndexOf("CustomMessage('" + name + "')", StringComparison.Ordinal) >= 0,
+				"the " + name + " error box must use CustomMessage()");
+		}
+
 		[TestCase(@"DMT\DMT\bin\Release\DMT.exe")]
 		[TestCase(@"DMT\DMT\bin\Release\DMT.exe.config")]
 		[TestCase(@"DMT\DMT\bin\Release\zh-Hans\DMT.resources.dll")]
