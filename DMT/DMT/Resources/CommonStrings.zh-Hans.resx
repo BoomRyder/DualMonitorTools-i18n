@@ -196,4 +196,55 @@
   <data name="FolderDoesNotExist" xml:space="preserve">
     <value>文件夹“{0}”不存在</value>
   </data>
+  <data name="EditNameListForm_label1_Text" xml:space="preserve">
+    <value>可用显示器</value>
+  </data>
+  <data name="EditNameListForm_labelSelected_Text" xml:space="preserve">
+    <value>已选显示器</value>
+  </data>
+  <data name="EditNameListForm_buttonOK_Text" xml:space="preserve">
+    <value>确定</value>
+  </data>
+  <data name="EditNameListForm_buttonCancel_Text" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="HotKeyForm_lblNote_Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="HotKeyForm_buttonCancel_Text" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="HotKeyForm_buttonOK_Text" xml:space="preserve">
+    <value>确定</value>
+  </data>
+  <data name="HotKeyForm_checkBoxEnable_Text" xml:space="preserve">
+    <value>启用此热键</value>
+  </data>
+  <data name="HotKeyForm_labelDescription_Text" xml:space="preserve">
+    <value>热键用于...</value>
+  </data>
+  <data name="HotKeyPanel_labelDescription_Text" xml:space="preserve">
+    <value>说明</value>
+  </data>
+  <data name="HotKeyPanel_buttonChange_Text" xml:space="preserve">
+    <value>更改...</value>
+  </data>
+  <data name="HotKeyPanel_labelKeyCombo_Text" xml:space="preserve">
+    <value>按键组合</value>
+  </data>
+  <data name="KeyComboPanel_chkWin_Text" xml:space="preserve">
+    <value>Win</value>
+  </data>
+  <data name="KeyComboPanel_label1_Text" xml:space="preserve">
+    <value>+</value>
+  </data>
+  <data name="KeyComboPanel_chkAlt_Text" xml:space="preserve">
+    <value>Alt</value>
+  </data>
+  <data name="KeyComboPanel_chkCtrl_Text" xml:space="preserve">
+    <value>Ctrl</value>
+  </data>
+  <data name="KeyComboPanel_chkShift_Text" xml:space="preserve">
+    <value>Shift</value>
+  </data>
 </root>

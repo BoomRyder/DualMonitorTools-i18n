@@ -45,7 +45,7 @@
 			this.lblNote.ReadOnly = true;
 			this.lblNote.Size = new System.Drawing.Size(360, 78);
 			this.lblNote.TabIndex = 10;
-			this.lblNote.Text = "";
+			this.lblNote.Text = global::DMT.Resources.CommonStrings.HotKeyForm_lblNote_Text;
 			// 
 			// buttonCancel
 			// 
@@ -54,7 +54,7 @@
 			this.buttonCancel.Name = "buttonCancel";
 			this.buttonCancel.Size = new System.Drawing.Size(75, 23);
 			this.buttonCancel.TabIndex = 9;
-			this.buttonCancel.Text = "Cancel";
+			this.buttonCancel.Text = global::DMT.Resources.CommonStrings.HotKeyForm_buttonCancel_Text;
 			this.buttonCancel.UseVisualStyleBackColor = true;
 			this.buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);
 			// 
@@ -64,7 +64,7 @@
 			this.buttonOK.Name = "buttonOK";
 			this.buttonOK.Size = new System.Drawing.Size(75, 23);
 			this.buttonOK.TabIndex = 8;
-			this.buttonOK.Text = "OK";
+			this.buttonOK.Text = global::DMT.Resources.CommonStrings.HotKeyForm_buttonOK_Text;
 			this.buttonOK.UseVisualStyleBackColor = true;
 			this.buttonOK.Click += new System.EventHandler(this.buttonOK_Click);
 			// 
@@ -75,7 +75,7 @@
 			this.checkBoxEnable.Name = "checkBoxEnable";
 			this.checkBoxEnable.Size = new System.Drawing.Size(115, 17);
 			this.checkBoxEnable.TabIndex = 7;
-			this.checkBoxEnable.Text = "Enable this Hotkey";
+			this.checkBoxEnable.Text = global::DMT.Resources.CommonStrings.HotKeyForm_checkBoxEnable_Text;
 			this.checkBoxEnable.UseVisualStyleBackColor = true;
 			this.checkBoxEnable.CheckedChanged += new System.EventHandler(this.checkBoxEnable_CheckedChanged);
 			// 
@@ -85,7 +85,7 @@
 			this.labelDescription.Name = "labelDescription";
 			this.labelDescription.Size = new System.Drawing.Size(358, 17);
 			this.labelDescription.TabIndex = 6;
-			this.labelDescription.Text = "Hotkey to ...";
+			this.labelDescription.Text = global::DMT.Resources.CommonStrings.HotKeyForm_labelDescription_Text;
 			// 
 			// keyComboPanel
 			// 

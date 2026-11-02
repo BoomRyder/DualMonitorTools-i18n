@@ -47,7 +47,7 @@
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(93, 13);
 			this.label1.TabIndex = 0;
-			this.label1.Text = "Available Monitors";
+			this.label1.Text = global::DMT.Resources.CommonStrings.EditNameListForm_label1_Text;
 			// 
 			// listBoxAvailable
 			// 
@@ -88,7 +88,7 @@
 			this.labelSelected.Name = "labelSelected";
 			this.labelSelected.Size = new System.Drawing.Size(92, 13);
 			this.labelSelected.TabIndex = 4;
-			this.labelSelected.Text = "Selected Monitors";
+			this.labelSelected.Text = global::DMT.Resources.CommonStrings.EditNameListForm_labelSelected_Text;
 			// 
 			// listBoxSelected
 			// 
@@ -126,7 +126,7 @@
 			this.buttonOK.Name = "buttonOK";
 			this.buttonOK.Size = new System.Drawing.Size(75, 23);
 			this.buttonOK.TabIndex = 8;
-			this.buttonOK.Text = "OK";
+			this.buttonOK.Text = global::DMT.Resources.CommonStrings.EditNameListForm_buttonOK_Text;
 			this.buttonOK.UseVisualStyleBackColor = true;
 			this.buttonOK.Click += new System.EventHandler(this.buttonOK_Click);
 			// 
@@ -137,7 +137,7 @@
 			this.buttonCancel.Name = "buttonCancel";
 			this.buttonCancel.Size = new System.Drawing.Size(75, 23);
 			this.buttonCancel.TabIndex = 9;
-			this.buttonCancel.Text = "Cancel";
+			this.buttonCancel.Text = global::DMT.Resources.CommonStrings.EditNameListForm_buttonCancel_Text;
 			this.buttonCancel.UseVisualStyleBackColor = true;
 			this.buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);
 			// 

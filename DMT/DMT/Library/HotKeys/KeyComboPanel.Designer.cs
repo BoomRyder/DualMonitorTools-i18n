@@ -43,7 +43,7 @@
 			this.chkWin.Name = "chkWin";
 			this.chkWin.Size = new System.Drawing.Size(45, 17);
 			this.chkWin.TabIndex = 18;
-			this.chkWin.Text = "Win";
+			this.chkWin.Text = global::DMT.Resources.CommonStrings.KeyComboPanel_chkWin_Text;
 			this.chkWin.UseVisualStyleBackColor = true;
 			// 
 			// comboKey
@@ -62,7 +62,7 @@
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(13, 13);
 			this.label1.TabIndex = 16;
-			this.label1.Text = "+";
+			this.label1.Text = global::DMT.Resources.CommonStrings.KeyComboPanel_label1_Text;
 			// 
 			// chkAlt
 			// 
@@ -71,7 +71,7 @@
 			this.chkAlt.Name = "chkAlt";
 			this.chkAlt.Size = new System.Drawing.Size(38, 17);
 			this.chkAlt.TabIndex = 15;
-			this.chkAlt.Text = "Alt";
+			this.chkAlt.Text = global::DMT.Resources.CommonStrings.KeyComboPanel_chkAlt_Text;
 			this.chkAlt.UseVisualStyleBackColor = true;
 			// 
 			// chkCtrl
@@ -81,7 +81,7 @@
 			this.chkCtrl.Name = "chkCtrl";
 			this.chkCtrl.Size = new System.Drawing.Size(41, 17);
 			this.chkCtrl.TabIndex = 14;
-			this.chkCtrl.Text = "Ctrl";
+			this.chkCtrl.Text = global::DMT.Resources.CommonStrings.KeyComboPanel_chkCtrl_Text;
 			this.chkCtrl.UseVisualStyleBackColor = true;
 			// 
 			// chkShift
@@ -91,7 +91,7 @@
 			this.chkShift.Name = "chkShift";
 			this.chkShift.Size = new System.Drawing.Size(47, 17);
 			this.chkShift.TabIndex = 13;
-			this.chkShift.Text = "Shift";
+			this.chkShift.Text = global::DMT.Resources.CommonStrings.KeyComboPanel_chkShift_Text;
 			this.chkShift.UseVisualStyleBackColor = true;
 			// 
 			// KeyComboPanel

@@ -196,4 +196,55 @@ This is free software, and you are welcome to redistribute it under certain cond
   <data name="FolderDoesNotExist" xml:space="preserve">
     <value>The folder '{0}' does not exist</value>
   </data>
+  <data name="EditNameListForm_label1_Text" xml:space="preserve">
+    <value>Available Monitors</value>
+  </data>
+  <data name="EditNameListForm_labelSelected_Text" xml:space="preserve">
+    <value>Selected Monitors</value>
+  </data>
+  <data name="EditNameListForm_buttonOK_Text" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="EditNameListForm_buttonCancel_Text" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="HotKeyForm_lblNote_Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="HotKeyForm_buttonCancel_Text" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="HotKeyForm_buttonOK_Text" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="HotKeyForm_checkBoxEnable_Text" xml:space="preserve">
+    <value>Enable this Hotkey</value>
+  </data>
+  <data name="HotKeyForm_labelDescription_Text" xml:space="preserve">
+    <value>Hotkey to ...</value>
+  </data>
+  <data name="HotKeyPanel_labelDescription_Text" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="HotKeyPanel_buttonChange_Text" xml:space="preserve">
+    <value>Change...</value>
+  </data>
+  <data name="HotKeyPanel_labelKeyCombo_Text" xml:space="preserve">
+    <value>KeyCombo</value>
+  </data>
+  <data name="KeyComboPanel_chkWin_Text" xml:space="preserve">
+    <value>Win</value>
+  </data>
+  <data name="KeyComboPanel_label1_Text" xml:space="preserve">
+    <value>+</value>
+  </data>
+  <data name="KeyComboPanel_chkAlt_Text" xml:space="preserve">
+    <value>Alt</value>
+  </data>
+  <data name="KeyComboPanel_chkCtrl_Text" xml:space="preserve">
+    <value>Ctrl</value>
+  </data>
+  <data name="KeyComboPanel_chkShift_Text" xml:space="preserve">
+    <value>Shift</value>
+  </data>
 </root>

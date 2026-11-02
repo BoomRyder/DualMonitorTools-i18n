@@ -277,5 +277,158 @@ namespace DMT.Resources {
                 return ResourceManager.GetString("X2MouseButton", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Available Monitors.
+        /// </summary>
+        internal static string EditNameListForm_label1_Text {
+            get {
+                return ResourceManager.GetString("EditNameListForm_label1_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Selected Monitors.
+        /// </summary>
+        internal static string EditNameListForm_labelSelected_Text {
+            get {
+                return ResourceManager.GetString("EditNameListForm_labelSelected_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to OK.
+        /// </summary>
+        internal static string EditNameListForm_buttonOK_Text {
+            get {
+                return ResourceManager.GetString("EditNameListForm_buttonOK_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cancel.
+        /// </summary>
+        internal static string EditNameListForm_buttonCancel_Text {
+            get {
+                return ResourceManager.GetString("EditNameListForm_buttonCancel_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string HotKeyForm_lblNote_Text {
+            get {
+                return ResourceManager.GetString("HotKeyForm_lblNote_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cancel.
+        /// </summary>
+        internal static string HotKeyForm_buttonCancel_Text {
+            get {
+                return ResourceManager.GetString("HotKeyForm_buttonCancel_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to OK.
+        /// </summary>
+        internal static string HotKeyForm_buttonOK_Text {
+            get {
+                return ResourceManager.GetString("HotKeyForm_buttonOK_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Enable this Hotkey.
+        /// </summary>
+        internal static string HotKeyForm_checkBoxEnable_Text {
+            get {
+                return ResourceManager.GetString("HotKeyForm_checkBoxEnable_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Hotkey to ....
+        /// </summary>
+        internal static string HotKeyForm_labelDescription_Text {
+            get {
+                return ResourceManager.GetString("HotKeyForm_labelDescription_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Description.
+        /// </summary>
+        internal static string HotKeyPanel_labelDescription_Text {
+            get {
+                return ResourceManager.GetString("HotKeyPanel_labelDescription_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Change....
+        /// </summary>
+        internal static string HotKeyPanel_buttonChange_Text {
+            get {
+                return ResourceManager.GetString("HotKeyPanel_buttonChange_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to KeyCombo.
+        /// </summary>
+        internal static string HotKeyPanel_labelKeyCombo_Text {
+            get {
+                return ResourceManager.GetString("HotKeyPanel_labelKeyCombo_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Win.
+        /// </summary>
+        internal static string KeyComboPanel_chkWin_Text {
+            get {
+                return ResourceManager.GetString("KeyComboPanel_chkWin_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to +.
+        /// </summary>
+        internal static string KeyComboPanel_label1_Text {
+            get {
+                return ResourceManager.GetString("KeyComboPanel_label1_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Alt.
+        /// </summary>
+        internal static string KeyComboPanel_chkAlt_Text {
+            get {
+                return ResourceManager.GetString("KeyComboPanel_chkAlt_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ctrl.
+        /// </summary>
+        internal static string KeyComboPanel_chkCtrl_Text {
+            get {
+                return ResourceManager.GetString("KeyComboPanel_chkCtrl_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Shift.
+        /// </summary>
+        internal static string KeyComboPanel_chkShift_Text {
+            get {
+                return ResourceManager.GetString("KeyComboPanel_chkShift_Text", resourceCulture);
+            }
+        }
     }
 }
