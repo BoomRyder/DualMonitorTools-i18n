@@ -313,3 +313,5 @@ Successful compile (0.859 sec).
 8. **§4.1/§4.2 的字节数是设计期快照，随构建浮动**（本次 Release：`DMT.exe` 1127936 B、`DualWallpaper.exe` 151552 B、`DmtWallpaper.exe` 32768 B、安装包 2337555 B），不要当断言用。
 
 9. **`TileWallpaper` / `WallpaperStyle` 不动的理由更正。** 本文曾写"第 2 步的 `SystemParametersInfo` 会由系统重算这两个值"——不成立，`SPI_SETDESKWALLPAPER` 不会把拟合方式改回用户原来的选择。真实理由是**原值没有被记录，删掉比留着更糟**，故保持不动，由 README 提示用户按需重选。
+
+10. **安装包清单改为 `requireAdministrator`（新增决策，用户提出"图标左下角应该有盾牌"）。** Inno 的 `Setup.exe` 清单一律 `asInvoker`，靠 loader 运行期 `runas` 自重启提权，所以资源管理器不画 UAC 盾牌。`PrivilegesRequired=admin` 只能保证行为上要管理员，无法改变图标。两条走不通的路已实测：`mt.exe` 回写清单会按 PE 镜像大小重写整个文件，2338213 字节的包被截断成 849920，丢弃追加的安装数据包；`UseSetupLdr=no` 产出的仍是 `asInvoker`。可行做法是**等长原位替换**：`level="asInvoker"`（17 字节）→ `level="requireAdministrator"`（28 字节），多的 11 字节从清单中 `<trustInfo>` 前那段 Inno 自带空白行（278 空格）里砍掉，文件总长与所有偏移不变，Windows 读到的就是 `requireAdministrator`。已固化进 `build-installer.ps1` 的 `Set-SetupRequiresAdministrator`，每次编译后自动执行，长度不等直接报错不写；`BuildInstallerMakesTheSetupRequireAdministrator` 守这条。替换后 `Test-Preflight.ps1` 与 `Test-Uninstall.ps1` 全部通过，确认 `requireAdministrator` 不影响安装/卸载流程。

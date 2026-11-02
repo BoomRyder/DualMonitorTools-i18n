@@ -281,6 +281,24 @@ namespace DMT.UnitTests.Installer
 		}
 
 		[Test]
+		public void BuildInstallerMakesTheSetupRequireAdministrator()
+		{
+			string ps = File.ReadAllText(Path.Combine(RepoRoot, "build-installer.ps1"));
+
+			// Inno always emits an asInvoker manifest and elevates itself at run
+			// time, so Explorer draws no UAC shield. Rewriting the resource with
+			// mt.exe truncates the setup to its PE image size and drops the
+			// appended payload, so build-installer substitutes a same-length
+			// string in place instead. Dropping the patch silently removes the
+			// shield and the "run as administrator" signal.
+			Assert.IsTrue(ps.IndexOf("level=\"requireAdministrator\"", StringComparison.Ordinal) >= 0,
+				"build-installer.ps1 must patch the setup manifest to requireAdministrator");
+
+			Assert.IsTrue(ps.IndexOf("Set-SetupRequiresAdministrator", StringComparison.Ordinal) >= 0,
+				"build-installer.ps1 must apply the manifest patch to the built setup");
+		}
+
+		[Test]
 		public void IssInstallsScreenSaverIntoTheRealSystem32()
 		{
 			string iss = ReadIss();

@@ -61,7 +61,44 @@ Write-Host "`n=== 编译安装包 ===" -ForegroundColor Cyan
 & $iscc "/DRepoRoot=$Root" "/O$dist" $iss
 if ($LASTEXITCODE -ne 0) { throw "ISCC 编译失败（$LASTEXITCODE）。" }
 
+function Set-SetupRequiresAdministrator {
+    <#
+        Inno 的 Setup.exe 清单一律是 asInvoker（loader 运行期用 runas 自重启提权），
+        所以资源管理器不给它画 UAC 盾牌、双击也看不出来要管理员。
+        用 mt.exe 之类"重写资源"会把包截断（只按 PE 镜像大小重写，后面追加的安装数据
+        包全丢，2337555 -> 849920 字节），因此只能等长替换：
+        asInvoker(9) 换成 requireAdministrator(20) 多的 11 字节，从 <trustInfo> 前那段
+        Inno 自带的空白行里砍掉，文件大小与所有偏移保持不变。
+    #>
+    param([string]$Path)
+
+    $bytes = [System.IO.File]::ReadAllBytes($Path)
+    $s = [System.Text.Encoding]::Latin1.GetString($bytes)
+
+    if ($s.Contains('level="requireAdministrator"')) { return }
+    if (-not $s.Contains('level="asInvoker"')) {
+        throw "清单里找不到 asInvoker，无法改为 requireAdministrator（Inno 版本变了？请核对 $Path）。"
+    }
+
+    $s2 = $s.Replace('level="asInvoker"', 'level="requireAdministrator"')
+    $mm = ([regex]'( +)\r?\n(?=<trustInfo)').Match($s2)
+    if (-not $mm.Success -or $mm.Groups[1].Length -lt 11) {
+        throw "清单里没有足够的填充空白做等长替换，无法改为 requireAdministrator。"
+    }
+
+    $s3 = $s2.Remove($mm.Groups[1].Index + $mm.Groups[1].Length - 11, 11)
+    if ($s3.Length -ne $s.Length) { throw "等长替换失败，放弃写回以免损坏安装包。" }
+
+    [System.IO.File]::WriteAllBytes($Path, [System.Text.Encoding]::Latin1.GetBytes($s3))
+}
+
+# 产物名里含 ISPP 宏（{#MyAppVersion}），不去展开它，直接取刚编译出来的那个
+$setupExe = Get-ChildItem $dist -Filter '*Setup.exe' | Sort-Object LastWriteTimeUtc | Select-Object -Last 1
+if (-not $setupExe) { throw "在 $dist 里找不到刚编译出来的安装包。" }
+Set-SetupRequiresAdministrator -Path $setupExe.FullName
+
 Write-Host "`n=== 产物 ===" -ForegroundColor Cyan
+"已把清单改为 requireAdministrator（等长替换，文件大小不变）"
 Get-ChildItem $dist -Filter '*.exe' | ForEach-Object {
     "{0,10}  {1}" -f $_.Length, $_.Name
 }

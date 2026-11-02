@@ -107,15 +107,26 @@ Inno 自己删掉的东西之外，`[Code]` 段的 `CurUninstallStepChanged`
 
 安装包**必须**以管理员身份运行：要写 `C:\Program Files (x86)`、`System32` 和 `HKLM`。
 
-提权由 `[Setup] PrivilegesRequired=admin` 完成——这是 Inno 唯一支持的方式。Inno 的
-`Setup.exe` 清单固定是 `asInvoker`，它靠 loader 用 `runas` 重启自己来提权。实测过
-两条"把清单改成 `requireAdministrator`"的路，都不行：
+Inno 编出来的 `Setup.exe` 清单一律是 `asInvoker`（loader 运行期用 `runas` 自重启提权），
+所以资源管理器**不会**画 UAC 盾牌，双击也看不出它是需要管理员的。要做到"带盾牌、
+双击直接以管理员模式运行"，就得让 exe 自己的清单是 `requireAdministrator`。两条
+想当然的路都不行：
 
-- 用 `mt.exe` 回写清单：文件从 2337555 字节被截断到 849920 字节（正好是 PE 镜像
-  大小），Inno 追加在 exe 后面的安装数据包被丢掉，包直接损坏。
-- `UseSetupLdr=no`（去掉 loader 的单一 exe，4455424 字节）：清单依然是 `asInvoker`。
+- **不能用 `mt.exe` 一类工具重写清单**：它按 PE 镜像大小重写整个文件，2338213 字节
+  的包被截断成 849920（正好是镜像大小），Inno 追加在 exe 后面的安装数据包全丢，包
+  直接损坏。
+- **`UseSetupLdr=no` 不解决问题**：产出的单文件 exe 清单仍是 `asInvoker`。
 
-因此"必须管理员"体现在安装包的行为上，而不是 exe 的清单上：
+可用的是**等长原位替换**，已固化在 `build-installer.ps1` 的
+`Set-SetupRequiresAdministrator`：把清单里的 `level="asInvoker"`（17 字节）换成
+`level="requireAdministrator"`（28 字节），多出的 11 字节从 `<trustInfo>` 前那段
+Inno 自带的空白行（278 个空格）里砍掉。于是文件总长与所有偏移不变，追加的安装数据
+包完好，而 Windows 读到的清单已经是 `requireAdministrator`——盾牌、UAC 提示、双击
+即管理员都随之生效。脚本每次编译后自动执行并校验替换前后长度一致；找不到
+`asInvoker` 或空白不够时直接报错，不会悄悄产出没有盾牌的包。
+
+`[Setup] PrivilegesRequired=admin` 仍然保留作为兜底（用户从命令行、计划任务等
+不经过资源管理器的路径启动时），另有两条闸门把失败变成可读的诊断：
 
 - `InitializeSetup` 里 `if not IsAdmin` 就弹 `ErrNeedAdmin` 并退出，不会走到建目录。
 - `PrepareToInstall` 用 `DirectoryIsWritable()` 真写一个临时文件再删掉来探测
