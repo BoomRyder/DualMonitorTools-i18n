@@ -799,9 +799,15 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>AppStrings.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Resources\AppStrings.zh-Hans.resx">
+      <DependentUpon>AppStrings.resx</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Resources\CommonStrings.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>CommonStrings.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\CommonStrings.zh-Hans.resx">
+      <DependentUpon>CommonStrings.resx</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Resources\CursorStrings.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -810,6 +816,9 @@
     <EmbeddedResource Include="Resources\GeneralStrings.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>GeneralStrings.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\GeneralStrings.zh-Hans.resx">
+      <DependentUpon>GeneralStrings.resx</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Resources\LauncherStrings.resx">
       <Generator>ResXFileCodeGenerator</Generator>
