@@ -1,4 +1,4 @@
-﻿#region copyright
+#region copyright
 // This file is part of Dual Monitor Tools which is a set of tools to assist
 // users with multiple monitor setups.
 // Copyright (C) 2025  The Dual Monitor Tools Chinese translation project
@@ -78,7 +78,26 @@ namespace DMT.UnitTests.Library.Localization
 			"SlickRun",
 			// Escape-sequence legend on the Url provider panel: the syntax is the
 			// message, so it reads the same in both languages.
-			"%% -> %"
+			"%% -> %",
+			// Units and separators that read the same in both languages.
+			"0°",
+			"90°",
+			"180°",
+			"270°",
+			"1%",
+			"5%",
+			"20%",
+			"+",
+			// Dimensions separator between the width and height boxes,
+			// e.g. "1920 x 1080".
+			"x",
+			// Names of third party services and of a control that never paints
+			// its Text property.
+			"Bing",
+			"flickr",
+			"Unsplash",
+			"Url",
+			"imageBlender"
 		};
 
 		/// <summary>
@@ -191,13 +210,44 @@ namespace DMT.UnitTests.Library.Localization
 				return true;
 			}
 
-			// Short keyboard/technical tokens containing no spaces need no translation.
-			if (!trimmed.Contains(" ") && trimmed.Length <= 12)
+			return false;
+		}
+
+		// A short word with no space is still a word. Without this test the guard
+		// above could be loosened back into a length heuristic that silently waves
+		// through a forgotten "Cancel" or "Apply".
+		[TestCase("Cancel")]
+		[TestCase("Apply")]
+		[TestCase("About")]
+		[TestCase("Options")]
+		[TestCase("Rescan")]
+		public void IsUntranslatable_DoesNotExemptShortRealWords(string english)
+		{
+			Assert.IsFalse(IsUntranslatable(english),
+				"'" + english + "' is a real word and must be translated");
+		}
+
+		[TestCase("Alt")]
+		[TestCase("Ctrl")]
+		[TestCase("X1")]
+		[TestCase("Bing")]
+		[TestCase("flickr")]
+		[TestCase("0°")]
+		[TestCase("20%")]
+		[TestCase("+")]
+		[TestCase("{0}")]
+		[TestCase("DMT_GUI_WINDOW")]
+		public void IsUntranslatable_ExemptsKnownTechnicalTokens(string english)
+		{
+			if (string.Equals(english, "DMT_GUI_WINDOW", StringComparison.Ordinal))
 			{
-				return true;
+				// Not on the list on purpose: the whitelist must name what it means.
+				Assert.IsFalse(IsUntranslatable(english));
+				return;
 			}
 
-			return false;
+			Assert.IsTrue(IsUntranslatable(english),
+				"'" + english + "' is a technical token and must stay as it is");
 		}
 
 		[Test]

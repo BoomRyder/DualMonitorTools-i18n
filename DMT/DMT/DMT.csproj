@@ -647,6 +647,9 @@
     <EmbeddedResource Include="Modules\Cursor\CursorDeadSpaceOptionsPanel.resx">
       <DependentUpon>CursorDeadSpaceOptionsPanel.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Cursor\CursorDeadSpaceOptionsPanel.zh-Hans.resx">
+      <DependentUpon>CursorDeadSpaceOptionsPanel.resx</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Modules\Cursor\CursorStickyOptionsPanel.resx">
       <DependentUpon>CursorStickyOptionsPanel.cs</DependentUpon>
     </EmbeddedResource>
@@ -713,6 +716,9 @@
     <EmbeddedResource Include="Modules\Launcher\MagicWordForm.resx">
       <DependentUpon>MagicWordForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Launcher\MagicWordForm.zh-Hans.resx">
+      <DependentUpon>MagicWordForm.resx</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Modules\Launcher\ParameterInputForm.resx">
       <DependentUpon>ParameterInputForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -742,6 +748,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Modules\SwapScreen\SwapScreenSdaOptionsPanel.resx">
       <DependentUpon>SwapScreenSdaOptionsPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\SwapScreen\SwapScreenSdaOptionsPanel.zh-Hans.resx">
+      <DependentUpon>SwapScreenSdaOptionsPanel.resx</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Modules\SwapScreen\SwapScreenUdaOptionsPanel.resx">
       <DependentUpon>SwapScreenUdaOptionsPanel.cs</DependentUpon>

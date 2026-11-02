@@ -1,4 +1,4 @@
-﻿#region copyright
+#region copyright
 // This file is part of Dual Monitor Tools which is a set of tools to assist
 // users with multiple monitor setups.
 // Copyright (C) 2025  The Dual Monitor Tools Chinese translation project
@@ -140,28 +140,88 @@ namespace DMT.Library.Localization
 				}
 			}
 
-			// Chinese regional variants: simplified-script regions use zh-Hans.
-			// zh-TW / zh-HK / zh-MO use traditional script, which this build does not
-			// ship, so they deliberately fall through to the default language.
-			string lower = trimmed.ToLowerInvariant();
-			if (lower.StartsWith("zh", StringComparison.Ordinal))
+			// Chinese regional variants: use the script the culture actually resolves
+			// to, not a bare "zh" prefix. The prefix test would send the legacy
+			// traditional name zh-CHT, and any typo such as zhx, to zh-Hans.
+			// zh-TW / zh-HK / zh-MO / zh-CHT / zh-Hant are traditional script, which
+			// this build does not ship, so they fall through to the default language.
+			string script = ResolveChineseScript(trimmed);
+			if (script == "zh-Hans")
 			{
-				if (lower.StartsWith("zh-hant", StringComparison.Ordinal))
-				{
-					return DefaultTag;
-				}
-
-				if (lower.StartsWith("zh-tw", StringComparison.Ordinal) ||
-					lower.StartsWith("zh-hk", StringComparison.Ordinal) ||
-					lower.StartsWith("zh-mo", StringComparison.Ordinal))
-				{
-					return DefaultTag;
-				}
-
 				return "zh-Hans";
 			}
 
+			if (script == "traditional")
+			{
+				return DefaultTag;
+			}
+
 			return DefaultTag;
+		}
+
+		/// <summary>
+		/// Works out which Chinese script a culture name refers to by walking the
+		/// culture's parent chain, where .NET records the script as zh-Hans/zh-CHS
+		/// for simplified and zh-Hant/zh-CHT for traditional.
+		/// </summary>
+		/// <param name="cultureName">Culture name to inspect</param>
+		/// <returns>
+		/// "zh-Hans" for simplified, "traditional" for traditional, or null when the
+		/// name is not Chinese at all.
+		/// </returns>
+		static string ResolveChineseScript(string cultureName)
+		{
+			CultureInfo culture;
+			try
+			{
+				culture = new CultureInfo(cultureName);
+			}
+			catch (ArgumentException)
+			{
+				return null;
+			}
+
+			// A bare "zh" is generic Chinese; this build offers Simplified only.
+			bool sawGenericChinese = false;
+
+			while (culture != null)
+			{
+				string name = culture.Name;
+
+				// The invariant culture reports its own parent as itself, so stop
+				// before walking into an endless loop.
+				if (name.Length == 0)
+				{
+					break;
+				}
+
+				string lower = name.ToLowerInvariant();
+
+				if (lower == "zh-hant" || lower == "zh-cht")
+				{
+					return "traditional";
+				}
+
+				if (lower == "zh-hans" || lower == "zh-chs")
+				{
+					return "zh-Hans";
+				}
+
+				if (lower == "zh")
+				{
+					sawGenericChinese = true;
+				}
+
+				CultureInfo parent = culture.Parent;
+				if (parent == null || ReferenceEquals(parent, culture))
+				{
+					break;
+				}
+
+				culture = parent;
+			}
+
+			return sawGenericChinese ? "zh-Hans" : null;
 		}
 
 		/// <summary>

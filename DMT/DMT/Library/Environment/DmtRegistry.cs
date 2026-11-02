@@ -1,4 +1,4 @@
-﻿using Microsoft.Win32;
+using Microsoft.Win32;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -62,11 +62,28 @@ namespace DMT.Library.Environment
 		/// Saves the UI language preference.
 		/// </summary>
 		/// <param name="languageTag">Language tag to save, e.g. "en" or "zh-Hans"</param>
+		/// <remarks>
+		/// A failure here must not surface as an exception: the caller is a list box
+		/// selection handler, so an unhandled error would show a raw stack trace
+		/// message box. The next start simply keeps the previous language.
+		/// </remarks>
 		public static void SetLanguage(string languageTag)
 		{
-			RegistryKey key = Registry.CurrentUser.CreateSubKey(DmtKey);
-			key.SetValue(LanguageValueName, languageTag);
-			key.Close();
+			try
+			{
+				RegistryKey key = Registry.CurrentUser.CreateSubKey(DmtKey);
+				if (key == null)
+				{
+					return;
+				}
+
+				key.SetValue(LanguageValueName, languageTag);
+				key.Close();
+			}
+			catch (Exception)
+			{
+				// No permission or a damaged key: keep running with the old language.
+			}
 		}
 
 		/// <summary>

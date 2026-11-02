@@ -1,4 +1,4 @@
-﻿#region copyright
+#region copyright
 // This file is part of Dual Monitor Tools which is a set of tools to assist
 // users with multiple monitor setups.
 // Copyright (C) 2025  The Dual Monitor Tools Chinese translation project
@@ -80,6 +80,11 @@ namespace DMT.UnitTests.Library.Localization
 		[TestCase("zh-TW", "en")]
 		[TestCase("zh-HK", "en")]
 		[TestCase("zh-MO", "en")]
+		[TestCase("zh-CHT", "en")]
+		[TestCase("zh-Hant", "en")]
+		[TestCase("ZH-HANT", "en")]
+		[TestCase("zhx", "en")]
+		[TestCase("zh-Hans-CN", "zh-Hans")]
 		[TestCase("kl-GL", "en")]
 		[TestCase("  zh-Hans  ", "zh-Hans")]
 		public void Normalise_MapsPreferenceToSupportedTag(string input, string expected)
