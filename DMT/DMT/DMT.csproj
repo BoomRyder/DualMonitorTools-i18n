@@ -841,9 +841,15 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>SwapScreenStrings.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Resources\SwapScreenStrings.zh-Hans.resx">
+      <DependentUpon>SwapScreenStrings.resx</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Resources\WallpaperStrings.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>WallpaperStrings.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\WallpaperStrings.zh-Hans.resx">
+      <DependentUpon>WallpaperStrings.resx</DependentUpon>
     </EmbeddedResource>
     <None Include="app.manifest" />
     <None Include="Properties\DataSources\DMT.Modules.Launcher.MagicWords.datasource" />
