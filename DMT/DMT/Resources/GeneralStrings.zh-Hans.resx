@@ -154,4 +154,16 @@
   <data name="PortableInstall" xml:space="preserve">
     <value>便携版安装</value>
   </data>
+  <data name="LanguageOptionsPanel_labelHeading_Text" xml:space="preserve">
+    <value>语言</value>
+  </data>
+  <data name="LanguageOptionsPanel_labelHint_Text" xml:space="preserve">
+    <value>选择用户界面使用的语言。</value>
+  </data>
+  <data name="LanguageOptionsPanel_labelRestartNeeded_Text" xml:space="preserve">
+    <value>语言已保存。请重启 Dual Monitor Tools 以应用更改。</value>
+  </data>
+  <data name="Node_Language" xml:space="preserve">
+    <value>语言</value>
+  </data>
 </root>

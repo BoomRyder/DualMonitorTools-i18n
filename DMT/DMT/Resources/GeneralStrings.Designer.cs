@@ -167,5 +167,41 @@ namespace DMT.Resources {
                 return ResourceManager.GetString("PortableInstall", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Language.
+        /// </summary>
+        internal static string LanguageOptionsPanel_labelHeading_Text {
+            get {
+                return ResourceManager.GetString("LanguageOptionsPanel_labelHeading_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Select the language used for the user interface..
+        /// </summary>
+        internal static string LanguageOptionsPanel_labelHint_Text {
+            get {
+                return ResourceManager.GetString("LanguageOptionsPanel_labelHint_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The language has been saved. Please restart Dual Monitor Tools to apply the change..
+        /// </summary>
+        internal static string LanguageOptionsPanel_labelRestartNeeded_Text {
+            get {
+                return ResourceManager.GetString("LanguageOptionsPanel_labelRestartNeeded_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Language.
+        /// </summary>
+        internal static string Node_Language {
+            get {
+                return ResourceManager.GetString("Node_Language", resourceCulture);
+            }
+        }
     }
 }

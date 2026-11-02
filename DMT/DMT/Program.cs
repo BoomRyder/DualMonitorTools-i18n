@@ -27,6 +27,7 @@ namespace DMT
 	using System.Windows.Forms;
 
 	using DMT.Library.Command;
+	using DMT.Library.Localization;
 	using DMT.Library.Logging;
 	using DMT.Library.PInvoke;
 
@@ -55,6 +56,9 @@ namespace DMT
 			//	MessageBox.Show(ex.Message);
 			//}
 #endif
+
+			// Apply the saved UI language before any window is created.
+			UiCulture.Apply(LanguageCatalog.ResolveFromRegistry());
 
 			ProgramOptions programOptions = new ProgramOptions(args);
 

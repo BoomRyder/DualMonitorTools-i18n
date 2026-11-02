@@ -67,5 +67,26 @@ namespace DMT.Library.Environment
 			key.SetValue(LanguageValueName, languageTag);
 			key.Close();
 		}
+
+		/// <summary>
+		/// Removes the saved UI language preference.
+		/// Used when restoring a machine to its pre-test state.
+		/// </summary>
+		public static void DeleteLanguage()
+		{
+			try
+			{
+				RegistryKey key = Registry.CurrentUser.OpenSubKey(DmtKey, true);
+				if (key != null)
+				{
+					key.DeleteValue(LanguageValueName, false);
+					key.Close();
+				}
+			}
+			catch (Exception)
+			{
+				// Nothing to remove, or no permission: leave the key alone.
+			}
+		}
 	}
 }

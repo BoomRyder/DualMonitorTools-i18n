@@ -293,6 +293,12 @@
     <Compile Include="Modules\General\GeneralOptionsPanel.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="Modules\General\LanguageOptionsPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\General\LanguageOptionsPanel.Designer.cs">
+      <DependentUpon>LanguageOptionsPanel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Modules\General\GeneralOptionsPanel.Designer.cs">
       <DependentUpon>GeneralOptionsPanel.cs</DependentUpon>
     </Compile>
@@ -673,6 +679,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Modules\General\GeneralOptionsPanel.resx">
       <DependentUpon>GeneralOptionsPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\General\LanguageOptionsPanel.resx">
+      <DependentUpon>LanguageOptionsPanel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Modules\General\GeneralRootOptionsPanel.resx">
       <DependentUpon>GeneralRootOptionsPanel.cs</DependentUpon>

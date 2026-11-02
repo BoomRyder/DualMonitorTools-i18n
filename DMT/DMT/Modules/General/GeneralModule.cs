@@ -60,6 +60,7 @@ namespace DMT.Modules.General
 		GeneralMonitorNamesOptionsPanel _generalMonitorNamesOptionsPanel;
 		GeneralMonitorOrderingOptionsPanel _generalMonitorOrderingOptionsPanel;
 		GeneralMonitorsOptionsPanel _generalMonitorsOptionsPanel;
+		LanguageOptionsPanel _languageOptionsPanel;
 
 		IntSetting MonitorOrderSetting { get; set; }
 		StringSetting MonitorNameOrderSetting { get; set; }
@@ -348,6 +349,9 @@ namespace DMT.Modules.General
 				_generalMonitorsOptionsPanel = new GeneralMonitorsOptionsPanel(this, displayDevices);
 				options.Nodes.Add(new ModuleOptionNodeLeaf("Monitors", image, _generalMonitorsOptionsPanel));
 			}
+
+			_languageOptionsPanel = new LanguageOptionsPanel();
+			options.Nodes.Add(new ModuleOptionNodeLeaf(GeneralStrings.Node_Language, image, _languageOptionsPanel));
 
 			return options;
 		}

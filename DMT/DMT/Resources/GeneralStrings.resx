@@ -148,6 +148,18 @@
   <data name="MsiInstall" xml:space="preserve">
     <value>MSI installation</value>
   </data>
+  <data name="LanguageOptionsPanel_labelHeading_Text" xml:space="preserve">
+    <value>Language</value>
+  </data>
+  <data name="LanguageOptionsPanel_labelHint_Text" xml:space="preserve">
+    <value>Select the language used for the user interface.</value>
+  </data>
+  <data name="LanguageOptionsPanel_labelRestartNeeded_Text" xml:space="preserve">
+    <value>The language has been saved. Please restart Dual Monitor Tools to apply the change.</value>
+  </data>
+  <data name="Node_Language" xml:space="preserve">
+    <value>Language</value>
+  </data>
   <data name="OptionsDescription" xml:space="preserve">
     <value>Show Options</value>
   </data>
