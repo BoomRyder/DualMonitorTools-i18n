@@ -75,6 +75,16 @@ namespace DMT.UnitTests.Library.Localization
 			string root = Path.Combine(RepoRoot, projectRelativePath);
 			Assert.IsTrue(Directory.Exists(root), "project folder not found: " + root);
 
+			return ScanDirectory(root);
+		}
+
+		/// <summary>
+		/// Scans every *.Designer.cs under a folder and reports user-visible literals.
+		/// Separated from the repo lookup so the scanner itself can be tested against
+		/// a throwaway folder.
+		/// </summary>
+		static List<string> ScanDirectory(string root)
+		{
 			List<string> problems = new List<string>();
 
 			string[] designerFiles = Directory.GetFiles(root, "*.Designer.cs", SearchOption.AllDirectories);
@@ -146,16 +156,63 @@ namespace DMT.UnitTests.Library.Localization
 				Environment.NewLine + string.Join(Environment.NewLine, problems.ToArray()));
 		}
 
-		// The scan itself must be able to see things, otherwise a green result means
-		// nothing. This proves the regex finds a literal when one exists.
+		// The scan itself must be able to see things, otherwise a green result above
+		// means nothing. This builds a throwaway folder holding one designer with a
+		// literal and one that references a resource, then checks the scanner reports
+		// exactly the first.
 		[Test]
 		public void ScanDetectsAKnownLiteral()
 		{
-			List<string> problems = FindLiterals(@"DMT\DMT");
+			string temp = Path.Combine(Path.GetTempPath(), "dmt_literal_scan_" + Guid.NewGuid().ToString("N"));
+			Directory.CreateDirectory(temp);
+			try
+			{
+				File.WriteAllText(
+					Path.Combine(temp, "HasLiteral.Designer.cs"),
+					"class A { void M() { this.button.Text = \"SHOULD BE FOUND\"; } }" + Environment.NewLine,
+					Encoding.UTF8);
 
-			// The scan runs over already-resource-ized files, so it should be clean;
-			// what matters is that the machinery is exercised and returns a list.
-			Assert.IsNotNull(problems);
+				File.WriteAllText(
+					Path.Combine(temp, "IsClean.Designer.cs"),
+					"class B { void M() { this.button.Text = global::DMT.Resources.AppStrings.Foo; } }" + Environment.NewLine,
+					Encoding.UTF8);
+
+				List<string> problems = ScanDirectory(temp);
+
+				Assert.AreEqual(1, problems.Count,
+					"expected exactly one problem, got: " + string.Join(" | ", problems.ToArray()));
+				StringAssert.Contains("SHOULD BE FOUND", problems[0]);
+				StringAssert.Contains("HasLiteral.Designer.cs", problems[0]);
+			}
+			finally
+			{
+				Directory.Delete(temp, true);
+			}
+		}
+
+		// An allowed literal must not be reported, or the guard would block every build.
+		[Test]
+		public void ScanAllowsWhitelistedLiterals()
+		{
+			string temp = Path.Combine(Path.GetTempPath(), "dmt_literal_allow_" + Guid.NewGuid().ToString("N"));
+			Directory.CreateDirectory(temp);
+			try
+			{
+				File.WriteAllText(
+					Path.Combine(temp, "Allowed.Designer.cs"),
+					"class C { void M() {" + Environment.NewLine +
+					"  this.Text = \"DMT_GUI_WINDOW\";" + Environment.NewLine +
+					"  this.label1.Text = \"label7\";" + Environment.NewLine +
+					"  this.separator.Text = \"-\";" + Environment.NewLine +
+					"} }" + Environment.NewLine,
+					Encoding.UTF8);
+
+				Assert.IsEmpty(ScanDirectory(temp));
+			}
+			finally
+			{
+				Directory.Delete(temp, true);
+			}
 		}
 	}
 }
