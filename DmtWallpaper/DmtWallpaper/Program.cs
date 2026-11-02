@@ -21,6 +21,8 @@ using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
 
+using DMT.Library.Localization;
+
 namespace DmtWallpaper
 {
 	static class Program
@@ -31,6 +33,9 @@ namespace DmtWallpaper
 		[STAThread]
 		static void Main(string[] args)
 		{
+			// Apply the saved UI language before any window is created.
+			UiCulture.Apply(LanguageCatalog.ResolveFromRegistry());
+
 			Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(false);
 

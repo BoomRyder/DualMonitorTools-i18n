@@ -76,6 +76,12 @@
     <Compile Include="..\..\DMT\DMT\Library\Environment\DmtRegistry.cs">
       <Link>Library\Environment\DmtRegistry.cs</Link>
     </Compile>
+    <Compile Include="..\..\DMT\DMT\Library\Localization\LanguageCatalog.cs">
+      <Link>Library\Localization\LanguageCatalog.cs</Link>
+    </Compile>
+    <Compile Include="..\..\DMT\DMT\Library\Localization\UiCulture.cs">
+      <Link>Library\Localization\UiCulture.cs</Link>
+    </Compile>
     <Compile Include="..\..\DMT\DMT\Library\Environment\ILocalEnvironment.cs">
       <Link>Library\Environment\ILocalEnvironment.cs</Link>
     </Compile>
@@ -160,6 +166,9 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.zh-Hans.resx">
+      <DependentUpon>Resources.resx</DependentUpon>
     </EmbeddedResource>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>

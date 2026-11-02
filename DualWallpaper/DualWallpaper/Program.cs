@@ -1,4 +1,4 @@
-#region copyright
+﻿#region copyright
 // This file is part of Dual Monitor Tools which is a set of tools to assist
 // users with multiple monitor setups.
 // Copyright (C) 2010  Gerald Evans
@@ -22,6 +22,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Windows.Forms;
 using DualWallpaper.Properties;
+using DMT.Library.Localization;
 using DMT.Library.PInvoke;
 
 namespace DualWallpaper
@@ -40,6 +41,9 @@ namespace DualWallpaper
 			//{
 			//	Win32.SetProcessDPIAware();
 			//}
+
+			// Apply the saved UI language before any window is created.
+			UiCulture.Apply(LanguageCatalog.ResolveFromRegistry());
 
 			Options options = new Options(args);
 
