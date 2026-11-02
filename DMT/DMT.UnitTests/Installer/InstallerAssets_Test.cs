@@ -299,6 +299,37 @@ namespace DMT.UnitTests.Installer
 		}
 
 		[Test]
+		public void IssCreatesADesktopShortcut()
+		{
+			string iss = ReadIss();
+
+			// {autodesktop} is the all-users desktop here, because the installer runs
+			// elevated; the shortcut is removed again by the uninstaller.
+			Assert.IsTrue(iss.IndexOf(@"{autodesktop}\{#MyAppName}", StringComparison.Ordinal) >= 0,
+				"the installer must create a desktop shortcut for DMT");
+		}
+
+		[Test]
+		public void IssDoesNotCreateTheEmptyContextMenuPlaceholder()
+		{
+			string iss = ReadIss();
+
+			// The original MSI created an empty HKCU shell key. Explorer lists it
+			// under its raw key name and invoking it fails with "no application is
+			// associated with the specified file". DMT builds the real menu itself,
+			// so the installer must not create the placeholder.
+			Assert.IsFalse(
+				iss.IndexOf(@"Root: HKCU; Subkey: ""Software\Classes\directory\Background\shell\GNE_DualMonitorTools""", StringComparison.Ordinal) >= 0,
+				"the installer must not create the empty context menu key");
+
+			// A leftover from the original MSI (or an earlier build of this
+			// installer) must be removed during installation, otherwise the broken
+			// menu entry survives a reinstall.
+			Assert.IsTrue(iss.IndexOf("RemoveGhostContextMenuKey", StringComparison.Ordinal) >= 0,
+				"an empty context menu key left behind must be cleaned up on install");
+		}
+
+		[Test]
 		public void IssInstallsScreenSaverIntoTheRealSystem32()
 		{
 			string iss = ReadIss();

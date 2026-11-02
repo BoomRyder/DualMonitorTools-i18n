@@ -1,4 +1,4 @@
-#region copyright
+﻿#region copyright
 // This file is part of Dual Monitor Tools which is a set of tools to assist
 // users with multiple monitor setups.
 // Copyright (C) 2025  The Dual Monitor Tools Chinese translation project
@@ -64,7 +64,9 @@ namespace DMT.Library.Localization
 	public static class LanguageCatalog
 	{
 		// Culture name of the language used when no valid preference is stored.
-		const string DefaultTag = "en";
+		// A fresh install must come up in Simplified Chinese, so that is the default;
+		// the user can still switch to English and the choice sticks.
+		const string DefaultTag = "zh-Hans";
 
 		static readonly List<LanguageDefinition> _all;
 		static readonly ReadOnlyCollection<LanguageDefinition> _allView;
@@ -72,8 +74,8 @@ namespace DMT.Library.Localization
 		static LanguageCatalog()
 		{
 			_all = new List<LanguageDefinition>();
-			_all.Add(new LanguageDefinition("en", "English"));
 			_all.Add(new LanguageDefinition("zh-Hans", "简体中文"));
+			_all.Add(new LanguageDefinition("en", "English"));
 			_allView = new ReadOnlyCollection<LanguageDefinition>(_all);
 		}
 

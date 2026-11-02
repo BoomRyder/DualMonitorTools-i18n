@@ -1,4 +1,4 @@
-#region copyright
+﻿#region copyright
 // This file is part of Dual Monitor Tools which is a set of tools to assist
 // users with multiple monitor setups.
 // Copyright (C) 2025  The Dual Monitor Tools Chinese translation project
@@ -34,11 +34,11 @@ namespace DMT.UnitTests.Library.Localization
 	public class LanguageCatalog_Test
 	{
 		[Test]
-		public void All_HasEnglishFirstAsDefault()
+		public void All_HasSimplifiedChineseFirstAsDefault()
 		{
-			Assert.AreEqual("en", LanguageCatalog.All[0].Tag);
-			Assert.AreEqual("en", LanguageCatalog.Default.Tag);
-			Assert.AreEqual("English", LanguageCatalog.Default.DisplayName);
+			Assert.AreEqual("zh-Hans", LanguageCatalog.All[0].Tag);
+			Assert.AreEqual("zh-Hans", LanguageCatalog.Default.Tag);
+			Assert.AreEqual("简体中文", LanguageCatalog.Default.DisplayName);
 		}
 
 		[Test]
@@ -54,9 +54,9 @@ namespace DMT.UnitTests.Library.Localization
 		[Test]
 		public void Find_UnknownTag_ReturnsDefault()
 		{
-			Assert.AreEqual("en", LanguageCatalog.Find("kl-GL").Tag);
-			Assert.AreEqual("en", LanguageCatalog.Find(null).Tag);
-			Assert.AreEqual("en", LanguageCatalog.Find(string.Empty).Tag);
+			Assert.AreEqual("zh-Hans", LanguageCatalog.Find("kl-GL").Tag);
+			Assert.AreEqual("zh-Hans", LanguageCatalog.Find(null).Tag);
+			Assert.AreEqual("zh-Hans", LanguageCatalog.Find(string.Empty).Tag);
 		}
 
 		[Test]
@@ -65,11 +65,11 @@ namespace DMT.UnitTests.Library.Localization
 			Assert.AreEqual("zh-Hans", LanguageCatalog.Find("ZH-HANS").Tag);
 		}
 
-		// A null, blank or odd preference must land on "en", never on the
+		// A null, blank or odd preference must land on the default language, never on the
 		// machine's regional culture.
-		[TestCase(null, "en")]
-		[TestCase("", "en")]
-		[TestCase("   ", "en")]
+		[TestCase(null, "zh-Hans")]
+		[TestCase("", "zh-Hans")]
+		[TestCase("   ", "zh-Hans")]
 		[TestCase("en", "en")]
 		[TestCase("EN", "en")]
 		[TestCase("zh-Hans", "zh-Hans")]
@@ -77,15 +77,15 @@ namespace DMT.UnitTests.Library.Localization
 		[TestCase("ZH-HANS", "zh-Hans")]
 		[TestCase("zh-CN", "zh-Hans")]
 		[TestCase("zh-SG", "zh-Hans")]
-		[TestCase("zh-TW", "en")]
-		[TestCase("zh-HK", "en")]
-		[TestCase("zh-MO", "en")]
-		[TestCase("zh-CHT", "en")]
-		[TestCase("zh-Hant", "en")]
-		[TestCase("ZH-HANT", "en")]
-		[TestCase("zhx", "en")]
+		[TestCase("zh-TW", "zh-Hans")]
+		[TestCase("zh-HK", "zh-Hans")]
+		[TestCase("zh-MO", "zh-Hans")]
+		[TestCase("zh-CHT", "zh-Hans")]
+		[TestCase("zh-Hant", "zh-Hans")]
+		[TestCase("ZH-HANT", "zh-Hans")]
+		[TestCase("zhx", "zh-Hans")]
 		[TestCase("zh-Hans-CN", "zh-Hans")]
-		[TestCase("kl-GL", "en")]
+		[TestCase("kl-GL", "zh-Hans")]
 		[TestCase("  zh-Hans  ", "zh-Hans")]
 		public void Normalise_MapsPreferenceToSupportedTag(string input, string expected)
 		{
@@ -97,8 +97,8 @@ namespace DMT.UnitTests.Library.Localization
 		{
 			Assert.AreEqual("zh-Hans", LanguageCatalog.CultureFor("zh-Hans").Name);
 			Assert.AreEqual("en", LanguageCatalog.CultureFor("en").Name);
-			Assert.AreEqual("en", LanguageCatalog.CultureFor("kl-GL").Name);
-			Assert.AreEqual("en", LanguageCatalog.CultureFor(null).Name);
+			Assert.AreEqual("zh-Hans", LanguageCatalog.CultureFor("kl-GL").Name);
+			Assert.AreEqual("zh-Hans", LanguageCatalog.CultureFor(null).Name);
 		}
 
 		[Test]

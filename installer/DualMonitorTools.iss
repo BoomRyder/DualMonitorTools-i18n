@@ -80,12 +80,15 @@ Source: "{#RepoRoot}\DmtWallpaper\DmtWallpaper\bin\Release\DmtWallpaper.scr"; De
 [Icons]
 Name: "{group}\{#MyAppName}"; Filename: "{app}\DMT.exe"
 Name: "{group}\DualWallpaper"; Filename: "{app}\DualWallpaper.exe"
+; 桌面快捷方式。admin 模式下 {autodesktop} 即公共桌面，卸载时自动删除
+Name: "{autodesktop}\{#MyAppName}"; Filename: "{app}\DMT.exe"; WorkingDir: "{app}"; IconFilename: "{app}\DMT.exe"
 
 [Registry]
 ; 与原 MSI 一致：仅标记值，源码中无任何读写
 Root: HKLM; Subkey: "Software\GNE\Dual Monitor Tools"; ValueType: dword; ValueName: "ScreenSaverInstalled"; ValueData: "1"; Flags: uninsdeletekey
-; 与原 MSI 一致：右键菜单空键。注意运行期会生成子命令，卸载由 [Code] 兜底
-Root: HKCU; Subkey: "Software\Classes\directory\Background\shell\GNE_DualMonitorTools"; Flags: uninsdeletekey
+; 这里不要建 HKCU 的右键菜单空键。原 MSI 建了个空占位键，Explorer 会把裸键名
+; GNE_DualMonitorTools 当成一个菜单项显示，点下去报"没有与之关联的应用"。真正的
+; 菜单树由 DMT 自己按用户的勾选创建（DesktopContextMenu.Add），卸载时由 [Code] 清掉。
 
 [Run]
 Filename: "{app}\DMT.exe"; Description: "{cm:LaunchProgram,{#MyAppName}}"; Flags: nowait postinstall skipifsilent runasoriginaluser
@@ -249,6 +252,30 @@ begin
 	except
 		Log('ClearWallpaperIfOurs failed');
 	end;
+end;
+
+procedure RemoveGhostContextMenuKey();
+begin
+	// A shell verb key with no command subkey is not a working verb: Explorer still
+	// lists it under its raw key name, and clicking it fails with "no application is
+	// associated with the specified file". The original MSI created exactly such an
+	// empty placeholder, and so did earlier builds of this installer.
+	if not RegKeyExists(HKCU, DmtContextMenuKey) then
+		Exit;
+
+	// The real menu always has a \shell subtree (DesktopContextMenu.Add); without it
+	// there is no command to invoke and the key is pure leftover.
+	if RegKeyExists(HKCU, DmtContextMenuKey + '\shell') then
+		Exit;
+
+	RegDeleteKeyIncludingSubkeys(HKCU, DmtContextMenuKey);
+	Log('removed the empty context menu key left by an older install');
+end;
+
+procedure CurStepChanged(CurStep: TSetupStep);
+begin
+	if CurStep = ssPostInstall then
+		RemoveGhostContextMenuKey();
 end;
 
 procedure CurUninstallStepChanged(CurUninstallStep: TUninstallStep);

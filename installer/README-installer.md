@@ -44,16 +44,33 @@ Setup 实现，行为对齐原 MSI，并修掉了原 MSI 的两处缺陷（见�
 用 `{sysnative}` 而不是 `{sys}`：32 位安装包写 `{sys}` 会被 WOW64 重定向到
 `SysWOW64`，而 `desk.cpl` 是 64 位进程，看不到那里的屏保。这正是原 MSI 的缺陷。
 
-### 开始菜单 `Dual Monitor Tools\`
+### 快捷方式
 
-两个快捷方式：`Dual Monitor Tools` → `DMT.exe`，`DualWallpaper` → `DualWallpaper.exe`。
+开始菜单 `Dual Monitor Tools\`：`Dual Monitor Tools` → `DMT.exe`，`DualWallpaper` →
+`DualWallpaper.exe`。
+
+桌面：`Dual Monitor Tools` → `DMT.exe`。admin 模式下 `{autodesktop}` 是公共桌面
+（`C:\Users\Public\Desktop`），卸载时一并删除。原 MSI 不建桌面图标。
+
+### 首次启动的界面语言
+
+安装完成、第一次运行 `DMT.exe` 时界面是**简体中文**。语言偏好存在
+`HKCU\SOFTWARE\Dual Monitor Tools\DMT\Language`，没有该值时默认 `zh-Hans`；在
+Options → General → 语言 里可以切回 English，选择会被记住（切换后需重启程序生效）。
 
 ### 注册表
 
 | 位置 | 内容 | 卸载时 |
 |---|---|---|
 | `HKLM\SOFTWARE\WOW6432Node\GNE\Dual Monitor Tools` | `ScreenSaverInstalled` = DWORD 1 | 删键 |
-| `HKCU\Software\Classes\directory\Background\shell\GNE_DualMonitorTools` | 空键 | 删整棵子树 |
+| `HKCU\Software\Classes\directory\Background\shell\GNE_DualMonitorTools` | **不创建**（见下） | 删整棵子树 |
+
+**故意不建那个空的右键菜单键。** 原 MSI 在 `HKCU\...\directory\Background\shell` 下建了一个
+空占位键，Explorer 会把裸键名 `GNE_DualMonitorTools` 当成一个菜单项显示出来，点下去报
+「该文件没有与之关联的应用来执行该操作」——因为它没有 `command` 子键。真正的菜单树由
+DMT 自己在用户勾选「桌面右键菜单」时创建（`DesktopContextMenu.Add`，11 条子命令）。
+安装程序在 `CurStepChanged(ssPostInstall)` 里还会顺手删掉**旧安装留下的空键**（存在但
+没有 `shell` 子键），这样重装一次就能修好右键菜单已经坏掉的机器。
 
 **故意不写** `HKLM\...\GNE\Dual Monitor Tools\installed`。写了它
 `GeneralModule.IsMsiInstall` 就返回真，程序的"检查更新"会显示"安装新版本"，
@@ -86,20 +103,24 @@ Inno 自己删掉的东西之外，`[Code]` 段的 `CurUninstallStepChanged`
 
 1. **设置面板显示"便携版安装"**。因为不写 `installed` 标记，尽管它确实是安装版。
    这是关掉自动更新的必然代价；改文案需要动作者源码，本项目不做。
-2. **没有"修复（Repair）"功能**。Inno 没有 MSI 的修复；文件损坏只能卸载重装。
-3. **不能与原 MSI 共存**。检测到原版（卸载项 `{59CFB0C1-…}` 或
+2. **多了桌面快捷方式，且不建空白的右键菜单键**。原 MSI 只有开始菜单图标，还在
+   `HKCU\...\directory\Background\shell` 下留了一个空占位键——Explorer 会把裸键名
+   `GNE_DualMonitorTools` 显示成一个菜单项，点下去报"没有与之关联的应用"。
+   本安装包建桌面图标，并且不再创建这个空键（已有空键在安装时清掉）。
+3. **没有"修复（Repair）"功能**。Inno 没有 MSI 的修复；文件损坏只能卸载重装。
+4. **不能与原 MSI 共存**。检测到原版（卸载项 `{59CFB0C1-…}` 或
    `GNE\Dual Monitor Tools` 下的 `installed` **值**）直接拒绝安装，要求先去
    "程序和功能"卸载。注意判定只认 `installed` 值：本安装包自己也往同一个键写
    `ScreenSaverInstalled`，若用"键存在"判定，装过一次后就再也装不了第二次。
-4. **屏保装到 `System32`** 而非原版的 `SysWOW64`（修正，见上）。
-5. **文档只装 `README.md` + `COPYING.txt`**。原 MSI 装 `CHANGES.txt` / `README.txt` /
+5. **屏保装到 `System32`** 而非原版的 `SysWOW64`（修正，见上）。
+6. **文档只装 `README.md` + `COPYING.txt`**。原 MSI 装 `CHANGES.txt` / `README.txt` /
    `THANKS.txt`，本仓库已把它们合并进 `README.md`。
-6. **装完启动用 `runasoriginaluser`**。原 MSI 的 `StartAppOnExit` 在提权上下文里
+7. **装完启动用 `runasoriginaluser`**。原 MSI 的 `StartAppOnExit` 在提权上下文里
    启动 `dmt.exe`，程序以管理员身份跑；这里以原用户身份启动。
-7. **卸载时无条件删除用户数据目录**（`%APPDATA%\Dual Monitor Tools\`，含设置、热键、
+8. **卸载时无条件删除用户数据目录**（`%APPDATA%\Dual Monitor Tools\`，含设置、热键、
    魔术字、壁纸源配置），不弹窗征询，静默卸载同样如此。这是本项目的既定选择：
    卸载即彻底清除，不留残余。**误删无法恢复**，需要保留设置的用户请在卸载前自行备份。
-8. **多用户机器上卸载只清当前账号**。`{userappdata}` 与三处 HKCU 清理都作用于
+9. **多用户机器上卸载只清当前账号**。`{userappdata}` 与三处 HKCU 清理都作用于
    执行卸载的那个账号；其他用过 DMT 的账号，其 `%APPDATA%\Dual Monitor Tools\`
    与右键菜单子树会原样留下，需各自登录后手工删除。
 

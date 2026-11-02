@@ -123,19 +123,19 @@ namespace DMT.UnitTests.Library.Localization
 		}
 
 		[Test]
-		public void Apply_UnknownTagFallsBackToEnglish()
+		public void Apply_UnknownTagFallsBackToTheDefaultLanguage()
 		{
 			UiCulture.Apply("kl-GL");
 
-			Assert.AreEqual("en", ReadCulture("DMT.Resources.AppStrings").Name);
+			Assert.AreEqual("zh-Hans", ReadCulture("DMT.Resources.AppStrings").Name);
 		}
 
 		[Test]
-		public void Apply_NullTagFallsBackToEnglish()
+		public void Apply_NullTagFallsBackToTheDefaultLanguage()
 		{
 			UiCulture.Apply(null);
 
-			Assert.AreEqual("en", ReadCulture("DMT.Resources.AppStrings").Name);
+			Assert.AreEqual("zh-Hans", ReadCulture("DMT.Resources.AppStrings").Name);
 		}
 
 		// Applying a language must actually change what the strongly-typed

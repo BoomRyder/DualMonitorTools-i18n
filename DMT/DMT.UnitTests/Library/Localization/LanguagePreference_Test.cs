@@ -92,11 +92,11 @@ namespace DMT.UnitTests.Library.Localization
 		}
 
 		[Test]
-		public void ResolveFromRegistry_WhenAbsent_ReturnsEnglish()
+		public void ResolveFromRegistry_WhenAbsent_ReturnsSimplifiedChinese()
 		{
 			DmtRegistry.DeleteLanguage();
 
-			Assert.AreEqual("en", LanguageCatalog.ResolveFromRegistry());
+			Assert.AreEqual("zh-Hans", LanguageCatalog.ResolveFromRegistry());
 		}
 
 		[Test]
@@ -108,11 +108,11 @@ namespace DMT.UnitTests.Library.Localization
 		}
 
 		[Test]
-		public void ResolveFromRegistry_WhenSavedNonsense_ReturnsEnglish()
+		public void ResolveFromRegistry_WhenSavedNonsense_ReturnsSimplifiedChinese()
 		{
 			DmtRegistry.SetLanguage("not-a-language");
 
-			Assert.AreEqual("en", LanguageCatalog.ResolveFromRegistry());
+			Assert.AreEqual("zh-Hans", LanguageCatalog.ResolveFromRegistry());
 		}
 
 		[Test]
@@ -144,7 +144,7 @@ namespace DMT.UnitTests.Library.Localization
 			{
 				ListBox list = (ListBox)panel.Controls.Find("listBoxLanguages", true)[0];
 
-				Assert.AreEqual(1, list.SelectedIndex, "the saved language was not pre-selected");
+				Assert.AreEqual(0, list.SelectedIndex, "the saved language was not pre-selected");
 			}
 		}
 
@@ -164,7 +164,7 @@ namespace DMT.UnitTests.Library.Localization
 			using (LanguageOptionsPanel first = new LanguageOptionsPanel())
 			{
 				ListBox list = (ListBox)first.Controls.Find("listBoxLanguages", true)[0];
-				list.SelectedIndex = 1;		// 简体中文
+				list.SelectedIndex = 0;		// 简体中文
 
 				Assert.IsTrue(first.RestartHintNeeded, "hint should show after choosing 简体中文");
 			}
@@ -177,7 +177,7 @@ namespace DMT.UnitTests.Library.Localization
 					"the restart hint must still show the second time Options is opened");
 
 				ListBox list = (ListBox)second.Controls.Find("listBoxLanguages", true)[0];
-				Assert.AreEqual(1, list.SelectedIndex,
+				Assert.AreEqual(0, list.SelectedIndex,
 					"the list must still show the saved preference");
 			}
 		}
@@ -190,12 +190,12 @@ namespace DMT.UnitTests.Library.Localization
 		{
 			DmtRegistry.DeleteLanguage();
 
-			UiCulture.Apply("en");
+			UiCulture.Apply(LanguageCatalog.ResolveFromRegistry());
 
 			using (LanguageOptionsPanel panel = new LanguageOptionsPanel())
 			{
 				Assert.IsFalse(panel.RestartHintNeeded,
-					"a fresh English install must not ask for a restart");
+					"a fresh install already runs the default language, so no restart is needed");
 			}
 		}
 
@@ -205,11 +205,13 @@ namespace DMT.UnitTests.Library.Localization
 		{
 			DmtRegistry.SetLanguage("en");
 
+			UiCulture.Apply("en");
+
 			using (LanguageOptionsPanel panel = new LanguageOptionsPanel())
 			{
 				ListBox list = (ListBox)panel.Controls.Find("listBoxLanguages", true)[0];
 
-				list.SelectedIndex = 1;		// 简体中文
+				list.SelectedIndex = 0;		// 简体中文
 
 				Assert.AreEqual("zh-Hans", DmtRegistry.GetLanguage());
 				Assert.IsTrue(panel.RestartHintNeeded,
@@ -223,12 +225,14 @@ namespace DMT.UnitTests.Library.Localization
 		{
 			DmtRegistry.SetLanguage("en");
 
+			UiCulture.Apply("en");
+
 			using (LanguageOptionsPanel panel = new LanguageOptionsPanel())
 			{
 				ListBox list = (ListBox)panel.Controls.Find("listBoxLanguages", true)[0];
 
-				list.SelectedIndex = 1;		// 简体中文
-				list.SelectedIndex = 0;		// back to English
+				list.SelectedIndex = 0;		// 简体中文
+				list.SelectedIndex = 1;		// back to English
 
 				Assert.AreEqual("en", DmtRegistry.GetLanguage());
 				Assert.IsFalse(panel.RestartHintNeeded,

@@ -20,7 +20,8 @@ $desktopKey = 'HKCU:\Control Panel\Desktop'
 $ssKey      = 'HKLM:\SOFTWARE\WOW6432Node\GNE\Dual Monitor Tools'
 $scrPath    = Join-Path $env:WINDIR 'System32\DmtWallpaper.scr'
 $scrWowPath = Join-Path $env:WINDIR 'SysWOW64\DmtWallpaper.scr'
-
+# {autodesktop} 在提权安装下就是公共桌面
+$desktopLnk = Join-Path 'C:\Users\Public\Desktop' 'Dual Monitor Tools.lnk'
 function Assert-True($cond, $msg) {
     if (-not $cond) { throw "断言失败：$msg" }
 }
@@ -97,7 +98,8 @@ try {
     Assert-True (Test-Path $SetupExe) "找不到安装包：$SetupExe"
 
     # --- 基线检查：这些必须都不存在，否则测试不可信 ---
-    foreach ($p in @($dmtKey, $ctxKey, $dataDir, $ssKey, $scrPath, $scrWowPath)) {
+    # 注意不含 $ctxKey：空的右键菜单键正是本安装包要清掉的残留，不能当污染拒绝
+    foreach ($p in @($dmtKey, $dataDir, $ssKey, $scrPath, $scrWowPath, $desktopLnk)) {
         Assert-True (-not (Test-Path $p)) "基线已被污染，先手工清理：$p"
     }
     Assert-True (-not (Find-DmtUninstallEntry)) "基线已被污染：程序和功能里还有一个 Dual Monitor Tools 卸载项"
@@ -113,6 +115,9 @@ try {
     # 32 位安装包写 {sys} 会被 WOW64 重定向到 SysWOW64，64 位 desk.cpl 就看不到这个屏保
     Assert-True (-not (Test-Path $scrWowPath)) "屏保漏到了 SysWOW64（WOW64 重定向未规避）"
     Assert-True (Test-Path $ssKey) "ScreenSaverInstalled 标记未写入"
+    Assert-True (Test-Path $desktopLnk) "桌面快捷方式未创建：$desktopLnk"
+    # 原 MSI 留下的空右键菜单键必须被清掉，否则桌面上会多一个点不动的菜单项
+    Assert-True (-not (Test-Path $ctxKey)) "空右键菜单键仍然存在（Explorer 会显示成坏菜单项）"
     Write-Host "安装阶段 PASS" -ForegroundColor Green
 
     # --- 回归：装完之后必须能再装一次 ---
@@ -286,6 +291,7 @@ public class DmtWallpaperRestore {
     foreach ($entry in @(Find-DmtUninstallEntry)) {
         Remove-Item -Path $entry -Recurse -Force -ErrorAction SilentlyContinue
     }
+    if (Test-Path $desktopLnk) { Remove-Item -Path $desktopLnk -Force -ErrorAction SilentlyContinue }
     foreach ($group in @((Join-Path $env:ProgramData 'Microsoft\Windows\Start Menu\Programs\Dual Monitor Tools'))) {
         if (Test-Path $group) { Remove-Item -Path $group -Recurse -Force -ErrorAction SilentlyContinue }
     }
