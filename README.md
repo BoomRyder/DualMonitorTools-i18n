@@ -8,6 +8,31 @@ Author: Gerald Evans. Licensed under the GNU General Public License v3 — see
 
 For further information on usage of the tools, visit <http://dualmonitortool.sourceforge.net>
 
+**简体中文文档：[README.zh-CN.md](README.zh-CN.md)** — Chinese documentation, recommended for
+Chinese users since everything below is written from the upstream English point of view.
+
+## What is different in this build
+
+This repository is a **Simplified Chinese fork of Dual Monitor Tools 2.13**. It tracks
+upstream 2.13 and adds two things:
+
+1. **A language pack.** The entire user interface of all three programs — every window,
+   menu, dialog, tooltip and user-facing message — is available in Simplified Chinese,
+   and a fresh install starts in Chinese. English is unchanged and still selectable at
+   any time under *Options → Dual Monitor Tools → General → Language*; the choice is
+   remembered across restarts.
+2. **A different installation method.** Upstream 2.13 shipped a WiX-built MSI. This fork
+   ships `DualMonitorTools-2.13-zh-Hans-Setup.exe`, an Inno Setup package that needs
+   administrator rights (it carries the UAC shield, so double-clicking prompts for
+   elevation), creates a desktop shortcut, and installs the screen saver where the
+   64-bit Control Panel can actually find it. Because it is not an MSI install, the
+   "Check for Updates" button will report new upstream versions but no longer offers to
+   install them — doing so would replace this Chinese build with the English MSI.
+
+Nothing else was changed: no new features, no behaviour changes beyond the two items
+above, and no upstream code was refactored. The untouched upstream source archive is
+preserved as the git tag `upstream-2.13`.
+
 ## Contents
 
 - [Tools](#tools)
@@ -69,50 +94,69 @@ features can be useful to users with a single monitor.
 
 There are 2 choices for installation:
 
-1. Use the MSI installer — this is the simplest method and will make installing
-   any future versions even easier.
+1. Run the setup program `DualMonitorTools-2.13-zh-Hans-Setup.exe` — this is the
+   simplest method.
 2. Portable install from a zip file — this gives you the most flexibility and is
    the route to use if you are installing to a portable device.
 
-### MSI installation for new users
+### Installing with the setup program
 
-Just download `DualMonitorTools-2.13.msi` and run it.
+Just download `DualMonitorTools-2.13-zh-Hans-Setup.exe` and run it. See
+[`installer/README-installer.md`](installer/README-installer.md) for how the package
+is built and exactly what it writes.
 
-### MSI installation upgrades
+The setup program **requires administrator rights**. It carries the UAC shield, so
+double-clicking it raises the elevation prompt; if UAC is disabled it refuses to run
+and tells you to use "Run as administrator" instead. What it installs:
 
-If you have previously installed DualMonitorTools using the MSI installer then you
-can just download `DualMonitorTools-2.13.msi` and run it. Alternatively, you can do
-this via the options in Dual Monitor Tools, by clicking the "Check for Updates"
-button in the "Dual Monitor Tools" → General page.
+- `C:\Program Files (x86)\Dual Monitor Tools\` — `DMT.exe`, `DualWallpaper.exe`,
+  their config files, the Simplified Chinese resource files, `COPYING.txt`, this
+  `README.md` and `README.zh-CN.md`, plus a `DmtFileLocations.xml` that points the
+  data files at `%APPDATA%\Dual Monitor Tools`.
+- `C:\Windows\System32\DmtWallpaper.scr` — the screen saver. It goes into `System32`
+  rather than `SysWOW64` so that the 64-bit Control Panel screen saver list can see it.
+- Two Start menu shortcuts and one desktop shortcut.
+- No `installed` registry marker, so DMT reports itself as a portable installation.
+  This is deliberate: it is what stops "Check for Updates" from downloading the
+  upstream English MSI over this Chinese build.
 
-### MSI installation for existing install done from a zip file
+If DMT or DualWallpaper is already running, setup asks whether to close it. Answering
+yes sends a normal close request first so DMT can save its magic words, and only then
+forces the process to end.
 
-With an MSI installation, the executable and configuration files will live in
-different locations, so there are some extra steps that you need to go through if
-you wish to keep your existing configuration:
+Only Windows x64 is supported, and it needs .NET Framework 4.0 or later. Setup checks
+both before doing anything and stops with a readable message if either is missing.
 
-1. In your existing version of DMT, make sure "Start when Windows starts" (found in
-   Options → Dual Monitor Tools → General) is not ticked.
-2. Make sure DMT is not currently running.
-3. Make sure you have a backup copy of the following configuration files:
-   - `DmtMagicWords.xml`
-   - `DmtSettings.xml`
-   - `DmtWallpaperProviders.xml`
+### Upgrading an existing installation
 
-   These would normally be in the same directory that you previously installed
-   Dual Monitor Tools to.
-4. Download and run the new MSI installer.
-5. Double click on DMT in the notification area.
-6. Select the 'General' page under 'Dual Monitor Tools'. This will show the location
-   where the configuration files now live. The files will be in the
-   `%appdata%\Dual Monitor Tools` folder, which should be something like:
-   `C:\Users\<your login name>\AppData\Roaming\Dual Monitor Tools`
-7. Stop DMT.
-8. Copy the 3 xml files into the above location.
-9. Start DMT. There should be an option in the Start menu to do this.
-10. Don't forget to tick the "Start when Windows starts" option if required.
+Run the newer setup program over the installed copy. The data files in
+`%APPDATA%\Dual Monitor Tools` are left alone, so all settings, magic words and
+wallpaper sources carry over.
 
-Note: future updates will be much simpler as they can be performed from within DMT.
+The "Check for Updates" button under *Options → Dual Monitor Tools → General* still
+checks the upstream site and reports when a newer version exists, but it can only open
+the download page — in-app installation is disabled because it would fetch the English
+MSI.
+
+### Migrating from the upstream MSI install
+
+An old upstream MSI installation and this setup program cannot coexist; setup detects
+the MSI and refuses to continue. Migrate like this:
+
+1. Note where your data files are: with an MSI install they live in
+   `%APPDATA%\Dual Monitor Tools` (something like
+   `C:\Users\<your login name>\AppData\Roaming\Dual Monitor Tools`). Uninstalling the
+   MSI does **not** delete this folder, so nothing is lost; skip to step 3 if the
+   folder is there.
+2. If you installed upstream from the zip file, the data files sit next to the
+   executables. Copy `DmtMagicWords.xml`, `DmtSettings.xml` and
+   `DmtWallpaperProviders.xml` somewhere safe, then create
+   `%APPDATA%\Dual Monitor Tools` and copy them into it.
+3. Uninstall the upstream MSI from the Windows installed application list.
+4. Run `DualMonitorTools-2.13-zh-Hans-Setup.exe`.
+5. Start DMT from the desktop shortcut and re-tick "Start when Windows starts" and
+   "Add to desktop context menu" on *Options → Dual Monitor Tools → General* if you
+   used them.
 
 ### Portable installation
 
@@ -156,7 +200,7 @@ Magic Word, all of the applications will be started.
 
 The tools are designed to be easy to use in a portable environment, so they can be
 copied to a USB drive and ran direct from there. Make sure you install from the zip
-file and not from the MSI installer.
+file and not from the setup program.
 
 When specifying filenames (for the launcher executables and wallpaper locations),
 you may want to make sure that any paths you enter are relative paths if they exist
@@ -173,9 +217,9 @@ that the executables are. The files written to are:
 - There will also be `.bak` versions of these files which are just backup copies of
   the previous versions of the files.
 
-In an MSI installation, there will be a `DmtFileLocations.xml` in this directory that
-will specify where the other xml files live, which would be in
-`%APPDATA%\Dual Monitor Tools`.
+When installed with the setup program, there will be a `DmtFileLocations.xml` in this
+directory that specifies where the other xml files live, which is
+`%APPDATA%\Dual Monitor Tools` — the same location the upstream MSI used.
 
 ### Customising data file locations
 
@@ -227,11 +271,25 @@ Save the above as `DmtFileLocations.xml` (UTF-8 with BOM) next to `DMT.exe`.
 
 ## Uninstall
 
-### Uninstall of MSI installation
+### Uninstall after installing with the setup program
 
-You can uninstall from within the Windows installed application list. Any saved
-settings will need to be removed manually by deleting the folder
-`%APPDATA%\Dual Monitor Tools`.
+Uninstall from the Windows installed application list. Uninstalling removes the
+program files, the screen saver, both sets of shortcuts, the runtime registry entries
+DMT may have created (wallpaper path, language, auto-start, desktop context menu) and
+the data folder `%APPDATA%\Dual Monitor Tools`.
+
+**The data folder is deleted unconditionally, without asking** — magic words,
+settings and wallpaper sources are not recoverable afterwards, so back up
+`%APPDATA%\Dual Monitor Tools` first if you may reinstall. Two caveats:
+
+- Only the account that runs the uninstaller is cleaned up. On a shared machine,
+  other users' `%APPDATA%\Dual Monitor Tools` folders and registry entries remain.
+- The desktop wallpaper is cleared (the desktop falls back to a solid colour) because
+  DMT had pointed it at a wallpaper inside the data folder that is about to disappear.
+  If you had since chosen a different wallpaper, that wallpaper is left untouched.
+
+The Windows-wide `TileWallpaper` and `WallpaperStyle` values that DMT writes when it
+sets a wallpaper are deliberately left alone.
 
 ### Uninstall of portable installation
 
@@ -256,18 +314,25 @@ This repository contains the source code. To build all three solutions:
 cd <repo root>
 .\build.ps1                                 # Debug build
 .\build.ps1 -Configuration Release          # Release build
-.\build.ps1 -Configuration Release -Test    # Build + run 148 NUnit tests
+.\build.ps1 -Configuration Release -Test    # Build + run 363 NUnit tests
 .\build.ps1 -Clean                          # Clean bin/obj
+.\build-installer.ps1                       # Release build + compile the setup program
 ```
 
 Requirements: Visual Studio 2019/2022 with the ".NET desktop development" workload
 (includes .NET Framework 4.0 Client Profile and 4.5 targeting packs plus MSBuild),
 and network access to nuget.org (or pre-provisioned NUnit packages under
-`DMT\packages`).
+`DMT\packages`). Building the setup program additionally needs Inno Setup 7.
 
 Outputs: `DMT\DMT\bin\<Cfg>\DMT.exe`,
 `DualWallpaper\DualWallpaper\bin\<Cfg>\DualWallpaper.exe`,
-`DmtWallpaper\DmtWallpaper\bin\<Cfg>\DmtWallpaper.exe` and `.scr`.
+`DmtWallpaper\DmtWallpaper\bin\<Cfg>\DmtWallpaper.exe` and `.scr`, plus
+`dist\DualMonitorTools-2.13-zh-Hans-Setup.exe` for the installer.
+
+The Simplified Chinese translation lives in `.zh-Hans.resx` files next to the neutral
+`resx` files, and a set of guard tests keeps the coverage complete — see
+[`AGENTS.md`](AGENTS.md) for the localization conventions. Installer design and
+verification notes are in [`installer/README-installer.md`](installer/README-installer.md).
 
 The untouched upstream 2.13 source archive is preserved as git tag `upstream-2.13`;
 compare against it to see every local modification:
@@ -290,6 +355,29 @@ And all those that have contributed to the forum with bugs and suggestions for
 improvements.
 
 ## Change History
+
+### Changes in this Simplified Chinese fork
+
+Based on upstream 2.13. No functional changes to the tools themselves:
+
+- **Full Simplified Chinese user interface** for `DMT.exe`, `DualWallpaper.exe` and
+  `DmtWallpaper.scr`: every window, menu, dialog, tooltip, message box and screen
+  saver text. About 700 strings in total, held in `.zh-Hans.resx` resource files so
+  English remains the neutral resource and can never drift.
+- **New Language option** under *Options → Dual Monitor Tools → General*, offering
+  "简体中文" and "English". A fresh install defaults to Simplified Chinese; the choice
+  is stored in the registry and applies to all three programs on next start.
+- **Installer rebuilt with Inno Setup** instead of WiX MSI. It requires administrator
+  rights and shows the UAC shield, adds a desktop shortcut, installs the screen saver
+  into `System32` so the 64-bit Control Panel can list it, and offers to close a
+  running DMT before installing.
+- **Two upstream installer defects fixed**: the screen saver no longer lands in
+  `SysWOW64` (where Windows could not find it), and the empty desktop-context-menu
+  placeholder key is no longer created — that key made a dead "GNE_DualMonitorTools"
+  entry appear in the desktop right-click menu.
+- **No `installed` registry marker**, so "Check for Updates" can no longer download the
+  upstream English MSI over this build. Side effect: the General options page reports
+  a portable installation.
 
 ### Changes from 2.12 to 2.13
 

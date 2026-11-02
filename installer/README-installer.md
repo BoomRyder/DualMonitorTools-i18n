@@ -34,7 +34,7 @@ Setup 实现，行为对齐原 MSI，并修掉了原 MSI 的两处缺陷（见�
 
 `DMT.exe`、`DMT.exe.config`、`DualWallpaper.exe`（+ `.config`）、
 `DmtWallpaper.exe`（+ `.config`）、三个 `zh-Hans\*.resources.dll`、
-`DmtFileLocations.xml`、`COPYING.txt`、`README.md`。
+`DmtFileLocations.xml`、`COPYING.txt`、`README.md`、`README.zh-CN.md`。
 
 `zh-Hans\*.resources.dll` 是简体中文界面**必需**件，必须落在 `zh-Hans` 子目录，
 放到程序根目录不会生效。
@@ -113,7 +113,7 @@ Inno 自己删掉的东西之外，`[Code]` 段的 `CurUninstallStepChanged`
    "程序和功能"卸载。注意判定只认 `installed` 值：本安装包自己也往同一个键写
    `ScreenSaverInstalled`，若用"键存在"判定，装过一次后就再也装不了第二次。
 5. **屏保装到 `System32`** 而非原版的 `SysWOW64`（修正，见上）。
-6. **文档只装 `README.md` + `COPYING.txt`**。原 MSI 装 `CHANGES.txt` / `README.txt` /
+6. **文档装 `README.md` + `README.zh-CN.md` + `COPYING.txt`**。原 MSI 装 `CHANGES.txt` / `README.txt` /
    `THANKS.txt`，本仓库已把它们合并进 `README.md`。
 7. **装完启动用 `runasoriginaluser`**。原 MSI 的 `StartAppOnExit` 在提权上下文里
    启动 `dmt.exe`，程序以管理员身份跑；这里以原用户身份启动。
@@ -187,7 +187,7 @@ Inno 自带的空白行（278 个空格）里砍掉。于是文件总长与所�
 `DMT\DMT.UnitTests\Installer\InstallerAssets_Test.cs` 检查：数据目录重定向文件
 存在且是 UTF-8 BOM、恰好一条 `datadirectory`；`.iss` 的关键 `[Setup]` 指令、
 产品名与版本、`[CustomMessages]` 中英成对、`DestDir {sysnative}`、八个卸载步骤、
-`DmtFileLocations.xml`/`COPYING.txt`/`README.md` 都被收录、三个卫星程序集都落在
+`DmtFileLocations.xml`/`COPYING.txt`/`README.md`/`README.zh-CN.md` 都被收录、三个卫星程序集都落在
 `{app}\zh-Hans`、**没有写 `installed` 标记**、**原版 MSI 的判定查的是 `installed`
 值而不是键存在性**、**非管理员时拒绝安装**、**装文件前先探测目录可写**。
 

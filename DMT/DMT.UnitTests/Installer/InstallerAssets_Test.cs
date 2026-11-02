@@ -397,6 +397,7 @@ namespace DMT.UnitTests.Installer
 		[TestCase(@"installer\DmtFileLocations.xml")]
 		[TestCase(@"COPYING.txt")]
 		[TestCase(@"README.md")]
+		[TestCase(@"README.zh-CN.md")]
 		public void IssShipsEveryReleaseArtifact(string relativePath)
 		{
 			string iss = ReadIss();
