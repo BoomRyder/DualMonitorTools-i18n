@@ -26,3 +26,6 @@ TestResult.xml
 # 安装包产物
 dist/
 installer/Output/
+
+# 设计与计划文档（本地保留，不随仓库发布）
+docs/

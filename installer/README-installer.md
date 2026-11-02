@@ -6,8 +6,6 @@
 原版发布物是 WiX 生成的 MSI，源码包里不含它的安装工程；本项目重新用 Inno
 Setup 实现，行为对齐原 MSI，并修掉了原 MSI 的两处缺陷（见下）。
 
-设计文档：`docs/superpowers/specs/2026-11-02-dmt-inno-installer-design.md`
-
 ## 构建
 
 ```powershell
@@ -193,23 +191,23 @@ Inno 自带的空白行（278 个空格）里砍掉。于是文件总长与所�
 
 ### 行为验证（需要管理员权限，会真实改注册表与系统目录）
 
-```powershell
-.\build-installer.ps1
-.\installer\tests\Test-Preflight.ps1 -SetupExe .\dist\DualMonitorTools-2.13-zh-Hans-Setup.exe
-.\installer\tests\Test-Uninstall.ps1  -SetupExe .\dist\DualMonitorTools-2.13-zh-Hans-Setup.exe
-```
+自动化行为脚本未随仓库发布（会真实写 `HKCU` 与 `System32`，不适合留在源码树里）。
+需要复核时手工按下面几点验证，每步做完都要把基线复原：
 
-- `Test-Preflight.ps1`：伪造原版 MSI 的 `installed` 标记 → 静默安装必须被拒
-  （退出码非 0、零文件落地）→ 复原注册表。若前置检查失效导致真的装上，它也会
-  走正规卸载并清掉 `System32` 的 `.scr`、开始菜单组与卸载项。
-- `Test-Uninstall.ps1`：阶段一装到临时目录 → **立刻再装一次（必须成功）** →
-  制造全部运行时残留 → 静默卸载 → 逐项断言消失（含 `SCRNSAVE.EXE`）；
-  阶段二验证"用户自己的壁纸不会被误清"。
-- 两个脚本都用 `ProcessStartInfo`（`UseShellExecute=$false`）启动安装包，不走
-  `ShellExecute`：否则 MOTW / 杀软检查可能弹出"打开文件 - 安全警告"对话框，
-  静默安装会一直等下去。
-- 脚本会先保存 `HKCU\Control Panel\Desktop` 的 `Wallpaper` / `TileWallpaper` /
-  `WallpaperStyle` / `SCRNSAVE.EXE` 并在结束时复原，包括重新应用壁纸。
+1. **前置检查**：伪造 `HKLM\SOFTWARE\WOW6432Node\GNE\Dual Monitor Tools\installed = 1`，
+   静默运行安装包（`/VERYSILENT /SUPPRESSMSGBOXES`）必须退出码非 0 且零文件落地；
+   删掉伪造值后再装必须成功。这一步同时验证"二次安装不会被误判成原版 MSI 还在"。
+2. **安装落地**：程序目录、`System32\DmtWallpaper.scr`（**不是** `SysWOW64`）、开始菜单组、
+   公共桌面快捷方式全部存在；`HKCU\...\directory\Background\shell\GNE_DualMonitorTools`
+   **不存在**。
+3. **卸载清理**：制造运行时残留（`HKCU\SOFTWARE\Dual Monitor Tools`、
+   `Run\GNE_DualMonitorTools`、右键菜单子树、`SCRNSAVE.EXE` 指向本产品 `.scr`、
+   `%APPDATA%\Dual Monitor Tools`）后静默卸载，逐项断言消失。
+4. **壁纸**：把 `HKCU\Control Panel\Desktop\Wallpaper` 指向数据目录内的壁纸 → 卸载后应被清空；
+   指向别处的用户壁纸 → 卸载后**必须原样保留**。
 
-两个脚本都要求跑之前基线是干净的（相关键、目录、屏保、开始菜单组、卸载项都不存在），
-否则会直接报"基线已被污染"并中止，不会带着脏状态往下跑。
+两个注意点：用 `ProcessStartInfo`（`UseShellExecute=$false`）启动安装包，不要用
+`Start-Process`，否则 MOTW / 杀软检查弹出"打开文件 - 安全警告"对话框会让静默安装一直等下去；
+Inno 的卸载器会把自己复制到 `%TEMP%` 再重启，第一个进程退出不等于卸载完成，断言前要轮询等
+`[Code]` 清理跑完。运行前基线必须干净（相关键、目录、屏保、开始菜单组、卸载项都不存在）。
+

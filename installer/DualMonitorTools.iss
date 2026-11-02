@@ -1,5 +1,5 @@
 ﻿; Dual Monitor Tools 2.13 (简体中文) —— Inno Setup 安装脚本
-; 设计说明：docs/superpowers/specs/2026-11-02-dmt-inno-installer-design.md
+; 设计说明：installer\README-installer.md
 
 #define MyAppName "Dual Monitor Tools"
 #define MyAppVersion "2.13"
