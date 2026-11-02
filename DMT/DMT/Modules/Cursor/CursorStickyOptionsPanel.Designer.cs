@@ -66,7 +66,7 @@
 			this.checkBoxPrimaryReturnUnhindered.Name = "checkBoxPrimaryReturnUnhindered";
 			this.checkBoxPrimaryReturnUnhindered.Size = new System.Drawing.Size(340, 17);
 			this.checkBoxPrimaryReturnUnhindered.TabIndex = 51;
-			this.checkBoxPrimaryReturnUnhindered.Text = "Allow cursor to return freely to (and within) the primary working area";
+			this.checkBoxPrimaryReturnUnhindered.Text = global::DMT.Resources.CursorStrings.CursorStickyOptionsPanel_checkBoxPrimaryReturnUnhindered_Text;
 			this.checkBoxPrimaryReturnUnhindered.UseVisualStyleBackColor = true;
 			this.checkBoxPrimaryReturnUnhindered.CheckedChanged += new System.EventHandler(this.checkBoxPrimaryReturnUnhindered_CheckedChanged);
 			// 
@@ -87,7 +87,7 @@
 			this.label15.Name = "label15";
 			this.label15.Size = new System.Drawing.Size(155, 13);
 			this.label15.TabIndex = 49;
-			this.label15.Text = "Default cursor mode on startup:";
+			this.label15.Text = global::DMT.Resources.CursorStrings.CursorStickyOptionsPanel_label15_Text;
 			// 
 			// checkBoxControlUnhindersCursor
 			// 
@@ -96,7 +96,7 @@
 			this.checkBoxControlUnhindersCursor.Name = "checkBoxControlUnhindersCursor";
 			this.checkBoxControlUnhindersCursor.Size = new System.Drawing.Size(249, 17);
 			this.checkBoxControlUnhindersCursor.TabIndex = 48;
-			this.checkBoxControlUnhindersCursor.Text = "Allow cursor to move freely if this key is pressed";
+			this.checkBoxControlUnhindersCursor.Text = global::DMT.Resources.CursorStrings.CursorStickyOptionsPanel_checkBoxControlUnhindersCursor_Text;
 			this.checkBoxControlUnhindersCursor.UseVisualStyleBackColor = true;
 			this.checkBoxControlUnhindersCursor.CheckedChanged += new System.EventHandler(this.checkBoxControlUnhindersCursor_CheckedChanged);
 			// 
@@ -111,7 +111,7 @@
 			this.groupBox4.Size = new System.Drawing.Size(477, 43);
 			this.groupBox4.TabIndex = 47;
 			this.groupBox4.TabStop = false;
-			this.groupBox4.Text = "Stickiness control";
+			this.groupBox4.Text = global::DMT.Resources.CursorStrings.CursorStickyOptionsPanel_groupBox4_Text;
 			// 
 			// label13
 			// 
@@ -120,7 +120,7 @@
 			this.label13.Name = "label13";
 			this.label13.Size = new System.Drawing.Size(27, 13);
 			this.label13.TabIndex = 41;
-			this.label13.Text = "Max";
+			this.label13.Text = global::DMT.Resources.CursorStrings.CursorStickyOptionsPanel_label13_Text;
 			// 
 			// label11
 			// 
@@ -129,7 +129,7 @@
 			this.label11.Name = "label11";
 			this.label11.Size = new System.Drawing.Size(24, 13);
 			this.label11.TabIndex = 40;
-			this.label11.Text = "Min";
+			this.label11.Text = global::DMT.Resources.CursorStrings.CursorStickyOptionsPanel_label11_Text;
 			// 
 			// label5
 			// 
@@ -138,7 +138,7 @@
 			this.label5.Name = "label5";
 			this.label5.Size = new System.Drawing.Size(208, 13);
 			this.label5.TabIndex = 39;
-			this.label5.Text = "Resistance to movement between screens";
+			this.label5.Text = global::DMT.Resources.CursorStrings.CursorStickyOptionsPanel_label5_Text;
 			// 
 			// scrollBarSticky
 			// 
@@ -161,7 +161,7 @@
 			this.groupBox3.Size = new System.Drawing.Size(477, 119);
 			this.groupBox3.TabIndex = 46;
 			this.groupBox3.TabStop = false;
-			this.groupBox3.Text = "Cursor movement HotKeys";
+			this.groupBox3.Text = global::DMT.Resources.CursorStrings.CursorStickyOptionsPanel_groupBox3_Text;
 			// 
 			// hotKeyPanelLockCursor
 			// 
@@ -194,7 +194,7 @@
 			this.checkBoxAllowButton.Name = "checkBoxAllowButton";
 			this.checkBoxAllowButton.Size = new System.Drawing.Size(262, 17);
 			this.checkBoxAllowButton.TabIndex = 53;
-			this.checkBoxAllowButton.Text = "Allow cursor to move freely if this button is pressed";
+			this.checkBoxAllowButton.Text = global::DMT.Resources.CursorStrings.CursorStickyOptionsPanel_checkBoxAllowButton_Text;
 			this.checkBoxAllowButton.UseVisualStyleBackColor = true;
 			this.checkBoxAllowButton.CheckedChanged += new System.EventHandler(this.checkBoxAllowButton_CheckedChanged);
 			// 
@@ -216,8 +216,7 @@
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(414, 13);
 			this.label1.TabIndex = 55;
-			this.label1.Text = "Note: These sticky/locked options treat the \'Primary Working Area\' as a single mo" +
-    "nitor.";
+			this.label1.Text = global::DMT.Resources.CursorStrings.CursorStickyOptionsPanel_label1_Text;
 			// 
 			// CursorStickyOptionsPanel
 			// 

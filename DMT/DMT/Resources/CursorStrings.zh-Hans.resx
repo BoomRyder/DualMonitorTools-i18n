@@ -159,4 +159,112 @@
   <data name="StickyCursorWin7" xml:space="preserve">
     <value />
   </data>
+  <data name="CursorDeadSpaceOptionsPanel_label1_Text" xml:space="preserve">
+    <value>死区光标跳转。</value>
+  </data>
+  <data name="CursorDeadSpaceOptionsPanel_label3_Text" xml:space="preserve">
+    <value>这些选项允许光标越过这类边界：光标会沿移动方向跳到相邻显示器上最近的有效位置。</value>
+  </data>
+  <data name="CursorDeadSpaceOptionsPanel_label4_Text" xml:space="preserve">
+    <value>注意：通常只需选择其中一项，而且只有在显示器排列不是矩形时才需要。</value>
+  </data>
+  <data name="CursorDeadSpaceOptionsPanel_checkBoxDeadSpaceXJump_Text" xml:space="preserve">
+    <value>允许光标水平移动时跳过死区。</value>
+  </data>
+  <data name="CursorDeadSpaceOptionsPanel_checkBoxDeadSpaceYJump_Text" xml:space="preserve">
+    <value>允许光标垂直移动时跳过死区。</value>
+  </data>
+  <data name="CursorGeneralOptionsPanel_label13_Text" xml:space="preserve">
+    <value>最大</value>
+  </data>
+  <data name="CursorGeneralOptionsPanel_label11_Text" xml:space="preserve">
+    <value>最小</value>
+  </data>
+  <data name="CursorGeneralOptionsPanel_label5_Text" xml:space="preserve">
+    <value>屏幕之间的移动阻力</value>
+  </data>
+  <data name="CursorGeneralOptionsPanel_groupBox3_Text" xml:space="preserve">
+    <value>光标热键</value>
+  </data>
+  <data name="CursorPrimaryOptionsPanel_label1_Text" xml:space="preserve">
+    <value>这里指定你希望视为主工作区的区域。</value>
+  </data>
+  <data name="CursorPrimaryOptionsPanel_label2_Text" xml:space="preserve">
+    <value>粘滞/锁定光标选项会用到这里，以允许光标自由进入并在该区域内部移动。</value>
+  </data>
+  <data name="CursorPrimaryOptionsPanel_label4_Text" xml:space="preserve">
+    <value>警告</value>
+  </data>
+  <data name="CursorPrimaryOptionsPanel_label3_Text" xml:space="preserve">
+    <value>以蓝色高亮显示的显示器被视为主工作区的一部分。</value>
+  </data>
+  <data name="CursorPrimaryOptionsPanel_label5_Text" xml:space="preserve">
+    <value>如果未选择任何显示器，则只有主屏幕会被视为主工作区。</value>
+  </data>
+  <data name="CursorPrimaryOptionsPanel_radioButtonClick_Text" xml:space="preserve">
+    <value>点击显示器可将其加入或移出主工作区</value>
+  </data>
+  <data name="CursorPrimaryOptionsPanel_radioButtonNames_Text" xml:space="preserve">
+    <value>按命名的显示器</value>
+  </data>
+  <data name="CursorPrimaryOptionsPanel_buttonNames_Text" xml:space="preserve">
+    <value>编辑...</value>
+  </data>
+  <data name="CursorRootOptionsPanel_label3_Text" xml:space="preserve">
+    <value>控制光标在显示器之间移动的设置。</value>
+  </data>
+  <data name="CursorRootOptionsPanel_label1_Text" xml:space="preserve">
+    <value>光标模块</value>
+  </data>
+  <data name="CursorStickyOptionsPanel_checkBoxPrimaryReturnUnhindered_Text" xml:space="preserve">
+    <value>允许光标自由返回主工作区（并在其中自由移动）</value>
+  </data>
+  <data name="CursorStickyOptionsPanel_label15_Text" xml:space="preserve">
+    <value>启动时的默认光标模式：</value>
+  </data>
+  <data name="CursorStickyOptionsPanel_checkBoxControlUnhindersCursor_Text" xml:space="preserve">
+    <value>按下此键时允许光标自由移动</value>
+  </data>
+  <data name="CursorStickyOptionsPanel_groupBox4_Text" xml:space="preserve">
+    <value>粘滞控制</value>
+  </data>
+  <data name="CursorStickyOptionsPanel_label13_Text" xml:space="preserve">
+    <value>最大</value>
+  </data>
+  <data name="CursorStickyOptionsPanel_label11_Text" xml:space="preserve">
+    <value>最小</value>
+  </data>
+  <data name="CursorStickyOptionsPanel_label5_Text" xml:space="preserve">
+    <value>屏幕之间的移动阻力</value>
+  </data>
+  <data name="CursorStickyOptionsPanel_groupBox3_Text" xml:space="preserve">
+    <value>光标移动热键</value>
+  </data>
+  <data name="CursorStickyOptionsPanel_checkBoxAllowButton_Text" xml:space="preserve">
+    <value>按下此按钮时允许光标自由移动</value>
+  </data>
+  <data name="CursorDeadSpaceOptionsPanel_label2_Text" xml:space="preserve">
+    <value>如果你的显示器排列不是矩形，那么当边界另一侧没有显示器时，光标将无法越过该边界。</value>
+  </data>
+  <data name="CursorGeneralOptionsPanel_label1_Text" xml:space="preserve">
+    <value>（启用后将覆盖「粘滞」选项页中的设置）</value>
+  </data>
+  <data name="CursorStickyOptionsPanel_label1_Text" xml:space="preserve">
+    <value>注意：这些粘滞/锁定选项会把「主工作区」当作一台显示器看待。</value>
+  </data>
+  <data name="Node_Cursor" xml:space="preserve">
+    <value>光标</value>
+  </data>
+  <data name="Node_DeadSpace" xml:space="preserve">
+    <value>死区</value>
+  </data>
+  <data name="Node_General" xml:space="preserve">
+    <value>常规</value>
+  </data>
+  <data name="Node_PrimaryWorkingArea" xml:space="preserve">
+    <value>主工作区</value>
+  </data>
+  <data name="Node_Sticky" xml:space="preserve">
+    <value>粘滞</value>
+  </data>
 </root>

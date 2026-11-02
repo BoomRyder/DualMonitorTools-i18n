@@ -644,5 +644,50 @@ namespace DMT.Resources {
                 return ResourceManager.GetString("GeneralRootOptionsPanel_label1_Text", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Dual Monitor Tools.
+        /// </summary>
+        internal static string Node_DualMonitorTools {
+            get {
+                return ResourceManager.GetString("Node_DualMonitorTools", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to General.
+        /// </summary>
+        internal static string Node_General {
+            get {
+                return ResourceManager.GetString("Node_General", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Monitor Names.
+        /// </summary>
+        internal static string Node_MonitorNames {
+            get {
+                return ResourceManager.GetString("Node_MonitorNames", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Monitor Order.
+        /// </summary>
+        internal static string Node_MonitorOrder {
+            get {
+                return ResourceManager.GetString("Node_MonitorOrder", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Monitors.
+        /// </summary>
+        internal static string Node_Monitors {
+            get {
+                return ResourceManager.GetString("Node_Monitors", resourceCulture);
+            }
+        }
     }
 }

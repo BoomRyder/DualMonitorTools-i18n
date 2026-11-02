@@ -185,5 +185,329 @@ namespace DMT.Resources {
                 return ResourceManager.GetString("StickyCursorWin7", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Dead space cursor jumping..
+        /// </summary>
+        internal static string CursorDeadSpaceOptionsPanel_label1_Text {
+            get {
+                return ResourceManager.GetString("CursorDeadSpaceOptionsPanel_label1_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to These options allow you to move the cursor through such borders and the cursor will jump to the nearest valid position on the adjoining mointor in the direction that the cursor is being moved..
+        /// </summary>
+        internal static string CursorDeadSpaceOptionsPanel_label3_Text {
+            get {
+                return ResourceManager.GetString("CursorDeadSpaceOptionsPanel_label3_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Note: You would normally only want to select one of these options and then only if you have a non-rectangular secreen layout..
+        /// </summary>
+        internal static string CursorDeadSpaceOptionsPanel_label4_Text {
+            get {
+                return ResourceManager.GetString("CursorDeadSpaceOptionsPanel_label4_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Allow cursor to jump across dead space when moving horizontally..
+        /// </summary>
+        internal static string CursorDeadSpaceOptionsPanel_checkBoxDeadSpaceXJump_Text {
+            get {
+                return ResourceManager.GetString("CursorDeadSpaceOptionsPanel_checkBoxDeadSpaceXJump_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Allow cursor to jump across dead space when moving vertically..
+        /// </summary>
+        internal static string CursorDeadSpaceOptionsPanel_checkBoxDeadSpaceYJump_Text {
+            get {
+                return ResourceManager.GetString("CursorDeadSpaceOptionsPanel_checkBoxDeadSpaceYJump_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Max.
+        /// </summary>
+        internal static string CursorGeneralOptionsPanel_label13_Text {
+            get {
+                return ResourceManager.GetString("CursorGeneralOptionsPanel_label13_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Min.
+        /// </summary>
+        internal static string CursorGeneralOptionsPanel_label11_Text {
+            get {
+                return ResourceManager.GetString("CursorGeneralOptionsPanel_label11_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Resistance to movement between screens.
+        /// </summary>
+        internal static string CursorGeneralOptionsPanel_label5_Text {
+            get {
+                return ResourceManager.GetString("CursorGeneralOptionsPanel_label5_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cursor HotKeys.
+        /// </summary>
+        internal static string CursorGeneralOptionsPanel_groupBox3_Text {
+            get {
+                return ResourceManager.GetString("CursorGeneralOptionsPanel_groupBox3_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This specifies the area you want to treat as your primary working area..
+        /// </summary>
+        internal static string CursorPrimaryOptionsPanel_label1_Text {
+            get {
+                return ResourceManager.GetString("CursorPrimaryOptionsPanel_label1_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This is used by the sticky/locked cursor options to allow free movement into and within this area..
+        /// </summary>
+        internal static string CursorPrimaryOptionsPanel_label2_Text {
+            get {
+                return ResourceManager.GetString("CursorPrimaryOptionsPanel_label2_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to warning.
+        /// </summary>
+        internal static string CursorPrimaryOptionsPanel_label4_Text {
+            get {
+                return ResourceManager.GetString("CursorPrimaryOptionsPanel_label4_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Monitors higlighted in blue are considered to be part of the primary working area..
+        /// </summary>
+        internal static string CursorPrimaryOptionsPanel_label3_Text {
+            get {
+                return ResourceManager.GetString("CursorPrimaryOptionsPanel_label3_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to If no monitors are selected, then only the primary screen will be considered to be in the primary working area..
+        /// </summary>
+        internal static string CursorPrimaryOptionsPanel_label5_Text {
+            get {
+                return ResourceManager.GetString("CursorPrimaryOptionsPanel_label5_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Click a monitor to add or remove it from the primary working area.
+        /// </summary>
+        internal static string CursorPrimaryOptionsPanel_radioButtonClick_Text {
+            get {
+                return ResourceManager.GetString("CursorPrimaryOptionsPanel_radioButtonClick_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Following named monitors.
+        /// </summary>
+        internal static string CursorPrimaryOptionsPanel_radioButtonNames_Text {
+            get {
+                return ResourceManager.GetString("CursorPrimaryOptionsPanel_radioButtonNames_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Edit....
+        /// </summary>
+        internal static string CursorPrimaryOptionsPanel_buttonNames_Text {
+            get {
+                return ResourceManager.GetString("CursorPrimaryOptionsPanel_buttonNames_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Settings to control movement of cursor between monitors..
+        /// </summary>
+        internal static string CursorRootOptionsPanel_label3_Text {
+            get {
+                return ResourceManager.GetString("CursorRootOptionsPanel_label3_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cursor Module.
+        /// </summary>
+        internal static string CursorRootOptionsPanel_label1_Text {
+            get {
+                return ResourceManager.GetString("CursorRootOptionsPanel_label1_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Allow cursor to return freely to (and within) the primary working area.
+        /// </summary>
+        internal static string CursorStickyOptionsPanel_checkBoxPrimaryReturnUnhindered_Text {
+            get {
+                return ResourceManager.GetString("CursorStickyOptionsPanel_checkBoxPrimaryReturnUnhindered_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Default cursor mode on startup:.
+        /// </summary>
+        internal static string CursorStickyOptionsPanel_label15_Text {
+            get {
+                return ResourceManager.GetString("CursorStickyOptionsPanel_label15_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Allow cursor to move freely if this key is pressed.
+        /// </summary>
+        internal static string CursorStickyOptionsPanel_checkBoxControlUnhindersCursor_Text {
+            get {
+                return ResourceManager.GetString("CursorStickyOptionsPanel_checkBoxControlUnhindersCursor_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Stickiness control.
+        /// </summary>
+        internal static string CursorStickyOptionsPanel_groupBox4_Text {
+            get {
+                return ResourceManager.GetString("CursorStickyOptionsPanel_groupBox4_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Max.
+        /// </summary>
+        internal static string CursorStickyOptionsPanel_label13_Text {
+            get {
+                return ResourceManager.GetString("CursorStickyOptionsPanel_label13_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Min.
+        /// </summary>
+        internal static string CursorStickyOptionsPanel_label11_Text {
+            get {
+                return ResourceManager.GetString("CursorStickyOptionsPanel_label11_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Resistance to movement between screens.
+        /// </summary>
+        internal static string CursorStickyOptionsPanel_label5_Text {
+            get {
+                return ResourceManager.GetString("CursorStickyOptionsPanel_label5_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cursor movement HotKeys.
+        /// </summary>
+        internal static string CursorStickyOptionsPanel_groupBox3_Text {
+            get {
+                return ResourceManager.GetString("CursorStickyOptionsPanel_groupBox3_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Allow cursor to move freely if this button is pressed.
+        /// </summary>
+        internal static string CursorStickyOptionsPanel_checkBoxAllowButton_Text {
+            get {
+                return ResourceManager.GetString("CursorStickyOptionsPanel_checkBoxAllowButton_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to If you have a non-rectangular screen layout, then you will not be able to move the cursor across a border if there isn't a monitor on the other side. .
+        /// </summary>
+        internal static string CursorDeadSpaceOptionsPanel_label2_Text {
+            get {
+                return ResourceManager.GetString("CursorDeadSpaceOptionsPanel_label2_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to (When active this will override the options set on the 'Sticky' options page).
+        /// </summary>
+        internal static string CursorGeneralOptionsPanel_label1_Text {
+            get {
+                return ResourceManager.GetString("CursorGeneralOptionsPanel_label1_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Note: These sticky/locked options treat the 'Primary Working Area' as a single monitor..
+        /// </summary>
+        internal static string CursorStickyOptionsPanel_label1_Text {
+            get {
+                return ResourceManager.GetString("CursorStickyOptionsPanel_label1_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cursor.
+        /// </summary>
+        internal static string Node_Cursor {
+            get {
+                return ResourceManager.GetString("Node_Cursor", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Dead Space.
+        /// </summary>
+        internal static string Node_DeadSpace {
+            get {
+                return ResourceManager.GetString("Node_DeadSpace", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to General.
+        /// </summary>
+        internal static string Node_General {
+            get {
+                return ResourceManager.GetString("Node_General", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Primary Working Area.
+        /// </summary>
+        internal static string Node_PrimaryWorkingArea {
+            get {
+                return ResourceManager.GetString("Node_PrimaryWorkingArea", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sticky.
+        /// </summary>
+        internal static string Node_Sticky {
+            get {
+                return ResourceManager.GetString("Node_Sticky", resourceCulture);
+            }
+        }
     }
 }

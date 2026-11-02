@@ -313,4 +313,19 @@
   <data name="GeneralRootOptionsPanel_label1_Text" xml:space="preserve">
     <value>Dual Monitor Tools</value>
   </data>
+  <data name="Node_DualMonitorTools" xml:space="preserve">
+    <value>Dual Monitor Tools</value>
+  </data>
+  <data name="Node_General" xml:space="preserve">
+    <value>常规</value>
+  </data>
+  <data name="Node_MonitorNames" xml:space="preserve">
+    <value>显示器名称</value>
+  </data>
+  <data name="Node_MonitorOrder" xml:space="preserve">
+    <value>显示器顺序</value>
+  </data>
+  <data name="Node_Monitors" xml:space="preserve">
+    <value>显示器</value>
+  </data>
 </root>

@@ -47,7 +47,7 @@
 			this.label13.Name = "label13";
 			this.label13.Size = new System.Drawing.Size(27, 13);
 			this.label13.TabIndex = 41;
-			this.label13.Text = "Max";
+			this.label13.Text = global::DMT.Resources.CursorStrings.CursorGeneralOptionsPanel_label13_Text;
 			// 
 			// label11
 			// 
@@ -56,7 +56,7 @@
 			this.label11.Name = "label11";
 			this.label11.Size = new System.Drawing.Size(24, 13);
 			this.label11.TabIndex = 40;
-			this.label11.Text = "Min";
+			this.label11.Text = global::DMT.Resources.CursorStrings.CursorGeneralOptionsPanel_label11_Text;
 			// 
 			// label5
 			// 
@@ -65,7 +65,7 @@
 			this.label5.Name = "label5";
 			this.label5.Size = new System.Drawing.Size(208, 13);
 			this.label5.TabIndex = 39;
-			this.label5.Text = "Resistance to movement between screens";
+			this.label5.Text = global::DMT.Resources.CursorStrings.CursorGeneralOptionsPanel_label5_Text;
 			// 
 			// groupBox3
 			// 
@@ -79,7 +79,7 @@
 			this.groupBox3.Size = new System.Drawing.Size(477, 185);
 			this.groupBox3.TabIndex = 46;
 			this.groupBox3.TabStop = false;
-			this.groupBox3.Text = "Cursor HotKeys";
+			this.groupBox3.Text = global::DMT.Resources.CursorStrings.CursorGeneralOptionsPanel_groupBox3_Text;
 			// 
 			// label1
 			// 
@@ -88,7 +88,7 @@
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(356, 13);
 			this.label1.TabIndex = 7;
-			this.label1.Text = "(When active this will override the options set on the \'Sticky\' options page)";
+			this.label1.Text = global::DMT.Resources.CursorStrings.CursorGeneralOptionsPanel_label1_Text;
 			// 
 			// hotKeyPanelLockCursorToMonitor
 			// 

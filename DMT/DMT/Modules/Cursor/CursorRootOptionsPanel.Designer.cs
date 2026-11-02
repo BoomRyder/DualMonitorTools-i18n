@@ -42,7 +42,7 @@
 			this.label3.Name = "label3";
 			this.label3.Size = new System.Drawing.Size(277, 13);
 			this.label3.TabIndex = 7;
-			this.label3.Text = "Settings to control movement of cursor between monitors.";
+			this.label3.Text = global::DMT.Resources.CursorStrings.CursorRootOptionsPanel_label3_Text;
 			// 
 			// label2
 			// 
@@ -62,7 +62,7 @@
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(112, 20);
 			this.label1.TabIndex = 5;
-			this.label1.Text = "Cursor Module";
+			this.label1.Text = global::DMT.Resources.CursorStrings.CursorRootOptionsPanel_label1_Text;
 			// 
 			// pictureBox1
 			// 

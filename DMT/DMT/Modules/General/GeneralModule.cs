@@ -333,21 +333,21 @@ namespace DMT.Modules.General
 			DisplayDevices displayDevices = GetDisplayDevices();
 
 			Image image = new Bitmap(Properties.Resources.DMT_16_16);
-			ModuleOptionNodeBranch options = new ModuleOptionNodeBranch("Dual Monitor Tools", image, new GeneralRootOptionsPanel());
-			options.Nodes.Add(new ModuleOptionNodeLeaf("General", image, new GeneralOptionsPanel(this)));
+			ModuleOptionNodeBranch options = new ModuleOptionNodeBranch(DMT.Resources.GeneralStrings.Node_DualMonitorTools, image, new GeneralRootOptionsPanel());
+			options.Nodes.Add(new ModuleOptionNodeLeaf(DMT.Resources.GeneralStrings.Node_General, image, new GeneralOptionsPanel(this)));
 
 			_generalMonitorNamesOptionsPanel = new GeneralMonitorNamesOptionsPanel(this, displayDevices);
-			options.Nodes.Add(new ModuleOptionNodeLeaf("Monitor Names", image, _generalMonitorNamesOptionsPanel));
+			options.Nodes.Add(new ModuleOptionNodeLeaf(DMT.Resources.GeneralStrings.Node_MonitorNames, image, _generalMonitorNamesOptionsPanel));
 
 			_generalMonitorOrderingOptionsPanel = new GeneralMonitorOrderingOptionsPanel(this, displayDevices);
-			options.Nodes.Add(new ModuleOptionNodeLeaf("Monitor Order", image, _generalMonitorOrderingOptionsPanel));
+			options.Nodes.Add(new ModuleOptionNodeLeaf(DMT.Resources.GeneralStrings.Node_MonitorOrder, image, _generalMonitorOrderingOptionsPanel));
 
 			// To simplify logic, we only support Win 7 or later
 			// if needed, limited support for XP/Vista could be added at a later date
 			if (_localEnvironment.IsWin7OrLater())
 			{
 				_generalMonitorsOptionsPanel = new GeneralMonitorsOptionsPanel(this, displayDevices);
-				options.Nodes.Add(new ModuleOptionNodeLeaf("Monitors", image, _generalMonitorsOptionsPanel));
+				options.Nodes.Add(new ModuleOptionNodeLeaf(DMT.Resources.GeneralStrings.Node_Monitors, image, _generalMonitorsOptionsPanel));
 			}
 
 			_languageOptionsPanel = new LanguageOptionsPanel();

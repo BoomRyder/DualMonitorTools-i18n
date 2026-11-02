@@ -48,7 +48,7 @@
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(335, 13);
 			this.label1.TabIndex = 1;
-			this.label1.Text = "This specifies the area you want to treat as your primary working area.";
+			this.label1.Text = global::DMT.Resources.CursorStrings.CursorPrimaryOptionsPanel_label1_Text;
 			// 
 			// label2
 			// 
@@ -57,8 +57,7 @@
 			this.label2.Name = "label2";
 			this.label2.Size = new System.Drawing.Size(460, 13);
 			this.label2.TabIndex = 2;
-			this.label2.Text = "This is used by the sticky/locked cursor options to allow free movement into and " +
-    "within this area.";
+			this.label2.Text = global::DMT.Resources.CursorStrings.CursorPrimaryOptionsPanel_label2_Text;
 			// 
 			// picPreview
 			// 
@@ -77,7 +76,7 @@
 			this.label4.Name = "label4";
 			this.label4.Size = new System.Drawing.Size(497, 18);
 			this.label4.TabIndex = 4;
-			this.label4.Text = "warning";
+			this.label4.Text = global::DMT.Resources.CursorStrings.CursorPrimaryOptionsPanel_label4_Text;
 			this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			this.label4.Visible = false;
 			// 
@@ -88,8 +87,7 @@
 			this.label3.Name = "label3";
 			this.label3.Size = new System.Drawing.Size(383, 13);
 			this.label3.TabIndex = 5;
-			this.label3.Text = "Monitors higlighted in blue are considered to be part of the primary working area" +
-    ".";
+			this.label3.Text = global::DMT.Resources.CursorStrings.CursorPrimaryOptionsPanel_label3_Text;
 			// 
 			// label5
 			// 
@@ -97,8 +95,7 @@
 			this.label5.Name = "label5";
 			this.label5.Size = new System.Drawing.Size(491, 35);
 			this.label5.TabIndex = 6;
-			this.label5.Text = "If no monitors are selected, then only the primary screen will be considered to b" +
-    "e in the primary working area.";
+			this.label5.Text = global::DMT.Resources.CursorStrings.CursorPrimaryOptionsPanel_label5_Text;
 			// 
 			// radioButtonClick
 			// 
@@ -108,7 +105,7 @@
 			this.radioButtonClick.Size = new System.Drawing.Size(326, 17);
 			this.radioButtonClick.TabIndex = 7;
 			this.radioButtonClick.TabStop = true;
-			this.radioButtonClick.Text = "Click a monitor to add or remove it from the primary working area";
+			this.radioButtonClick.Text = global::DMT.Resources.CursorStrings.CursorPrimaryOptionsPanel_radioButtonClick_Text;
 			this.radioButtonClick.UseVisualStyleBackColor = true;
 			this.radioButtonClick.CheckedChanged += new System.EventHandler(this.radioButtonClick_CheckedChanged);
 			// 
@@ -120,7 +117,7 @@
 			this.radioButtonNames.Size = new System.Drawing.Size(146, 17);
 			this.radioButtonNames.TabIndex = 8;
 			this.radioButtonNames.TabStop = true;
-			this.radioButtonNames.Text = "Following named monitors";
+			this.radioButtonNames.Text = global::DMT.Resources.CursorStrings.CursorPrimaryOptionsPanel_radioButtonNames_Text;
 			this.radioButtonNames.UseVisualStyleBackColor = true;
 			this.radioButtonNames.CheckedChanged += new System.EventHandler(this.radioButtonNames_CheckedChanged);
 			// 
@@ -138,7 +135,7 @@
 			this.buttonNames.Name = "buttonNames";
 			this.buttonNames.Size = new System.Drawing.Size(75, 23);
 			this.buttonNames.TabIndex = 10;
-			this.buttonNames.Text = "Edit...";
+			this.buttonNames.Text = global::DMT.Resources.CursorStrings.CursorPrimaryOptionsPanel_buttonNames_Text;
 			this.buttonNames.UseVisualStyleBackColor = true;
 			this.buttonNames.Click += new System.EventHandler(this.buttonNames_Click);
 			// 

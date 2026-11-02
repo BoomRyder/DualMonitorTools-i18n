@@ -480,14 +480,14 @@ namespace DMT.Modules.Cursor
 		public override ModuleOptionNode GetOptionNodes()
 		{
 			Image image = new Bitmap(Properties.Resources.cursor_16_16);
-			ModuleOptionNodeBranch options = new ModuleOptionNodeBranch("Cursor", image, new CursorRootOptionsPanel());
-			options.Nodes.Add(new ModuleOptionNodeLeaf("General", image, new CursorGeneralOptionsPanel(this)));
-			options.Nodes.Add(new ModuleOptionNodeLeaf("Sticky", image, new CursorStickyOptionsPanel(this)));
+			ModuleOptionNodeBranch options = new ModuleOptionNodeBranch(DMT.Resources.CursorStrings.Node_Cursor, image, new CursorRootOptionsPanel());
+			options.Nodes.Add(new ModuleOptionNodeLeaf(DMT.Resources.CursorStrings.Node_General, image, new CursorGeneralOptionsPanel(this)));
+			options.Nodes.Add(new ModuleOptionNodeLeaf(DMT.Resources.CursorStrings.Node_Sticky, image, new CursorStickyOptionsPanel(this)));
 
 			_cursorPrimaryOptionsPanel = new CursorPrimaryOptionsPanel(this);
-			options.Nodes.Add(new ModuleOptionNodeLeaf("Primary Working Area", image, _cursorPrimaryOptionsPanel));
+			options.Nodes.Add(new ModuleOptionNodeLeaf(DMT.Resources.CursorStrings.Node_PrimaryWorkingArea, image, _cursorPrimaryOptionsPanel));
 
-			options.Nodes.Add(new ModuleOptionNodeLeaf("Dead Space", image, new CursorDeadSpaceOptionsPanel(this)));
+			options.Nodes.Add(new ModuleOptionNodeLeaf(DMT.Resources.CursorStrings.Node_DeadSpace, image, new CursorDeadSpaceOptionsPanel(this)));
 
 			return options;
 		}

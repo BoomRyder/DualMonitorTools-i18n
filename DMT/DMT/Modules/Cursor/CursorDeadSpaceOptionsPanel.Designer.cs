@@ -47,7 +47,7 @@
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(139, 13);
 			this.label1.TabIndex = 0;
-			this.label1.Text = "Dead space cursor jumping.";
+			this.label1.Text = global::DMT.Resources.CursorStrings.CursorDeadSpaceOptionsPanel_label1_Text;
 			// 
 			// label3
 			// 
@@ -55,9 +55,7 @@
 			this.label3.Name = "label3";
 			this.label3.Size = new System.Drawing.Size(494, 36);
 			this.label3.TabIndex = 2;
-			this.label3.Text = "These options allow you to move the cursor through such borders and the cursor wi" +
-    "ll jump to the nearest valid position on the adjoining mointor in the direction " +
-    "that the cursor is being moved.";
+			this.label3.Text = global::DMT.Resources.CursorStrings.CursorDeadSpaceOptionsPanel_label3_Text;
 			// 
 			// label4
 			// 
@@ -65,8 +63,7 @@
 			this.label4.Name = "label4";
 			this.label4.Size = new System.Drawing.Size(455, 37);
 			this.label4.TabIndex = 3;
-			this.label4.Text = "Note: You would normally only want to select one of these options and then only i" +
-    "f you have a non-rectangular secreen layout.";
+			this.label4.Text = global::DMT.Resources.CursorStrings.CursorDeadSpaceOptionsPanel_label4_Text;
 			// 
 			// checkBoxDeadSpaceXJump
 			// 
@@ -75,7 +72,7 @@
 			this.checkBoxDeadSpaceXJump.Name = "checkBoxDeadSpaceXJump";
 			this.checkBoxDeadSpaceXJump.Size = new System.Drawing.Size(337, 17);
 			this.checkBoxDeadSpaceXJump.TabIndex = 4;
-			this.checkBoxDeadSpaceXJump.Text = "Allow cursor to jump across dead space when moving horizontally.";
+			this.checkBoxDeadSpaceXJump.Text = global::DMT.Resources.CursorStrings.CursorDeadSpaceOptionsPanel_checkBoxDeadSpaceXJump_Text;
 			this.checkBoxDeadSpaceXJump.UseVisualStyleBackColor = true;
 			this.checkBoxDeadSpaceXJump.CheckedChanged += new System.EventHandler(this.checkBoxDeadSpaceXJump_CheckedChanged);
 			// 
@@ -86,7 +83,7 @@
 			this.checkBoxDeadSpaceYJump.Name = "checkBoxDeadSpaceYJump";
 			this.checkBoxDeadSpaceYJump.Size = new System.Drawing.Size(326, 17);
 			this.checkBoxDeadSpaceYJump.TabIndex = 5;
-			this.checkBoxDeadSpaceYJump.Text = "Allow cursor to jump across dead space when moving vertically.";
+			this.checkBoxDeadSpaceYJump.Text = global::DMT.Resources.CursorStrings.CursorDeadSpaceOptionsPanel_checkBoxDeadSpaceYJump_Text;
 			this.checkBoxDeadSpaceYJump.UseVisualStyleBackColor = true;
 			this.checkBoxDeadSpaceYJump.CheckedChanged += new System.EventHandler(this.checkBoxDeadSpaceYJump_CheckedChanged);
 			// 
@@ -105,8 +102,7 @@
 			this.label2.Name = "label2";
 			this.label2.Size = new System.Drawing.Size(483, 33);
 			this.label2.TabIndex = 7;
-			this.label2.Text = "If you have a non-rectangular screen layout, then you will not be able to move th" +
-    "e cursor across a border if there isn\'t a monitor on the other side. ";
+			this.label2.Text = global::DMT.Resources.CursorStrings.CursorDeadSpaceOptionsPanel_label2_Text;
 			// 
 			// label5
 			// 

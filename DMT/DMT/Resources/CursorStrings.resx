@@ -159,4 +159,112 @@
   <data name="StickyCursorWin7" xml:space="preserve">
     <value />
   </data>
+  <data name="CursorDeadSpaceOptionsPanel_label1_Text" xml:space="preserve">
+    <value>Dead space cursor jumping.</value>
+  </data>
+  <data name="CursorDeadSpaceOptionsPanel_label3_Text" xml:space="preserve">
+    <value>These options allow you to move the cursor through such borders and the cursor will jump to the nearest valid position on the adjoining mointor in the direction that the cursor is being moved.</value>
+  </data>
+  <data name="CursorDeadSpaceOptionsPanel_label4_Text" xml:space="preserve">
+    <value>Note: You would normally only want to select one of these options and then only if you have a non-rectangular secreen layout.</value>
+  </data>
+  <data name="CursorDeadSpaceOptionsPanel_checkBoxDeadSpaceXJump_Text" xml:space="preserve">
+    <value>Allow cursor to jump across dead space when moving horizontally.</value>
+  </data>
+  <data name="CursorDeadSpaceOptionsPanel_checkBoxDeadSpaceYJump_Text" xml:space="preserve">
+    <value>Allow cursor to jump across dead space when moving vertically.</value>
+  </data>
+  <data name="CursorGeneralOptionsPanel_label13_Text" xml:space="preserve">
+    <value>Max</value>
+  </data>
+  <data name="CursorGeneralOptionsPanel_label11_Text" xml:space="preserve">
+    <value>Min</value>
+  </data>
+  <data name="CursorGeneralOptionsPanel_label5_Text" xml:space="preserve">
+    <value>Resistance to movement between screens</value>
+  </data>
+  <data name="CursorGeneralOptionsPanel_groupBox3_Text" xml:space="preserve">
+    <value>Cursor HotKeys</value>
+  </data>
+  <data name="CursorPrimaryOptionsPanel_label1_Text" xml:space="preserve">
+    <value>This specifies the area you want to treat as your primary working area.</value>
+  </data>
+  <data name="CursorPrimaryOptionsPanel_label2_Text" xml:space="preserve">
+    <value>This is used by the sticky/locked cursor options to allow free movement into and within this area.</value>
+  </data>
+  <data name="CursorPrimaryOptionsPanel_label4_Text" xml:space="preserve">
+    <value>warning</value>
+  </data>
+  <data name="CursorPrimaryOptionsPanel_label3_Text" xml:space="preserve">
+    <value>Monitors higlighted in blue are considered to be part of the primary working area.</value>
+  </data>
+  <data name="CursorPrimaryOptionsPanel_label5_Text" xml:space="preserve">
+    <value>If no monitors are selected, then only the primary screen will be considered to be in the primary working area.</value>
+  </data>
+  <data name="CursorPrimaryOptionsPanel_radioButtonClick_Text" xml:space="preserve">
+    <value>Click a monitor to add or remove it from the primary working area</value>
+  </data>
+  <data name="CursorPrimaryOptionsPanel_radioButtonNames_Text" xml:space="preserve">
+    <value>Following named monitors</value>
+  </data>
+  <data name="CursorPrimaryOptionsPanel_buttonNames_Text" xml:space="preserve">
+    <value>Edit...</value>
+  </data>
+  <data name="CursorRootOptionsPanel_label3_Text" xml:space="preserve">
+    <value>Settings to control movement of cursor between monitors.</value>
+  </data>
+  <data name="CursorRootOptionsPanel_label1_Text" xml:space="preserve">
+    <value>Cursor Module</value>
+  </data>
+  <data name="CursorStickyOptionsPanel_checkBoxPrimaryReturnUnhindered_Text" xml:space="preserve">
+    <value>Allow cursor to return freely to (and within) the primary working area</value>
+  </data>
+  <data name="CursorStickyOptionsPanel_label15_Text" xml:space="preserve">
+    <value>Default cursor mode on startup:</value>
+  </data>
+  <data name="CursorStickyOptionsPanel_checkBoxControlUnhindersCursor_Text" xml:space="preserve">
+    <value>Allow cursor to move freely if this key is pressed</value>
+  </data>
+  <data name="CursorStickyOptionsPanel_groupBox4_Text" xml:space="preserve">
+    <value>Stickiness control</value>
+  </data>
+  <data name="CursorStickyOptionsPanel_label13_Text" xml:space="preserve">
+    <value>Max</value>
+  </data>
+  <data name="CursorStickyOptionsPanel_label11_Text" xml:space="preserve">
+    <value>Min</value>
+  </data>
+  <data name="CursorStickyOptionsPanel_label5_Text" xml:space="preserve">
+    <value>Resistance to movement between screens</value>
+  </data>
+  <data name="CursorStickyOptionsPanel_groupBox3_Text" xml:space="preserve">
+    <value>Cursor movement HotKeys</value>
+  </data>
+  <data name="CursorStickyOptionsPanel_checkBoxAllowButton_Text" xml:space="preserve">
+    <value>Allow cursor to move freely if this button is pressed</value>
+  </data>
+  <data name="CursorDeadSpaceOptionsPanel_label2_Text" xml:space="preserve">
+    <value>If you have a non-rectangular screen layout, then you will not be able to move the cursor across a border if there isn't a monitor on the other side. </value>
+  </data>
+  <data name="CursorGeneralOptionsPanel_label1_Text" xml:space="preserve">
+    <value>(When active this will override the options set on the 'Sticky' options page)</value>
+  </data>
+  <data name="CursorStickyOptionsPanel_label1_Text" xml:space="preserve">
+    <value>Note: These sticky/locked options treat the 'Primary Working Area' as a single monitor.</value>
+  </data>
+  <data name="Node_Cursor" xml:space="preserve">
+    <value>Cursor</value>
+  </data>
+  <data name="Node_DeadSpace" xml:space="preserve">
+    <value>Dead Space</value>
+  </data>
+  <data name="Node_General" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="Node_PrimaryWorkingArea" xml:space="preserve">
+    <value>Primary Working Area</value>
+  </data>
+  <data name="Node_Sticky" xml:space="preserve">
+    <value>Sticky</value>
+  </data>
 </root>
