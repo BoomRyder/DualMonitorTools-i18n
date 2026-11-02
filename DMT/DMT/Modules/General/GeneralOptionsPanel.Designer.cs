@@ -66,7 +66,7 @@
 			this.checkBoxAutoStart.Name = "checkBoxAutoStart";
 			this.checkBoxAutoStart.Size = new System.Drawing.Size(152, 17);
 			this.checkBoxAutoStart.TabIndex = 7;
-			this.checkBoxAutoStart.Text = "Start when Windows starts";
+			this.checkBoxAutoStart.Text = global::DMT.Resources.GeneralStrings.GeneralOptionsPanel_checkBoxAutoStart_Text;
 			this.checkBoxAutoStart.UseVisualStyleBackColor = true;
 			this.checkBoxAutoStart.CheckedChanged += new System.EventHandler(this.checkBoxAutoStart_CheckedChanged);
 			// 
@@ -89,7 +89,7 @@
 			this.groupBox1.Size = new System.Drawing.Size(479, 138);
 			this.groupBox1.TabIndex = 8;
 			this.groupBox1.TabStop = false;
-			this.groupBox1.Text = "File Locations";
+			this.groupBox1.Text = global::DMT.Resources.GeneralStrings.GeneralOptionsPanel_groupBox1_Text;
 			// 
 			// textBoxExecutable
 			// 
@@ -108,7 +108,7 @@
 			this.label5.Name = "label5";
 			this.label5.Size = new System.Drawing.Size(63, 13);
 			this.label5.TabIndex = 8;
-			this.label5.Text = "Executable:";
+			this.label5.Text = global::DMT.Resources.GeneralStrings.GeneralOptionsPanel_label5_Text;
 			// 
 			// textBoxLog
 			// 
@@ -127,7 +127,7 @@
 			this.label4.Name = "label4";
 			this.label4.Size = new System.Drawing.Size(28, 13);
 			this.label4.TabIndex = 6;
-			this.label4.Text = "Log:";
+			this.label4.Text = global::DMT.Resources.GeneralStrings.GeneralOptionsPanel_label4_Text;
 			// 
 			// textBoxWallpaperProviders
 			// 
@@ -146,7 +146,7 @@
 			this.label3.Name = "label3";
 			this.label3.Size = new System.Drawing.Size(105, 13);
 			this.label3.TabIndex = 4;
-			this.label3.Text = "Wallpaper Providers:";
+			this.label3.Text = global::DMT.Resources.GeneralStrings.GeneralOptionsPanel_label3_Text;
 			// 
 			// textBoxMagicWords
 			// 
@@ -165,7 +165,7 @@
 			this.label2.Name = "label2";
 			this.label2.Size = new System.Drawing.Size(73, 13);
 			this.label2.TabIndex = 2;
-			this.label2.Text = "Magic Words:";
+			this.label2.Text = global::DMT.Resources.GeneralStrings.GeneralOptionsPanel_label2_Text;
 			// 
 			// textBoxSettings
 			// 
@@ -184,7 +184,7 @@
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(48, 13);
 			this.label1.TabIndex = 0;
-			this.label1.Text = "Settings:";
+			this.label1.Text = global::DMT.Resources.GeneralStrings.GeneralOptionsPanel_label1_Text;
 			// 
 			// groupBox2
 			// 
@@ -200,7 +200,7 @@
 			this.groupBox2.Size = new System.Drawing.Size(479, 61);
 			this.groupBox2.TabIndex = 9;
 			this.groupBox2.TabStop = false;
-			this.groupBox2.Text = "Installed Version";
+			this.groupBox2.Text = global::DMT.Resources.GeneralStrings.GeneralOptionsPanel_groupBox2_Text;
 			// 
 			// buttonCheckUpdates
 			// 
@@ -209,7 +209,7 @@
 			this.buttonCheckUpdates.Name = "buttonCheckUpdates";
 			this.buttonCheckUpdates.Size = new System.Drawing.Size(143, 23);
 			this.buttonCheckUpdates.TabIndex = 4;
-			this.buttonCheckUpdates.Text = "Check for Updates";
+			this.buttonCheckUpdates.Text = global::DMT.Resources.GeneralStrings.GeneralOptionsPanel_buttonCheckUpdates_Text;
 			this.buttonCheckUpdates.UseVisualStyleBackColor = true;
 			this.buttonCheckUpdates.Click += new System.EventHandler(this.buttonCheckUpdates_Click);
 			// 
@@ -230,7 +230,7 @@
 			this.label8.Name = "label8";
 			this.label8.Size = new System.Drawing.Size(64, 13);
 			this.label8.TabIndex = 2;
-			this.label8.Text = "Install Type:";
+			this.label8.Text = global::DMT.Resources.GeneralStrings.GeneralOptionsPanel_label8_Text;
 			// 
 			// labelVersion
 			// 
@@ -249,7 +249,7 @@
 			this.label6.Name = "label6";
 			this.label6.Size = new System.Drawing.Size(45, 13);
 			this.label6.TabIndex = 0;
-			this.label6.Text = "Version:";
+			this.label6.Text = global::DMT.Resources.GeneralStrings.GeneralOptionsPanel_label6_Text;
 			// 
 			// groupBox3
 			// 
@@ -264,7 +264,7 @@
 			this.groupBox3.Size = new System.Drawing.Size(479, 135);
 			this.groupBox3.TabIndex = 10;
 			this.groupBox3.TabStop = false;
-			this.groupBox3.Text = "About";
+			this.groupBox3.Text = global::DMT.Resources.GeneralStrings.GeneralOptionsPanel_groupBox3_Text;
 			// 
 			// labelDescription
 			// 
@@ -312,7 +312,7 @@
 			this.checkBoxContextMenu.Name = "checkBoxContextMenu";
 			this.checkBoxContextMenu.Size = new System.Drawing.Size(165, 17);
 			this.checkBoxContextMenu.TabIndex = 11;
-			this.checkBoxContextMenu.Text = "Add to desktop context menu";
+			this.checkBoxContextMenu.Text = global::DMT.Resources.GeneralStrings.GeneralOptionsPanel_checkBoxContextMenu_Text;
 			this.checkBoxContextMenu.UseVisualStyleBackColor = true;
 			this.checkBoxContextMenu.CheckedChanged += new System.EventHandler(this.checkBoxContextMenu_CheckedChanged);
 			// 

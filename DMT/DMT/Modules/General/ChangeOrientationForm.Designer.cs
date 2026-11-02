@@ -53,7 +53,7 @@
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(191, 13);
 			this.label1.TabIndex = 0;
-			this.label1.Text = "Monitor clockwise rotation from default:";
+			this.label1.Text = global::DMT.Resources.GeneralStrings.ChangeOrientationForm_label1_Text;
 			// 
 			// radioButtonOrientation0
 			// 
@@ -63,7 +63,7 @@
 			this.radioButtonOrientation0.Size = new System.Drawing.Size(35, 17);
 			this.radioButtonOrientation0.TabIndex = 1;
 			this.radioButtonOrientation0.TabStop = true;
-			this.radioButtonOrientation0.Text = "0°";
+			this.radioButtonOrientation0.Text = global::DMT.Resources.GeneralStrings.ChangeOrientationForm_radioButtonOrientation0_Text;
 			this.radioButtonOrientation0.UseVisualStyleBackColor = true;
 			// 
 			// radioButtonOrientation90
@@ -74,7 +74,7 @@
 			this.radioButtonOrientation90.Size = new System.Drawing.Size(41, 17);
 			this.radioButtonOrientation90.TabIndex = 2;
 			this.radioButtonOrientation90.TabStop = true;
-			this.radioButtonOrientation90.Text = "90°";
+			this.radioButtonOrientation90.Text = global::DMT.Resources.GeneralStrings.ChangeOrientationForm_radioButtonOrientation90_Text;
 			this.radioButtonOrientation90.UseVisualStyleBackColor = true;
 			// 
 			// radioButtonOrientation180
@@ -85,7 +85,7 @@
 			this.radioButtonOrientation180.Size = new System.Drawing.Size(47, 17);
 			this.radioButtonOrientation180.TabIndex = 3;
 			this.radioButtonOrientation180.TabStop = true;
-			this.radioButtonOrientation180.Text = "180°";
+			this.radioButtonOrientation180.Text = global::DMT.Resources.GeneralStrings.ChangeOrientationForm_radioButtonOrientation180_Text;
 			this.radioButtonOrientation180.UseVisualStyleBackColor = true;
 			// 
 			// radioButtonOrientation270
@@ -96,7 +96,7 @@
 			this.radioButtonOrientation270.Size = new System.Drawing.Size(47, 17);
 			this.radioButtonOrientation270.TabIndex = 4;
 			this.radioButtonOrientation270.TabStop = true;
-			this.radioButtonOrientation270.Text = "270°";
+			this.radioButtonOrientation270.Text = global::DMT.Resources.GeneralStrings.ChangeOrientationForm_radioButtonOrientation270_Text;
 			this.radioButtonOrientation270.UseVisualStyleBackColor = true;
 			// 
 			// buttonOK
@@ -105,7 +105,7 @@
 			this.buttonOK.Name = "buttonOK";
 			this.buttonOK.Size = new System.Drawing.Size(75, 23);
 			this.buttonOK.TabIndex = 5;
-			this.buttonOK.Text = "OK";
+			this.buttonOK.Text = global::DMT.Resources.GeneralStrings.ChangeOrientationForm_buttonOK_Text;
 			this.buttonOK.UseVisualStyleBackColor = true;
 			this.buttonOK.Click += new System.EventHandler(this.buttonOK_Click);
 			// 
@@ -116,7 +116,7 @@
 			this.buttonCancel.Name = "buttonCancel";
 			this.buttonCancel.Size = new System.Drawing.Size(75, 23);
 			this.buttonCancel.TabIndex = 6;
-			this.buttonCancel.Text = "Cancel";
+			this.buttonCancel.Text = global::DMT.Resources.GeneralStrings.ChangeOrientationForm_buttonCancel_Text;
 			this.buttonCancel.UseVisualStyleBackColor = true;
 			this.buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);
 			// 

@@ -42,7 +42,7 @@
 			this.label3.Name = "label3";
 			this.label3.Size = new System.Drawing.Size(210, 13);
 			this.label3.TabIndex = 7;
-			this.label3.Text = "Settings that are common to all of the tools.";
+			this.label3.Text = global::DMT.Resources.GeneralStrings.GeneralRootOptionsPanel_label3_Text;
 			// 
 			// label2
 			// 
@@ -62,7 +62,7 @@
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(141, 20);
 			this.label1.TabIndex = 5;
-			this.label1.Text = "Dual Monitor Tools";
+			this.label1.Text = global::DMT.Resources.GeneralStrings.GeneralRootOptionsPanel_label1_Text;
 			// 
 			// pictureBox1
 			// 

@@ -166,4 +166,151 @@
   <data name="Node_Language" xml:space="preserve">
     <value>语言</value>
   </data>
+  <data name="ChangeOrientationForm_label1_Text" xml:space="preserve">
+    <value>显示器相对默认方向的顺时针旋转角度：</value>
+  </data>
+  <data name="ChangeOrientationForm_radioButtonOrientation0_Text" xml:space="preserve">
+    <value>0°</value>
+  </data>
+  <data name="ChangeOrientationForm_radioButtonOrientation90_Text" xml:space="preserve">
+    <value>90°</value>
+  </data>
+  <data name="ChangeOrientationForm_radioButtonOrientation180_Text" xml:space="preserve">
+    <value>180°</value>
+  </data>
+  <data name="ChangeOrientationForm_radioButtonOrientation270_Text" xml:space="preserve">
+    <value>270°</value>
+  </data>
+  <data name="ChangeOrientationForm_buttonOK_Text" xml:space="preserve">
+    <value>确定</value>
+  </data>
+  <data name="ChangeOrientationForm_buttonCancel_Text" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="CheckUpdatesForm_labelStatus_Text" xml:space="preserve">
+    <value>正在检查更新...</value>
+  </data>
+  <data name="CheckUpdatesForm_buttonOpenDownload_Text" xml:space="preserve">
+    <value>打开下载页面</value>
+  </data>
+  <data name="CheckUpdatesForm_buttonInstall_Text" xml:space="preserve">
+    <value>下载并安装新版本</value>
+  </data>
+  <data name="CheckUpdatesForm_buttonCancel_Text" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="EditMonitorNameForm_label1_Text" xml:space="preserve">
+    <value>名称：</value>
+  </data>
+  <data name="EditMonitorNameForm_buttonOK_Text" xml:space="preserve">
+    <value>确定</value>
+  </data>
+  <data name="EditMonitorNameForm_buttonCancel_Text" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="GeneralMonitorNamesOptionsPanel_label1_Text" xml:space="preserve">
+    <value>你的显示器名称：</value>
+  </data>
+  <data name="GeneralMonitorNamesOptionsPanel_buttonChangeName_Text" xml:space="preserve">
+    <value>更改名称...</value>
+  </data>
+  <data name="GeneralMonitorNamesOptionsPanel_label2_Text" xml:space="preserve">
+    <value>品牌/名称：</value>
+  </data>
+  <data name="GeneralMonitorNamesOptionsPanel_label4_Text" xml:space="preserve">
+    <value>显卡：</value>
+  </data>
+  <data name="GeneralMonitorNamesOptionsPanel_label6_Text" xml:space="preserve">
+    <value>尺寸：</value>
+  </data>
+  <data name="GeneralMonitorNamesOptionsPanel_label3_Text" xml:space="preserve">
+    <value>这是可选项，但你可以为每台物理显示器起一个自定义名称，之后在选择显示器顺序和主工作区时就能用上这个名称。</value>
+  </data>
+  <data name="GeneralMonitorOrderingOptionsPanel_groupBoxOrder_Text" xml:space="preserve">
+    <value>排序方式</value>
+  </data>
+  <data name="GeneralMonitorOrderingOptionsPanel_buttonNames_Text" xml:space="preserve">
+    <value>编辑...</value>
+  </data>
+  <data name="GeneralMonitorOrderingOptionsPanel_radioButtonNames_Text" xml:space="preserve">
+    <value>按命名显示器顺序</value>
+  </data>
+  <data name="GeneralMonitorOrderingOptionsPanel_radioButtonTopDown_Text" xml:space="preserve">
+    <value>从上到下，从左到右</value>
+  </data>
+  <data name="GeneralMonitorOrderingOptionsPanel_radioButtonDotNet_Text" xml:space="preserve">
+    <value>DotNet 顺序，DMT v2.7 及更早版本使用</value>
+  </data>
+  <data name="GeneralMonitorOrderingOptionsPanel_radioButtonLeftRight_Text" xml:space="preserve">
+    <value>从左到右，从上到下</value>
+  </data>
+  <data name="GeneralMonitorOrderingOptionsPanel_label1_Text" xml:space="preserve">
+    <value>注意：此显示器顺序仅供 DMT 自身用于显示器网格、在显示器之间移动窗口以及生成壁纸。</value>
+  </data>
+  <data name="GeneralMonitorsOptionsPanel_toolStripMenuItemChangePrimary_Text" xml:space="preserve">
+    <value>设为主显示器</value>
+  </data>
+  <data name="GeneralMonitorsOptionsPanel_checkBoxShowAllMonitors_Text" xml:space="preserve">
+    <value>显示所有显示器</value>
+  </data>
+  <data name="GeneralMonitorsOptionsPanel_toolStripMenuItemChangeBrightness_Text" xml:space="preserve">
+    <value>调整显示器亮度</value>
+  </data>
+  <data name="GeneralMonitorsOptionsPanel_toolStripMenuItemChangeContrast_Text" xml:space="preserve">
+    <value>调整显示器对比度</value>
+  </data>
+  <data name="GeneralMonitorsOptionsPanel_changeMonitorOrientationToolStripMenuItem_Text" xml:space="preserve">
+    <value>调整显示器方向</value>
+  </data>
+  <data name="GeneralMonitorsOptionsPanel_contextMenuStripEditName_Text" xml:space="preserve">
+    <value>编辑显示器名称</value>
+  </data>
+  <data name="GeneralMonitorsOptionsPanel_editMonitorNameToolStripMenuItem_Text" xml:space="preserve">
+    <value>编辑显示器名称</value>
+  </data>
+  <data name="GeneralOptionsPanel_checkBoxAutoStart_Text" xml:space="preserve">
+    <value>Windows 启动时运行</value>
+  </data>
+  <data name="GeneralOptionsPanel_groupBox1_Text" xml:space="preserve">
+    <value>文件位置</value>
+  </data>
+  <data name="GeneralOptionsPanel_label5_Text" xml:space="preserve">
+    <value>可执行文件：</value>
+  </data>
+  <data name="GeneralOptionsPanel_label4_Text" xml:space="preserve">
+    <value>日志：</value>
+  </data>
+  <data name="GeneralOptionsPanel_label3_Text" xml:space="preserve">
+    <value>壁纸提供程序：</value>
+  </data>
+  <data name="GeneralOptionsPanel_label2_Text" xml:space="preserve">
+    <value>魔术字：</value>
+  </data>
+  <data name="GeneralOptionsPanel_label1_Text" xml:space="preserve">
+    <value>设置：</value>
+  </data>
+  <data name="GeneralOptionsPanel_groupBox2_Text" xml:space="preserve">
+    <value>已安装版本</value>
+  </data>
+  <data name="GeneralOptionsPanel_buttonCheckUpdates_Text" xml:space="preserve">
+    <value>检查更新</value>
+  </data>
+  <data name="GeneralOptionsPanel_label8_Text" xml:space="preserve">
+    <value>安装类型：</value>
+  </data>
+  <data name="GeneralOptionsPanel_label6_Text" xml:space="preserve">
+    <value>版本：</value>
+  </data>
+  <data name="GeneralOptionsPanel_groupBox3_Text" xml:space="preserve">
+    <value>关于</value>
+  </data>
+  <data name="GeneralOptionsPanel_checkBoxContextMenu_Text" xml:space="preserve">
+    <value>添加到桌面右键菜单</value>
+  </data>
+  <data name="GeneralRootOptionsPanel_label3_Text" xml:space="preserve">
+    <value>所有工具共用的设置。</value>
+  </data>
+  <data name="GeneralRootOptionsPanel_label1_Text" xml:space="preserve">
+    <value>Dual Monitor Tools</value>
+  </data>
 </root>

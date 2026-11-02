@@ -665,6 +665,9 @@
     <EmbeddedResource Include="Modules\General\EditNumericValueForm.resx">
       <DependentUpon>EditNumericValueForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Modules\General\EditNumericValueForm.zh-Hans.resx">
+      <DependentUpon>EditNumericValueForm.resx</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Modules\General\CheckUpdatesForm.resx">
       <DependentUpon>CheckUpdatesForm.cs</DependentUpon>
     </EmbeddedResource>

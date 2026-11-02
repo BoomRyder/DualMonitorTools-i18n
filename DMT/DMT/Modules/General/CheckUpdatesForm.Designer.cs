@@ -40,7 +40,7 @@
 			this.labelStatus.Name = "labelStatus";
 			this.labelStatus.Size = new System.Drawing.Size(413, 66);
 			this.labelStatus.TabIndex = 0;
-			this.labelStatus.Text = "Checking for updates...";
+			this.labelStatus.Text = global::DMT.Resources.GeneralStrings.CheckUpdatesForm_labelStatus_Text;
 			// 
 			// buttonOpenDownload
 			// 
@@ -48,7 +48,7 @@
 			this.buttonOpenDownload.Name = "buttonOpenDownload";
 			this.buttonOpenDownload.Size = new System.Drawing.Size(132, 23);
 			this.buttonOpenDownload.TabIndex = 1;
-			this.buttonOpenDownload.Text = "Open download page";
+			this.buttonOpenDownload.Text = global::DMT.Resources.GeneralStrings.CheckUpdatesForm_buttonOpenDownload_Text;
 			this.buttonOpenDownload.UseVisualStyleBackColor = true;
 			this.buttonOpenDownload.Click += new System.EventHandler(this.buttonOpenDownload_Click);
 			// 
@@ -58,7 +58,7 @@
 			this.buttonInstall.Name = "buttonInstall";
 			this.buttonInstall.Size = new System.Drawing.Size(194, 23);
 			this.buttonInstall.TabIndex = 2;
-			this.buttonInstall.Text = "Download and install new version";
+			this.buttonInstall.Text = global::DMT.Resources.GeneralStrings.CheckUpdatesForm_buttonInstall_Text;
 			this.buttonInstall.UseVisualStyleBackColor = true;
 			this.buttonInstall.Click += new System.EventHandler(this.buttonInstall_Click);
 			// 
@@ -69,7 +69,7 @@
 			this.buttonCancel.Name = "buttonCancel";
 			this.buttonCancel.Size = new System.Drawing.Size(75, 23);
 			this.buttonCancel.TabIndex = 3;
-			this.buttonCancel.Text = "Cancel";
+			this.buttonCancel.Text = global::DMT.Resources.GeneralStrings.CheckUpdatesForm_buttonCancel_Text;
 			this.buttonCancel.UseVisualStyleBackColor = true;
 			this.buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);
 			// 

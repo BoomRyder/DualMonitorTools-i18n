@@ -203,5 +203,446 @@ namespace DMT.Resources {
                 return ResourceManager.GetString("Node_Language", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Monitor clockwise rotation from default:.
+        /// </summary>
+        internal static string ChangeOrientationForm_label1_Text {
+            get {
+                return ResourceManager.GetString("ChangeOrientationForm_label1_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 0°.
+        /// </summary>
+        internal static string ChangeOrientationForm_radioButtonOrientation0_Text {
+            get {
+                return ResourceManager.GetString("ChangeOrientationForm_radioButtonOrientation0_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 90°.
+        /// </summary>
+        internal static string ChangeOrientationForm_radioButtonOrientation90_Text {
+            get {
+                return ResourceManager.GetString("ChangeOrientationForm_radioButtonOrientation90_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 180°.
+        /// </summary>
+        internal static string ChangeOrientationForm_radioButtonOrientation180_Text {
+            get {
+                return ResourceManager.GetString("ChangeOrientationForm_radioButtonOrientation180_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 270°.
+        /// </summary>
+        internal static string ChangeOrientationForm_radioButtonOrientation270_Text {
+            get {
+                return ResourceManager.GetString("ChangeOrientationForm_radioButtonOrientation270_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to OK.
+        /// </summary>
+        internal static string ChangeOrientationForm_buttonOK_Text {
+            get {
+                return ResourceManager.GetString("ChangeOrientationForm_buttonOK_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cancel.
+        /// </summary>
+        internal static string ChangeOrientationForm_buttonCancel_Text {
+            get {
+                return ResourceManager.GetString("ChangeOrientationForm_buttonCancel_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Checking for updates....
+        /// </summary>
+        internal static string CheckUpdatesForm_labelStatus_Text {
+            get {
+                return ResourceManager.GetString("CheckUpdatesForm_labelStatus_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Open download page.
+        /// </summary>
+        internal static string CheckUpdatesForm_buttonOpenDownload_Text {
+            get {
+                return ResourceManager.GetString("CheckUpdatesForm_buttonOpenDownload_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Download and install new version.
+        /// </summary>
+        internal static string CheckUpdatesForm_buttonInstall_Text {
+            get {
+                return ResourceManager.GetString("CheckUpdatesForm_buttonInstall_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cancel.
+        /// </summary>
+        internal static string CheckUpdatesForm_buttonCancel_Text {
+            get {
+                return ResourceManager.GetString("CheckUpdatesForm_buttonCancel_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Name:.
+        /// </summary>
+        internal static string EditMonitorNameForm_label1_Text {
+            get {
+                return ResourceManager.GetString("EditMonitorNameForm_label1_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to OK.
+        /// </summary>
+        internal static string EditMonitorNameForm_buttonOK_Text {
+            get {
+                return ResourceManager.GetString("EditMonitorNameForm_buttonOK_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cancel.
+        /// </summary>
+        internal static string EditMonitorNameForm_buttonCancel_Text {
+            get {
+                return ResourceManager.GetString("EditMonitorNameForm_buttonCancel_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Your Monitor Name:.
+        /// </summary>
+        internal static string GeneralMonitorNamesOptionsPanel_label1_Text {
+            get {
+                return ResourceManager.GetString("GeneralMonitorNamesOptionsPanel_label1_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Change Name....
+        /// </summary>
+        internal static string GeneralMonitorNamesOptionsPanel_buttonChangeName_Text {
+            get {
+                return ResourceManager.GetString("GeneralMonitorNamesOptionsPanel_buttonChangeName_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Brand/Name:.
+        /// </summary>
+        internal static string GeneralMonitorNamesOptionsPanel_label2_Text {
+            get {
+                return ResourceManager.GetString("GeneralMonitorNamesOptionsPanel_label2_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GPU:.
+        /// </summary>
+        internal static string GeneralMonitorNamesOptionsPanel_label4_Text {
+            get {
+                return ResourceManager.GetString("GeneralMonitorNamesOptionsPanel_label4_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Size:.
+        /// </summary>
+        internal static string GeneralMonitorNamesOptionsPanel_label6_Text {
+            get {
+                return ResourceManager.GetString("GeneralMonitorNamesOptionsPanel_label6_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This is optional, but allows you to give each physical monitor a name of your own choice which can then be used when selecting monitor order and when selecting the primary working area. .
+        /// </summary>
+        internal static string GeneralMonitorNamesOptionsPanel_label3_Text {
+            get {
+                return ResourceManager.GetString("GeneralMonitorNamesOptionsPanel_label3_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Order by.
+        /// </summary>
+        internal static string GeneralMonitorOrderingOptionsPanel_groupBoxOrder_Text {
+            get {
+                return ResourceManager.GetString("GeneralMonitorOrderingOptionsPanel_groupBoxOrder_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Edit....
+        /// </summary>
+        internal static string GeneralMonitorOrderingOptionsPanel_buttonNames_Text {
+            get {
+                return ResourceManager.GetString("GeneralMonitorOrderingOptionsPanel_buttonNames_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Following named monitor order.
+        /// </summary>
+        internal static string GeneralMonitorOrderingOptionsPanel_radioButtonNames_Text {
+            get {
+                return ResourceManager.GetString("GeneralMonitorOrderingOptionsPanel_radioButtonNames_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Top - down, left - right.
+        /// </summary>
+        internal static string GeneralMonitorOrderingOptionsPanel_radioButtonTopDown_Text {
+            get {
+                return ResourceManager.GetString("GeneralMonitorOrderingOptionsPanel_radioButtonTopDown_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to DotNet order, as used by DMT v2.7 and earlier.
+        /// </summary>
+        internal static string GeneralMonitorOrderingOptionsPanel_radioButtonDotNet_Text {
+            get {
+                return ResourceManager.GetString("GeneralMonitorOrderingOptionsPanel_radioButtonDotNet_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Left - right, top - down.
+        /// </summary>
+        internal static string GeneralMonitorOrderingOptionsPanel_radioButtonLeftRight_Text {
+            get {
+                return ResourceManager.GetString("GeneralMonitorOrderingOptionsPanel_radioButtonLeftRight_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Note: This monitor ordering is only used by DMT itself for the Monitors grid, moving windows between monitors and wallpaper generation..
+        /// </summary>
+        internal static string GeneralMonitorOrderingOptionsPanel_label1_Text {
+            get {
+                return ResourceManager.GetString("GeneralMonitorOrderingOptionsPanel_label1_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Make this the primary monitor.
+        /// </summary>
+        internal static string GeneralMonitorsOptionsPanel_toolStripMenuItemChangePrimary_Text {
+            get {
+                return ResourceManager.GetString("GeneralMonitorsOptionsPanel_toolStripMenuItemChangePrimary_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Show All Monitors.
+        /// </summary>
+        internal static string GeneralMonitorsOptionsPanel_checkBoxShowAllMonitors_Text {
+            get {
+                return ResourceManager.GetString("GeneralMonitorsOptionsPanel_checkBoxShowAllMonitors_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Change monitor brightness.
+        /// </summary>
+        internal static string GeneralMonitorsOptionsPanel_toolStripMenuItemChangeBrightness_Text {
+            get {
+                return ResourceManager.GetString("GeneralMonitorsOptionsPanel_toolStripMenuItemChangeBrightness_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Change monitor contrast.
+        /// </summary>
+        internal static string GeneralMonitorsOptionsPanel_toolStripMenuItemChangeContrast_Text {
+            get {
+                return ResourceManager.GetString("GeneralMonitorsOptionsPanel_toolStripMenuItemChangeContrast_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Change Monitor Orientation.
+        /// </summary>
+        internal static string GeneralMonitorsOptionsPanel_changeMonitorOrientationToolStripMenuItem_Text {
+            get {
+                return ResourceManager.GetString("GeneralMonitorsOptionsPanel_changeMonitorOrientationToolStripMenuItem_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Edit Monitor Name.
+        /// </summary>
+        internal static string GeneralMonitorsOptionsPanel_contextMenuStripEditName_Text {
+            get {
+                return ResourceManager.GetString("GeneralMonitorsOptionsPanel_contextMenuStripEditName_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Edit Monitor Name.
+        /// </summary>
+        internal static string GeneralMonitorsOptionsPanel_editMonitorNameToolStripMenuItem_Text {
+            get {
+                return ResourceManager.GetString("GeneralMonitorsOptionsPanel_editMonitorNameToolStripMenuItem_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Start when Windows starts.
+        /// </summary>
+        internal static string GeneralOptionsPanel_checkBoxAutoStart_Text {
+            get {
+                return ResourceManager.GetString("GeneralOptionsPanel_checkBoxAutoStart_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to File Locations.
+        /// </summary>
+        internal static string GeneralOptionsPanel_groupBox1_Text {
+            get {
+                return ResourceManager.GetString("GeneralOptionsPanel_groupBox1_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Executable:.
+        /// </summary>
+        internal static string GeneralOptionsPanel_label5_Text {
+            get {
+                return ResourceManager.GetString("GeneralOptionsPanel_label5_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Log:.
+        /// </summary>
+        internal static string GeneralOptionsPanel_label4_Text {
+            get {
+                return ResourceManager.GetString("GeneralOptionsPanel_label4_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Wallpaper Providers:.
+        /// </summary>
+        internal static string GeneralOptionsPanel_label3_Text {
+            get {
+                return ResourceManager.GetString("GeneralOptionsPanel_label3_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Magic Words:.
+        /// </summary>
+        internal static string GeneralOptionsPanel_label2_Text {
+            get {
+                return ResourceManager.GetString("GeneralOptionsPanel_label2_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Settings:.
+        /// </summary>
+        internal static string GeneralOptionsPanel_label1_Text {
+            get {
+                return ResourceManager.GetString("GeneralOptionsPanel_label1_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Installed Version.
+        /// </summary>
+        internal static string GeneralOptionsPanel_groupBox2_Text {
+            get {
+                return ResourceManager.GetString("GeneralOptionsPanel_groupBox2_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Check for Updates.
+        /// </summary>
+        internal static string GeneralOptionsPanel_buttonCheckUpdates_Text {
+            get {
+                return ResourceManager.GetString("GeneralOptionsPanel_buttonCheckUpdates_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Install Type:.
+        /// </summary>
+        internal static string GeneralOptionsPanel_label8_Text {
+            get {
+                return ResourceManager.GetString("GeneralOptionsPanel_label8_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Version:.
+        /// </summary>
+        internal static string GeneralOptionsPanel_label6_Text {
+            get {
+                return ResourceManager.GetString("GeneralOptionsPanel_label6_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to About.
+        /// </summary>
+        internal static string GeneralOptionsPanel_groupBox3_Text {
+            get {
+                return ResourceManager.GetString("GeneralOptionsPanel_groupBox3_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Add to desktop context menu.
+        /// </summary>
+        internal static string GeneralOptionsPanel_checkBoxContextMenu_Text {
+            get {
+                return ResourceManager.GetString("GeneralOptionsPanel_checkBoxContextMenu_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Settings that are common to all of the tools..
+        /// </summary>
+        internal static string GeneralRootOptionsPanel_label3_Text {
+            get {
+                return ResourceManager.GetString("GeneralRootOptionsPanel_label3_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Dual Monitor Tools.
+        /// </summary>
+        internal static string GeneralRootOptionsPanel_label1_Text {
+            get {
+                return ResourceManager.GetString("GeneralRootOptionsPanel_label1_Text", resourceCulture);
+            }
+        }
     }
 }

@@ -59,7 +59,7 @@
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(101, 13);
 			this.label1.TabIndex = 3;
-			this.label1.Text = "Your Monitor Name:";
+			this.label1.Text = global::DMT.Resources.GeneralStrings.GeneralMonitorNamesOptionsPanel_label1_Text;
 			// 
 			// textBoxName
 			// 
@@ -75,7 +75,7 @@
 			this.buttonChangeName.Name = "buttonChangeName";
 			this.buttonChangeName.Size = new System.Drawing.Size(114, 23);
 			this.buttonChangeName.TabIndex = 5;
-			this.buttonChangeName.Text = "Change Name...";
+			this.buttonChangeName.Text = global::DMT.Resources.GeneralStrings.GeneralMonitorNamesOptionsPanel_buttonChangeName_Text;
 			this.buttonChangeName.UseVisualStyleBackColor = true;
 			this.buttonChangeName.Click += new System.EventHandler(this.buttonChangeName_Click);
 			// 
@@ -86,7 +86,7 @@
 			this.label2.Name = "label2";
 			this.label2.Size = new System.Drawing.Size(71, 13);
 			this.label2.TabIndex = 6;
-			this.label2.Text = "Brand/Name:";
+			this.label2.Text = global::DMT.Resources.GeneralStrings.GeneralMonitorNamesOptionsPanel_label2_Text;
 			// 
 			// labelBrand
 			// 
@@ -103,7 +103,7 @@
 			this.label4.Name = "label4";
 			this.label4.Size = new System.Drawing.Size(33, 13);
 			this.label4.TabIndex = 8;
-			this.label4.Text = "GPU:";
+			this.label4.Text = global::DMT.Resources.GeneralStrings.GeneralMonitorNamesOptionsPanel_label4_Text;
 			// 
 			// labelGpu
 			// 
@@ -120,7 +120,7 @@
 			this.label6.Name = "label6";
 			this.label6.Size = new System.Drawing.Size(30, 13);
 			this.label6.TabIndex = 10;
-			this.label6.Text = "Size:";
+			this.label6.Text = global::DMT.Resources.GeneralStrings.GeneralMonitorNamesOptionsPanel_label6_Text;
 			// 
 			// labelSize
 			// 
@@ -136,9 +136,7 @@
 			this.label3.Name = "label3";
 			this.label3.Size = new System.Drawing.Size(494, 43);
 			this.label3.TabIndex = 12;
-			this.label3.Text = "This is optional, but allows you to give each physical monitor a name of your own" +
-    " choice which can then be used when selecting monitor order and when selecting t" +
-    "he primary working area. \r\n";
+			this.label3.Text = global::DMT.Resources.GeneralStrings.GeneralMonitorNamesOptionsPanel_label3_Text;
 			// 
 			// GeneralMonitorNamesOptionsPanel
 			// 

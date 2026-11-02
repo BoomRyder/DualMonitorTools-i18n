@@ -81,7 +81,7 @@
 			// 
 			this.toolStripMenuItemChangePrimary.Name = "toolStripMenuItemChangePrimary";
 			this.toolStripMenuItemChangePrimary.Size = new System.Drawing.Size(235, 22);
-			this.toolStripMenuItemChangePrimary.Text = "Make this the primary monitor";
+			this.toolStripMenuItemChangePrimary.Text = global::DMT.Resources.GeneralStrings.GeneralMonitorsOptionsPanel_toolStripMenuItemChangePrimary_Text;
 			this.toolStripMenuItemChangePrimary.Click += new System.EventHandler(this.toolStripMenuItemChangePrimary_Click);
 			// 
 			// checkBoxShowAllMonitors
@@ -92,7 +92,7 @@
 			this.checkBoxShowAllMonitors.Name = "checkBoxShowAllMonitors";
 			this.checkBoxShowAllMonitors.Size = new System.Drawing.Size(110, 17);
 			this.checkBoxShowAllMonitors.TabIndex = 1;
-			this.checkBoxShowAllMonitors.Text = "Show All Monitors";
+			this.checkBoxShowAllMonitors.Text = global::DMT.Resources.GeneralStrings.GeneralMonitorsOptionsPanel_checkBoxShowAllMonitors_Text;
 			this.checkBoxShowAllMonitors.UseVisualStyleBackColor = true;
 			this.checkBoxShowAllMonitors.CheckedChanged += new System.EventHandler(this.checkBoxShowAll_CheckedChanged);
 			// 
@@ -117,7 +117,7 @@
 			// 
 			this.toolStripMenuItemChangeBrightness.Name = "toolStripMenuItemChangeBrightness";
 			this.toolStripMenuItemChangeBrightness.Size = new System.Drawing.Size(219, 22);
-			this.toolStripMenuItemChangeBrightness.Text = "Change monitor brightness";
+			this.toolStripMenuItemChangeBrightness.Text = global::DMT.Resources.GeneralStrings.GeneralMonitorsOptionsPanel_toolStripMenuItemChangeBrightness_Text;
 			this.toolStripMenuItemChangeBrightness.Click += new System.EventHandler(this.toolStripMenuItemChangeBrightness_Click);
 			// 
 			// contextMenuStripChangeContrast
@@ -131,7 +131,7 @@
 			// 
 			this.toolStripMenuItemChangeContrast.Name = "toolStripMenuItemChangeContrast";
 			this.toolStripMenuItemChangeContrast.Size = new System.Drawing.Size(207, 22);
-			this.toolStripMenuItemChangeContrast.Text = "Change monitor contrast";
+			this.toolStripMenuItemChangeContrast.Text = global::DMT.Resources.GeneralStrings.GeneralMonitorsOptionsPanel_toolStripMenuItemChangeContrast_Text;
 			this.toolStripMenuItemChangeContrast.Click += new System.EventHandler(this.toolStripMenuItemChangeContrast_Click);
 			// 
 			// contextMenuStripChangeOrientation
@@ -145,7 +145,7 @@
 			// 
 			this.changeMonitorOrientationToolStripMenuItem.Name = "changeMonitorOrientationToolStripMenuItem";
 			this.changeMonitorOrientationToolStripMenuItem.Size = new System.Drawing.Size(224, 22);
-			this.changeMonitorOrientationToolStripMenuItem.Text = "Change Monitor Orientation";
+			this.changeMonitorOrientationToolStripMenuItem.Text = global::DMT.Resources.GeneralStrings.GeneralMonitorsOptionsPanel_changeMonitorOrientationToolStripMenuItem_Text;
 			this.changeMonitorOrientationToolStripMenuItem.Click += new System.EventHandler(this.toolStripMenuItemChangeOrientation_Click);
 			// 
 			// contextMenuStripEditName
@@ -154,13 +154,13 @@
             this.editMonitorNameToolStripMenuItem});
 			this.contextMenuStripEditName.Name = "contextMenuStripEditName";
 			this.contextMenuStripEditName.Size = new System.Drawing.Size(176, 48);
-			this.contextMenuStripEditName.Text = "Edit Monitor Name";
+			this.contextMenuStripEditName.Text = global::DMT.Resources.GeneralStrings.GeneralMonitorsOptionsPanel_contextMenuStripEditName_Text;
 			// 
 			// editMonitorNameToolStripMenuItem
 			// 
 			this.editMonitorNameToolStripMenuItem.Name = "editMonitorNameToolStripMenuItem";
 			this.editMonitorNameToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
-			this.editMonitorNameToolStripMenuItem.Text = "Edit Monitor Name";
+			this.editMonitorNameToolStripMenuItem.Text = global::DMT.Resources.GeneralStrings.GeneralMonitorsOptionsPanel_editMonitorNameToolStripMenuItem_Text;
 			this.editMonitorNameToolStripMenuItem.Click += new System.EventHandler(this.toolStripMenuItemEditName_Click);
 			// 
 			// GeneralMonitorsOptionsPanel

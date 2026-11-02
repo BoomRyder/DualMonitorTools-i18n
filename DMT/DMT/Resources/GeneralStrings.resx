@@ -166,4 +166,152 @@
   <data name="PortableInstall" xml:space="preserve">
     <value>Portable installation</value>
   </data>
+  <data name="ChangeOrientationForm_label1_Text" xml:space="preserve">
+    <value>Monitor clockwise rotation from default:</value>
+  </data>
+  <data name="ChangeOrientationForm_radioButtonOrientation0_Text" xml:space="preserve">
+    <value>0°</value>
+  </data>
+  <data name="ChangeOrientationForm_radioButtonOrientation90_Text" xml:space="preserve">
+    <value>90°</value>
+  </data>
+  <data name="ChangeOrientationForm_radioButtonOrientation180_Text" xml:space="preserve">
+    <value>180°</value>
+  </data>
+  <data name="ChangeOrientationForm_radioButtonOrientation270_Text" xml:space="preserve">
+    <value>270°</value>
+  </data>
+  <data name="ChangeOrientationForm_buttonOK_Text" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="ChangeOrientationForm_buttonCancel_Text" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="CheckUpdatesForm_labelStatus_Text" xml:space="preserve">
+    <value>Checking for updates...</value>
+  </data>
+  <data name="CheckUpdatesForm_buttonOpenDownload_Text" xml:space="preserve">
+    <value>Open download page</value>
+  </data>
+  <data name="CheckUpdatesForm_buttonInstall_Text" xml:space="preserve">
+    <value>Download and install new version</value>
+  </data>
+  <data name="CheckUpdatesForm_buttonCancel_Text" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="EditMonitorNameForm_label1_Text" xml:space="preserve">
+    <value>Name:</value>
+  </data>
+  <data name="EditMonitorNameForm_buttonOK_Text" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="EditMonitorNameForm_buttonCancel_Text" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="GeneralMonitorNamesOptionsPanel_label1_Text" xml:space="preserve">
+    <value>Your Monitor Name:</value>
+  </data>
+  <data name="GeneralMonitorNamesOptionsPanel_buttonChangeName_Text" xml:space="preserve">
+    <value>Change Name...</value>
+  </data>
+  <data name="GeneralMonitorNamesOptionsPanel_label2_Text" xml:space="preserve">
+    <value>Brand/Name:</value>
+  </data>
+  <data name="GeneralMonitorNamesOptionsPanel_label4_Text" xml:space="preserve">
+    <value>GPU:</value>
+  </data>
+  <data name="GeneralMonitorNamesOptionsPanel_label6_Text" xml:space="preserve">
+    <value>Size:</value>
+  </data>
+  <data name="GeneralMonitorNamesOptionsPanel_label3_Text" xml:space="preserve">
+    <value>This is optional, but allows you to give each physical monitor a name of your own choice which can then be used when selecting monitor order and when selecting the primary working area. 
+</value>
+  </data>
+  <data name="GeneralMonitorOrderingOptionsPanel_groupBoxOrder_Text" xml:space="preserve">
+    <value>Order by</value>
+  </data>
+  <data name="GeneralMonitorOrderingOptionsPanel_buttonNames_Text" xml:space="preserve">
+    <value>Edit...</value>
+  </data>
+  <data name="GeneralMonitorOrderingOptionsPanel_radioButtonNames_Text" xml:space="preserve">
+    <value>Following named monitor order</value>
+  </data>
+  <data name="GeneralMonitorOrderingOptionsPanel_radioButtonTopDown_Text" xml:space="preserve">
+    <value>Top - down, left - right</value>
+  </data>
+  <data name="GeneralMonitorOrderingOptionsPanel_radioButtonDotNet_Text" xml:space="preserve">
+    <value>DotNet order, as used by DMT v2.7 and earlier</value>
+  </data>
+  <data name="GeneralMonitorOrderingOptionsPanel_radioButtonLeftRight_Text" xml:space="preserve">
+    <value>Left - right, top - down</value>
+  </data>
+  <data name="GeneralMonitorOrderingOptionsPanel_label1_Text" xml:space="preserve">
+    <value>Note: This monitor ordering is only used by DMT itself for the Monitors grid, moving windows between monitors and wallpaper generation.</value>
+  </data>
+  <data name="GeneralMonitorsOptionsPanel_toolStripMenuItemChangePrimary_Text" xml:space="preserve">
+    <value>Make this the primary monitor</value>
+  </data>
+  <data name="GeneralMonitorsOptionsPanel_checkBoxShowAllMonitors_Text" xml:space="preserve">
+    <value>Show All Monitors</value>
+  </data>
+  <data name="GeneralMonitorsOptionsPanel_toolStripMenuItemChangeBrightness_Text" xml:space="preserve">
+    <value>Change monitor brightness</value>
+  </data>
+  <data name="GeneralMonitorsOptionsPanel_toolStripMenuItemChangeContrast_Text" xml:space="preserve">
+    <value>Change monitor contrast</value>
+  </data>
+  <data name="GeneralMonitorsOptionsPanel_changeMonitorOrientationToolStripMenuItem_Text" xml:space="preserve">
+    <value>Change Monitor Orientation</value>
+  </data>
+  <data name="GeneralMonitorsOptionsPanel_contextMenuStripEditName_Text" xml:space="preserve">
+    <value>Edit Monitor Name</value>
+  </data>
+  <data name="GeneralMonitorsOptionsPanel_editMonitorNameToolStripMenuItem_Text" xml:space="preserve">
+    <value>Edit Monitor Name</value>
+  </data>
+  <data name="GeneralOptionsPanel_checkBoxAutoStart_Text" xml:space="preserve">
+    <value>Start when Windows starts</value>
+  </data>
+  <data name="GeneralOptionsPanel_groupBox1_Text" xml:space="preserve">
+    <value>File Locations</value>
+  </data>
+  <data name="GeneralOptionsPanel_label5_Text" xml:space="preserve">
+    <value>Executable:</value>
+  </data>
+  <data name="GeneralOptionsPanel_label4_Text" xml:space="preserve">
+    <value>Log:</value>
+  </data>
+  <data name="GeneralOptionsPanel_label3_Text" xml:space="preserve">
+    <value>Wallpaper Providers:</value>
+  </data>
+  <data name="GeneralOptionsPanel_label2_Text" xml:space="preserve">
+    <value>Magic Words:</value>
+  </data>
+  <data name="GeneralOptionsPanel_label1_Text" xml:space="preserve">
+    <value>Settings:</value>
+  </data>
+  <data name="GeneralOptionsPanel_groupBox2_Text" xml:space="preserve">
+    <value>Installed Version</value>
+  </data>
+  <data name="GeneralOptionsPanel_buttonCheckUpdates_Text" xml:space="preserve">
+    <value>Check for Updates</value>
+  </data>
+  <data name="GeneralOptionsPanel_label8_Text" xml:space="preserve">
+    <value>Install Type:</value>
+  </data>
+  <data name="GeneralOptionsPanel_label6_Text" xml:space="preserve">
+    <value>Version:</value>
+  </data>
+  <data name="GeneralOptionsPanel_groupBox3_Text" xml:space="preserve">
+    <value>About</value>
+  </data>
+  <data name="GeneralOptionsPanel_checkBoxContextMenu_Text" xml:space="preserve">
+    <value>Add to desktop context menu</value>
+  </data>
+  <data name="GeneralRootOptionsPanel_label3_Text" xml:space="preserve">
+    <value>Settings that are common to all of the tools.</value>
+  </data>
+  <data name="GeneralRootOptionsPanel_label1_Text" xml:space="preserve">
+    <value>Dual Monitor Tools</value>
+  </data>
 </root>

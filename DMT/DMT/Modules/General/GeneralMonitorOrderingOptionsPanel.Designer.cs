@@ -63,7 +63,7 @@
 			this.groupBoxOrder.Size = new System.Drawing.Size(494, 144);
 			this.groupBoxOrder.TabIndex = 2;
 			this.groupBoxOrder.TabStop = false;
-			this.groupBoxOrder.Text = "Order by";
+			this.groupBoxOrder.Text = global::DMT.Resources.GeneralStrings.GeneralMonitorOrderingOptionsPanel_groupBoxOrder_Text;
 			// 
 			// buttonNames
 			// 
@@ -71,7 +71,7 @@
 			this.buttonNames.Name = "buttonNames";
 			this.buttonNames.Size = new System.Drawing.Size(75, 23);
 			this.buttonNames.TabIndex = 5;
-			this.buttonNames.Text = "Edit...";
+			this.buttonNames.Text = global::DMT.Resources.GeneralStrings.GeneralMonitorOrderingOptionsPanel_buttonNames_Text;
 			this.buttonNames.UseVisualStyleBackColor = true;
 			this.buttonNames.Click += new System.EventHandler(this.buttonNames_Click);
 			// 
@@ -91,7 +91,7 @@
 			this.radioButtonNames.Size = new System.Drawing.Size(168, 17);
 			this.radioButtonNames.TabIndex = 3;
 			this.radioButtonNames.TabStop = true;
-			this.radioButtonNames.Text = "Following named monitor order";
+			this.radioButtonNames.Text = global::DMT.Resources.GeneralStrings.GeneralMonitorOrderingOptionsPanel_radioButtonNames_Text;
 			this.radioButtonNames.UseVisualStyleBackColor = true;
 			this.radioButtonNames.CheckedChanged += new System.EventHandler(this.radioButtonNames_CheckedChanged);
 			// 
@@ -103,7 +103,7 @@
 			this.radioButtonTopDown.Size = new System.Drawing.Size(128, 17);
 			this.radioButtonTopDown.TabIndex = 1;
 			this.radioButtonTopDown.TabStop = true;
-			this.radioButtonTopDown.Text = "Top - down, left - right";
+			this.radioButtonTopDown.Text = global::DMT.Resources.GeneralStrings.GeneralMonitorOrderingOptionsPanel_radioButtonTopDown_Text;
 			this.radioButtonTopDown.UseVisualStyleBackColor = true;
 			this.radioButtonTopDown.CheckedChanged += new System.EventHandler(this.radioButtonTopDown_CheckedChanged);
 			// 
@@ -115,7 +115,7 @@
 			this.radioButtonDotNet.Size = new System.Drawing.Size(246, 17);
 			this.radioButtonDotNet.TabIndex = 2;
 			this.radioButtonDotNet.TabStop = true;
-			this.radioButtonDotNet.Text = "DotNet order, as used by DMT v2.7 and earlier";
+			this.radioButtonDotNet.Text = global::DMT.Resources.GeneralStrings.GeneralMonitorOrderingOptionsPanel_radioButtonDotNet_Text;
 			this.radioButtonDotNet.UseVisualStyleBackColor = true;
 			this.radioButtonDotNet.CheckedChanged += new System.EventHandler(this.radioButtonDotNet_CheckedChanged);
 			// 
@@ -127,7 +127,7 @@
 			this.radioButtonLeftRight.Size = new System.Drawing.Size(128, 17);
 			this.radioButtonLeftRight.TabIndex = 0;
 			this.radioButtonLeftRight.TabStop = true;
-			this.radioButtonLeftRight.Text = "Left - right, top - down";
+			this.radioButtonLeftRight.Text = global::DMT.Resources.GeneralStrings.GeneralMonitorOrderingOptionsPanel_radioButtonLeftRight_Text;
 			this.radioButtonLeftRight.UseVisualStyleBackColor = true;
 			this.radioButtonLeftRight.CheckedChanged += new System.EventHandler(this.radioButtonLeftRight_CheckedChanged);
 			// 
@@ -137,8 +137,7 @@
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(491, 34);
 			this.label1.TabIndex = 3;
-			this.label1.Text = "Note: This monitor ordering is only used by DMT itself for the Monitors grid, mov" +
-    "ing windows between monitors and wallpaper generation.";
+			this.label1.Text = global::DMT.Resources.GeneralStrings.GeneralMonitorOrderingOptionsPanel_label1_Text;
 			// 
 			// GeneralMonitorOrderingOptionsPanel
 			// 

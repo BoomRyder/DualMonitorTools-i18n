@@ -42,7 +42,7 @@
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(38, 13);
 			this.label1.TabIndex = 0;
-			this.label1.Text = "Name:";
+			this.label1.Text = global::DMT.Resources.GeneralStrings.EditMonitorNameForm_label1_Text;
 			// 
 			// textBoxName
 			// 
@@ -66,7 +66,7 @@
 			this.buttonOK.Name = "buttonOK";
 			this.buttonOK.Size = new System.Drawing.Size(75, 23);
 			this.buttonOK.TabIndex = 3;
-			this.buttonOK.Text = "OK";
+			this.buttonOK.Text = global::DMT.Resources.GeneralStrings.EditMonitorNameForm_buttonOK_Text;
 			this.buttonOK.UseVisualStyleBackColor = true;
 			this.buttonOK.Click += new System.EventHandler(this.buttonOK_Click);
 			// 
@@ -77,7 +77,7 @@
 			this.buttonCancel.Name = "buttonCancel";
 			this.buttonCancel.Size = new System.Drawing.Size(75, 23);
 			this.buttonCancel.TabIndex = 4;
-			this.buttonCancel.Text = "Cancel";
+			this.buttonCancel.Text = global::DMT.Resources.GeneralStrings.EditMonitorNameForm_buttonCancel_Text;
 			this.buttonCancel.UseVisualStyleBackColor = true;
 			this.buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);
 			// 
