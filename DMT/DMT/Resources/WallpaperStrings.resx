@@ -194,4 +194,487 @@ Use the 'Providers' option panel to add providers.</value>
   <data name="WallpaperPropertiesDescription" xml:space="preserve">
     <value>Properties of the last wallpaper created by DMT</value>
   </data>
+  <data name="BingBingForm_buttonCancel_Text" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="BingBingForm_buttonOK_Text" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="BingBingForm_label2_Text" xml:space="preserve">
+    <value>Description:</value>
+  </data>
+  <data name="BingBingForm_label4_Text" xml:space="preserve">
+    <value>Weight:</value>
+  </data>
+  <data name="BingBingForm_linkLabel_Text" xml:space="preserve">
+    <value>Plugin for DualWallpaperChanger to get images from </value>
+  </data>
+  <data name="BingBingForm_checkBoxEnabled_Text" xml:space="preserve">
+    <value>Enabled</value>
+  </data>
+  <data name="BingBingForm_label1_Text" xml:space="preserve">
+    <value>Bing Locale:</value>
+  </data>
+  <data name="FlickrFlickrForm_linkLabel_Text" xml:space="preserve">
+    <value>Image provider to get images from </value>
+  </data>
+  <data name="FlickrFlickrForm_checkBoxRandomPage_Text" xml:space="preserve">
+    <value>Take image from random page (rather than page containing latest added photos)</value>
+  </data>
+  <data name="FlickrFlickrForm_buttonCancel_Text" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="FlickrFlickrForm_buttonOK_Text" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="FlickrFlickrForm_label2_Text" xml:space="preserve">
+    <value>Description:</value>
+  </data>
+  <data name="FlickrFlickrForm_label4_Text" xml:space="preserve">
+    <value>Weight:</value>
+  </data>
+  <data name="FlickrFlickrForm_label1_Text" xml:space="preserve">
+    <value>Tags:</value>
+  </data>
+  <data name="FlickrForm_textBoxTags_ToolTip" xml:space="preserve">
+    <value>Comma separated list of tags</value>
+  </data>
+  <data name="FlickrFlickrForm_checkBoxTagMode_Text" xml:space="preserve">
+    <value>Photos must have all or the above tags</value>
+  </data>
+  <data name="FlickrFlickrForm_label3_Text" xml:space="preserve">
+    <value>Text:</value>
+  </data>
+  <data name="FlickrFlickrForm_label5_Text" xml:space="preserve">
+    <value>User Id:</value>
+  </data>
+  <data name="FlickrFlickrForm_label6_Text" xml:space="preserve">
+    <value>Group Id:</value>
+  </data>
+  <data name="FlickrFlickrForm_label7_Text" xml:space="preserve">
+    <value>API Key:</value>
+  </data>
+  <data name="FlickrForm_textBoxApiKey_ToolTip" xml:space="preserve">
+    <value>This needs to be obtained from flickr</value>
+  </data>
+  <data name="FlickrFlickrForm_buttonTest_Text" xml:space="preserve">
+    <value>Test Search Criteria</value>
+  </data>
+  <data name="FlickrFlickrForm_checkBoxEnabled_Text" xml:space="preserve">
+    <value>Enabled</value>
+  </data>
+  <data name="FlickrNoFlickrApiKeyForm_label1_Text" xml:space="preserve">
+    <value>A flickr API key must be specified.</value>
+  </data>
+  <data name="FlickrNoFlickrApiKeyForm_linkLabelFlickr_Text" xml:space="preserve">
+    <value>If you don't have one, you may obtain one from </value>
+  </data>
+  <data name="FlickrNoFlickrApiKeyForm_label2_Text" xml:space="preserve">
+    <value>You will need a flickr/yahoo account first.</value>
+  </data>
+  <data name="FlickrNoFlickrApiKeyForm_buttonOK_Text" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="ListListAutoGenForm_label1_Text" xml:space="preserve">
+    <value>Creates a text file (specified by 'List Path') containing a list of image files found in the specified folder for use by the List provider.</value>
+  </data>
+  <data name="ListListAutoGenForm_label2_Text" xml:space="preserve">
+    <value>List Path:</value>
+  </data>
+  <data name="ListListAutoGenForm_buttonBrowseList_Text" xml:space="preserve">
+    <value>Browse ...</value>
+  </data>
+  <data name="ListListAutoGenForm_label3_Text" xml:space="preserve">
+    <value>Folder:</value>
+  </data>
+  <data name="ListListAutoGenForm_buttonBrowseFolder_Text" xml:space="preserve">
+    <value>Browse ...</value>
+  </data>
+  <data name="ListListAutoGenForm_checkBoxRecursive_Text" xml:space="preserve">
+    <value>Look in sub-Folders</value>
+  </data>
+  <data name="ListListAutoGenForm_buttonCancel_Text" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="ListListAutoGenForm_buttonOK_Text" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="ListListForm_label2_Text" xml:space="preserve">
+    <value>Description:</value>
+  </data>
+  <data name="ListListForm_label1_Text" xml:space="preserve">
+    <value>Weight:</value>
+  </data>
+  <data name="ListListForm_label4_Text" xml:space="preserve">
+    <value>Image provider that reads a file contaning a list of paths and URLs to images</value>
+  </data>
+  <data name="ListListForm_buttonCancel_Text" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="ListListForm_buttonOK_Text" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="ListListForm_checkBoxPersist_Text" xml:space="preserve">
+    <value>Remember position between shutdowns</value>
+  </data>
+  <data name="ListListForm_checkBoxEnabled_Text" xml:space="preserve">
+    <value>Enabled</value>
+  </data>
+  <data name="ListListForm_groupBox2_Text" xml:space="preserve">
+    <value>Ordering</value>
+  </data>
+  <data name="ListListForm_radioButtonOrderList_Text" xml:space="preserve">
+    <value>In List Order</value>
+  </data>
+  <data name="ListListForm_radioButtonOrderRandom_Text" xml:space="preserve">
+    <value>Random</value>
+  </data>
+  <data name="ListListForm_label3_Text" xml:space="preserve">
+    <value>List Path:</value>
+  </data>
+  <data name="ListListForm_buttonBrowse_Text" xml:space="preserve">
+    <value>Browse...</value>
+  </data>
+  <data name="ListListForm_buttonAutoGenerate_Text" xml:space="preserve">
+    <value>Auto Generate...</value>
+  </data>
+  <data name="LocalDiskLocalDiskForm_buttonBrowse_Text" xml:space="preserve">
+    <value>Browse...</value>
+  </data>
+  <data name="LocalDiskLocalDiskForm_label3_Text" xml:space="preserve">
+    <value>Default:</value>
+  </data>
+  <data name="LocalDiskLocalDiskForm_label2_Text" xml:space="preserve">
+    <value>Description:</value>
+  </data>
+  <data name="LocalDiskLocalDiskForm_label1_Text" xml:space="preserve">
+    <value>Weight:</value>
+  </data>
+  <data name="LocalDiskLocalDiskForm_label4_Text" xml:space="preserve">
+    <value>Image provider to get images stored on local disk</value>
+  </data>
+  <data name="LocalDiskLocalDiskForm_buttonCancel_Text" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="LocalDiskLocalDiskForm_buttonOK_Text" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="LocalDiskLocalDiskForm_checkBoxRescan_Text" xml:space="preserve">
+    <value>Rescan folder(s) before getting each image</value>
+  </data>
+  <data name="LocalDiskLocalDiskForm_checkBoxRecursive_Text" xml:space="preserve">
+    <value>Look in sub-folders</value>
+  </data>
+  <data name="LocalDiskLocalDiskForm_buttonBrowsePortrait_Text" xml:space="preserve">
+    <value>Browse...</value>
+  </data>
+  <data name="LocalDiskLocalDiskForm_label5_Text" xml:space="preserve">
+    <value>Portrait Monitors:</value>
+  </data>
+  <data name="LocalDiskLocalDiskForm_groupBox1_Text" xml:space="preserve">
+    <value>Folder(s) to take images from (in priority order)</value>
+  </data>
+  <data name="LocalDiskLocalDiskForm_buttonBrowseMonitor4_Text" xml:space="preserve">
+    <value>Browse...</value>
+  </data>
+  <data name="LocalDiskLocalDiskForm_label9_Text" xml:space="preserve">
+    <value>Monitor 4:</value>
+  </data>
+  <data name="LocalDiskLocalDiskForm_buttonBrowseMonitor3_Text" xml:space="preserve">
+    <value>Browse...</value>
+  </data>
+  <data name="LocalDiskLocalDiskForm_label8_Text" xml:space="preserve">
+    <value>Monitor 3:</value>
+  </data>
+  <data name="LocalDiskLocalDiskForm_buttonBrowseMonitor2_Text" xml:space="preserve">
+    <value>Browse...</value>
+  </data>
+  <data name="LocalDiskLocalDiskForm_label7_Text" xml:space="preserve">
+    <value>Monitor 2:</value>
+  </data>
+  <data name="LocalDiskLocalDiskForm_checkBoxAllowFileBrowse_Text" xml:space="preserve">
+    <value>File Browse (experimental)</value>
+  </data>
+  <data name="LocalDiskLocalDiskForm_buttonBrowseMonitor1_Text" xml:space="preserve">
+    <value>Browse...</value>
+  </data>
+  <data name="LocalDiskLocalDiskForm_label6_Text" xml:space="preserve">
+    <value>Monitor 1:</value>
+  </data>
+  <data name="LocalDiskLocalDiskForm_checkBoxCycle_Text" xml:space="preserve">
+    <value>Cycle through all images before repeating (mutually exclusive with above)</value>
+  </data>
+  <data name="LocalDiskLocalDiskForm_checkBoxEnabled_Text" xml:space="preserve">
+    <value>Enabled</value>
+  </data>
+  <data name="LocalDiskLocalDiskForm_groupBox2_Text" xml:space="preserve">
+    <value>Ordering</value>
+  </data>
+  <data name="LocalDiskLocalDiskForm_radioButtonOrderAlphabetical_Text" xml:space="preserve">
+    <value>Alphabetical</value>
+  </data>
+  <data name="LocalDiskLocalDiskForm_radioButtonOrderRandom_Text" xml:space="preserve">
+    <value>Random</value>
+  </data>
+  <data name="LocalDiskLocalDiskForm_groupBox3_Text" xml:space="preserve">
+    <value>Current order options</value>
+  </data>
+  <data name="RandomShapesRandomShapesForm_checkBoxRectangles_Text" xml:space="preserve">
+    <value>Rectamgles</value>
+  </data>
+  <data name="RandomShapesRandomShapesForm_checkBoxEllipses_Text" xml:space="preserve">
+    <value>Ellipses</value>
+  </data>
+  <data name="RandomShapesRandomShapesForm_checkBoxUseAlpha_Text" xml:space="preserve">
+    <value>Make shapes opaque</value>
+  </data>
+  <data name="RandomShapesRandomShapesForm_label4_Text" xml:space="preserve">
+    <value>Plugin for DualWallpaperChanger to create images composed of random shapes</value>
+  </data>
+  <data name="RandomShapesRandomShapesForm_buttonCancel_Text" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="RandomShapesRandomShapesForm_buttonOK_Text" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="RandomShapesRandomShapesForm_label2_Text" xml:space="preserve">
+    <value>Description:</value>
+  </data>
+  <data name="RandomShapesRandomShapesForm_checkBoxUseGradients_Text" xml:space="preserve">
+    <value>Fill shapes with gradients</value>
+  </data>
+  <data name="RandomShapesRandomShapesForm_checkBoxRandomBackground_Text" xml:space="preserve">
+    <value>Random background colour</value>
+  </data>
+  <data name="RandomShapesRandomShapesForm_groupBox2_Text" xml:space="preserve">
+    <value>Paint style</value>
+  </data>
+  <data name="RandomShapesRandomShapesForm_groupBox1_Text" xml:space="preserve">
+    <value>Use following shapes</value>
+  </data>
+  <data name="RandomShapesRandomShapesForm_label3_Text" xml:space="preserve">
+    <value>Shapes:</value>
+  </data>
+  <data name="RandomShapesRandomShapesForm_label1_Text" xml:space="preserve">
+    <value>Weight:</value>
+  </data>
+  <data name="RandomShapesRandomShapesForm_checkBoxEnabled_Text" xml:space="preserve">
+    <value>Enabled</value>
+  </data>
+  <data name="UnsplashWebScrapeForm_linkLabel_Text" xml:space="preserve">
+    <value>Image provider to get images from </value>
+  </data>
+  <data name="UnsplashWebScrapeForm_buttonCancel_Text" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="UnsplashWebScrapeForm_buttonOK_Text" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="UnsplashWebScrapeForm_label2_Text" xml:space="preserve">
+    <value>Description:</value>
+  </data>
+  <data name="UnsplashWebScrapeForm_label4_Text" xml:space="preserve">
+    <value>Weight:</value>
+  </data>
+  <data name="UnsplashWebScrapeForm_groupBox1_Text" xml:space="preserve">
+    <value>Take random image from:</value>
+  </data>
+  <data name="UnsplashWebScrapeForm_radioButtonUserLike_Text" xml:space="preserve">
+    <value>Photos liked by user:</value>
+  </data>
+  <data name="UnsplashWebScrapeForm_radioButtonUser_Text" xml:space="preserve">
+    <value>User's Photos:</value>
+  </data>
+  <data name="UnsplashWebScrapeForm_radioButtonCategory_Text" xml:space="preserve">
+    <value>Category:</value>
+  </data>
+  <data name="UnsplashWebScrapeForm_radioButtonFeatured_Text" xml:space="preserve">
+    <value>Feautued</value>
+  </data>
+  <data name="UnsplashWebScrapeForm_radioButtonAll_Text" xml:space="preserve">
+    <value>All</value>
+  </data>
+  <data name="UnsplashWebScrapeForm_label1_Text" xml:space="preserve">
+    <value>Filter by:</value>
+  </data>
+  <data name="UnsplashWebScrapeForm_checkBoxEnabled_Text" xml:space="preserve">
+    <value>Enabled</value>
+  </data>
+  <data name="UnsplashWebScrapeForm_label3_Text" xml:space="preserve">
+    <value>This is temporarily unavailable due to a change in the Unsplash API</value>
+  </data>
+  <data name="UrlWebScrapeForm_buttonCancel_Text" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="UrlWebScrapeForm_buttonOK_Text" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="UrlWebScrapeForm_label2_Text" xml:space="preserve">
+    <value>Description:</value>
+  </data>
+  <data name="UrlWebScrapeForm_label4_Text" xml:space="preserve">
+    <value>Weight:</value>
+  </data>
+  <data name="UrlWebScrapeForm_label1_Text" xml:space="preserve">
+    <value>URL:</value>
+  </data>
+  <data name="UrlWebScrapeForm_label3_Text" xml:space="preserve">
+    <value>Get images from Url</value>
+  </data>
+  <data name="UrlWebScrapeForm_labelEscapeHeight_Text" xml:space="preserve">
+    <value>%H -&gt; Screen height</value>
+  </data>
+  <data name="UrlWebScrapeForm_labelEscapeWidth_Text" xml:space="preserve">
+    <value>%W -&gt; Screen width</value>
+  </data>
+  <data name="UrlWebScrapeForm_labelEscapeEscape_Text" xml:space="preserve">
+    <value>%% -&gt; %</value>
+  </data>
+  <data name="UrlWebScrapeForm_checkBoxEnableEscapes_Text" xml:space="preserve">
+    <value>Enable escapes in above URL:</value>
+  </data>
+  <data name="UrlWebScrapeForm_checkBoxEnabled_Text" xml:space="preserve">
+    <value>Enabled</value>
+  </data>
+  <data name="ProviderForm_ProviderImage_HeaderText" xml:space="preserve">
+    <value>Provider</value>
+  </data>
+  <data name="ProviderForm_ProviderName_HeaderText" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="ProviderForm_buttonCancel_Text" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="ProviderForm_buttonOK_Text" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="ProviderForm_label1_Text" xml:space="preserve">
+    <value>Select required image provider</value>
+  </data>
+  <data name="WallpaperChangerGeneralOptionsPanel_labelNextChange_Text" xml:space="preserve">
+    <value>Next change in</value>
+  </data>
+  <data name="WallpaperChangerGeneralOptionsPanel_buttonChangeWallpaper_Text" xml:space="preserve">
+    <value>Change Wallpaper Now</value>
+  </data>
+  <data name="WallpaperChangerGeneralOptionsPanel_label3_Text" xml:space="preserve">
+    <value>Multi Monitor:</value>
+  </data>
+  <data name="WallpaperChangerGeneralOptionsPanel_label2_Text" xml:space="preserve">
+    <value>Background Colour:</value>
+  </data>
+  <data name="WallpaperChangerGeneralOptionsPanel_label1_Text" xml:space="preserve">
+    <value>Fit:</value>
+  </data>
+  <data name="WallpaperChangerGeneralOptionsPanel_checkBoxChangePeriodically_Text" xml:space="preserve">
+    <value>Change wallpaper periodically</value>
+  </data>
+  <data name="WallpaperChangerGeneralOptionsPanel_labelPeriod3_Text" xml:space="preserve">
+    <value>Minutes</value>
+  </data>
+  <data name="WallpaperChangerGeneralOptionsPanel_labelPeriod2_Text" xml:space="preserve">
+    <value>Hours</value>
+  </data>
+  <data name="WallpaperChangerGeneralOptionsPanel_labelPeriod1_Text" xml:space="preserve">
+    <value>Time between changes:</value>
+  </data>
+  <data name="WallpaperChangerGeneralOptionsPanel_checkBoxChangeOnStart_Text" xml:space="preserve">
+    <value>Change wallpaper on startup</value>
+  </data>
+  <data name="WallpaperChangerGeneralOptionsPanel_groupBox1_Text" xml:space="preserve">
+    <value>HotKey</value>
+  </data>
+  <data name="WallpaperChangerGeneralOptionsPanel_checkBoxFade_Text" xml:space="preserve">
+    <value>Use smooth fade when changing wallpaper</value>
+  </data>
+  <data name="WallpaperChangerGeneralOptionsPanel_checkBoxChangeOnResolutionChange_Text" xml:space="preserve">
+    <value>Change when monitors / resolutions change</value>
+  </data>
+  <data name="WallpaperChangerGeneralOptionsPanel_checkBoxFitAspectRatio_Text" xml:space="preserve">
+    <value>Maintain aspect ratio</value>
+  </data>
+  <data name="WallpaperChangerGeneralOptionsPanel_checkBoxFitClip_Text" xml:space="preserve">
+    <value>Avoid horizontal/vertical bars</value>
+  </data>
+  <data name="WallpaperChangerGeneralOptionsPanel_checkBoxFitEnlarge_Text" xml:space="preserve">
+    <value>Expand image (if needed) to fit</value>
+  </data>
+  <data name="WallpaperChangerGeneralOptionsPanel_checkBoxFitShrink_Text" xml:space="preserve">
+    <value>Shrink image (if needed) to fit</value>
+  </data>
+  <data name="WallpaperChangerGeneralOptionsPanel_label4_Text" xml:space="preserve">
+    <value>Output wallpaper format:</value>
+  </data>
+  <data name="WallpaperChangerGeneralOptionsPanel_label5_Text" xml:space="preserve">
+    <value>Quality:</value>
+  </data>
+  <data name="WallpaperChangerGeneralOptionsPanel_checkBoxDontChangeIfBusy_Text" xml:space="preserve">
+    <value>But not if running full screen game or presentation</value>
+  </data>
+  <data name="WallpaperChangerPropertiesOptionsPanel_picPreview_ToolTip" xml:space="preserve">
+    <value>Click on monitor to see information about the image displayed on it.</value>
+  </data>
+  <data name="WallpaperChangerPropertiesOptionsPanel_groupBox1_Text" xml:space="preserve">
+    <value>Source Image Properties</value>
+  </data>
+  <data name="WallpaperChangerPropertiesOptionsPanel_label5_Text" xml:space="preserve">
+    <value>Source Size:</value>
+  </data>
+  <data name="WallpaperChangerPropertiesOptionsPanel_label4_Text" xml:space="preserve">
+    <value>Image Details:</value>
+  </data>
+  <data name="WallpaperChangerPropertiesOptionsPanel_label3_Text" xml:space="preserve">
+    <value>Photographer:</value>
+  </data>
+  <data name="WallpaperChangerPropertiesOptionsPanel_label2_Text" xml:space="preserve">
+    <value>Image Source:</value>
+  </data>
+  <data name="WallpaperChangerPropertiesOptionsPanel_label1_Text" xml:space="preserve">
+    <value>Provider:</value>
+  </data>
+  <data name="WallpaperChangerPropertiesOptionsPanel_labelProperties_Text" xml:space="preserve">
+    <value>Details will appear here when DMT creates a wallpaper</value>
+  </data>
+  <data name="WallpaperChangerProvidersOptionsPanel_Enabled_HeaderText" xml:space="preserve">
+    <value>Enabled</value>
+  </data>
+  <data name="WallpaperChangerProvidersOptionsPanel_Weight_HeaderText" xml:space="preserve">
+    <value>Weight</value>
+  </data>
+  <data name="WallpaperChangerProvidersOptionsPanel_ProviderImage_HeaderText" xml:space="preserve">
+    <value>Provider</value>
+  </data>
+  <data name="WallpaperChangerProvidersOptionsPanel_ProviderName_HeaderText" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="WallpaperChangerProvidersOptionsPanel_Description_HeaderText" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="WallpaperChangerProvidersOptionsPanel_buttonDelete_Text" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="WallpaperChangerProvidersOptionsPanel_buttonEdit_Text" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="WallpaperChangerProvidersOptionsPanel_buttonAdd_Text" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="WallpaperChangerRootOptionsPanel_label3_Text" xml:space="preserve">
+    <value>Settings to control changing the desktop wallpaper.</value>
+  </data>
+  <data name="WallpaperChangerRootOptionsPanel_label1_Text" xml:space="preserve">
+    <value>Wallpaper Changer Module</value>
+  </data>
+  <data name="Node_General" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="Node_Properties" xml:space="preserve">
+    <value>Properties</value>
+  </data>
+  <data name="Node_Providers" xml:space="preserve">
+    <value>Providers</value>
+  </data>
+  <data name="Node_WallpaperChanger" xml:space="preserve">
+    <value>Wallpaper Changer</value>
+  </data>
 </root>

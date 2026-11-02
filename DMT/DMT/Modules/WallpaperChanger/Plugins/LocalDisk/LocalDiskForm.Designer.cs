@@ -78,7 +78,7 @@
 			this.buttonBrowse.Name = "buttonBrowse";
 			this.buttonBrowse.Size = new System.Drawing.Size(75, 23);
 			this.buttonBrowse.TabIndex = 18;
-			this.buttonBrowse.Text = "Browse...";
+			this.buttonBrowse.Text = global::DMT.Resources.WallpaperStrings.LocalDiskLocalDiskForm_buttonBrowse_Text;
 			this.buttonBrowse.UseVisualStyleBackColor = true;
 			this.buttonBrowse.Click += new System.EventHandler(this.buttonBrowse_Click);
 			// 
@@ -96,7 +96,7 @@
 			this.label3.Name = "label3";
 			this.label3.Size = new System.Drawing.Size(44, 13);
 			this.label3.TabIndex = 16;
-			this.label3.Text = "Default:";
+			this.label3.Text = global::DMT.Resources.WallpaperStrings.LocalDiskLocalDiskForm_label3_Text;
 			// 
 			// textBoxDescription
 			// 
@@ -112,7 +112,7 @@
 			this.label2.Name = "label2";
 			this.label2.Size = new System.Drawing.Size(63, 13);
 			this.label2.TabIndex = 4;
-			this.label2.Text = "Description:";
+			this.label2.Text = global::DMT.Resources.WallpaperStrings.LocalDiskLocalDiskForm_label2_Text;
 			// 
 			// numericUpDownWeight
 			// 
@@ -133,7 +133,7 @@
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(44, 13);
 			this.label1.TabIndex = 1;
-			this.label1.Text = "Weight:";
+			this.label1.Text = global::DMT.Resources.WallpaperStrings.LocalDiskLocalDiskForm_label1_Text;
 			// 
 			// pictureBox1
 			// 
@@ -151,7 +151,7 @@
 			this.label4.Name = "label4";
 			this.label4.Size = new System.Drawing.Size(237, 13);
 			this.label4.TabIndex = 0;
-			this.label4.Text = "Image provider to get images stored on local disk";
+			this.label4.Text = global::DMT.Resources.WallpaperStrings.LocalDiskLocalDiskForm_label4_Text;
 			// 
 			// buttonCancel
 			// 
@@ -160,7 +160,7 @@
 			this.buttonCancel.Name = "buttonCancel";
 			this.buttonCancel.Size = new System.Drawing.Size(75, 23);
 			this.buttonCancel.TabIndex = 11;
-			this.buttonCancel.Text = "Cancel";
+			this.buttonCancel.Text = global::DMT.Resources.WallpaperStrings.LocalDiskLocalDiskForm_buttonCancel_Text;
 			this.buttonCancel.UseVisualStyleBackColor = true;
 			this.buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);
 			// 
@@ -170,7 +170,7 @@
 			this.buttonOK.Name = "buttonOK";
 			this.buttonOK.Size = new System.Drawing.Size(75, 23);
 			this.buttonOK.TabIndex = 10;
-			this.buttonOK.Text = "OK";
+			this.buttonOK.Text = global::DMT.Resources.WallpaperStrings.LocalDiskLocalDiskForm_buttonOK_Text;
 			this.buttonOK.UseVisualStyleBackColor = true;
 			this.buttonOK.Click += new System.EventHandler(this.buttonOK_Click);
 			// 
@@ -181,7 +181,7 @@
 			this.checkBoxRescan.Name = "checkBoxRescan";
 			this.checkBoxRescan.Size = new System.Drawing.Size(229, 17);
 			this.checkBoxRescan.TabIndex = 8;
-			this.checkBoxRescan.Text = "Rescan folder(s) before getting each image";
+			this.checkBoxRescan.Text = global::DMT.Resources.WallpaperStrings.LocalDiskLocalDiskForm_checkBoxRescan_Text;
 			this.checkBoxRescan.UseVisualStyleBackColor = true;
 			this.checkBoxRescan.CheckedChanged += new System.EventHandler(this.checkBoxRescan_CheckedChanged);
 			// 
@@ -192,7 +192,7 @@
 			this.checkBoxRecursive.Name = "checkBoxRecursive";
 			this.checkBoxRecursive.Size = new System.Drawing.Size(115, 17);
 			this.checkBoxRecursive.TabIndex = 7;
-			this.checkBoxRecursive.Text = "Look in sub-folders";
+			this.checkBoxRecursive.Text = global::DMT.Resources.WallpaperStrings.LocalDiskLocalDiskForm_checkBoxRecursive_Text;
 			this.checkBoxRecursive.UseVisualStyleBackColor = true;
 			// 
 			// buttonBrowsePortrait
@@ -201,7 +201,7 @@
 			this.buttonBrowsePortrait.Name = "buttonBrowsePortrait";
 			this.buttonBrowsePortrait.Size = new System.Drawing.Size(75, 23);
 			this.buttonBrowsePortrait.TabIndex = 15;
-			this.buttonBrowsePortrait.Text = "Browse...";
+			this.buttonBrowsePortrait.Text = global::DMT.Resources.WallpaperStrings.LocalDiskLocalDiskForm_buttonBrowsePortrait_Text;
 			this.buttonBrowsePortrait.UseVisualStyleBackColor = true;
 			this.buttonBrowsePortrait.Click += new System.EventHandler(this.buttonBrowsePortrait_Click);
 			// 
@@ -219,7 +219,7 @@
 			this.label5.Name = "label5";
 			this.label5.Size = new System.Drawing.Size(86, 13);
 			this.label5.TabIndex = 13;
-			this.label5.Text = "Portrait Monitors:";
+			this.label5.Text = global::DMT.Resources.WallpaperStrings.LocalDiskLocalDiskForm_label5_Text;
 			// 
 			// groupBox1
 			// 
@@ -247,7 +247,7 @@
 			this.groupBox1.Size = new System.Drawing.Size(668, 206);
 			this.groupBox1.TabIndex = 6;
 			this.groupBox1.TabStop = false;
-			this.groupBox1.Text = "Folder(s) to take images from (in priority order)";
+			this.groupBox1.Text = global::DMT.Resources.WallpaperStrings.LocalDiskLocalDiskForm_groupBox1_Text;
 			// 
 			// buttonBrowseMonitor4
 			// 
@@ -255,7 +255,7 @@
 			this.buttonBrowseMonitor4.Name = "buttonBrowseMonitor4";
 			this.buttonBrowseMonitor4.Size = new System.Drawing.Size(75, 23);
 			this.buttonBrowseMonitor4.TabIndex = 12;
-			this.buttonBrowseMonitor4.Text = "Browse...";
+			this.buttonBrowseMonitor4.Text = global::DMT.Resources.WallpaperStrings.LocalDiskLocalDiskForm_buttonBrowseMonitor4_Text;
 			this.buttonBrowseMonitor4.UseVisualStyleBackColor = true;
 			this.buttonBrowseMonitor4.Click += new System.EventHandler(this.buttonBrowseMonitor4_Click);
 			// 
@@ -273,7 +273,7 @@
 			this.label9.Name = "label9";
 			this.label9.Size = new System.Drawing.Size(54, 13);
 			this.label9.TabIndex = 10;
-			this.label9.Text = "Monitor 4:";
+			this.label9.Text = global::DMT.Resources.WallpaperStrings.LocalDiskLocalDiskForm_label9_Text;
 			// 
 			// buttonBrowseMonitor3
 			// 
@@ -281,7 +281,7 @@
 			this.buttonBrowseMonitor3.Name = "buttonBrowseMonitor3";
 			this.buttonBrowseMonitor3.Size = new System.Drawing.Size(75, 23);
 			this.buttonBrowseMonitor3.TabIndex = 9;
-			this.buttonBrowseMonitor3.Text = "Browse...";
+			this.buttonBrowseMonitor3.Text = global::DMT.Resources.WallpaperStrings.LocalDiskLocalDiskForm_buttonBrowseMonitor3_Text;
 			this.buttonBrowseMonitor3.UseVisualStyleBackColor = true;
 			this.buttonBrowseMonitor3.Click += new System.EventHandler(this.buttonBrowseMonitor3_Click);
 			// 
@@ -299,7 +299,7 @@
 			this.label8.Name = "label8";
 			this.label8.Size = new System.Drawing.Size(54, 13);
 			this.label8.TabIndex = 7;
-			this.label8.Text = "Monitor 3:";
+			this.label8.Text = global::DMT.Resources.WallpaperStrings.LocalDiskLocalDiskForm_label8_Text;
 			// 
 			// buttonBrowseMonitor2
 			// 
@@ -307,7 +307,7 @@
 			this.buttonBrowseMonitor2.Name = "buttonBrowseMonitor2";
 			this.buttonBrowseMonitor2.Size = new System.Drawing.Size(75, 23);
 			this.buttonBrowseMonitor2.TabIndex = 6;
-			this.buttonBrowseMonitor2.Text = "Browse...";
+			this.buttonBrowseMonitor2.Text = global::DMT.Resources.WallpaperStrings.LocalDiskLocalDiskForm_buttonBrowseMonitor2_Text;
 			this.buttonBrowseMonitor2.UseVisualStyleBackColor = true;
 			this.buttonBrowseMonitor2.Click += new System.EventHandler(this.buttonBrowseMonitor2_Click);
 			// 
@@ -325,7 +325,7 @@
 			this.label7.Name = "label7";
 			this.label7.Size = new System.Drawing.Size(54, 13);
 			this.label7.TabIndex = 4;
-			this.label7.Text = "Monitor 2:";
+			this.label7.Text = global::DMT.Resources.WallpaperStrings.LocalDiskLocalDiskForm_label7_Text;
 			// 
 			// checkBoxAllowFileBrowse
 			// 
@@ -334,7 +334,7 @@
 			this.checkBoxAllowFileBrowse.Name = "checkBoxAllowFileBrowse";
 			this.checkBoxAllowFileBrowse.Size = new System.Drawing.Size(148, 17);
 			this.checkBoxAllowFileBrowse.TabIndex = 0;
-			this.checkBoxAllowFileBrowse.Text = "File Browse (experimental)";
+			this.checkBoxAllowFileBrowse.Text = global::DMT.Resources.WallpaperStrings.LocalDiskLocalDiskForm_checkBoxAllowFileBrowse_Text;
 			this.checkBoxAllowFileBrowse.UseVisualStyleBackColor = true;
 			// 
 			// buttonBrowseMonitor1
@@ -343,7 +343,7 @@
 			this.buttonBrowseMonitor1.Name = "buttonBrowseMonitor1";
 			this.buttonBrowseMonitor1.Size = new System.Drawing.Size(75, 23);
 			this.buttonBrowseMonitor1.TabIndex = 3;
-			this.buttonBrowseMonitor1.Text = "Browse...";
+			this.buttonBrowseMonitor1.Text = global::DMT.Resources.WallpaperStrings.LocalDiskLocalDiskForm_buttonBrowseMonitor1_Text;
 			this.buttonBrowseMonitor1.UseVisualStyleBackColor = true;
 			this.buttonBrowseMonitor1.Click += new System.EventHandler(this.buttonBrowseMonitor1_Click);
 			// 
@@ -361,7 +361,7 @@
 			this.label6.Name = "label6";
 			this.label6.Size = new System.Drawing.Size(54, 13);
 			this.label6.TabIndex = 1;
-			this.label6.Text = "Monitor 1:";
+			this.label6.Text = global::DMT.Resources.WallpaperStrings.LocalDiskLocalDiskForm_label6_Text;
 			// 
 			// checkBoxCycle
 			// 
@@ -370,7 +370,7 @@
 			this.checkBoxCycle.Name = "checkBoxCycle";
 			this.checkBoxCycle.Size = new System.Drawing.Size(369, 17);
 			this.checkBoxCycle.TabIndex = 9;
-			this.checkBoxCycle.Text = "Cycle through all images before repeating (mutually exclusive with above)";
+			this.checkBoxCycle.Text = global::DMT.Resources.WallpaperStrings.LocalDiskLocalDiskForm_checkBoxCycle_Text;
 			this.checkBoxCycle.UseVisualStyleBackColor = true;
 			this.checkBoxCycle.CheckedChanged += new System.EventHandler(this.checkBoxCycle_CheckedChanged);
 			// 
@@ -381,7 +381,7 @@
 			this.checkBoxEnabled.Name = "checkBoxEnabled";
 			this.checkBoxEnabled.Size = new System.Drawing.Size(65, 17);
 			this.checkBoxEnabled.TabIndex = 3;
-			this.checkBoxEnabled.Text = "Enabled";
+			this.checkBoxEnabled.Text = global::DMT.Resources.WallpaperStrings.LocalDiskLocalDiskForm_checkBoxEnabled_Text;
 			this.checkBoxEnabled.UseVisualStyleBackColor = true;
 			// 
 			// groupBox2
@@ -393,7 +393,7 @@
 			this.groupBox2.Size = new System.Drawing.Size(263, 100);
 			this.groupBox2.TabIndex = 28;
 			this.groupBox2.TabStop = false;
-			this.groupBox2.Text = "Ordering";
+			this.groupBox2.Text = global::DMT.Resources.WallpaperStrings.LocalDiskLocalDiskForm_groupBox2_Text;
 			// 
 			// radioButtonOrderAlphabetical
 			// 
@@ -403,7 +403,7 @@
 			this.radioButtonOrderAlphabetical.Size = new System.Drawing.Size(83, 17);
 			this.radioButtonOrderAlphabetical.TabIndex = 1;
 			this.radioButtonOrderAlphabetical.TabStop = true;
-			this.radioButtonOrderAlphabetical.Text = "Alphabetical";
+			this.radioButtonOrderAlphabetical.Text = global::DMT.Resources.WallpaperStrings.LocalDiskLocalDiskForm_radioButtonOrderAlphabetical_Text;
 			this.radioButtonOrderAlphabetical.UseVisualStyleBackColor = true;
 			this.radioButtonOrderAlphabetical.CheckedChanged += new System.EventHandler(this.OnOrderRadioChanged);
 			// 
@@ -415,7 +415,7 @@
 			this.radioButtonOrderRandom.Size = new System.Drawing.Size(65, 17);
 			this.radioButtonOrderRandom.TabIndex = 0;
 			this.radioButtonOrderRandom.TabStop = true;
-			this.radioButtonOrderRandom.Text = "Random";
+			this.radioButtonOrderRandom.Text = global::DMT.Resources.WallpaperStrings.LocalDiskLocalDiskForm_radioButtonOrderRandom_Text;
 			this.radioButtonOrderRandom.UseVisualStyleBackColor = true;
 			this.radioButtonOrderRandom.CheckedChanged += new System.EventHandler(this.OnOrderRadioChanged);
 			// 
@@ -429,7 +429,7 @@
 			this.groupBox3.Size = new System.Drawing.Size(396, 100);
 			this.groupBox3.TabIndex = 29;
 			this.groupBox3.TabStop = false;
-			this.groupBox3.Text = "Current order options";
+			this.groupBox3.Text = global::DMT.Resources.WallpaperStrings.LocalDiskLocalDiskForm_groupBox3_Text;
 			// 
 			// LocalDiskForm
 			// 

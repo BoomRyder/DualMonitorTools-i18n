@@ -48,8 +48,7 @@
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(604, 13);
 			this.label1.TabIndex = 0;
-			this.label1.Text = "Creates a text file (specified by \'List Path\') containing a list of image files f" +
-    "ound in the specified folder for use by the List provider.";
+			this.label1.Text = global::DMT.Resources.WallpaperStrings.ListListAutoGenForm_label1_Text;
 			// 
 			// label2
 			// 
@@ -58,7 +57,7 @@
 			this.label2.Name = "label2";
 			this.label2.Size = new System.Drawing.Size(51, 13);
 			this.label2.TabIndex = 1;
-			this.label2.Text = "List Path:";
+			this.label2.Text = global::DMT.Resources.WallpaperStrings.ListListAutoGenForm_label2_Text;
 			// 
 			// textBoxListFnm
 			// 
@@ -73,7 +72,7 @@
 			this.buttonBrowseList.Name = "buttonBrowseList";
 			this.buttonBrowseList.Size = new System.Drawing.Size(75, 23);
 			this.buttonBrowseList.TabIndex = 3;
-			this.buttonBrowseList.Text = "Browse ...";
+			this.buttonBrowseList.Text = global::DMT.Resources.WallpaperStrings.ListListAutoGenForm_buttonBrowseList_Text;
 			this.buttonBrowseList.UseVisualStyleBackColor = true;
 			this.buttonBrowseList.Click += new System.EventHandler(this.buttonBrowseList_Click);
 			// 
@@ -84,7 +83,7 @@
 			this.label3.Name = "label3";
 			this.label3.Size = new System.Drawing.Size(39, 13);
 			this.label3.TabIndex = 4;
-			this.label3.Text = "Folder:";
+			this.label3.Text = global::DMT.Resources.WallpaperStrings.ListListAutoGenForm_label3_Text;
 			// 
 			// textBoxFolder
 			// 
@@ -99,7 +98,7 @@
 			this.buttonBrowseFolder.Name = "buttonBrowseFolder";
 			this.buttonBrowseFolder.Size = new System.Drawing.Size(75, 23);
 			this.buttonBrowseFolder.TabIndex = 6;
-			this.buttonBrowseFolder.Text = "Browse ...";
+			this.buttonBrowseFolder.Text = global::DMT.Resources.WallpaperStrings.ListListAutoGenForm_buttonBrowseFolder_Text;
 			this.buttonBrowseFolder.UseVisualStyleBackColor = true;
 			this.buttonBrowseFolder.Click += new System.EventHandler(this.buttonBrowseFolder_Click);
 			// 
@@ -110,7 +109,7 @@
 			this.checkBoxRecursive.Name = "checkBoxRecursive";
 			this.checkBoxRecursive.Size = new System.Drawing.Size(118, 17);
 			this.checkBoxRecursive.TabIndex = 7;
-			this.checkBoxRecursive.Text = "Look in sub-Folders";
+			this.checkBoxRecursive.Text = global::DMT.Resources.WallpaperStrings.ListListAutoGenForm_checkBoxRecursive_Text;
 			this.checkBoxRecursive.UseVisualStyleBackColor = true;
 			// 
 			// buttonCancel
@@ -120,7 +119,7 @@
 			this.buttonCancel.Name = "buttonCancel";
 			this.buttonCancel.Size = new System.Drawing.Size(75, 23);
 			this.buttonCancel.TabIndex = 13;
-			this.buttonCancel.Text = "Cancel";
+			this.buttonCancel.Text = global::DMT.Resources.WallpaperStrings.ListListAutoGenForm_buttonCancel_Text;
 			this.buttonCancel.UseVisualStyleBackColor = true;
 			// 
 			// buttonOK
@@ -129,7 +128,7 @@
 			this.buttonOK.Name = "buttonOK";
 			this.buttonOK.Size = new System.Drawing.Size(75, 23);
 			this.buttonOK.TabIndex = 12;
-			this.buttonOK.Text = "OK";
+			this.buttonOK.Text = global::DMT.Resources.WallpaperStrings.ListListAutoGenForm_buttonOK_Text;
 			this.buttonOK.UseVisualStyleBackColor = true;
 			this.buttonOK.Click += new System.EventHandler(this.buttonOK_Click);
 			// 

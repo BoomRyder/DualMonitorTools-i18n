@@ -42,7 +42,7 @@
 			this.label3.Name = "label3";
 			this.label3.Size = new System.Drawing.Size(249, 13);
 			this.label3.TabIndex = 11;
-			this.label3.Text = "Settings to control changing the desktop wallpaper.";
+			this.label3.Text = global::DMT.Resources.WallpaperStrings.WallpaperChangerRootOptionsPanel_label3_Text;
 			// 
 			// label2
 			// 
@@ -62,7 +62,7 @@
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(201, 20);
 			this.label1.TabIndex = 9;
-			this.label1.Text = "Wallpaper Changer Module";
+			this.label1.Text = global::DMT.Resources.WallpaperStrings.WallpaperChangerRootOptionsPanel_label1_Text;
 			// 
 			// pictureBox1
 			// 

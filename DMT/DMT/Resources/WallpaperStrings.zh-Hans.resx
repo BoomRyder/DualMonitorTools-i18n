@@ -194,4 +194,487 @@
   <data name="WallpaperPropertiesDescription" xml:space="preserve">
     <value>DMT 生成的最后一张壁纸的属性</value>
   </data>
+  <data name="BingBingForm_buttonCancel_Text" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="BingBingForm_buttonOK_Text" xml:space="preserve">
+    <value>确定</value>
+  </data>
+  <data name="BingBingForm_label2_Text" xml:space="preserve">
+    <value>说明：</value>
+  </data>
+  <data name="BingBingForm_label4_Text" xml:space="preserve">
+    <value>权重：</value>
+  </data>
+  <data name="BingBingForm_linkLabel_Text" xml:space="preserve">
+    <value>用于 DualWallpaperChanger 的插件，从以下位置获取图像 </value>
+  </data>
+  <data name="BingBingForm_checkBoxEnabled_Text" xml:space="preserve">
+    <value>启用</value>
+  </data>
+  <data name="BingBingForm_label1_Text" xml:space="preserve">
+    <value>Bing 区域：</value>
+  </data>
+  <data name="FlickrFlickrForm_linkLabel_Text" xml:space="preserve">
+    <value>从以下位置获取图像的提供程序 </value>
+  </data>
+  <data name="FlickrFlickrForm_checkBoxRandomPage_Text" xml:space="preserve">
+    <value>从随机页面获取图像（而不是包含最新添加照片的页面）</value>
+  </data>
+  <data name="FlickrFlickrForm_buttonCancel_Text" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="FlickrFlickrForm_buttonOK_Text" xml:space="preserve">
+    <value>确定</value>
+  </data>
+  <data name="FlickrFlickrForm_label2_Text" xml:space="preserve">
+    <value>说明：</value>
+  </data>
+  <data name="FlickrFlickrForm_label4_Text" xml:space="preserve">
+    <value>权重：</value>
+  </data>
+  <data name="FlickrFlickrForm_label1_Text" xml:space="preserve">
+    <value>标签：</value>
+  </data>
+  <data name="FlickrForm_textBoxTags_ToolTip" xml:space="preserve">
+    <value>以逗号分隔的标签列表</value>
+  </data>
+  <data name="FlickrFlickrForm_checkBoxTagMode_Text" xml:space="preserve">
+    <value>照片必须包含全部或上述标签</value>
+  </data>
+  <data name="FlickrFlickrForm_label3_Text" xml:space="preserve">
+    <value>文本：</value>
+  </data>
+  <data name="FlickrFlickrForm_label5_Text" xml:space="preserve">
+    <value>用户 ID：</value>
+  </data>
+  <data name="FlickrFlickrForm_label6_Text" xml:space="preserve">
+    <value>群组 ID：</value>
+  </data>
+  <data name="FlickrFlickrForm_label7_Text" xml:space="preserve">
+    <value>API 密钥：</value>
+  </data>
+  <data name="FlickrForm_textBoxApiKey_ToolTip" xml:space="preserve">
+    <value>此项需要从 flickr 获取</value>
+  </data>
+  <data name="FlickrFlickrForm_buttonTest_Text" xml:space="preserve">
+    <value>测试搜索条件</value>
+  </data>
+  <data name="FlickrFlickrForm_checkBoxEnabled_Text" xml:space="preserve">
+    <value>启用</value>
+  </data>
+  <data name="FlickrNoFlickrApiKeyForm_label1_Text" xml:space="preserve">
+    <value>必须指定 flickr API 密钥。</value>
+  </data>
+  <data name="FlickrNoFlickrApiKeyForm_linkLabelFlickr_Text" xml:space="preserve">
+    <value>如果你还没有，可以从以下地址获取 </value>
+  </data>
+  <data name="FlickrNoFlickrApiKeyForm_label2_Text" xml:space="preserve">
+    <value>你需要先有一个 flickr/yahoo 账户。</value>
+  </data>
+  <data name="FlickrNoFlickrApiKeyForm_buttonOK_Text" xml:space="preserve">
+    <value>确定</value>
+  </data>
+  <data name="ListListAutoGenForm_label1_Text" xml:space="preserve">
+    <value>生成一个文本文件（由「列表路径」指定），其中列出在指定文件夹中找到的图像文件，供列表提供程序使用。</value>
+  </data>
+  <data name="ListListAutoGenForm_label2_Text" xml:space="preserve">
+    <value>列表路径：</value>
+  </data>
+  <data name="ListListAutoGenForm_buttonBrowseList_Text" xml:space="preserve">
+    <value>浏览 ...</value>
+  </data>
+  <data name="ListListAutoGenForm_label3_Text" xml:space="preserve">
+    <value>文件夹：</value>
+  </data>
+  <data name="ListListAutoGenForm_buttonBrowseFolder_Text" xml:space="preserve">
+    <value>浏览 ...</value>
+  </data>
+  <data name="ListListAutoGenForm_checkBoxRecursive_Text" xml:space="preserve">
+    <value>查找子文件夹</value>
+  </data>
+  <data name="ListListAutoGenForm_buttonCancel_Text" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="ListListAutoGenForm_buttonOK_Text" xml:space="preserve">
+    <value>确定</value>
+  </data>
+  <data name="ListListForm_label2_Text" xml:space="preserve">
+    <value>说明：</value>
+  </data>
+  <data name="ListListForm_label1_Text" xml:space="preserve">
+    <value>权重：</value>
+  </data>
+  <data name="ListListForm_label4_Text" xml:space="preserve">
+    <value>读取包含图像路径和 URL 列表的文件的图像提供程序</value>
+  </data>
+  <data name="ListListForm_buttonCancel_Text" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="ListListForm_buttonOK_Text" xml:space="preserve">
+    <value>确定</value>
+  </data>
+  <data name="ListListForm_checkBoxPersist_Text" xml:space="preserve">
+    <value>关机后记住位置</value>
+  </data>
+  <data name="ListListForm_checkBoxEnabled_Text" xml:space="preserve">
+    <value>启用</value>
+  </data>
+  <data name="ListListForm_groupBox2_Text" xml:space="preserve">
+    <value>排序</value>
+  </data>
+  <data name="ListListForm_radioButtonOrderList_Text" xml:space="preserve">
+    <value>按列表顺序</value>
+  </data>
+  <data name="ListListForm_radioButtonOrderRandom_Text" xml:space="preserve">
+    <value>随机</value>
+  </data>
+  <data name="ListListForm_label3_Text" xml:space="preserve">
+    <value>列表路径：</value>
+  </data>
+  <data name="ListListForm_buttonBrowse_Text" xml:space="preserve">
+    <value>浏览...</value>
+  </data>
+  <data name="ListListForm_buttonAutoGenerate_Text" xml:space="preserve">
+    <value>自动生成...</value>
+  </data>
+  <data name="LocalDiskLocalDiskForm_buttonBrowse_Text" xml:space="preserve">
+    <value>浏览...</value>
+  </data>
+  <data name="LocalDiskLocalDiskForm_label3_Text" xml:space="preserve">
+    <value>默认：</value>
+  </data>
+  <data name="LocalDiskLocalDiskForm_label2_Text" xml:space="preserve">
+    <value>说明：</value>
+  </data>
+  <data name="LocalDiskLocalDiskForm_label1_Text" xml:space="preserve">
+    <value>权重：</value>
+  </data>
+  <data name="LocalDiskLocalDiskForm_label4_Text" xml:space="preserve">
+    <value>从本地磁盘获取已存储图像的提供程序</value>
+  </data>
+  <data name="LocalDiskLocalDiskForm_buttonCancel_Text" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="LocalDiskLocalDiskForm_buttonOK_Text" xml:space="preserve">
+    <value>确定</value>
+  </data>
+  <data name="LocalDiskLocalDiskForm_checkBoxRescan_Text" xml:space="preserve">
+    <value>每次获取图像前重新扫描文件夹</value>
+  </data>
+  <data name="LocalDiskLocalDiskForm_checkBoxRecursive_Text" xml:space="preserve">
+    <value>查找子文件夹</value>
+  </data>
+  <data name="LocalDiskLocalDiskForm_buttonBrowsePortrait_Text" xml:space="preserve">
+    <value>浏览...</value>
+  </data>
+  <data name="LocalDiskLocalDiskForm_label5_Text" xml:space="preserve">
+    <value>竖屏显示器：</value>
+  </data>
+  <data name="LocalDiskLocalDiskForm_groupBox1_Text" xml:space="preserve">
+    <value>从中获取图像的文件夹（按优先级排序）</value>
+  </data>
+  <data name="LocalDiskLocalDiskForm_buttonBrowseMonitor4_Text" xml:space="preserve">
+    <value>浏览...</value>
+  </data>
+  <data name="LocalDiskLocalDiskForm_label9_Text" xml:space="preserve">
+    <value>显示器 4：</value>
+  </data>
+  <data name="LocalDiskLocalDiskForm_buttonBrowseMonitor3_Text" xml:space="preserve">
+    <value>浏览...</value>
+  </data>
+  <data name="LocalDiskLocalDiskForm_label8_Text" xml:space="preserve">
+    <value>显示器 3：</value>
+  </data>
+  <data name="LocalDiskLocalDiskForm_buttonBrowseMonitor2_Text" xml:space="preserve">
+    <value>浏览...</value>
+  </data>
+  <data name="LocalDiskLocalDiskForm_label7_Text" xml:space="preserve">
+    <value>显示器 2：</value>
+  </data>
+  <data name="LocalDiskLocalDiskForm_checkBoxAllowFileBrowse_Text" xml:space="preserve">
+    <value>文件浏览（实验性）</value>
+  </data>
+  <data name="LocalDiskLocalDiskForm_buttonBrowseMonitor1_Text" xml:space="preserve">
+    <value>浏览...</value>
+  </data>
+  <data name="LocalDiskLocalDiskForm_label6_Text" xml:space="preserve">
+    <value>显示器 1：</value>
+  </data>
+  <data name="LocalDiskLocalDiskForm_checkBoxCycle_Text" xml:space="preserve">
+    <value>循环遍历所有图像后再重复（与上一项互斥）</value>
+  </data>
+  <data name="LocalDiskLocalDiskForm_checkBoxEnabled_Text" xml:space="preserve">
+    <value>启用</value>
+  </data>
+  <data name="LocalDiskLocalDiskForm_groupBox2_Text" xml:space="preserve">
+    <value>排序</value>
+  </data>
+  <data name="LocalDiskLocalDiskForm_radioButtonOrderAlphabetical_Text" xml:space="preserve">
+    <value>按字母顺序</value>
+  </data>
+  <data name="LocalDiskLocalDiskForm_radioButtonOrderRandom_Text" xml:space="preserve">
+    <value>随机</value>
+  </data>
+  <data name="LocalDiskLocalDiskForm_groupBox3_Text" xml:space="preserve">
+    <value>当前排序选项</value>
+  </data>
+  <data name="RandomShapesRandomShapesForm_checkBoxRectangles_Text" xml:space="preserve">
+    <value>矩形</value>
+  </data>
+  <data name="RandomShapesRandomShapesForm_checkBoxEllipses_Text" xml:space="preserve">
+    <value>省略号</value>
+  </data>
+  <data name="RandomShapesRandomShapesForm_checkBoxUseAlpha_Text" xml:space="preserve">
+    <value>使图形不透明</value>
+  </data>
+  <data name="RandomShapesRandomShapesForm_label4_Text" xml:space="preserve">
+    <value>用于 DualWallpaperChanger 的插件，可生成由随机图形组成的图像</value>
+  </data>
+  <data name="RandomShapesRandomShapesForm_buttonCancel_Text" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="RandomShapesRandomShapesForm_buttonOK_Text" xml:space="preserve">
+    <value>确定</value>
+  </data>
+  <data name="RandomShapesRandomShapesForm_label2_Text" xml:space="preserve">
+    <value>说明：</value>
+  </data>
+  <data name="RandomShapesRandomShapesForm_checkBoxUseGradients_Text" xml:space="preserve">
+    <value>用渐变填充图形</value>
+  </data>
+  <data name="RandomShapesRandomShapesForm_checkBoxRandomBackground_Text" xml:space="preserve">
+    <value>随机背景颜色</value>
+  </data>
+  <data name="RandomShapesRandomShapesForm_groupBox2_Text" xml:space="preserve">
+    <value>绘制样式</value>
+  </data>
+  <data name="RandomShapesRandomShapesForm_groupBox1_Text" xml:space="preserve">
+    <value>使用以下图形</value>
+  </data>
+  <data name="RandomShapesRandomShapesForm_label3_Text" xml:space="preserve">
+    <value>图形：</value>
+  </data>
+  <data name="RandomShapesRandomShapesForm_label1_Text" xml:space="preserve">
+    <value>权重：</value>
+  </data>
+  <data name="RandomShapesRandomShapesForm_checkBoxEnabled_Text" xml:space="preserve">
+    <value>启用</value>
+  </data>
+  <data name="UnsplashWebScrapeForm_linkLabel_Text" xml:space="preserve">
+    <value>从以下位置获取图像的提供程序 </value>
+  </data>
+  <data name="UnsplashWebScrapeForm_buttonCancel_Text" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="UnsplashWebScrapeForm_buttonOK_Text" xml:space="preserve">
+    <value>确定</value>
+  </data>
+  <data name="UnsplashWebScrapeForm_label2_Text" xml:space="preserve">
+    <value>说明：</value>
+  </data>
+  <data name="UnsplashWebScrapeForm_label4_Text" xml:space="preserve">
+    <value>权重：</value>
+  </data>
+  <data name="UnsplashWebScrapeForm_groupBox1_Text" xml:space="preserve">
+    <value>随机获取图像来自：</value>
+  </data>
+  <data name="UnsplashWebScrapeForm_radioButtonUserLike_Text" xml:space="preserve">
+    <value>用户喜欢的照片：</value>
+  </data>
+  <data name="UnsplashWebScrapeForm_radioButtonUser_Text" xml:space="preserve">
+    <value>用户的照片：</value>
+  </data>
+  <data name="UnsplashWebScrapeForm_radioButtonCategory_Text" xml:space="preserve">
+    <value>分类：</value>
+  </data>
+  <data name="UnsplashWebScrapeForm_radioButtonFeatured_Text" xml:space="preserve">
+    <value>精选</value>
+  </data>
+  <data name="UnsplashWebScrapeForm_radioButtonAll_Text" xml:space="preserve">
+    <value>全部</value>
+  </data>
+  <data name="UnsplashWebScrapeForm_label1_Text" xml:space="preserve">
+    <value>筛选：</value>
+  </data>
+  <data name="UnsplashWebScrapeForm_checkBoxEnabled_Text" xml:space="preserve">
+    <value>启用</value>
+  </data>
+  <data name="UnsplashWebScrapeForm_label3_Text" xml:space="preserve">
+    <value>由于 Unsplash API 的变更，此功能暂时不可用</value>
+  </data>
+  <data name="UrlWebScrapeForm_buttonCancel_Text" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="UrlWebScrapeForm_buttonOK_Text" xml:space="preserve">
+    <value>确定</value>
+  </data>
+  <data name="UrlWebScrapeForm_label2_Text" xml:space="preserve">
+    <value>说明：</value>
+  </data>
+  <data name="UrlWebScrapeForm_label4_Text" xml:space="preserve">
+    <value>权重：</value>
+  </data>
+  <data name="UrlWebScrapeForm_label1_Text" xml:space="preserve">
+    <value>URL：</value>
+  </data>
+  <data name="UrlWebScrapeForm_label3_Text" xml:space="preserve">
+    <value>从 URL 获取图像</value>
+  </data>
+  <data name="UrlWebScrapeForm_labelEscapeHeight_Text" xml:space="preserve">
+    <value>屏幕高度</value>
+  </data>
+  <data name="UrlWebScrapeForm_labelEscapeWidth_Text" xml:space="preserve">
+    <value>屏幕宽度</value>
+  </data>
+  <data name="UrlWebScrapeForm_labelEscapeEscape_Text" xml:space="preserve">
+    <value>%% -&gt; %</value>
+  </data>
+  <data name="UrlWebScrapeForm_checkBoxEnableEscapes_Text" xml:space="preserve">
+    <value>在上面的 URL 中启用转义：</value>
+  </data>
+  <data name="UrlWebScrapeForm_checkBoxEnabled_Text" xml:space="preserve">
+    <value>启用</value>
+  </data>
+  <data name="ProviderForm_ProviderImage_HeaderText" xml:space="preserve">
+    <value>提供程序</value>
+  </data>
+  <data name="ProviderForm_ProviderName_HeaderText" xml:space="preserve">
+    <value>名称</value>
+  </data>
+  <data name="ProviderForm_buttonCancel_Text" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="ProviderForm_buttonOK_Text" xml:space="preserve">
+    <value>确定</value>
+  </data>
+  <data name="ProviderForm_label1_Text" xml:space="preserve">
+    <value>请选择需要的图像提供程序</value>
+  </data>
+  <data name="WallpaperChangerGeneralOptionsPanel_labelNextChange_Text" xml:space="preserve">
+    <value>下次更换还有</value>
+  </data>
+  <data name="WallpaperChangerGeneralOptionsPanel_buttonChangeWallpaper_Text" xml:space="preserve">
+    <value>立即更换壁纸</value>
+  </data>
+  <data name="WallpaperChangerGeneralOptionsPanel_label3_Text" xml:space="preserve">
+    <value>多显示器：</value>
+  </data>
+  <data name="WallpaperChangerGeneralOptionsPanel_label2_Text" xml:space="preserve">
+    <value>背景颜色：</value>
+  </data>
+  <data name="WallpaperChangerGeneralOptionsPanel_label1_Text" xml:space="preserve">
+    <value>适配方式：</value>
+  </data>
+  <data name="WallpaperChangerGeneralOptionsPanel_checkBoxChangePeriodically_Text" xml:space="preserve">
+    <value>定期更换壁纸</value>
+  </data>
+  <data name="WallpaperChangerGeneralOptionsPanel_labelPeriod3_Text" xml:space="preserve">
+    <value>分钟</value>
+  </data>
+  <data name="WallpaperChangerGeneralOptionsPanel_labelPeriod2_Text" xml:space="preserve">
+    <value>小时</value>
+  </data>
+  <data name="WallpaperChangerGeneralOptionsPanel_labelPeriod1_Text" xml:space="preserve">
+    <value>更换间隔：</value>
+  </data>
+  <data name="WallpaperChangerGeneralOptionsPanel_checkBoxChangeOnStart_Text" xml:space="preserve">
+    <value>启动时更换壁纸</value>
+  </data>
+  <data name="WallpaperChangerGeneralOptionsPanel_groupBox1_Text" xml:space="preserve">
+    <value>热键</value>
+  </data>
+  <data name="WallpaperChangerGeneralOptionsPanel_checkBoxFade_Text" xml:space="preserve">
+    <value>更换壁纸时使用平滑淡入</value>
+  </data>
+  <data name="WallpaperChangerGeneralOptionsPanel_checkBoxChangeOnResolutionChange_Text" xml:space="preserve">
+    <value>显示器或分辨率变化时更换</value>
+  </data>
+  <data name="WallpaperChangerGeneralOptionsPanel_checkBoxFitAspectRatio_Text" xml:space="preserve">
+    <value>保持宽高比</value>
+  </data>
+  <data name="WallpaperChangerGeneralOptionsPanel_checkBoxFitClip_Text" xml:space="preserve">
+    <value>避免出现水平/垂直色条</value>
+  </data>
+  <data name="WallpaperChangerGeneralOptionsPanel_checkBoxFitEnlarge_Text" xml:space="preserve">
+    <value>必要时放大图像以适配</value>
+  </data>
+  <data name="WallpaperChangerGeneralOptionsPanel_checkBoxFitShrink_Text" xml:space="preserve">
+    <value>必要时缩小图像以适配</value>
+  </data>
+  <data name="WallpaperChangerGeneralOptionsPanel_label4_Text" xml:space="preserve">
+    <value>输出壁纸格式：</value>
+  </data>
+  <data name="WallpaperChangerGeneralOptionsPanel_label5_Text" xml:space="preserve">
+    <value>质量：</value>
+  </data>
+  <data name="WallpaperChangerGeneralOptionsPanel_checkBoxDontChangeIfBusy_Text" xml:space="preserve">
+    <value>但运行全屏游戏或演示时不更换</value>
+  </data>
+  <data name="WallpaperChangerPropertiesOptionsPanel_picPreview_ToolTip" xml:space="preserve">
+    <value>点击显示器可查看其上显示的图像信息。</value>
+  </data>
+  <data name="WallpaperChangerPropertiesOptionsPanel_groupBox1_Text" xml:space="preserve">
+    <value>源图像属性</value>
+  </data>
+  <data name="WallpaperChangerPropertiesOptionsPanel_label5_Text" xml:space="preserve">
+    <value>源尺寸：</value>
+  </data>
+  <data name="WallpaperChangerPropertiesOptionsPanel_label4_Text" xml:space="preserve">
+    <value>图像详细信息：</value>
+  </data>
+  <data name="WallpaperChangerPropertiesOptionsPanel_label3_Text" xml:space="preserve">
+    <value>摄影者：</value>
+  </data>
+  <data name="WallpaperChangerPropertiesOptionsPanel_label2_Text" xml:space="preserve">
+    <value>图像来源：</value>
+  </data>
+  <data name="WallpaperChangerPropertiesOptionsPanel_label1_Text" xml:space="preserve">
+    <value>提供程序：</value>
+  </data>
+  <data name="WallpaperChangerPropertiesOptionsPanel_labelProperties_Text" xml:space="preserve">
+    <value>DMT 生成壁纸后，详细信息会显示在这里</value>
+  </data>
+  <data name="WallpaperChangerProvidersOptionsPanel_Enabled_HeaderText" xml:space="preserve">
+    <value>启用</value>
+  </data>
+  <data name="WallpaperChangerProvidersOptionsPanel_Weight_HeaderText" xml:space="preserve">
+    <value>权重</value>
+  </data>
+  <data name="WallpaperChangerProvidersOptionsPanel_ProviderImage_HeaderText" xml:space="preserve">
+    <value>提供程序</value>
+  </data>
+  <data name="WallpaperChangerProvidersOptionsPanel_ProviderName_HeaderText" xml:space="preserve">
+    <value>名称</value>
+  </data>
+  <data name="WallpaperChangerProvidersOptionsPanel_Description_HeaderText" xml:space="preserve">
+    <value>说明</value>
+  </data>
+  <data name="WallpaperChangerProvidersOptionsPanel_buttonDelete_Text" xml:space="preserve">
+    <value>删除</value>
+  </data>
+  <data name="WallpaperChangerProvidersOptionsPanel_buttonEdit_Text" xml:space="preserve">
+    <value>编辑</value>
+  </data>
+  <data name="WallpaperChangerProvidersOptionsPanel_buttonAdd_Text" xml:space="preserve">
+    <value>添加</value>
+  </data>
+  <data name="WallpaperChangerRootOptionsPanel_label3_Text" xml:space="preserve">
+    <value>控制更换桌面壁纸的设置。</value>
+  </data>
+  <data name="WallpaperChangerRootOptionsPanel_label1_Text" xml:space="preserve">
+    <value>壁纸切换器模块</value>
+  </data>
+  <data name="Node_General" xml:space="preserve">
+    <value>常规</value>
+  </data>
+  <data name="Node_Properties" xml:space="preserve">
+    <value>属性</value>
+  </data>
+  <data name="Node_Providers" xml:space="preserve">
+    <value>提供程序</value>
+  </data>
+  <data name="Node_WallpaperChanger" xml:space="preserve">
+    <value>壁纸切换器</value>
+  </data>
 </root>

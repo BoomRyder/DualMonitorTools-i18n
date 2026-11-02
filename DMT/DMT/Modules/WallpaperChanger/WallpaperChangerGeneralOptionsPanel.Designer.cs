@@ -68,7 +68,7 @@
 			this.labelNextChange.Name = "labelNextChange";
 			this.labelNextChange.Size = new System.Drawing.Size(329, 41);
 			this.labelNextChange.TabIndex = 29;
-			this.labelNextChange.Text = "Next change in";
+			this.labelNextChange.Text = global::DMT.Resources.WallpaperStrings.WallpaperChangerGeneralOptionsPanel_labelNextChange_Text;
 			// 
 			// buttonChangeWallpaper
 			// 
@@ -76,7 +76,7 @@
 			this.buttonChangeWallpaper.Name = "buttonChangeWallpaper";
 			this.buttonChangeWallpaper.Size = new System.Drawing.Size(145, 23);
 			this.buttonChangeWallpaper.TabIndex = 27;
-			this.buttonChangeWallpaper.Text = "Change Wallpaper Now";
+			this.buttonChangeWallpaper.Text = global::DMT.Resources.WallpaperStrings.WallpaperChangerGeneralOptionsPanel_buttonChangeWallpaper_Text;
 			this.buttonChangeWallpaper.UseVisualStyleBackColor = true;
 			this.buttonChangeWallpaper.Click += new System.EventHandler(this.buttonChangeWallpaper_Click);
 			// 
@@ -108,7 +108,7 @@
 			this.label3.Name = "label3";
 			this.label3.Size = new System.Drawing.Size(70, 13);
 			this.label3.TabIndex = 22;
-			this.label3.Text = "Multi Monitor:";
+			this.label3.Text = global::DMT.Resources.WallpaperStrings.WallpaperChangerGeneralOptionsPanel_label3_Text;
 			// 
 			// label2
 			// 
@@ -117,7 +117,7 @@
 			this.label2.Name = "label2";
 			this.label2.Size = new System.Drawing.Size(101, 13);
 			this.label2.TabIndex = 26;
-			this.label2.Text = "Background Colour:";
+			this.label2.Text = global::DMT.Resources.WallpaperStrings.WallpaperChangerGeneralOptionsPanel_label2_Text;
 			// 
 			// label1
 			// 
@@ -126,7 +126,7 @@
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(21, 13);
 			this.label1.TabIndex = 24;
-			this.label1.Text = "Fit:";
+			this.label1.Text = global::DMT.Resources.WallpaperStrings.WallpaperChangerGeneralOptionsPanel_label1_Text;
 			// 
 			// checkBoxChangePeriodically
 			// 
@@ -135,7 +135,7 @@
 			this.checkBoxChangePeriodically.Name = "checkBoxChangePeriodically";
 			this.checkBoxChangePeriodically.Size = new System.Drawing.Size(166, 17);
 			this.checkBoxChangePeriodically.TabIndex = 16;
-			this.checkBoxChangePeriodically.Text = "Change wallpaper periodically";
+			this.checkBoxChangePeriodically.Text = global::DMT.Resources.WallpaperStrings.WallpaperChangerGeneralOptionsPanel_checkBoxChangePeriodically_Text;
 			this.checkBoxChangePeriodically.UseVisualStyleBackColor = true;
 			this.checkBoxChangePeriodically.CheckedChanged += new System.EventHandler(this.checkBoxChangePeriodically_CheckedChanged);
 			// 
@@ -146,7 +146,7 @@
 			this.labelPeriod3.Name = "labelPeriod3";
 			this.labelPeriod3.Size = new System.Drawing.Size(44, 13);
 			this.labelPeriod3.TabIndex = 21;
-			this.labelPeriod3.Text = "Minutes";
+			this.labelPeriod3.Text = global::DMT.Resources.WallpaperStrings.WallpaperChangerGeneralOptionsPanel_labelPeriod3_Text;
 			// 
 			// numericUpDownMinutes
 			// 
@@ -168,7 +168,7 @@
 			this.labelPeriod2.Name = "labelPeriod2";
 			this.labelPeriod2.Size = new System.Drawing.Size(35, 13);
 			this.labelPeriod2.TabIndex = 19;
-			this.labelPeriod2.Text = "Hours";
+			this.labelPeriod2.Text = global::DMT.Resources.WallpaperStrings.WallpaperChangerGeneralOptionsPanel_labelPeriod2_Text;
 			// 
 			// numericUpDownHours
 			// 
@@ -190,7 +190,7 @@
 			this.labelPeriod1.Name = "labelPeriod1";
 			this.labelPeriod1.Size = new System.Drawing.Size(121, 13);
 			this.labelPeriod1.TabIndex = 17;
-			this.labelPeriod1.Text = "Time between changes:";
+			this.labelPeriod1.Text = global::DMT.Resources.WallpaperStrings.WallpaperChangerGeneralOptionsPanel_labelPeriod1_Text;
 			// 
 			// checkBoxChangeOnStart
 			// 
@@ -199,7 +199,7 @@
 			this.checkBoxChangeOnStart.Name = "checkBoxChangeOnStart";
 			this.checkBoxChangeOnStart.Size = new System.Drawing.Size(161, 17);
 			this.checkBoxChangeOnStart.TabIndex = 15;
-			this.checkBoxChangeOnStart.Text = "Change wallpaper on startup";
+			this.checkBoxChangeOnStart.Text = global::DMT.Resources.WallpaperStrings.WallpaperChangerGeneralOptionsPanel_checkBoxChangeOnStart_Text;
 			this.checkBoxChangeOnStart.UseVisualStyleBackColor = true;
 			this.checkBoxChangeOnStart.CheckedChanged += new System.EventHandler(this.checkBoxChangeOnStart_CheckedChanged);
 			// 
@@ -211,7 +211,7 @@
 			this.groupBox1.Size = new System.Drawing.Size(480, 56);
 			this.groupBox1.TabIndex = 30;
 			this.groupBox1.TabStop = false;
-			this.groupBox1.Text = "HotKey";
+			this.groupBox1.Text = global::DMT.Resources.WallpaperStrings.WallpaperChangerGeneralOptionsPanel_groupBox1_Text;
 			// 
 			// hotKeyPanelChangeWallpaper
 			// 
@@ -228,7 +228,7 @@
 			this.checkBoxFade.Name = "checkBoxFade";
 			this.checkBoxFade.Size = new System.Drawing.Size(230, 17);
 			this.checkBoxFade.TabIndex = 31;
-			this.checkBoxFade.Text = "Use smooth fade when changing wallpaper";
+			this.checkBoxFade.Text = global::DMT.Resources.WallpaperStrings.WallpaperChangerGeneralOptionsPanel_checkBoxFade_Text;
 			this.checkBoxFade.UseVisualStyleBackColor = true;
 			this.checkBoxFade.CheckedChanged += new System.EventHandler(this.checkBoxFade_CheckedChanged);
 			// 
@@ -239,7 +239,7 @@
 			this.checkBoxChangeOnResolutionChange.Name = "checkBoxChangeOnResolutionChange";
 			this.checkBoxChangeOnResolutionChange.Size = new System.Drawing.Size(234, 17);
 			this.checkBoxChangeOnResolutionChange.TabIndex = 32;
-			this.checkBoxChangeOnResolutionChange.Text = "Change when monitors / resolutions change";
+			this.checkBoxChangeOnResolutionChange.Text = global::DMT.Resources.WallpaperStrings.WallpaperChangerGeneralOptionsPanel_checkBoxChangeOnResolutionChange_Text;
 			this.checkBoxChangeOnResolutionChange.UseVisualStyleBackColor = true;
 			this.checkBoxChangeOnResolutionChange.CheckedChanged += new System.EventHandler(this.checkBoxChangeOnResolutionChange_CheckedChanged);
 			// 
@@ -250,7 +250,7 @@
 			this.checkBoxFitAspectRatio.Name = "checkBoxFitAspectRatio";
 			this.checkBoxFitAspectRatio.Size = new System.Drawing.Size(124, 17);
 			this.checkBoxFitAspectRatio.TabIndex = 33;
-			this.checkBoxFitAspectRatio.Text = "Maintain aspect ratio";
+			this.checkBoxFitAspectRatio.Text = global::DMT.Resources.WallpaperStrings.WallpaperChangerGeneralOptionsPanel_checkBoxFitAspectRatio_Text;
 			this.checkBoxFitAspectRatio.UseVisualStyleBackColor = true;
 			this.checkBoxFitAspectRatio.CheckedChanged += new System.EventHandler(this.UpdateFitMode);
 			// 
@@ -261,7 +261,7 @@
 			this.checkBoxFitClip.Name = "checkBoxFitClip";
 			this.checkBoxFitClip.Size = new System.Drawing.Size(163, 17);
 			this.checkBoxFitClip.TabIndex = 34;
-			this.checkBoxFitClip.Text = "Avoid horizontal/vertical bars";
+			this.checkBoxFitClip.Text = global::DMT.Resources.WallpaperStrings.WallpaperChangerGeneralOptionsPanel_checkBoxFitClip_Text;
 			this.checkBoxFitClip.UseVisualStyleBackColor = true;
 			this.checkBoxFitClip.CheckedChanged += new System.EventHandler(this.UpdateFitMode);
 			// 
@@ -272,7 +272,7 @@
 			this.checkBoxFitEnlarge.Name = "checkBoxFitEnlarge";
 			this.checkBoxFitEnlarge.Size = new System.Drawing.Size(169, 17);
 			this.checkBoxFitEnlarge.TabIndex = 35;
-			this.checkBoxFitEnlarge.Text = "Expand image (if needed) to fit";
+			this.checkBoxFitEnlarge.Text = global::DMT.Resources.WallpaperStrings.WallpaperChangerGeneralOptionsPanel_checkBoxFitEnlarge_Text;
 			this.checkBoxFitEnlarge.UseVisualStyleBackColor = true;
 			this.checkBoxFitEnlarge.CheckedChanged += new System.EventHandler(this.UpdateFitMode);
 			// 
@@ -283,7 +283,7 @@
 			this.checkBoxFitShrink.Name = "checkBoxFitShrink";
 			this.checkBoxFitShrink.Size = new System.Drawing.Size(163, 17);
 			this.checkBoxFitShrink.TabIndex = 36;
-			this.checkBoxFitShrink.Text = "Shrink image (if needed) to fit";
+			this.checkBoxFitShrink.Text = global::DMT.Resources.WallpaperStrings.WallpaperChangerGeneralOptionsPanel_checkBoxFitShrink_Text;
 			this.checkBoxFitShrink.UseVisualStyleBackColor = true;
 			this.checkBoxFitShrink.CheckedChanged += new System.EventHandler(this.UpdateFitMode);
 			// 
@@ -294,7 +294,7 @@
 			this.label4.Name = "label4";
 			this.label4.Size = new System.Drawing.Size(122, 13);
 			this.label4.TabIndex = 37;
-			this.label4.Text = "Output wallpaper format:";
+			this.label4.Text = global::DMT.Resources.WallpaperStrings.WallpaperChangerGeneralOptionsPanel_label4_Text;
 			// 
 			// comboBoxFormat
 			// 
@@ -313,7 +313,7 @@
 			this.label5.Name = "label5";
 			this.label5.Size = new System.Drawing.Size(42, 13);
 			this.label5.TabIndex = 39;
-			this.label5.Text = "Quality:";
+			this.label5.Text = global::DMT.Resources.WallpaperStrings.WallpaperChangerGeneralOptionsPanel_label5_Text;
 			// 
 			// numericUpDownQuality
 			// 
@@ -330,7 +330,7 @@
 			this.checkBoxDontChangeIfBusy.Name = "checkBoxDontChangeIfBusy";
 			this.checkBoxDontChangeIfBusy.Size = new System.Drawing.Size(259, 17);
 			this.checkBoxDontChangeIfBusy.TabIndex = 41;
-			this.checkBoxDontChangeIfBusy.Text = "But not if running full screen game or presentation";
+			this.checkBoxDontChangeIfBusy.Text = global::DMT.Resources.WallpaperStrings.WallpaperChangerGeneralOptionsPanel_checkBoxDontChangeIfBusy_Text;
 			this.checkBoxDontChangeIfBusy.UseVisualStyleBackColor = true;
 			this.checkBoxDontChangeIfBusy.CheckedChanged += new System.EventHandler(this.checkBoxDontChangeIfBusy_CheckedChanged);
 			// 

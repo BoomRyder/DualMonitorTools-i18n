@@ -62,7 +62,7 @@
 			this.linkLabel.Size = new System.Drawing.Size(473, 13);
 			this.linkLabel.TabIndex = 0;
 			this.linkLabel.TabStop = true;
-			this.linkLabel.Text = "Image provider to get images from ";
+			this.linkLabel.Text = global::DMT.Resources.WallpaperStrings.UnsplashWebScrapeForm_linkLabel_Text;
 			this.linkLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel_LinkClicked);
 			// 
 			// buttonCancel
@@ -72,7 +72,7 @@
 			this.buttonCancel.Name = "buttonCancel";
 			this.buttonCancel.Size = new System.Drawing.Size(75, 23);
 			this.buttonCancel.TabIndex = 10;
-			this.buttonCancel.Text = "Cancel";
+			this.buttonCancel.Text = global::DMT.Resources.WallpaperStrings.UnsplashWebScrapeForm_buttonCancel_Text;
 			this.buttonCancel.UseVisualStyleBackColor = true;
 			// 
 			// buttonOK
@@ -81,7 +81,7 @@
 			this.buttonOK.Name = "buttonOK";
 			this.buttonOK.Size = new System.Drawing.Size(75, 23);
 			this.buttonOK.TabIndex = 9;
-			this.buttonOK.Text = "OK";
+			this.buttonOK.Text = global::DMT.Resources.WallpaperStrings.UnsplashWebScrapeForm_buttonOK_Text;
 			this.buttonOK.UseVisualStyleBackColor = true;
 			this.buttonOK.Click += new System.EventHandler(this.buttonOK_Click);
 			// 
@@ -99,7 +99,7 @@
 			this.label2.Name = "label2";
 			this.label2.Size = new System.Drawing.Size(63, 13);
 			this.label2.TabIndex = 4;
-			this.label2.Text = "Description:";
+			this.label2.Text = global::DMT.Resources.WallpaperStrings.UnsplashWebScrapeForm_label2_Text;
 			// 
 			// numericUpDownWeight
 			// 
@@ -120,7 +120,7 @@
 			this.label4.Name = "label4";
 			this.label4.Size = new System.Drawing.Size(44, 13);
 			this.label4.TabIndex = 1;
-			this.label4.Text = "Weight:";
+			this.label4.Text = global::DMT.Resources.WallpaperStrings.UnsplashWebScrapeForm_label4_Text;
 			// 
 			// pictureBox1
 			// 
@@ -146,7 +146,7 @@
 			this.groupBox1.Size = new System.Drawing.Size(423, 155);
 			this.groupBox1.TabIndex = 6;
 			this.groupBox1.TabStop = false;
-			this.groupBox1.Text = "Take random image from:";
+			this.groupBox1.Text = global::DMT.Resources.WallpaperStrings.UnsplashWebScrapeForm_groupBox1_Text;
 			// 
 			// textBoxLikedByUser
 			// 
@@ -163,7 +163,7 @@
 			this.radioButtonUserLike.Size = new System.Drawing.Size(123, 17);
 			this.radioButtonUserLike.TabIndex = 6;
 			this.radioButtonUserLike.TabStop = true;
-			this.radioButtonUserLike.Text = "Photos liked by user:";
+			this.radioButtonUserLike.Text = global::DMT.Resources.WallpaperStrings.UnsplashWebScrapeForm_radioButtonUserLike_Text;
 			this.radioButtonUserLike.UseVisualStyleBackColor = true;
 			this.radioButtonUserLike.CheckedChanged += new System.EventHandler(this.OnRadioChange);
 			// 
@@ -182,7 +182,7 @@
 			this.radioButtonUser.Size = new System.Drawing.Size(93, 17);
 			this.radioButtonUser.TabIndex = 4;
 			this.radioButtonUser.TabStop = true;
-			this.radioButtonUser.Text = "User\'s Photos:";
+			this.radioButtonUser.Text = global::DMT.Resources.WallpaperStrings.UnsplashWebScrapeForm_radioButtonUser_Text;
 			this.radioButtonUser.UseVisualStyleBackColor = true;
 			this.radioButtonUser.CheckedChanged += new System.EventHandler(this.OnRadioChange);
 			// 
@@ -203,7 +203,7 @@
 			this.radioButtonCategory.Size = new System.Drawing.Size(70, 17);
 			this.radioButtonCategory.TabIndex = 2;
 			this.radioButtonCategory.TabStop = true;
-			this.radioButtonCategory.Text = "Category:";
+			this.radioButtonCategory.Text = global::DMT.Resources.WallpaperStrings.UnsplashWebScrapeForm_radioButtonCategory_Text;
 			this.radioButtonCategory.UseVisualStyleBackColor = true;
 			this.radioButtonCategory.CheckedChanged += new System.EventHandler(this.OnRadioChange);
 			// 
@@ -215,7 +215,7 @@
 			this.radioButtonFeatured.Size = new System.Drawing.Size(70, 17);
 			this.radioButtonFeatured.TabIndex = 1;
 			this.radioButtonFeatured.TabStop = true;
-			this.radioButtonFeatured.Text = "Feautued";
+			this.radioButtonFeatured.Text = global::DMT.Resources.WallpaperStrings.UnsplashWebScrapeForm_radioButtonFeatured_Text;
 			this.radioButtonFeatured.UseVisualStyleBackColor = true;
 			this.radioButtonFeatured.CheckedChanged += new System.EventHandler(this.OnRadioChange);
 			// 
@@ -227,7 +227,7 @@
 			this.radioButtonAll.Size = new System.Drawing.Size(36, 17);
 			this.radioButtonAll.TabIndex = 0;
 			this.radioButtonAll.TabStop = true;
-			this.radioButtonAll.Text = "All";
+			this.radioButtonAll.Text = global::DMT.Resources.WallpaperStrings.UnsplashWebScrapeForm_radioButtonAll_Text;
 			this.radioButtonAll.UseVisualStyleBackColor = true;
 			this.radioButtonAll.CheckedChanged += new System.EventHandler(this.OnRadioChange);
 			// 
@@ -238,7 +238,7 @@
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(46, 13);
 			this.label1.TabIndex = 7;
-			this.label1.Text = "Filter by:";
+			this.label1.Text = global::DMT.Resources.WallpaperStrings.UnsplashWebScrapeForm_label1_Text;
 			// 
 			// textBoxFilter
 			// 
@@ -254,7 +254,7 @@
 			this.checkBoxEnabled.Name = "checkBoxEnabled";
 			this.checkBoxEnabled.Size = new System.Drawing.Size(65, 17);
 			this.checkBoxEnabled.TabIndex = 3;
-			this.checkBoxEnabled.Text = "Enabled";
+			this.checkBoxEnabled.Text = global::DMT.Resources.WallpaperStrings.UnsplashWebScrapeForm_checkBoxEnabled_Text;
 			this.checkBoxEnabled.UseVisualStyleBackColor = true;
 			// 
 			// label3
@@ -266,7 +266,7 @@
 			this.label3.Name = "label3";
 			this.label3.Size = new System.Drawing.Size(391, 13);
 			this.label3.TabIndex = 25;
-			this.label3.Text = "This is temporarily unavailable due to a change in the Unsplash API";
+			this.label3.Text = global::DMT.Resources.WallpaperStrings.UnsplashWebScrapeForm_label3_Text;
 			// 
 			// WebScrapeForm
 			// 

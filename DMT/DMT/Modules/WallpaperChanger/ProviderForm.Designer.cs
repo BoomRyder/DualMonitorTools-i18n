@@ -67,7 +67,7 @@
 			// ProviderImage
 			// 
 			this.ProviderImage.DataPropertyName = "Image";
-			this.ProviderImage.HeaderText = "Provider";
+			this.ProviderImage.HeaderText = global::DMT.Resources.WallpaperStrings.ProviderForm_ProviderImage_HeaderText;
 			this.ProviderImage.Name = "ProviderImage";
 			this.ProviderImage.ReadOnly = true;
 			this.ProviderImage.Width = 52;
@@ -76,7 +76,7 @@
 			// 
 			this.ProviderName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
 			this.ProviderName.DataPropertyName = "Name";
-			this.ProviderName.HeaderText = "Name";
+			this.ProviderName.HeaderText = global::DMT.Resources.WallpaperStrings.ProviderForm_ProviderName_HeaderText;
 			this.ProviderName.Name = "ProviderName";
 			this.ProviderName.ReadOnly = true;
 			// 
@@ -88,7 +88,7 @@
 			this.buttonCancel.Name = "buttonCancel";
 			this.buttonCancel.Size = new System.Drawing.Size(79, 23);
 			this.buttonCancel.TabIndex = 7;
-			this.buttonCancel.Text = "Cancel";
+			this.buttonCancel.Text = global::DMT.Resources.WallpaperStrings.ProviderForm_buttonCancel_Text;
 			this.buttonCancel.UseVisualStyleBackColor = true;
 			// 
 			// buttonOK
@@ -98,7 +98,7 @@
 			this.buttonOK.Name = "buttonOK";
 			this.buttonOK.Size = new System.Drawing.Size(79, 23);
 			this.buttonOK.TabIndex = 6;
-			this.buttonOK.Text = "OK";
+			this.buttonOK.Text = global::DMT.Resources.WallpaperStrings.ProviderForm_buttonOK_Text;
 			this.buttonOK.UseVisualStyleBackColor = true;
 			this.buttonOK.Click += new System.EventHandler(this.buttonOK_Click);
 			// 
@@ -109,7 +109,7 @@
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(150, 13);
 			this.label1.TabIndex = 5;
-			this.label1.Text = "Select required image provider";
+			this.label1.Text = global::DMT.Resources.WallpaperStrings.ProviderForm_label1_Text;
 			// 
 			// ProviderForm
 			// 

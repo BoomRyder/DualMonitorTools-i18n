@@ -55,7 +55,7 @@
 			this.picPreview.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
 			this.picPreview.TabIndex = 0;
 			this.picPreview.TabStop = false;
-			this.toolTip.SetToolTip(this.picPreview, "Click on monitor to see information about the image displayed on it.");
+			this.toolTip.SetToolTip(this.picPreview, global::DMT.Resources.WallpaperStrings.WallpaperChangerPropertiesOptionsPanel_picPreview_ToolTip);
 			this.picPreview.MouseClick += new System.Windows.Forms.MouseEventHandler(this.picPreview_MouseClick);
 			// 
 			// groupBox1
@@ -77,7 +77,7 @@
 			this.groupBox1.Size = new System.Drawing.Size(494, 120);
 			this.groupBox1.TabIndex = 1;
 			this.groupBox1.TabStop = false;
-			this.groupBox1.Text = "Source Image Properties";
+			this.groupBox1.Text = global::DMT.Resources.WallpaperStrings.WallpaperChangerPropertiesOptionsPanel_groupBox1_Text;
 			// 
 			// linkLabelSourceSize
 			// 
@@ -95,7 +95,7 @@
 			this.label5.Name = "label5";
 			this.label5.Size = new System.Drawing.Size(67, 13);
 			this.label5.TabIndex = 9;
-			this.label5.Text = "Source Size:";
+			this.label5.Text = global::DMT.Resources.WallpaperStrings.WallpaperChangerPropertiesOptionsPanel_label5_Text;
 			// 
 			// linkLabelProvider
 			// 
@@ -122,7 +122,7 @@
 			this.label4.Name = "label4";
 			this.label4.Size = new System.Drawing.Size(74, 13);
 			this.label4.TabIndex = 6;
-			this.label4.Text = "Image Details:";
+			this.label4.Text = global::DMT.Resources.WallpaperStrings.WallpaperChangerPropertiesOptionsPanel_label4_Text;
 			// 
 			// linkLabelPhotographer
 			// 
@@ -140,7 +140,7 @@
 			this.label3.Name = "label3";
 			this.label3.Size = new System.Drawing.Size(74, 13);
 			this.label3.TabIndex = 4;
-			this.label3.Text = "Photographer:";
+			this.label3.Text = global::DMT.Resources.WallpaperStrings.WallpaperChangerPropertiesOptionsPanel_label3_Text;
 			// 
 			// linkLabelSource
 			// 
@@ -158,7 +158,7 @@
 			this.label2.Name = "label2";
 			this.label2.Size = new System.Drawing.Size(76, 13);
 			this.label2.TabIndex = 2;
-			this.label2.Text = "Image Source:";
+			this.label2.Text = global::DMT.Resources.WallpaperStrings.WallpaperChangerPropertiesOptionsPanel_label2_Text;
 			// 
 			// label1
 			// 
@@ -167,7 +167,7 @@
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(49, 13);
 			this.label1.TabIndex = 0;
-			this.label1.Text = "Provider:";
+			this.label1.Text = global::DMT.Resources.WallpaperStrings.WallpaperChangerPropertiesOptionsPanel_label1_Text;
 			// 
 			// labelProperties
 			// 
@@ -175,7 +175,7 @@
 			this.labelProperties.Name = "labelProperties";
 			this.labelProperties.Size = new System.Drawing.Size(494, 13);
 			this.labelProperties.TabIndex = 2;
-			this.labelProperties.Text = "Details will appear here when DMT creates a wallpaper";
+			this.labelProperties.Text = global::DMT.Resources.WallpaperStrings.WallpaperChangerPropertiesOptionsPanel_labelProperties_Text;
 			// 
 			// WallpaperChangerPropertiesOptionsPanel
 			// 

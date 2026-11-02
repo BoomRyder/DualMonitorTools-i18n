@@ -75,7 +75,10 @@ namespace DMT.UnitTests.Library.Localization
 			"Win+<Home>",
 			"X1",
 			"X2",
-			"SlickRun"
+			"SlickRun",
+			// Escape-sequence legend on the Url provider panel: the syntax is the
+			// message, so it reads the same in both languages.
+			"%% -> %"
 		};
 
 		/// <summary>

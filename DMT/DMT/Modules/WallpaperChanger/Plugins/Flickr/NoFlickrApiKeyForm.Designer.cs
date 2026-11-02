@@ -42,7 +42,7 @@
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(167, 13);
 			this.label1.TabIndex = 0;
-			this.label1.Text = "A flickr API key must be specified.";
+			this.label1.Text = global::DMT.Resources.WallpaperStrings.FlickrNoFlickrApiKeyForm_label1_Text;
 			// 
 			// linkLabelFlickr
 			// 
@@ -52,7 +52,7 @@
 			this.linkLabelFlickr.Size = new System.Drawing.Size(231, 13);
 			this.linkLabelFlickr.TabIndex = 1;
 			this.linkLabelFlickr.TabStop = true;
-			this.linkLabelFlickr.Text = "If you don\'t have one, you may obtain one from ";
+			this.linkLabelFlickr.Text = global::DMT.Resources.WallpaperStrings.FlickrNoFlickrApiKeyForm_linkLabelFlickr_Text;
 			this.linkLabelFlickr.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelFlickr_LinkClicked);
 			// 
 			// label2
@@ -62,7 +62,7 @@
 			this.label2.Name = "label2";
 			this.label2.Size = new System.Drawing.Size(202, 13);
 			this.label2.TabIndex = 2;
-			this.label2.Text = "You will need a flickr/yahoo account first.";
+			this.label2.Text = global::DMT.Resources.WallpaperStrings.FlickrNoFlickrApiKeyForm_label2_Text;
 			// 
 			// buttonOK
 			// 
@@ -70,7 +70,7 @@
 			this.buttonOK.Name = "buttonOK";
 			this.buttonOK.Size = new System.Drawing.Size(75, 23);
 			this.buttonOK.TabIndex = 3;
-			this.buttonOK.Text = "OK";
+			this.buttonOK.Text = global::DMT.Resources.WallpaperStrings.FlickrNoFlickrApiKeyForm_buttonOK_Text;
 			this.buttonOK.UseVisualStyleBackColor = true;
 			this.buttonOK.Click += new System.EventHandler(this.buttonOK_Click);
 			// 

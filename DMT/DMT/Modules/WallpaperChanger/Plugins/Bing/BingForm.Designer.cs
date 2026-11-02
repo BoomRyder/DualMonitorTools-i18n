@@ -95,7 +95,7 @@ namespace DMT.Modules.WallpaperChanger.Plugins.Bing
 			this.buttonCancel.Name = "buttonCancel";
 			this.buttonCancel.Size = new System.Drawing.Size(75, 23);
 			this.buttonCancel.TabIndex = 8;
-			this.buttonCancel.Text = "Cancel";
+			this.buttonCancel.Text = global::DMT.Resources.WallpaperStrings.BingBingForm_buttonCancel_Text;
 			this.buttonCancel.UseVisualStyleBackColor = true;
 			this.buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);
 			// 
@@ -105,7 +105,7 @@ namespace DMT.Modules.WallpaperChanger.Plugins.Bing
 			this.buttonOK.Name = "buttonOK";
 			this.buttonOK.Size = new System.Drawing.Size(75, 23);
 			this.buttonOK.TabIndex = 7;
-			this.buttonOK.Text = "OK";
+			this.buttonOK.Text = global::DMT.Resources.WallpaperStrings.BingBingForm_buttonOK_Text;
 			this.buttonOK.UseVisualStyleBackColor = true;
 			this.buttonOK.Click += new System.EventHandler(this.buttonOK_Click);
 			// 
@@ -123,7 +123,7 @@ namespace DMT.Modules.WallpaperChanger.Plugins.Bing
 			this.label2.Name = "label2";
 			this.label2.Size = new System.Drawing.Size(63, 13);
 			this.label2.TabIndex = 3;
-			this.label2.Text = "Description:";
+			this.label2.Text = global::DMT.Resources.WallpaperStrings.BingBingForm_label2_Text;
 			// 
 			// numericUpDownWeight
 			// 
@@ -144,7 +144,7 @@ namespace DMT.Modules.WallpaperChanger.Plugins.Bing
 			this.label4.Name = "label4";
 			this.label4.Size = new System.Drawing.Size(44, 13);
 			this.label4.TabIndex = 1;
-			this.label4.Text = "Weight:";
+			this.label4.Text = global::DMT.Resources.WallpaperStrings.BingBingForm_label4_Text;
 			// 
 			// linkLabel
 			// 
@@ -153,7 +153,7 @@ namespace DMT.Modules.WallpaperChanger.Plugins.Bing
 			this.linkLabel.Size = new System.Drawing.Size(473, 13);
 			this.linkLabel.TabIndex = 0;
 			this.linkLabel.TabStop = true;
-			this.linkLabel.Text = "Plugin for DualWallpaperChanger to get images from ";
+			this.linkLabel.Text = global::DMT.Resources.WallpaperStrings.BingBingForm_linkLabel_Text;
 			this.linkLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel_LinkClicked);
 			// 
 			// checkBoxEnabled
@@ -163,7 +163,7 @@ namespace DMT.Modules.WallpaperChanger.Plugins.Bing
 			this.checkBoxEnabled.Name = "checkBoxEnabled";
 			this.checkBoxEnabled.Size = new System.Drawing.Size(65, 17);
 			this.checkBoxEnabled.TabIndex = 15;
-			this.checkBoxEnabled.Text = "Enabled";
+			this.checkBoxEnabled.Text = global::DMT.Resources.WallpaperStrings.BingBingForm_checkBoxEnabled_Text;
 			this.checkBoxEnabled.UseVisualStyleBackColor = true;
 			// 
 			// label1
@@ -173,7 +173,7 @@ namespace DMT.Modules.WallpaperChanger.Plugins.Bing
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(66, 13);
 			this.label1.TabIndex = 16;
-			this.label1.Text = "Bing Locale:";
+			this.label1.Text = global::DMT.Resources.WallpaperStrings.BingBingForm_label1_Text;
 			// 
 			// bingLocale
 			// 

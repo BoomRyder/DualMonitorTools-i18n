@@ -70,7 +70,7 @@
 			this.checkBoxRectangles.Name = "checkBoxRectangles";
 			this.checkBoxRectangles.Size = new System.Drawing.Size(82, 17);
 			this.checkBoxRectangles.TabIndex = 0;
-			this.checkBoxRectangles.Text = "Rectamgles";
+			this.checkBoxRectangles.Text = global::DMT.Resources.WallpaperStrings.RandomShapesRandomShapesForm_checkBoxRectangles_Text;
 			this.checkBoxRectangles.UseVisualStyleBackColor = true;
 			// 
 			// checkBoxEllipses
@@ -80,7 +80,7 @@
 			this.checkBoxEllipses.Name = "checkBoxEllipses";
 			this.checkBoxEllipses.Size = new System.Drawing.Size(61, 17);
 			this.checkBoxEllipses.TabIndex = 1;
-			this.checkBoxEllipses.Text = "Ellipses";
+			this.checkBoxEllipses.Text = global::DMT.Resources.WallpaperStrings.RandomShapesRandomShapesForm_checkBoxEllipses_Text;
 			this.checkBoxEllipses.UseVisualStyleBackColor = true;
 			// 
 			// checkBoxUseAlpha
@@ -90,7 +90,7 @@
 			this.checkBoxUseAlpha.Name = "checkBoxUseAlpha";
 			this.checkBoxUseAlpha.Size = new System.Drawing.Size(129, 17);
 			this.checkBoxUseAlpha.TabIndex = 1;
-			this.checkBoxUseAlpha.Text = "Make shapes opaque";
+			this.checkBoxUseAlpha.Text = global::DMT.Resources.WallpaperStrings.RandomShapesRandomShapesForm_checkBoxUseAlpha_Text;
 			this.checkBoxUseAlpha.UseVisualStyleBackColor = true;
 			// 
 			// label4
@@ -100,7 +100,7 @@
 			this.label4.Name = "label4";
 			this.label4.Size = new System.Drawing.Size(384, 13);
 			this.label4.TabIndex = 0;
-			this.label4.Text = "Plugin for DualWallpaperChanger to create images composed of random shapes";
+			this.label4.Text = global::DMT.Resources.WallpaperStrings.RandomShapesRandomShapesForm_label4_Text;
 			// 
 			// numericUpDownRectangles
 			// 
@@ -121,7 +121,7 @@
 			this.buttonCancel.Name = "buttonCancel";
 			this.buttonCancel.Size = new System.Drawing.Size(75, 23);
 			this.buttonCancel.TabIndex = 12;
-			this.buttonCancel.Text = "Cancel";
+			this.buttonCancel.Text = global::DMT.Resources.WallpaperStrings.RandomShapesRandomShapesForm_buttonCancel_Text;
 			this.buttonCancel.UseVisualStyleBackColor = true;
 			// 
 			// buttonOK
@@ -130,7 +130,7 @@
 			this.buttonOK.Name = "buttonOK";
 			this.buttonOK.Size = new System.Drawing.Size(75, 23);
 			this.buttonOK.TabIndex = 11;
-			this.buttonOK.Text = "OK";
+			this.buttonOK.Text = global::DMT.Resources.WallpaperStrings.RandomShapesRandomShapesForm_buttonOK_Text;
 			this.buttonOK.UseVisualStyleBackColor = true;
 			this.buttonOK.Click += new System.EventHandler(this.buttonOK_Click);
 			// 
@@ -148,7 +148,7 @@
 			this.label2.Name = "label2";
 			this.label2.Size = new System.Drawing.Size(63, 13);
 			this.label2.TabIndex = 4;
-			this.label2.Text = "Description:";
+			this.label2.Text = global::DMT.Resources.WallpaperStrings.RandomShapesRandomShapesForm_label2_Text;
 			// 
 			// numericUpDownWeight
 			// 
@@ -169,7 +169,7 @@
 			this.checkBoxUseGradients.Name = "checkBoxUseGradients";
 			this.checkBoxUseGradients.Size = new System.Drawing.Size(143, 17);
 			this.checkBoxUseGradients.TabIndex = 0;
-			this.checkBoxUseGradients.Text = "Fill shapes with gradients";
+			this.checkBoxUseGradients.Text = global::DMT.Resources.WallpaperStrings.RandomShapesRandomShapesForm_checkBoxUseGradients_Text;
 			this.checkBoxUseGradients.UseVisualStyleBackColor = true;
 			// 
 			// checkBoxRandomBackground
@@ -179,7 +179,7 @@
 			this.checkBoxRandomBackground.Name = "checkBoxRandomBackground";
 			this.checkBoxRandomBackground.Size = new System.Drawing.Size(158, 17);
 			this.checkBoxRandomBackground.TabIndex = 8;
-			this.checkBoxRandomBackground.Text = "Random background colour";
+			this.checkBoxRandomBackground.Text = global::DMT.Resources.WallpaperStrings.RandomShapesRandomShapesForm_checkBoxRandomBackground_Text;
 			this.checkBoxRandomBackground.UseVisualStyleBackColor = true;
 			// 
 			// groupBox2
@@ -191,7 +191,7 @@
 			this.groupBox2.Size = new System.Drawing.Size(200, 83);
 			this.groupBox2.TabIndex = 10;
 			this.groupBox2.TabStop = false;
-			this.groupBox2.Text = "Paint style";
+			this.groupBox2.Text = global::DMT.Resources.WallpaperStrings.RandomShapesRandomShapesForm_groupBox2_Text;
 			// 
 			// groupBox1
 			// 
@@ -202,7 +202,7 @@
 			this.groupBox1.Size = new System.Drawing.Size(200, 83);
 			this.groupBox1.TabIndex = 9;
 			this.groupBox1.TabStop = false;
-			this.groupBox1.Text = "Use following shapes";
+			this.groupBox1.Text = global::DMT.Resources.WallpaperStrings.RandomShapesRandomShapesForm_groupBox1_Text;
 			// 
 			// label3
 			// 
@@ -211,7 +211,7 @@
 			this.label3.Name = "label3";
 			this.label3.Size = new System.Drawing.Size(46, 13);
 			this.label3.TabIndex = 6;
-			this.label3.Text = "Shapes:";
+			this.label3.Text = global::DMT.Resources.WallpaperStrings.RandomShapesRandomShapesForm_label3_Text;
 			// 
 			// label1
 			// 
@@ -220,7 +220,7 @@
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(44, 13);
 			this.label1.TabIndex = 1;
-			this.label1.Text = "Weight:";
+			this.label1.Text = global::DMT.Resources.WallpaperStrings.RandomShapesRandomShapesForm_label1_Text;
 			// 
 			// checkBoxEnabled
 			// 
@@ -229,7 +229,7 @@
 			this.checkBoxEnabled.Name = "checkBoxEnabled";
 			this.checkBoxEnabled.Size = new System.Drawing.Size(65, 17);
 			this.checkBoxEnabled.TabIndex = 3;
-			this.checkBoxEnabled.Text = "Enabled";
+			this.checkBoxEnabled.Text = global::DMT.Resources.WallpaperStrings.RandomShapesRandomShapesForm_checkBoxEnabled_Text;
 			this.checkBoxEnabled.UseVisualStyleBackColor = true;
 			// 
 			// RandomShapesForm

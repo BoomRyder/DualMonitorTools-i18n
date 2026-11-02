@@ -65,7 +65,7 @@
 			this.label2.Name = "label2";
 			this.label2.Size = new System.Drawing.Size(63, 13);
 			this.label2.TabIndex = 4;
-			this.label2.Text = "Description:";
+			this.label2.Text = global::DMT.Resources.WallpaperStrings.ListListForm_label2_Text;
 			// 
 			// numericUpDownWeight
 			// 
@@ -86,7 +86,7 @@
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(44, 13);
 			this.label1.TabIndex = 1;
-			this.label1.Text = "Weight:";
+			this.label1.Text = global::DMT.Resources.WallpaperStrings.ListListForm_label1_Text;
 			// 
 			// pictureBox1
 			// 
@@ -104,7 +104,7 @@
 			this.label4.Name = "label4";
 			this.label4.Size = new System.Drawing.Size(366, 13);
 			this.label4.TabIndex = 0;
-			this.label4.Text = "Image provider that reads a file contaning a list of paths and URLs to images";
+			this.label4.Text = global::DMT.Resources.WallpaperStrings.ListListForm_label4_Text;
 			// 
 			// buttonCancel
 			// 
@@ -113,7 +113,7 @@
 			this.buttonCancel.Name = "buttonCancel";
 			this.buttonCancel.Size = new System.Drawing.Size(75, 23);
 			this.buttonCancel.TabIndex = 11;
-			this.buttonCancel.Text = "Cancel";
+			this.buttonCancel.Text = global::DMT.Resources.WallpaperStrings.ListListForm_buttonCancel_Text;
 			this.buttonCancel.UseVisualStyleBackColor = true;
 			this.buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);
 			// 
@@ -123,7 +123,7 @@
 			this.buttonOK.Name = "buttonOK";
 			this.buttonOK.Size = new System.Drawing.Size(75, 23);
 			this.buttonOK.TabIndex = 10;
-			this.buttonOK.Text = "OK";
+			this.buttonOK.Text = global::DMT.Resources.WallpaperStrings.ListListForm_buttonOK_Text;
 			this.buttonOK.UseVisualStyleBackColor = true;
 			this.buttonOK.Click += new System.EventHandler(this.buttonOK_Click);
 			// 
@@ -134,7 +134,7 @@
 			this.checkBoxPersist.Name = "checkBoxPersist";
 			this.checkBoxPersist.Size = new System.Drawing.Size(214, 17);
 			this.checkBoxPersist.TabIndex = 7;
-			this.checkBoxPersist.Text = "Remember position between shutdowns";
+			this.checkBoxPersist.Text = global::DMT.Resources.WallpaperStrings.ListListForm_checkBoxPersist_Text;
 			this.checkBoxPersist.UseVisualStyleBackColor = true;
 			this.checkBoxPersist.CheckedChanged += new System.EventHandler(this.checkBoxPersist_CheckedChanged);
 			// 
@@ -145,7 +145,7 @@
 			this.checkBoxEnabled.Name = "checkBoxEnabled";
 			this.checkBoxEnabled.Size = new System.Drawing.Size(65, 17);
 			this.checkBoxEnabled.TabIndex = 3;
-			this.checkBoxEnabled.Text = "Enabled";
+			this.checkBoxEnabled.Text = global::DMT.Resources.WallpaperStrings.ListListForm_checkBoxEnabled_Text;
 			this.checkBoxEnabled.UseVisualStyleBackColor = true;
 			// 
 			// groupBox2
@@ -158,7 +158,7 @@
 			this.groupBox2.Size = new System.Drawing.Size(263, 100);
 			this.groupBox2.TabIndex = 28;
 			this.groupBox2.TabStop = false;
-			this.groupBox2.Text = "Ordering";
+			this.groupBox2.Text = global::DMT.Resources.WallpaperStrings.ListListForm_groupBox2_Text;
 			// 
 			// radioButtonOrderList
 			// 
@@ -168,7 +168,7 @@
 			this.radioButtonOrderList.Size = new System.Drawing.Size(82, 17);
 			this.radioButtonOrderList.TabIndex = 1;
 			this.radioButtonOrderList.TabStop = true;
-			this.radioButtonOrderList.Text = "In List Order";
+			this.radioButtonOrderList.Text = global::DMT.Resources.WallpaperStrings.ListListForm_radioButtonOrderList_Text;
 			this.radioButtonOrderList.UseVisualStyleBackColor = true;
 			this.radioButtonOrderList.CheckedChanged += new System.EventHandler(this.OnOrderRadioChanged);
 			// 
@@ -180,7 +180,7 @@
 			this.radioButtonOrderRandom.Size = new System.Drawing.Size(65, 17);
 			this.radioButtonOrderRandom.TabIndex = 0;
 			this.radioButtonOrderRandom.TabStop = true;
-			this.radioButtonOrderRandom.Text = "Random";
+			this.radioButtonOrderRandom.Text = global::DMT.Resources.WallpaperStrings.ListListForm_radioButtonOrderRandom_Text;
 			this.radioButtonOrderRandom.UseVisualStyleBackColor = true;
 			this.radioButtonOrderRandom.CheckedChanged += new System.EventHandler(this.OnOrderRadioChanged);
 			// 
@@ -191,7 +191,7 @@
 			this.label3.Name = "label3";
 			this.label3.Size = new System.Drawing.Size(51, 13);
 			this.label3.TabIndex = 16;
-			this.label3.Text = "List Path:";
+			this.label3.Text = global::DMT.Resources.WallpaperStrings.ListListForm_label3_Text;
 			// 
 			// textBoxListFnm
 			// 
@@ -206,7 +206,7 @@
 			this.buttonBrowse.Name = "buttonBrowse";
 			this.buttonBrowse.Size = new System.Drawing.Size(75, 23);
 			this.buttonBrowse.TabIndex = 18;
-			this.buttonBrowse.Text = "Browse...";
+			this.buttonBrowse.Text = global::DMT.Resources.WallpaperStrings.ListListForm_buttonBrowse_Text;
 			this.buttonBrowse.UseVisualStyleBackColor = true;
 			this.buttonBrowse.Click += new System.EventHandler(this.buttonBrowse_Click);
 			// 
@@ -216,7 +216,7 @@
 			this.buttonAutoGenerate.Name = "buttonAutoGenerate";
 			this.buttonAutoGenerate.Size = new System.Drawing.Size(124, 23);
 			this.buttonAutoGenerate.TabIndex = 29;
-			this.buttonAutoGenerate.Text = "Auto Generate...";
+			this.buttonAutoGenerate.Text = global::DMT.Resources.WallpaperStrings.ListListForm_buttonAutoGenerate_Text;
 			this.buttonAutoGenerate.UseVisualStyleBackColor = true;
 			this.buttonAutoGenerate.Click += new System.EventHandler(this.buttonAutoGenerate_Click);
 			// 

@@ -276,5 +276,1454 @@ namespace DMT.Resources {
                 return ResourceManager.GetString("WallpaperPropertiesDescription", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cancel.
+        /// </summary>
+        internal static string BingBingForm_buttonCancel_Text {
+            get {
+                return ResourceManager.GetString("BingBingForm_buttonCancel_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to OK.
+        /// </summary>
+        internal static string BingBingForm_buttonOK_Text {
+            get {
+                return ResourceManager.GetString("BingBingForm_buttonOK_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Description:.
+        /// </summary>
+        internal static string BingBingForm_label2_Text {
+            get {
+                return ResourceManager.GetString("BingBingForm_label2_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Weight:.
+        /// </summary>
+        internal static string BingBingForm_label4_Text {
+            get {
+                return ResourceManager.GetString("BingBingForm_label4_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Plugin for DualWallpaperChanger to get images from .
+        /// </summary>
+        internal static string BingBingForm_linkLabel_Text {
+            get {
+                return ResourceManager.GetString("BingBingForm_linkLabel_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Enabled.
+        /// </summary>
+        internal static string BingBingForm_checkBoxEnabled_Text {
+            get {
+                return ResourceManager.GetString("BingBingForm_checkBoxEnabled_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Bing Locale:.
+        /// </summary>
+        internal static string BingBingForm_label1_Text {
+            get {
+                return ResourceManager.GetString("BingBingForm_label1_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Image provider to get images from .
+        /// </summary>
+        internal static string FlickrFlickrForm_linkLabel_Text {
+            get {
+                return ResourceManager.GetString("FlickrFlickrForm_linkLabel_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Take image from random page (rather than page containing latest added photos).
+        /// </summary>
+        internal static string FlickrFlickrForm_checkBoxRandomPage_Text {
+            get {
+                return ResourceManager.GetString("FlickrFlickrForm_checkBoxRandomPage_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cancel.
+        /// </summary>
+        internal static string FlickrFlickrForm_buttonCancel_Text {
+            get {
+                return ResourceManager.GetString("FlickrFlickrForm_buttonCancel_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to OK.
+        /// </summary>
+        internal static string FlickrFlickrForm_buttonOK_Text {
+            get {
+                return ResourceManager.GetString("FlickrFlickrForm_buttonOK_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Description:.
+        /// </summary>
+        internal static string FlickrFlickrForm_label2_Text {
+            get {
+                return ResourceManager.GetString("FlickrFlickrForm_label2_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Weight:.
+        /// </summary>
+        internal static string FlickrFlickrForm_label4_Text {
+            get {
+                return ResourceManager.GetString("FlickrFlickrForm_label4_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Tags:.
+        /// </summary>
+        internal static string FlickrFlickrForm_label1_Text {
+            get {
+                return ResourceManager.GetString("FlickrFlickrForm_label1_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Comma separated list of tags.
+        /// </summary>
+        internal static string FlickrForm_textBoxTags_ToolTip {
+            get {
+                return ResourceManager.GetString("FlickrForm_textBoxTags_ToolTip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Photos must have all or the above tags.
+        /// </summary>
+        internal static string FlickrFlickrForm_checkBoxTagMode_Text {
+            get {
+                return ResourceManager.GetString("FlickrFlickrForm_checkBoxTagMode_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Text:.
+        /// </summary>
+        internal static string FlickrFlickrForm_label3_Text {
+            get {
+                return ResourceManager.GetString("FlickrFlickrForm_label3_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to User Id:.
+        /// </summary>
+        internal static string FlickrFlickrForm_label5_Text {
+            get {
+                return ResourceManager.GetString("FlickrFlickrForm_label5_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Group Id:.
+        /// </summary>
+        internal static string FlickrFlickrForm_label6_Text {
+            get {
+                return ResourceManager.GetString("FlickrFlickrForm_label6_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to API Key:.
+        /// </summary>
+        internal static string FlickrFlickrForm_label7_Text {
+            get {
+                return ResourceManager.GetString("FlickrFlickrForm_label7_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This needs to be obtained from flickr.
+        /// </summary>
+        internal static string FlickrForm_textBoxApiKey_ToolTip {
+            get {
+                return ResourceManager.GetString("FlickrForm_textBoxApiKey_ToolTip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Test Search Criteria.
+        /// </summary>
+        internal static string FlickrFlickrForm_buttonTest_Text {
+            get {
+                return ResourceManager.GetString("FlickrFlickrForm_buttonTest_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Enabled.
+        /// </summary>
+        internal static string FlickrFlickrForm_checkBoxEnabled_Text {
+            get {
+                return ResourceManager.GetString("FlickrFlickrForm_checkBoxEnabled_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to A flickr API key must be specified..
+        /// </summary>
+        internal static string FlickrNoFlickrApiKeyForm_label1_Text {
+            get {
+                return ResourceManager.GetString("FlickrNoFlickrApiKeyForm_label1_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to If you don't have one, you may obtain one from .
+        /// </summary>
+        internal static string FlickrNoFlickrApiKeyForm_linkLabelFlickr_Text {
+            get {
+                return ResourceManager.GetString("FlickrNoFlickrApiKeyForm_linkLabelFlickr_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to You will need a flickr/yahoo account first..
+        /// </summary>
+        internal static string FlickrNoFlickrApiKeyForm_label2_Text {
+            get {
+                return ResourceManager.GetString("FlickrNoFlickrApiKeyForm_label2_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to OK.
+        /// </summary>
+        internal static string FlickrNoFlickrApiKeyForm_buttonOK_Text {
+            get {
+                return ResourceManager.GetString("FlickrNoFlickrApiKeyForm_buttonOK_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Creates a text file (specified by 'List Path') containing a list of image files found in the specified folder for use by the List provider..
+        /// </summary>
+        internal static string ListListAutoGenForm_label1_Text {
+            get {
+                return ResourceManager.GetString("ListListAutoGenForm_label1_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to List Path:.
+        /// </summary>
+        internal static string ListListAutoGenForm_label2_Text {
+            get {
+                return ResourceManager.GetString("ListListAutoGenForm_label2_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Browse ....
+        /// </summary>
+        internal static string ListListAutoGenForm_buttonBrowseList_Text {
+            get {
+                return ResourceManager.GetString("ListListAutoGenForm_buttonBrowseList_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Folder:.
+        /// </summary>
+        internal static string ListListAutoGenForm_label3_Text {
+            get {
+                return ResourceManager.GetString("ListListAutoGenForm_label3_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Browse ....
+        /// </summary>
+        internal static string ListListAutoGenForm_buttonBrowseFolder_Text {
+            get {
+                return ResourceManager.GetString("ListListAutoGenForm_buttonBrowseFolder_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Look in sub-Folders.
+        /// </summary>
+        internal static string ListListAutoGenForm_checkBoxRecursive_Text {
+            get {
+                return ResourceManager.GetString("ListListAutoGenForm_checkBoxRecursive_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cancel.
+        /// </summary>
+        internal static string ListListAutoGenForm_buttonCancel_Text {
+            get {
+                return ResourceManager.GetString("ListListAutoGenForm_buttonCancel_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to OK.
+        /// </summary>
+        internal static string ListListAutoGenForm_buttonOK_Text {
+            get {
+                return ResourceManager.GetString("ListListAutoGenForm_buttonOK_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Description:.
+        /// </summary>
+        internal static string ListListForm_label2_Text {
+            get {
+                return ResourceManager.GetString("ListListForm_label2_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Weight:.
+        /// </summary>
+        internal static string ListListForm_label1_Text {
+            get {
+                return ResourceManager.GetString("ListListForm_label1_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Image provider that reads a file contaning a list of paths and URLs to images.
+        /// </summary>
+        internal static string ListListForm_label4_Text {
+            get {
+                return ResourceManager.GetString("ListListForm_label4_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cancel.
+        /// </summary>
+        internal static string ListListForm_buttonCancel_Text {
+            get {
+                return ResourceManager.GetString("ListListForm_buttonCancel_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to OK.
+        /// </summary>
+        internal static string ListListForm_buttonOK_Text {
+            get {
+                return ResourceManager.GetString("ListListForm_buttonOK_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Remember position between shutdowns.
+        /// </summary>
+        internal static string ListListForm_checkBoxPersist_Text {
+            get {
+                return ResourceManager.GetString("ListListForm_checkBoxPersist_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Enabled.
+        /// </summary>
+        internal static string ListListForm_checkBoxEnabled_Text {
+            get {
+                return ResourceManager.GetString("ListListForm_checkBoxEnabled_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ordering.
+        /// </summary>
+        internal static string ListListForm_groupBox2_Text {
+            get {
+                return ResourceManager.GetString("ListListForm_groupBox2_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to In List Order.
+        /// </summary>
+        internal static string ListListForm_radioButtonOrderList_Text {
+            get {
+                return ResourceManager.GetString("ListListForm_radioButtonOrderList_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Random.
+        /// </summary>
+        internal static string ListListForm_radioButtonOrderRandom_Text {
+            get {
+                return ResourceManager.GetString("ListListForm_radioButtonOrderRandom_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to List Path:.
+        /// </summary>
+        internal static string ListListForm_label3_Text {
+            get {
+                return ResourceManager.GetString("ListListForm_label3_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Browse....
+        /// </summary>
+        internal static string ListListForm_buttonBrowse_Text {
+            get {
+                return ResourceManager.GetString("ListListForm_buttonBrowse_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Auto Generate....
+        /// </summary>
+        internal static string ListListForm_buttonAutoGenerate_Text {
+            get {
+                return ResourceManager.GetString("ListListForm_buttonAutoGenerate_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Browse....
+        /// </summary>
+        internal static string LocalDiskLocalDiskForm_buttonBrowse_Text {
+            get {
+                return ResourceManager.GetString("LocalDiskLocalDiskForm_buttonBrowse_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Default:.
+        /// </summary>
+        internal static string LocalDiskLocalDiskForm_label3_Text {
+            get {
+                return ResourceManager.GetString("LocalDiskLocalDiskForm_label3_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Description:.
+        /// </summary>
+        internal static string LocalDiskLocalDiskForm_label2_Text {
+            get {
+                return ResourceManager.GetString("LocalDiskLocalDiskForm_label2_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Weight:.
+        /// </summary>
+        internal static string LocalDiskLocalDiskForm_label1_Text {
+            get {
+                return ResourceManager.GetString("LocalDiskLocalDiskForm_label1_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Image provider to get images stored on local disk.
+        /// </summary>
+        internal static string LocalDiskLocalDiskForm_label4_Text {
+            get {
+                return ResourceManager.GetString("LocalDiskLocalDiskForm_label4_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cancel.
+        /// </summary>
+        internal static string LocalDiskLocalDiskForm_buttonCancel_Text {
+            get {
+                return ResourceManager.GetString("LocalDiskLocalDiskForm_buttonCancel_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to OK.
+        /// </summary>
+        internal static string LocalDiskLocalDiskForm_buttonOK_Text {
+            get {
+                return ResourceManager.GetString("LocalDiskLocalDiskForm_buttonOK_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Rescan folder(s) before getting each image.
+        /// </summary>
+        internal static string LocalDiskLocalDiskForm_checkBoxRescan_Text {
+            get {
+                return ResourceManager.GetString("LocalDiskLocalDiskForm_checkBoxRescan_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Look in sub-folders.
+        /// </summary>
+        internal static string LocalDiskLocalDiskForm_checkBoxRecursive_Text {
+            get {
+                return ResourceManager.GetString("LocalDiskLocalDiskForm_checkBoxRecursive_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Browse....
+        /// </summary>
+        internal static string LocalDiskLocalDiskForm_buttonBrowsePortrait_Text {
+            get {
+                return ResourceManager.GetString("LocalDiskLocalDiskForm_buttonBrowsePortrait_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Portrait Monitors:.
+        /// </summary>
+        internal static string LocalDiskLocalDiskForm_label5_Text {
+            get {
+                return ResourceManager.GetString("LocalDiskLocalDiskForm_label5_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Folder(s) to take images from (in priority order).
+        /// </summary>
+        internal static string LocalDiskLocalDiskForm_groupBox1_Text {
+            get {
+                return ResourceManager.GetString("LocalDiskLocalDiskForm_groupBox1_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Browse....
+        /// </summary>
+        internal static string LocalDiskLocalDiskForm_buttonBrowseMonitor4_Text {
+            get {
+                return ResourceManager.GetString("LocalDiskLocalDiskForm_buttonBrowseMonitor4_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Monitor 4:.
+        /// </summary>
+        internal static string LocalDiskLocalDiskForm_label9_Text {
+            get {
+                return ResourceManager.GetString("LocalDiskLocalDiskForm_label9_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Browse....
+        /// </summary>
+        internal static string LocalDiskLocalDiskForm_buttonBrowseMonitor3_Text {
+            get {
+                return ResourceManager.GetString("LocalDiskLocalDiskForm_buttonBrowseMonitor3_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Monitor 3:.
+        /// </summary>
+        internal static string LocalDiskLocalDiskForm_label8_Text {
+            get {
+                return ResourceManager.GetString("LocalDiskLocalDiskForm_label8_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Browse....
+        /// </summary>
+        internal static string LocalDiskLocalDiskForm_buttonBrowseMonitor2_Text {
+            get {
+                return ResourceManager.GetString("LocalDiskLocalDiskForm_buttonBrowseMonitor2_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Monitor 2:.
+        /// </summary>
+        internal static string LocalDiskLocalDiskForm_label7_Text {
+            get {
+                return ResourceManager.GetString("LocalDiskLocalDiskForm_label7_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to File Browse (experimental).
+        /// </summary>
+        internal static string LocalDiskLocalDiskForm_checkBoxAllowFileBrowse_Text {
+            get {
+                return ResourceManager.GetString("LocalDiskLocalDiskForm_checkBoxAllowFileBrowse_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Browse....
+        /// </summary>
+        internal static string LocalDiskLocalDiskForm_buttonBrowseMonitor1_Text {
+            get {
+                return ResourceManager.GetString("LocalDiskLocalDiskForm_buttonBrowseMonitor1_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Monitor 1:.
+        /// </summary>
+        internal static string LocalDiskLocalDiskForm_label6_Text {
+            get {
+                return ResourceManager.GetString("LocalDiskLocalDiskForm_label6_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cycle through all images before repeating (mutually exclusive with above).
+        /// </summary>
+        internal static string LocalDiskLocalDiskForm_checkBoxCycle_Text {
+            get {
+                return ResourceManager.GetString("LocalDiskLocalDiskForm_checkBoxCycle_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Enabled.
+        /// </summary>
+        internal static string LocalDiskLocalDiskForm_checkBoxEnabled_Text {
+            get {
+                return ResourceManager.GetString("LocalDiskLocalDiskForm_checkBoxEnabled_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ordering.
+        /// </summary>
+        internal static string LocalDiskLocalDiskForm_groupBox2_Text {
+            get {
+                return ResourceManager.GetString("LocalDiskLocalDiskForm_groupBox2_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Alphabetical.
+        /// </summary>
+        internal static string LocalDiskLocalDiskForm_radioButtonOrderAlphabetical_Text {
+            get {
+                return ResourceManager.GetString("LocalDiskLocalDiskForm_radioButtonOrderAlphabetical_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Random.
+        /// </summary>
+        internal static string LocalDiskLocalDiskForm_radioButtonOrderRandom_Text {
+            get {
+                return ResourceManager.GetString("LocalDiskLocalDiskForm_radioButtonOrderRandom_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Current order options.
+        /// </summary>
+        internal static string LocalDiskLocalDiskForm_groupBox3_Text {
+            get {
+                return ResourceManager.GetString("LocalDiskLocalDiskForm_groupBox3_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Rectamgles.
+        /// </summary>
+        internal static string RandomShapesRandomShapesForm_checkBoxRectangles_Text {
+            get {
+                return ResourceManager.GetString("RandomShapesRandomShapesForm_checkBoxRectangles_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ellipses.
+        /// </summary>
+        internal static string RandomShapesRandomShapesForm_checkBoxEllipses_Text {
+            get {
+                return ResourceManager.GetString("RandomShapesRandomShapesForm_checkBoxEllipses_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Make shapes opaque.
+        /// </summary>
+        internal static string RandomShapesRandomShapesForm_checkBoxUseAlpha_Text {
+            get {
+                return ResourceManager.GetString("RandomShapesRandomShapesForm_checkBoxUseAlpha_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Plugin for DualWallpaperChanger to create images composed of random shapes.
+        /// </summary>
+        internal static string RandomShapesRandomShapesForm_label4_Text {
+            get {
+                return ResourceManager.GetString("RandomShapesRandomShapesForm_label4_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cancel.
+        /// </summary>
+        internal static string RandomShapesRandomShapesForm_buttonCancel_Text {
+            get {
+                return ResourceManager.GetString("RandomShapesRandomShapesForm_buttonCancel_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to OK.
+        /// </summary>
+        internal static string RandomShapesRandomShapesForm_buttonOK_Text {
+            get {
+                return ResourceManager.GetString("RandomShapesRandomShapesForm_buttonOK_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Description:.
+        /// </summary>
+        internal static string RandomShapesRandomShapesForm_label2_Text {
+            get {
+                return ResourceManager.GetString("RandomShapesRandomShapesForm_label2_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Fill shapes with gradients.
+        /// </summary>
+        internal static string RandomShapesRandomShapesForm_checkBoxUseGradients_Text {
+            get {
+                return ResourceManager.GetString("RandomShapesRandomShapesForm_checkBoxUseGradients_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Random background colour.
+        /// </summary>
+        internal static string RandomShapesRandomShapesForm_checkBoxRandomBackground_Text {
+            get {
+                return ResourceManager.GetString("RandomShapesRandomShapesForm_checkBoxRandomBackground_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Paint style.
+        /// </summary>
+        internal static string RandomShapesRandomShapesForm_groupBox2_Text {
+            get {
+                return ResourceManager.GetString("RandomShapesRandomShapesForm_groupBox2_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Use following shapes.
+        /// </summary>
+        internal static string RandomShapesRandomShapesForm_groupBox1_Text {
+            get {
+                return ResourceManager.GetString("RandomShapesRandomShapesForm_groupBox1_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Shapes:.
+        /// </summary>
+        internal static string RandomShapesRandomShapesForm_label3_Text {
+            get {
+                return ResourceManager.GetString("RandomShapesRandomShapesForm_label3_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Weight:.
+        /// </summary>
+        internal static string RandomShapesRandomShapesForm_label1_Text {
+            get {
+                return ResourceManager.GetString("RandomShapesRandomShapesForm_label1_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Enabled.
+        /// </summary>
+        internal static string RandomShapesRandomShapesForm_checkBoxEnabled_Text {
+            get {
+                return ResourceManager.GetString("RandomShapesRandomShapesForm_checkBoxEnabled_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Image provider to get images from .
+        /// </summary>
+        internal static string UnsplashWebScrapeForm_linkLabel_Text {
+            get {
+                return ResourceManager.GetString("UnsplashWebScrapeForm_linkLabel_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cancel.
+        /// </summary>
+        internal static string UnsplashWebScrapeForm_buttonCancel_Text {
+            get {
+                return ResourceManager.GetString("UnsplashWebScrapeForm_buttonCancel_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to OK.
+        /// </summary>
+        internal static string UnsplashWebScrapeForm_buttonOK_Text {
+            get {
+                return ResourceManager.GetString("UnsplashWebScrapeForm_buttonOK_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Description:.
+        /// </summary>
+        internal static string UnsplashWebScrapeForm_label2_Text {
+            get {
+                return ResourceManager.GetString("UnsplashWebScrapeForm_label2_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Weight:.
+        /// </summary>
+        internal static string UnsplashWebScrapeForm_label4_Text {
+            get {
+                return ResourceManager.GetString("UnsplashWebScrapeForm_label4_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Take random image from:.
+        /// </summary>
+        internal static string UnsplashWebScrapeForm_groupBox1_Text {
+            get {
+                return ResourceManager.GetString("UnsplashWebScrapeForm_groupBox1_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Photos liked by user:.
+        /// </summary>
+        internal static string UnsplashWebScrapeForm_radioButtonUserLike_Text {
+            get {
+                return ResourceManager.GetString("UnsplashWebScrapeForm_radioButtonUserLike_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to User's Photos:.
+        /// </summary>
+        internal static string UnsplashWebScrapeForm_radioButtonUser_Text {
+            get {
+                return ResourceManager.GetString("UnsplashWebScrapeForm_radioButtonUser_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Category:.
+        /// </summary>
+        internal static string UnsplashWebScrapeForm_radioButtonCategory_Text {
+            get {
+                return ResourceManager.GetString("UnsplashWebScrapeForm_radioButtonCategory_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Feautued.
+        /// </summary>
+        internal static string UnsplashWebScrapeForm_radioButtonFeatured_Text {
+            get {
+                return ResourceManager.GetString("UnsplashWebScrapeForm_radioButtonFeatured_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to All.
+        /// </summary>
+        internal static string UnsplashWebScrapeForm_radioButtonAll_Text {
+            get {
+                return ResourceManager.GetString("UnsplashWebScrapeForm_radioButtonAll_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Filter by:.
+        /// </summary>
+        internal static string UnsplashWebScrapeForm_label1_Text {
+            get {
+                return ResourceManager.GetString("UnsplashWebScrapeForm_label1_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Enabled.
+        /// </summary>
+        internal static string UnsplashWebScrapeForm_checkBoxEnabled_Text {
+            get {
+                return ResourceManager.GetString("UnsplashWebScrapeForm_checkBoxEnabled_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This is temporarily unavailable due to a change in the Unsplash API.
+        /// </summary>
+        internal static string UnsplashWebScrapeForm_label3_Text {
+            get {
+                return ResourceManager.GetString("UnsplashWebScrapeForm_label3_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cancel.
+        /// </summary>
+        internal static string UrlWebScrapeForm_buttonCancel_Text {
+            get {
+                return ResourceManager.GetString("UrlWebScrapeForm_buttonCancel_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to OK.
+        /// </summary>
+        internal static string UrlWebScrapeForm_buttonOK_Text {
+            get {
+                return ResourceManager.GetString("UrlWebScrapeForm_buttonOK_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Description:.
+        /// </summary>
+        internal static string UrlWebScrapeForm_label2_Text {
+            get {
+                return ResourceManager.GetString("UrlWebScrapeForm_label2_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Weight:.
+        /// </summary>
+        internal static string UrlWebScrapeForm_label4_Text {
+            get {
+                return ResourceManager.GetString("UrlWebScrapeForm_label4_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to URL:.
+        /// </summary>
+        internal static string UrlWebScrapeForm_label1_Text {
+            get {
+                return ResourceManager.GetString("UrlWebScrapeForm_label1_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Get images from Url.
+        /// </summary>
+        internal static string UrlWebScrapeForm_label3_Text {
+            get {
+                return ResourceManager.GetString("UrlWebScrapeForm_label3_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to %H -&gt; Screen height.
+        /// </summary>
+        internal static string UrlWebScrapeForm_labelEscapeHeight_Text {
+            get {
+                return ResourceManager.GetString("UrlWebScrapeForm_labelEscapeHeight_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to %W -&gt; Screen width.
+        /// </summary>
+        internal static string UrlWebScrapeForm_labelEscapeWidth_Text {
+            get {
+                return ResourceManager.GetString("UrlWebScrapeForm_labelEscapeWidth_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to %% -&gt; %.
+        /// </summary>
+        internal static string UrlWebScrapeForm_labelEscapeEscape_Text {
+            get {
+                return ResourceManager.GetString("UrlWebScrapeForm_labelEscapeEscape_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Enable escapes in above URL:.
+        /// </summary>
+        internal static string UrlWebScrapeForm_checkBoxEnableEscapes_Text {
+            get {
+                return ResourceManager.GetString("UrlWebScrapeForm_checkBoxEnableEscapes_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Enabled.
+        /// </summary>
+        internal static string UrlWebScrapeForm_checkBoxEnabled_Text {
+            get {
+                return ResourceManager.GetString("UrlWebScrapeForm_checkBoxEnabled_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Provider.
+        /// </summary>
+        internal static string ProviderForm_ProviderImage_HeaderText {
+            get {
+                return ResourceManager.GetString("ProviderForm_ProviderImage_HeaderText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Name.
+        /// </summary>
+        internal static string ProviderForm_ProviderName_HeaderText {
+            get {
+                return ResourceManager.GetString("ProviderForm_ProviderName_HeaderText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cancel.
+        /// </summary>
+        internal static string ProviderForm_buttonCancel_Text {
+            get {
+                return ResourceManager.GetString("ProviderForm_buttonCancel_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to OK.
+        /// </summary>
+        internal static string ProviderForm_buttonOK_Text {
+            get {
+                return ResourceManager.GetString("ProviderForm_buttonOK_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Select required image provider.
+        /// </summary>
+        internal static string ProviderForm_label1_Text {
+            get {
+                return ResourceManager.GetString("ProviderForm_label1_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Next change in.
+        /// </summary>
+        internal static string WallpaperChangerGeneralOptionsPanel_labelNextChange_Text {
+            get {
+                return ResourceManager.GetString("WallpaperChangerGeneralOptionsPanel_labelNextChange_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Change Wallpaper Now.
+        /// </summary>
+        internal static string WallpaperChangerGeneralOptionsPanel_buttonChangeWallpaper_Text {
+            get {
+                return ResourceManager.GetString("WallpaperChangerGeneralOptionsPanel_buttonChangeWallpaper_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Multi Monitor:.
+        /// </summary>
+        internal static string WallpaperChangerGeneralOptionsPanel_label3_Text {
+            get {
+                return ResourceManager.GetString("WallpaperChangerGeneralOptionsPanel_label3_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Background Colour:.
+        /// </summary>
+        internal static string WallpaperChangerGeneralOptionsPanel_label2_Text {
+            get {
+                return ResourceManager.GetString("WallpaperChangerGeneralOptionsPanel_label2_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Fit:.
+        /// </summary>
+        internal static string WallpaperChangerGeneralOptionsPanel_label1_Text {
+            get {
+                return ResourceManager.GetString("WallpaperChangerGeneralOptionsPanel_label1_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Change wallpaper periodically.
+        /// </summary>
+        internal static string WallpaperChangerGeneralOptionsPanel_checkBoxChangePeriodically_Text {
+            get {
+                return ResourceManager.GetString("WallpaperChangerGeneralOptionsPanel_checkBoxChangePeriodically_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Minutes.
+        /// </summary>
+        internal static string WallpaperChangerGeneralOptionsPanel_labelPeriod3_Text {
+            get {
+                return ResourceManager.GetString("WallpaperChangerGeneralOptionsPanel_labelPeriod3_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Hours.
+        /// </summary>
+        internal static string WallpaperChangerGeneralOptionsPanel_labelPeriod2_Text {
+            get {
+                return ResourceManager.GetString("WallpaperChangerGeneralOptionsPanel_labelPeriod2_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Time between changes:.
+        /// </summary>
+        internal static string WallpaperChangerGeneralOptionsPanel_labelPeriod1_Text {
+            get {
+                return ResourceManager.GetString("WallpaperChangerGeneralOptionsPanel_labelPeriod1_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Change wallpaper on startup.
+        /// </summary>
+        internal static string WallpaperChangerGeneralOptionsPanel_checkBoxChangeOnStart_Text {
+            get {
+                return ResourceManager.GetString("WallpaperChangerGeneralOptionsPanel_checkBoxChangeOnStart_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to HotKey.
+        /// </summary>
+        internal static string WallpaperChangerGeneralOptionsPanel_groupBox1_Text {
+            get {
+                return ResourceManager.GetString("WallpaperChangerGeneralOptionsPanel_groupBox1_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Use smooth fade when changing wallpaper.
+        /// </summary>
+        internal static string WallpaperChangerGeneralOptionsPanel_checkBoxFade_Text {
+            get {
+                return ResourceManager.GetString("WallpaperChangerGeneralOptionsPanel_checkBoxFade_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Change when monitors / resolutions change.
+        /// </summary>
+        internal static string WallpaperChangerGeneralOptionsPanel_checkBoxChangeOnResolutionChange_Text {
+            get {
+                return ResourceManager.GetString("WallpaperChangerGeneralOptionsPanel_checkBoxChangeOnResolutionChange_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Maintain aspect ratio.
+        /// </summary>
+        internal static string WallpaperChangerGeneralOptionsPanel_checkBoxFitAspectRatio_Text {
+            get {
+                return ResourceManager.GetString("WallpaperChangerGeneralOptionsPanel_checkBoxFitAspectRatio_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Avoid horizontal/vertical bars.
+        /// </summary>
+        internal static string WallpaperChangerGeneralOptionsPanel_checkBoxFitClip_Text {
+            get {
+                return ResourceManager.GetString("WallpaperChangerGeneralOptionsPanel_checkBoxFitClip_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Expand image (if needed) to fit.
+        /// </summary>
+        internal static string WallpaperChangerGeneralOptionsPanel_checkBoxFitEnlarge_Text {
+            get {
+                return ResourceManager.GetString("WallpaperChangerGeneralOptionsPanel_checkBoxFitEnlarge_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Shrink image (if needed) to fit.
+        /// </summary>
+        internal static string WallpaperChangerGeneralOptionsPanel_checkBoxFitShrink_Text {
+            get {
+                return ResourceManager.GetString("WallpaperChangerGeneralOptionsPanel_checkBoxFitShrink_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Output wallpaper format:.
+        /// </summary>
+        internal static string WallpaperChangerGeneralOptionsPanel_label4_Text {
+            get {
+                return ResourceManager.GetString("WallpaperChangerGeneralOptionsPanel_label4_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Quality:.
+        /// </summary>
+        internal static string WallpaperChangerGeneralOptionsPanel_label5_Text {
+            get {
+                return ResourceManager.GetString("WallpaperChangerGeneralOptionsPanel_label5_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to But not if running full screen game or presentation.
+        /// </summary>
+        internal static string WallpaperChangerGeneralOptionsPanel_checkBoxDontChangeIfBusy_Text {
+            get {
+                return ResourceManager.GetString("WallpaperChangerGeneralOptionsPanel_checkBoxDontChangeIfBusy_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Click on monitor to see information about the image displayed on it..
+        /// </summary>
+        internal static string WallpaperChangerPropertiesOptionsPanel_picPreview_ToolTip {
+            get {
+                return ResourceManager.GetString("WallpaperChangerPropertiesOptionsPanel_picPreview_ToolTip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Source Image Properties.
+        /// </summary>
+        internal static string WallpaperChangerPropertiesOptionsPanel_groupBox1_Text {
+            get {
+                return ResourceManager.GetString("WallpaperChangerPropertiesOptionsPanel_groupBox1_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Source Size:.
+        /// </summary>
+        internal static string WallpaperChangerPropertiesOptionsPanel_label5_Text {
+            get {
+                return ResourceManager.GetString("WallpaperChangerPropertiesOptionsPanel_label5_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Image Details:.
+        /// </summary>
+        internal static string WallpaperChangerPropertiesOptionsPanel_label4_Text {
+            get {
+                return ResourceManager.GetString("WallpaperChangerPropertiesOptionsPanel_label4_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Photographer:.
+        /// </summary>
+        internal static string WallpaperChangerPropertiesOptionsPanel_label3_Text {
+            get {
+                return ResourceManager.GetString("WallpaperChangerPropertiesOptionsPanel_label3_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Image Source:.
+        /// </summary>
+        internal static string WallpaperChangerPropertiesOptionsPanel_label2_Text {
+            get {
+                return ResourceManager.GetString("WallpaperChangerPropertiesOptionsPanel_label2_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Provider:.
+        /// </summary>
+        internal static string WallpaperChangerPropertiesOptionsPanel_label1_Text {
+            get {
+                return ResourceManager.GetString("WallpaperChangerPropertiesOptionsPanel_label1_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Details will appear here when DMT creates a wallpaper.
+        /// </summary>
+        internal static string WallpaperChangerPropertiesOptionsPanel_labelProperties_Text {
+            get {
+                return ResourceManager.GetString("WallpaperChangerPropertiesOptionsPanel_labelProperties_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Enabled.
+        /// </summary>
+        internal static string WallpaperChangerProvidersOptionsPanel_Enabled_HeaderText {
+            get {
+                return ResourceManager.GetString("WallpaperChangerProvidersOptionsPanel_Enabled_HeaderText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Weight.
+        /// </summary>
+        internal static string WallpaperChangerProvidersOptionsPanel_Weight_HeaderText {
+            get {
+                return ResourceManager.GetString("WallpaperChangerProvidersOptionsPanel_Weight_HeaderText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Provider.
+        /// </summary>
+        internal static string WallpaperChangerProvidersOptionsPanel_ProviderImage_HeaderText {
+            get {
+                return ResourceManager.GetString("WallpaperChangerProvidersOptionsPanel_ProviderImage_HeaderText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Name.
+        /// </summary>
+        internal static string WallpaperChangerProvidersOptionsPanel_ProviderName_HeaderText {
+            get {
+                return ResourceManager.GetString("WallpaperChangerProvidersOptionsPanel_ProviderName_HeaderText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Description.
+        /// </summary>
+        internal static string WallpaperChangerProvidersOptionsPanel_Description_HeaderText {
+            get {
+                return ResourceManager.GetString("WallpaperChangerProvidersOptionsPanel_Description_HeaderText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Delete.
+        /// </summary>
+        internal static string WallpaperChangerProvidersOptionsPanel_buttonDelete_Text {
+            get {
+                return ResourceManager.GetString("WallpaperChangerProvidersOptionsPanel_buttonDelete_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Edit.
+        /// </summary>
+        internal static string WallpaperChangerProvidersOptionsPanel_buttonEdit_Text {
+            get {
+                return ResourceManager.GetString("WallpaperChangerProvidersOptionsPanel_buttonEdit_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Add.
+        /// </summary>
+        internal static string WallpaperChangerProvidersOptionsPanel_buttonAdd_Text {
+            get {
+                return ResourceManager.GetString("WallpaperChangerProvidersOptionsPanel_buttonAdd_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Settings to control changing the desktop wallpaper..
+        /// </summary>
+        internal static string WallpaperChangerRootOptionsPanel_label3_Text {
+            get {
+                return ResourceManager.GetString("WallpaperChangerRootOptionsPanel_label3_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Wallpaper Changer Module.
+        /// </summary>
+        internal static string WallpaperChangerRootOptionsPanel_label1_Text {
+            get {
+                return ResourceManager.GetString("WallpaperChangerRootOptionsPanel_label1_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to General.
+        /// </summary>
+        internal static string Node_General {
+            get {
+                return ResourceManager.GetString("Node_General", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Properties.
+        /// </summary>
+        internal static string Node_Properties {
+            get {
+                return ResourceManager.GetString("Node_Properties", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Providers.
+        /// </summary>
+        internal static string Node_Providers {
+            get {
+                return ResourceManager.GetString("Node_Providers", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Wallpaper Changer.
+        /// </summary>
+        internal static string Node_WallpaperChanger {
+            get {
+                return ResourceManager.GetString("Node_WallpaperChanger", resourceCulture);
+            }
+        }
     }
 }

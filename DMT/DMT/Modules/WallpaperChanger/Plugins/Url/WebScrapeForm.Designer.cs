@@ -57,7 +57,7 @@
 			this.buttonCancel.Name = "buttonCancel";
 			this.buttonCancel.Size = new System.Drawing.Size(75, 23);
 			this.buttonCancel.TabIndex = 10;
-			this.buttonCancel.Text = "Cancel";
+			this.buttonCancel.Text = global::DMT.Resources.WallpaperStrings.UrlWebScrapeForm_buttonCancel_Text;
 			this.buttonCancel.UseVisualStyleBackColor = true;
 			// 
 			// buttonOK
@@ -66,7 +66,7 @@
 			this.buttonOK.Name = "buttonOK";
 			this.buttonOK.Size = new System.Drawing.Size(75, 23);
 			this.buttonOK.TabIndex = 9;
-			this.buttonOK.Text = "OK";
+			this.buttonOK.Text = global::DMT.Resources.WallpaperStrings.UrlWebScrapeForm_buttonOK_Text;
 			this.buttonOK.UseVisualStyleBackColor = true;
 			this.buttonOK.Click += new System.EventHandler(this.buttonOK_Click);
 			// 
@@ -84,7 +84,7 @@
 			this.label2.Name = "label2";
 			this.label2.Size = new System.Drawing.Size(63, 13);
 			this.label2.TabIndex = 4;
-			this.label2.Text = "Description:";
+			this.label2.Text = global::DMT.Resources.WallpaperStrings.UrlWebScrapeForm_label2_Text;
 			// 
 			// numericUpDownWeight
 			// 
@@ -105,7 +105,7 @@
 			this.label4.Name = "label4";
 			this.label4.Size = new System.Drawing.Size(44, 13);
 			this.label4.TabIndex = 1;
-			this.label4.Text = "Weight:";
+			this.label4.Text = global::DMT.Resources.WallpaperStrings.UrlWebScrapeForm_label4_Text;
 			// 
 			// pictureBox1
 			// 
@@ -123,7 +123,7 @@
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(32, 13);
 			this.label1.TabIndex = 6;
-			this.label1.Text = "URL:";
+			this.label1.Text = global::DMT.Resources.WallpaperStrings.UrlWebScrapeForm_label1_Text;
 			// 
 			// textBoxUrl
 			// 
@@ -139,7 +139,7 @@
 			this.label3.Name = "label3";
 			this.label3.Size = new System.Drawing.Size(99, 13);
 			this.label3.TabIndex = 0;
-			this.label3.Text = "Get images from Url";
+			this.label3.Text = global::DMT.Resources.WallpaperStrings.UrlWebScrapeForm_label3_Text;
 			// 
 			// groupBox1
 			// 
@@ -160,7 +160,7 @@
 			this.labelEscapeHeight.Name = "labelEscapeHeight";
 			this.labelEscapeHeight.Size = new System.Drawing.Size(104, 13);
 			this.labelEscapeHeight.TabIndex = 2;
-			this.labelEscapeHeight.Text = "%H -> Screen height";
+			this.labelEscapeHeight.Text = global::DMT.Resources.WallpaperStrings.UrlWebScrapeForm_labelEscapeHeight_Text;
 			this.labelEscapeHeight.Click += new System.EventHandler(this.labelEscapeHeight_Click);
 			// 
 			// labelEscapeWidth
@@ -170,7 +170,7 @@
 			this.labelEscapeWidth.Name = "labelEscapeWidth";
 			this.labelEscapeWidth.Size = new System.Drawing.Size(103, 13);
 			this.labelEscapeWidth.TabIndex = 1;
-			this.labelEscapeWidth.Text = "%W -> Screen width";
+			this.labelEscapeWidth.Text = global::DMT.Resources.WallpaperStrings.UrlWebScrapeForm_labelEscapeWidth_Text;
 			this.labelEscapeWidth.Click += new System.EventHandler(this.labelEscapeWidth_Click);
 			// 
 			// labelEscapeEscape
@@ -180,7 +180,7 @@
 			this.labelEscapeEscape.Name = "labelEscapeEscape";
 			this.labelEscapeEscape.Size = new System.Drawing.Size(46, 13);
 			this.labelEscapeEscape.TabIndex = 3;
-			this.labelEscapeEscape.Text = "%% -> %";
+			this.labelEscapeEscape.Text = global::DMT.Resources.WallpaperStrings.UrlWebScrapeForm_labelEscapeEscape_Text;
 			this.labelEscapeEscape.Click += new System.EventHandler(this.labelEscapeEscape_Click);
 			// 
 			// checkBoxEnableEscapes
@@ -190,7 +190,7 @@
 			this.checkBoxEnableEscapes.Name = "checkBoxEnableEscapes";
 			this.checkBoxEnableEscapes.Size = new System.Drawing.Size(174, 17);
 			this.checkBoxEnableEscapes.TabIndex = 0;
-			this.checkBoxEnableEscapes.Text = "Enable escapes in above URL:";
+			this.checkBoxEnableEscapes.Text = global::DMT.Resources.WallpaperStrings.UrlWebScrapeForm_checkBoxEnableEscapes_Text;
 			this.checkBoxEnableEscapes.UseVisualStyleBackColor = true;
 			// 
 			// checkBoxEnabled
@@ -200,7 +200,7 @@
 			this.checkBoxEnabled.Name = "checkBoxEnabled";
 			this.checkBoxEnabled.Size = new System.Drawing.Size(65, 17);
 			this.checkBoxEnabled.TabIndex = 3;
-			this.checkBoxEnabled.Text = "Enabled";
+			this.checkBoxEnabled.Text = global::DMT.Resources.WallpaperStrings.UrlWebScrapeForm_checkBoxEnabled_Text;
 			this.checkBoxEnabled.UseVisualStyleBackColor = true;
 			// 
 			// WebScrapeForm

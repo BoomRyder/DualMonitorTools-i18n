@@ -74,7 +74,7 @@
 			// Enabled
 			// 
 			this.Enabled.DataPropertyName = "Enabled";
-			this.Enabled.HeaderText = "Enabled";
+			this.Enabled.HeaderText = global::DMT.Resources.WallpaperStrings.WallpaperChangerProvidersOptionsPanel_Enabled_HeaderText;
 			this.Enabled.Name = "Enabled";
 			this.Enabled.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
 			this.Enabled.Width = 60;
@@ -82,21 +82,21 @@
 			// Weight
 			// 
 			this.Weight.DataPropertyName = "Weight";
-			this.Weight.HeaderText = "Weight";
+			this.Weight.HeaderText = global::DMT.Resources.WallpaperStrings.WallpaperChangerProvidersOptionsPanel_Weight_HeaderText;
 			this.Weight.Name = "Weight";
 			this.Weight.Width = 60;
 			// 
 			// ProviderImage
 			// 
 			this.ProviderImage.DataPropertyName = "ProviderImage";
-			this.ProviderImage.HeaderText = "Provider";
+			this.ProviderImage.HeaderText = global::DMT.Resources.WallpaperStrings.WallpaperChangerProvidersOptionsPanel_ProviderImage_HeaderText;
 			this.ProviderImage.Name = "ProviderImage";
 			this.ProviderImage.Width = 52;
 			// 
 			// ProviderName
 			// 
 			this.ProviderName.DataPropertyName = "ProviderName";
-			this.ProviderName.HeaderText = "Name";
+			this.ProviderName.HeaderText = global::DMT.Resources.WallpaperStrings.WallpaperChangerProvidersOptionsPanel_ProviderName_HeaderText;
 			this.ProviderName.Name = "ProviderName";
 			this.ProviderName.Width = 60;
 			// 
@@ -104,7 +104,7 @@
 			// 
 			this.Description.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
 			this.Description.DataPropertyName = "Description";
-			this.Description.HeaderText = "Description";
+			this.Description.HeaderText = global::DMT.Resources.WallpaperStrings.WallpaperChangerProvidersOptionsPanel_Description_HeaderText;
 			this.Description.Name = "Description";
 			// 
 			// buttonDelete
@@ -114,7 +114,7 @@
 			this.buttonDelete.Name = "buttonDelete";
 			this.buttonDelete.Size = new System.Drawing.Size(75, 23);
 			this.buttonDelete.TabIndex = 6;
-			this.buttonDelete.Text = "Delete";
+			this.buttonDelete.Text = global::DMT.Resources.WallpaperStrings.WallpaperChangerProvidersOptionsPanel_buttonDelete_Text;
 			this.buttonDelete.UseVisualStyleBackColor = true;
 			this.buttonDelete.Click += new System.EventHandler(this.buttonDelete_Click);
 			// 
@@ -125,7 +125,7 @@
 			this.buttonEdit.Name = "buttonEdit";
 			this.buttonEdit.Size = new System.Drawing.Size(75, 23);
 			this.buttonEdit.TabIndex = 5;
-			this.buttonEdit.Text = "Edit";
+			this.buttonEdit.Text = global::DMT.Resources.WallpaperStrings.WallpaperChangerProvidersOptionsPanel_buttonEdit_Text;
 			this.buttonEdit.UseVisualStyleBackColor = true;
 			this.buttonEdit.Click += new System.EventHandler(this.buttonEdit_Click);
 			// 
@@ -136,7 +136,7 @@
 			this.buttonAdd.Name = "buttonAdd";
 			this.buttonAdd.Size = new System.Drawing.Size(75, 23);
 			this.buttonAdd.TabIndex = 4;
-			this.buttonAdd.Text = "Add";
+			this.buttonAdd.Text = global::DMT.Resources.WallpaperStrings.WallpaperChangerProvidersOptionsPanel_buttonAdd_Text;
 			this.buttonAdd.UseVisualStyleBackColor = true;
 			this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
 			// 
