@@ -32,4 +32,4 @@ installer/DualMonitorTools.msi
 # 本地规则与设计记录，不随仓库发布
 .cursor/
 .superpowers/
-docs/
+docs/superpowers/

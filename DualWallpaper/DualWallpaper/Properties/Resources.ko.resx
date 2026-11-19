@@ -1,0 +1,264 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AboutMenuItem" xml:space="preserve">
+    <value>Dual Wallpaper 정보...</value>
+  </data>
+  <data name="Center" xml:space="preserve">
+    <value>이미지를 가운데 두고 크기 조절 안 함</value>
+  </data>
+  <data name="License" xml:space="preserve">
+    <value>이 프로그램은 어떠한 보증도 하지 않습니다.
+자유 소프트웨어이며, 특정 조건에서 재배포할 수 있습니다. 자세한 내용은 COPYING.txt를 보십시오.</value>
+  </data>
+  <data name="MyTitle" xml:space="preserve">
+    <value>Dual Wallpaper</value>
+  </data>
+  <data name="OpenImageFilter" xml:space="preserve">
+    <value>이미지 파일 (*.bmp, *.jpg, *.jpeg, *.png, *.gif)|*.bmp;*.jpg;*.jpeg;*.png;*.gif</value>
+  </data>
+  <data name="OverStretch" xml:space="preserve">
+    <value>가로세로 비를 유지하도록 늘려 자름</value>
+  </data>
+  <data name="SaveImageFilter" xml:space="preserve">
+    <value>비트맵 파일 (*.bmp)|*.bmp</value>
+  </data>
+  <data name="Stretch" xml:space="preserve">
+    <value>가로세로 비를 무시하고 늘림</value>
+  </data>
+  <data name="UnderStretch" xml:space="preserve">
+    <value>가로세로 비를 유지하도록 덜 늘리고 띠를 넣음</value>
+  </data>
+  <data name="WebsiteMenuItem" xml:space="preserve">
+    <value>Dual Wallpaper 웹 사이트 방문</value>
+  </data>
+  <data name="DualWallpaper_picPreview_ToolTip" xml:space="preserve">
+    <value>바탕 화면 전체는 이렇게 보여야 합니다.
+노란 테두리는 그 화면이 선택되었음을 나타냅니다.
+화면 번호 뒤의 'P'는 주 화면입니다.</value>
+  </data>
+  <data name="DualWallpaper_picSource_ToolTip" xml:space="preserve">
+    <value>추가할 이미지의 미리 보기입니다.</value>
+  </data>
+  <data name="DualWallpaper_buttonAdd_Text" xml:space="preserve">
+    <value>이미지 추가</value>
+  </data>
+  <data name="DualWallpaper_buttonAdd_ToolTip" xml:space="preserve">
+    <value>선택한 화면에 이미지를 추가합니다.</value>
+  </data>
+  <data name="DualWallpaper_comboBoxFit_ToolTip" xml:space="preserve">
+    <value>위 이미지를 선택한 화면에 어떻게 맞출지 지정합니다.</value>
+  </data>
+  <data name="DualWallpaper_label3_Text" xml:space="preserve">
+    <value>맞추는 방법:</value>
+  </data>
+  <data name="DualWallpaper_buttonBrowse_Text" xml:space="preserve">
+    <value>찾아보기...</value>
+  </data>
+  <data name="DualWallpaper_buttonBrowse_ToolTip" xml:space="preserve">
+    <value>추가할 이미지를 찾습니다.</value>
+  </data>
+  <data name="DualWallpaper_textBoxImage_ToolTip" xml:space="preserve">
+    <value>선택한 화면에 추가할 이미지</value>
+  </data>
+  <data name="DualWallpaper_label2_Text" xml:space="preserve">
+    <value>이미지:</value>
+  </data>
+  <data name="DualWallpaper_label1_Text" xml:space="preserve">
+    <value>선택한 화면:</value>
+  </data>
+  <data name="DualWallpaper_label4_Text" xml:space="preserve">
+    <value>위에서 화면을 하나 이상 선택하고(여러 개는 Ctrl을 누른 채 왼쪽 클릭) 이미지를 추가합니다.</value>
+  </data>
+  <data name="DualWallpaper_label5_Text" xml:space="preserve">
+    <value>나머지 화면에도 같은 작업을 반복합니다.</value>
+  </data>
+  <data name="DualWallpaper_buttonSave_Text" xml:space="preserve">
+    <value>이미지 저장</value>
+  </data>
+  <data name="DualWallpaper_buttonSetWallpaper_Text" xml:space="preserve">
+    <value>배경 화면으로 설정</value>
+  </data>
+  <data name="DualWallpaper_groupBox2_Text" xml:space="preserve">
+    <value>이미지 이동</value>
+  </data>
+  <data name="DualWallpaper_buttonMoveLeft_ToolTip" xml:space="preserve">
+    <value>이미지를 왼쪽으로 이동합니다.</value>
+  </data>
+  <data name="DualWallpaper_buttonMoveDown_ToolTip" xml:space="preserve">
+    <value>이미지를 아래로 이동합니다.</value>
+  </data>
+  <data name="DualWallpaper_buttonMoveRight_ToolTip" xml:space="preserve">
+    <value>이미지를 오른쪽으로 이동합니다.</value>
+  </data>
+  <data name="DualWallpaper_buttonMoveUp_ToolTip" xml:space="preserve">
+    <value>이미지를 위로 이동합니다.</value>
+  </data>
+  <data name="DualWallpaper_radioButtonMove100_Text" xml:space="preserve">
+    <value>100픽셀</value>
+  </data>
+  <data name="DualWallpaper_radioButtonMove10_Text" xml:space="preserve">
+    <value>10픽셀</value>
+  </data>
+  <data name="DualWallpaper_radioButtonMove1_Text" xml:space="preserve">
+    <value>1픽셀</value>
+  </data>
+  <data name="DualWallpaper_groupBox3_Text" xml:space="preserve">
+    <value>이미지 확대/축소</value>
+  </data>
+  <data name="DualWallpaper_buttonZoomOut_ToolTip" xml:space="preserve">
+    <value>축소합니다.</value>
+  </data>
+  <data name="DualWallpaper_buttonZoomIn_ToolTip" xml:space="preserve">
+    <value>확대합니다.</value>
+  </data>
+  <data name="DualWallpaper_radioButtonZoom20_Text" xml:space="preserve">
+    <value>20%</value>
+  </data>
+  <data name="DualWallpaper_radioButtonZoom5_Text" xml:space="preserve">
+    <value>5%</value>
+  </data>
+  <data name="DualWallpaper_radioButtonZoom1_Text" xml:space="preserve">
+    <value>1%</value>
+  </data>
+  <data name="DualWallpaper_tabPageAdd_Text" xml:space="preserve">
+    <value>이미지 추가</value>
+  </data>
+  <data name="DualWallpaper_cmdChangeBackground_Text" xml:space="preserve">
+    <value>변경</value>
+  </data>
+  <data name="DualWallpaper_label6_Text" xml:space="preserve">
+    <value>배경색:</value>
+  </data>
+  <data name="DualWallpaper_tabPageMove_Text" xml:space="preserve">
+    <value>이미지 이동/확대·축소</value>
+  </data>
+  <data name="AboutForm_labelProductName_Text_Format" xml:space="preserve">
+    <value>{0} - 버전 {1}</value>
+  </data>
+  <data name="AboutForm_Text_Format" xml:space="preserve">
+    <value>{0} 정보</value>
+  </data>
+  <data name="DualWallpaper_Text" xml:space="preserve">
+    <value>Dual Wallpaper</value>
+  </data>
+  <data name="AboutForm_Text" xml:space="preserve">
+    <value>Dual Wallpaper 정보</value>
+  </data>
+</root>

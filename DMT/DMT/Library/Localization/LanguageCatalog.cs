@@ -75,6 +75,9 @@ namespace DMT.Library.Localization
 		{
 			_all = new List<LanguageDefinition>();
 			_all.Add(new LanguageDefinition("zh-Hans", "简体中文"));
+			_all.Add(new LanguageDefinition("zh-Hant", "繁體中文"));
+			_all.Add(new LanguageDefinition("ja", "日本語"));
+			_all.Add(new LanguageDefinition("ko", "한국어"));
 			_all.Add(new LanguageDefinition("en", "English"));
 			_allView = new ReadOnlyCollection<LanguageDefinition>(_all);
 		}
@@ -115,8 +118,8 @@ namespace DMT.Library.Localization
 
 		/// <summary>
 		/// Maps a stored preference onto a supported language tag.
-		/// Regional Chinese variants map to "zh-Hans", except the traditional
-		/// script regions which fall back to the default language.
+		/// Regional Chinese variants map to "zh-Hans" or "zh-Hant".
+		/// Japanese and Korean regional names map to "ja" and "ko".
 		/// </summary>
 		/// <param name="tagOrNull">Raw preference, may be null, blank or unknown</param>
 		/// <returns>A tag that is guaranteed to appear in <see cref="All" /></returns>
@@ -142,11 +145,8 @@ namespace DMT.Library.Localization
 				}
 			}
 
-			// Chinese regional variants: use the script the culture actually resolves
-			// to, not a bare "zh" prefix. The prefix test would send the legacy
-			// traditional name zh-CHT, and any typo such as zhx, to zh-Hans.
-			// zh-TW / zh-HK / zh-MO / zh-CHT / zh-Hant are traditional script, which
-			// this build does not ship, so they fall through to the default language.
+			// Chinese regional variants follow the script .NET resolves, not a bare
+			// "zh" prefix. zh-TW / zh-HK / zh-MO / zh-CHT / zh-Hant are traditional.
 			string script = ResolveChineseScript(trimmed);
 			if (script == "zh-Hans")
 			{
@@ -155,7 +155,19 @@ namespace DMT.Library.Localization
 
 			if (script == "traditional")
 			{
-				return DefaultTag;
+				return "zh-Hant";
+			}
+
+			if (trimmed.Equals("ja", StringComparison.OrdinalIgnoreCase) ||
+				trimmed.StartsWith("ja-", StringComparison.OrdinalIgnoreCase))
+			{
+				return "ja";
+			}
+
+			if (trimmed.Equals("ko", StringComparison.OrdinalIgnoreCase) ||
+				trimmed.StartsWith("ko-", StringComparison.OrdinalIgnoreCase))
+			{
+				return "ko";
 			}
 
 			return DefaultTag;

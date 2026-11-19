@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="textBoxFilename.ToolTip" xml:space="preserve">
+    <value>此處可以填寫：
+應用程式的完整路徑，
+檔案的完整路徑（前提是該副檔名已關聯到某個應用程式），
+希望在 Windows 資源管理器中開啟的資料夾，
+或希望在瀏覽器中開啟的網址。
+</value>
+  </data>
+  <data name="groupBox1.ToolTip" xml:space="preserve">
+    <value>用於在應用程式視窗開啟時識別該視窗的欄位，
+以便把它移動到正確的位置。
+這些欄位只在某些情況下需要，而且僅在你希望
+應用程式視窗在特定位置開啟時才需要。</value>
+  </data>
+</root>

@@ -1,0 +1,276 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CursorNextScreenDescription" xml:space="preserve">
+    <value>將游標移到下一個顯示器</value>
+  </data>
+  <data name="CursorNextScreenWin7" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="CursorPrevScreenDescription" xml:space="preserve">
+    <value>將游標移到上一個顯示器</value>
+  </data>
+  <data name="CursorPrevScreenWin7" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="CursorToPrimaryScreenDescription" xml:space="preserve">
+    <value>將游標居中到主顯示器</value>
+  </data>
+  <data name="CursorToPrimaryScreenWin7" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="FreeCursorDescription" xml:space="preserve">
+    <value>游標可在顯示器之間自由移動</value>
+  </data>
+  <data name="FreeCursorWin7" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="LockCursorDescription" xml:space="preserve">
+    <value>將游標鎖定在某個顯示器上</value>
+  </data>
+  <data name="LockCursorToMonitorDescription" xml:space="preserve">
+    <value>切換是否將游標鎖定到當前顯示器</value>
+  </data>
+  <data name="LockCursorToMonitorWin7" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="LockCursorWin7" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="StickyCursorDescription" xml:space="preserve">
+    <value>顯示器之間的游標移動為粘滯模式</value>
+  </data>
+  <data name="StickyCursorWin7" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="CursorDeadSpaceOptionsPanel_label1_Text" xml:space="preserve">
+    <value>死區游標跳轉。</value>
+  </data>
+  <data name="CursorDeadSpaceOptionsPanel_label3_Text" xml:space="preserve">
+    <value>這些選項允許游標越過這類邊界：游標會沿移動方向跳到相鄰顯示器上最近的有效位置。</value>
+  </data>
+  <data name="CursorDeadSpaceOptionsPanel_label4_Text" xml:space="preserve">
+    <value>注意：通常只需選擇其中一項，而且只有在顯示器排列不是矩形時才需要。</value>
+  </data>
+  <data name="CursorDeadSpaceOptionsPanel_checkBoxDeadSpaceXJump_Text" xml:space="preserve">
+    <value>允許游標水平移動時跳過死區。</value>
+  </data>
+  <data name="CursorDeadSpaceOptionsPanel_checkBoxDeadSpaceYJump_Text" xml:space="preserve">
+    <value>允許游標垂直移動時跳過死區。</value>
+  </data>
+  <data name="CursorGeneralOptionsPanel_label13_Text" xml:space="preserve">
+    <value>最大</value>
+  </data>
+  <data name="CursorGeneralOptionsPanel_label11_Text" xml:space="preserve">
+    <value>最小</value>
+  </data>
+  <data name="CursorGeneralOptionsPanel_label5_Text" xml:space="preserve">
+    <value>螢幕之間的移動阻力</value>
+  </data>
+  <data name="CursorGeneralOptionsPanel_groupBox3_Text" xml:space="preserve">
+    <value>游標熱鍵</value>
+  </data>
+  <data name="CursorPrimaryOptionsPanel_label1_Text" xml:space="preserve">
+    <value>這裡指定你希望視為主工作區的區域。</value>
+  </data>
+  <data name="CursorPrimaryOptionsPanel_label2_Text" xml:space="preserve">
+    <value>粘滯/鎖定游標選項會用到這裡，以允許游標自由進入並在該區域內部移動。</value>
+  </data>
+  <data name="CursorPrimaryOptionsPanel_label4_Text" xml:space="preserve">
+    <value>警告</value>
+  </data>
+  <data name="CursorPrimaryOptionsPanel_label3_Text" xml:space="preserve">
+    <value>以藍色高亮顯示的顯示器被視為主工作區的一部分。</value>
+  </data>
+  <data name="CursorPrimaryOptionsPanel_label5_Text" xml:space="preserve">
+    <value>如果未選擇任何顯示器，則只有主螢幕會被視為主工作區。</value>
+  </data>
+  <data name="CursorPrimaryOptionsPanel_radioButtonClick_Text" xml:space="preserve">
+    <value>點選顯示器可將其加入或移出主工作區</value>
+  </data>
+  <data name="CursorPrimaryOptionsPanel_radioButtonNames_Text" xml:space="preserve">
+    <value>按命名的顯示器</value>
+  </data>
+  <data name="CursorPrimaryOptionsPanel_buttonNames_Text" xml:space="preserve">
+    <value>編輯...</value>
+  </data>
+  <data name="CursorRootOptionsPanel_label3_Text" xml:space="preserve">
+    <value>控制游標在顯示器之間移動的設定。</value>
+  </data>
+  <data name="CursorRootOptionsPanel_label1_Text" xml:space="preserve">
+    <value>游標模組</value>
+  </data>
+  <data name="CursorStickyOptionsPanel_checkBoxPrimaryReturnUnhindered_Text" xml:space="preserve">
+    <value>允許游標自由返回主工作區（並在其中自由移動）</value>
+  </data>
+  <data name="CursorStickyOptionsPanel_label15_Text" xml:space="preserve">
+    <value>啟動時的預設游標模式：</value>
+  </data>
+  <data name="CursorStickyOptionsPanel_checkBoxControlUnhindersCursor_Text" xml:space="preserve">
+    <value>按下此鍵時允許游標自由移動</value>
+  </data>
+  <data name="CursorStickyOptionsPanel_groupBox4_Text" xml:space="preserve">
+    <value>粘滯控制</value>
+  </data>
+  <data name="CursorStickyOptionsPanel_label13_Text" xml:space="preserve">
+    <value>最大</value>
+  </data>
+  <data name="CursorStickyOptionsPanel_label11_Text" xml:space="preserve">
+    <value>最小</value>
+  </data>
+  <data name="CursorStickyOptionsPanel_label5_Text" xml:space="preserve">
+    <value>螢幕之間的移動阻力</value>
+  </data>
+  <data name="CursorStickyOptionsPanel_groupBox3_Text" xml:space="preserve">
+    <value>游標移動熱鍵</value>
+  </data>
+  <data name="CursorStickyOptionsPanel_checkBoxAllowButton_Text" xml:space="preserve">
+    <value>按下此按鈕時允許游標自由移動</value>
+  </data>
+  <data name="CursorDeadSpaceOptionsPanel_label2_Text" xml:space="preserve">
+    <value>如果你的顯示器排列不是矩形，那麼當邊界另一側沒有顯示器時，游標將無法越過該邊界。</value>
+  </data>
+  <data name="CursorGeneralOptionsPanel_label1_Text" xml:space="preserve">
+    <value>（啟用後將覆蓋「粘滯」選項頁中的設定）</value>
+  </data>
+  <data name="CursorStickyOptionsPanel_label1_Text" xml:space="preserve">
+    <value>注意：這些粘滯/鎖定選項會把「主工作區」當作一臺顯示器看待。</value>
+  </data>
+  <data name="Node_Cursor" xml:space="preserve">
+    <value>游標</value>
+  </data>
+  <data name="Node_DeadSpace" xml:space="preserve">
+    <value>死區</value>
+  </data>
+  <data name="Node_General" xml:space="preserve">
+    <value>常規</value>
+  </data>
+  <data name="Node_PrimaryWorkingArea" xml:space="preserve">
+    <value>主工作區</value>
+  </data>
+  <data name="Node_Sticky" xml:space="preserve">
+    <value>粘滯</value>
+  </data>
+  <data name="CursorPrimaryOptionsPanel_Caption" xml:space="preserve">
+    <value>按名稱更改主顯示器</value>
+  </data>
+  <data name="CursorPrimaryOptionsPanel_ListText" xml:space="preserve">
+    <value>已選定的主顯示器</value>
+  </data>
+</root>

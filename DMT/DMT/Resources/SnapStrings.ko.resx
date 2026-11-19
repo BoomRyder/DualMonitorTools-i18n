@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="DeleteConfirm" xml:space="preserve">
+    <value>스냅 {0}개를 모두 삭제할까요?</value>
+  </data>
+  <data name="ScaleSnap" xml:space="preserve">
+    <value>스냅 크기를 맞춰 조절</value>
+    <comment>menuitem</comment>
+  </data>
+  <data name="ScaleSnapDescription" xml:space="preserve">
+    <value>스냅을 두 번째 화면에 맞게 확대할지 전환</value>
+  </data>
+  <data name="ShowSnap" xml:space="preserve">
+    <value>스냅 표시</value>
+    <comment>menuitem</comment>
+  </data>
+  <data name="ShowSnapDescription" xml:space="preserve">
+    <value>현재 스냅을 표시할지 전환</value>
+  </data>
+  <data name="SnapMenuItemTooltip" xml:space="preserve">
+    <value>클릭하면 이 이미지를 표시합니다.</value>
+  </data>
+  <data name="SnapNow" xml:space="preserve">
+    <value>스냅!</value>
+    <comment>menuitem</comment>
+  </data>
+  <data name="TakeSnapDescription" xml:space="preserve">
+    <value>주 화면의 스냅 찍기</value>
+  </data>
+  <data name="TakeWinSnapDescription" xml:space="preserve">
+    <value>활성 창의 스냅 찍기</value>
+  </data>
+  <data name="SnapForm_snapToolStripMenuItem_Text" xml:space="preserve">
+    <value>스냅!</value>
+  </data>
+  <data name="SnapForm_showSnapToolStripMenuItem_Text" xml:space="preserve">
+    <value>스냅 표시</value>
+  </data>
+  <data name="SnapForm_snapsToolStripMenuItem_Text" xml:space="preserve">
+    <value>스냅</value>
+  </data>
+  <data name="SnapForm_xToolStripMenuItem_Text" xml:space="preserve">
+    <value>x</value>
+  </data>
+  <data name="SnapForm_expandToFillScreenToolStripMenuItem_Text" xml:space="preserve">
+    <value>화면에 맞게 확대</value>
+  </data>
+  <data name="SnapForm_shrinkToFitScreenToolStripMenuItem_Text" xml:space="preserve">
+    <value>화면에 맞게 축소</value>
+  </data>
+  <data name="SnapForm_maintainAspectRatioToolStripMenuItem_Text" xml:space="preserve">
+    <value>가로세로 비 유지</value>
+  </data>
+  <data name="SnapForm_copyToolStripMenuItem_Text" xml:space="preserve">
+    <value>복사</value>
+  </data>
+  <data name="SnapForm_saveAsToolStripMenuItem_Text" xml:space="preserve">
+    <value>다른 이름으로 저장...</value>
+  </data>
+  <data name="SnapForm_deleteCurrentSnapToolStripMenuItem_Text" xml:space="preserve">
+    <value>현재 스냅 삭제</value>
+  </data>
+  <data name="SnapForm_deleteAllSnapsToolStripMenuItem_Text" xml:space="preserve">
+    <value>모든 스냅 삭제...</value>
+  </data>
+  <data name="SnapGeneralOptionsPanel_groupBox3_Text" xml:space="preserve">
+    <value>단축키</value>
+  </data>
+  <data name="SnapGeneralOptionsPanel_checkBoxShowSnap_Text" xml:space="preserve">
+    <value>찍은 직후 표시</value>
+  </data>
+  <data name="SnapGeneralOptionsPanel_label1_Text" xml:space="preserve">
+    <value>기억할 스냅의 최대 개수</value>
+  </data>
+  <data name="SnapGeneralOptionsPanel_checkBoxExpandSnap_Text" xml:space="preserve">
+    <value>스냅을 화면에 맞게 확대</value>
+  </data>
+  <data name="SnapGeneralOptionsPanel_checkBoxShrinkSnap_Text" xml:space="preserve">
+    <value>스냅을 화면에 맞게 축소</value>
+  </data>
+  <data name="SnapGeneralOptionsPanel_checkBoxMaintainAspectRatio_Text" xml:space="preserve">
+    <value>가로세로 비 유지</value>
+  </data>
+  <data name="SnapGeneralOptionsPanel_label2_Text" xml:space="preserve">
+    <value>스냅을 표시할 모니터</value>
+  </data>
+  <data name="SnapRootOptionsPanel_label3_Text" xml:space="preserve">
+    <value>주 모니터의 화면을 보조 모니터로 복사하는 설정입니다.</value>
+  </data>
+  <data name="SnapRootOptionsPanel_label1_Text" xml:space="preserve">
+    <value>스냅 모듈</value>
+  </data>
+  <data name="Node_General" xml:space="preserve">
+    <value>일반</value>
+  </data>
+  <data name="Node_Snap" xml:space="preserve">
+    <value>스냅</value>
+  </data>
+  <data name="SnapForm_Text" xml:space="preserve">
+    <value>스냅</value>
+  </data>
+</root>

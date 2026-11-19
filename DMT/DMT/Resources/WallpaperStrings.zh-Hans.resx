@@ -423,7 +423,7 @@
     <value>矩形</value>
   </data>
   <data name="RandomShapesRandomShapesForm_checkBoxEllipses_Text" xml:space="preserve">
-    <value>省略号</value>
+    <value>椭圆</value>
   </data>
   <data name="RandomShapesRandomShapesForm_checkBoxUseAlpha_Text" xml:space="preserve">
     <value>使图形不透明</value>

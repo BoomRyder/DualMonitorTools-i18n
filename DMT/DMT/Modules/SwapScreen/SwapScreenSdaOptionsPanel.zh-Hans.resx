@@ -15,6 +15,6 @@
   <data name="label2.Text" xml:space="preserve">
     <value>每个修饰键代表一个屏幕。
 要更改某个屏幕使用的修饰键，请选中所需的一个或多个修饰键，然后用上移和下移按钮把它移到目标屏幕。
-您也可以使用拖放操作。</value>
+你也可以使用拖放操作。</value>
   </data>
 </root>

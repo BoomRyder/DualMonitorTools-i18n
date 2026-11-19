@@ -1,0 +1,372 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ConfirmResetUdas" xml:space="preserve">
+    <value>這會將你所有 UDA 的說明和位置重置為合適的預設值，但你已定義的熱鍵會保留。
+如果你更換了顯示器或解析度，這個功能會很有用。
+
+確定要繼續嗎？</value>
+  </data>
+  <data name="CursorNextScreenDescription" xml:space="preserve">
+    <value>將游標移到下一個螢幕</value>
+  </data>
+  <data name="CursorNextScreenWin7" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="CursorPrevScreenDescription" xml:space="preserve">
+    <value>將游標移到上一個螢幕</value>
+  </data>
+  <data name="CursorPrevScreenWin7" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="InvalidPosition" xml:space="preserve">
+    <value>指定的位置無效</value>
+  </data>
+  <data name="MaximiseDescription" xml:space="preserve">
+    <value>最大化活動視窗</value>
+  </data>
+  <data name="MaximiseWin7" xml:space="preserve">
+    <value>Win+&lt;上&gt;</value>
+  </data>
+  <data name="MinimiseAllButDescription" xml:space="preserve">
+    <value>最小化除活動視窗外的所有視窗</value>
+  </data>
+  <data name="MinimiseAllButWin7" xml:space="preserve">
+    <value>Win+&lt;Home&gt;</value>
+  </data>
+  <data name="MinimiseDescription" xml:space="preserve">
+    <value>最小化活動視窗</value>
+  </data>
+  <data name="MinimiseWin7" xml:space="preserve">
+    <value>Win+&lt;下&gt;</value>
+  </data>
+  <data name="MoveAllWindowsToCursorDescription" xml:space="preserve">
+    <value>將所有視窗移到游標所在的螢幕</value>
+  </data>
+  <data name="MoveAllWindowsToNDescription" xml:space="preserve">
+    <value>將所有視窗移到螢幕 {0}</value>
+  </data>
+  <data name="NextScreenDescription" xml:space="preserve">
+    <value>將活動視窗移到下一個螢幕</value>
+  </data>
+  <data name="NextScreenWin7" xml:space="preserve">
+    <value>Win+Shift+&lt;右&gt;</value>
+  </data>
+  <data name="PrevScreenDescription" xml:space="preserve">
+    <value>將活動視窗移到上一個螢幕</value>
+  </data>
+  <data name="PrevScreenWin7" xml:space="preserve">
+    <value>Win+Shift+&lt;左&gt;</value>
+  </data>
+  <data name="RotateNextDescription" xml:space="preserve">
+    <value>向前輪換螢幕</value>
+  </data>
+  <data name="RotateNextWin7" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="RotatePrevDescription" xml:space="preserve">
+    <value>向後輪換螢幕</value>
+  </data>
+  <data name="RotatePrevWin7" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="ShowCursorDesktopDescription" xml:space="preserve">
+    <value>顯示游標所在的桌面</value>
+  </data>
+  <data name="ShowCursorDesktopWin7" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="ShowDesktopDescription" xml:space="preserve">
+    <value>顯示桌面</value>
+  </data>
+  <data name="ShowDesktopNDescription" xml:space="preserve">
+    <value>顯示桌面 {0}</value>
+  </data>
+  <data name="ShowDesktopNWin7" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="SnapDownDescription" xml:space="preserve">
+    <value>將活動視窗吸附到下邊緣</value>
+  </data>
+  <data name="SnapDownWin7" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="SnapLeftDescription" xml:space="preserve">
+    <value>將活動視窗吸附到左邊緣</value>
+  </data>
+  <data name="SnapLeftWin7" xml:space="preserve">
+    <value>Win+&lt;左&gt;</value>
+  </data>
+  <data name="SnapRightDescription" xml:space="preserve">
+    <value>將活動視窗吸附到右邊緣</value>
+  </data>
+  <data name="SnapRightWin7" xml:space="preserve">
+    <value>Win+&lt;右&gt;</value>
+  </data>
+  <data name="SnapUpDescription" xml:space="preserve">
+    <value>將活動視窗吸附到上邊緣</value>
+  </data>
+  <data name="SnapUpWin7" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="SupersizeDescription" xml:space="preserve">
+    <value>超大化活動視窗</value>
+  </data>
+  <data name="SupersizeWin7" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="SwapTop2Description" xml:space="preserve">
+    <value>將活動視窗與下一個視窗交換</value>
+  </data>
+  <data name="SwapTop2Win7" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="SwapScreenActiveOptionsPanel_groupBox1_Text" xml:space="preserve">
+    <value>活動視窗的熱鍵</value>
+  </data>
+  <data name="SwapScreenOtherOptionsPanel_groupBox1_Text" xml:space="preserve">
+    <value>其他視窗的熱鍵</value>
+  </data>
+  <data name="SwapScreenRootOptionsPanel_label1_Text" xml:space="preserve">
+    <value>交換螢幕模組</value>
+  </data>
+  <data name="SwapScreenRootOptionsPanel_label3_Text" xml:space="preserve">
+    <value>控制視窗定位的設定。</value>
+  </data>
+  <data name="SwapScreenSdaOptionsPanel_checkBoxEnable_Text" xml:space="preserve">
+    <value>啟用系統定義區域</value>
+  </data>
+  <data name="SwapScreenSdaOptionsPanel_label1_Text" xml:space="preserve">
+    <value>系統定義區域</value>
+  </data>
+  <data name="SwapScreenSdaOptionsPanel_label3_Text" xml:space="preserve">
+    <value>以下熱鍵無法註冊：</value>
+  </data>
+  <data name="SwapScreenSdaOptionsPanel_label4_Text" xml:space="preserve">
+    <value>配合使用下方某個螢幕修飾鍵與小鍵盤，你可以把活動視窗移動到任意整屏、半屏或四分之一屏。</value>
+  </data>
+  <data name="SwapScreenSdaOptionsPanel_checkBoxBorderOutside_Text" xml:space="preserve">
+    <value>將邊框置於系統定義區域外側</value>
+  </data>
+  <data name="SwapScreenSdaOptionsPanel_labelNumLock_Text" xml:space="preserve">
+    <value>注意：必須開啟 Num Lock 才能生效。</value>
+  </data>
+  <data name="SwapScreenUdaOptionsPanel_groupBox1_Text" xml:space="preserve">
+    <value>使用者定義區域及其關聯熱鍵</value>
+  </data>
+  <data name="UdaForm_groupBox1_Text" xml:space="preserve">
+    <value>熱鍵</value>
+  </data>
+  <data name="UdaForm_checkBoxEnable_Text" xml:space="preserve">
+    <value>啟用此使用者定義區域及熱鍵</value>
+  </data>
+  <data name="UdaForm_textBoxHeight_ToolTip" xml:space="preserve">
+    <value>區域高度</value>
+  </data>
+  <data name="UdaForm_label4_Text" xml:space="preserve">
+    <value>x</value>
+  </data>
+  <data name="UdaForm_textBoxWidth_ToolTip" xml:space="preserve">
+    <value>區域寬度</value>
+  </data>
+  <data name="UdaForm_textBoxY_ToolTip" xml:space="preserve">
+    <value>左上角的 Y 座標</value>
+  </data>
+  <data name="UdaForm_textBoxX_ToolTip" xml:space="preserve">
+    <value>左上角的 X 座標</value>
+  </data>
+  <data name="UdaForm_textBoxName_ToolTip" xml:space="preserve">
+    <value>此區域的名稱</value>
+  </data>
+  <data name="UdaForm_label3_Text" xml:space="preserve">
+    <value>尺寸：</value>
+  </data>
+  <data name="UdaForm_label2_Text" xml:space="preserve">
+    <value>,</value>
+  </data>
+  <data name="UdaForm_label1_Text" xml:space="preserve">
+    <value>位置：</value>
+  </data>
+  <data name="UdaForm_labelName_Text" xml:space="preserve">
+    <value>名稱：</value>
+  </data>
+  <data name="UdaForm_buttonCancel_Text" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="UdaForm_buttonOK_Text" xml:space="preserve">
+    <value>確定</value>
+  </data>
+  <data name="UdaPanel_labelDescription_Text" xml:space="preserve">
+    <value>說明</value>
+  </data>
+  <data name="UdaPanel_buttonChange_Text" xml:space="preserve">
+    <value>更改...</value>
+  </data>
+  <data name="UdaPanel_labelKeyCombo_Text" xml:space="preserve">
+    <value>按鍵組合</value>
+  </data>
+  <data name="Node_ActiveWindow" xml:space="preserve">
+    <value>活動視窗</value>
+  </data>
+  <data name="Node_OtherWindows" xml:space="preserve">
+    <value>其他視窗</value>
+  </data>
+  <data name="Node_SwapScreen" xml:space="preserve">
+    <value>交換螢幕</value>
+  </data>
+  <data name="Node_SystemDefinedAreas" xml:space="preserve">
+    <value>系統定義區域</value>
+  </data>
+  <data name="Node_UserDefinedAreas" xml:space="preserve">
+    <value>使用者定義區域</value>
+  </data>
+  <data name="Sda_Screen_BottomLeft" xml:space="preserve">
+    <value>螢幕 {0} - 左下四分之一</value>
+  </data>
+  <data name="Sda_Screen_Text" xml:space="preserve">
+    <value>螢幕 {0}</value>
+  </data>
+  <data name="Sda_Screen_LeftHalf" xml:space="preserve">
+    <value>螢幕 {0} - 左半屏</value>
+  </data>
+  <data name="Sda_Screen_BottomHalf" xml:space="preserve">
+    <value>螢幕 {0} - 下半屏</value>
+  </data>
+  <data name="Sda_Screen_BottomRight" xml:space="preserve">
+    <value>螢幕 {0} - 右下四分之一</value>
+  </data>
+  <data name="Sda_Screen_RightHalf" xml:space="preserve">
+    <value>螢幕 {0} - 右半屏</value>
+  </data>
+  <data name="Sda_Screen_TopLeft" xml:space="preserve">
+    <value>螢幕 {0} - 左上四分之一</value>
+  </data>
+  <data name="Sda_Screen_TopRight" xml:space="preserve">
+    <value>螢幕 {0} - 右上四分之一</value>
+  </data>
+  <data name="Sda_Screen_TopHalf" xml:space="preserve">
+    <value>螢幕 {0} - 上半屏</value>
+  </data>
+  <data name="UdaForm_Text" xml:space="preserve">
+    <value>更改使用者定義區域</value>
+  </data>
+  <data name="Sda_SuperSize" xml:space="preserve">
+    <value>超大區域</value>
+  </data>
+</root>

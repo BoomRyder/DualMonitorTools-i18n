@@ -1,0 +1,465 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ActivateDescription" xml:space="preserve">
+    <value>マジックワード入力を開始</value>
+  </data>
+  <data name="AddMagicWord" xml:space="preserve">
+    <value>新しいマジックワードの追加...</value>
+    <comment>menuitem</comment>
+  </data>
+  <data name="AddMagicWordDescription" xml:space="preserve">
+    <value>現在のアプリケーションにマジックワードを追加</value>
+  </data>
+  <data name="BrowseExeFilter" xml:space="preserve">
+    <value>プログラム (*.exe; *.pif; *.com; *bat; *.cmd)|*.exe; *.pif; *.com; *bat; *.cmd|すべてのファイル (*.*)|*.*</value>
+  </data>
+  <data name="ConfirmDel1MW" xml:space="preserve">
+    <value>マジックワード '{0}' を削除しますか?</value>
+  </data>
+  <data name="ConfirmDel2MW" xml:space="preserve">
+    <value>選択した {0} 個のマジックワードをすべて削除しますか?</value>
+  </data>
+  <data name="ConfirmDelAllMW" xml:space="preserve">
+    <value>すべてのマジックワードを削除しますか?</value>
+  </data>
+  <data name="EnterMagicWord" xml:space="preserve">
+    <value>マジックワードを入力...</value>
+    <comment>menuitem</comment>
+  </data>
+  <data name="InvalidCoOrd" xml:space="preserve">
+    <value>座標が無効です</value>
+  </data>
+  <data name="NoAlias" xml:space="preserve">
+    <value>実行時に入力するマジックワード名が必要です。</value>
+  </data>
+  <data name="NoFilename" xml:space="preserve">
+    <value>このマジックワードで開くアプリケーションまたは文書を指定してください。</value>
+  </data>
+  <data name="QrsFilter" xml:space="preserve">
+    <value>SlickRun データ ファイル (*.qrs)|*.qrs|すべてのファイル (*.*)|*.*</value>
+  </data>
+  <data name="SelectAModule" xml:space="preserve">
+    <value>&lt;モジュールを選択&gt;</value>
+  </data>
+  <data name="SelectAnAction" xml:space="preserve">
+    <value>&lt;動作を選択&gt;</value>
+  </data>
+  <data name="ShowMaximised" xml:space="preserve">
+    <value>最大化</value>
+  </data>
+  <data name="ShowMinimised" xml:space="preserve">
+    <value>最小化</value>
+  </data>
+  <data name="ShowNormal" xml:space="preserve">
+    <value>通常のウィンドウ</value>
+  </data>
+  <data name="XmlFilter" xml:space="preserve">
+    <value>XML ファイル (*.xml)|*.xml|すべてのファイル (*.*)|*.*</value>
+  </data>
+  <data name="EntryForm_columnHeaderAlias_Text" xml:space="preserve">
+    <value>マジックワード</value>
+  </data>
+  <data name="EntryForm_columnHeaderFilename_Text" xml:space="preserve">
+    <value>ファイル名</value>
+  </data>
+  <data name="InternalCommandForm_label1_Text" xml:space="preserve">
+    <value>モジュール:</value>
+  </data>
+  <data name="InternalCommandForm_label2_Text" xml:space="preserve">
+    <value>動作:</value>
+  </data>
+  <data name="InternalCommandForm_buttonOK_Text" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="InternalCommandForm_buttonCancel_Text" xml:space="preserve">
+    <value>キャンセル</value>
+  </data>
+  <data name="LauncheGeneralOptionsPanel_label6_Text" xml:space="preserve">
+    <value>秒</value>
+  </data>
+  <data name="LauncheGeneralOptionsPanel_label5_Text" xml:space="preserve">
+    <value>アプリケーションのウィンドウが表示されるまでのタイムアウト:</value>
+  </data>
+  <data name="LauncheGeneralOptionsPanel_groupBox5_Text" xml:space="preserve">
+    <value>アイコンの表示方法:</value>
+  </data>
+  <data name="LauncheGeneralOptionsPanel_radioButtonIconDetails_Text" xml:space="preserve">
+    <value>一覧</value>
+  </data>
+  <data name="LauncheGeneralOptionsPanel_radioButtonIconList_Text" xml:space="preserve">
+    <value>複数列の一覧</value>
+  </data>
+  <data name="LauncheGeneralOptionsPanel_radioButtonIconLargeIcon_Text" xml:space="preserve">
+    <value>グリッド</value>
+  </data>
+  <data name="LauncheGeneralOptionsPanel_label3_Text" xml:space="preserve">
+    <value>表示するアイコンの最大数:</value>
+  </data>
+  <data name="LauncheGeneralOptionsPanel_checkBoxMru_Text" xml:space="preserve">
+    <value>自動補完では使用回数より最近使ったものを優先</value>
+  </data>
+  <data name="LauncheGeneralOptionsPanel_checkBoxLoadWordsOnStartup_Text" xml:space="preserve">
+    <value>起動時にマジックワードを読み込む</value>
+  </data>
+  <data name="LauncherImportOptionsPanel_groupBox3_Text" xml:space="preserve">
+    <value>その他のマジックワード形式のファイル</value>
+  </data>
+  <data name="LauncherImportOptionsPanel_label2_Text" xml:space="preserve">
+    <value>（SlickRun が使う形式）</value>
+  </data>
+  <data name="LauncherImportOptionsPanel_buttonImportQrs_Text" xml:space="preserve">
+    <value>QRS のインポート...</value>
+  </data>
+  <data name="LauncherImportOptionsPanel_groupBox2_Text" xml:space="preserve">
+    <value>DualLauncher 固有のファイル形式</value>
+  </data>
+  <data name="LauncherImportOptionsPanel_buttonImportXml_Text" xml:space="preserve">
+    <value>XML のインポート...</value>
+  </data>
+  <data name="LauncherImportOptionsPanel_buttonExportXml_Text" xml:space="preserve">
+    <value>XML のエクスポート...</value>
+  </data>
+  <data name="LauncherImportOptionsPanel_buttonDeleteAll_Text" xml:space="preserve">
+    <value>すべてのマジックワードを削除...</value>
+  </data>
+  <data name="LauncherMagicWordsOptionsPanel_buttonResetCounts_Text" xml:space="preserve">
+    <value>使用回数をリセット</value>
+  </data>
+  <data name="LauncherMagicWordsOptionsPanel_buttonDelete_Text" xml:space="preserve">
+    <value>削除</value>
+  </data>
+  <data name="LauncherMagicWordsOptionsPanel_buttonEdit_Text" xml:space="preserve">
+    <value>編集</value>
+  </data>
+  <data name="LauncherMagicWordsOptionsPanel_buttonAdd_Text" xml:space="preserve">
+    <value>追加</value>
+  </data>
+  <data name="LauncherMagicWordsOptionsPanel_aliasDataGridViewTextBoxColumn_HeaderText" xml:space="preserve">
+    <value>マジックワード</value>
+  </data>
+  <data name="LauncherMagicWordsOptionsPanel_filenameDataGridViewTextBoxColumn_HeaderText" xml:space="preserve">
+    <value>ファイル名</value>
+  </data>
+  <data name="LauncherMagicWordsOptionsPanel_Parameters_HeaderText" xml:space="preserve">
+    <value>パラメーター</value>
+  </data>
+  <data name="LauncherMagicWordsOptionsPanel_Comment_HeaderText" xml:space="preserve">
+    <value>コメント</value>
+  </data>
+  <data name="LauncherMagicWordsOptionsPanel_UseCount_HeaderText" xml:space="preserve">
+    <value>使用回数</value>
+  </data>
+  <data name="LauncherMagicWordsOptionsPanel_LastUsed_HeaderText" xml:space="preserve">
+    <value>最近の使用</value>
+  </data>
+  <data name="LauncherMagicWordsOptionsPanel_aliasDataGridViewTextBoxColumn1_HeaderText" xml:space="preserve">
+    <value>エイリアス</value>
+  </data>
+  <data name="LauncherMagicWordsOptionsPanel_filenameDataGridViewTextBoxColumn1_HeaderText" xml:space="preserve">
+    <value>ファイル名</value>
+  </data>
+  <data name="LauncherMagicWordsOptionsPanel_parametersDataGridViewTextBoxColumn_HeaderText" xml:space="preserve">
+    <value>パラメーター</value>
+  </data>
+  <data name="LauncherMagicWordsOptionsPanel_startDirectoryDataGridViewTextBoxColumn_HeaderText" xml:space="preserve">
+    <value>開始ディレクトリ</value>
+  </data>
+  <data name="LauncherMagicWordsOptionsPanel_commentDataGridViewTextBoxColumn_HeaderText" xml:space="preserve">
+    <value>コメント</value>
+  </data>
+  <data name="LauncherMagicWordsOptionsPanel_windowClassDataGridViewTextBoxColumn_HeaderText" xml:space="preserve">
+    <value>ウィンドウ クラス</value>
+  </data>
+  <data name="LauncherMagicWordsOptionsPanel_captionRegExprDataGridViewTextBoxColumn_HeaderText" xml:space="preserve">
+    <value>キャプションの正規表現</value>
+  </data>
+  <data name="LauncherMagicWordsOptionsPanel_useCountDataGridViewTextBoxColumn_HeaderText" xml:space="preserve">
+    <value>使用回数</value>
+  </data>
+  <data name="LauncherMagicWordsOptionsPanel_lastUsedDataGridViewTextBoxColumn_HeaderText" xml:space="preserve">
+    <value>最近の使用</value>
+  </data>
+  <data name="LauncherMagicWordsOptionsPanel_startupPosition1DataGridViewTextBoxColumn_HeaderText" xml:space="preserve">
+    <value>開始位置1</value>
+  </data>
+  <data name="LauncherMagicWordsOptionsPanel_startupPosition2DataGridViewTextBoxColumn_HeaderText" xml:space="preserve">
+    <value>開始位置2</value>
+  </data>
+  <data name="LauncherMagicWordsOptionsPanel_startupPosition3DataGridViewTextBoxColumn_HeaderText" xml:space="preserve">
+    <value>開始位置3</value>
+  </data>
+  <data name="LauncherMagicWordsOptionsPanel_startupPosition4DataGridViewTextBoxColumn_HeaderText" xml:space="preserve">
+    <value>開始位置4</value>
+  </data>
+  <data name="LauncherRootOptionsPanel_label3_Text" xml:space="preserve">
+    <value>マジックワードでアプリケーションを起動し配置する設定です。</value>
+  </data>
+  <data name="LauncherRootOptionsPanel_label1_Text" xml:space="preserve">
+    <value>ランチャー モジュール</value>
+  </data>
+  <data name="MagicWordForm_buttonTest_Text" xml:space="preserve">
+    <value>マジックワードをテスト</value>
+  </data>
+  <data name="MagicWordForm_groupBox2_Text" xml:space="preserve">
+    <value>統計</value>
+  </data>
+  <data name="MagicWordForm_buttonResetTimesUsed_Text" xml:space="preserve">
+    <value>リセット</value>
+  </data>
+  <data name="MagicWordForm_label9_Text" xml:space="preserve">
+    <value>使用回数:</value>
+  </data>
+  <data name="MagicWordForm_buttonResetLastUsed_Text" xml:space="preserve">
+    <value>リセット</value>
+  </data>
+  <data name="MagicWordForm_label8_Text" xml:space="preserve">
+    <value>最近の使用:</value>
+  </data>
+  <data name="MagicWordForm_buttonDirBrowse_Text" xml:space="preserve">
+    <value>参照...</value>
+  </data>
+  <data name="MagicWordForm_buttonDirBrowse_ToolTip" xml:space="preserve">
+    <value>開始ディレクトリを参照します。</value>
+  </data>
+  <data name="MagicWordForm_tabPage1_Text" xml:space="preserve">
+    <value>開始位置 1</value>
+  </data>
+  <data name="MagicWordForm_tabPage2_Text" xml:space="preserve">
+    <value>開始位置 2</value>
+  </data>
+  <data name="MagicWordForm_tabPage3_Text" xml:space="preserve">
+    <value>開始位置 3</value>
+  </data>
+  <data name="MagicWordForm_tabPage4_Text" xml:space="preserve">
+    <value>開始位置 4</value>
+  </data>
+  <data name="MagicWordForm_textBoxComment_ToolTip" xml:space="preserve">
+    <value>必要ならここにコメントを書けます。</value>
+  </data>
+  <data name="MagicWordForm_textBoxCaption_ToolTip" xml:space="preserve">
+    <value>正しいウィンドウを識別する正規表現です。
+通常はキャプションの一部だけで足ります。</value>
+  </data>
+  <data name="MagicWordForm_groupBox1_Text" xml:space="preserve">
+    <value>アプリケーション ウィンドウの識別</value>
+  </data>
+  <data name="MagicWordForm_label6_Text" xml:space="preserve">
+    <value>キャプション:</value>
+  </data>
+  <data name="MagicWordForm_textBoxWindowClass_ToolTip" xml:space="preserve">
+    <value>上のプログラムが使うウィンドウ クラス名です。
+空でもよく、十字カーソルを使うと自動入力されます。</value>
+  </data>
+  <data name="MagicWordForm_label5_Text" xml:space="preserve">
+    <value>ウィンドウ クラス:</value>
+  </data>
+  <data name="MagicWordForm_buttonBrowse_Text" xml:space="preserve">
+    <value>参照...</value>
+  </data>
+  <data name="MagicWordForm_buttonBrowse_ToolTip" xml:space="preserve">
+    <value>アプリケーションまたは文書を参照します。</value>
+  </data>
+  <data name="MagicWordForm_textBoxParameters_ToolTip" xml:space="preserve">
+    <value>アプリケーションに渡すパラメーターです。
+通常は空のままにします。</value>
+  </data>
+  <data name="MagicWordForm_textBoxStartDirectory_ToolTip" xml:space="preserve">
+    <value>アプリケーションを開始する作業ディレクトリです。
+通常は空のままにします。</value>
+  </data>
+  <data name="MagicWordForm_textBoxAlias_ToolTip" xml:space="preserve">
+    <value>このプログラムを実行するために入力する語です。</value>
+  </data>
+  <data name="MagicWordForm_buttonCancel_Text" xml:space="preserve">
+    <value>キャンセル</value>
+  </data>
+  <data name="MagicWordForm_buttonOK_Text" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="MagicWordForm_label7_Text" xml:space="preserve">
+    <value>コメント:</value>
+  </data>
+  <data name="MagicWordForm_label4_Text" xml:space="preserve">
+    <value>パラメーター:</value>
+  </data>
+  <data name="MagicWordForm_label3_Text" xml:space="preserve">
+    <value>開始ディレクトリ:</value>
+  </data>
+  <data name="MagicWordForm_label2_Text" xml:space="preserve">
+    <value>ファイル名:</value>
+  </data>
+  <data name="MagicWordForm_label1_Text" xml:space="preserve">
+    <value>マジックワード:</value>
+  </data>
+  <data name="MagicWordForm_buttonInternalCommand_Text" xml:space="preserve">
+    <value>内部コマンド...</value>
+  </data>
+  <data name="ParameterInputForm_buttonOK_Text" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="StartupPositionControl_checkBoxEnable_Text" xml:space="preserve">
+    <value>起動時にウィンドウを配置</value>
+  </data>
+  <data name="StartupPositionControl_label12_Text" xml:space="preserve">
+    <value>実行</value>
+  </data>
+  <data name="StartupPositionControl_label11_Text" xml:space="preserve">
+    <value>,</value>
+  </data>
+  <data name="StartupPositionControl_label10_Text" xml:space="preserve">
+    <value>サイズ:</value>
+  </data>
+  <data name="StartupPositionControl_label9_Text" xml:space="preserve">
+    <value>,</value>
+  </data>
+  <data name="StartupPositionControl_label8_Text" xml:space="preserve">
+    <value>開始位置:</value>
+  </data>
+  <data name="InternalCommandForm_labelDescription_Text" xml:space="preserve">
+    <value>説明</value>
+  </data>
+  <data name="Node_General" xml:space="preserve">
+    <value>全般</value>
+  </data>
+  <data name="Node_HotKeys" xml:space="preserve">
+    <value>ホットキー</value>
+  </data>
+  <data name="Node_ImportExport" xml:space="preserve">
+    <value>インポート / エクスポート</value>
+  </data>
+  <data name="Node_Launcher" xml:space="preserve">
+    <value>ランチャー</value>
+  </data>
+  <data name="Node_MagicWords" xml:space="preserve">
+    <value>マジックワード</value>
+  </data>
+  <data name="EntryForm_Text" xml:space="preserve">
+    <value>DMT - ランチャー</value>
+  </data>
+  <data name="InternalCommandForm_Text" xml:space="preserve">
+    <value>内部コマンド</value>
+  </data>
+  <data name="MagicWordForm_Text" xml:space="preserve">
+    <value>マジックワード</value>
+  </data>
+  <data name="ParameterInputForm_Text" xml:space="preserve">
+    <value>パラメーターの入力</value>
+  </data>
+</root>

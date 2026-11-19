@@ -1,0 +1,731 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Center" xml:space="preserve">
+    <value>居中顯示影像，不縮放</value>
+  </data>
+  <data name="ChangeWallpaperDescription" xml:space="preserve">
+    <value>更換桌布</value>
+    <comment>hotkey</comment>
+  </data>
+  <data name="ChangeWallpaperNow" xml:space="preserve">
+    <value>立即更換桌布</value>
+    <comment>Context menu item</comment>
+  </data>
+  <data name="ConfirmDelProvider" xml:space="preserve">
+    <value>確定要刪除“{0}”嗎？</value>
+  </data>
+  <data name="ConfirmDelProviders" xml:space="preserve">
+    <value>確定要刪除選中的全部 {0} 個提供者嗎？</value>
+  </data>
+  <data name="ManyToMany" xml:space="preserve">
+    <value>每個顯示器使用不同影像（同時更換）</value>
+  </data>
+  <data name="ManyToManyInSequence" xml:space="preserve">
+    <value>每個顯示器使用不同影像（每次只更換一個）</value>
+  </data>
+  <data name="MsgIsPaused" xml:space="preserve">
+    <value>桌布切換已暫停</value>
+  </data>
+  <data name="MsgNoChanging" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="MsgNoProviders" xml:space="preserve">
+    <value>尚未新增任何提供者。
+請使用“提供者”選項面板來新增。</value>
+  </data>
+  <data name="MsgNumHits" xml:space="preserve">
+    <value>找到 {0} 張符合搜尋條件的影像。</value>
+  </data>
+  <data name="MsgTimeToChange1" xml:space="preserve">
+    <value>下次更換還有不到 {0} 分鐘</value>
+  </data>
+  <data name="MsgTimeToChange2" xml:space="preserve">
+    <value>下次更換還有不到 {0} 分鐘</value>
+  </data>
+  <data name="OneToMany" xml:space="preserve">
+    <value>每個顯示器使用相同影像</value>
+  </data>
+  <data name="OneToOneBig" xml:space="preserve">
+    <value>一張影像拉伸覆蓋所有顯示器</value>
+  </data>
+  <data name="OpenImageFilter" xml:space="preserve">
+    <value>影像檔案 (*.bmp, *.jpg, *.jpeg, *.png, *.gif)|*.bmp;*.jpg;*.jpeg;*.png;*.gif</value>
+  </data>
+  <data name="OverStretch" xml:space="preserve">
+    <value>過度拉伸以覆蓋顯示器</value>
+  </data>
+  <data name="OverStretch1" xml:space="preserve">
+    <value>過度拉伸以覆蓋顯示器</value>
+  </data>
+  <data name="PauseWallpaperChanging" xml:space="preserve">
+    <value>暫停桌布切換</value>
+    <comment>Context menu item</comment>
+  </data>
+  <data name="PauseWallpaperDescription" xml:space="preserve">
+    <value>暫停桌布切換</value>
+    <comment>command (/ hotkey)</comment>
+  </data>
+  <data name="PleaseSelectProvider" xml:space="preserve">
+    <value>請選擇一個影像提供者</value>
+  </data>
+  <data name="Stretch" xml:space="preserve">
+    <value>拉伸影像填滿顯示器（忽略寬高比）</value>
+  </data>
+  <data name="UnderStretch" xml:space="preserve">
+    <value>欠拉伸以避免裁切影像</value>
+  </data>
+  <data name="WallpaperPropertiesDescription" xml:space="preserve">
+    <value>DMT 生成的最後一張桌布的屬性</value>
+  </data>
+  <data name="BingBingForm_buttonCancel_Text" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="BingBingForm_buttonOK_Text" xml:space="preserve">
+    <value>確定</value>
+  </data>
+  <data name="BingBingForm_label2_Text" xml:space="preserve">
+    <value>說明：</value>
+  </data>
+  <data name="BingBingForm_label4_Text" xml:space="preserve">
+    <value>權重：</value>
+  </data>
+  <data name="BingBingForm_linkLabel_Text" xml:space="preserve">
+    <value>用於 DualWallpaperChanger 的外掛，從以下位置獲取影像 </value>
+  </data>
+  <data name="BingBingForm_checkBoxEnabled_Text" xml:space="preserve">
+    <value>啟用</value>
+  </data>
+  <data name="BingBingForm_label1_Text" xml:space="preserve">
+    <value>Bing 區域：</value>
+  </data>
+  <data name="FlickrFlickrForm_linkLabel_Text" xml:space="preserve">
+    <value>從以下位置獲取影像的提供者 </value>
+  </data>
+  <data name="FlickrFlickrForm_checkBoxRandomPage_Text" xml:space="preserve">
+    <value>從隨機頁面獲取影像（而不是包含最新新增照片的頁面）</value>
+  </data>
+  <data name="FlickrFlickrForm_buttonCancel_Text" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="FlickrFlickrForm_buttonOK_Text" xml:space="preserve">
+    <value>確定</value>
+  </data>
+  <data name="FlickrFlickrForm_label2_Text" xml:space="preserve">
+    <value>說明：</value>
+  </data>
+  <data name="FlickrFlickrForm_label4_Text" xml:space="preserve">
+    <value>權重：</value>
+  </data>
+  <data name="FlickrFlickrForm_label1_Text" xml:space="preserve">
+    <value>標籤：</value>
+  </data>
+  <data name="FlickrForm_textBoxTags_ToolTip" xml:space="preserve">
+    <value>以逗號分隔的標籤列表</value>
+  </data>
+  <data name="FlickrFlickrForm_checkBoxTagMode_Text" xml:space="preserve">
+    <value>照片必須包含全部或上述標籤</value>
+  </data>
+  <data name="FlickrFlickrForm_label3_Text" xml:space="preserve">
+    <value>文本：</value>
+  </data>
+  <data name="FlickrFlickrForm_label5_Text" xml:space="preserve">
+    <value>使用者 ID：</value>
+  </data>
+  <data name="FlickrFlickrForm_label6_Text" xml:space="preserve">
+    <value>群組 ID：</value>
+  </data>
+  <data name="FlickrFlickrForm_label7_Text" xml:space="preserve">
+    <value>API 金鑰：</value>
+  </data>
+  <data name="FlickrForm_textBoxApiKey_ToolTip" xml:space="preserve">
+    <value>此項需要從 flickr 獲取</value>
+  </data>
+  <data name="FlickrFlickrForm_buttonTest_Text" xml:space="preserve">
+    <value>測試搜尋條件</value>
+  </data>
+  <data name="FlickrFlickrForm_checkBoxEnabled_Text" xml:space="preserve">
+    <value>啟用</value>
+  </data>
+  <data name="FlickrNoFlickrApiKeyForm_label1_Text" xml:space="preserve">
+    <value>必須指定 flickr API 金鑰。</value>
+  </data>
+  <data name="FlickrNoFlickrApiKeyForm_linkLabelFlickr_Text" xml:space="preserve">
+    <value>如果你還沒有，可以從以下地址獲取 </value>
+  </data>
+  <data name="FlickrNoFlickrApiKeyForm_label2_Text" xml:space="preserve">
+    <value>你需要先有一個 flickr/yahoo 賬戶。</value>
+  </data>
+  <data name="FlickrNoFlickrApiKeyForm_buttonOK_Text" xml:space="preserve">
+    <value>確定</value>
+  </data>
+  <data name="ListListAutoGenForm_label1_Text" xml:space="preserve">
+    <value>生成一個文本檔案（由「列表路徑」指定），其中列出在指定資料夾中找到的影像檔案，供列表提供者使用。</value>
+  </data>
+  <data name="ListListAutoGenForm_label2_Text" xml:space="preserve">
+    <value>列表路徑：</value>
+  </data>
+  <data name="ListListAutoGenForm_buttonBrowseList_Text" xml:space="preserve">
+    <value>瀏覽 ...</value>
+  </data>
+  <data name="ListListAutoGenForm_label3_Text" xml:space="preserve">
+    <value>資料夾：</value>
+  </data>
+  <data name="ListListAutoGenForm_buttonBrowseFolder_Text" xml:space="preserve">
+    <value>瀏覽 ...</value>
+  </data>
+  <data name="ListListAutoGenForm_checkBoxRecursive_Text" xml:space="preserve">
+    <value>尋找子資料夾</value>
+  </data>
+  <data name="ListListAutoGenForm_buttonCancel_Text" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="ListListAutoGenForm_buttonOK_Text" xml:space="preserve">
+    <value>確定</value>
+  </data>
+  <data name="ListListForm_label2_Text" xml:space="preserve">
+    <value>說明：</value>
+  </data>
+  <data name="ListListForm_label1_Text" xml:space="preserve">
+    <value>權重：</value>
+  </data>
+  <data name="ListListForm_label4_Text" xml:space="preserve">
+    <value>讀取包含影像路徑和 URL 列表的檔案的影像提供者</value>
+  </data>
+  <data name="ListListForm_buttonCancel_Text" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="ListListForm_buttonOK_Text" xml:space="preserve">
+    <value>確定</value>
+  </data>
+  <data name="ListListForm_checkBoxPersist_Text" xml:space="preserve">
+    <value>關機後記住位置</value>
+  </data>
+  <data name="ListListForm_checkBoxEnabled_Text" xml:space="preserve">
+    <value>啟用</value>
+  </data>
+  <data name="ListListForm_groupBox2_Text" xml:space="preserve">
+    <value>排序</value>
+  </data>
+  <data name="ListListForm_radioButtonOrderList_Text" xml:space="preserve">
+    <value>按列表順序</value>
+  </data>
+  <data name="ListListForm_radioButtonOrderRandom_Text" xml:space="preserve">
+    <value>隨機</value>
+  </data>
+  <data name="ListListForm_label3_Text" xml:space="preserve">
+    <value>列表路徑：</value>
+  </data>
+  <data name="ListListForm_buttonBrowse_Text" xml:space="preserve">
+    <value>瀏覽...</value>
+  </data>
+  <data name="ListListForm_buttonAutoGenerate_Text" xml:space="preserve">
+    <value>自動生成...</value>
+  </data>
+  <data name="LocalDiskLocalDiskForm_buttonBrowse_Text" xml:space="preserve">
+    <value>瀏覽...</value>
+  </data>
+  <data name="LocalDiskLocalDiskForm_label3_Text" xml:space="preserve">
+    <value>預設：</value>
+  </data>
+  <data name="LocalDiskLocalDiskForm_label2_Text" xml:space="preserve">
+    <value>說明：</value>
+  </data>
+  <data name="LocalDiskLocalDiskForm_label1_Text" xml:space="preserve">
+    <value>權重：</value>
+  </data>
+  <data name="LocalDiskLocalDiskForm_label4_Text" xml:space="preserve">
+    <value>從本地磁碟獲取已儲存影像的提供者</value>
+  </data>
+  <data name="LocalDiskLocalDiskForm_buttonCancel_Text" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="LocalDiskLocalDiskForm_buttonOK_Text" xml:space="preserve">
+    <value>確定</value>
+  </data>
+  <data name="LocalDiskLocalDiskForm_checkBoxRescan_Text" xml:space="preserve">
+    <value>每次獲取影像前重新掃描資料夾</value>
+  </data>
+  <data name="LocalDiskLocalDiskForm_checkBoxRecursive_Text" xml:space="preserve">
+    <value>尋找子資料夾</value>
+  </data>
+  <data name="LocalDiskLocalDiskForm_buttonBrowsePortrait_Text" xml:space="preserve">
+    <value>瀏覽...</value>
+  </data>
+  <data name="LocalDiskLocalDiskForm_label5_Text" xml:space="preserve">
+    <value>豎屏顯示器：</value>
+  </data>
+  <data name="LocalDiskLocalDiskForm_groupBox1_Text" xml:space="preserve">
+    <value>從中獲取影像的資料夾（按優先順序排序）</value>
+  </data>
+  <data name="LocalDiskLocalDiskForm_buttonBrowseMonitor4_Text" xml:space="preserve">
+    <value>瀏覽...</value>
+  </data>
+  <data name="LocalDiskLocalDiskForm_label9_Text" xml:space="preserve">
+    <value>顯示器 4：</value>
+  </data>
+  <data name="LocalDiskLocalDiskForm_buttonBrowseMonitor3_Text" xml:space="preserve">
+    <value>瀏覽...</value>
+  </data>
+  <data name="LocalDiskLocalDiskForm_label8_Text" xml:space="preserve">
+    <value>顯示器 3：</value>
+  </data>
+  <data name="LocalDiskLocalDiskForm_buttonBrowseMonitor2_Text" xml:space="preserve">
+    <value>瀏覽...</value>
+  </data>
+  <data name="LocalDiskLocalDiskForm_label7_Text" xml:space="preserve">
+    <value>顯示器 2：</value>
+  </data>
+  <data name="LocalDiskLocalDiskForm_checkBoxAllowFileBrowse_Text" xml:space="preserve">
+    <value>檔案瀏覽（實驗性）</value>
+  </data>
+  <data name="LocalDiskLocalDiskForm_buttonBrowseMonitor1_Text" xml:space="preserve">
+    <value>瀏覽...</value>
+  </data>
+  <data name="LocalDiskLocalDiskForm_label6_Text" xml:space="preserve">
+    <value>顯示器 1：</value>
+  </data>
+  <data name="LocalDiskLocalDiskForm_checkBoxCycle_Text" xml:space="preserve">
+    <value>迴圈遍歷所有影像後再重複（與上一項互斥）</value>
+  </data>
+  <data name="LocalDiskLocalDiskForm_checkBoxEnabled_Text" xml:space="preserve">
+    <value>啟用</value>
+  </data>
+  <data name="LocalDiskLocalDiskForm_groupBox2_Text" xml:space="preserve">
+    <value>排序</value>
+  </data>
+  <data name="LocalDiskLocalDiskForm_radioButtonOrderAlphabetical_Text" xml:space="preserve">
+    <value>按字母順序</value>
+  </data>
+  <data name="LocalDiskLocalDiskForm_radioButtonOrderRandom_Text" xml:space="preserve">
+    <value>隨機</value>
+  </data>
+  <data name="LocalDiskLocalDiskForm_groupBox3_Text" xml:space="preserve">
+    <value>當前排序選項</value>
+  </data>
+  <data name="RandomShapesRandomShapesForm_checkBoxRectangles_Text" xml:space="preserve">
+    <value>矩形</value>
+  </data>
+  <data name="RandomShapesRandomShapesForm_checkBoxEllipses_Text" xml:space="preserve">
+    <value>橢圓</value>
+  </data>
+  <data name="RandomShapesRandomShapesForm_checkBoxUseAlpha_Text" xml:space="preserve">
+    <value>使圖形不透明</value>
+  </data>
+  <data name="RandomShapesRandomShapesForm_label4_Text" xml:space="preserve">
+    <value>用於 DualWallpaperChanger 的外掛，可生成由隨機圖形組成的影像</value>
+  </data>
+  <data name="RandomShapesRandomShapesForm_buttonCancel_Text" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="RandomShapesRandomShapesForm_buttonOK_Text" xml:space="preserve">
+    <value>確定</value>
+  </data>
+  <data name="RandomShapesRandomShapesForm_label2_Text" xml:space="preserve">
+    <value>說明：</value>
+  </data>
+  <data name="RandomShapesRandomShapesForm_checkBoxUseGradients_Text" xml:space="preserve">
+    <value>用漸變填充圖形</value>
+  </data>
+  <data name="RandomShapesRandomShapesForm_checkBoxRandomBackground_Text" xml:space="preserve">
+    <value>隨機背景顏色</value>
+  </data>
+  <data name="RandomShapesRandomShapesForm_groupBox2_Text" xml:space="preserve">
+    <value>繪製樣式</value>
+  </data>
+  <data name="RandomShapesRandomShapesForm_groupBox1_Text" xml:space="preserve">
+    <value>使用以下圖形</value>
+  </data>
+  <data name="RandomShapesRandomShapesForm_label3_Text" xml:space="preserve">
+    <value>圖形：</value>
+  </data>
+  <data name="RandomShapesRandomShapesForm_label1_Text" xml:space="preserve">
+    <value>權重：</value>
+  </data>
+  <data name="RandomShapesRandomShapesForm_checkBoxEnabled_Text" xml:space="preserve">
+    <value>啟用</value>
+  </data>
+  <data name="UnsplashWebScrapeForm_linkLabel_Text" xml:space="preserve">
+    <value>從以下位置獲取影像的提供者 </value>
+  </data>
+  <data name="UnsplashWebScrapeForm_buttonCancel_Text" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="UnsplashWebScrapeForm_buttonOK_Text" xml:space="preserve">
+    <value>確定</value>
+  </data>
+  <data name="UnsplashWebScrapeForm_label2_Text" xml:space="preserve">
+    <value>說明：</value>
+  </data>
+  <data name="UnsplashWebScrapeForm_label4_Text" xml:space="preserve">
+    <value>權重：</value>
+  </data>
+  <data name="UnsplashWebScrapeForm_groupBox1_Text" xml:space="preserve">
+    <value>隨機獲取影像來自：</value>
+  </data>
+  <data name="UnsplashWebScrapeForm_radioButtonUserLike_Text" xml:space="preserve">
+    <value>使用者喜歡的照片：</value>
+  </data>
+  <data name="UnsplashWebScrapeForm_radioButtonUser_Text" xml:space="preserve">
+    <value>使用者的照片：</value>
+  </data>
+  <data name="UnsplashWebScrapeForm_radioButtonCategory_Text" xml:space="preserve">
+    <value>分類：</value>
+  </data>
+  <data name="UnsplashWebScrapeForm_radioButtonFeatured_Text" xml:space="preserve">
+    <value>精選</value>
+  </data>
+  <data name="UnsplashWebScrapeForm_radioButtonAll_Text" xml:space="preserve">
+    <value>全部</value>
+  </data>
+  <data name="UnsplashWebScrapeForm_label1_Text" xml:space="preserve">
+    <value>篩選：</value>
+  </data>
+  <data name="UnsplashWebScrapeForm_checkBoxEnabled_Text" xml:space="preserve">
+    <value>啟用</value>
+  </data>
+  <data name="UnsplashWebScrapeForm_label3_Text" xml:space="preserve">
+    <value>由於 Unsplash API 的變更，此功能暫時不可用</value>
+  </data>
+  <data name="UrlWebScrapeForm_buttonCancel_Text" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="UrlWebScrapeForm_buttonOK_Text" xml:space="preserve">
+    <value>確定</value>
+  </data>
+  <data name="UrlWebScrapeForm_label2_Text" xml:space="preserve">
+    <value>說明：</value>
+  </data>
+  <data name="UrlWebScrapeForm_label4_Text" xml:space="preserve">
+    <value>權重：</value>
+  </data>
+  <data name="UrlWebScrapeForm_label1_Text" xml:space="preserve">
+    <value>URL：</value>
+  </data>
+  <data name="UrlWebScrapeForm_label3_Text" xml:space="preserve">
+    <value>從 URL 獲取影像</value>
+  </data>
+  <data name="UrlWebScrapeForm_labelEscapeHeight_Text" xml:space="preserve">
+    <value>螢幕高度</value>
+  </data>
+  <data name="UrlWebScrapeForm_labelEscapeWidth_Text" xml:space="preserve">
+    <value>螢幕寬度</value>
+  </data>
+  <data name="UrlWebScrapeForm_labelEscapeEscape_Text" xml:space="preserve">
+    <value>%% -&gt; %</value>
+  </data>
+  <data name="UrlWebScrapeForm_checkBoxEnableEscapes_Text" xml:space="preserve">
+    <value>在上面的 URL 中啟用轉義：</value>
+  </data>
+  <data name="UrlWebScrapeForm_checkBoxEnabled_Text" xml:space="preserve">
+    <value>啟用</value>
+  </data>
+  <data name="ProviderForm_ProviderImage_HeaderText" xml:space="preserve">
+    <value>提供者</value>
+  </data>
+  <data name="ProviderForm_ProviderName_HeaderText" xml:space="preserve">
+    <value>名稱</value>
+  </data>
+  <data name="ProviderForm_buttonCancel_Text" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="ProviderForm_buttonOK_Text" xml:space="preserve">
+    <value>確定</value>
+  </data>
+  <data name="ProviderForm_label1_Text" xml:space="preserve">
+    <value>請選擇需要的影像提供者</value>
+  </data>
+  <data name="WallpaperChangerGeneralOptionsPanel_labelNextChange_Text" xml:space="preserve">
+    <value>下次更換還有</value>
+  </data>
+  <data name="WallpaperChangerGeneralOptionsPanel_buttonChangeWallpaper_Text" xml:space="preserve">
+    <value>立即更換桌布</value>
+  </data>
+  <data name="WallpaperChangerGeneralOptionsPanel_label3_Text" xml:space="preserve">
+    <value>多顯示器：</value>
+  </data>
+  <data name="WallpaperChangerGeneralOptionsPanel_label2_Text" xml:space="preserve">
+    <value>背景顏色：</value>
+  </data>
+  <data name="WallpaperChangerGeneralOptionsPanel_label1_Text" xml:space="preserve">
+    <value>適配方式：</value>
+  </data>
+  <data name="WallpaperChangerGeneralOptionsPanel_checkBoxChangePeriodically_Text" xml:space="preserve">
+    <value>定期更換桌布</value>
+  </data>
+  <data name="WallpaperChangerGeneralOptionsPanel_labelPeriod3_Text" xml:space="preserve">
+    <value>分鐘</value>
+  </data>
+  <data name="WallpaperChangerGeneralOptionsPanel_labelPeriod2_Text" xml:space="preserve">
+    <value>小時</value>
+  </data>
+  <data name="WallpaperChangerGeneralOptionsPanel_labelPeriod1_Text" xml:space="preserve">
+    <value>更換間隔：</value>
+  </data>
+  <data name="WallpaperChangerGeneralOptionsPanel_checkBoxChangeOnStart_Text" xml:space="preserve">
+    <value>啟動時更換桌布</value>
+  </data>
+  <data name="WallpaperChangerGeneralOptionsPanel_groupBox1_Text" xml:space="preserve">
+    <value>熱鍵</value>
+  </data>
+  <data name="WallpaperChangerGeneralOptionsPanel_checkBoxFade_Text" xml:space="preserve">
+    <value>更換桌布時使用平滑淡入</value>
+  </data>
+  <data name="WallpaperChangerGeneralOptionsPanel_checkBoxChangeOnResolutionChange_Text" xml:space="preserve">
+    <value>顯示器或解析度變化時更換</value>
+  </data>
+  <data name="WallpaperChangerGeneralOptionsPanel_checkBoxFitAspectRatio_Text" xml:space="preserve">
+    <value>保持寬高比</value>
+  </data>
+  <data name="WallpaperChangerGeneralOptionsPanel_checkBoxFitClip_Text" xml:space="preserve">
+    <value>避免出現水平/垂直色條</value>
+  </data>
+  <data name="WallpaperChangerGeneralOptionsPanel_checkBoxFitEnlarge_Text" xml:space="preserve">
+    <value>必要時放大影像以適配</value>
+  </data>
+  <data name="WallpaperChangerGeneralOptionsPanel_checkBoxFitShrink_Text" xml:space="preserve">
+    <value>必要時縮小影像以適配</value>
+  </data>
+  <data name="WallpaperChangerGeneralOptionsPanel_label4_Text" xml:space="preserve">
+    <value>輸出桌布格式：</value>
+  </data>
+  <data name="WallpaperChangerGeneralOptionsPanel_label5_Text" xml:space="preserve">
+    <value>品質：</value>
+  </data>
+  <data name="WallpaperChangerGeneralOptionsPanel_checkBoxDontChangeIfBusy_Text" xml:space="preserve">
+    <value>但執行全屏遊戲或演示時不更換</value>
+  </data>
+  <data name="WallpaperChangerPropertiesOptionsPanel_picPreview_ToolTip" xml:space="preserve">
+    <value>點選顯示器可檢視其上顯示的影像資訊。</value>
+  </data>
+  <data name="WallpaperChangerPropertiesOptionsPanel_groupBox1_Text" xml:space="preserve">
+    <value>源影像屬性</value>
+  </data>
+  <data name="WallpaperChangerPropertiesOptionsPanel_label5_Text" xml:space="preserve">
+    <value>源尺寸：</value>
+  </data>
+  <data name="WallpaperChangerPropertiesOptionsPanel_label4_Text" xml:space="preserve">
+    <value>影像詳細資訊：</value>
+  </data>
+  <data name="WallpaperChangerPropertiesOptionsPanel_label3_Text" xml:space="preserve">
+    <value>攝影者：</value>
+  </data>
+  <data name="WallpaperChangerPropertiesOptionsPanel_label2_Text" xml:space="preserve">
+    <value>影像來源：</value>
+  </data>
+  <data name="WallpaperChangerPropertiesOptionsPanel_label1_Text" xml:space="preserve">
+    <value>提供者：</value>
+  </data>
+  <data name="WallpaperChangerPropertiesOptionsPanel_labelProperties_Text" xml:space="preserve">
+    <value>DMT 生成桌布後，詳細資訊會顯示在這裡</value>
+  </data>
+  <data name="WallpaperChangerProvidersOptionsPanel_Enabled_HeaderText" xml:space="preserve">
+    <value>啟用</value>
+  </data>
+  <data name="WallpaperChangerProvidersOptionsPanel_Weight_HeaderText" xml:space="preserve">
+    <value>權重</value>
+  </data>
+  <data name="WallpaperChangerProvidersOptionsPanel_ProviderImage_HeaderText" xml:space="preserve">
+    <value>提供者</value>
+  </data>
+  <data name="WallpaperChangerProvidersOptionsPanel_ProviderName_HeaderText" xml:space="preserve">
+    <value>名稱</value>
+  </data>
+  <data name="WallpaperChangerProvidersOptionsPanel_Description_HeaderText" xml:space="preserve">
+    <value>說明</value>
+  </data>
+  <data name="WallpaperChangerProvidersOptionsPanel_buttonDelete_Text" xml:space="preserve">
+    <value>刪除</value>
+  </data>
+  <data name="WallpaperChangerProvidersOptionsPanel_buttonEdit_Text" xml:space="preserve">
+    <value>編輯</value>
+  </data>
+  <data name="WallpaperChangerProvidersOptionsPanel_buttonAdd_Text" xml:space="preserve">
+    <value>新增</value>
+  </data>
+  <data name="WallpaperChangerRootOptionsPanel_label3_Text" xml:space="preserve">
+    <value>控制更換桌面桌布的設定。</value>
+  </data>
+  <data name="WallpaperChangerRootOptionsPanel_label1_Text" xml:space="preserve">
+    <value>桌布切換器模組</value>
+  </data>
+  <data name="Node_General" xml:space="preserve">
+    <value>常規</value>
+  </data>
+  <data name="Node_Properties" xml:space="preserve">
+    <value>屬性</value>
+  </data>
+  <data name="Node_Providers" xml:space="preserve">
+    <value>提供者</value>
+  </data>
+  <data name="Node_WallpaperChanger" xml:space="preserve">
+    <value>桌布切換器</value>
+  </data>
+  <data name="ProviderForm_Text" xml:space="preserve">
+    <value>選擇提供者</value>
+  </data>
+  <data name="BingForm_Text" xml:space="preserve">
+    <value>Bing</value>
+  </data>
+  <data name="FlickrForm_Text" xml:space="preserve">
+    <value>flickr</value>
+  </data>
+  <data name="NoFlickrApiKeyForm_Text" xml:space="preserve">
+    <value>需要 flickr API 金鑰</value>
+  </data>
+  <data name="ListAutoGenForm_Text" xml:space="preserve">
+    <value>自動生成列表</value>
+  </data>
+  <data name="ListForm_Text" xml:space="preserve">
+    <value>列表</value>
+  </data>
+  <data name="LocalDiskForm_Text" xml:space="preserve">
+    <value>本地磁碟</value>
+  </data>
+  <data name="UnsplashWebScrapeForm_Text" xml:space="preserve">
+    <value>Unsplash</value>
+  </data>
+  <data name="UrlWebScrapeForm_Text" xml:space="preserve">
+    <value>Url</value>
+  </data>
+  <data name="RandomShapesForm_Text" xml:space="preserve">
+    <value>隨機圖形</value>
+  </data>
+  <data name="Provider_DefaultDescription_Flickr" xml:space="preserve">
+    <value>來自 flickr 的影像</value>
+  </data>
+  <data name="Provider_DefaultDescription_LocalDisk" xml:space="preserve">
+    <value>來自本地磁碟的 Windows 桌布</value>
+  </data>
+  <data name="Provider_DefaultDescription_RandomShapes" xml:space="preserve">
+    <value>隨機圖形</value>
+  </data>
+  <data name="Provider_DefaultDescription_Unsplash" xml:space="preserve">
+    <value>來自 www.unsplash.com 的影像</value>
+  </data>
+  <data name="Provider_DefaultDescription_Bing" xml:space="preserve">
+    <value>來自 www.bing.com 的影像</value>
+  </data>
+  <data name="Provider_DefaultDescription_List" xml:space="preserve">
+    <value>來自列表的 Windows 桌布</value>
+  </data>
+  <data name="Provider_DefaultDescription_Url" xml:space="preserve">
+    <value>來自網址的影像</value>
+  </data>
+</root>

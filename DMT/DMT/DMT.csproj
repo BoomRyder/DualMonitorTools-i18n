@@ -650,6 +650,15 @@
     <EmbeddedResource Include="Modules\Cursor\CursorDeadSpaceOptionsPanel.zh-Hans.resx">
       <DependentUpon>CursorDeadSpaceOptionsPanel.resx</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Cursor\CursorDeadSpaceOptionsPanel.zh-Hant.resx">
+      <DependentUpon>CursorDeadSpaceOptionsPanel.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Cursor\CursorDeadSpaceOptionsPanel.ja.resx">
+      <DependentUpon>CursorDeadSpaceOptionsPanel.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Cursor\CursorDeadSpaceOptionsPanel.ko.resx">
+      <DependentUpon>CursorDeadSpaceOptionsPanel.resx</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Modules\Cursor\CursorStickyOptionsPanel.resx">
       <DependentUpon>CursorStickyOptionsPanel.cs</DependentUpon>
     </EmbeddedResource>
@@ -669,6 +678,15 @@
       <DependentUpon>EditNumericValueForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Modules\General\EditNumericValueForm.zh-Hans.resx">
+      <DependentUpon>EditNumericValueForm.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\General\EditNumericValueForm.zh-Hant.resx">
+      <DependentUpon>EditNumericValueForm.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\General\EditNumericValueForm.ja.resx">
+      <DependentUpon>EditNumericValueForm.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\General\EditNumericValueForm.ko.resx">
       <DependentUpon>EditNumericValueForm.resx</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Modules\General\CheckUpdatesForm.resx">
@@ -719,6 +737,15 @@
     <EmbeddedResource Include="Modules\Launcher\MagicWordForm.zh-Hans.resx">
       <DependentUpon>MagicWordForm.resx</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Launcher\MagicWordForm.zh-Hant.resx">
+      <DependentUpon>MagicWordForm.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Launcher\MagicWordForm.ja.resx">
+      <DependentUpon>MagicWordForm.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Launcher\MagicWordForm.ko.resx">
+      <DependentUpon>MagicWordForm.resx</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Modules\Launcher\ParameterInputForm.resx">
       <DependentUpon>ParameterInputForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -750,6 +777,15 @@
       <DependentUpon>SwapScreenSdaOptionsPanel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Modules\SwapScreen\SwapScreenSdaOptionsPanel.zh-Hans.resx">
+      <DependentUpon>SwapScreenSdaOptionsPanel.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\SwapScreen\SwapScreenSdaOptionsPanel.zh-Hant.resx">
+      <DependentUpon>SwapScreenSdaOptionsPanel.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\SwapScreen\SwapScreenSdaOptionsPanel.ja.resx">
+      <DependentUpon>SwapScreenSdaOptionsPanel.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\SwapScreen\SwapScreenSdaOptionsPanel.ko.resx">
       <DependentUpon>SwapScreenSdaOptionsPanel.resx</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Modules\SwapScreen\SwapScreenUdaOptionsPanel.resx">
@@ -823,11 +859,29 @@
     <EmbeddedResource Include="Resources\AppStrings.zh-Hans.resx">
       <DependentUpon>AppStrings.resx</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Resources\AppStrings.zh-Hant.resx">
+      <DependentUpon>AppStrings.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\AppStrings.ja.resx">
+      <DependentUpon>AppStrings.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\AppStrings.ko.resx">
+      <DependentUpon>AppStrings.resx</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Resources\CommonStrings.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>CommonStrings.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Resources\CommonStrings.zh-Hans.resx">
+      <DependentUpon>CommonStrings.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\CommonStrings.zh-Hant.resx">
+      <DependentUpon>CommonStrings.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\CommonStrings.ja.resx">
+      <DependentUpon>CommonStrings.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\CommonStrings.ko.resx">
       <DependentUpon>CommonStrings.resx</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Resources\CursorStrings.resx">
@@ -837,11 +891,29 @@
     <EmbeddedResource Include="Resources\CursorStrings.zh-Hans.resx">
       <DependentUpon>CursorStrings.resx</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Resources\CursorStrings.zh-Hant.resx">
+      <DependentUpon>CursorStrings.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\CursorStrings.ja.resx">
+      <DependentUpon>CursorStrings.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\CursorStrings.ko.resx">
+      <DependentUpon>CursorStrings.resx</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Resources\GeneralStrings.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>GeneralStrings.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Resources\GeneralStrings.zh-Hans.resx">
+      <DependentUpon>GeneralStrings.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\GeneralStrings.zh-Hant.resx">
+      <DependentUpon>GeneralStrings.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\GeneralStrings.ja.resx">
+      <DependentUpon>GeneralStrings.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\GeneralStrings.ko.resx">
       <DependentUpon>GeneralStrings.resx</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Resources\LauncherStrings.resx">
@@ -851,11 +923,29 @@
     <EmbeddedResource Include="Resources\LauncherStrings.zh-Hans.resx">
       <DependentUpon>LauncherStrings.resx</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Resources\LauncherStrings.zh-Hant.resx">
+      <DependentUpon>LauncherStrings.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\LauncherStrings.ja.resx">
+      <DependentUpon>LauncherStrings.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\LauncherStrings.ko.resx">
+      <DependentUpon>LauncherStrings.resx</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Resources\SnapStrings.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>SnapStrings.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Resources\SnapStrings.zh-Hans.resx">
+      <DependentUpon>SnapStrings.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\SnapStrings.zh-Hant.resx">
+      <DependentUpon>SnapStrings.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\SnapStrings.ja.resx">
+      <DependentUpon>SnapStrings.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\SnapStrings.ko.resx">
       <DependentUpon>SnapStrings.resx</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Resources\SwapScreenStrings.resx">
@@ -865,11 +955,29 @@
     <EmbeddedResource Include="Resources\SwapScreenStrings.zh-Hans.resx">
       <DependentUpon>SwapScreenStrings.resx</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Resources\SwapScreenStrings.zh-Hant.resx">
+      <DependentUpon>SwapScreenStrings.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\SwapScreenStrings.ja.resx">
+      <DependentUpon>SwapScreenStrings.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\SwapScreenStrings.ko.resx">
+      <DependentUpon>SwapScreenStrings.resx</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Resources\WallpaperStrings.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>WallpaperStrings.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Resources\WallpaperStrings.zh-Hans.resx">
+      <DependentUpon>WallpaperStrings.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\WallpaperStrings.zh-Hant.resx">
+      <DependentUpon>WallpaperStrings.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\WallpaperStrings.ja.resx">
+      <DependentUpon>WallpaperStrings.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\WallpaperStrings.ko.resx">
       <DependentUpon>WallpaperStrings.resx</DependentUpon>
     </EmbeddedResource>
     <None Include="app.manifest" />

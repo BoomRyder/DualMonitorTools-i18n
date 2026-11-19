@@ -1,0 +1,465 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ActivateDescription" xml:space="preserve">
+    <value>啟用魔術字輸入</value>
+  </data>
+  <data name="AddMagicWord" xml:space="preserve">
+    <value>新增新魔術字...</value>
+    <comment>menuitem</comment>
+  </data>
+  <data name="AddMagicWordDescription" xml:space="preserve">
+    <value>為當前應用程式新增魔術字</value>
+  </data>
+  <data name="BrowseExeFilter" xml:space="preserve">
+    <value>程式 (*.exe; *.pif; *.com; *bat; *.cmd)|*.exe; *.pif; *.com; *bat; *.cmd|所有檔案 (*.*)|*.*</value>
+  </data>
+  <data name="ConfirmDel1MW" xml:space="preserve">
+    <value>確定要刪除魔術字“{0}”嗎？</value>
+  </data>
+  <data name="ConfirmDel2MW" xml:space="preserve">
+    <value>確定要刪除選中的全部 {0} 個魔術字嗎？</value>
+  </data>
+  <data name="ConfirmDelAllMW" xml:space="preserve">
+    <value>確定要刪除全部魔術字嗎？</value>
+  </data>
+  <data name="EnterMagicWord" xml:space="preserve">
+    <value>輸入魔術字...</value>
+    <comment>menuitem</comment>
+  </data>
+  <data name="InvalidCoOrd" xml:space="preserve">
+    <value>座標無效</value>
+  </data>
+  <data name="NoAlias" xml:space="preserve">
+    <value>你需要指定執行時輸入的魔術字名稱。</value>
+  </data>
+  <data name="NoFilename" xml:space="preserve">
+    <value>你需要為此魔術字指定要開啟的應用程式或檔案。</value>
+  </data>
+  <data name="QrsFilter" xml:space="preserve">
+    <value>SlickRun 資料檔案 (*.qrs)|*.qrs|所有檔案 (*.*)|*.*</value>
+  </data>
+  <data name="SelectAModule" xml:space="preserve">
+    <value>&lt;選擇模組&gt;</value>
+  </data>
+  <data name="SelectAnAction" xml:space="preserve">
+    <value>&lt;選擇操作&gt;</value>
+  </data>
+  <data name="ShowMaximised" xml:space="preserve">
+    <value>最大化</value>
+  </data>
+  <data name="ShowMinimised" xml:space="preserve">
+    <value>最小化</value>
+  </data>
+  <data name="ShowNormal" xml:space="preserve">
+    <value>常規視窗</value>
+  </data>
+  <data name="XmlFilter" xml:space="preserve">
+    <value>XML 檔案 (*.xml)|*.xml|所有檔案 (*.*)|*.*</value>
+  </data>
+  <data name="EntryForm_columnHeaderAlias_Text" xml:space="preserve">
+    <value>魔術字</value>
+  </data>
+  <data name="EntryForm_columnHeaderFilename_Text" xml:space="preserve">
+    <value>檔案名</value>
+  </data>
+  <data name="InternalCommandForm_label1_Text" xml:space="preserve">
+    <value>模組：</value>
+  </data>
+  <data name="InternalCommandForm_label2_Text" xml:space="preserve">
+    <value>操作：</value>
+  </data>
+  <data name="InternalCommandForm_buttonOK_Text" xml:space="preserve">
+    <value>確定</value>
+  </data>
+  <data name="InternalCommandForm_buttonCancel_Text" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="LauncheGeneralOptionsPanel_label6_Text" xml:space="preserve">
+    <value>秒</value>
+  </data>
+  <data name="LauncheGeneralOptionsPanel_label5_Text" xml:space="preserve">
+    <value>等待應用程式視窗出現的超時：</value>
+  </data>
+  <data name="LauncheGeneralOptionsPanel_groupBox5_Text" xml:space="preserve">
+    <value>圖示顯示方式：</value>
+  </data>
+  <data name="LauncheGeneralOptionsPanel_radioButtonIconDetails_Text" xml:space="preserve">
+    <value>列表</value>
+  </data>
+  <data name="LauncheGeneralOptionsPanel_radioButtonIconList_Text" xml:space="preserve">
+    <value>多列列表</value>
+  </data>
+  <data name="LauncheGeneralOptionsPanel_radioButtonIconLargeIcon_Text" xml:space="preserve">
+    <value>網格</value>
+  </data>
+  <data name="LauncheGeneralOptionsPanel_label3_Text" xml:space="preserve">
+    <value>最多顯示的圖示數量：</value>
+  </data>
+  <data name="LauncheGeneralOptionsPanel_checkBoxMru_Text" xml:space="preserve">
+    <value>自動補全時使用最近使用（而不是使用最多）</value>
+  </data>
+  <data name="LauncheGeneralOptionsPanel_checkBoxLoadWordsOnStartup_Text" xml:space="preserve">
+    <value>啟動時載入魔術字</value>
+  </data>
+  <data name="LauncherImportOptionsPanel_groupBox3_Text" xml:space="preserve">
+    <value>其他魔術字風格的檔案格式</value>
+  </data>
+  <data name="LauncherImportOptionsPanel_label2_Text" xml:space="preserve">
+    <value>（SlickRun 使用的格式）</value>
+  </data>
+  <data name="LauncherImportOptionsPanel_buttonImportQrs_Text" xml:space="preserve">
+    <value>匯入 QRS...</value>
+  </data>
+  <data name="LauncherImportOptionsPanel_groupBox2_Text" xml:space="preserve">
+    <value>DualLauncher 原生檔案格式</value>
+  </data>
+  <data name="LauncherImportOptionsPanel_buttonImportXml_Text" xml:space="preserve">
+    <value>匯入 XML...</value>
+  </data>
+  <data name="LauncherImportOptionsPanel_buttonExportXml_Text" xml:space="preserve">
+    <value>匯出 XML...</value>
+  </data>
+  <data name="LauncherImportOptionsPanel_buttonDeleteAll_Text" xml:space="preserve">
+    <value>刪除全部魔術字...</value>
+  </data>
+  <data name="LauncherMagicWordsOptionsPanel_buttonResetCounts_Text" xml:space="preserve">
+    <value>重置使用次數</value>
+  </data>
+  <data name="LauncherMagicWordsOptionsPanel_buttonDelete_Text" xml:space="preserve">
+    <value>刪除</value>
+  </data>
+  <data name="LauncherMagicWordsOptionsPanel_buttonEdit_Text" xml:space="preserve">
+    <value>編輯</value>
+  </data>
+  <data name="LauncherMagicWordsOptionsPanel_buttonAdd_Text" xml:space="preserve">
+    <value>新增</value>
+  </data>
+  <data name="LauncherMagicWordsOptionsPanel_aliasDataGridViewTextBoxColumn_HeaderText" xml:space="preserve">
+    <value>魔術字</value>
+  </data>
+  <data name="LauncherMagicWordsOptionsPanel_filenameDataGridViewTextBoxColumn_HeaderText" xml:space="preserve">
+    <value>檔案名</value>
+  </data>
+  <data name="LauncherMagicWordsOptionsPanel_Parameters_HeaderText" xml:space="preserve">
+    <value>引數</value>
+  </data>
+  <data name="LauncherMagicWordsOptionsPanel_Comment_HeaderText" xml:space="preserve">
+    <value>備註</value>
+  </data>
+  <data name="LauncherMagicWordsOptionsPanel_UseCount_HeaderText" xml:space="preserve">
+    <value>使用次數</value>
+  </data>
+  <data name="LauncherMagicWordsOptionsPanel_LastUsed_HeaderText" xml:space="preserve">
+    <value>最近使用</value>
+  </data>
+  <data name="LauncherMagicWordsOptionsPanel_aliasDataGridViewTextBoxColumn1_HeaderText" xml:space="preserve">
+    <value>別名</value>
+  </data>
+  <data name="LauncherMagicWordsOptionsPanel_filenameDataGridViewTextBoxColumn1_HeaderText" xml:space="preserve">
+    <value>檔案名</value>
+  </data>
+  <data name="LauncherMagicWordsOptionsPanel_parametersDataGridViewTextBoxColumn_HeaderText" xml:space="preserve">
+    <value>引數</value>
+  </data>
+  <data name="LauncherMagicWordsOptionsPanel_startDirectoryDataGridViewTextBoxColumn_HeaderText" xml:space="preserve">
+    <value>起始目錄</value>
+  </data>
+  <data name="LauncherMagicWordsOptionsPanel_commentDataGridViewTextBoxColumn_HeaderText" xml:space="preserve">
+    <value>備註</value>
+  </data>
+  <data name="LauncherMagicWordsOptionsPanel_windowClassDataGridViewTextBoxColumn_HeaderText" xml:space="preserve">
+    <value>視窗類</value>
+  </data>
+  <data name="LauncherMagicWordsOptionsPanel_captionRegExprDataGridViewTextBoxColumn_HeaderText" xml:space="preserve">
+    <value>標題正則</value>
+  </data>
+  <data name="LauncherMagicWordsOptionsPanel_useCountDataGridViewTextBoxColumn_HeaderText" xml:space="preserve">
+    <value>使用次數</value>
+  </data>
+  <data name="LauncherMagicWordsOptionsPanel_lastUsedDataGridViewTextBoxColumn_HeaderText" xml:space="preserve">
+    <value>最近使用</value>
+  </data>
+  <data name="LauncherMagicWordsOptionsPanel_startupPosition1DataGridViewTextBoxColumn_HeaderText" xml:space="preserve">
+    <value>啟動位置1</value>
+  </data>
+  <data name="LauncherMagicWordsOptionsPanel_startupPosition2DataGridViewTextBoxColumn_HeaderText" xml:space="preserve">
+    <value>啟動位置2</value>
+  </data>
+  <data name="LauncherMagicWordsOptionsPanel_startupPosition3DataGridViewTextBoxColumn_HeaderText" xml:space="preserve">
+    <value>啟動位置3</value>
+  </data>
+  <data name="LauncherMagicWordsOptionsPanel_startupPosition4DataGridViewTextBoxColumn_HeaderText" xml:space="preserve">
+    <value>啟動位置4</value>
+  </data>
+  <data name="LauncherRootOptionsPanel_label3_Text" xml:space="preserve">
+    <value>控制使用魔術字啟動並定位應用程式的設定。</value>
+  </data>
+  <data name="LauncherRootOptionsPanel_label1_Text" xml:space="preserve">
+    <value>啟動器模組</value>
+  </data>
+  <data name="MagicWordForm_buttonTest_Text" xml:space="preserve">
+    <value>測試魔術字</value>
+  </data>
+  <data name="MagicWordForm_groupBox2_Text" xml:space="preserve">
+    <value>統計</value>
+  </data>
+  <data name="MagicWordForm_buttonResetTimesUsed_Text" xml:space="preserve">
+    <value>重置</value>
+  </data>
+  <data name="MagicWordForm_label9_Text" xml:space="preserve">
+    <value>使用次數：</value>
+  </data>
+  <data name="MagicWordForm_buttonResetLastUsed_Text" xml:space="preserve">
+    <value>重置</value>
+  </data>
+  <data name="MagicWordForm_label8_Text" xml:space="preserve">
+    <value>最近使用：</value>
+  </data>
+  <data name="MagicWordForm_buttonDirBrowse_Text" xml:space="preserve">
+    <value>瀏覽...</value>
+  </data>
+  <data name="MagicWordForm_buttonDirBrowse_ToolTip" xml:space="preserve">
+    <value>瀏覽以選擇起始目錄。</value>
+  </data>
+  <data name="MagicWordForm_tabPage1_Text" xml:space="preserve">
+    <value>啟動位置 1</value>
+  </data>
+  <data name="MagicWordForm_tabPage2_Text" xml:space="preserve">
+    <value>啟動位置 2</value>
+  </data>
+  <data name="MagicWordForm_tabPage3_Text" xml:space="preserve">
+    <value>啟動位置 3</value>
+  </data>
+  <data name="MagicWordForm_tabPage4_Text" xml:space="preserve">
+    <value>啟動位置 4</value>
+  </data>
+  <data name="MagicWordForm_textBoxComment_ToolTip" xml:space="preserve">
+    <value>你可以在此填寫備註（可選）。</value>
+  </data>
+  <data name="MagicWordForm_textBoxCaption_ToolTip" xml:space="preserve">
+    <value>用於識別正確視窗的正規表示式。
+通常只寫視窗標題中的一段子串就夠了。</value>
+  </data>
+  <data name="MagicWordForm_groupBox1_Text" xml:space="preserve">
+    <value>應用程式視窗識別</value>
+  </data>
+  <data name="MagicWordForm_label6_Text" xml:space="preserve">
+    <value>標題：</value>
+  </data>
+  <data name="MagicWordForm_textBoxWindowClass_ToolTip" xml:space="preserve">
+    <value>這是上面那個程式使用的視窗類名稱。
+可以留空；若使用準星工具則會自動填入。</value>
+  </data>
+  <data name="MagicWordForm_label5_Text" xml:space="preserve">
+    <value>視窗類：</value>
+  </data>
+  <data name="MagicWordForm_buttonBrowse_Text" xml:space="preserve">
+    <value>瀏覽...</value>
+  </data>
+  <data name="MagicWordForm_buttonBrowse_ToolTip" xml:space="preserve">
+    <value>瀏覽以選擇應用程式或檔案。</value>
+  </data>
+  <data name="MagicWordForm_textBoxParameters_ToolTip" xml:space="preserve">
+    <value>需要傳給應用程式的任何引數。
+通常留空。</value>
+  </data>
+  <data name="MagicWordForm_textBoxStartDirectory_ToolTip" xml:space="preserve">
+    <value>你希望應用程式啟動時使用的工作目錄。
+通常留空。</value>
+  </data>
+  <data name="MagicWordForm_textBoxAlias_ToolTip" xml:space="preserve">
+    <value>這是你輸入（或開始輸入）以執行此程式的詞。</value>
+  </data>
+  <data name="MagicWordForm_buttonCancel_Text" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="MagicWordForm_buttonOK_Text" xml:space="preserve">
+    <value>確定</value>
+  </data>
+  <data name="MagicWordForm_label7_Text" xml:space="preserve">
+    <value>備註：</value>
+  </data>
+  <data name="MagicWordForm_label4_Text" xml:space="preserve">
+    <value>引數：</value>
+  </data>
+  <data name="MagicWordForm_label3_Text" xml:space="preserve">
+    <value>起始目錄：</value>
+  </data>
+  <data name="MagicWordForm_label2_Text" xml:space="preserve">
+    <value>檔案名：</value>
+  </data>
+  <data name="MagicWordForm_label1_Text" xml:space="preserve">
+    <value>魔術字：</value>
+  </data>
+  <data name="MagicWordForm_buttonInternalCommand_Text" xml:space="preserve">
+    <value>內部命令...</value>
+  </data>
+  <data name="ParameterInputForm_buttonOK_Text" xml:space="preserve">
+    <value>確定</value>
+  </data>
+  <data name="StartupPositionControl_checkBoxEnable_Text" xml:space="preserve">
+    <value>啟動時定位視窗</value>
+  </data>
+  <data name="StartupPositionControl_label12_Text" xml:space="preserve">
+    <value>執行</value>
+  </data>
+  <data name="StartupPositionControl_label11_Text" xml:space="preserve">
+    <value>,</value>
+  </data>
+  <data name="StartupPositionControl_label10_Text" xml:space="preserve">
+    <value>尺寸：</value>
+  </data>
+  <data name="StartupPositionControl_label9_Text" xml:space="preserve">
+    <value>,</value>
+  </data>
+  <data name="StartupPositionControl_label8_Text" xml:space="preserve">
+    <value>啟動位置：</value>
+  </data>
+  <data name="InternalCommandForm_labelDescription_Text" xml:space="preserve">
+    <value>說明</value>
+  </data>
+  <data name="Node_General" xml:space="preserve">
+    <value>常規</value>
+  </data>
+  <data name="Node_HotKeys" xml:space="preserve">
+    <value>熱鍵</value>
+  </data>
+  <data name="Node_ImportExport" xml:space="preserve">
+    <value>匯入 / 匯出</value>
+  </data>
+  <data name="Node_Launcher" xml:space="preserve">
+    <value>啟動器</value>
+  </data>
+  <data name="Node_MagicWords" xml:space="preserve">
+    <value>魔術字</value>
+  </data>
+  <data name="EntryForm_Text" xml:space="preserve">
+    <value>DMT - 啟動器</value>
+  </data>
+  <data name="InternalCommandForm_Text" xml:space="preserve">
+    <value>內部命令</value>
+  </data>
+  <data name="MagicWordForm_Text" xml:space="preserve">
+    <value>魔術字</value>
+  </data>
+  <data name="ParameterInputForm_Text" xml:space="preserve">
+    <value>引數輸入</value>
+  </data>
+</root>

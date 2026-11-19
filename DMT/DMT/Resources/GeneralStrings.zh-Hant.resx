@@ -1,0 +1,403 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ChangeBrightnessDescription" xml:space="preserve">
+    <value>調整顯示器亮度</value>
+  </data>
+  <data name="ChangeContrastDescription" xml:space="preserve">
+    <value>調整顯示器對比度</value>
+  </data>
+  <data name="ChangeOrientationDescription" xml:space="preserve">
+    <value>調整顯示器方向</value>
+  </data>
+  <data name="ChangePrimaryDescription" xml:space="preserve">
+    <value>更改主顯示器</value>
+  </data>
+  <data name="CloseButtonText" xml:space="preserve">
+    <value>關閉</value>
+  </data>
+  <data name="FileNotUsed" xml:space="preserve">
+    <value>&lt;未使用&gt;</value>
+    <comment>used when showing File Locations to user, if file not used</comment>
+  </data>
+  <data name="LatestVersionAvailable" xml:space="preserve">
+    <value>有新版本（{0}）可供下載。</value>
+  </data>
+  <data name="LatestVersionHave" xml:space="preserve">
+    <value>你已經是最新版本。</value>
+  </data>
+  <data name="LatestVersionUnavailable" xml:space="preserve">
+    <value>無法獲取最新版本（{0}）。請稍後重試。</value>
+  </data>
+  <data name="MsiInstall" xml:space="preserve">
+    <value>MSI 安裝</value>
+  </data>
+  <data name="OptionsDescription" xml:space="preserve">
+    <value>顯示選項</value>
+  </data>
+  <data name="PortableInstall" xml:space="preserve">
+    <value>便攜版安裝</value>
+  </data>
+  <data name="LanguageOptionsPanel_labelHeading_Text" xml:space="preserve">
+    <value>語言</value>
+  </data>
+  <data name="LanguageOptionsPanel_labelHint_Text" xml:space="preserve">
+    <value>選擇使用者介面使用的語言。</value>
+  </data>
+  <data name="LanguageOptionsPanel_labelRestartNeeded_Text" xml:space="preserve">
+    <value>語言已儲存。請重啟 Dual Monitor Tools 以應用更改。</value>
+  </data>
+  <data name="Node_Language" xml:space="preserve">
+    <value>語言</value>
+  </data>
+  <data name="ChangeOrientationForm_label1_Text" xml:space="preserve">
+    <value>顯示器相對預設方向的順時針旋轉角度：</value>
+  </data>
+  <data name="ChangeOrientationForm_radioButtonOrientation0_Text" xml:space="preserve">
+    <value>0°</value>
+  </data>
+  <data name="ChangeOrientationForm_radioButtonOrientation90_Text" xml:space="preserve">
+    <value>90°</value>
+  </data>
+  <data name="ChangeOrientationForm_radioButtonOrientation180_Text" xml:space="preserve">
+    <value>180°</value>
+  </data>
+  <data name="ChangeOrientationForm_radioButtonOrientation270_Text" xml:space="preserve">
+    <value>270°</value>
+  </data>
+  <data name="ChangeOrientationForm_buttonOK_Text" xml:space="preserve">
+    <value>確定</value>
+  </data>
+  <data name="ChangeOrientationForm_buttonCancel_Text" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="CheckUpdatesForm_labelStatus_Text" xml:space="preserve">
+    <value>正在檢查更新...</value>
+  </data>
+  <data name="CheckUpdatesForm_buttonOpenDownload_Text" xml:space="preserve">
+    <value>開啟下載頁面</value>
+  </data>
+  <data name="CheckUpdatesForm_buttonInstall_Text" xml:space="preserve">
+    <value>下載並安裝新版本</value>
+  </data>
+  <data name="CheckUpdatesForm_OriginalReleaseWarning" xml:space="preserve">
+    <value>這將開啟或安裝 Dual Monitor Tools 的原始版本，並替換你當前使用的版本。要繼續嗎？</value>
+  </data>
+  <data name="CheckUpdatesForm_buttonCancel_Text" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="EditMonitorNameForm_label1_Text" xml:space="preserve">
+    <value>名稱：</value>
+  </data>
+  <data name="EditMonitorNameForm_buttonOK_Text" xml:space="preserve">
+    <value>確定</value>
+  </data>
+  <data name="EditMonitorNameForm_buttonCancel_Text" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="GeneralMonitorNamesOptionsPanel_label1_Text" xml:space="preserve">
+    <value>你的顯示器名稱：</value>
+  </data>
+  <data name="GeneralMonitorNamesOptionsPanel_buttonChangeName_Text" xml:space="preserve">
+    <value>更改名稱...</value>
+  </data>
+  <data name="GeneralMonitorNamesOptionsPanel_label2_Text" xml:space="preserve">
+    <value>品牌/名稱：</value>
+  </data>
+  <data name="GeneralMonitorNamesOptionsPanel_label4_Text" xml:space="preserve">
+    <value>顯示卡：</value>
+  </data>
+  <data name="GeneralMonitorNamesOptionsPanel_label6_Text" xml:space="preserve">
+    <value>尺寸：</value>
+  </data>
+  <data name="GeneralMonitorNamesOptionsPanel_label3_Text" xml:space="preserve">
+    <value>這是可選項，但你可以為每臺物理顯示器起一個自定義名稱，之後在選擇顯示器順序和主工作區時就能用上這個名稱。</value>
+  </data>
+  <data name="GeneralMonitorOrderingOptionsPanel_groupBoxOrder_Text" xml:space="preserve">
+    <value>排序方式</value>
+  </data>
+  <data name="GeneralMonitorOrderingOptionsPanel_buttonNames_Text" xml:space="preserve">
+    <value>編輯...</value>
+  </data>
+  <data name="GeneralMonitorOrderingOptionsPanel_radioButtonNames_Text" xml:space="preserve">
+    <value>按命名顯示器順序</value>
+  </data>
+  <data name="GeneralMonitorOrderingOptionsPanel_radioButtonTopDown_Text" xml:space="preserve">
+    <value>從上到下，從左到右</value>
+  </data>
+  <data name="GeneralMonitorOrderingOptionsPanel_radioButtonDotNet_Text" xml:space="preserve">
+    <value>DotNet 順序，DMT v2.7 及更早版本使用</value>
+  </data>
+  <data name="GeneralMonitorOrderingOptionsPanel_radioButtonLeftRight_Text" xml:space="preserve">
+    <value>從左到右，從上到下</value>
+  </data>
+  <data name="GeneralMonitorOrderingOptionsPanel_label1_Text" xml:space="preserve">
+    <value>注意：此顯示器順序僅供 DMT 自身用於顯示器網格、在顯示器之間移動視窗以及生成桌布。</value>
+  </data>
+  <data name="GeneralMonitorsOptionsPanel_toolStripMenuItemChangePrimary_Text" xml:space="preserve">
+    <value>設為主顯示器</value>
+  </data>
+  <data name="GeneralMonitorsOptionsPanel_checkBoxShowAllMonitors_Text" xml:space="preserve">
+    <value>顯示所有顯示器</value>
+  </data>
+  <data name="GeneralMonitorsOptionsPanel_toolStripMenuItemChangeBrightness_Text" xml:space="preserve">
+    <value>調整顯示器亮度</value>
+  </data>
+  <data name="GeneralMonitorsOptionsPanel_toolStripMenuItemChangeContrast_Text" xml:space="preserve">
+    <value>調整顯示器對比度</value>
+  </data>
+  <data name="GeneralMonitorsOptionsPanel_changeMonitorOrientationToolStripMenuItem_Text" xml:space="preserve">
+    <value>調整顯示器方向</value>
+  </data>
+  <data name="GeneralMonitorsOptionsPanel_contextMenuStripEditName_Text" xml:space="preserve">
+    <value>編輯顯示器名稱</value>
+  </data>
+  <data name="GeneralMonitorsOptionsPanel_editMonitorNameToolStripMenuItem_Text" xml:space="preserve">
+    <value>編輯顯示器名稱</value>
+  </data>
+  <data name="GeneralOptionsPanel_checkBoxAutoStart_Text" xml:space="preserve">
+    <value>Windows 啟動時執行</value>
+  </data>
+  <data name="GeneralOptionsPanel_groupBox1_Text" xml:space="preserve">
+    <value>檔案位置</value>
+  </data>
+  <data name="GeneralOptionsPanel_label5_Text" xml:space="preserve">
+    <value>執行檔：</value>
+  </data>
+  <data name="GeneralOptionsPanel_label4_Text" xml:space="preserve">
+    <value>日誌：</value>
+  </data>
+  <data name="GeneralOptionsPanel_label3_Text" xml:space="preserve">
+    <value>桌布提供者：</value>
+  </data>
+  <data name="GeneralOptionsPanel_label2_Text" xml:space="preserve">
+    <value>魔術字：</value>
+  </data>
+  <data name="GeneralOptionsPanel_label1_Text" xml:space="preserve">
+    <value>設定：</value>
+  </data>
+  <data name="GeneralOptionsPanel_groupBox2_Text" xml:space="preserve">
+    <value>已安裝版本</value>
+  </data>
+  <data name="GeneralOptionsPanel_buttonCheckUpdates_Text" xml:space="preserve">
+    <value>檢查更新</value>
+  </data>
+  <data name="GeneralOptionsPanel_label8_Text" xml:space="preserve">
+    <value>安裝型別：</value>
+  </data>
+  <data name="GeneralOptionsPanel_label6_Text" xml:space="preserve">
+    <value>版本：</value>
+  </data>
+  <data name="GeneralOptionsPanel_groupBox3_Text" xml:space="preserve">
+    <value>關於</value>
+  </data>
+  <data name="GeneralOptionsPanel_checkBoxContextMenu_Text" xml:space="preserve">
+    <value>新增到桌面右鍵選單</value>
+  </data>
+  <data name="GeneralRootOptionsPanel_label3_Text" xml:space="preserve">
+    <value>所有工具共用的設定。</value>
+  </data>
+  <data name="GeneralRootOptionsPanel_label1_Text" xml:space="preserve">
+    <value>Dual Monitor Tools</value>
+  </data>
+  <data name="Node_DualMonitorTools" xml:space="preserve">
+    <value>Dual Monitor Tools</value>
+  </data>
+  <data name="Node_General" xml:space="preserve">
+    <value>常規</value>
+  </data>
+  <data name="Node_MonitorNames" xml:space="preserve">
+    <value>顯示器名稱</value>
+  </data>
+  <data name="Node_MonitorOrder" xml:space="preserve">
+    <value>顯示器順序</value>
+  </data>
+  <data name="Node_Monitors" xml:space="preserve">
+    <value>顯示器</value>
+  </data>
+  <data name="ChangeOrientationForm_Text" xml:space="preserve">
+    <value>調整顯示器方向</value>
+  </data>
+  <data name="CheckUpdatesForm_Text" xml:space="preserve">
+    <value>Dual Monitor Tools 更新</value>
+  </data>
+  <data name="EditMonitorNameForm_Text" xml:space="preserve">
+    <value>為此顯示器命名</value>
+  </data>
+  <data name="GeneralMonitorsOptionsPanel_Header_Description" xml:space="preserve">
+    <value>描述</value>
+  </data>
+  <data name="GeneralMonitorsOptionsPanel_Header_Contrast" xml:space="preserve">
+    <value>對比度</value>
+  </data>
+  <data name="GeneralMonitorsOptionsPanel_Header_WorkingArea" xml:space="preserve">
+    <value>工作區</value>
+  </data>
+  <data name="GeneralMonitorsOptionsPanel_Header_BrandName" xml:space="preserve">
+    <value>品牌/名稱</value>
+  </data>
+  <data name="GeneralMonitorsOptionsPanel_Header_SourceName" xml:space="preserve">
+    <value>源名稱</value>
+  </data>
+  <data name="GeneralMonitorsOptionsPanel_Header_Name" xml:space="preserve">
+    <value>名稱</value>
+  </data>
+  <data name="GeneralMonitorsOptionsPanel_Header_IsPrimary" xml:space="preserve">
+    <value>主顯示器</value>
+  </data>
+  <data name="GeneralMonitorsOptionsPanel_Header_IsActive" xml:space="preserve">
+    <value>活動</value>
+  </data>
+  <data name="GeneralMonitorsOptionsPanel_Header_Area" xml:space="preserve">
+    <value>區域</value>
+  </data>
+  <data name="GeneralMonitorsOptionsPanel_Header_Brightness" xml:space="preserve">
+    <value>亮度</value>
+  </data>
+  <data name="GeneralMonitorsOptionsPanel_Header_Gpu" xml:space="preserve">
+    <value>顯示卡</value>
+  </data>
+  <data name="GeneralMonitorsOptionsPanel_Header_OutputTech" xml:space="preserve">
+    <value>輸出介面</value>
+  </data>
+  <data name="GeneralMonitorsOptionsPanel_Header_BitsPerPixel" xml:space="preserve">
+    <value>位深</value>
+  </data>
+  <data name="GeneralMonitorsOptionsPanel_Header_Orientation" xml:space="preserve">
+    <value>方向</value>
+  </data>
+  <data name="GeneralMonitorsOptionsPanel_Header_Size" xml:space="preserve">
+    <value>尺寸</value>
+  </data>
+  <data name="GeneralMonitorOrderingOptionsPanel_ListText" xml:space="preserve">
+    <value>已選定的顯示器順序</value>
+  </data>
+  <data name="GeneralMonitorOrderingOptionsPanel_Caption" xml:space="preserve">
+    <value>按名稱編輯顯示器順序</value>
+  </data>
+  <data name="OutputTechnology_ComponentVideo" xml:space="preserve">
+    <value>分量影片</value>
+  </data>
+  <data name="OutputTechnology_Other" xml:space="preserve">
+    <value>其他/未知</value>
+  </data>
+  <data name="OutputTechnology_CompositeVideo" xml:space="preserve">
+    <value>複合影片</value>
+  </data>
+</root>

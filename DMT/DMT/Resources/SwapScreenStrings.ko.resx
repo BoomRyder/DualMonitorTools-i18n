@@ -1,0 +1,372 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ConfirmResetUdas" xml:space="preserve">
+    <value>모든 UDA의 설명과 위치를 적절한 기본값으로 되돌리지만, 정의한 단축키는 남깁니다.
+모니터 수나 해상도를 바꿨을 때 유용합니다.
+
+계속할까요?</value>
+  </data>
+  <data name="CursorNextScreenDescription" xml:space="preserve">
+    <value>커서를 다음 화면으로 이동</value>
+  </data>
+  <data name="CursorNextScreenWin7" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="CursorPrevScreenDescription" xml:space="preserve">
+    <value>커서를 이전 화면으로 이동</value>
+  </data>
+  <data name="CursorPrevScreenWin7" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="InvalidPosition" xml:space="preserve">
+    <value>지정한 위치가 올바르지 않습니다</value>
+  </data>
+  <data name="MaximiseDescription" xml:space="preserve">
+    <value>활성 창 최대화</value>
+  </data>
+  <data name="MaximiseWin7" xml:space="preserve">
+    <value>Win+&lt;위&gt;</value>
+  </data>
+  <data name="MinimiseAllButDescription" xml:space="preserve">
+    <value>활성 창을 제외한 모든 창 최소화</value>
+  </data>
+  <data name="MinimiseAllButWin7" xml:space="preserve">
+    <value>Win+&lt;Home&gt;</value>
+  </data>
+  <data name="MinimiseDescription" xml:space="preserve">
+    <value>활성 창 최소화</value>
+  </data>
+  <data name="MinimiseWin7" xml:space="preserve">
+    <value>Win+&lt;아래&gt;</value>
+  </data>
+  <data name="MoveAllWindowsToCursorDescription" xml:space="preserve">
+    <value>모든 창을 커서가 있는 화면으로 이동</value>
+  </data>
+  <data name="MoveAllWindowsToNDescription" xml:space="preserve">
+    <value>모든 창을 화면 {0}(으)로 이동</value>
+  </data>
+  <data name="NextScreenDescription" xml:space="preserve">
+    <value>활성 창을 다음 화면으로 이동</value>
+  </data>
+  <data name="NextScreenWin7" xml:space="preserve">
+    <value>Win+Shift+&lt;오른쪽&gt;</value>
+  </data>
+  <data name="PrevScreenDescription" xml:space="preserve">
+    <value>활성 창을 이전 화면으로 이동</value>
+  </data>
+  <data name="PrevScreenWin7" xml:space="preserve">
+    <value>Win+Shift+&lt;왼쪽&gt;</value>
+  </data>
+  <data name="RotateNextDescription" xml:space="preserve">
+    <value>화면을 앞으로 회전</value>
+  </data>
+  <data name="RotateNextWin7" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="RotatePrevDescription" xml:space="preserve">
+    <value>화면을 뒤로 회전</value>
+  </data>
+  <data name="RotatePrevWin7" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="ShowCursorDesktopDescription" xml:space="preserve">
+    <value>커서가 있는 바탕 화면 표시</value>
+  </data>
+  <data name="ShowCursorDesktopWin7" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="ShowDesktopDescription" xml:space="preserve">
+    <value>바탕 화면 표시</value>
+  </data>
+  <data name="ShowDesktopNDescription" xml:space="preserve">
+    <value>바탕 화면 {0} 표시</value>
+  </data>
+  <data name="ShowDesktopNWin7" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="SnapDownDescription" xml:space="preserve">
+    <value>활성 창을 아래쪽 가장자리에 맞춤</value>
+  </data>
+  <data name="SnapDownWin7" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="SnapLeftDescription" xml:space="preserve">
+    <value>활성 창을 왼쪽 가장자리에 맞춤</value>
+  </data>
+  <data name="SnapLeftWin7" xml:space="preserve">
+    <value>Win+&lt;왼쪽&gt;</value>
+  </data>
+  <data name="SnapRightDescription" xml:space="preserve">
+    <value>활성 창을 오른쪽 가장자리에 맞춤</value>
+  </data>
+  <data name="SnapRightWin7" xml:space="preserve">
+    <value>Win+&lt;오른쪽&gt;</value>
+  </data>
+  <data name="SnapUpDescription" xml:space="preserve">
+    <value>활성 창을 위쪽 가장자리에 맞춤</value>
+  </data>
+  <data name="SnapUpWin7" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="SupersizeDescription" xml:space="preserve">
+    <value>활성 창을 매우 크게</value>
+  </data>
+  <data name="SupersizeWin7" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="SwapTop2Description" xml:space="preserve">
+    <value>활성 창을 다음 창과 바꿈</value>
+  </data>
+  <data name="SwapTop2Win7" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="SwapScreenActiveOptionsPanel_groupBox1_Text" xml:space="preserve">
+    <value>활성 창의 단축키</value>
+  </data>
+  <data name="SwapScreenOtherOptionsPanel_groupBox1_Text" xml:space="preserve">
+    <value>다른 창의 단축키</value>
+  </data>
+  <data name="SwapScreenRootOptionsPanel_label1_Text" xml:space="preserve">
+    <value>화면 전환 모듈</value>
+  </data>
+  <data name="SwapScreenRootOptionsPanel_label3_Text" xml:space="preserve">
+    <value>창 배치를 제어하는 설정입니다.</value>
+  </data>
+  <data name="SwapScreenSdaOptionsPanel_checkBoxEnable_Text" xml:space="preserve">
+    <value>시스템 정의 영역 사용</value>
+  </data>
+  <data name="SwapScreenSdaOptionsPanel_label1_Text" xml:space="preserve">
+    <value>시스템 정의 영역</value>
+  </data>
+  <data name="SwapScreenSdaOptionsPanel_label3_Text" xml:space="preserve">
+    <value>다음 단축키를 등록하지 못했습니다:</value>
+  </data>
+  <data name="SwapScreenSdaOptionsPanel_label4_Text" xml:space="preserve">
+    <value>아래의 화면 보조 키와 숫자 패드를 함께 쓰면 활성 창을 전체, 절반, 사분의 일 화면으로 옮길 수 있습니다.</value>
+  </data>
+  <data name="SwapScreenSdaOptionsPanel_checkBoxBorderOutside_Text" xml:space="preserve">
+    <value>테두리를 시스템 정의 영역 바깥에 둠</value>
+  </data>
+  <data name="SwapScreenSdaOptionsPanel_labelNumLock_Text" xml:space="preserve">
+    <value>참고: 쓰려면 Num Lock을 켜야 합니다.</value>
+  </data>
+  <data name="SwapScreenUdaOptionsPanel_groupBox1_Text" xml:space="preserve">
+    <value>사용자 정의 영역과 연결된 단축키</value>
+  </data>
+  <data name="UdaForm_groupBox1_Text" xml:space="preserve">
+    <value>단축키</value>
+  </data>
+  <data name="UdaForm_checkBoxEnable_Text" xml:space="preserve">
+    <value>이 사용자 정의 영역과 단축키 사용</value>
+  </data>
+  <data name="UdaForm_textBoxHeight_ToolTip" xml:space="preserve">
+    <value>영역 높이</value>
+  </data>
+  <data name="UdaForm_label4_Text" xml:space="preserve">
+    <value>x</value>
+  </data>
+  <data name="UdaForm_textBoxWidth_ToolTip" xml:space="preserve">
+    <value>영역 너비</value>
+  </data>
+  <data name="UdaForm_textBoxY_ToolTip" xml:space="preserve">
+    <value>왼쪽 위 모서리의 Y 좌표</value>
+  </data>
+  <data name="UdaForm_textBoxX_ToolTip" xml:space="preserve">
+    <value>왼쪽 위 모서리의 X 좌표</value>
+  </data>
+  <data name="UdaForm_textBoxName_ToolTip" xml:space="preserve">
+    <value>이 영역의 이름</value>
+  </data>
+  <data name="UdaForm_label3_Text" xml:space="preserve">
+    <value>크기:</value>
+  </data>
+  <data name="UdaForm_label2_Text" xml:space="preserve">
+    <value>,</value>
+  </data>
+  <data name="UdaForm_label1_Text" xml:space="preserve">
+    <value>위치:</value>
+  </data>
+  <data name="UdaForm_labelName_Text" xml:space="preserve">
+    <value>이름:</value>
+  </data>
+  <data name="UdaForm_buttonCancel_Text" xml:space="preserve">
+    <value>취소</value>
+  </data>
+  <data name="UdaForm_buttonOK_Text" xml:space="preserve">
+    <value>확인</value>
+  </data>
+  <data name="UdaPanel_labelDescription_Text" xml:space="preserve">
+    <value>설명</value>
+  </data>
+  <data name="UdaPanel_buttonChange_Text" xml:space="preserve">
+    <value>변경...</value>
+  </data>
+  <data name="UdaPanel_labelKeyCombo_Text" xml:space="preserve">
+    <value>키 조합</value>
+  </data>
+  <data name="Node_ActiveWindow" xml:space="preserve">
+    <value>활성 창</value>
+  </data>
+  <data name="Node_OtherWindows" xml:space="preserve">
+    <value>다른 창</value>
+  </data>
+  <data name="Node_SwapScreen" xml:space="preserve">
+    <value>화면 전환</value>
+  </data>
+  <data name="Node_SystemDefinedAreas" xml:space="preserve">
+    <value>시스템 정의 영역</value>
+  </data>
+  <data name="Node_UserDefinedAreas" xml:space="preserve">
+    <value>사용자 정의 영역</value>
+  </data>
+  <data name="Sda_Screen_BottomLeft" xml:space="preserve">
+    <value>화면 {0} - 왼쪽 아래 사분의 일</value>
+  </data>
+  <data name="Sda_Screen_Text" xml:space="preserve">
+    <value>화면 {0}</value>
+  </data>
+  <data name="Sda_Screen_LeftHalf" xml:space="preserve">
+    <value>화면 {0} - 왼쪽 절반</value>
+  </data>
+  <data name="Sda_Screen_BottomHalf" xml:space="preserve">
+    <value>화면 {0} - 아래쪽 절반</value>
+  </data>
+  <data name="Sda_Screen_BottomRight" xml:space="preserve">
+    <value>화면 {0} - 오른쪽 아래 사분의 일</value>
+  </data>
+  <data name="Sda_Screen_RightHalf" xml:space="preserve">
+    <value>화면 {0} - 오른쪽 절반</value>
+  </data>
+  <data name="Sda_Screen_TopLeft" xml:space="preserve">
+    <value>화면 {0} - 왼쪽 위 사분의 일</value>
+  </data>
+  <data name="Sda_Screen_TopRight" xml:space="preserve">
+    <value>화면 {0} - 오른쪽 위 사분의 일</value>
+  </data>
+  <data name="Sda_Screen_TopHalf" xml:space="preserve">
+    <value>화면 {0} - 위쪽 절반</value>
+  </data>
+  <data name="UdaForm_Text" xml:space="preserve">
+    <value>사용자 정의 영역 변경</value>
+  </data>
+  <data name="Sda_SuperSize" xml:space="preserve">
+    <value>매우 큰 영역</value>
+  </data>
+</root>

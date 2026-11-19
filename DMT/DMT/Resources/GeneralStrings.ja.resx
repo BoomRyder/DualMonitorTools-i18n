@@ -1,0 +1,403 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ChangeBrightnessDescription" xml:space="preserve">
+    <value>モニターの明るさを調整</value>
+  </data>
+  <data name="ChangeContrastDescription" xml:space="preserve">
+    <value>モニターのコントラストを調整</value>
+  </data>
+  <data name="ChangeOrientationDescription" xml:space="preserve">
+    <value>モニターの向きを조정</value>
+  </data>
+  <data name="ChangePrimaryDescription" xml:space="preserve">
+    <value>プライマリ モニターを変更</value>
+  </data>
+  <data name="CloseButtonText" xml:space="preserve">
+    <value>閉じる</value>
+  </data>
+  <data name="FileNotUsed" xml:space="preserve">
+    <value>&lt;未使用&gt;</value>
+    <comment>used when showing File Locations to user, if file not used</comment>
+  </data>
+  <data name="LatestVersionAvailable" xml:space="preserve">
+    <value>新しいバージョン ({0}) をダウンロードできます。</value>
+  </data>
+  <data name="LatestVersionHave" xml:space="preserve">
+    <value>既に最新バージョンです。</value>
+  </data>
+  <data name="LatestVersionUnavailable" xml:space="preserve">
+    <value>最新バージョンを取得できません ({0})。後でもう一度試してください。</value>
+  </data>
+  <data name="MsiInstall" xml:space="preserve">
+    <value>MSI インストール</value>
+  </data>
+  <data name="OptionsDescription" xml:space="preserve">
+    <value>オプションを表示</value>
+  </data>
+  <data name="PortableInstall" xml:space="preserve">
+    <value>ポータブル インストール</value>
+  </data>
+  <data name="LanguageOptionsPanel_labelHeading_Text" xml:space="preserve">
+    <value>言語</value>
+  </data>
+  <data name="LanguageOptionsPanel_labelHint_Text" xml:space="preserve">
+    <value>ユーザー インターフェイスの言語を選びます。</value>
+  </data>
+  <data name="LanguageOptionsPanel_labelRestartNeeded_Text" xml:space="preserve">
+    <value>言語を保存しました。変更を適用するには Dual Monitor Tools を再起動してください。</value>
+  </data>
+  <data name="Node_Language" xml:space="preserve">
+    <value>言語</value>
+  </data>
+  <data name="ChangeOrientationForm_label1_Text" xml:space="preserve">
+    <value>既定の向きからの時計回りの回転:</value>
+  </data>
+  <data name="ChangeOrientationForm_radioButtonOrientation0_Text" xml:space="preserve">
+    <value>0°</value>
+  </data>
+  <data name="ChangeOrientationForm_radioButtonOrientation90_Text" xml:space="preserve">
+    <value>90°</value>
+  </data>
+  <data name="ChangeOrientationForm_radioButtonOrientation180_Text" xml:space="preserve">
+    <value>180°</value>
+  </data>
+  <data name="ChangeOrientationForm_radioButtonOrientation270_Text" xml:space="preserve">
+    <value>270°</value>
+  </data>
+  <data name="ChangeOrientationForm_buttonOK_Text" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="ChangeOrientationForm_buttonCancel_Text" xml:space="preserve">
+    <value>キャンセル</value>
+  </data>
+  <data name="CheckUpdatesForm_labelStatus_Text" xml:space="preserve">
+    <value>更新を確認しています...</value>
+  </data>
+  <data name="CheckUpdatesForm_buttonOpenDownload_Text" xml:space="preserve">
+    <value>ダウンロード ページを開く</value>
+  </data>
+  <data name="CheckUpdatesForm_buttonInstall_Text" xml:space="preserve">
+    <value>新しいバージョンをダウンロードしてインストール</value>
+  </data>
+  <data name="CheckUpdatesForm_OriginalReleaseWarning" xml:space="preserve">
+    <value>上流の元の Dual Monitor Tools を開くかインストールし、今のバージョンを置き換えます。続行しますか?</value>
+  </data>
+  <data name="CheckUpdatesForm_buttonCancel_Text" xml:space="preserve">
+    <value>キャンセル</value>
+  </data>
+  <data name="EditMonitorNameForm_label1_Text" xml:space="preserve">
+    <value>名前:</value>
+  </data>
+  <data name="EditMonitorNameForm_buttonOK_Text" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="EditMonitorNameForm_buttonCancel_Text" xml:space="preserve">
+    <value>キャンセル</value>
+  </data>
+  <data name="GeneralMonitorNamesOptionsPanel_label1_Text" xml:space="preserve">
+    <value>モニターの名前:</value>
+  </data>
+  <data name="GeneralMonitorNamesOptionsPanel_buttonChangeName_Text" xml:space="preserve">
+    <value>名前の変更...</value>
+  </data>
+  <data name="GeneralMonitorNamesOptionsPanel_label2_Text" xml:space="preserve">
+    <value>ブランド/名前:</value>
+  </data>
+  <data name="GeneralMonitorNamesOptionsPanel_label4_Text" xml:space="preserve">
+    <value>GPU:</value>
+  </data>
+  <data name="GeneralMonitorNamesOptionsPanel_label6_Text" xml:space="preserve">
+    <value>サイズ:</value>
+  </data>
+  <data name="GeneralMonitorNamesOptionsPanel_label3_Text" xml:space="preserve">
+    <value>省略できます。各モニターに自分の名前を付けると、順序とメイン作業領域の選択で使えます。</value>
+  </data>
+  <data name="GeneralMonitorOrderingOptionsPanel_groupBoxOrder_Text" xml:space="preserve">
+    <value>並べ替え</value>
+  </data>
+  <data name="GeneralMonitorOrderingOptionsPanel_buttonNames_Text" xml:space="preserve">
+    <value>編集...</value>
+  </data>
+  <data name="GeneralMonitorOrderingOptionsPanel_radioButtonNames_Text" xml:space="preserve">
+    <value>付けた名前の順</value>
+  </data>
+  <data name="GeneralMonitorOrderingOptionsPanel_radioButtonTopDown_Text" xml:space="preserve">
+    <value>上から下、左から右</value>
+  </data>
+  <data name="GeneralMonitorOrderingOptionsPanel_radioButtonDotNet_Text" xml:space="preserve">
+    <value>DMT v2.7 以前が使っていた .NET の順序</value>
+  </data>
+  <data name="GeneralMonitorOrderingOptionsPanel_radioButtonLeftRight_Text" xml:space="preserve">
+    <value>左から右、上から下</value>
+  </data>
+  <data name="GeneralMonitorOrderingOptionsPanel_label1_Text" xml:space="preserve">
+    <value>注: この順序は DMT 自身のモニター格子、ウィンドウ移動、壁紙の生成だけに使われます。</value>
+  </data>
+  <data name="GeneralMonitorsOptionsPanel_toolStripMenuItemChangePrimary_Text" xml:space="preserve">
+    <value>プライマリ モニターにする</value>
+  </data>
+  <data name="GeneralMonitorsOptionsPanel_checkBoxShowAllMonitors_Text" xml:space="preserve">
+    <value>すべてのモニターを表示</value>
+  </data>
+  <data name="GeneralMonitorsOptionsPanel_toolStripMenuItemChangeBrightness_Text" xml:space="preserve">
+    <value>モニターの明るさを調整</value>
+  </data>
+  <data name="GeneralMonitorsOptionsPanel_toolStripMenuItemChangeContrast_Text" xml:space="preserve">
+    <value>モニターのコントラストを調整</value>
+  </data>
+  <data name="GeneralMonitorsOptionsPanel_changeMonitorOrientationToolStripMenuItem_Text" xml:space="preserve">
+    <value>モニターの向きを조정</value>
+  </data>
+  <data name="GeneralMonitorsOptionsPanel_contextMenuStripEditName_Text" xml:space="preserve">
+    <value>モニター名の編集</value>
+  </data>
+  <data name="GeneralMonitorsOptionsPanel_editMonitorNameToolStripMenuItem_Text" xml:space="preserve">
+    <value>モニター名の編集</value>
+  </data>
+  <data name="GeneralOptionsPanel_checkBoxAutoStart_Text" xml:space="preserve">
+    <value>Windows 起動時に実行</value>
+  </data>
+  <data name="GeneralOptionsPanel_groupBox1_Text" xml:space="preserve">
+    <value>ファイルの場所</value>
+  </data>
+  <data name="GeneralOptionsPanel_label5_Text" xml:space="preserve">
+    <value>実行ファイル:</value>
+  </data>
+  <data name="GeneralOptionsPanel_label4_Text" xml:space="preserve">
+    <value>ログ:</value>
+  </data>
+  <data name="GeneralOptionsPanel_label3_Text" xml:space="preserve">
+    <value>壁紙プロバイダー:</value>
+  </data>
+  <data name="GeneralOptionsPanel_label2_Text" xml:space="preserve">
+    <value>マジックワード:</value>
+  </data>
+  <data name="GeneralOptionsPanel_label1_Text" xml:space="preserve">
+    <value>設定:</value>
+  </data>
+  <data name="GeneralOptionsPanel_groupBox2_Text" xml:space="preserve">
+    <value>インストール済みのバージョン</value>
+  </data>
+  <data name="GeneralOptionsPanel_buttonCheckUpdates_Text" xml:space="preserve">
+    <value>更新の確認</value>
+  </data>
+  <data name="GeneralOptionsPanel_label8_Text" xml:space="preserve">
+    <value>インストールの種類:</value>
+  </data>
+  <data name="GeneralOptionsPanel_label6_Text" xml:space="preserve">
+    <value>バージョン:</value>
+  </data>
+  <data name="GeneralOptionsPanel_groupBox3_Text" xml:space="preserve">
+    <value>バージョン情報</value>
+  </data>
+  <data name="GeneralOptionsPanel_checkBoxContextMenu_Text" xml:space="preserve">
+    <value>デスクトップの右クリック メニューに追加</value>
+  </data>
+  <data name="GeneralRootOptionsPanel_label3_Text" xml:space="preserve">
+    <value>すべてのツールに共通の設定です。</value>
+  </data>
+  <data name="GeneralRootOptionsPanel_label1_Text" xml:space="preserve">
+    <value>Dual Monitor Tools</value>
+  </data>
+  <data name="Node_DualMonitorTools" xml:space="preserve">
+    <value>Dual Monitor Tools</value>
+  </data>
+  <data name="Node_General" xml:space="preserve">
+    <value>全般</value>
+  </data>
+  <data name="Node_MonitorNames" xml:space="preserve">
+    <value>モニター名</value>
+  </data>
+  <data name="Node_MonitorOrder" xml:space="preserve">
+    <value>モニターの順序</value>
+  </data>
+  <data name="Node_Monitors" xml:space="preserve">
+    <value>モニター</value>
+  </data>
+  <data name="ChangeOrientationForm_Text" xml:space="preserve">
+    <value>モニターの向きを조정</value>
+  </data>
+  <data name="CheckUpdatesForm_Text" xml:space="preserve">
+    <value>Dual Monitor Tools の更新</value>
+  </data>
+  <data name="EditMonitorNameForm_Text" xml:space="preserve">
+    <value>このモニターの名前</value>
+  </data>
+  <data name="GeneralMonitorsOptionsPanel_Header_Description" xml:space="preserve">
+    <value>説明</value>
+  </data>
+  <data name="GeneralMonitorsOptionsPanel_Header_Contrast" xml:space="preserve">
+    <value>コントラスト</value>
+  </data>
+  <data name="GeneralMonitorsOptionsPanel_Header_WorkingArea" xml:space="preserve">
+    <value>作業領域</value>
+  </data>
+  <data name="GeneralMonitorsOptionsPanel_Header_BrandName" xml:space="preserve">
+    <value>ブランド/名前</value>
+  </data>
+  <data name="GeneralMonitorsOptionsPanel_Header_SourceName" xml:space="preserve">
+    <value>ソース名</value>
+  </data>
+  <data name="GeneralMonitorsOptionsPanel_Header_Name" xml:space="preserve">
+    <value>名前</value>
+  </data>
+  <data name="GeneralMonitorsOptionsPanel_Header_IsPrimary" xml:space="preserve">
+    <value>プライマリ</value>
+  </data>
+  <data name="GeneralMonitorsOptionsPanel_Header_IsActive" xml:space="preserve">
+    <value>アクティブ</value>
+  </data>
+  <data name="GeneralMonitorsOptionsPanel_Header_Area" xml:space="preserve">
+    <value>領域</value>
+  </data>
+  <data name="GeneralMonitorsOptionsPanel_Header_Brightness" xml:space="preserve">
+    <value>明るさ</value>
+  </data>
+  <data name="GeneralMonitorsOptionsPanel_Header_Gpu" xml:space="preserve">
+    <value>GPU</value>
+  </data>
+  <data name="GeneralMonitorsOptionsPanel_Header_OutputTech" xml:space="preserve">
+    <value>出力方式</value>
+  </data>
+  <data name="GeneralMonitorsOptionsPanel_Header_BitsPerPixel" xml:space="preserve">
+    <value>ビット深度</value>
+  </data>
+  <data name="GeneralMonitorsOptionsPanel_Header_Orientation" xml:space="preserve">
+    <value>向き</value>
+  </data>
+  <data name="GeneralMonitorsOptionsPanel_Header_Size" xml:space="preserve">
+    <value>サイズ</value>
+  </data>
+  <data name="GeneralMonitorOrderingOptionsPanel_ListText" xml:space="preserve">
+    <value>選択したモニター順</value>
+  </data>
+  <data name="GeneralMonitorOrderingOptionsPanel_Caption" xml:space="preserve">
+    <value>名前でモニター順を編集</value>
+  </data>
+  <data name="OutputTechnology_ComponentVideo" xml:space="preserve">
+    <value>コンポーネント ビデオ</value>
+  </data>
+  <data name="OutputTechnology_Other" xml:space="preserve">
+    <value>その他/不明</value>
+  </data>
+  <data name="OutputTechnology_CompositeVideo" xml:space="preserve">
+    <value>コンポジット ビデオ</value>
+  </data>
+</root>

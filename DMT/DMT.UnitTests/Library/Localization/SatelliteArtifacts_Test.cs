@@ -326,8 +326,17 @@ namespace DMT.UnitTests.Library.Localization
 		// output; build.ps1 defaults to Debug, and hard coding Release made
 		// ".\build.ps1 -Test" fail for a reason unrelated to the product.
 		[TestCase(@"DMT\DMT\bin\{0}\zh-Hans\DMT.resources.dll")]
+		[TestCase(@"DMT\DMT\bin\{0}\zh-Hant\DMT.resources.dll")]
+		[TestCase(@"DMT\DMT\bin\{0}\ja\DMT.resources.dll")]
+		[TestCase(@"DMT\DMT\bin\{0}\ko\DMT.resources.dll")]
 		[TestCase(@"DualWallpaper\DualWallpaper\bin\{0}\zh-Hans\DualWallpaper.resources.dll")]
+		[TestCase(@"DualWallpaper\DualWallpaper\bin\{0}\zh-Hant\DualWallpaper.resources.dll")]
+		[TestCase(@"DualWallpaper\DualWallpaper\bin\{0}\ja\DualWallpaper.resources.dll")]
+		[TestCase(@"DualWallpaper\DualWallpaper\bin\{0}\ko\DualWallpaper.resources.dll")]
 		[TestCase(@"DmtWallpaper\DmtWallpaper\bin\{0}\zh-Hans\DmtWallpaper.resources.dll")]
+		[TestCase(@"DmtWallpaper\DmtWallpaper\bin\{0}\zh-Hant\DmtWallpaper.resources.dll")]
+		[TestCase(@"DmtWallpaper\DmtWallpaper\bin\{0}\ja\DmtWallpaper.resources.dll")]
+		[TestCase(@"DmtWallpaper\DmtWallpaper\bin\{0}\ko\DmtWallpaper.resources.dll")]
 		public void SatelliteAssemblyIsBuiltIntoTheCultureFolder(string relativePathFormat)
 		{
 			string relativePath = string.Format(relativePathFormat, BuildConfiguration);
