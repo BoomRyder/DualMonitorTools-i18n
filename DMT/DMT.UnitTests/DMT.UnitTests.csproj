@@ -53,7 +53,6 @@
     <Compile Include="Library\Localization\ResourceCoverage_Test.cs" />
     <Compile Include="Library\Localization\SatelliteArtifacts_Test.cs" />
     <Compile Include="Library\Localization\UiCulture_Test.cs" />
-    <Compile Include="Installer\InstallerAssets_Test.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

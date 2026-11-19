@@ -295,6 +295,15 @@ namespace DMT.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to This will open or install the original Dual Monitor Tools release and replace the version you are using. Continue?.
+        /// </summary>
+        internal static string CheckUpdatesForm_OriginalReleaseWarning {
+            get {
+                return ResourceManager.GetString("CheckUpdatesForm_OriginalReleaseWarning", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Cancel.
         /// </summary>
         internal static string CheckUpdatesForm_buttonCancel_Text {

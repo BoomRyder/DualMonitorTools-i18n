@@ -18,10 +18,9 @@ Dual Monitor Tools 是一套面向 Windows 多显示器用户的工具集。
    共约 700 条文案。全新安装**默认就是中文**；随时可在
    *选项 → Dual Monitor Tools → 常规 → 界面语言* 里切回 English，
    选择会被记住，下次启动三个程序一起生效。
-2. **换了安装方式。** 上游 2.13 用 WiX 打包成 MSI；本分支用 Inno Setup 打包成
-   `DualMonitorTools-2.13-Setup.exe`。新安装包**需要管理员权限**，
-   程序图标带 UAC 盾牌（双击即提权），会创建桌面快捷方式，并把屏保装到
-   64 位控制面板真正能识别到的位置。
+2. **安装包回到上游的 WiX MSI。** 源文件在 `installer\DualMonitorTools.wks`，
+   用 `installer\Build.bat` 编译。行为与原作者一致，包括 `installed=1`、
+   屏保目录和空的桌面右键键。「检查更新」在打开或安装上游版本前会先确认。
 
 除此之外没有其他改动：没有新增功能，没有改变原有行为，也没有顺手重构上游代码。
 上游 2.13 源码包的逐字节快照保存在 git 标签 `upstream-2.13`，
@@ -78,47 +77,38 @@ Dual Monitor Tools 可运行在任何安装了 .NET 4.0 或更高版本的 Windo
 
 最好有两台或更多显示器，不过部分功能对单显示器用户也有用。
 
-安装包只支持 64 位 Windows。安装前会检查 .NET Framework 4.0 及以上版本，
-不满足会用可读的提示中止安装。
+安装包是 32 位 MSI，安装前会检查 .NET Framework 4.0 客户端。
 
 ## 安装
 
 有两种安装方式：
 
-1. 运行安装包 `DualMonitorTools-2.13-Setup.exe`——最简单的做法。
+1. 运行 `DualMonitorTools.msi`。
 2. 从 zip 包便携安装——最灵活，装到便携设备上就用这种方式。
 
 ### 用安装包安装
 
-下载 `DualMonitorTools-2.13-Setup.exe` 直接运行即可。打包方式与安装包具体
-写了哪些内容，见 [`installer/README-installer.md`](installer/README-installer.md)。
+安装包是 WiX 生成的 `DualMonitorTools.msi`，需要管理员权限。它安装：
 
-安装包**需要管理员权限**。它带 UAC 盾牌，双击就会弹出提权提示；如果当前系统关掉了
-UAC 因而无法提权，它会拒绝运行并提示你改用「以管理员身份运行」。安装内容：
+- `C:\Program Files (x86)\Dual Monitor Tools\` 下的 `DMT.exe`、`DualWallpaper.exe`、
+  `DmtFileLocations.xml`、`CHANGES.txt`、`COPYING.txt`、`README.txt`、`THANKS.txt`。
+  `DmtFileLocations.xml` 把数据文件指向 `%APPDATA%\Dual Monitor Tools`。
+- 屏保 `DmtWallpaper.scr`。32 位包在 64 位 Windows 上会落到 `SysWOW64`。
+- 开始菜单里的 DMT 和 DualWallpaper 快捷方式。
+- `installed=1`。设置里因此显示为 MSI 安装。
 
-- `C:\Program Files (x86)\Dual Monitor Tools\`——`DMT.exe`、`DualWallpaper.exe`、
-  各自的 config 文件、简体中文资源文件、`COPYING.txt`、本 `README.md`，
-  以及一个 `DmtFileLocations.xml`，把数据文件指向 `%APPDATA%\Dual Monitor Tools`。
-- `C:\Windows\System32\DmtWallpaper.scr`——屏保。装进 `System32` 而不是 `SysWOW64`，
-  这样 64 位控制面板的屏保列表才看得到它。
-- 两个开始菜单快捷方式和一个桌面快捷方式。
-- 不写 `installed` 注册表标记，因此 DMT 会把自己报告成便携版安装。这是有意的：
-  只有这样才能阻止「检查更新」去下载上游英文 MSI 覆盖掉本中文版。
-
-如果安装时 DMT 或 DualWallpaper 正在运行，安装程序会先问你要不要关掉它。选「是」后
-先发普通的关闭请求（DMT 会趁机保存魔术字），关不掉才强制结束进程。
+`.wks` 不包含 `zh-Hans` 卫星程序集。只装 MSI、不另放这些 dll 时，界面会回到英文。
 
 ### 升级已有安装
 
-直接运行更新的安装包覆盖安装即可。`%APPDATA%\Dual Monitor Tools` 里的数据文件不会被动，
+直接运行新的 MSI 覆盖安装即可。`%APPDATA%\Dual Monitor Tools` 里的数据文件不会被动，
 所有设置、魔术字和壁纸源都会保留。
 
-*选项 → Dual Monitor Tools → 常规* 里的「检查更新」仍会查询上游站点并告诉你有没有新版本，
-但它只能打开下载页面——程序内自动安装被关掉了，因为那会装成英文 MSI。
+*选项 → Dual Monitor Tools → 常规* 里的「检查更新」仍会查询上游站点。打开下载页或安装新版本之前会先确认，默认选「否」。选「是」会打开或安装上游原始版本，并替换当前这个版本。
 
 ### 从上游 MSI 版迁移
 
-上游 MSI 安装与本安装包不能共存：检测到 MSI 安装时安装程序会拒绝继续。迁移步骤：
+本安装包就是 MSI。从旧的上游 MSI 换过来时：
 
 1. 先确认数据文件的位置。MSI 安装的数据在 `%APPDATA%\Dual Monitor Tools`
    （形如 `C:\Users\<你的用户名>\AppData\Roaming\Dual Monitor Tools`）。
@@ -127,7 +117,7 @@ UAC 因而无法提权，它会拒绝运行并提示你改用「以管理员身�
    `DmtSettings.xml`、`DmtWallpaperProviders.xml` 复制出来，手工建好
    `%APPDATA%\Dual Monitor Tools`，再把它们放进去。
 3. 从 Windows「已安装的应用」列表卸载上游 MSI。
-4. 运行 `DualMonitorTools-2.13-Setup.exe`。
+4. 运行 `DualMonitorTools.msi`。
 5. 从桌面快捷方式启动 DMT，如果之前用过「开机时启动」和「加入桌面右键菜单」，
    到 *选项 → Dual Monitor Tools → 常规* 重新勾上。
 
@@ -260,24 +250,23 @@ DMT 设置壁纸时写过的 `TileWallpaper` 与 `WallpaperStyle` 这两个 Wind
 cd <仓库根目录>
 .\build.ps1                                 # Debug 构建
 .\build.ps1 -Configuration Release          # Release 构建
-.\build.ps1 -Configuration Release -Test    # 构建 + 跑 363 个 NUnit 用例
+.\build.ps1 -Configuration Release -Test    # 构建 + 跑 NUnit 用例
 .\build.ps1 -Clean                          # 清理 bin/obj
-.\build-installer.ps1                       # Release 构建 + 编译安装包
 ```
+
+安装包在 Release 产物就绪后，于 `installer` 目录运行 `Build.bat`。需要 WiX Toolset 3.14。
 
 需要：Visual Studio 2019/2022 并勾选「.NET 桌面开发」工作负载
 （含 .NET Framework 4.0 Client Profile 与 4.5 目标包、MSBuild），
 以及可访问 nuget.org（或已预置 `DMT\packages` 下的 NUnit 包）。
-编译安装包另外需要 Inno Setup 7。
 
 产物：`DMT\DMT\bin\<配置>\DMT.exe`、
 `DualWallpaper\DualWallpaper\bin\<配置>\DualWallpaper.exe`、
 `DmtWallpaper\DmtWallpaper\bin\<配置>\DmtWallpaper.exe` 与 `.scr`，
-安装包为 `dist\DualMonitorTools-2.13-Setup.exe`。
+安装包为 `installer\DualMonitorTools.msi`。
 
 简体中文译文放在中性 `resx` 旁边的 `.zh-Hans.resx` 里，另有一组守卫测试保证覆盖率
-不缺不漏——本地化约定见 [`AGENTS.md`](AGENTS.md)。安装包的设计与验证方式见
-[`installer/README-installer.md`](installer/README-installer.md)。
+不缺不漏——本地化约定见 [`.cursor/rules/localization.mdc`](.cursor/rules/localization.mdc)。
 
 ## 致谢
 
@@ -294,8 +283,7 @@ cd <仓库根目录>
 ## 变更历史
 
 本中文分支相对上游 2.13 的改动，已在本文开头「[本中文版改了什么](#本中文版改了什么)」
-一节列出，概要为：全量简体中文化 + 新增界面语言选项 + 用 Inno Setup 重做安装包
-（顺带修掉上游两处安装缺陷）。
+一节列出，概要为：全量简体中文化 + 新增界面语言选项。安装包使用上游的 WiX 工程。
 
 上游 2.13 及之前各版本（1.0 至 2.13，共 60 个版本）的变更记录属于上游历史，
 未逐条翻译，见英文版 [`README.md` 的 Change History 一节](README.md#change-history)。

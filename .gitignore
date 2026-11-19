@@ -25,7 +25,11 @@ TestResult.xml
 
 # 安装包产物
 dist/
-installer/Output/
+installer/*.wixobj
+installer/*.wixpdb
+installer/DualMonitorTools.msi
 
-# 设计与计划文档（本地保留，不随仓库发布）
+# 本地规则与设计记录，不随仓库发布
+.cursor/
+.superpowers/
 docs/

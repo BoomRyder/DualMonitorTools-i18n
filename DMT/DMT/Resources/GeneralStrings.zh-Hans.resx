@@ -196,6 +196,9 @@
   <data name="CheckUpdatesForm_buttonInstall_Text" xml:space="preserve">
     <value>下载并安装新版本</value>
   </data>
+  <data name="CheckUpdatesForm_OriginalReleaseWarning" xml:space="preserve">
+    <value>这将打开或安装 Dual Monitor Tools 的原始版本，并替换你当前使用的版本。要继续吗？</value>
+  </data>
   <data name="CheckUpdatesForm_buttonCancel_Text" xml:space="preserve">
     <value>取消</value>
   </data>

@@ -196,6 +196,9 @@
   <data name="CheckUpdatesForm_buttonInstall_Text" xml:space="preserve">
     <value>Download and install new version</value>
   </data>
+  <data name="CheckUpdatesForm_OriginalReleaseWarning" xml:space="preserve">
+    <value>This will open or install the original Dual Monitor Tools release and replace the version you are using. Continue?</value>
+  </data>
   <data name="CheckUpdatesForm_buttonCancel_Text" xml:space="preserve">
     <value>Cancel</value>
   </data>

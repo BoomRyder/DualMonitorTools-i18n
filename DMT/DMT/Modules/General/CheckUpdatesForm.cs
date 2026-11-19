@@ -141,6 +141,11 @@ namespace DMT.Modules.General
 			{
 				if (!string.IsNullOrEmpty(_latestVersion.DownloadPage))
 				{
+					if (!ConfirmOriginalRelease())
+					{
+						return;
+					}
+
 					try
 					{
 						System.Diagnostics.Process.Start(_latestVersion.DownloadPage);
@@ -161,7 +166,10 @@ namespace DMT.Modules.General
 				{
 					if (!string.IsNullOrEmpty(_latestVersion.MsiInstaller))
 					{
-						StartInstallNewVersion();
+						if (ConfirmOriginalRelease())
+						{
+							StartInstallNewVersion();
+						}
 					}
 				}
 			}
@@ -169,6 +177,21 @@ namespace DMT.Modules.General
 
 		private void buttonCancel_Click(object sender, EventArgs e)
 		{
+		}
+
+		/// <summary>
+		/// Asks before opening or installing the upstream release.
+		/// The default button is No.
+		/// </summary>
+		/// <returns>true if the user chooses Yes</returns>
+		bool ConfirmOriginalRelease()
+		{
+			return MessageBox.Show(
+				Resources.GeneralStrings.CheckUpdatesForm_OriginalReleaseWarning,
+				Resources.CommonStrings.MyTitle,
+				MessageBoxButtons.YesNo,
+				MessageBoxIcon.Question,
+				MessageBoxDefaultButton.Button2) == DialogResult.Yes;
 		}
 
 		void StartInstallNewVersion()
